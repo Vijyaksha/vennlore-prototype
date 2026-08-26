@@ -47,12 +47,15 @@ def judge_candidate(mine: Talk, cand: Talk, llm: LLMClient) -> Judgment:
         schema_hint='{"shared_methods": 0, "transferability": 0, '
                     '"analogous_phenomena": 0, "match": true, "why": "string"}',
     )
+    if not isinstance(out["match"], bool):
+        raise ValueError(f"non-boolean match from LLM: {out['match']!r}")
     return Judgment(
         candidate_id=cand.id,
         shared_methods=int(out["shared_methods"]),
         transferability=int(out["transferability"]),
         analogous_phenomena=int(out["analogous_phenomena"]),
-        match=bool(out["match"]),
-        cross_domain=not (set(mine.units) & set(cand.units)),
+        match=out["match"],
+        # unknown domain never counts as cross-domain — surprise picks need affirmative evidence
+        cross_domain=bool(mine.units) and bool(cand.units) and not (set(mine.units) & set(cand.units)),
         why=str(out["why"]),
     )

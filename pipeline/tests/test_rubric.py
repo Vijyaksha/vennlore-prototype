@@ -1,3 +1,5 @@
+import pytest
+
 from gps_engine.corpus import Talk
 from gps_engine.llm import FakeLLM
 from gps_engine.rubric import Judgment, judge_candidate
@@ -36,3 +38,16 @@ def test_prompt_contains_both_abstracts():
     judge_candidate(ME, OTHER, llm)
     assert "trainable photocurrent" in llm.prompts[0]
     assert "synaptic memory" in llm.prompts[0]
+
+
+def test_non_boolean_match_raises():
+    llm = FakeLLM(responses=[{"shared_methods": 4, "transferability": 3,
+                              "analogous_phenomena": 4, "match": "false", "why": "w"}])
+    with pytest.raises(ValueError):
+        judge_candidate(ME, OTHER, llm)
+
+
+def test_empty_units_is_not_cross_domain():
+    no_units = Talk(**{**OTHER.__dict__, "units": ()})
+    j = judge_candidate(ME, no_units, make_llm())
+    assert j.cross_domain is False
