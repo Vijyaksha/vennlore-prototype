@@ -17,13 +17,6 @@ Verdict:
 Be strict: "related" requires genuine methodological kinship, not co-occurrence."""
 
 
-def _cos(a: list[float], b: list[float]) -> float:
-    dot = sum(x * y for x, y in zip(a, b))
-    na = math.sqrt(sum(x * x for x in a))
-    nb = math.sqrt(sum(x * x for x in b))
-    return dot / (na * nb) if na and nb else 0.0
-
-
 def propose_pairs(
     names: list[str], embed: Embedder, threshold: float = 0.75
 ) -> list[tuple[str, str]]:
@@ -64,3 +57,5 @@ def apply_verdicts(g: MethodGraph, verdicts: list[tuple[str, str, dict]]) -> Non
             g.merge(g.node_id(a), g.node_id(b))
         elif v["verdict"] == "related":
             g.add_related(g.node_id(a), g.node_id(b))
+        elif v["verdict"] != "unrelated":
+            raise ValueError(f"unknown verdict {v['verdict']!r} for ({a!r}, {b!r})")

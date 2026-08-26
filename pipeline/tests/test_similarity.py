@@ -1,3 +1,5 @@
+import pytest
+
 from gps_engine.similarity import propose_pairs
 from gps_engine.graph import MethodGraph
 from gps_engine.llm import FakeLLM
@@ -47,3 +49,10 @@ def test_apply_verdicts_ignores_unrelated():
     g.link_talk(1, "dmrg"); g.link_talk(2, "neutron scattering")
     apply_verdicts(g, [("dmrg", "neutron scattering", {"verdict": "unrelated", "why": ""})])
     assert g.related_to(g.node_id("dmrg")) == set()
+
+
+def test_apply_verdicts_rejects_unknown_verdict():
+    g = MethodGraph()
+    g.link_talk(1, "dmrg"); g.link_talk(2, "neutron scattering")
+    with pytest.raises(ValueError):
+        apply_verdicts(g, [("dmrg", "neutron scattering", {"verdict": "similar", "why": ""})])
