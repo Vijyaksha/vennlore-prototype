@@ -5,6 +5,8 @@ from gps_engine.graph import MethodGraph
 
 
 def candidates(g: MethodGraph, talk_id: int) -> set[int]:
+    """Contract: an unknown talk_id (not present in the graph) returns an
+    empty set rather than raising."""
     my_nodes = [n for n in g.nodes() if talk_id in g.talks_using(n)]
     out: set[int] = set()
     for n in my_nodes:
