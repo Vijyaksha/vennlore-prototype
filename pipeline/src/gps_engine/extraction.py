@@ -17,8 +17,12 @@ def extract_methods(talk: Talk, llm: LLMClient) -> list[str]:
         PROMPT.format(title=talk.title, abstract=talk.abstract),
         schema_hint='{"methods": ["string", ...]}',
     )
+    methods = out.get("methods", [])
+    if not isinstance(methods, list):
+        raise ValueError(f"LLM returned non-list methods: {methods!r}")
+
     seen, result = set(), []
-    for m in out.get("methods", []):
+    for m in methods:
         key = " ".join(str(m).casefold().split())
         if key and key not in seen:
             seen.add(key)

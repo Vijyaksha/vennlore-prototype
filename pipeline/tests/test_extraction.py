@@ -1,3 +1,5 @@
+import pytest
+
 from gps_engine.corpus import Talk
 from gps_engine.extraction import extract_methods
 from gps_engine.llm import FakeLLM
@@ -18,3 +20,8 @@ def test_prompt_contains_title_and_abstract():
 def test_dedupes_and_drops_blank():
     llm = FakeLLM(responses=[{"methods": ["DMRG", "dmrg ", ""]}])
     assert extract_methods(TALK, llm) == ["DMRG"]
+
+def test_non_list_methods_raises():
+    llm = FakeLLM(responses=[{"methods": "DMRG"}])
+    with pytest.raises(ValueError):
+        extract_methods(TALK, llm)
