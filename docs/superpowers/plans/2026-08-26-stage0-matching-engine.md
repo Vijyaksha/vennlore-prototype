@@ -6,7 +6,7 @@
 
 **Architecture:** A Python package (`pipeline/`) with a strict LLM boundary: every module is unit-tested with a `FakeLLM`; live LLM calls happen only in gated scripts. Flow: corpus → method extraction (LlamaIndex PropertyGraphIndex, schema-constrained) → method graph (merge/related edges via LLM verdicts) → funnel (graph traversal) → interrogation rubric → threshold-gated picks. Graph persists to JSON artifacts in Stage 0; the Postgres loader belongs to Plan 2.
 
-**Tech Stack:** Python 3.12, uv, pytest, `anthropic`, `llama-index-core` + `llama-index-llms-anthropic`, `sentence-transformers` (local embeddings for pair proposal). Models: `claude-haiku-4-5-20251001` for extraction, `claude-sonnet-5` for similarity verdicts and rubric (revisit empirically).
+**Tech Stack:** Python 3.12, uv, pytest, `anthropic`, `sentence-transformers` (local embeddings for pair proposal). Extraction uses our own schema-constrained prompt ("Path B", Rupert-approved 2026-08-26 — no LlamaIndex dependency). Models: `claude-haiku-4-5-20251001` for extraction, `claude-sonnet-5` for similarity verdicts and rubric (revisit empirically).
 
 **Rules that bind every task (from CLAUDE.md):** failing test first, watch it fail, minimal code, commit. Scripts that call live LLMs or download data are **gated on Rupert's go**, checkpoint incrementally, and expose probeable progress. Running pytest is always allowed.
 
@@ -20,7 +20,7 @@ pipeline/
     llm.py          # LLMClient protocol, FakeLLM, AnthropicLLM
     corpus.py       # Talk dataclass, archive + micro-corpus loading
     graph.py        # MethodGraph: talk→method links, merge, RELATED_TO, JSON persistence
-    extraction.py   # extract_methods() — LlamaIndex-backed live path behind interface
+    extraction.py   # extract_methods() — our schema-constrained extraction prompt
     similarity.py   # propose_pairs (embeddings) + judge_pair (LLM) + apply_verdicts
     funnel.py       # candidate talks via graph traversal
     rubric.py       # interrogation rubric judgment of one candidate
@@ -413,7 +413,7 @@ class MethodGraph:
 
 **Files:** Create: `pipeline/src/gps_engine/extraction.py`, `pipeline/tests/test_extraction.py`
 
-The unit-tested path is our prompt + `LLMClient`. The LlamaIndex `PropertyGraphIndex` live path is wired in `run_stage0.py` (Task 11) behind the same function signature; before writing it, **check current LlamaIndex docs via Context7** (`SchemaLLMPathExtractor`, entities=`["METHOD"]`, relations=`["USES_METHOD"]`) — its API moves.
+This is the production extraction path (Path B, Rupert-approved): our prompt + `LLMClient`, schema-constrained to methods only. The same function runs live in `run_stage0.py` with `AnthropicLLM` swapped in.
 
 - [ ] **Step 1: Write the failing tests**
 
@@ -908,12 +908,11 @@ for t in same_domain[:25]:
 
 ### Task 12: Stage-0 end-to-end runner (gated)
 
-**Files:** Create: `pipeline/scripts/run_stage0.py`; Modify: `pipeline/pyproject.toml` (add `llama-index-core`, `llama-index-llms-anthropic` — check exact package names/APIs via Context7 first)
+**Files:** Create: `pipeline/scripts/run_stage0.py`
 
 **GATE: this script spends live LLM tokens. Do not run without Rupert's explicit go.** It must checkpoint per talk/pair (JSON files in `pipeline/out/stage0/`, skip-if-exists) and write probeable `pipeline/out/stage0/status.json` progress, per CLAUDE.md.
 
-- [ ] **Step 1: Check LlamaIndex current docs** (Context7: `SchemaLLMPathExtractor` / `PropertyGraphIndex` with Anthropic LLM). If the schema-constrained extractor's integration cost exceeds our thin `extract_methods` prompt path, note the deviation to Rupert and use the prompt path — both satisfy "schema-constrained extraction"; the spec's intent is the constrained schema, not the dependency.
-- [ ] **Step 2: Write the runner** (structure below; checkpoint helpers mirror `data/crawl_gps2026.py`)
+- [ ] **Step 1: Write the runner** (structure below; checkpoint helpers mirror `data/crawl_gps2026.py`; extraction is Task 5's `extract_methods` with the live `AnthropicLLM`)
 
 ```python
 # pipeline/scripts/run_stage0.py
@@ -1021,9 +1020,9 @@ report = {
 status("done — see out/stage0/report.json")
 ```
 
-- [ ] **Step 3: STOP — get Rupert's go, then run:** `cd pipeline && ANTHROPIC_API_KEY=... uv run python scripts/run_stage0.py` (progress: `cat pipeline/out/stage0/status.json`)
-- [ ] **Step 4: Review `report.json` with Rupert** — success = most positives in `hit_positives` with sensible `why` texts, near-empty `false_positives`. Iterate prompts (extraction/rubric strictness) as needed; checkpoints make reruns cheap — delete only the affected checkpoint dirs (`judgments/` after a rubric change).
-- [ ] **Step 5: Commit** — `git add pipeline datasets && git commit -m "feat(pipeline): stage-0 end-to-end eval runner"`
+- [ ] **Step 2: STOP — get Rupert's go, then run:** `cd pipeline && ANTHROPIC_API_KEY=... uv run python scripts/run_stage0.py` (progress: `cat pipeline/out/stage0/status.json`)
+- [ ] **Step 3: Review `report.json` with Rupert** — success = most positives in `hit_positives` with sensible `why` texts, near-empty `false_positives`. Iterate prompts (extraction/rubric strictness) as needed; checkpoints make reruns cheap — delete only the affected checkpoint dirs (`judgments/` after a rubric change).
+- [ ] **Step 4: Commit** — `git add pipeline datasets && git commit -m "feat(pipeline): stage-0 end-to-end eval runner"`
 
 ---
 
@@ -1036,5 +1035,5 @@ status("done — see out/stage0/report.json")
 ## Self-review notes
 
 - Spec coverage: engine §3 fully tasked (extraction T5, similarity T6–7, storage-as-artifacts T4/T12 with Postgres explicitly deferred to Plan 2, funnel T8, rubric T9, thresholds T10); ground truth §2.1 tasked (T11–12). Product surface §4 and Postgres §5 are Plans 2–3 by design.
-- One flagged deviation decision embedded in T12 Step 1: LlamaIndex vs thin prompt path for extraction — resolved at implementation time against current docs, with Rupert notified either way.
+- Extraction path decided by Rupert 2026-08-26: our own schema-constrained prompt (Path B); LlamaIndex removed from the plan entirely.
 - Type consistency: `Talk`, `LLMClient`, `MethodGraph`, `Judgment`, `Picks` signatures match across tasks.

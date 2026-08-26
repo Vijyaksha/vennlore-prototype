@@ -30,7 +30,7 @@ Union of: (a) all talks in 4 anchor Level-2 sorting categories — Data Science,
 
 Principle: **the LLM makes every similarity judgment; storage structures make its knowledge persistent and queryable.** No hard-coded normalization rules, no domain axis in the graph.
 
-1. **Graph build (offline, per corpus):** LlamaIndex `PropertyGraphIndex` with schema-constrained extraction — entities = `Method`, relation = `USES_METHOD` only. Output: bipartite talk→method graph. Identical strings collapse mechanically; nothing else does.
+1. **Graph build (offline, per corpus):** schema-constrained extraction via our own prompt through the pipeline's LLM boundary (decision 2026-08-26: no LlamaIndex dependency) — entities = `Method`, relation = `USES_METHOD` only. Output: bipartite talk→method graph. Identical strings collapse mechanically; nothing else does.
 2. **Method-similarity pass (LLM):** over the distinct method list, pairwise on plausible pairs only (embedding-near names / shared context — never all-pairs), verdicts: **same** (merge nodes) / **related** (add `RELATED_TO` edge) / unrelated. This subsumes normalization.
 3. **Storage:** graph lands in Supabase Postgres tables (`talks`, `methods`, `talk_methods`, `method_edges`) — the interface between pipeline and app.
 4. **Recommendation (GraphRAG funnel + rubric):** candidate funnel = graph traversal (talks sharing/related-to the user's talk's method nodes; division metadata identifies cross-domain candidates). Then an **LLM interrogation rubric** judges each candidate pair against the user's abstract along fixed lines of inquiry (shared methods incl. differently-named equivalents; transferability; analogous phenomena), producing per-axis scores + a written justification.
@@ -53,7 +53,7 @@ Two pages:
 
 ## 5. Architecture & stack
 
-- **Pipeline (Python, `pipeline/`):** crawler → LlamaIndex extraction → method-similarity pass → Postgres. Batch, offline, checkpointed, live-progress per repo rules. (Requires a future CLAUDE.md amendment for Python tooling: uv, pytest-based TDD.)
+- **Pipeline (Python, `pipeline/`):** crawler → schema-constrained LLM extraction → method-similarity pass → Postgres. Batch, offline, checkpointed, live-progress per repo rules. (Requires a future CLAUDE.md amendment for Python tooling: uv, pytest-based TDD.)
 - **App (TypeScript, existing Turborepo):** Next.js on Vercel, tRPC procedures for talk search / recommendations / calendar, Drizzle over Supabase Postgres, shadcn/Tailwind UI in `packages/ui`, next-intl available. Better Auth installed but dormant in MVP.
 - Interface between the two worlds is **only** the Postgres schema.
 
