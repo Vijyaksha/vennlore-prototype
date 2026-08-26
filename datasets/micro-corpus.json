@@ -25,9 +25,20 @@
     { "id": 13160, "class": "surprise-bold", "title": "Driven Abrikosov Vortices for Narrowband EM Field Sensing and Reservoir Computing", "unit": "APS", "why": "trainable dynamical memory in superconducting vortex matter - furthest deliberate reach" }
   ],
   "negatives": {
-    "status": "to-be-selected",
-    "target_count": 50,
-    "composition": "~10 same-domain-but-different-method (organic electronics talks about e.g. synthesis or spectroscopy with none of the anchor's method axes - the system must NOT match these) + ~40 random unrelated talks (system must stay silent)",
-    "expected_outcome": "engine returns no method-match for every negative; empty result is the correct answer"
+    "status": "approved-by-rupert-2026-08-26",
+    "expected_outcome": "engine returns no method-match for every negative; empty result is the correct answer",
+    "random_unrelated": [39, 1195, 1846, 3358, 3699, 3834, 3929, 4039, 4116, 4139,
+                         4510, 4789, 5194, 5284, 5504, 5952, 6343, 6476, 7167, 7508,
+                         7700, 7761, 8047, 8280, 8456, 8731, 8967, 9334, 9856, 10268,
+                         10745, 11387, 11524, 11620, 12774, 12795, 15020],
+    "same_domain_different_method": [2798, 2799, 2804, 4569, 5514, 5515, 5518, 5810, 6585, 6586],
+    "struck_from_proposal": [
+      { "id": 434, "why": "vortex dynamics - method-adjacent to positive 13160 (Abrikosov vortices); ambiguous ground truth" },
+      { "id": 8593, "why": "space-charge-limited transport - adjacent to anchor's charge-transport axis; contestable negative" },
+      { "id": 13294, "why": "non-technical career session (empty units)" },
+      { "id": 14943, "why": "admin placeholder ('Delay Session Start'), not a talk" },
+      { "id": 2801, "why": "photoexcited organic heterojunction - engine could correctly flag; too method-close for a must-not-match" },
+      { "id": 7077, "why": "molecular spin/electron transport - too method-close (cf. positive 3100 CISS)" }
+    ]
   }
 }
