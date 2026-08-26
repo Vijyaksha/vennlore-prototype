@@ -31,3 +31,13 @@ def test_empty_input_is_valid():
 def test_min_score_threshold_applies():
     picks = assemble([J(1, 5), J(2, 5, cross=True)], min_score=8)
     assert picks.core == [] and picks.unexpected == []
+
+
+def test_boundary_score_included():
+    picks = assemble([J(1, 8)])
+    assert [j.candidate_id for j in picks.core] == [1]
+
+
+def test_equal_scores_tie_break_by_candidate_id():
+    picks = assemble([J(9, 10), J(3, 10), J(7, 10)], max_core=3)
+    assert [j.candidate_id for j in picks.core] == [3, 7, 9]
