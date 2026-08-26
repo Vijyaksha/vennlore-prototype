@@ -36,9 +36,10 @@ class MethodGraph:
         if keep == absorb:
             return
         self._talks[keep] |= self._talks.pop(absorb)
-        for name in self._names.pop(absorb):
+        moved = self._names.pop(absorb)
+        for name in moved:
             self._canon[name] = keep
-        self._names[keep] |= {n for n, i in self._canon.items() if i == keep}
+        self._names[keep] |= moved
         for other in self._related.pop(absorb, set()):
             self._related[other].discard(absorb)
             if other != keep:
