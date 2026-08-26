@@ -1,0 +1,33 @@
+{
+  "description": "Stage-0 ground-truth micro-corpus for the method-matching engine. Anchor = Rupert's porphyrin nanorod paper. Positives approved by Rupert 2026-08-26. Presentation IDs refer to the GPS 2026 feed (meeting 441) archived in data/gps2026/.",
+  "anchor": {
+    "source": "external-paper",
+    "title": "Photoconductivity of Self-Assembled Porphyrin Nanorods",
+    "authors": "Schwab, Smith, Bond-Watts, Johnston, Hone, Johnson, de Paula, W.F. Smith",
+    "venue": "Nano Letters 2004",
+    "method_axes": [
+      "self-assembly of functional nanostructures",
+      "photoconductivity / photocurrent transient measurement",
+      "charge transport in 1D / molecular nanostructures",
+      "bias-training / memory / hysteretic response"
+    ]
+  },
+  "positives": [
+    { "id": 2802, "class": "control-same-domain", "title": "Memristive Properties of Ni-DNA Thin-Film Devices", "unit": "DPOLY", "why": "self-assembled monolayer of 1D biomolecular wire + resistive switching, in the anchor's home session (Organic Electronics & Photonics)" },
+    { "id": 12342, "class": "control-same-domain", "title": "Magnetoresistive Switching in Porphene, a 2D Porphyrin Based Polymer", "unit": "FIAP", "why": "same molecular family (porphyrin) + conductance switching" },
+    { "id": 5432, "class": "surprise", "title": "Sequence and Phosphorylation Modifications Dictate Charge Transport in Cell-Penetrating Peptides", "unit": "DBIO", "why": "SAM self-assembly + molecular junction transport measurements, in protein biophysics" },
+    { "id": 3100, "class": "surprise", "title": "Chiral-induced spin selectivity in polypeptides on magnetic thin films", "unit": "DCOMP", "why": "SAMs of helical molecules + transport through them, spintronics question" },
+    { "id": 11542, "class": "surprise", "title": "Optoelectronic Synapses Based on Confined Growth of Ruddlesden-Popper Perovskite Nanocrystals in Carbon Nanotubes", "unit": "DMP", "why": "photoinduced charge transfer + trainable synaptic memory = anchor's trainable photocurrent, modern descendant" },
+    { "id": 8765, "class": "surprise", "title": "Persistent optical phenomena in oxide semiconductors", "unit": "DMP,DCOMP,FIAP", "why": "persistent photoconductivity dynamics (slow grow/decay), inorganic oxide domain" },
+    { "id": 159, "class": "surprise", "title": "Neuron- and Axon-like behavior in metal-to-insulator transition material", "unit": "DCMP", "why": "electrically triggered repeatable resistive-state training, correlated oxides" },
+    { "id": 12772, "class": "surprise", "title": "Ultrafast transient photocurrent in hybrid lead halide perovskites", "unit": "DLS", "why": "time-resolved photocurrent transient measurement as core method, laser science" },
+    { "id": 1317, "class": "surprise-bold", "title": "Networks of Coupled Phase Oscillators as a Neuromorphic Platform Trained with Equilibrium Propagation", "unit": "DBIO,DSOFT,DSNP", "why": "training a physical system's response via applied drive - conceptual kinship to bias-training" },
+    { "id": 13160, "class": "surprise-bold", "title": "Driven Abrikosov Vortices for Narrowband EM Field Sensing and Reservoir Computing", "unit": "APS", "why": "trainable dynamical memory in superconducting vortex matter - furthest deliberate reach" }
+  ],
+  "negatives": {
+    "status": "to-be-selected",
+    "target_count": 50,
+    "composition": "~10 same-domain-but-different-method (organic electronics talks about e.g. synthesis or spectroscopy with none of the anchor's method axes - the system must NOT match these) + ~40 random unrelated talks (system must stay silent)",
+    "expected_outcome": "engine returns no method-match for every negative; empty result is the correct answer"
+  }
+}
