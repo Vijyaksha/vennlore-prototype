@@ -29,6 +29,8 @@ class AnthropicLLM:
         self._max_tokens = max_tokens
 
     def complete_json(self, prompt: str, schema_hint: str) -> dict:
+        from anthropic.types import TextBlock
+
         msg = self._client.messages.create(
             model=self._model,
             max_tokens=self._max_tokens,
@@ -36,7 +38,10 @@ class AnthropicLLM:
                    f"Expected shape: {schema_hint}",
             messages=[{"role": "user", "content": prompt}],
         )
-        text = msg.content[0].text.strip()
+        block = msg.content[0]
+        if not isinstance(block, TextBlock):
+            raise RuntimeError(f"expected TextBlock, got {type(block).__name__}")
+        text = block.text.strip()
         if text.startswith("```"):
             text = text.strip("`").removeprefix("json").strip()
         return json.loads(text)
