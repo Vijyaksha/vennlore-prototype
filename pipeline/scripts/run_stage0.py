@@ -32,6 +32,10 @@ def status(msg: str) -> None:
     print(f"[{round(time.time() - t0)}s] {msg}", flush=True)
 
 
+# Checkpoints key by talk-id / pair-hash ONLY — not by prompt or model.
+# After changing a prompt or model, delete the matching out/stage0/ subdir
+# (methods/ for extraction, verdicts/ for the similarity judge,
+# judgments/ for the rubric) or stale results will be silently reused.
 def checkpointed(path: Path, fn):
     if path.exists():
         return json.loads(path.read_text())
@@ -90,20 +94,25 @@ def main() -> None:
     pairs = propose_pairs(names, embed=sbert_embedder())
     status(f"similarity: {len(names)} names, {len(pairs)} proposed pairs")
     verdicts = []
-    for a, b in pairs:
+    for i, (a, b) in enumerate(pairs):
         v = checkpointed(OUT / "verdicts" / f"{pair_key(a, b)}.json",
                          lambda a=a, b=b: judge_pair(a, b, judge_llm))
         verdicts.append((a, b, v))
+        if i % 5 == 0:
+            status(f"verdicts {i + 1}/{len(pairs)}")
     apply_verdicts(g, verdicts)
     g.save(OUT / "graph.json")
 
     status("funnel+rubric")
     cands = candidates(g, talk_id=0)
+    status(f"rubric: {len(cands)} candidates")
     judgments = []
-    for cid in sorted(cands):
+    for i, cid in enumerate(sorted(cands)):
         j = checkpointed(OUT / "judgments" / f"{cid}.json",
                          lambda cid=cid: judge_candidate(anchor, talks[cid], judge_llm).__dict__)
         judgments.append(Judgment(**j))
+        if i % 5 == 0:
+            status(f"rubric {i + 1}/{len(cands)}")
 
     picks = assemble(judgments)
     matched_ids = {j.candidate_id for j in judgments if j.match}
