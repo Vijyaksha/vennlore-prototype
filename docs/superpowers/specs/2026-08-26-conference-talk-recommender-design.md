@@ -12,9 +12,7 @@ Large conferences (APS Global Physics Summit: ~14,000 attendees, ~12,000 present
 
 - **Source:** the public, unauthenticated JSON feed behind the official GPS 2026 schedule site: `https://makoshark-data.aps.org/441/` (`meeting.json` → 1,303 `event/{id}.json` sessions → 12,233 `presentation/{id}.json` talks with full abstracts, topic tags, authors, times; `individual/{id}.json` and location records available, not yet crawled).
 - **Archived:** full session + presentation crawl completed 2026-08-26 into `data/gps2026/` (gitignored) via `data/crawl_gps2026.py` (checkpointed per-file, resumable, probeable `status.json`). The feed may go dark when the 2027 cycle starts; the local archive is the system of record.
-- **2025 data is unavailable** (site 403s, bucket restricted to current meeting). Legacy `meetings.aps.org` has MAR24 and earlier as an optional future second dataset. Not MVP.
 - **Granularity: talks only.** Sessions are display context (title, room, time), never a recommendation unit.
-- **Out of scope:** arXiv/publication enrichment of presenter profiles; Supabase Auth; sessions as units.
 
 ### 2.1 Stage-0 ground-truth micro-corpus (the TDD harness)
 
