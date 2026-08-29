@@ -37,6 +37,10 @@ class AnthropicLLM:
             system="Respond with a single JSON object and nothing else. "
                    f"Expected shape: {schema_hint}",
             messages=[{"role": "user", "content": prompt}],
+            # Models with adaptive thinking (claude-sonnet-5) may burn the
+            # whole token budget on a ThinkingBlock and return no text at
+            # all for these small JSON calls; thinking buys nothing here.
+            thinking={"type": "disabled"},
         )
         # Models with default extended thinking (e.g. claude-sonnet-5) emit a
         # ThinkingBlock before the text answer; take the first TextBlock.

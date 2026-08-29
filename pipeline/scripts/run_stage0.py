@@ -95,7 +95,12 @@ def main() -> None:
 
     status("similarity")
     names = sorted({n for nid in g.nodes() for n in g.names_of(nid)})
-    pairs = propose_pairs(names, embed=sbert_embedder())
+    # 0.75 (the library default) proposed zero anchor-adjacent pairs on the
+    # first live run: sbert scores "self-assembly" vs "self-assembled
+    # monolayers" at ~0.51 and the photocurrent-name family at 0.60-0.73.
+    # The embedding gate only has to be generous enough to SHOW pairs to the
+    # LLM judge — the judge is the discriminator.
+    pairs = propose_pairs(names, embed=sbert_embedder(), threshold=0.50)
     status(f"similarity: {len(names)} names, {len(pairs)} proposed pairs")
     verdicts = []
     for i, (a, b) in enumerate(pairs):
