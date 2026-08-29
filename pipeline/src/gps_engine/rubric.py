@@ -6,15 +6,39 @@ from dataclasses import dataclass
 from gps_engine.corpus import Talk
 from gps_engine.llm import LLMClient
 
-RUBRIC_PROMPT = """You judge whether a conference talk is method-relevant to a
-researcher, via these lines of inquiry (score each 0-5):
-1. shared_methods: do they USE the same or equivalent methods, even under
-   different names? (Judge the mathematics/apparatus, not the vocabulary.)
-2. transferability: could the candidate's techniques plausibly transfer to the
-   researcher's problem?
-3. analogous_phenomena: do they study analogous phenomena in different systems?
-Then decide match: true only if a physicist would thank you for the pointer.
-Be strict; most candidates are not matches.
+RUBRIC_PROMPT = """You judge whether a candidate talk is METHOD-related to a
+researcher's work.
+
+The ONLY criterion: both works USE at least one same (or equivalent) method,
+and use it the same WAY — the method plays the same role in each workflow.
+Domain, material system, and scientific problem are IRRELEVANT; a cross-domain
+match is the most valuable kind. Do NOT lower any score because the fields,
+materials, or research questions differ.
+
+Explicitly NOT the criterion:
+- Shared phenomenon or physics is NOT sufficient (two works about
+  conduction that MEASURE it by different techniques do not match).
+- Usefulness is NOT the question ("could they learn from each other" or
+  "transferable insight" must not enter the judgment).
+- Shared vocabulary or community is NOT the question.
+
+Score each 0-5:
+1. same_method: do they use at least one same or equivalent technique,
+   measurement, fabrication process, algorithm, or theoretical framework —
+   even under different names? Judge the apparatus/procedure, not the words.
+2. specificity: how specific is the sharpest shared method? Ubiquitous
+   umbrella terms (transport, spectroscopy, simulation, microscopy) score
+   0-1; a method named the way practitioners name it (e.g. an EGaIn
+   junction, Langmuir-Blodgett deposition, transient-photocurrent readout)
+   scores 4-5.
+3. usage_parallel: is the shared method used the same WAY — same role in
+   the workflow, same inference pattern? (E.g. both use self-assembly AS
+   the fabrication step that builds the functional structure; both read a
+   time-transient's shape to infer microscopic dynamics; both program a
+   persistent state and read it back in transport.)
+
+match: true only if same_method >= 3 AND specificity >= 3 AND
+usage_parallel >= 3.
 
 RESEARCHER'S ABSTRACT:
 {mine}
@@ -27,16 +51,16 @@ Abstract: {abstract}"""
 @dataclass(frozen=True)
 class Judgment:
     candidate_id: int
-    shared_methods: int
-    transferability: int
-    analogous_phenomena: int
+    same_method: int
+    specificity: int
+    usage_parallel: int
     match: bool
     cross_domain: bool
     why: str
 
     @property
     def score(self) -> int:
-        return self.shared_methods + self.transferability + self.analogous_phenomena
+        return self.same_method + self.specificity + self.usage_parallel
 
 
 def judge_candidate(mine: Talk, cand: Talk, llm: LLMClient) -> Judgment:
@@ -44,16 +68,16 @@ def judge_candidate(mine: Talk, cand: Talk, llm: LLMClient) -> Judgment:
         RUBRIC_PROMPT.format(
             mine=f"{mine.title}\n{mine.abstract}",
             title=cand.title, abstract=cand.abstract),
-        schema_hint='{"shared_methods": 0, "transferability": 0, '
-                    '"analogous_phenomena": 0, "match": true, "why": "string"}',
+        schema_hint='{"same_method": 0, "specificity": 0, '
+                    '"usage_parallel": 0, "match": true, "why": "string"}',
     )
     if not isinstance(out["match"], bool):
         raise ValueError(f"non-boolean match from LLM: {out['match']!r}")
     return Judgment(
         candidate_id=cand.id,
-        shared_methods=int(out["shared_methods"]),
-        transferability=int(out["transferability"]),
-        analogous_phenomena=int(out["analogous_phenomena"]),
+        same_method=int(out["same_method"]),
+        specificity=int(out["specificity"]),
+        usage_parallel=int(out["usage_parallel"]),
         match=out["match"],
         # unknown domain never counts as cross-domain — surprise picks need affirmative evidence
         cross_domain=bool(mine.units) and bool(cand.units) and not (set(mine.units) & set(cand.units)),

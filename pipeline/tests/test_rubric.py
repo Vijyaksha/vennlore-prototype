@@ -14,7 +14,7 @@ OTHER = Talk(id=2, title="Optoelectronic synapses",
 
 def make_llm(match=True):
     return FakeLLM(responses=[{
-        "shared_methods": 4, "transferability": 3, "analogous_phenomena": 4,
+        "same_method": 4, "specificity": 3, "usage_parallel": 4,
         "match": match, "why": "both exhibit optically trained conductance memory",
     }])
 
@@ -41,8 +41,8 @@ def test_prompt_contains_both_abstracts():
 
 
 def test_non_boolean_match_raises():
-    llm = FakeLLM(responses=[{"shared_methods": 4, "transferability": 3,
-                              "analogous_phenomena": 4, "match": "false", "why": "w"}])
+    llm = FakeLLM(responses=[{"same_method": 4, "specificity": 3,
+                              "usage_parallel": 4, "match": "false", "why": "w"}])
     with pytest.raises(ValueError):
         judge_candidate(ME, OTHER, llm)
 

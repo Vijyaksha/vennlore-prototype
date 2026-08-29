@@ -4,8 +4,8 @@ from gps_engine.rubric import Judgment
 
 def J(cid, score, match=True, cross=False):
     s = score // 3
-    return Judgment(candidate_id=cid, shared_methods=s, transferability=s,
-                    analogous_phenomena=score - 2 * s, match=match,
+    return Judgment(candidate_id=cid, same_method=s, specificity=s,
+                    usage_parallel=score - 2 * s, match=match,
                     cross_domain=cross, why="w")
 
 
