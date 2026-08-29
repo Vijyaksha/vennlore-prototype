@@ -28,5 +28,20 @@ def test_anthropic_llm_rejects_non_text_block(monkeypatch):
 
     llm._client.messages.create = lambda **kwargs: StubMessage()
 
-    with pytest.raises(RuntimeError, match="expected TextBlock"):
+    with pytest.raises(RuntimeError, match="no TextBlock in response"):
         llm.complete_json("p", schema_hint="x")
+
+
+def test_anthropic_llm_skips_thinking_block(monkeypatch):
+    """Models with extended thinking prepend a ThinkingBlock; the wrapper
+    must find the TextBlock wherever it sits in the content list."""
+    monkeypatch.setenv("ANTHROPIC_API_KEY", "fake-key")
+    from anthropic.types import TextBlock
+    llm = AnthropicLLM(model="claude-x")
+
+    class StubMessage:
+        content = [object(), TextBlock(type="text", text='{"ok": true}')]
+
+    llm._client.messages.create = lambda **kwargs: StubMessage()
+
+    assert llm.complete_json("p", schema_hint="x") == {"ok": True}

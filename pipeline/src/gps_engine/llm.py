@@ -22,7 +22,7 @@ class FakeLLM:
 
 
 class AnthropicLLM:
-    def __init__(self, model: str, max_tokens: int = 1024):
+    def __init__(self, model: str, max_tokens: int = 4096):
         import anthropic
         self._client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
         self._model = model
@@ -38,9 +38,12 @@ class AnthropicLLM:
                    f"Expected shape: {schema_hint}",
             messages=[{"role": "user", "content": prompt}],
         )
-        block = msg.content[0]
-        if not isinstance(block, TextBlock):
-            raise RuntimeError(f"expected TextBlock, got {type(block).__name__}")
+        # Models with default extended thinking (e.g. claude-sonnet-5) emit a
+        # ThinkingBlock before the text answer; take the first TextBlock.
+        block = next((b for b in msg.content if isinstance(b, TextBlock)), None)
+        if block is None:
+            kinds = [type(b).__name__ for b in msg.content]
+            raise RuntimeError(f"no TextBlock in response, got {kinds}")
         text = block.text.strip()
         if text.startswith("```"):
             text = text.strip("`").removeprefix("json").strip()
