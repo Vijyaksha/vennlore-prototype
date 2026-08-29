@@ -1,5 +1,7 @@
 # Stage-0 Matching Engine Implementation Plan (Plan 1 of 3)
 
+> **AMENDMENT 2026-08-29 (Rupert):** extraction switched from Path B (own prompt) to **LlamaIndex** — `SchemaLLMPathExtractor` (entities=METHOD, relations=USES_METHOD, strict) with the Anthropic LLM integration. Task 5's module is superseded by a LlamaIndex-backed extractor; everything downstream (similarity pass, funnel, rubric, recommend) is unchanged. See the "LlamaIndex rework" commits on feat/stage0-engine.
+
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
 **Goal:** Build the methods-only graph + GraphRAG recommendation engine and prove it against the ground-truth micro-corpus (anchor ↔ 10 positives, silence on ~50 negatives).
