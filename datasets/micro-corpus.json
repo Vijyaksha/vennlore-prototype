@@ -1,29 +1,57 @@
 {
-  "description": "Stage-0 ground-truth micro-corpus for the method-matching engine. Anchor = Rupert's porphyrin nanorod paper. Positives approved by Rupert 2026-08-26. Presentation IDs refer to the GPS 2026 feed (meeting 441) archived in data/gps2026/.",
+  "description": "Stage-0 ground-truth micro-corpus for the method-matching engine. Anchor = Rupert's porphyrin nanorod paper. Positives v2 approved by Rupert 2026-08-29 after redefinition: relatedness = same METHOD USED THE SAME WAY in a different domain (never shared phenomenon/physics, never domain labels). Presentation IDs refer to the GPS 2026 feed (meeting 441) archived in data/gps2026/.",
   "anchor": {
     "source": "external-paper",
     "title": "Photoconductivity of Self-Assembled Porphyrin Nanorods",
     "authors": "Schwab, Smith, Bond-Watts, Johnston, Hone, Johnson, de Paula, W.F. Smith",
     "venue": "Nano Letters 2004",
     "method_axes": [
-      "self-assembly of functional nanostructures",
-      "photoconductivity / photocurrent transient measurement",
-      "charge transport in 1D / molecular nanostructures",
-      "bias-training / memory / hysteretic response"
+      "M1: molecular self-assembly as the fabrication step (molecules organize into the functional 1D conductor)",
+      "M2: photocurrent/photoconductivity measurement (light on/off, current vs time; transient shape read mechanistically)",
+      "M3: charge transport measured through a molecular/1D structure between electrodes, interpreted via molecular-orbital energetics",
+      "M4: bias-history programming with persistent state read back in transport (memory/hysteresis protocol)"
     ]
   },
   "positives": [
-    { "id": 2802, "class": "control-same-domain", "title": "Memristive Properties of Ni-DNA Thin-Film Devices", "unit": "DPOLY", "why": "self-assembled monolayer of 1D biomolecular wire + resistive switching, in the anchor's home session (Organic Electronics & Photonics)" },
-    { "id": 12342, "class": "control-same-domain", "title": "Magnetoresistive Switching in Porphene, a 2D Porphyrin Based Polymer", "unit": "FIAP", "why": "same molecular family (porphyrin) + conductance switching" },
-    { "id": 5432, "class": "surprise", "title": "Sequence and Phosphorylation Modifications Dictate Charge Transport in Cell-Penetrating Peptides", "unit": "DBIO", "why": "SAM self-assembly + molecular junction transport measurements, in protein biophysics" },
-    { "id": 3100, "class": "surprise", "title": "Chiral-induced spin selectivity in polypeptides on magnetic thin films", "unit": "DCOMP", "why": "SAMs of helical molecules + transport through them, spintronics question" },
-    { "id": 11542, "class": "surprise", "title": "Optoelectronic Synapses Based on Confined Growth of Ruddlesden-Popper Perovskite Nanocrystals in Carbon Nanotubes", "unit": "DMP", "why": "photoinduced charge transfer + trainable synaptic memory = anchor's trainable photocurrent, modern descendant" },
-    { "id": 8765, "class": "surprise", "title": "Persistent optical phenomena in oxide semiconductors", "unit": "DMP,DCOMP,FIAP", "why": "persistent photoconductivity dynamics (slow grow/decay), inorganic oxide domain" },
-    { "id": 159, "class": "surprise", "title": "Neuron- and Axon-like behavior in metal-to-insulator transition material", "unit": "DCMP", "why": "electrically triggered repeatable resistive-state training, correlated oxides" },
-    { "id": 12772, "class": "surprise", "title": "Ultrafast transient photocurrent in hybrid lead halide perovskites", "unit": "DLS", "why": "time-resolved photocurrent transient measurement as core method, laser science" },
-    { "id": 1317, "class": "surprise-bold", "title": "Networks of Coupled Phase Oscillators as a Neuromorphic Platform Trained with Equilibrium Propagation", "unit": "DBIO,DSOFT,DSNP", "why": "training a physical system's response via applied drive - conceptual kinship to bias-training" },
-    { "id": 13160, "class": "surprise-bold", "title": "Driven Abrikosov Vortices for Narrowband EM Field Sensing and Reservoir Computing", "unit": "APS", "why": "trainable dynamical memory in superconducting vortex matter - furthest deliberate reach" }
+    { "id": 2802, "class": "control-same-domain", "title": "Memristive Properties of Ni-DNA Thin-Film Devices", "unit": "DPOLY", "axes": "M1+M3+M4",
+      "why": "Identical usage pattern step for step: molecule self-assembles onto gold as the active layer (Au-thiol), I-V/voltammetry through the molecular film, resistive states programmed in a voltage window. Same assemble->contact->program-and-read loop, different molecule. No light." },
+    { "id": 12342, "class": "control-same-domain", "title": "Magnetoresistive Switching in Porphene, a 2D Porphyrin Based Polymer", "unit": "FIAP", "axes": "M3+M4-adjacent",
+      "why": "Same read-out usage: switchable conduction state measured electrically through a porphyrin framework; programming input swapped (magnetic field for bias). Fabrication is polymerization, not assembly. NOTE: FIAP unit means engine's unit test calls this cross-domain - expected, not an error." },
+    { "id": 5432, "class": "surprise-b", "title": "Sequence and Phosphorylation Modifications Dictate Charge Transport in Cell-Penetrating Peptides", "unit": "DBIO", "axes": "M1+M3",
+      "why": "Cleanest usage mirror: peptides self-assemble into the junction's active layer (M1, SAM-on-gold ~9 talks corpus-wide), and conductance through it is used as a probe of molecular electronic structure - both papers explain their currents via frontier-orbital energy alignment (anchor: coupled LUMOs). Molecular-junction club: ~10 of 11,249 talks. Problem is biochemistry (sequence/phosphorylation -> conductance)." },
+    { "id": 3100, "class": "surprise-b", "title": "Chiral-induced spin selectivity in polypeptides on magnetic thin films", "unit": "DCOMP", "axes": "M1+M3",
+      "why": "Same inversion of the measurement: assembled molecular layer (thiol-anchored SAM, anchor's chemistry) is the transport medium, and transport through it is used to reveal a structural property of the molecules - their handedness, as anchor's revealed stacking. Contrast knob is a magnet instead of light. Problem is spin filtering." },
+    { "id": 11810, "class": "surprise-b", "title": "Direct observation of dynamic energy transport and high thermal conductance across solid-molecule junctions", "unit": "DCP", "axes": "M1+M3-geometry",
+      "why": "Same experimental design: junction built by self-assembly (alkanethiol SAMs bonded to Au(111) - most literally anchor-like fabrication in the set), then the whole study is transport dynamics across it, time-resolved. Transported quantity is heat, probe is ultrafast electron diffraction. Problem is interfacial thermal physics." },
+    { "id": 5389, "class": "surprise-b", "title": "Self-Assembly of Biomimetic Nanostructures with High Complexity", "unit": "DSOFT", "axes": "M1",
+      "why": "Same role for the method: self-assembly is the synthesis step - 1D building blocks (nanofibers) organize into the functional material whose emergent property is the paper's subject; both then face the identical part-ordered/part-disordered packing problem. Emergent property studied is mechanics, not conduction - zero electronics/optics; purest M1 domain jump. Single-axis by design." },
+    { "id": 12292, "class": "surprise-b-bold", "title": "Femto-ampere Photocurrent Measurements for the LISA GRS", "unit": "SPS", "axes": "M2-adjacent",
+      "why": "Same laboratory practice at its extreme: light onto gold, measure the resulting current at femtoampere resolution. CAVEATS (deliberate): channel is photoemission not photoconduction (cousins in the light-in/current-out family), and usage is control-tool (test-mass discharge) not material-probe. Kept as the grain-of-kinship stress test; undergraduate poster. Problem is gravitational-wave instrumentation." },
+    { "id": 12772, "class": "surprise-a", "title": "Ultrafast transient photocurrent in hybrid lead halide perovskites", "unit": "DLS", "axes": "M2+1D",
+      "why": "Identical inference pattern: light pulse, record photocurrent vs time on a 1D structure (microribbon), read carrier trapping/drift/recombination from the transient's shape - the anchor's exact measurement-and-reasoning loop at femtoseconds instead of milliseconds. 'Transient photocurrent' appears in 2 talks corpus-wide. Different material community (perovskite optoelectronics) - type (a)." },
+    { "id": 8500, "class": "surprise-a", "title": "Helicity Dependent Photocurrent in Eshelby Twisted GeS Nanowires", "unit": "DMP", "axes": "M2+M3-geometry",
+      "why": "Same trick: photocurrent on a single 1D wire used to read the wire's internal organization (their built-in helical twist via polarization rotation; anchor's molecular stacking via light response). Both treat photocurrent response as a structural fingerprint of a wire's insides. Inorganic vapor-grown wires - type (a)." },
+    { "id": 9437, "class": "surprise-a", "title": "Ferroelectric Field Effect in ReS2 via Self-Assembled Epitaxial P(VDF-TrFE) Nanowires", "unit": "DMP,DCMP", "axes": "M1+M4-adjacent",
+      "why": "Same two-step usage: molecules ordered (Langmuir-Blodgett + annealing; only talk in corpus naming LB) into close-packed NANOWIRES that become the device's functional element, aimed at nonvolatile programmable transport states. Assembly-into-wires as fabrication + persistent-state transport as goal = anchor's frame in the 2D-materials community - type (a). No light; switched conduction lives in the ReS2 beneath." }
   ],
+  "stretch_unscored": {
+    "note": "Phenomenon/behavior analogies WITHOUT shared technique - demoted 2026-08-29 when relatedness was redefined as method-usage. NOT loaded into the Stage-0 corpus and never counted as hits, misses, or false positives. Revisit if a future eval wants to test conceptual kinship.",
+    "ids": [11542, 159, 1317, 13160],
+    "titles": ["Optoelectronic Synapses (RPP nanocrystals in CNTs)", "Neuron/Axon-like behavior in LSMO", "Coupled Phase Oscillators / Equilibrium Propagation", "Driven Abrikosov Vortices for Reservoir Computing"]
+  },
+  "excluded_bookkeeping": {
+    "note": "IDs deliberately in NEITHER positives nor negatives.",
+    "removed_from_positives_v1": [
+      { "id": 8765, "why": "Persistent photoconductivity in oxides - single-axis and phenomenon-flavored under the strict method-usage definition" },
+      { "id": 949, "why": "Defect-assisted photocurrent in vdW junctions - redundant third member of the type-(a) optoelectronics cluster" }
+    ],
+    "struck_from_negatives": [
+      { "id": 2801, "why": "PM6:Y6 photoexcitation - same domain but methods are TR-PL/TR-2PPE spectroscopy, not transport: fails as method-positive AND as must-not-match negative" }
+    ],
+    "rejected_candidates": [
+      { "id": 3003, "why": "Peptide hydrogel tumor scaffolds - good M1 usage-jump but co-sponsored by DPOLY, so engine's unit test correctly calls it same-domain; cannot serve as a surprise" }
+    ]
+  },
   "negatives": {
     "status": "approved-by-rupert-2026-08-26",
     "expected_outcome": "engine returns no method-match for every negative; empty result is the correct answer",
@@ -33,11 +61,11 @@
                          10745, 11387, 11524, 11620, 12774, 12795, 15020],
     "same_domain_different_method": [2798, 2799, 2804, 4569, 5514, 5515, 5518, 5810, 6585, 6586],
     "struck_from_proposal": [
-      { "id": 434, "why": "vortex dynamics - method-adjacent to positive 13160 (Abrikosov vortices); ambiguous ground truth" },
+      { "id": 434, "why": "vortex dynamics - method-adjacent to former positive 13160; ambiguous ground truth" },
       { "id": 8593, "why": "space-charge-limited transport - adjacent to anchor's charge-transport axis; contestable negative" },
       { "id": 13294, "why": "non-technical career session (empty units)" },
       { "id": 14943, "why": "admin placeholder ('Delay Session Start'), not a talk" },
-      { "id": 2801, "why": "photoexcited organic heterojunction - engine could correctly flag; too method-close for a must-not-match" },
+      { "id": 2801, "why": "photoexcited organic heterojunction - too method-close for a must-not-match (later also rejected as positive: methods are spectroscopy)" },
       { "id": 7077, "why": "molecular spin/electron transport - too method-close (cf. positive 3100 CISS)" }
     ]
   }
