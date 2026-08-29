@@ -11,9 +11,9 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 from gps_engine.corpus import Talk, load_talks  # noqa: E402
-from gps_engine.extraction import extract_methods  # noqa: E402
 from gps_engine.funnel import candidates  # noqa: E402
 from gps_engine.graph import MethodGraph  # noqa: E402
+from gps_engine.li_extraction import build_extractor, extract_methods_li  # noqa: E402
 from gps_engine.llm import AnthropicLLM  # noqa: E402
 from gps_engine.recommend import assemble  # noqa: E402
 from gps_engine.rubric import Judgment, judge_candidate  # noqa: E402
@@ -76,14 +76,14 @@ def main() -> None:
         topics=(), units=("DPOLY",), session_title="", start=None, end=None)
     talks[0] = anchor
 
-    extract_llm = AnthropicLLM(EXTRACT_MODEL)
+    extractor = build_extractor(EXTRACT_MODEL)
     judge_llm = AnthropicLLM(JUDGE_MODEL)
 
     status("extraction")
     g = MethodGraph()
     for i, t in enumerate(sorted(talks.values(), key=lambda t: t.id)):
         ms = checkpointed(OUT / "methods" / f"{t.id}.json",
-                          lambda t=t: extract_methods(t, extract_llm))
+                          lambda t=t: extract_methods_li(t, extractor))
         for m in ms:
             g.link_talk(t.id, m)
         if i % 5 == 0:
