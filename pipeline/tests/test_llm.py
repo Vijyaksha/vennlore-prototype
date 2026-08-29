@@ -27,8 +27,10 @@ def test_anthropic_llm_rejects_non_text_block(monkeypatch):
         content = [object()]  # not a TextBlock
 
     llm._client.messages.create = lambda **kwargs: StubMessage()
+    import gps_engine.llm as llm_mod
+    monkeypatch.setattr(llm_mod.time, "sleep", lambda s: None)
 
-    with pytest.raises(RuntimeError, match="no TextBlock in response"):
+    with pytest.raises(RuntimeError, match="no TextBlock in response after 3 attempts"):
         llm.complete_json("p", schema_hint="x")
 
 

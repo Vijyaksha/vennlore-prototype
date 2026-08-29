@@ -2,6 +2,7 @@
 with FakeLLM; AnthropicLLM is exercised only by gated scripts."""
 import json
 import os
+import time
 from typing import Protocol
 
 
@@ -31,24 +32,33 @@ class AnthropicLLM:
     def complete_json(self, prompt: str, schema_hint: str) -> dict:
         from anthropic.types import TextBlock
 
-        msg = self._client.messages.create(
-            model=self._model,
-            max_tokens=self._max_tokens,
-            system="Respond with a single JSON object and nothing else. "
-                   f"Expected shape: {schema_hint}",
-            messages=[{"role": "user", "content": prompt}],
-            # Models with adaptive thinking (claude-sonnet-5) may burn the
-            # whole token budget on a ThinkingBlock and return no text at
-            # all for these small JSON calls; thinking buys nothing here.
-            thinking={"type": "disabled"},
-        )
-        # Models with default extended thinking (e.g. claude-sonnet-5) emit a
-        # ThinkingBlock before the text answer; take the first TextBlock.
-        block = next((b for b in msg.content if isinstance(b, TextBlock)), None)
-        if block is None:
-            kinds = [type(b).__name__ for b in msg.content]
-            raise RuntimeError(f"no TextBlock in response, got {kinds}")
-        text = block.text.strip()
-        if text.startswith("```"):
-            text = text.strip("`").removeprefix("json").strip()
-        return json.loads(text)
+        # The API intermittently returns an empty content list (observed
+        # live: stop_reason end_turn, content []); retry before giving up.
+        last_kinds: list[str] = []
+        for attempt in range(3):
+            if attempt:
+                time.sleep(2 * attempt)
+            msg = self._client.messages.create(
+                model=self._model,
+                max_tokens=self._max_tokens,
+                system="Respond with a single JSON object and nothing else. "
+                       f"Expected shape: {schema_hint}",
+                messages=[{"role": "user", "content": prompt}],
+                # Models with adaptive thinking (claude-sonnet-5) may burn
+                # the whole token budget on a ThinkingBlock and return no
+                # text for these small JSON calls; thinking buys nothing
+                # here.
+                thinking={"type": "disabled"},
+            )
+            # Take the first TextBlock wherever it sits (thinking-capable
+            # models may prepend other block types).
+            block = next(
+                (b for b in msg.content if isinstance(b, TextBlock)), None)
+            if block is not None:
+                text = block.text.strip()
+                if text.startswith("```"):
+                    text = text.strip("`").removeprefix("json").strip()
+                return json.loads(text)
+            last_kinds = [type(b).__name__ for b in msg.content]
+        raise RuntimeError(
+            f"no TextBlock in response after 3 attempts, got {last_kinds}")
