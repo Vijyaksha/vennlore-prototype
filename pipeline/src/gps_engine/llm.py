@@ -10,6 +10,12 @@ class LLMClient(Protocol):
     def complete_json(self, prompt: str, schema_hint: str) -> dict: ...
 
 
+class LLMRefusal(RuntimeError):
+    """The API's safety layer declined the request (stop_reason 'refusal').
+    Deterministic for a given prompt — retrying is pointless; callers decide
+    the fallback policy."""
+
+
 class FakeLLM:
     def __init__(self, responses: list[dict]):
         self._responses = list(responses)
@@ -50,6 +56,8 @@ class AnthropicLLM:
                 # here.
                 thinking={"type": "disabled"},
             )
+            if msg.stop_reason == "refusal":
+                raise LLMRefusal(f"model refused: {prompt[:120]!r}")
             # Take the first TextBlock wherever it sits (thinking-capable
             # models may prepend other block types).
             block = next(

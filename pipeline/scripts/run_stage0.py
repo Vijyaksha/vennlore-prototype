@@ -14,7 +14,7 @@ from gps_engine.corpus import Talk, load_talks  # noqa: E402
 from gps_engine.funnel import candidates  # noqa: E402
 from gps_engine.graph import MethodGraph  # noqa: E402
 from gps_engine.li_extraction import build_extractor, extract_methods_li  # noqa: E402
-from gps_engine.llm import AnthropicLLM  # noqa: E402
+from gps_engine.llm import AnthropicLLM, LLMRefusal  # noqa: E402
 from gps_engine.recommend import assemble  # noqa: E402
 from gps_engine.rubric import Judgment, judge_candidate  # noqa: E402
 from gps_engine.similarity import apply_verdicts, judge_pair, propose_pairs, sbert_embedder  # noqa: E402
@@ -102,10 +102,23 @@ def main() -> None:
     # LLM judge — the judge is the discriminator.
     pairs = propose_pairs(names, embed=sbert_embedder(), threshold=0.50)
     status(f"similarity: {len(names)} names, {len(pairs)} proposed pairs")
+    def judge_or_refusal(a: str, b: str) -> dict:
+        # The API's safety layer occasionally refuses an innocuous pair
+        # (observed live: "hydrogen bonding modulation" vs "intra-monomer
+        # hydrogen bonding design"). Policy: no edge, loudly marked — a
+        # refusal must never silently masquerade as a real verdict.
+        try:
+            return judge_pair(a, b, judge_llm)
+        except LLMRefusal:
+            status(f"REFUSAL (defaulting to no-edge): {a!r} vs {b!r}")
+            return {"verdict": "unrelated",
+                    "why": "API REFUSAL (stop_reason=refusal); defaulted to "
+                           "no-edge, not a real judgment"}
+
     verdicts = []
     for i, (a, b) in enumerate(pairs):
         v = checkpointed(OUT / "verdicts" / f"{pair_key(a, b)}.json",
-                         lambda a=a, b=b: judge_pair(a, b, judge_llm))
+                         lambda a=a, b=b: judge_or_refusal(a, b))
         verdicts.append((a, b, v))
         if i % 5 == 0:
             status(f"verdicts {i + 1}/{len(pairs)}")
