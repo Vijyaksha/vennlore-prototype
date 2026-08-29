@@ -65,10 +65,28 @@ def test_missing_annotation_raises():
         extract_methods_li(TALK, fake)
 
 
+def test_work_entity_ignored_single_method_survives():
+    """Regression pin for the single-method dropout: SchemaLLMPathExtractor
+    only surfaces entities that appear in a valid (non-self-referencing)
+    triplet, so a naive METHOD--USES_METHOD-->METHOD schema structurally
+    drops talks with exactly one method (no partner to pair with). The fix
+    is a WORK--USES_METHOD-->METHOD schema where the subject is always the
+    fixed "THIS_WORK" node, so a single method still forms a valid triplet
+    and survives. This test pins that extract_methods_li harvests only the
+    METHOD entity and ignores the WORK entity, even when it's the only one."""
+    fake = FakeExtractor(entities=[
+        EntityNode(label="WORK", name="THIS_WORK"),
+        EntityNode(label="METHOD", name="DMRG"),
+    ])
+    assert extract_methods_li(TALK, fake) == ["DMRG"]
+
+
 def test_build_extractor_smoke(monkeypatch):
     """Construction only — never call() this; no network, no live LLM."""
     pytest.importorskip("llama_index.llms.anthropic")
     monkeypatch.setenv("ANTHROPIC_API_KEY", "sk-test-dummy-not-a-real-key")
     extractor = build_extractor("claude-haiku-4-5-20251001")
     assert extractor.strict is True
-    assert extractor.kg_validation_schema == {"METHOD": ["USES_METHOD"]}
+    assert extractor.kg_validation_schema == {"WORK": ["USES_METHOD"]}
+    assert extractor.raise_on_error is True
+    assert extractor.max_triplets_per_chunk == 25

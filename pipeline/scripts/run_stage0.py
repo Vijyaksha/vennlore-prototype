@@ -76,14 +76,18 @@ def main() -> None:
         topics=(), units=("DPOLY",), session_title="", start=None, end=None)
     talks[0] = anchor
 
-    extractor = build_extractor(EXTRACT_MODEL)
     judge_llm = AnthropicLLM(JUDGE_MODEL)
 
     status("extraction")
     g = MethodGraph()
     for i, t in enumerate(sorted(talks.values(), key=lambda t: t.id)):
+        # Build a fresh extractor per talk rather than reusing one across the
+        # loop: SchemaLLMPathExtractor.__call__ does asyncio.run(...) per
+        # invocation, and reusing one Anthropic client's httpx transport
+        # across separate event loops is unsafe (the transport binds to the
+        # loop it was first used on). Construction is cheap and offline.
         ms = checkpointed(OUT / "methods" / f"{t.id}.json",
-                          lambda t=t: extract_methods_li(t, extractor))
+                          lambda t=t: extract_methods_li(t, build_extractor(EXTRACT_MODEL)))
         for m in ms:
             g.link_talk(t.id, m)
         if i % 5 == 0:
