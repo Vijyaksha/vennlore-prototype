@@ -239,8 +239,14 @@ def main() -> None:
                                "to no-match, not a real judgment"}
         return checkpointed(OUT / "judgments" / f"{cid}.json", judge)
 
-    judgments = [Judgment(**j)
-                 for j in parallel("rubric", sorted(cands), rubric_one)]
+    # Decision rule: the match verdict is OURS, derived from the scores,
+    # not the LLM's own boolean. Calibrated on the 10+47 ground truth
+    # (2026-08-30): positives score 5-11 total, negatives top out at 4.
+    from dataclasses import replace
+    MATCH_MIN_SCORE = 5
+    judgments = [
+        (lambda j: replace(j, match=j.score >= MATCH_MIN_SCORE))(Judgment(**j))
+        for j in parallel("rubric", sorted(cands), rubric_one)]
 
     picks = assemble(judgments)
     matched_ids = {j.candidate_id for j in judgments if j.match}
