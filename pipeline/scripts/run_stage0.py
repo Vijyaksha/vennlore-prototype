@@ -91,12 +91,18 @@ def main() -> None:
         raise SystemExit(f"micro-corpus ids missing from archive: {sorted(missing)}")
 
     # The anchor is an external paper: represent it as a pseudo-talk (id 0).
+    # Its text = summary + the Rupert-approved method axes from the dataset —
+    # the first live runs showed a 3-line stub starves the rubric (it judged
+    # M1/M3-based positives against an anchor that appeared not to have
+    # those methods).
+    axes = "\n".join(mc["anchor"]["method_axes"])
     anchor = Talk(
         id=0, title=mc["anchor"]["title"],
         abstract=("Self-assembled porphyrin nanorods; photoconductivity with "
                   "fast on/off transients and slow growth/decay; bias-training "
                   "produces reversed short-circuit photocurrent (memory); "
-                  "conduction through coupled LUMOs of stacked molecules."),
+                  "conduction through coupled LUMOs of stacked molecules.\n"
+                  "Methods of this work:\n" + axes),
         topics=(), units=("DPOLY",), session_title="", start=None, end=None)
     talks[0] = anchor
 
