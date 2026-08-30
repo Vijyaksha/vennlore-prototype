@@ -11,6 +11,9 @@ from dataclasses import dataclass
 from gps_engine.physh import PhySH
 
 CONF_AUTO = 0.8        # both filings at least this confident for auto-decisions
+FANIN_MAX = 4          # a shelf holding more methods than this is a hub: it
+                       # confers no sameness (corpus-adaptive IDF — Rupert's
+                       # granularity rule made structural)
 COUSIN_MAX_DIST = 4    # cousins farther than this are treated as distant
 SIM_COUSIN = 0.45      # embedding floor for cousin pairs to reach the LLM
 SIM_UNFILED = 0.50     # embedding floor for pairs lacking tree info (old behavior)
@@ -28,10 +31,28 @@ class Decision:
     evidence: str    # context line handed to the LLM for "judge" pairs
 
 
+def _lca_concept(rel, fa, fb):
+    """Concept id whose label matches the relation's lca (best effort)."""
+    for f in list(fa) + list(fb):
+        if f.get("label") == rel.lca_label:
+            return f["concept"]
+    return rel.lca_label
+
+
 def _cos(u, v):
     nu = math.sqrt(sum(x * x for x in u))
     nv = math.sqrt(sum(x * x for x in v))
     return (sum(a * b for a, b in zip(u, v)) / (nu * nv)) if nu and nv else 0.0
+
+
+def shelf_fanin(filings: dict[str, list[dict]]) -> dict[str, int]:
+    """How many methods file (confidently) onto each concept."""
+    fanin: dict[str, int] = {}
+    for fs in filings.values():
+        for f in fs:
+            if f["confidence"] >= CONF_AUTO:
+                fanin[f["concept"]] = fanin.get(f["concept"], 0) + 1
+    return fanin
 
 
 def decide_pairs(names: list[str], filings: dict[str, list[dict]],
@@ -39,15 +60,24 @@ def decide_pairs(names: list[str], filings: dict[str, list[dict]],
     """filings: name -> [{"concept","label","confidence"}]; texts: name ->
     'name: description' string used for the embedding screen."""
     vecs = dict(zip(names, embed([texts.get(n, n) for n in names])))
+    fanin = shelf_fanin(filings)
     out = []
     for i in range(len(names)):
         for j in range(i + 1, len(names)):
             a, b = names[i], names[j]
-            out.append(_decide(a, b, filings, physh, _cos(vecs[a], vecs[b])))
+            out.append(_decide(a, b, filings, physh,
+                               _cos(vecs[a], vecs[b]), fanin))
     return out
 
 
-def _decide(a, b, filings, physh, sim) -> Decision:
+def _shared_concepts(fa, fb):
+    sa = {f["concept"] for f in fa if f["confidence"] >= CONF_AUTO}
+    sb = {f["concept"] for f in fb if f["confidence"] >= CONF_AUTO}
+    return sa & sb
+
+
+def _decide(a, b, filings, physh, sim, fanin=None) -> Decision:
+    fanin = fanin or {}
     fa, fb = filings.get(a) or [], filings.get(b) or []
     if fa and fb:
         rel = physh.best_relation([f["concept"] for f in fa],
@@ -56,9 +86,21 @@ def _decide(a, b, filings, physh, sim) -> Decision:
         conf_b = max(f["confidence"] for f in fb)
         confident = conf_a >= CONF_AUTO and conf_b >= CONF_AUTO
         if rel.kind == "same" and confident:
-            return Decision(a, b, "auto-same", "physh-same-concept", 10,
-                            f"both file onto PhySH '{rel.lca_label}'", "")
-        if rel.kind == "ancestor" and rel.distance <= 2 and confident:
+            shared = _shared_concepts(fa, fb)
+            rare = [c for c in shared if fanin.get(c, 0) <= FANIN_MAX]
+            if rare:
+                return Decision(a, b, "auto-same", "physh-same-concept", 10,
+                                f"both file onto rare PhySH shelf "
+                                f"'{physh.label.get(rare[0], '?')}'", "")
+            # hub shelf: shared name-tag, not shared identity — needs a judge
+            if sim >= SIM_COUSIN:
+                ev = (f"both file onto the BROAD PhySH shelf "
+                      f"'{rel.lca_label}' (a hub holding many corpus "
+                      f"methods — shelf-sharing alone proves nothing); "
+                      f"text similarity {sim:.2f}")
+                return Decision(a, b, "judge", "llm-hub-shelf", 0, "", ev)
+            return Decision(a, b, "drop", "hub-shelf-low-text-sim", 0, "", "")
+        if rel.kind == "ancestor" and rel.distance <= 2 and confident                 and fanin.get(_lca_concept(rel, fa, fb), 0) <= FANIN_MAX:
             return Decision(a, b, "auto-related", "physh-parent-child",
                             9 - rel.distance,
                             f"PhySH kind-of chain at '{rel.lca_label}'", "")

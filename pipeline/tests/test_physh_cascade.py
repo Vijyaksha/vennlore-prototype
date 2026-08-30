@@ -50,6 +50,19 @@ def test_cascade_auto_same_needs_confidence():
     assert d.action == "judge"  # same shelf but shaky filing -> LLM, not auto
 
 
+def test_cascade_hub_shelf_never_auto_merges():
+    p = tiny_tree()
+    filings = {"a": [F("sa", .9)], "b": [F("sa", .9)]}
+    hub_fanin = {"sa": 20}
+    d = _decide("a", "b", filings, p, sim=0.6, fanin=hub_fanin)
+    assert d.action == "judge" and d.provenance == "llm-hub-shelf"
+    d = _decide("a", "b", filings, p, sim=0.2, fanin=hub_fanin)
+    assert d.action == "drop"
+    # rare shelf still auto-merges
+    d = _decide("a", "b", filings, p, sim=0.2, fanin={"sa": 2})
+    assert d.action == "auto-same"
+
+
 def test_cascade_parent_child_auto_related():
     p = tiny_tree()
     d = _decide("a", "b", {"a": [F("lb", .9)], "b": [F("sa", .9)]}, p, sim=0.1)
