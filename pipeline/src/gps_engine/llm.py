@@ -67,10 +67,16 @@ class AnthropicLLM:
                 if text.startswith("```"):
                     text = text.strip("`").removeprefix("json").strip()
                 # Some models append prose after the object; take the first
-                # complete JSON value and ignore trailing data.
+                # complete JSON value and ignore trailing data. Malformed
+                # JSON consumes a retry attempt rather than killing the run.
                 start = text.find("{")
-                obj, _ = json.JSONDecoder().raw_decode(text[start:] if start >= 0 else text)
-                return obj
+                try:
+                    obj, _ = json.JSONDecoder().raw_decode(
+                        text[start:] if start >= 0 else text)
+                    return obj
+                except json.JSONDecodeError:
+                    last_kinds = [f"malformed-json({text[:80]!r})"]
+                    continue
             last_kinds = [type(b).__name__ for b in msg.content]
         raise RuntimeError(
-            f"no TextBlock in response after 3 attempts, got {last_kinds}")
+            f"no usable JSON response after 3 attempts, got {last_kinds}")

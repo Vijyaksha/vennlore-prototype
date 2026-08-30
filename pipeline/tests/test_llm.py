@@ -31,7 +31,7 @@ def test_anthropic_llm_rejects_non_text_block(monkeypatch):
     import gps_engine.llm as llm_mod
     monkeypatch.setattr(llm_mod.time, "sleep", lambda s: None)
 
-    with pytest.raises(RuntimeError, match="no TextBlock in response after 3 attempts"):
+    with pytest.raises(RuntimeError, match="no usable JSON response after 3 attempts"):
         llm.complete_json("p", schema_hint="x")
 
 
@@ -87,3 +87,21 @@ def test_anthropic_llm_tolerates_trailing_prose(monkeypatch):
 
     llm._client.messages.create = lambda **kwargs: StubMessage()
     assert llm.complete_json("p", schema_hint="x") == {"ok": 1}
+
+
+def test_anthropic_llm_retries_malformed_json(monkeypatch):
+    from anthropic.types import TextBlock
+    import gps_engine.llm as llm_mod
+    monkeypatch.setenv("ANTHROPIC_API_KEY", "fake-key")
+    monkeypatch.setattr(llm_mod.time, "sleep", lambda s: None)
+    llm = AnthropicLLM(model="claude-x")
+
+    replies = ['{"broken": ,}', '{"ok": 2}']
+
+    class StubMessage:
+        def __init__(self, text):
+            self.stop_reason = "end_turn"
+            self.content = [TextBlock(type="text", text=text)]
+
+    llm._client.messages.create = lambda **kwargs: StubMessage(replies.pop(0))
+    assert llm.complete_json("p", schema_hint="x") == {"ok": 2}
