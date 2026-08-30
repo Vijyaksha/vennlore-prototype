@@ -73,3 +73,17 @@ def test_anthropic_llm_raises_llm_refusal(monkeypatch):
     with pytest.raises(LLMRefusal):
         llm.complete_json("p", schema_hint="x")
     assert len(calls) == 1
+
+
+def test_anthropic_llm_tolerates_trailing_prose(monkeypatch):
+    from anthropic.types import TextBlock
+    monkeypatch.setenv("ANTHROPIC_API_KEY", "fake-key")
+    llm = AnthropicLLM(model="claude-x")
+
+    class StubMessage:
+        stop_reason = "end_turn"
+        content = [TextBlock(type="text",
+                             text='Here you go:\n{"ok": 1}\nHope that helps!')]
+
+    llm._client.messages.create = lambda **kwargs: StubMessage()
+    assert llm.complete_json("p", schema_hint="x") == {"ok": 1}

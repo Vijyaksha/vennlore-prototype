@@ -66,7 +66,11 @@ class AnthropicLLM:
                 text = block.text.strip()
                 if text.startswith("```"):
                     text = text.strip("`").removeprefix("json").strip()
-                return json.loads(text)
+                # Some models append prose after the object; take the first
+                # complete JSON value and ignore trailing data.
+                start = text.find("{")
+                obj, _ = json.JSONDecoder().raw_decode(text[start:] if start >= 0 else text)
+                return obj
             last_kinds = [type(b).__name__ for b in msg.content]
         raise RuntimeError(
             f"no TextBlock in response after 3 attempts, got {last_kinds}")
