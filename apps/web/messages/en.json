@@ -1,0 +1,48 @@
+{
+  "common": {
+    "error": "Something went wrong loading this.",
+    "retry": "Try again",
+    "loading": "Loading"
+  },
+  "home": {
+    "headline": "Find the talks that share your methods — not your field.",
+    "searchLabel": "Search for your talk",
+    "searchPlaceholder": "Type your talk title…",
+    "hint": "Type at least 2 characters to find your talk.",
+    "noResults": "No talks match \"{query}\"."
+  },
+  "picks": {
+    "core": "core",
+    "unexpected": "unexpected",
+    "score": "{score}/{max}",
+    "when": "{dow} {date} · {time}",
+    "untimed": "Time TBD",
+    "calendar": "Calendar",
+    "noSecondCore": "No second core match cleared the bar.",
+    "noCore": "No core match cleared the bar.",
+    "noMatches": "No matches cleared the bar for this talk.",
+    "railLabel": "Recommended talks"
+  },
+  "agenda": {
+    "dayCount": "{dow} · day {day} of {total}",
+    "previousDay": "Previous day",
+    "nextDay": "Next day",
+    "dayStripLabel": "Conference days",
+    "walk": "{minutes} min walk",
+    "walkTo": "{minutes} min walk · {room}",
+    "tight": "tight connection — {minutes} min to spare",
+    "spare": "arrive with {minutes} min to spare",
+    "openBoth": "then {hours} h {minutes} min open",
+    "openHours": "then {hours} h open",
+    "openMinutes": "then {minutes} min open",
+    "emptyDay": "No picks this day.",
+    "yourTalk": "YOUR TALK",
+    "presenting": "You're presenting",
+    "disclaimer": "rooms & walking times illustrative"
+  },
+  "nav": {
+    "label": "Pages",
+    "picks": "Picks",
+    "calendar": "Calendar"
+  }
+}
