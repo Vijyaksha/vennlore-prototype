@@ -42,10 +42,11 @@ usage_parallel >= 3.
 
 RESEARCHER'S ABSTRACT:
 {mine}
-
+{mine_claims}
 CANDIDATE TALK:
 Title: {title}
-Abstract: {abstract}"""
+Abstract: {abstract}
+{cand_claims}"""
 
 
 @dataclass(frozen=True)
@@ -63,11 +64,20 @@ class Judgment:
         return self.same_method + self.specificity + self.usage_parallel
 
 
-def judge_candidate(mine: Talk, cand: Talk, llm: LLMClient) -> Judgment:
+def _claims_block(label: str, digest: str) -> str:
+    if not digest:
+        return ""
+    return f"\n{label} (each with its verbatim source quote):\n{digest}\n"
+
+
+def judge_candidate(mine: Talk, cand: Talk, llm: LLMClient,
+                    mine_claims: str = "", cand_claims: str = "") -> Judgment:
     out = llm.complete_json(
         RUBRIC_PROMPT.format(
             mine=f"{mine.title}\n{mine.abstract}",
-            title=cand.title, abstract=cand.abstract),
+            title=cand.title, abstract=cand.abstract,
+            mine_claims=_claims_block("RESEARCHER'S STATED CLAIMS", mine_claims),
+            cand_claims=_claims_block("CANDIDATE'S STATED CLAIMS", cand_claims)),
         schema_hint='{"same_method": 0, "specificity": 0, '
                     '"usage_parallel": 0, "match": true, "why": "string"}',
     )

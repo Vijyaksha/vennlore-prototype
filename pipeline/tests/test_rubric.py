@@ -51,3 +51,23 @@ def test_empty_units_is_not_cross_domain():
     no_units = Talk(**{**OTHER.__dict__, "units": ()})
     j = judge_candidate(ME, no_units, make_llm())
     assert j.cross_domain is False
+
+
+def test_judge_candidate_includes_claims_when_given():
+    from gps_engine.llm import FakeLLM
+    llm = FakeLLM(responses=[{"same_method": 3, "specificity": 3,
+                              "usage_parallel": 3, "match": True, "why": "w"}])
+    judge_candidate(ME, OTHER, llm,
+                    mine_claims="- Anchor claim [source: \"aq\"]",
+                    cand_claims="- Cand claim [source: \"cq\"]")
+    assert "Anchor claim" in llm.prompts[0]
+    assert "Cand claim" in llm.prompts[0]
+    assert "STATED CLAIMS" in llm.prompts[0]
+
+
+def test_judge_candidate_without_claims_has_no_claims_block():
+    from gps_engine.llm import FakeLLM
+    llm = FakeLLM(responses=[{"same_method": 1, "specificity": 1,
+                              "usage_parallel": 1, "match": False, "why": "w"}])
+    judge_candidate(ME, OTHER, llm)
+    assert "STATED CLAIMS" not in llm.prompts[0]

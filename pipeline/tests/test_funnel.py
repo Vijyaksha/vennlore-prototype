@@ -34,3 +34,15 @@ def test_related_to_does_not_recurse_beyond_one_hop():
     g.add_related(b, c)  # a is NOT related to c
     g.link_talk(1, "method-a")
     assert candidates(g, talk_id=1) == {10, 20}
+
+
+def test_min_strength_floor_skips_weak_edges():
+    g = MethodGraph()
+    mine = g.link_talk(0, "self-assembly")
+    strong = g.link_talk(10, "sam formation")
+    weak = g.link_talk(20, "self-organization simulation")
+    g.add_related(mine, strong, strength=8, why="s")
+    g.add_related(mine, weak, strength=2, why="w")
+    assert candidates(g, 0) == {10, 20}                 # floor 0: walk all
+    assert candidates(g, 0, min_strength=5) == {10}     # weak edge not walked
+    assert candidates(g, 0, min_strength=9) == set()

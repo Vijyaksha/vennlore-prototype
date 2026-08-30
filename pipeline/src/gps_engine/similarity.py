@@ -14,6 +14,9 @@ Verdict:
 - "related": distinct methods that are mathematically or operationally kin
   (one derives from the other, shares core formalism, or routinely substitutes)
 - "unrelated": otherwise
+For "same" or "related", also give strength 1-10: how substitutable/close the
+methods are (10 = interchangeable in practice; 5 = clear shared formalism or
+apparatus; 1 = distant kinship barely worth an edge). Omit or 0 for unrelated.
 Be strict: "related" requires genuine methodological kinship, not co-occurrence.
 Judge the METHODS themselves; any context line only disambiguates what each
 name means in its source talk (the same words can name different things)."""
@@ -55,7 +58,8 @@ def judge_pair(
             a=a, b=b,
             ctx_a=f"\n   (context: {context_a})" if context_a else "",
             ctx_b=f"\n   (context: {context_b})" if context_b else ""),
-        schema_hint='{"verdict": "same|related|unrelated", "why": "string"}',
+        schema_hint='{"verdict": "same|related|unrelated", "strength": 0, '
+                    '"why": "string"}',
     )
 
 
@@ -64,6 +68,8 @@ def apply_verdicts(g: MethodGraph, verdicts: list[tuple[str, str, dict]]) -> Non
         if v["verdict"] == "same":
             g.merge(g.node_id(a), g.node_id(b))
         elif v["verdict"] == "related":
-            g.add_related(g.node_id(a), g.node_id(b))
+            g.add_related(g.node_id(a), g.node_id(b),
+                          strength=int(v.get("strength") or 0),
+                          why=str(v.get("why", "")))
         elif v["verdict"] != "unrelated":
             raise ValueError(f"unknown verdict {v['verdict']!r} for ({a!r}, {b!r})")

@@ -58,3 +58,34 @@ def test_related_edges_round_trip_through_json(tmp_path):
     a2 = g2.node_id("DMRG"); b2 = g2.node_id("transfer-matrix methods")
     assert b2 in g2.related_to(a2)
     assert a2 in g2.related_to(b2)
+
+
+def test_edge_strength_and_why_stored():
+    g = MethodGraph()
+    a = g.link_talk(1, "self-assembly")
+    b = g.link_talk(2, "self-assembled monolayers")
+    g.add_related(a, b, strength=7, why="SAMs are a specific realization")
+    info = g.edge_info(a, b)
+    assert info == {"strength": 7, "why": "SAMs are a specific realization"}
+
+
+def test_merge_keeps_strongest_edge():
+    g = MethodGraph()
+    a = g.link_talk(1, "self-assembly")
+    b = g.link_talk(2, "sams")
+    c = g.link_talk(3, "sam formation")
+    g.add_related(a, b, strength=3, why="weak")
+    g.add_related(a, c, strength=8, why="strong")
+    g.merge(b, c)  # c absorbed into b; colliding edges to a must keep max
+    assert g.edge_info(a, b) == {"strength": 8, "why": "strong"}
+
+
+def test_edge_save_load_roundtrip(tmp_path):
+    g = MethodGraph()
+    a = g.link_talk(1, "x")
+    b = g.link_talk(2, "y")
+    g.add_related(a, b, strength=5, why="kin")
+    p = tmp_path / "g.json"
+    g.save(p)
+    g2 = MethodGraph.load(p)
+    assert g2.edge_info(a, b) == {"strength": 5, "why": "kin"}

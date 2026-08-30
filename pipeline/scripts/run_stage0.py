@@ -6,10 +6,13 @@ Progress probeable at pipeline/out/stage0/status.json."""
 import hashlib
 import json
 import sys
+import threading
 import time
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+from gps_engine.claims import claims_digest, extract_claims  # noqa: E402
 from gps_engine.corpus import Talk, load_talks  # noqa: E402
 from gps_engine.funnel import candidates  # noqa: E402
 from gps_engine.graph import MethodGraph  # noqa: E402
@@ -23,6 +26,8 @@ ROOT = Path(__file__).resolve().parents[2]
 OUT = Path(__file__).resolve().parents[1] / "out" / "stage0"
 EXTRACT_MODEL = "claude-haiku-4-5-20251001"
 JUDGE_MODEL = "claude-sonnet-5"
+WORKERS = 8
+MIN_EDGE_STRENGTH = 0  # query-time tightness dial; 0 walks every judged edge
 t0 = time.time()
 
 
@@ -50,9 +55,28 @@ def pair_key(a: str, b: str) -> str:
     return hashlib.sha256(f"{a}||{b}".encode()).hexdigest()[:24]
 
 
+def parallel(label: str, items, fn):
+    """Run fn(item) across a thread pool, preserving input order in the
+    returned list. Progress via status() every few completions."""
+    done = 0
+    lock = threading.Lock()
+
+    def wrapped(item):
+        nonlocal done
+        r = fn(item)
+        with lock:
+            done += 1
+            if done % 10 == 0 or done == len(items):
+                status(f"{label} {done}/{len(items)}")
+        return r
+
+    with ThreadPoolExecutor(max_workers=WORKERS) as pool:
+        return list(pool.map(wrapped, items))
+
+
 def main() -> None:
     OUT.mkdir(parents=True, exist_ok=True)
-    for sub in ("methods", "enrich", "verdicts", "judgments"):
+    for sub in ("methods", "enrich", "claims", "verdicts", "judgments"):
         (OUT / sub).mkdir(exist_ok=True)
 
     mc = json.loads((ROOT / "datasets" / "micro-corpus.json").read_text())
@@ -80,30 +104,35 @@ def main() -> None:
     extract_llm = AnthropicLLM(EXTRACT_MODEL)
 
     status("extraction")
+
+    def extract_one(t: Talk):
+        # Fresh extractor per talk: SchemaLLMPathExtractor.__call__ does
+        # asyncio.run(...) per invocation, and reusing one Anthropic client's
+        # httpx transport across event loops (or threads) is unsafe.
+        ms = checkpointed(OUT / "methods" / f"{t.id}.json",
+                          lambda: extract_methods_li(t, build_extractor(EXTRACT_MODEL)))
+        # Gleaning pass (recall sweep) + per-method usage descriptions.
+        enriched = checkpointed(OUT / "enrich" / f"{t.id}.json",
+                                lambda: list(glean_and_describe(t, ms, extract_llm)))
+        cl = checkpointed(OUT / "claims" / f"{t.id}.json",
+                          lambda: extract_claims(t, extract_llm))
+        return t, enriched[0], enriched[1], cl
+
+    ordered = sorted(talks.values(), key=lambda t: t.id)
+    extracted = parallel("extraction", ordered, extract_one)
+
     g = MethodGraph()
     name_context: dict[str, str] = {}  # normalized method name -> judge context
-    for i, t in enumerate(sorted(talks.values(), key=lambda t: t.id)):
-        # Build a fresh extractor per talk rather than reusing one across the
-        # loop: SchemaLLMPathExtractor.__call__ does asyncio.run(...) per
-        # invocation, and reusing one Anthropic client's httpx transport
-        # across separate event loops is unsafe (the transport binds to the
-        # loop it was first used on). Construction is cheap and offline.
-        ms = checkpointed(OUT / "methods" / f"{t.id}.json",
-                          lambda t=t: extract_methods_li(t, build_extractor(EXTRACT_MODEL)))
-        # Gleaning pass (recall sweep) + per-method usage descriptions, one
-        # cheap call; returns [full_method_list, {name: description}].
-        enriched = checkpointed(OUT / "enrich" / f"{t.id}.json",
-                                lambda t=t, ms=ms: list(glean_and_describe(t, ms, extract_llm)))
-        all_ms, descs = enriched[0], enriched[1]
+    talk_claims: dict[int, list] = {}
+    for t, all_ms, descs, cl in extracted:  # serial: graph is not thread-safe
+        talk_claims[t.id] = cl
         for m in all_ms:
-            nid = g.link_talk(t.id, m)
+            g.link_talk(t.id, m)
             key = " ".join(str(m).casefold().split())
             if key not in name_context:
                 d = descs.get(m) or descs.get(key) or ""
                 name_context[key] = (f'in "{t.title[:70]}": {d}' if d
                                      else f'used in "{t.title[:70]}"')
-        if i % 5 == 0:
-            status(f"extraction {i + 1}/{len(talks)}")
 
     status("similarity")
     names = sorted({n for nid in g.nodes() for n in g.names_of(nid)})
@@ -130,26 +159,28 @@ def main() -> None:
                     "why": "API REFUSAL (stop_reason=refusal); defaulted to "
                            "no-edge, not a real judgment"}
 
-    verdicts = []
-    for i, (a, b) in enumerate(pairs):
-        v = checkpointed(OUT / "verdicts" / f"{pair_key(a, b)}.json",
-                         lambda a=a, b=b: judge_or_refusal(a, b))
-        verdicts.append((a, b, v))
-        if i % 5 == 0:
-            status(f"verdicts {i + 1}/{len(pairs)}")
+    vs = parallel("verdicts", pairs,
+                  lambda ab: checkpointed(OUT / "verdicts" / f"{pair_key(*ab)}.json",
+                                          lambda: judge_or_refusal(*ab)))
+    verdicts = [(a, b, v) for (a, b), v in zip(pairs, vs)]
     apply_verdicts(g, verdicts)
     g.save(OUT / "graph.json")
 
     status("funnel+rubric")
-    cands = candidates(g, talk_id=0)
+    cands = candidates(g, talk_id=0, min_strength=MIN_EDGE_STRENGTH)
     status(f"rubric: {len(cands)} candidates")
-    judgments = []
-    for i, cid in enumerate(sorted(cands)):
-        j = checkpointed(OUT / "judgments" / f"{cid}.json",
-                         lambda cid=cid: judge_candidate(anchor, talks[cid], judge_llm).__dict__)
-        judgments.append(Judgment(**j))
-        if i % 5 == 0:
-            status(f"rubric {i + 1}/{len(cands)}")
+    anchor_digest = claims_digest(talk_claims.get(0, []))
+
+    def rubric_one(cid: int):
+        return checkpointed(
+            OUT / "judgments" / f"{cid}.json",
+            lambda: judge_candidate(
+                anchor, talks[cid], judge_llm,
+                mine_claims=anchor_digest,
+                cand_claims=claims_digest(talk_claims.get(cid, []))).__dict__)
+
+    judgments = [Judgment(**j)
+                 for j in parallel("rubric", sorted(cands), rubric_one)]
 
     picks = assemble(judgments)
     matched_ids = {j.candidate_id for j in judgments if j.match}
