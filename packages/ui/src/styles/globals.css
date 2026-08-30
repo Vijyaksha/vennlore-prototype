@@ -1,0 +1,5 @@
+/* Shared styles for @repo/ui. Imported by each app's globals.css.
+   The @source directive makes Tailwind scan this package's components,
+   which it would otherwise skip (workspace packages resolve through
+   node_modules). */
+@source "../";
