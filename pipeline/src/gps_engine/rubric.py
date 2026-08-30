@@ -36,20 +36,32 @@ Explicitly NOT the criterion:
   "transferable insight" must not enter the judgment).
 - Shared vocabulary or community is NOT the question.
 
-Score each 0-5:
-1. same_method: do they use at least one same or equivalent technique,
-   measurement, fabrication process, algorithm, or theoretical framework —
-   even under different names? Judge the apparatus/procedure, not the words.
-2. specificity: how specific is the sharpest shared method? Ubiquitous
-   umbrella terms (transport, spectroscopy, simulation, microscopy) score
-   0-1; a method named the way practitioners name it (e.g. an EGaIn
-   junction, Langmuir-Blodgett deposition, transient-photocurrent readout)
-   scores 4-5.
-3. usage_parallel: is the shared method used the same WAY — same role in
-   the workflow, same inference pattern? (E.g. both use self-assembly AS
-   the fabrication step that builds the functional structure; both read a
-   time-transient's shape to infer microscopic dynamics; both program a
-   persistent state and read it back in transport.)
+Score each 0-5, using these anchors:
+1. same_method — is there at least one shared technique/measurement/
+   fabrication/algorithm/framework? Judge the apparatus and procedure, not
+   the words.
+   5 = the same named technique. 4 = VARIANTS of one technique differing
+   only in implementation — timescale (femtosecond vs millisecond),
+   resolution, drive, or contrast knob (light vs bias vs field): a DC
+   photocurrent transient and an ultrafast pump-probe photocurrent
+   transient are the same method at 4; lab-source and synchrotron
+   diffraction are the same method at 4. 3 = different techniques that
+   effect the same operation by the same physical principle. 2 = same
+   broad family only. 0-1 = nothing genuinely shared.
+2. specificity — how specific is the sharpest shared method? 0-1 =
+   ubiquitous umbrella (transport, spectroscopy, simulation, microscopy).
+   2-3 = a real named method. 4-5 = named the way its practitioners name
+   it (an EGaIn junction, Langmuir-Blodgett deposition,
+   transient-photocurrent readout).
+3. usage_parallel — does the shared method play the same ROLE? 5 = same
+   role and same inference pattern (both read a transient's shape to
+   infer microscopic dynamics; both program a persistent state and read
+   it back). 4 = same role, inference differs in detail. 3 = same role
+   in the workflow (e.g. both use self-assembly AS the fabrication step
+   that builds the functional structure). 2 = loosely similar role.
+   0-1 = the method does different jobs in the two works.
+   Implementation differences already priced into same_method must not
+   be double-counted here.
 
 match: true only if same_method >= 3 AND usage_parallel >= 3 AND
 specificity >= 2.
