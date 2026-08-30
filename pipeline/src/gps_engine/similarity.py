@@ -52,12 +52,16 @@ def sbert_embedder() -> Embedder:
 def judge_pair(
     a: str, b: str, llm: LLMClient,
     context_a: str = "", context_b: str = "",
+    evidence: str = "",
 ) -> dict:
+    ctx_b = f"\n   (context: {context_b})" if context_b else ""
+    if evidence:
+        ctx_b += f"\nStructural evidence: {evidence}"
     return llm.complete_json(
         JUDGE_PROMPT.format(
             a=a, b=b,
             ctx_a=f"\n   (context: {context_a})" if context_a else "",
-            ctx_b=f"\n   (context: {context_b})" if context_b else ""),
+            ctx_b=ctx_b),
         schema_hint='{"verdict": "same|related|unrelated", "strength": 0, '
                     '"why": "string"}',
     )

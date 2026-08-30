@@ -12,7 +12,10 @@ from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+from gps_engine.cascade import decide_pairs  # noqa: E402
 from gps_engine.claims import claims_digest, extract_claims  # noqa: E402
+from gps_engine.filing import candidate_shortlist, embed_targets, file_method  # noqa: E402
+from gps_engine.physh import load_physh  # noqa: E402
 from gps_engine.corpus import Talk, load_talks  # noqa: E402
 from gps_engine.funnel import candidates  # noqa: E402
 from gps_engine.graph import MethodGraph  # noqa: E402
@@ -20,7 +23,7 @@ from gps_engine.li_extraction import build_extractor, extract_methods_li, glean_
 from gps_engine.llm import AnthropicLLM, LLMRefusal  # noqa: E402
 from gps_engine.recommend import assemble  # noqa: E402
 from gps_engine.rubric import Judgment, judge_candidate  # noqa: E402
-from gps_engine.similarity import apply_verdicts, judge_pair, propose_pairs, sbert_embedder  # noqa: E402
+from gps_engine.similarity import apply_verdicts, judge_pair, sbert_embedder  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[2]
 OUT = Path(__file__).resolve().parents[1] / "out" / "stage0"
@@ -76,7 +79,7 @@ def parallel(label: str, items, fn):
 
 def main() -> None:
     OUT.mkdir(parents=True, exist_ok=True)
-    for sub in ("methods", "enrich", "claims", "verdicts", "judgments"):
+    for sub in ("methods", "enrich", "claims", "filings", "verdicts", "judgments"):
         (OUT / sub).mkdir(exist_ok=True)
 
     mc = json.loads((ROOT / "datasets" / "micro-corpus.json").read_text())
@@ -90,19 +93,28 @@ def main() -> None:
     if missing:
         raise SystemExit(f"micro-corpus ids missing from archive: {sorted(missing)}")
 
-    # The anchor is an external paper: represent it as a pseudo-talk (id 0).
-    # Its text = summary + the Rupert-approved method axes from the dataset —
-    # the first live runs showed a 3-line stub starves the rubric (it judged
-    # M1/M3-based positives against an anchor that appeared not to have
-    # those methods).
-    axes = "\n".join(mc["anchor"]["method_axes"])
+    # The anchor is an external paper: represent it as a pseudo-talk (id 0)
+    # carrying its REAL published abstract (Nano Lett. 2004, 4, 1261-1265,
+    # doi 10.1021/nl049421v) so talk 0 is held to the same standard as every
+    # crawled talk. (Earlier stand-ins — a 3-line stub, then stub+category-
+    # language method axes — starved the rubric and then made extraction go
+    # generic, respectively.)
     anchor = Talk(
         id=0, title=mc["anchor"]["title"],
-        abstract=("Self-assembled porphyrin nanorods; photoconductivity with "
-                  "fast on/off transients and slow growth/decay; bias-training "
-                  "produces reversed short-circuit photocurrent (memory); "
-                  "conduction through coupled LUMOs of stacked molecules.\n"
-                  "Methods of this work:\n" + axes),
+        abstract=(
+            "The photoconductivity of nanorods self-assembled from "
+            "meso-tetrakis(4-sulfonatophenyl)porphine is described. The "
+            "nanorods are insulating in the dark. Upon illumination with "
+            "488 nm light, the nanorods become photoconductive, exhibiting "
+            "a rapid turn on/off (<100 ms) of the current when the light is "
+            "turned on/off. This photoconductivity grows over hundreds of "
+            "seconds with light exposure and decays slowly when the light "
+            "is off. The nanorods can be trained via an applied bias to "
+            "exhibit a short-circuit photocurrent (with corresponding "
+            "open-circuit photovoltage) that flows in the direction "
+            "opposite that of the training bias. A qualitative model is "
+            "proposed, in which conduction occurs through the tightly "
+            "coupled LUMOs of close-packed porphyrin molecules."),
         topics=(), units=("DPOLY",), session_title="", start=None, end=None)
     talks[0] = anchor
 
@@ -140,15 +152,39 @@ def main() -> None:
                 name_context[key] = (f'in "{t.title[:70]}": {d}' if d
                                      else f'used in "{t.title[:70]}"')
 
-    status("similarity")
+    status("filing")
     names = sorted({n for nid in g.nodes() for n in g.names_of(nid)})
-    # 0.75 (the library default) proposed zero anchor-adjacent pairs on the
-    # first live run: sbert scores "self-assembly" vs "self-assembled
-    # monolayers" at ~0.51 and the photocurrent-name family at 0.60-0.73.
-    # The embedding gate only has to be generous enough to SHOW pairs to the
-    # LLM judge — the judge is the discriminator.
-    pairs = propose_pairs(names, embed=sbert_embedder(), threshold=0.50)
-    status(f"similarity: {len(names)} names, {len(pairs)} proposed pairs")
+    physh = load_physh()
+    embed = sbert_embedder()
+    target_vecs = embed_targets(physh, embed)
+
+    def file_one(name: str):
+        key = " ".join(name.casefold().split())
+        ctx = name_context.get(key, "")
+        return checkpointed(
+            OUT / "filings" / f"{pair_key(name, 'FILE')}.json",
+            lambda: file_method(
+                name, ctx,
+                candidate_shortlist(name, ctx, physh, embed, target_vecs),
+                physh, extract_llm))
+
+    filed = parallel("filing", names, file_one)
+    filings = dict(zip(names, filed))
+    n_filed = sum(1 for f in filed if f)
+    status(f"filing: {n_filed}/{len(names)} methods filed onto PhySH")
+
+    status("cascade")
+    texts = {n: f"{n}: {name_context.get(' '.join(n.casefold().split()), '')}"
+             for n in names}
+    decisions = decide_pairs(names, filings, physh, embed, texts)
+    autos = [d for d in decisions if d.action in ("auto-same", "auto-related")]
+    to_judge = [d for d in decisions if d.action == "judge"]
+    from collections import Counter
+    cascade_stats = Counter(d.provenance for d in decisions)
+    status(f"cascade: {len(autos)} auto, {len(to_judge)} to judge, "
+           f"{len(decisions) - len(autos) - len(to_judge)} dropped")
+    pairs = [(d.a, d.b) for d in to_judge]
+    evidence = {(d.a, d.b): d.evidence for d in to_judge}
     def judge_or_refusal(a: str, b: str) -> dict:
         # The API's safety layer occasionally refuses an innocuous pair
         # (observed live: "hydrogen bonding modulation" vs "intra-monomer
@@ -158,7 +194,8 @@ def main() -> None:
             nrm = lambda n: " ".join(n.casefold().split())  # noqa: E731
             return judge_pair(a, b, judge_llm,
                               context_a=name_context.get(nrm(a), ""),
-                              context_b=name_context.get(nrm(b), ""))
+                              context_b=name_context.get(nrm(b), ""),
+                              evidence=evidence.get((a, b), ""))
         except LLMRefusal:
             status(f"REFUSAL (defaulting to no-edge): {a!r} vs {b!r}")
             return {"verdict": "unrelated",
@@ -169,6 +206,11 @@ def main() -> None:
                   lambda ab: checkpointed(OUT / "verdicts" / f"{pair_key(*ab)}.json",
                                           lambda: judge_or_refusal(*ab)))
     verdicts = [(a, b, v) for (a, b), v in zip(pairs, vs)]
+    # tree-decided edges join the LLM verdicts with their provenance kept
+    for d in autos:
+        verdicts.append((d.a, d.b, {
+            "verdict": "same" if d.action == "auto-same" else "related",
+            "strength": d.strength, "why": d.why, "provenance": d.provenance}))
     apply_verdicts(g, verdicts)
     g.save(OUT / "graph.json")
 
@@ -201,6 +243,7 @@ def main() -> None:
         "missed_positives": sorted(positive_ids - matched_ids),
         "positives_not_in_funnel": sorted(positive_ids - cands),
         "false_positives": sorted(matched_ids - positive_ids),
+        "cascade_stats": dict(cascade_stats),
     }
     (OUT / "report.json").write_text(json.dumps(report, indent=1))
     status("done — see pipeline/out/stage0/report.json")
