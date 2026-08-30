@@ -12,11 +12,25 @@ researcher's work.
 The ONLY criterion: both works USE at least one same (or equivalent) method,
 and use it the same WAY — the method plays the same role in each workflow.
 Domain, material system, and scientific problem are IRRELEVANT; a cross-domain
-match is the most valuable kind. Do NOT lower any score because the fields,
-materials, or research questions differ.
+match is the most valuable kind.
+
+FIRST, before scoring, steelman: state in one sentence the STRONGEST
+usage-parallel between the two works that the texts support (field
+"strongest_parallel"). Then score THAT parallel — not the works' overall
+similarity.
+
+Scoring discipline:
+- Differences in phenomena, materials, timescales, transported quantity,
+  or programming input must NOT lower any score. Two works that both use
+  self-assembly as their fabrication step match on that axis even if one
+  studies conduction and the other mechanics.
+- Cataloguing differences is not a judgment. Judge the shared usage.
+- Abstracts are compressed: score what the texts support or are plainly
+  consistent with. Do not demand that every procedural detail be spelled
+  out; do not credit anything the texts contradict.
 
 Explicitly NOT the criterion:
-- Shared phenomenon or physics is NOT sufficient (two works about
+- Shared phenomenon or physics alone is NOT sufficient (two works about
   conduction that MEASURE it by different techniques do not match).
 - Usefulness is NOT the question ("could they learn from each other" or
   "transferable insight" must not enter the judgment).
@@ -37,8 +51,8 @@ Score each 0-5:
    time-transient's shape to infer microscopic dynamics; both program a
    persistent state and read it back in transport.)
 
-match: true only if same_method >= 3 AND specificity >= 3 AND
-usage_parallel >= 3.
+match: true only if same_method >= 3 AND usage_parallel >= 3 AND
+specificity >= 2.
 
 RESEARCHER'S ABSTRACT:
 {mine}
@@ -58,6 +72,7 @@ class Judgment:
     match: bool
     cross_domain: bool
     why: str
+    strongest_parallel: str = ""
 
     @property
     def score(self) -> int:
@@ -78,8 +93,9 @@ def judge_candidate(mine: Talk, cand: Talk, llm: LLMClient,
             title=cand.title, abstract=cand.abstract,
             mine_claims=_claims_block("RESEARCHER'S STATED CLAIMS", mine_claims),
             cand_claims=_claims_block("CANDIDATE'S STATED CLAIMS", cand_claims)),
-        schema_hint='{"same_method": 0, "specificity": 0, '
-                    '"usage_parallel": 0, "match": true, "why": "string"}',
+        schema_hint='{"strongest_parallel": "string", "same_method": 0, '
+                    '"specificity": 0, "usage_parallel": 0, "match": true, '
+                    '"why": "string"}',
     )
     if not isinstance(out["match"], bool):
         raise ValueError(f"non-boolean match from LLM: {out['match']!r}")
@@ -92,4 +108,5 @@ def judge_candidate(mine: Talk, cand: Talk, llm: LLMClient,
         # unknown domain never counts as cross-domain — surprise picks need affirmative evidence
         cross_domain=bool(mine.units) and bool(cand.units) and not (set(mine.units) & set(cand.units)),
         why=str(out["why"]),
+        strongest_parallel=str(out.get("strongest_parallel", "")),
     )
