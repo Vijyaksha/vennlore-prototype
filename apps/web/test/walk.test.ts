@@ -65,6 +65,19 @@ describe("walkMinutes", () => {
     expect(walkMinutes(offsite, inside)).toBe(60);
   });
 
+  test("known differing buildings win over a null room: still 22", () => {
+    expect(
+      walkMinutes(loc("Convention Center", null), loc("Hyatt Regency", "Capitol 1")),
+    ).toBe(22);
+  });
+
+  test("identical Offsite building and room is 5, not 60", () => {
+    const museum = loc("Offsite", "Denver Museum of Nature and Science");
+    expect(walkMinutes(museum, loc("Offsite", "Denver Museum of Nature and Science"))).toBe(
+      5,
+    );
+  });
+
   test("null building or room on either side is 15", () => {
     expect(walkMinutes(loc(null, null), loc("Convention Center", "Bluebird 2A"))).toBe(
       15,
@@ -107,5 +120,9 @@ describe("connection", () => {
 
   test("negative slack is tight", () => {
     expect(connection(10, 22)).toEqual({ walk: 22, slack: -12, tight: true });
+  });
+
+  test("slack of exactly 15 is not tight", () => {
+    expect(connection(30, 15)).toEqual({ walk: 15, slack: 15, tight: false });
   });
 });

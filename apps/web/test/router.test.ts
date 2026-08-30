@@ -2,7 +2,7 @@ import { describe, expect, test } from "vitest";
 
 import { appRouter } from "../server/router";
 import { createCallerFactory } from "../server/trpc";
-import type { Repo, RecRow, TalkRow } from "../server/data";
+import { escapeLike, type Repo, type RecRow, type TalkRow } from "../server/data";
 
 const talk = (overrides: Partial<TalkRow> & { id: number }): TalkRow => ({
   title: `Talk ${overrides.id}`,
@@ -74,10 +74,22 @@ const lateNight = talk({
   room: "Capitol 1",
 });
 
-const allTalks = [anchor, bluebird, exhibitHall, meetingRoom, untimed, lateNight];
+// Same score as exhibitHall (5) but a lower candidate id: pins the tiebreak.
+const tiedPoster = talk({ id: 100, title: "Tied-score poster" });
+
+const allTalks = [
+  anchor,
+  bluebird,
+  exhibitHall,
+  meetingRoom,
+  untimed,
+  lateNight,
+  tiedPoster,
+];
 const allRecs = [
   rec(bluebird, { score: 6 }),
   rec(exhibitHall, { score: 5 }),
+  rec(tiedPoster, { score: 5 }),
   rec(untimed, { score: 4 }),
   rec(meetingRoom, { score: 6, crossDomain: true }),
   rec(lateNight, { score: 5, crossDomain: true }),
@@ -98,12 +110,23 @@ function fakeRepo(): Repo {
       Promise.resolve(
         allRecs
           .filter((r) => r.forTalkId === forTalkId && r.match)
-          .sort((a, b) => b.score - a.score),
+          .sort((a, b) => b.score - a.score || a.candidateId - b.candidateId),
       ),
   };
 }
 
 const caller = createCallerFactory(appRouter)({ repo: fakeRepo() });
+
+describe("escapeLike", () => {
+  test("escapes %, _ and backslash for ILIKE patterns", () => {
+    expect(escapeLike("100% pure_gold")).toBe("100\\% pure\\_gold");
+    expect(escapeLike("back\\slash")).toBe("back\\\\slash");
+  });
+
+  test("leaves ordinary text untouched", () => {
+    expect(escapeLike("porphyrin nanorods")).toBe("porphyrin nanorods");
+  });
+});
 
 describe("searchTalks", () => {
   test("finds talks by title substring, case-insensitive", async () => {
@@ -121,8 +144,14 @@ describe("picks", () => {
     const result = await caller.picks({ talkId: 0 });
 
     expect(result.talk.id).toBe(0);
-    expect(result.core.map((p) => p.candidateId)).toEqual([2802, 12342, 9001]);
+    expect(result.core.map((p) => p.candidateId)).toEqual([2802, 100, 12342, 9001]);
     expect(result.unexpected.map((p) => p.candidateId)).toEqual([12772, 9002]);
+  });
+
+  test("equal-score picks order by candidateId ascending", async () => {
+    const result = await caller.picks({ talkId: 0 });
+    const fives = result.core.filter((p) => p.score === 5).map((p) => p.candidateId);
+    expect(fives).toEqual([100, 12342]);
   });
 
   test("excludes non-match rows", async () => {

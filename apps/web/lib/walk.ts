@@ -43,11 +43,16 @@ export function walkMinutes(a: Loc, b: Loc): number {
   if (a.building === "Offsite" || b.building === "Offsite") {
     return OFFSITE;
   }
-  if (a.building === null || a.room === null || b.building === null || b.room === null) {
+  if (a.building === null || b.building === null) {
     return UNKNOWN;
   }
+  // A known cross-building trip must never be underestimated, so the building
+  // comparison outranks the null-room fallback.
   if (a.building !== b.building) {
     return CROSS_BUILDING;
+  }
+  if (a.room === null || b.room === null) {
+    return UNKNOWN;
   }
   const roomA = parseRoom(a.room);
   const roomB = parseRoom(b.room);

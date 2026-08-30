@@ -1,4 +1,4 @@
-import { and, desc, eq, ilike } from "drizzle-orm";
+import { and, asc, desc, eq, ilike } from "drizzle-orm";
 
 import { getDb } from "../db";
 import { recommendations, talks } from "../db/schema";
@@ -12,12 +12,18 @@ export interface Repo {
   getMatches(forTalkId: number): Promise<(RecRow & { talk: TalkRow })[]>;
 }
 
+// Postgres LIKE/ILIKE treats %, _ and the default backslash escape character
+// as metacharacters; user queries must match them literally.
+export function escapeLike(value: string): string {
+  return value.replace(/[\\%_]/g, (char) => `\\${char}`);
+}
+
 export const dbRepo: Repo = {
   async searchTalks(query) {
     return getDb()
       .select()
       .from(talks)
-      .where(ilike(talks.title, `%${query}%`))
+      .where(ilike(talks.title, `%${escapeLike(query)}%`))
       .limit(20);
   },
 
@@ -37,7 +43,7 @@ export const dbRepo: Repo = {
           eq(recommendations.match, true),
         ),
       )
-      .orderBy(desc(recommendations.score));
+      .orderBy(desc(recommendations.score), asc(recommendations.candidateId));
     return rows.map((row) => ({ ...row.recommendations, talk: row.talks }));
   },
 };
