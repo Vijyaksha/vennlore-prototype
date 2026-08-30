@@ -9,6 +9,7 @@ from llama_index.core.schema import TextNode
 from llama_index.llms.anthropic import Anthropic
 
 from gps_engine.corpus import Talk
+from gps_engine.llm import LLMClient
 
 # Two entity types, not one: a METHOD--USES_METHOD-->METHOD schema only
 # surfaces entities that appear in a valid, non-self-referencing triplet, so
@@ -78,3 +79,51 @@ def extract_methods_li(talk: Talk, extractor) -> list[str]:
             seen.add(key)
             result.append(str(name).strip())
     return result
+
+
+GLEAN_PROMPT = """Title: {title}
+Abstract: {abstract}
+
+A first extraction pass found these METHODS (techniques, algorithms,
+measurements, fabrication, or theoretical frameworks the authors USE):
+{found}
+
+Reply with:
+1. missed_methods: additional methods the authors actually USE that the first
+   pass missed. Fabrication, synthesis, and sample-preparation steps COUNT as
+   methods even when the resulting structure is the paper's subject (a study
+   OF self-assembled monolayers that BUILDS them by self-assembly USES
+   self-assembly). Use the authors' own terminology; do not invent methods
+   not grounded in the text; [] if nothing was missed.
+2. descriptions: for EVERY method (first-pass and missed), one sentence on
+   how THIS work uses it."""
+
+
+def _norm(name: str) -> str:
+    return " ".join(str(name).casefold().split())
+
+
+def glean_and_describe(
+    talk: Talk, methods: list[str], llm: LLMClient
+) -> tuple[list[str], dict[str, str]]:
+    """Second-pass recall sweep + per-method usage descriptions (one call).
+
+    Returns (full method list with gleaned additions deduped in,
+    {method name -> one-line description of how this talk uses it})."""
+    out = llm.complete_json(
+        GLEAN_PROMPT.format(
+            title=talk.title, abstract=talk.abstract,
+            found="\n".join(f"- {m}" for m in methods) or "(none)"),
+        schema_hint='{"missed_methods": ["name"], '
+                    '"descriptions": {"name": "one sentence"}}',
+    )
+    merged = list(methods)
+    seen = {_norm(m) for m in methods}
+    for m in out.get("missed_methods", []) or []:
+        key = _norm(m)
+        if key and key not in seen:
+            seen.add(key)
+            merged.append(str(m).strip())
+    descriptions = {str(k).strip(): str(v).strip()
+                    for k, v in (out.get("descriptions", {}) or {}).items()}
+    return merged, descriptions

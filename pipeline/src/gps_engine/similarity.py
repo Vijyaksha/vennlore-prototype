@@ -7,14 +7,16 @@ from gps_engine.llm import LLMClient
 Embedder = Callable[[list[str]], list[list[float]]]
 
 JUDGE_PROMPT = """Two research-method names from physics conference abstracts:
-A: {a}
-B: {b}
+A: {a}{ctx_a}
+B: {b}{ctx_b}
 Verdict:
 - "same": the same method under different names/spellings/acronyms
 - "related": distinct methods that are mathematically or operationally kin
   (one derives from the other, shares core formalism, or routinely substitutes)
 - "unrelated": otherwise
-Be strict: "related" requires genuine methodological kinship, not co-occurrence."""
+Be strict: "related" requires genuine methodological kinship, not co-occurrence.
+Judge the METHODS themselves; any context line only disambiguates what each
+name means in its source talk (the same words can name different things)."""
 
 
 def propose_pairs(
@@ -44,9 +46,15 @@ def sbert_embedder() -> Embedder:
     return lambda names: model.encode(names).tolist()
 
 
-def judge_pair(a: str, b: str, llm: LLMClient) -> dict:
+def judge_pair(
+    a: str, b: str, llm: LLMClient,
+    context_a: str = "", context_b: str = "",
+) -> dict:
     return llm.complete_json(
-        JUDGE_PROMPT.format(a=a, b=b),
+        JUDGE_PROMPT.format(
+            a=a, b=b,
+            ctx_a=f"\n   (context: {context_a})" if context_a else "",
+            ctx_b=f"\n   (context: {context_b})" if context_b else ""),
         schema_hint='{"verdict": "same|related|unrelated", "why": "string"}',
     )
 

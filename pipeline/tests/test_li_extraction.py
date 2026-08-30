@@ -90,3 +90,33 @@ def test_build_extractor_smoke(monkeypatch):
     assert extractor.kg_validation_schema == {"WORK": ["USES_METHOD"]}
     assert extractor.raise_on_error is True
     assert extractor.max_triplets_per_chunk == 25
+
+
+def test_glean_merges_missed_methods_and_dedupes():
+    from gps_engine.li_extraction import glean_and_describe
+    from gps_engine.llm import FakeLLM
+
+    talk = Talk(id=7, title="T", abstract="A", topics=(), units=(),
+                session_title="", start=None, end=None)
+    llm = FakeLLM(responses=[{
+        "missed_methods": ["self-assembly", "Transient Analysis", "  "],
+        "descriptions": {"self-assembly": "builds the monolayer",
+                         "transient analysis": "reads decay shapes"},
+    }])
+    methods, desc = glean_and_describe(talk, ["transient analysis"], llm)
+    # gleaned method added; case-insensitive dupe of existing not re-added
+    assert methods == ["transient analysis", "self-assembly"]
+    assert desc["self-assembly"] == "builds the monolayer"
+    # first pass results are in the prompt so the model knows what was found
+    assert "transient analysis" in llm.prompts[0]
+
+
+def test_glean_handles_empty_response_fields():
+    from gps_engine.li_extraction import glean_and_describe
+    from gps_engine.llm import FakeLLM
+
+    talk = Talk(id=8, title="T", abstract="A", topics=(), units=(),
+                session_title="", start=None, end=None)
+    llm = FakeLLM(responses=[{"missed_methods": [], "descriptions": {}}])
+    methods, desc = glean_and_describe(talk, ["afm"], llm)
+    assert methods == ["afm"] and desc == {}

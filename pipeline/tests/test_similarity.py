@@ -56,3 +56,24 @@ def test_apply_verdicts_rejects_unknown_verdict():
     g.link_talk(1, "dmrg"); g.link_talk(2, "neutron scattering")
     with pytest.raises(ValueError):
         apply_verdicts(g, [("dmrg", "neutron scattering", {"verdict": "similar", "why": ""})])
+
+
+def test_judge_pair_includes_context_when_given():
+    from gps_engine.llm import FakeLLM
+    from gps_engine.similarity import judge_pair
+
+    llm = FakeLLM(responses=[{"verdict": "unrelated", "why": "w"}])
+    judge_pair("bias-training", "machine learning", llm,
+               context_a="voltage-bias cycling that programs conduction",
+               context_b="training neural-network classifiers")
+    assert "voltage-bias cycling" in llm.prompts[0]
+    assert "training neural-network classifiers" in llm.prompts[0]
+
+
+def test_judge_pair_omits_context_lines_when_absent():
+    from gps_engine.llm import FakeLLM
+    from gps_engine.similarity import judge_pair
+
+    llm = FakeLLM(responses=[{"verdict": "same", "why": "w"}])
+    judge_pair("a", "b", llm)
+    assert "(context:" not in llm.prompts[0]
