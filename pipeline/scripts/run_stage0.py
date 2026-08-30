@@ -220,12 +220,24 @@ def main() -> None:
     anchor_digest = claims_digest(talk_claims.get(0, []))
 
     def rubric_one(cid: int):
-        return checkpointed(
-            OUT / "judgments" / f"{cid}.json",
-            lambda: judge_candidate(
-                anchor, talks[cid], judge_llm,
-                mine_claims=anchor_digest,
-                cand_claims=claims_digest(talk_claims.get(cid, []))).__dict__)
+        def judge():
+            try:
+                return judge_candidate(
+                    anchor, talks[cid], judge_llm,
+                    mine_claims=anchor_digest,
+                    cand_claims=claims_digest(talk_claims.get(cid, []))).__dict__
+            except LLMRefusal:
+                # Same policy as the pair judge: no match, loudly marked —
+                # never fabricated, never fatal.
+                status(f"REFUSAL (rubric, defaulting to no-match): talk {cid}")
+                c = talks[cid]
+                return {"candidate_id": cid, "same_method": 0,
+                        "specificity": 0, "usage_parallel": 0, "match": False,
+                        "cross_domain": bool(anchor.units) and bool(c.units)
+                        and not (set(anchor.units) & set(c.units)),
+                        "why": "API REFUSAL (stop_reason=refusal); defaulted "
+                               "to no-match, not a real judgment"}
+        return checkpointed(OUT / "judgments" / f"{cid}.json", judge)
 
     judgments = [Judgment(**j)
                  for j in parallel("rubric", sorted(cands), rubric_one)]
