@@ -9,10 +9,8 @@ import { locations, recommendations, talks } from "./schema";
 import {
   toLocationInsert,
   toRecommendationInsert,
+  toSeedFile,
   toTalkInsert,
-  type SeedLocationRow,
-  type SeedRecommendationRow,
-  type SeedTalkRow,
 } from "./transform";
 
 const SEED_PATH = join(
@@ -20,12 +18,6 @@ const SEED_PATH = join(
   "../../../pipeline/out/app_seed.json",
 );
 const BATCH_SIZE = 500;
-
-interface SeedFile {
-  talks: SeedTalkRow[];
-  locations: SeedLocationRow[];
-  recommendations: SeedRecommendationRow[];
-}
 
 function excluded(columnName: string) {
   return sql.raw(`excluded."${columnName}"`);
@@ -47,7 +39,7 @@ async function main() {
     );
     process.exit(1);
   }
-  const seed = JSON.parse(raw) as SeedFile;
+  const seed = toSeedFile(JSON.parse(raw));
 
   const talkRows = seed.talks.map(toTalkInsert);
   const locationRows = seed.locations.map(toLocationInsert);

@@ -3,6 +3,7 @@ import { describe, expect, test } from "vitest";
 import {
   toLocationInsert,
   toRecommendationInsert,
+  toSeedFile,
   toTalkInsert,
 } from "../db/transform";
 
@@ -122,6 +123,35 @@ describe("toRecommendationInsert", () => {
     expect(() =>
       toRecommendationInsert({ ...seedRecommendation, score: undefined }),
     ).toThrow(/0.*1846/);
+  });
+});
+
+describe("toSeedFile", () => {
+  const validSeed = {
+    talks: [seedTalk],
+    locations: [seedLocation],
+    recommendations: [seedRecommendation],
+  };
+
+  test("accepts a file with talks/locations/recommendations arrays", () => {
+    expect(toSeedFile(validSeed)).toBe(validSeed);
+  });
+
+  test("throws naming the missing array", () => {
+    expect(() => toSeedFile({ ...validSeed, talks: undefined })).toThrow(
+      /seed file.*talks/,
+    );
+    expect(() => toSeedFile({ ...validSeed, locations: "nope" })).toThrow(
+      /seed file.*locations/,
+    );
+    expect(() => toSeedFile({ ...validSeed, recommendations: null })).toThrow(
+      /seed file.*recommendations/,
+    );
+  });
+
+  test("throws on a non-object payload", () => {
+    expect(() => toSeedFile(null)).toThrow(/seed file/);
+    expect(() => toSeedFile([])).toThrow(/seed file/);
   });
 });
 

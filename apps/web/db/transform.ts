@@ -31,6 +31,12 @@ export interface SeedLocationRow {
   room?: string;
 }
 
+export interface SeedFile {
+  talks: SeedTalkRow[];
+  locations: SeedLocationRow[];
+  recommendations: SeedRecommendationRow[];
+}
+
 export type TalkInsert = typeof talks.$inferInsert;
 export type RecommendationInsert = typeof recommendations.$inferInsert;
 export type LocationInsert = typeof locations.$inferInsert;
@@ -42,6 +48,18 @@ function parseDate(value: string | null | undefined, label: string): Date | null
     throw new Error(`${label}: unparseable date "${value}"`);
   }
   return date;
+}
+
+export function toSeedFile(value: unknown): SeedFile {
+  if (typeof value !== "object" || value === null || Array.isArray(value)) {
+    throw new Error("seed file: expected a JSON object");
+  }
+  for (const key of ["talks", "locations", "recommendations"] as const) {
+    if (!Array.isArray((value as Record<string, unknown>)[key])) {
+      throw new Error(`seed file: missing ${key} array`);
+    }
+  }
+  return value as unknown as SeedFile;
 }
 
 export function toTalkInsert(row: SeedTalkRow): TalkInsert {
