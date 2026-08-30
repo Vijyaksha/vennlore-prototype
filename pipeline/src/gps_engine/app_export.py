@@ -28,6 +28,12 @@ def build_talk_row(presentation: dict, event: dict | None,
     }
 
 
+# The match decision is OURS, derived from the calibrated score sum — the
+# rubric checkpoints store the LLM's own (unused) boolean. Keep in sync with
+# MATCH_MIN_SCORE in scripts/run_stage0.py.
+MATCH_MIN_SCORE = 5
+
+
 def build_seed(presentations: list[dict], events: list[dict],
                locations: list[dict], judgments: list[dict],
                anchor_row: dict) -> dict:
@@ -48,7 +54,8 @@ def build_seed(presentations: list[dict], events: list[dict],
         "specificity": j["specificity"],
         "usage_parallel": j["usage_parallel"],
         "score": j["same_method"] + j["specificity"] + j["usage_parallel"],
-        "match": j["match"],
+        "match": (j["same_method"] + j["specificity"] + j["usage_parallel"])
+                 >= MATCH_MIN_SCORE,
         "cross_domain": j["cross_domain"],
         "why": j["why"],
         "strongest_parallel": j.get("strongest_parallel", ""),

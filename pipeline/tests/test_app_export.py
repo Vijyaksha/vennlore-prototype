@@ -88,3 +88,13 @@ def test_build_seed_sorts_recommendations_by_candidate_id():
           for c in (30, 10, 20)]
     seed = build_seed([], [], [], js, ANCHOR)
     assert [r["candidate_id"] for r in seed["recommendations"]] == [10, 20, 30]
+
+
+def test_match_derived_from_score_not_llm_boolean():
+    """The calibrated rule (score >= 5) decides match; the judgment's own
+    stored boolean is ignored (rubric checkpoints predate the calibration)."""
+    j = {"candidate_id": 9, "same_method": 2, "specificity": 2,
+         "usage_parallel": 2, "match": False, "cross_domain": True, "why": "w"}
+    seed = build_seed([], [], [], [j], ANCHOR)
+    rec = seed["recommendations"][0]
+    assert rec["score"] == 6 and rec["match"] is True
