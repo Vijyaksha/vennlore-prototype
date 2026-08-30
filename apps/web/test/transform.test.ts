@@ -84,7 +84,9 @@ describe("toTalkInsert", () => {
   });
 
   test("throws naming the talk id when id is missing", () => {
-    const { id: _id, ...withoutId } = seedTalk;
+    const withoutId = Object.fromEntries(
+      Object.entries(seedTalk).filter(([k]) => k !== "id"),
+    );
     expect(() => toTalkInsert(withoutId)).toThrow(/talk/);
   });
 });

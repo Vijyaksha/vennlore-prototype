@@ -21,7 +21,7 @@
     "@types/react": "19.2.18",
     "@types/react-dom": "19.2.5",
     "eslint": "10.9.1",
-    "typescript": "7.0.2"
+    "typescript": "~5.9.3"
   },
   "dependencies": {
     "@base-ui/react": "^1.7.0",
