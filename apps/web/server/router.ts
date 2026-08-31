@@ -73,10 +73,6 @@ async function getTalkOrThrow(
 }
 
 export const appRouter = router({
-  searchTalks: publicProcedure
-    .input(z.object({ query: z.string().min(2) }))
-    .query(({ ctx, input }) => ctx.repo.searchTalks(input.query)),
-
   picks: publicProcedure
     .input(z.object({ talkId: z.number() }))
     .query(async ({ ctx, input }) => {

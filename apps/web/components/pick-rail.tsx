@@ -13,12 +13,11 @@ const UNEXPECTED_MAX = 3;
 const RAIL_GAP = 14;
 
 export interface PickRailProps {
-  talkId: number;
   core: Pick[];
   unexpected: Pick[];
 }
 
-export function PickRail({ talkId, core, unexpected }: PickRailProps) {
+export function PickRail({ core, unexpected }: PickRailProps) {
   const t = useTranslations("picks");
   const railRef = useRef<HTMLDivElement>(null);
   const [active, setActive] = useState(0);
@@ -58,7 +57,7 @@ export function PickRail({ talkId, core, unexpected }: PickRailProps) {
         className="no-scrollbar grid snap-x snap-mandatory auto-cols-[min(76vw,310px)] grid-flow-col gap-3.5 overflow-x-auto px-5 pt-[18px] pb-3.5"
       >
         {picks.map((pick) => (
-          <PickCard key={pick.candidateId} pick={pick} talkId={talkId} />
+          <PickCard key={pick.candidateId} pick={pick} />
         ))}
         {showSlot && <EmptySlot hasCore={keptCore.length > 0} />}
       </div>

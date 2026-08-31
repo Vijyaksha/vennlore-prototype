@@ -4,13 +4,6 @@
     "retry": "Try again",
     "loading": "Loading"
   },
-  "home": {
-    "headline": "Find the talks that share your methods — not your field.",
-    "searchLabel": "Search for your talk",
-    "searchPlaceholder": "Type your talk title…",
-    "hint": "Type at least 2 characters to find your talk.",
-    "noResults": "No talks match \"{query}\"."
-  },
   "picks": {
     "core": "core",
     "unexpected": "unexpected",

@@ -1,6 +1,6 @@
 "use client";
 
-import { useParams, useSearchParams } from "next/navigation";
+import { useSearchParams } from "next/navigation";
 import { useFormatter, useTranslations } from "next-intl";
 import { Suspense, useState } from "react";
 
@@ -10,7 +10,12 @@ import { Skeleton } from "@repo/ui/components/skeleton";
 import { Agenda, type AgendaEntry, type AgendaKind } from "@/components/agenda";
 import { DayStrip } from "@/components/day-strip";
 import { ErrorState } from "@/components/error-state";
-import { CONFERENCE_DAYS, dayDate, TIME_ZONE } from "@/lib/conference";
+import {
+  ANCHOR_TALK_ID,
+  CONFERENCE_DAYS,
+  dayDate,
+  TIME_ZONE,
+} from "@/lib/conference";
 import { trpc } from "@/lib/trpc";
 
 function CalendarSkeleton() {
@@ -34,13 +39,11 @@ function CalendarSkeleton() {
 function CalendarScreen() {
   const t = useTranslations("agenda");
   const format = useFormatter();
-  const params = useParams<{ id: string }>();
   const searchParams = useSearchParams();
-  const talkId = Number(params.id);
-  const validId = Number.isFinite(talkId);
+  const talkId = ANCHOR_TALK_ID;
 
-  const agenda = trpc.agenda.useQuery({ talkId }, { enabled: validId });
-  const picks = trpc.picks.useQuery({ talkId }, { enabled: validId });
+  const agenda = trpc.agenda.useQuery({ talkId });
+  const picks = trpc.picks.useQuery({ talkId });
 
   const paramIndex = (CONFERENCE_DAYS as readonly string[]).indexOf(
     searchParams.get("date") ?? "",
@@ -49,7 +52,7 @@ function CalendarScreen() {
     paramIndex >= 0 ? paramIndex : null,
   );
 
-  if (!validId || agenda.isError || picks.isError) {
+  if (agenda.isError || picks.isError) {
     return (
       <ErrorState
         onRetry={() => {

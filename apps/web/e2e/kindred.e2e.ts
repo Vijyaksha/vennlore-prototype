@@ -2,37 +2,41 @@ import { expect, test } from "@playwright/test";
 
 const ANCHOR_TITLE = "Photoconductivity of Self-Assembled Porphyrin Nanorods";
 
-test("claiming a talk from search leads to its picks rail", async ({
+test("opening the site shows the anchor talk's picks rail — no search", async ({
   page,
 }) => {
   await page.goto("/");
-  await expect(
-    page.getByText("Find the talks that share your methods"),
-  ).toBeVisible();
-
-  await page.getByPlaceholder("Type your talk title…").fill("porphyrin");
-  const result = page.getByRole("link", { name: new RegExp(ANCHOR_TITLE) });
-  await expect(result).toBeVisible();
-
-  await result.click();
-  await expect(page).toHaveURL(/\/talk\/0$/);
+  await expect(page.getByText(ANCHOR_TITLE)).toBeVisible();
   await expect(page.getByText("core").first()).toBeVisible();
   await expect(page.getByText("unexpected").first()).toBeVisible();
+  // The claim-search screen is gone: no search box anywhere.
+  await expect(page.getByRole("searchbox")).toHaveCount(0);
 });
 
 test("picks rail shows real engine recommendations with scores", async ({
   page,
 }) => {
-  await page.goto("/talk/0");
+  await page.goto("/");
   // Core pick 2802 (Ni-DNA memristive nanowires) surfaced by the Stage-0 run.
   await expect(page.getByText(/Memristive/i).first()).toBeVisible();
   await expect(page.getByText(/\/15/).first()).toBeVisible();
 });
 
+test("bottom nav flips between the two screens", async ({ page }) => {
+  await page.goto("/");
+  await page.getByRole("link", { name: "Calendar" }).click();
+  await expect(page).toHaveURL(/\/calendar$/);
+  await expect(
+    page.getByText("rooms & walking times illustrative"),
+  ).toBeVisible();
+  await page.getByRole("link", { name: "Picks" }).click();
+  await expect(page).toHaveURL(/\/$/);
+});
+
 test("calendar shows day agenda with walking transitions", async ({
   page,
 }) => {
-  await page.goto("/talk/0/calendar");
+  await page.goto("/calendar");
   await expect(
     page.getByText("rooms & walking times illustrative"),
   ).toBeVisible();

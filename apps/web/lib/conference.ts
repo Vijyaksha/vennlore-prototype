@@ -4,6 +4,11 @@ export const MEETING_LABEL = "APS GPS 2026";
 export const TIME_ZONE = "America/Denver";
 export const SCORE_MAX = 15;
 
+// The app is single-tenant for now: it always shows recommendations for the
+// claimed anchor talk (the porphyrin-nanorod photoconductivity paper), seeded
+// as talk id 0. Swap this constant when claiming becomes a real flow again.
+export const ANCHOR_TALK_ID = 0;
+
 // Denver-local conference days, Sun Mar 15 through Fri Mar 20 2026, keyed the
 // same way the agenda procedure keys its day groups (en-CA YYYY-MM-DD).
 export const CONFERENCE_DAYS = [

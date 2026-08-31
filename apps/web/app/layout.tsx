@@ -6,6 +6,7 @@ import { getLocale } from "next-intl/server";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import { APP_NAME, MEETING_LABEL } from "@/lib/conference";
+import { BottomNav } from "@/components/bottom-nav";
 import { Wordmark } from "@/components/wordmark";
 import { Providers } from "./providers";
 
@@ -59,6 +60,7 @@ export default async function RootLayout({
                 </span>
               </header>
               <main className="flex-1 pb-[92px]">{children}</main>
+              <BottomNav />
             </div>
           </Providers>
         </NextIntlClientProvider>

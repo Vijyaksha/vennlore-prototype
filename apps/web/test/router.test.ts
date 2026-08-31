@@ -2,7 +2,7 @@ import { describe, expect, test } from "vitest";
 
 import { appRouter } from "../server/router";
 import { createCallerFactory } from "../server/trpc";
-import { escapeLike, type Repo, type RecRow, type TalkRow } from "../server/data";
+import { type Repo, type RecRow, type TalkRow } from "../server/data";
 
 const talk = (overrides: Partial<TalkRow> & { id: number }): TalkRow => ({
   title: `Talk ${overrides.id}`,
@@ -99,12 +99,6 @@ const allRecs = [
 
 function fakeRepo(): Repo {
   return {
-    searchTalks: (query) =>
-      Promise.resolve(
-        allTalks
-          .filter((t) => t.title.toLowerCase().includes(query.toLowerCase()))
-          .slice(0, 20),
-      ),
     getTalk: (id) => Promise.resolve(allTalks.find((t) => t.id === id) ?? null),
     getMatches: (forTalkId) =>
       Promise.resolve(
@@ -116,28 +110,6 @@ function fakeRepo(): Repo {
 }
 
 const caller = createCallerFactory(appRouter)({ repo: fakeRepo() });
-
-describe("escapeLike", () => {
-  test("escapes %, _ and backslash for ILIKE patterns", () => {
-    expect(escapeLike("100% pure_gold")).toBe("100\\% pure\\_gold");
-    expect(escapeLike("back\\slash")).toBe("back\\\\slash");
-  });
-
-  test("leaves ordinary text untouched", () => {
-    expect(escapeLike("porphyrin nanorods")).toBe("porphyrin nanorods");
-  });
-});
-
-describe("searchTalks", () => {
-  test("finds talks by title substring, case-insensitive", async () => {
-    const result = await caller.searchTalks({ query: "bluebird" });
-    expect(result.map((t) => t.id)).toEqual([2802]);
-  });
-
-  test("rejects queries shorter than 2 characters", async () => {
-    await expect(caller.searchTalks({ query: "a" })).rejects.toThrow();
-  });
-});
 
 describe("picks", () => {
   test("splits matches into core and unexpected by crossDomain, score desc", async () => {

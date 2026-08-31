@@ -6,11 +6,10 @@ import { useTranslations } from "next-intl";
 
 import { cn } from "@repo/ui/lib/utils";
 
-export function BottomNav({ talkId }: { talkId: number }) {
+export function BottomNav() {
   const t = useTranslations("nav");
   const pathname = usePathname();
   const onCalendar = pathname.endsWith("/calendar");
-  const base = `/talk/${talkId}`;
 
   const pill = (href: string, label: string, active: boolean) => (
     <Link
@@ -31,8 +30,8 @@ export function BottomNav({ talkId }: { talkId: number }) {
       aria-label={t("label")}
       className="fixed right-0 bottom-0 left-0 flex justify-center gap-2 border-t border-border bg-background px-4 pt-2.5 pb-[calc(10px+env(safe-area-inset-bottom))]"
     >
-      {pill(base, t("picks"), !onCalendar)}
-      {pill(`${base}/calendar`, t("calendar"), onCalendar)}
+      {pill("/", t("picks"), !onCalendar)}
+      {pill("/calendar", t("calendar"), onCalendar)}
     </nav>
   );
 }

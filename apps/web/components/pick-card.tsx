@@ -21,7 +21,7 @@ export interface Pick {
   why: string;
 }
 
-export function PickCard({ pick, talkId }: { pick: Pick; talkId: number }) {
+export function PickCard({ pick }: { pick: Pick }) {
   const t = useTranslations("picks");
   const format = useFormatter();
 
@@ -30,8 +30,8 @@ export function PickCard({ pick, talkId }: { pick: Pick; talkId: number }) {
   const division = pick.units.join("/");
   const calendarHref =
     start === null
-      ? `/talk/${talkId}/calendar`
-      : `/talk/${talkId}/calendar?date=${denverDayKey(start)}`;
+      ? "/calendar"
+      : `/calendar?date=${denverDayKey(start)}`;
 
   return (
     <Card
