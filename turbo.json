@@ -32,6 +32,7 @@
     }
   },
   "globalEnv": [
-    "DATABASE_URL"
+    "DATABASE_URL",
+    "PLAYWRIGHT_BASE_URL"
   ]
 }
