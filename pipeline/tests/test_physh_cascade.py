@@ -127,3 +127,24 @@ def test_decide_pairs_screens_on_max_of_name_and_text_sim():
     (d,) = decide_pairs(["self-assembly", "self-assembled monolayers"],
                         {}, p, embed, texts)
     assert d.action == "judge" and d.provenance == "llm-unfiled"
+
+
+def test_decide_pairs_bulk_matches_decide_pairs():
+    """The bulk path (numpy sims, relation caching, drops summarized) must
+    reach identical decisions to the reference implementation."""
+    from gps_engine.cascade import decide_pairs, decide_pairs_bulk
+    p = tiny_tree()
+    names = ["a", "b", "c", "d"]
+    filings = {"a": [F("sa", .9)], "b": [F("sa", .9)], "c": [F("sb", .9)]}
+
+    def embed(items):
+        vecs = {"a": [1.0, 0.0], "b": [0.9, 0.1], "c": [0.0, 1.0], "d": [0.5, 0.5]}
+        return [vecs[i.split(":")[0].strip()] for i in items]
+
+    texts = {n: f"{n}: desc of {n}" for n in names}
+    ref = decide_pairs(names, filings, p, embed, texts)
+    kept, n_dropped = decide_pairs_bulk(names, filings, p, embed, texts)
+    ref_kept = [d for d in ref if d.action != "drop"]
+    assert sorted((d.a, d.b, d.action, d.provenance) for d in kept) == \
+           sorted((d.a, d.b, d.action, d.provenance) for d in ref_kept)
+    assert n_dropped == len(ref) - len(ref_kept)

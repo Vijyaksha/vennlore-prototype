@@ -131,3 +131,53 @@ def _decide(a, b, filings, physh, sim, fanin=None) -> Decision:
         return Decision(a, b, "judge", "llm-unfiled", 0, "",
                         f"no tree filing; text similarity {sim:.2f}")
     return Decision(a, b, "drop", "unfiled-low-text-sim", 0, "", "")
+
+
+def decide_pairs_bulk(names: list[str], filings: dict[str, list[dict]],
+                      physh: PhySH, embed, texts: dict[str, str]
+                      ) -> tuple[list[Decision], int]:
+    """decide_pairs at corpus scale: numpy similarity matrices, PhySH
+    relation results cached by concept-set signature, and "drop" decisions
+    summarized as a count instead of materialized. Returns (kept, n_dropped)
+    where kept holds every auto-*/judge decision."""
+    import numpy as np
+
+    def _norm_rows(vecs):
+        m = np.asarray(vecs, dtype=np.float32)
+        n = np.linalg.norm(m, axis=1, keepdims=True)
+        n[n == 0] = 1.0
+        return m / n
+
+    tm = _norm_rows(embed([texts.get(n, n) for n in names]))
+    nm = _norm_rows(embed(list(names)))
+    sims = np.maximum(tm @ tm.T, nm @ nm.T)
+
+    fanin = shelf_fanin(filings)
+    sig = {n: tuple(sorted((f["concept"], f["confidence"])
+                           for f in (filings.get(n) or []))) for n in names}
+    rel_cache: dict[tuple, object] = {}
+
+    class _CachedPhysh:
+        """physh view whose best_relation memoizes on concept-set pairs."""
+        def __init__(self, inner):
+            self._inner = inner
+            self.label = inner.label
+
+        def best_relation(self, ca, cb):
+            key = (tuple(sorted(ca)), tuple(sorted(cb)))
+            if key not in rel_cache:
+                rel_cache[key] = self._inner.best_relation(list(ca), list(cb))
+            return rel_cache[key]
+
+    cp = _CachedPhysh(physh)
+    kept: list[Decision] = []
+    n_dropped = 0
+    for i in range(len(names)):
+        for j in range(i + 1, len(names)):
+            d = _decide(names[i], names[j], filings, cp,
+                        float(sims[i, j]), fanin)
+            if d.action == "drop":
+                n_dropped += 1
+            else:
+                kept.append(d)
+    return kept, n_dropped
