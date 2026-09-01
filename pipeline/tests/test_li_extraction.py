@@ -136,3 +136,41 @@ def test_glean_handles_empty_response_fields():
     llm = FakeLLM(responses=[{"missed_methods": [], "descriptions": {}}])
     methods, desc = glean_and_describe(talk, ["afm"], llm)
     assert methods == ["afm"] and desc == {}
+
+
+def test_extract_with_retry_survives_transient_tool_call_flake(monkeypatch):
+    """DeepSeek's function-calling intermittently returns an empty tool call,
+    which SchemaLLMPathExtractor surfaces as ValueError (raise_on_error=True).
+    The retry wrapper builds a FRESH extractor per attempt (asyncio safety)
+    and only re-raises once attempts are exhausted."""
+    from gps_engine.li_extraction import extract_methods_with_retry
+    import gps_engine.li_extraction as li_mod
+    monkeypatch.setattr(li_mod.time, "sleep", lambda s: None)
+
+    built = []
+
+    def make_extractor():
+        n = len(built)
+        built.append(n)
+        if n < 2:
+            class Flaky:
+                def __call__(self, nodes):
+                    raise ValueError("Structured output extraction failed")
+            return Flaky()
+        return FakeExtractor(entities=[EntityNode(label="METHOD", name="DMRG")])
+
+    assert extract_methods_with_retry(TALK, make_extractor) == ["DMRG"]
+    assert len(built) == 3  # fresh extractor per attempt
+
+
+def test_extract_with_retry_reraises_after_exhaustion(monkeypatch):
+    from gps_engine.li_extraction import extract_methods_with_retry
+    import gps_engine.li_extraction as li_mod
+    monkeypatch.setattr(li_mod.time, "sleep", lambda s: None)
+
+    class AlwaysFlaky:
+        def __call__(self, nodes):
+            raise ValueError("Structured output extraction failed")
+
+    with pytest.raises(ValueError, match="Structured output"):
+        extract_methods_with_retry(TALK, AlwaysFlaky, attempts=3)

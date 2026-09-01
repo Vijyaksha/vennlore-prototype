@@ -1,7 +1,8 @@
 """Method extraction via LlamaIndex's SchemaLLMPathExtractor: a strict,
 schema-constrained knowledge-graph builder that pulls the research METHODS a
 talk USES (not the system it studies) from its title and abstract."""
-from typing import Literal
+import time
+from typing import Callable, Literal
 
 from llama_index.core.graph_stores.types import KG_NODES_KEY
 from llama_index.core.indices.property_graph import SchemaLLMPathExtractor
@@ -87,6 +88,25 @@ def extract_methods_li(talk: Talk, extractor) -> list[str]:
             seen.add(key)
             result.append(str(name).strip())
     return result
+
+
+def extract_methods_with_retry(
+    talk: Talk, make_extractor: Callable[[], object], attempts: int = 3
+) -> list[str]:
+    """extract_methods_li with a fresh extractor per attempt. Some providers
+    (observed: DeepSeek function-calling) intermittently return an empty tool
+    call, which strict extraction surfaces as ValueError; that flake is
+    transient, so it consumes an attempt instead of killing the run."""
+    last: ValueError | None = None
+    for attempt in range(attempts):
+        if attempt:
+            time.sleep(2 * attempt)
+        try:
+            return extract_methods_li(talk, make_extractor())
+        except ValueError as err:
+            last = err
+    assert last is not None
+    raise last
 
 
 GLEAN_PROMPT = """Title: {title}
