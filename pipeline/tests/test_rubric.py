@@ -71,3 +71,17 @@ def test_judge_candidate_without_claims_has_no_claims_block():
                               "usage_parallel": 1, "match": False, "why": "w"}])
     judge_candidate(ME, OTHER, llm)
     assert "STATED CLAIMS" not in llm.prompts[0]
+
+
+def test_missing_match_defaults_to_false():
+    """Some providers (observed: deepseek-chat) omit the match boolean.
+    It is decorative — callers derive match from the calibrated score sum —
+    so absence defaults to False rather than killing a run; the axis scores
+    remain required."""
+    llm = FakeLLM(responses=[{
+        "same_method": 4, "specificity": 3, "usage_parallel": 4,
+        "why": "same trained-photocurrent readout",
+    }])
+    j = judge_candidate(ME, OTHER, llm)
+    assert j.match is False
+    assert (j.same_method, j.specificity, j.usage_parallel) == (4, 3, 4)

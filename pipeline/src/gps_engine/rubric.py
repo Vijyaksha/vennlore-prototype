@@ -109,14 +109,18 @@ def judge_candidate(mine: Talk, cand: Talk, llm: LLMClient,
                     '"specificity": 0, "usage_parallel": 0, "match": true, '
                     '"why": "string"}',
     )
-    if not isinstance(out["match"], bool):
-        raise ValueError(f"non-boolean match from LLM: {out['match']!r}")
+    # match is decorative — callers derive it from the calibrated score
+    # sum — so a provider omitting it (observed: deepseek-chat) defaults to
+    # False; a PRESENT non-boolean still means the reply is malformed.
+    match = out.get("match", False)
+    if not isinstance(match, bool):
+        raise ValueError(f"non-boolean match from LLM: {match!r}")
     return Judgment(
         candidate_id=cand.id,
         same_method=int(out["same_method"]),
         specificity=int(out["specificity"]),
         usage_parallel=int(out["usage_parallel"]),
-        match=out["match"],
+        match=match,
         # unknown domain never counts as cross-domain — surprise picks need affirmative evidence
         cross_domain=bool(mine.units) and bool(cand.units) and not (set(mine.units) & set(cand.units)),
         why=str(out["why"]),
