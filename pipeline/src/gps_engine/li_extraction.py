@@ -94,6 +94,9 @@ EXTRACT_JSON_PROMPT = (
     "A METHOD is a technique, algorithm, measurement, fabrication, or "
     "theoretical framework the authors USE — not the system they study, "
     "not the phenomenon. Use the authors' own terminology.\n"
+    "Name each method by its short canonical technique name (a few words), "
+    "NOT a full protocol description — no equipment configurations, "
+    "materials, wavelengths, or parameter values in the name.\n"
     "List every method this work uses (at most 25). Empty list if none.\n"
     "-------\n"
     "{text}\n"
@@ -147,7 +150,8 @@ measurements, fabrication, or theoretical frameworks the authors USE):
 
 Reply with:
 1. missed_methods: additional methods the authors actually USE that the first
-   pass missed. Fabrication, synthesis, and sample-preparation steps COUNT as
+   pass missed, each named by its short canonical technique name (a few
+   words, no protocol details). Fabrication, synthesis, and sample-preparation steps COUNT as
    methods even when the resulting structure is the paper's subject (a study
    OF self-assembled monolayers that BUILDS them by self-assembly USES
    self-assembly). Use the authors' own terminology; do not invent methods

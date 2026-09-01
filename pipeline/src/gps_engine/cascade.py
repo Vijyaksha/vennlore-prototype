@@ -16,6 +16,10 @@ FANIN_MAX = 4          # a shelf holding more methods than this is a hub: it
                        # granularity rule made structural)
 COUSIN_MAX_DIST = 4    # cousins farther than this are treated as distant
 SIM_COUSIN = 0.45      # embedding floor for cousin pairs to reach the LLM
+SIM_HUB = 0.30         # floor for confident same-shelf (hub) pairs: the tree
+                       # already vouches for family kinship, and description
+                       # texts carry each talk's domain, so cross-domain kin
+                       # pairs legitimately sit in the 0.30-0.45 band
 SIM_UNFILED = 0.50     # embedding floor for pairs lacking tree info (old behavior)
 SIM_ESCAPE = 0.70      # escape valve: vetoed pairs above this still get judged
 
@@ -59,14 +63,19 @@ def decide_pairs(names: list[str], filings: dict[str, list[dict]],
                  physh: PhySH, embed, texts: dict[str, str]) -> list[Decision]:
     """filings: name -> [{"concept","label","confidence"}]; texts: name ->
     'name: description' string used for the embedding screen."""
-    vecs = dict(zip(names, embed([texts.get(n, n) for n in names])))
+    # Two similarity views: description texts disambiguate homonyms but
+    # carry each talk's own domain (pushing cross-domain kin pairs down);
+    # bare names do the reverse. The screen takes the max — it is a recall
+    # device; the judge, which sees the descriptions, keeps precision.
+    tvecs = dict(zip(names, embed([texts.get(n, n) for n in names])))
+    nvecs = dict(zip(names, embed(list(names))))
     fanin = shelf_fanin(filings)
     out = []
     for i in range(len(names)):
         for j in range(i + 1, len(names)):
             a, b = names[i], names[j]
-            out.append(_decide(a, b, filings, physh,
-                               _cos(vecs[a], vecs[b]), fanin))
+            sim = max(_cos(tvecs[a], tvecs[b]), _cos(nvecs[a], nvecs[b]))
+            out.append(_decide(a, b, filings, physh, sim, fanin))
     return out
 
 
@@ -93,7 +102,7 @@ def _decide(a, b, filings, physh, sim, fanin=None) -> Decision:
                                 f"both file onto rare PhySH shelf "
                                 f"'{physh.label.get(rare[0], '?')}'", "")
             # hub shelf: shared name-tag, not shared identity — needs a judge
-            if sim >= SIM_COUSIN:
+            if sim >= SIM_HUB:
                 ev = (f"both file onto the BROAD PhySH shelf "
                       f"'{rel.lca_label}' (a hub holding many corpus "
                       f"methods — shelf-sharing alone proves nothing); "

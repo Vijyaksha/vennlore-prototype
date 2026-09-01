@@ -36,7 +36,9 @@ ROOT = Path(__file__).resolve().parents[2]
 PROVIDER = os.environ.get("GPS_PROVIDER", "deepseek")
 if PROVIDER == "deepseek":
     EXTRACT_MODEL = "deepseek-chat"
-    JUDGE_MODEL = "deepseek-chat"
+    # deepseek-chat states the right parallel then under-scores it; the
+    # reasoning model holds the steelman (retune finding, 2026-09-01).
+    JUDGE_MODEL = "deepseek-reasoner"
     MakeLLM = DeepSeekLLM
 elif PROVIDER == "anthropic":
     EXTRACT_MODEL = "claude-haiku-4-5-20251001"

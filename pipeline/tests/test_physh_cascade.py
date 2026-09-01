@@ -56,6 +56,12 @@ def test_cascade_hub_shelf_never_auto_merges():
     hub_fanin = {"sa": 20}
     d = _decide("a", "b", filings, p, sim=0.6, fanin=hub_fanin)
     assert d.action == "judge" and d.provenance == "llm-hub-shelf"
+    # Confident same-shelf is strong tree evidence: descriptions carry each
+    # talk's own domain, so cross-domain kin pairs sit in the 0.30-0.45 band
+    # (observed: anchor photoconductivity x perovskite transient photocurrent
+    # at 0.32) — the judge, not the text screen, must decide those.
+    d = _decide("a", "b", filings, p, sim=0.35, fanin=hub_fanin)
+    assert d.action == "judge" and d.provenance == "llm-hub-shelf"
     d = _decide("a", "b", filings, p, sim=0.2, fanin=hub_fanin)
     assert d.action == "drop"
     # rare shelf still auto-merges
@@ -98,3 +104,26 @@ def test_file_method_validates_indices_and_caps():
 def test_file_method_empty_candidates():
     p = tiny_tree()
     assert file_method("x", "y", [], p, FakeLLM(responses=[])) == []
+
+
+def test_decide_pairs_screens_on_max_of_name_and_text_sim():
+    """Description texts carry each talk's own domain, so cross-domain uses
+    of the SAME technique can score low on text sim while the bare names are
+    near-identical (observed: 'self-assembly' vs 'self-assembled monolayers'
+    text 0.43 / names 0.51 with a 0.50 unfiled gate). The screen must pass a
+    pair when EITHER view clears the floor — the judge, which sees the
+    descriptions, keeps precision."""
+    from gps_engine.cascade import decide_pairs
+    p = tiny_tree()
+
+    def embed(items):
+        # name-view vectors are identical (sim 1.0); text-view orthogonal.
+        if any(":" in it for it in items):   # texts carry "name: description"
+            return [[1.0, 0.0], [0.0, 1.0]]
+        return [[1.0, 0.0], [1.0, 0.0]]      # bare names
+
+    texts = {"self-assembly": "self-assembly: porphyrin nanorod growth",
+             "self-assembled monolayers": "self-assembled monolayers: CISS films"}
+    (d,) = decide_pairs(["self-assembly", "self-assembled monolayers"],
+                        {}, p, embed, texts)
+    assert d.action == "judge" and d.provenance == "llm-unfiled"
