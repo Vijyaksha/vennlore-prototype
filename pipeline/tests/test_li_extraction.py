@@ -174,3 +174,25 @@ def test_extract_with_retry_reraises_after_exhaustion(monkeypatch):
 
     with pytest.raises(ValueError, match="Structured output"):
         extract_methods_with_retry(TALK, AlwaysFlaky, attempts=3)
+
+
+def test_extract_methods_json_returns_deduped_methods():
+    """JSON-mode extraction (used for providers whose function-calling is
+    unreliable) must mirror extract_methods_li's contract: authors'-own-
+    terminology method names, case-insensitively deduped, order kept."""
+    from gps_engine.li_extraction import extract_methods_json
+    from gps_engine.llm import FakeLLM
+    llm = FakeLLM(responses=[
+        {"methods": ["DMRG", "dmrg", "  Monte Carlo  ", ""]},
+    ])
+    assert extract_methods_json(TALK, llm) == ["DMRG", "Monte Carlo"]
+    # The prompt must carry the talk text and the METHOD definition.
+    assert TALK.title in llm.prompts[0]
+    assert "METHOD is a technique" in llm.prompts[0]
+
+
+def test_extract_methods_json_empty_is_explicit():
+    from gps_engine.li_extraction import extract_methods_json
+    from gps_engine.llm import FakeLLM
+    llm = FakeLLM(responses=[{"methods": []}])
+    assert extract_methods_json(TALK, llm) == []

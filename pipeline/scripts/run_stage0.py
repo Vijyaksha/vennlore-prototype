@@ -20,7 +20,9 @@ from gps_engine.physh import load_physh  # noqa: E402
 from gps_engine.corpus import Talk, load_talks  # noqa: E402
 from gps_engine.funnel import candidates  # noqa: E402
 from gps_engine.graph import MethodGraph  # noqa: E402
-from gps_engine.li_extraction import build_extractor, extract_methods_with_retry, glean_and_describe  # noqa: E402
+from gps_engine.li_extraction import (  # noqa: E402
+    build_extractor, extract_methods_json, extract_methods_with_retry,
+    glean_and_describe)
 from gps_engine.llm import AnthropicLLM, DeepSeekLLM, LLMRefusal  # noqa: E402
 from gps_engine.recommend import assemble  # noqa: E402
 from gps_engine.rubric import Judgment, judge_candidate  # noqa: E402
@@ -142,10 +144,17 @@ def main() -> None:
         # Fresh extractor per talk: SchemaLLMPathExtractor.__call__ does
         # asyncio.run(...) per invocation, and reusing one Anthropic client's
         # httpx transport across event loops (or threads) is unsafe.
-        ms = checkpointed(OUT / "methods" / f"{t.id}.json",
-                          lambda: extract_methods_with_retry(
-                              t, lambda: build_extractor(
-                                  EXTRACT_MODEL, provider=PROVIDER)))
+        # DeepSeek's function-calling deterministically returns empty tool
+        # calls for some abstracts, so its extraction goes through plain
+        # JSON mode; Anthropic keeps the LlamaIndex schema extractor.
+        if PROVIDER == "deepseek":
+            ms = checkpointed(OUT / "methods" / f"{t.id}.json",
+                              lambda: extract_methods_json(t, extract_llm))
+        else:
+            ms = checkpointed(OUT / "methods" / f"{t.id}.json",
+                              lambda: extract_methods_with_retry(
+                                  t, lambda: build_extractor(
+                                      EXTRACT_MODEL, provider=PROVIDER)))
         # Gleaning pass (recall sweep) + per-method usage descriptions.
         enriched = checkpointed(OUT / "enrich" / f"{t.id}.json",
                                 lambda: list(glean_and_describe(t, ms, extract_llm)))

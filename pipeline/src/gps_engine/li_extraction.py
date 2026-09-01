@@ -90,6 +90,35 @@ def extract_methods_li(talk: Talk, extractor) -> list[str]:
     return result
 
 
+EXTRACT_JSON_PROMPT = (
+    "A METHOD is a technique, algorithm, measurement, fabrication, or "
+    "theoretical framework the authors USE — not the system they study, "
+    "not the phenomenon. Use the authors' own terminology.\n"
+    "List every method this work uses (at most 25). Empty list if none.\n"
+    "-------\n"
+    "{text}\n"
+    "-------\n"
+)
+
+
+def extract_methods_json(talk: Talk, llm: LLMClient) -> list[str]:
+    """Plain JSON-mode extraction for providers whose function-calling is
+    unreliable (observed: DeepSeek returns empty tool calls for some
+    abstracts, deterministically). Same contract as extract_methods_li."""
+    out = llm.complete_json(
+        EXTRACT_JSON_PROMPT.format(text=f"{talk.title}\n\n{talk.abstract}"),
+        schema_hint='{"methods": ["name"]}',
+    )
+    seen: set[str] = set()
+    result: list[str] = []
+    for m in out.get("methods", []) or []:
+        key = _norm(m)
+        if key and key not in seen:
+            seen.add(key)
+            result.append(str(m).strip())
+    return result
+
+
 def extract_methods_with_retry(
     talk: Talk, make_extractor: Callable[[], object], attempts: int = 3
 ) -> list[str]:
