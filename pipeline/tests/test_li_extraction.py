@@ -92,6 +92,22 @@ def test_build_extractor_smoke(monkeypatch):
     assert extractor.max_triplets_per_chunk == 25
 
 
+def test_build_extractor_deepseek(monkeypatch):
+    """Construction only — never call() this; no network, no live LLM."""
+    pytest.importorskip("llama_index.llms.deepseek")
+    monkeypatch.setenv("DEEPSEEK_API_KEY", "sk-test-dummy-not-a-real-key")
+    extractor = build_extractor("deepseek-chat", provider="deepseek")
+    assert type(extractor.llm).__name__ == "DeepSeek"
+    assert extractor.strict is True
+    assert extractor.kg_validation_schema == {"WORK": ["USES_METHOD"]}
+    assert extractor.max_triplets_per_chunk == 25
+
+
+def test_build_extractor_rejects_unknown_provider():
+    with pytest.raises(ValueError, match="provider"):
+        build_extractor("some-model", provider="mistral")
+
+
 def test_glean_merges_missed_methods_and_dedupes():
     from gps_engine.li_extraction import glean_and_describe
     from gps_engine.llm import FakeLLM

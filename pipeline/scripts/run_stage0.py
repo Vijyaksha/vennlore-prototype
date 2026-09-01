@@ -5,6 +5,7 @@ Checkpoints every artifact (skip-if-exists); rerun resumes.
 Progress probeable at pipeline/out/stage0/status.json."""
 import hashlib
 import json
+import os
 import sys
 import threading
 import time
@@ -20,15 +21,29 @@ from gps_engine.corpus import Talk, load_talks  # noqa: E402
 from gps_engine.funnel import candidates  # noqa: E402
 from gps_engine.graph import MethodGraph  # noqa: E402
 from gps_engine.li_extraction import build_extractor, extract_methods_li, glean_and_describe  # noqa: E402
-from gps_engine.llm import AnthropicLLM, LLMRefusal  # noqa: E402
+from gps_engine.llm import AnthropicLLM, DeepSeekLLM, LLMRefusal  # noqa: E402
 from gps_engine.recommend import assemble  # noqa: E402
 from gps_engine.rubric import Judgment, judge_candidate  # noqa: E402
 from gps_engine.similarity import apply_verdicts, judge_pair, sbert_embedder  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[2]
-OUT = Path(__file__).resolve().parents[1] / "out" / "stage0"
-EXTRACT_MODEL = "claude-haiku-4-5-20251001"
-JUDGE_MODEL = "claude-sonnet-5"
+
+# Provider switch (GPS_PROVIDER=deepseek|anthropic). Each provider keeps its
+# own checkpoint tree so runs never cross-contaminate and the Anthropic
+# baseline stays intact for comparison.
+PROVIDER = os.environ.get("GPS_PROVIDER", "deepseek")
+if PROVIDER == "deepseek":
+    EXTRACT_MODEL = "deepseek-chat"
+    JUDGE_MODEL = "deepseek-chat"
+    MakeLLM = DeepSeekLLM
+elif PROVIDER == "anthropic":
+    EXTRACT_MODEL = "claude-haiku-4-5-20251001"
+    JUDGE_MODEL = "claude-sonnet-5"
+    MakeLLM = AnthropicLLM
+else:
+    raise SystemExit(f"unknown GPS_PROVIDER {PROVIDER!r}")
+OUT = Path(__file__).resolve().parents[1] / "out" / (
+    "stage0" if PROVIDER == "anthropic" else f"stage0-{PROVIDER}")
 WORKERS = 8
 MIN_EDGE_STRENGTH = 0  # query-time tightness dial; 0 walks every judged edge
 t0 = time.time()
@@ -118,8 +133,8 @@ def main() -> None:
         topics=(), units=("DPOLY",), session_title="", start=None, end=None)
     talks[0] = anchor
 
-    judge_llm = AnthropicLLM(JUDGE_MODEL)
-    extract_llm = AnthropicLLM(EXTRACT_MODEL)
+    judge_llm = MakeLLM(JUDGE_MODEL)
+    extract_llm = MakeLLM(EXTRACT_MODEL)
 
     status("extraction")
 
@@ -128,7 +143,8 @@ def main() -> None:
         # asyncio.run(...) per invocation, and reusing one Anthropic client's
         # httpx transport across event loops (or threads) is unsafe.
         ms = checkpointed(OUT / "methods" / f"{t.id}.json",
-                          lambda: extract_methods_li(t, build_extractor(EXTRACT_MODEL)))
+                          lambda: extract_methods_li(
+                              t, build_extractor(EXTRACT_MODEL, provider=PROVIDER)))
         # Gleaning pass (recall sweep) + per-method usage descriptions.
         enriched = checkpointed(OUT / "enrich" / f"{t.id}.json",
                                 lambda: list(glean_and_describe(t, ms, extract_llm)))

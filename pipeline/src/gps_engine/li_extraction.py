@@ -36,8 +36,16 @@ EXTRACT_PROMPT = (
 )
 
 
-def build_extractor(anthropic_model: str) -> SchemaLLMPathExtractor:
-    llm = Anthropic(model=anthropic_model)
+def build_extractor(
+    model: str, provider: str = "anthropic"
+) -> SchemaLLMPathExtractor:
+    if provider == "anthropic":
+        llm = Anthropic(model=model)
+    elif provider == "deepseek":
+        from llama_index.llms.deepseek import DeepSeek
+        llm = DeepSeek(model=model)
+    else:
+        raise ValueError(f"unknown provider {provider!r}")
     return SchemaLLMPathExtractor(
         llm=llm,
         extract_prompt=EXTRACT_PROMPT,

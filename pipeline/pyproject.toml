@@ -2,7 +2,14 @@
 name = "gps-engine"
 version = "0.1.0"
 requires-python = ">=3.12"
-dependencies = ["anthropic>=0.40", "sentence-transformers>=3", "llama-index-core>=0.12", "llama-index-llms-anthropic>=0.6"]
+dependencies = [
+    "anthropic>=0.40",
+    "sentence-transformers>=3",
+    "llama-index-core>=0.12",
+    "llama-index-llms-anthropic>=0.6",
+    "openai>=1.60",
+    "llama-index-llms-deepseek>=0.1",
+]
 
 [dependency-groups]
 dev = ["pytest>=8"]

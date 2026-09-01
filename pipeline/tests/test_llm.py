@@ -105,3 +105,82 @@ def test_anthropic_llm_retries_malformed_json(monkeypatch):
 
     llm._client.messages.create = lambda **kwargs: StubMessage(replies.pop(0))
     assert llm.complete_json("p", schema_hint="x") == {"ok": 2}
+
+
+# ---------- DeepSeekLLM (OpenAI-compatible endpoint) ----------
+
+def _ds(monkeypatch):
+    from gps_engine.llm import DeepSeekLLM
+    monkeypatch.setenv("DEEPSEEK_API_KEY", "fake-key")
+    return DeepSeekLLM(model="deepseek-chat")
+
+
+class _Choice:
+    def __init__(self, content, finish_reason="stop"):
+        self.finish_reason = finish_reason
+        self.message = type("M", (), {"content": content})()
+
+
+class _Resp:
+    def __init__(self, content, finish_reason="stop"):
+        self.choices = [_Choice(content, finish_reason)]
+
+
+def test_deepseek_llm_parses_json(monkeypatch):
+    llm = _ds(monkeypatch)
+    captured = {}
+
+    def create(**kwargs):
+        captured.update(kwargs)
+        return _Resp('{"ok": true}')
+
+    llm._client.chat.completions.create = create
+    assert llm.complete_json("p", schema_hint="x") == {"ok": True}
+    # JSON mode must be requested and the schema hint must reach the model.
+    assert captured["response_format"] == {"type": "json_object"}
+    assert captured["model"] == "deepseek-chat"
+    assert any("x" in m["content"] for m in captured["messages"]
+               if m["role"] == "system")
+
+
+def test_deepseek_llm_tolerates_fences_and_trailing_prose(monkeypatch):
+    llm = _ds(monkeypatch)
+    llm._client.chat.completions.create = (
+        lambda **kwargs: _Resp('```json\n{"ok": 1}\n```\nHope that helps!'))
+    assert llm.complete_json("p", schema_hint="x") == {"ok": 1}
+
+
+def test_deepseek_llm_retries_malformed_then_succeeds(monkeypatch):
+    import gps_engine.llm as llm_mod
+    monkeypatch.setattr(llm_mod.time, "sleep", lambda s: None)
+    llm = _ds(monkeypatch)
+    replies = ['{"broken": ,}', '{"ok": 2}']
+    llm._client.chat.completions.create = (
+        lambda **kwargs: _Resp(replies.pop(0)))
+    assert llm.complete_json("p", schema_hint="x") == {"ok": 2}
+
+
+def test_deepseek_llm_empty_content_exhausts_retries(monkeypatch):
+    import gps_engine.llm as llm_mod
+    monkeypatch.setattr(llm_mod.time, "sleep", lambda s: None)
+    llm = _ds(monkeypatch)
+    llm._client.chat.completions.create = lambda **kwargs: _Resp(None)
+    with pytest.raises(RuntimeError, match="no usable JSON response"):
+        llm.complete_json("p", schema_hint="x")
+
+
+def test_deepseek_llm_content_filter_raises_llm_refusal(monkeypatch):
+    """finish_reason 'content_filter' is the OpenAI-compatible analogue of
+    Anthropic's 'refusal' stop reason — deterministic, no retries."""
+    from gps_engine.llm import LLMRefusal
+    llm = _ds(monkeypatch)
+    calls = []
+
+    def create(**kwargs):
+        calls.append(1)
+        return _Resp("", finish_reason="content_filter")
+
+    llm._client.chat.completions.create = create
+    with pytest.raises(LLMRefusal):
+        llm.complete_json("p", schema_hint="x")
+    assert len(calls) == 1
