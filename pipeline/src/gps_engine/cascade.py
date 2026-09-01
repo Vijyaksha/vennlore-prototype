@@ -181,3 +181,23 @@ def decide_pairs_bulk(names: list[str], filings: dict[str, list[dict]],
             else:
                 kept.append(d)
     return kept, n_dropped
+
+
+def decide_pairs_cross(new_names: list[str], existing: list[str],
+                       filings: dict[str, list[dict]], physh: PhySH,
+                       embed, texts: dict[str, str]) -> list[Decision]:
+    """Query-time cascade: decide only new x existing pairs (bipartite);
+    existing-existing edges already live in the graph. Fan-in is computed
+    over ALL filings passed in so hub shelves stay hubs."""
+    all_names = list(new_names) + [n for n in existing if n not in new_names]
+    tvec = dict(zip(all_names, embed([texts.get(n, n) for n in all_names])))
+    nvec = dict(zip(all_names, embed(list(all_names))))
+    fanin = shelf_fanin(filings)
+    out = []
+    for a in new_names:
+        for b in existing:
+            if a == b:
+                continue
+            sim = max(_cos(tvec[a], tvec[b]), _cos(nvec[a], nvec[b]))
+            out.append(_decide(a, b, filings, physh, sim, fanin))
+    return out

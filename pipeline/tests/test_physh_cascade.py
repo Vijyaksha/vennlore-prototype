@@ -148,3 +148,24 @@ def test_decide_pairs_bulk_matches_decide_pairs():
     assert sorted((d.a, d.b, d.action, d.provenance) for d in kept) == \
            sorted((d.a, d.b, d.action, d.provenance) for d in ref_kept)
     assert n_dropped == len(ref) - len(ref_kept)
+
+
+def test_decide_pairs_cross_bipartite_only():
+    """Query-time cascade: new (anchor) methods are decided against every
+    existing name, but existing-existing pairs are NOT re-decided."""
+    from gps_engine.cascade import decide_pairs_cross
+    p = tiny_tree()
+    filings = {"new1": [F("sa", .9)], "old1": [F("sa", .9)]}
+
+    def embed(items):
+        vecs = {"new1": [1.0, 0.0], "old1": [0.95, 0.05], "old2": [0.0, 1.0]}
+        return [vecs[i.split(":")[0].strip()] for i in items]
+
+    texts = {n: f"{n}: d" for n in ("new1", "old1", "old2")}
+    ds = decide_pairs_cross(["new1"], ["old1", "old2"],
+                            filings, p, embed, texts)
+    pairs = {(d.a, d.b) for d in ds}
+    assert ("new1", "old1") in pairs and ("new1", "old2") in pairs
+    assert not any(a == "old1" and b == "old2" for a, b in pairs)
+    same = next(d for d in ds if d.b == "old1")
+    assert same.action in ("auto-same", "judge")
