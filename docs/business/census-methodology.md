@@ -285,6 +285,41 @@ If every applicable rung really does fail, the row stays `BORDERLINE` with `UNKN
 Method column records which rungs were tried, which were inapplicable and why, and the exact next
 action**, so the next session escalates rather than repeating rung 1.
 
+### The publisher deposit index — the highest-yield rung in medicine
+
+Medicine publishes its abstracts in journal supplements, and **OUP and Elsevier deposit those
+abstracts to Crossref individually**. That makes a whole conference countable exactly, at zero
+search cost, without ever opening a PDF. This one pipeline settled a dozen rows in a single agent
+slice on 2026-09-10.
+
+The method: cursor-page the journal's Crossref endpoint for a date range, group on
+`(volume, issue)`, and filter on `page` starting with `S` — supplement pagination is what marks an
+abstract apart from a regular article.
+
+```
+https://api.crossref.org/journals/<ISSN>/works?filter=from-pub-date:<Y>-01-01,until-pub-date:<Y>-12-31&rows=1000&select=volume,page,title&cursor=*
+```
+
+Then follow `next-cursor` until it stops. Proven counts: ESTRO 2,823 (Radiotherapy and Oncology
+vol 206, out of a 3,453-item journal-year), ESOC 1,981, EHRA 876 (DOIs `euaf085.001`–`.876`,
+contiguous with zero gaps), ICML 926, ASCO GU 882, ASCO GI 833, Tandem 810, AACE 778, SGO 695
+(696 S-paged items less one FOREWORD), EUROTOX 1,075.
+
+**Four traps, all hit for real:**
+
+- **Deposited-item count, not the highest ID.** ESTRO's IDs run 10–5037 but are block-allocated
+  per track; the 2,823 deposited items are the figure.
+- **One journal volume can hold two conferences.** Clinical Lymphoma Myeloma & Leukemia vol 24
+  mixes the IMS and SOHO supplements with both page series restarting — separate them on the
+  abstract-ID prefix in the title, never on the page band.
+- **OpenAlex `group_by=biblio.issue` silently merges a supplement with the regular issue of the
+  same number** (seen on Endocrine Practice). Crossref's page-prefix filter is the trustworthy
+  route; use OpenAlex only to corroborate.
+- **Some publishers deposit the whole supplement under ONE DOI** — Wiley, Springer, Liebert and
+  AAPM all do. Then there is nothing per-abstract to count and the PDF is usually paywalled, so
+  the row goes to rung 5 with the TOC URL named. Absence of a per-item deposit is *never* evidence
+  the meeting is small: ESMRMB's supplement is an 889-page book of abstracts.
+
 ### Why rungs 3–6 matter more than they look
 
 The first full Phase 2 session on medicine ran ~97 searches and got a usable number from roughly
