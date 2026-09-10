@@ -232,7 +232,7 @@ Rows are independent of one another, which is what makes this safe to fan out. T
    requeued if it has no resolvable URL, names no rung, or carries a method the orchestrator
    cannot re-run from the text alone. "Reproducible" means the exact grep/ID pattern or the exact
    page and control that was clicked — not "counted the programme".
-4. **Rung 5 is serial.** There is one browser instance, so agents work rungs 1–4 and 6–9 and
+4. **Rung 5 is serial.** There is one browser instance, so agents work rungs 1–4 and 6–8 and
    return `NEEDS_RUNG_5` for anything behind a 403 or a JS-rendered listing. The orchestrator runs
    that queue afterwards. Agents may first try a spoofed browser user-agent with `curl`, which
    beats some walls (spie.org) but not others (mrs.org, journals.iucr.org, iucr2023.org).
@@ -263,7 +263,12 @@ Work the rungs in order and stop at the first that yields. Record which rung pro
 | 6 | **Poster-board arithmetic** | 0 searches | Programmes print "boards 1–2,400", or poster sessions × boards per session. A direct floor. |
 | 7 | **Prior-year or sister-meeting figure** | 1 search | Mark `DATED`. A congress at 1,800 in 2019 is not under 1,500 now. |
 | 8 | **Third-party congress review** | 1 search | EMJ, ASCO Post, Medscape quote totals. Source of UEG's 3,800 and ERA's 2,800. |
-| 9 | **Ask the society** | email | Worth it for the top ~20 only. |
+
+**There is no "ask the society" rung.** Emailing an organiser was once listed as a final rung; it is
+removed, because nothing in this workflow can send or receive email, so it functioned only as an
+escape hatch that let a row be abandoned while looking diligent. If the ladder runs out, the row is
+`UNRESOLVED` with its trail recorded — say that plainly rather than deferring to a step nobody will
+take.
 
 Rungs proven *not* to work, so don't retry them: **Crossref** (congress abstracts get no DOIs) and
 **PubMed** (doesn't index individual abstracts). Both were tested and returned ordinary article
@@ -279,7 +284,7 @@ artefact and then not counting it.** On 2026-09-10 seven of thirteen numberless 
 agent batch had located the exact artefact — an abstract yearbook, a proceedings record, a
 programme archive — written "NEXT: rung 4, count it", and returned `UNKNOWN`. Those counts cost
 *zero searches*. Naming the next rung is not a substitute for climbing it; it is only acceptable
-when the next rung is genuinely out of reach (needs a browser you do not have, needs an email).
+when the next rung is genuinely out of reach (needs a browser you do not have).
 
 If every applicable rung really does fail, the row stays `BORDERLINE` with `UNKNOWN` **and its
 Method column records which rungs were tried, which were inapplicable and why, and the exact next
@@ -467,8 +472,7 @@ unchanged afterwards by recomputing them from the cells, never by reading the sh
   which reads as "no contributions". Confirm the host the event actually lives on.
 - **Distinguish a bot wall from a dead network.** A 403/JS interstitial is rung 5 (a browser fixes
   it). A host that resolves but times out on every protocol is not — a browser fails identically, so
-  do not queue it. Belarus's congress programme is unreachable this way; only rung 9 or another
-  network will get it.
+  do not queue it.
 - **Domain lookalikes are live traps.** `aapmannualmeeting.com` is the American Academy of Pain
   Medicine, not medical-physics AAPM. `hkps.org.hk` is the Hong Kong *Psychological* Society, not
   the physics one. Confirm the domain belongs to the society before citing it.
