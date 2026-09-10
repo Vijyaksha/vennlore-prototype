@@ -322,6 +322,25 @@ to rung 5:
   `<host>/<meeting>/meetingapi.cgi/Program` returns JSON with a `ChildList_Paper` array per
   programme. That gave AcademyHealth ARM 1,784 (2025) and 2,089 (2023) at zero search cost.
 
+**Supplement pagination is not always `S`.** The `S`-prefix filter is the default, not the rule, and
+getting it wrong makes a large conference look unresolvable or tiny:
+- **`e`-pages**: IJROBP puts ASTRO's *posters* on e-pages. The S-filter alone returns 460 (orals
+  only); the true figure is 460 + 1,805 = **2,265**, an almost fourfold undercount.
+- **`B`-pages**: TCT paginates on B. The S-filter returns nothing at all.
+- Always group the journal-year by page-alpha-prefix first and look at what prefixes exist, rather
+  than assuming `S`.
+
+**One journal volume routinely holds several meetings, sometimes contiguously.** Annals of Oncology
+vol 36 carries **four** ESMO meetings on *contiguous* S-pagination — only the Elsevier DOI month
+separates them, confirmed by the LBA numbering restarting at each. JACC vol 85 issue 12 mixes the
+regular issue with a 4,697-abstract supplement, separable on DOI form. A naive volume-wide count
+merges them into one inflated number.
+
+**The publisher boundary has one known exception.** *Alzheimer's & Dementia* deposits per item
+across nine supplement parts (AAIC = 5,985) even though Wiley otherwise does not. Re-tested at EJN
+and HemaSphere, which behave normally — so the boundary holds, with that title carved out. Test the
+specific journal rather than trusting the publisher.
+
 **Four traps, all hit for real:**
 
 - **Deposited-item count, not the highest ID.** ESTRO's IDs run 10–5037 but are block-allocated
@@ -442,7 +461,15 @@ unchanged afterwards by recomputing them from the cells, never by reading the sh
 - **Joint and duplicate events.** DDW is four societies running one meeting — count once.
   A conference appearing under two umbrellas gets `Include = 0` on the duplicate row.
 - **Trade shows.** Huge attendance plus a small paper count means it fails the bar. That's
-  the bar working, not a mistake.
+  the bar working, not a mistake. The sharpest case found so far is **EuroPCR: 12,177 attendees
+  against 743 counted abstracts** — a large teaching and live-case course, not a contributed
+  congress. It sits on the ~700 floor while looking, by attendance, like a flagship. This single
+  row is the best argument for why the bar is abstracts and never attendance.
+- **A cited source may not contain the figure it is cited for.** Three rows in one wave asserted
+  numbers their own source URLs did not carry — ISSCR "1,300 posters", AAPS "over 2,200"
+  (absent from five Wayback captures back to 2022), and AAIC "5,700". All three were flagged as
+  evidenced. When re-verifying an inherited row, **open the citation** rather than trusting the
+  tier; a figure whose source does not support it is worse than `UNKNOWN`, because it looks settled.
 - **Field boundaries.** Some meetings straddle fields (SfN: neuroscience/health). Pick one
   sheet, note the ambiguity, and count it once.
 - **Check Events/yr, not just the abstract count.** A quadrennial congress counted as annual
