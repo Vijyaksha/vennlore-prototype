@@ -305,6 +305,18 @@ vol 206, out of a 3,453-item journal-year), ESOC 1,981, EHRA 876 (DOIs `euaf085.
 contiguous with zero gaps), ICML 926, ASCO GU 882, ASCO GI 833, Tandem 810, AACE 778, SGO 695
 (696 S-paged items less one FOREWORD), EUROTOX 1,075.
 
+**Publisher boundary, established empirically:** Elsevier, LWW and OUP deposit abstracts per item,
+so they are countable this way. **Wiley, Springer, Karger, Liebert and AAPM do not** — they deposit
+the whole supplement under one DOI. For those, two workarounds beat the paywall before you resort
+to rung 5:
+- **The society's own mirror.** AGS is the template: `agsjournals.onlinelibrary.wiley.com` 403s and
+  deposits nothing, but AGS mirrors the entire JAGS supplement as a free PDF on its own meeting
+  site — 1,008 abstracts, both `pdftotext` modes agreeing on every prefix. Try the society site
+  before giving up on a Wiley-published supplement.
+- **Confex's backing API.** `meetingapp.cgi/Program` 403s, but the SPA's own endpoint
+  `<host>/<meeting>/meetingapi.cgi/Program` returns JSON with a `ChildList_Paper` array per
+  programme. That gave AcademyHealth ARM 1,784 (2025) and 2,089 (2023) at zero search cost.
+
 **Four traps, all hit for real:**
 
 - **Deposited-item count, not the highest ID.** ESTRO's IDs run 10–5037 but are block-allocated
@@ -428,6 +440,17 @@ unchanged afterwards by recomputing them from the cells, never by reading the sh
   the bar working, not a mistake.
 - **Field boundaries.** Some meetings straddle fields (SfN: neuroscience/health). Pick one
   sheet, note the ambiguity, and count it once.
+- **Check Events/yr, not just the abstract count.** A quadrennial congress counted as annual
+  inflates the model fourfold. Six medicine rows were wrong on 2026-09-10: WCD and IAGG are
+  quadrennial (0.25), IEA WCE and FENS triennial (0.33), ESOT and ESRS biennial (0.5). A world
+  congress is very often not annual — verify the cadence whenever you write a number.
+- **A meeting can stop existing.** Experimental Biology ended after 2022 and its FASEB J supplement
+  vanishes from 2023. Its 5,202 abstracts were the ALL-SOCIETY total across APS/ASBMB/AAA/ASIP/
+  ASPET, so a surviving "ASPET at EB" row would double-count every one of them. Delete on
+  non-existence, and say that is the reason — it is not a size judgement.
+- **Umbrella meetings double-count their members.** Beyond EB: COSM hosts nine societies, DDW four.
+  If the only countable artefact is the umbrella, the figure is an upper bound on any one member,
+  never that member's count.
 - **Programme IDs are often block-reserved, so the highest ID is NOT a count.** The 2025 Austrian/Swiss
   joint meeting's highest ID is 994, which would clear any floor; IDs are allocated per session in
   blocks of 10–20 and mostly unused, and four independent extractions land at 487–496. Always sort
