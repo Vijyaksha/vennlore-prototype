@@ -37,3 +37,9 @@ yarn-error.log*
 .DS_Store
 *.pem
 data/
+
+# Playwright MCP scratch
+.playwright-mcp/
+
+# Excel lock files
+~$*
