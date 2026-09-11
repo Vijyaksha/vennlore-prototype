@@ -270,6 +270,11 @@ escape hatch that let a row be abandoned while looking diligent. If the ladder r
 `UNRESOLVED` with its trail recorded — say that plainly rather than deferring to a step nobody will
 take.
 
+**Rung 9 is the attendance pass, not an abstract rung.** When the abstract ladder is genuinely
+exhausted — or the artefact is paywalled and unreachable — the row goes to rung 9, which finds
+attendance and programme character instead and refers the decision to Rupert. It is the only rung
+that never decides. See *Rung 9 — the attendance pass* below.
+
 Rungs proven *not* to work, so don't retry them: **Crossref** (congress abstracts get no DOIs) and
 **PubMed** (doesn't index individual abstracts). Both were tested and returned ordinary article
 counts in the dozens.
@@ -411,6 +416,145 @@ intact; without it the old rule stands.
 
 Report progress as **verified / total candidates** so completeness is always legible.
 
+## Rung 9 — the attendance pass (NON-DECIDING)
+
+Rung 9 sits outside the abstract ladder and **never decides a row's fate**. It does not set a
+Tier and does not move a row between the census and deleted sheets. It produces a referral
+packet — attendance, what that number counts, and whether the meeting is contributed or
+curated — and the call is Rupert's.
+
+It exists because abstracts turned out to be unrecoverable for a large slice of medicine.
+The decisive test across 26 blocked rows carrying a Crossref handle returned **2 countable,
+23 extent-only, 1 no handle**. Behind those paywalls is a PDF that needs a subscription, and
+no metadata route substitutes for opening it. So for the ~70 blocked rows, the ~26 with no
+artefact at all, and any row where the abstract ladder is exhausted, attendance plus character
+is the evidence Rupert decides on.
+
+### Why this ladder is shaped differently
+
+**Do not copy the abstract ladder.** Abstracts are almost never stated, so that ladder was about
+locating a countable artefact and then counting it. **Attendance is almost always stated
+somewhere.** The problem is the opposite one: many numbers exist, of wildly differing honesty,
+counting different things. So the attendance ladder ranks sources by **how much the source had
+to answer for the number**. It is a credibility ladder, not a counting ladder.
+
+The practical consequence: rung 1 was near-useless for abstracts; **here search is the workhorse**.
+Expect most rows to resolve at A1–A3 in one or two searches.
+
+### The ladder
+
+| Rung | Source | Why it ranks there |
+|---|---|---|
+| **A1** | **Exhibitor / sponsor prospectus** — search `"<conf>" exhibitor prospectus attendee demographics filetype:pdf`, or `"<conf>" "why exhibit"` | Highest yield AND highest accountability: exhibitors pay real money against these figures, and they are usually broken down (delegates vs exhibitors vs country) |
+| **A2** | **Post-meeting report / "congress by the numbers" / society annual report** | Retrospective; often gives the actual figure against A1's projection. **Prefer A2 over A1 when both exist and disagree** |
+| **A3** | **Society press release / newsroom / trade-press coverage of that edition** | Cheap, usually one round number, no breakdown |
+| **A4** | **Venue / convention bureau / ICCA / economic-impact study** | Independent of the society. Good corroboration; may report *bid* size rather than actual |
+| **A5** | **Programme-platform artefact** — participant directory, badge/ID ranges, app attendee list | The only rung that COUNTS rather than reads. Browser-only, reserved to the orchestrator — agents return `A5` with a null figure and say what to open |
+| **A6** | **Proxy arithmetic** — parallel sessions × room capacity, exhibition floor sqm, exhibitor count | Order-of-magnitude ONLY, and must be flagged as an estimate in the method text |
+| **A7** | **Prior year / sister meeting** | Carry a nearby year's figure, stating the year explicitly |
+
+### Three rules that matter more than the rungs
+
+**1. Every number carries a BASIS tag.** `12,177` is meaningless without knowing whether it counts
+delegates only, or delegates + exhibitor staff + press + virtual. Tags: `DELEGATES`,
+`TOTAL_ONSITE`, `TOTAL_INC_VIRTUAL`, `UNSPECIFIED`. If the source does not say, the tag is
+`UNSPECIFIED` — never guess. This is the single most abused number in the whole census.
+
+**2. Record disagreement; do not resolve it.** If the prospectus says 15,000 and the press release
+says 11,400, keep both — headline = the more accountable rung, the rest in `alt_figures`.
+The spread IS a finding: it measures that society's marketing inflation. **Never average.**
+
+**3. Stop at the first rung that yields a figure with a basis.** Nothing here decides anything, so
+unlike the abstract ladder there is no completeness obligation and no `UNKNOWN`-only-at-the-end
+rule. Cap: **2 searches per row**, 3 for a genuinely hard one.
+
+### Programme character — the second signal
+
+Strongest single discriminator: **does an open call for abstracts exist?** A submission deadline
+page, author guidelines, a "submit your abstract" CTA.
+
+- abstract book exists + open call → `CONTRIBUTED`
+- no call, invited-speaker programme, CME / live-case / hands-on-course framing → `CURATED`
+- both, or a small call bolted onto a taught programme → `HYBRID`
+- nothing found → `UNKNOWN`
+
+**A counted abstract figure settles character at zero search cost** — an open call necessarily
+produced those abstracts. `attlib.character_from_abstracts()` does this mechanically; it
+classified 144 of 252 medicine rows without a single search. Only spend effort where the
+abstracts column is UNKNOWN or blank.
+
+**EuroPCR is the worked example**: 12,177 attendees against 743 counted abstracts. Without the
+character signal that row reads as a giant contributed congress; it is a teaching and live-case
+course. Attendance alone will mislead you — that is why character is not optional.
+
+Once attendance and abstracts both exist, the **abstracts : attendance ratio** separates the two
+kinds directly. Slice queues so each agent gets a mix of counted-abstract and UNKNOWN rows: the
+counted rows calibrate the ratio, and without that calibration a bare attendance figure on an
+UNKNOWN row cannot be read.
+
+### Budget — settle this BEFORE launching
+
+A full wave (~45 rows × 2 searches × 5 agents) needs **~450 WebSearch calls against a default cap
+of 200 per session**. The cap is session-wide and **shared by local *and* remote subagents**, so
+fanning out buys nothing, and a phase run earlier in the same session can leave a later wave with
+zero budget. Ask Rupert to set `CLAUDE_CODE_MAX_WEB_SEARCHES_PER_SESSION` (~1000) or run the wave
+in a fresh session. Never edit that setting yourself.
+
+**Do not substitute a degraded method to avoid asking.** This was measured, not guessed: with
+search exhausted, blind WebFetch against guessed society URLs yielded **1 usable figure in 15
+fetches (~7%)** — five 403s, five 404s, four pages carrying no figure. Extrapolated, ~400 fetches
+for maybe 5–8 real numbers and ~38 nulls that are artefacts of tooling rather than findings about
+the meetings. Per rule 2 below, that file is *worse than no file*: it looks like evidence and is
+not. Search-engine result pages fetched through WebFetch are also not a workaround — DuckDuckGo
+returns a CAPTCHA and Mojeek returns 403.
+
+Unaudited conference-directory sites (10times and similar) are fetchable and cover nearly every
+row, but their numbers are self-reported and sit below A4. Do not use them without Rupert's
+explicit word, and if used, tag every such row `confidence: LOW`, basis `UNSPECIFIED`.
+
+### What rung 9 must never do
+
+1. Never set, suggest, or touch a Tier. Never write VERIFIED / BORDERLINE / OUT / DELETE.
+2. Never report a figure not seen on a page actually loaded. A number asserted only in a search
+   snippet is not evidence. Four rows in this workbook already assert figures their own cited
+   sources do not contain — do not add a fifth.
+3. Never touch or re-research the abstracts columns. The abstracts value is context for the
+   character call only.
+4. Never carry forward a number already in the sheet as if it were a finding. "Carried forward"
+   is not a method.
+5. Absence of evidence is not evidence the meeting is small — say so explicitly in the method text.
+
+### Columns and writeback
+
+Rung 9 writes only these, on `Census - <Field>`:
+
+| Col | Field |
+|---|---|
+| J | `Attendance` — as published, with the year |
+| K | `Attendance source (click)` — the page the number is ON, never a search page |
+| V | `Attendance basis` — DELEGATES / TOTAL_ONSITE / TOTAL_INC_VIRTUAL / UNSPECIFIED |
+| W | `Attendance rung + how` — which rung PRODUCED it, plus any DISAGREEMENT block |
+| X | `Programme character` — CONTRIBUTED / CURATED / HYBRID / UNKNOWN |
+| Y | `Rupert's call` — left empty for Rupert |
+
+`scratchpad/attlib.py` (tests in `scratchpad/test_attlib.py`, TDD) does the writeback. It credits
+**only the rung that produced a figure**, never the highest rung reached; renders disagreement
+without averaging; and **re-anchors every record by conference name** via `remap()`, because agent
+row numbers go stale the instant any row is deleted. Agents return JSON and never touch the
+workbook. Per-row agent contract: `row`, `conference` (echoed verbatim for re-anchoring),
+`attendance`, `attendance_numeric`, `attendance_year`, `attendance_basis`, `attendance_rung`,
+`attendance_rung_name`, `attendance_source_url`, `attendance_method`, `alt_figures[]`,
+`character`, `character_evidence`, `confidence`, `searches_used`.
+
+### Reporting
+
+Because rung 9 does not decide, report the honest pair rather than one number:
+**counted** events/yr (rows with a real abstract count) against **generous** events/yr (counted
+plus BORDERLINE). Rupert's calls in column Y move weight from the soft number to the hard one.
+Consider a `REFERRED` marker so rows awaiting his call stop counting silently toward the
+generous total.
+
+
 ## Tiers
 
 | Tier | Meaning |
@@ -535,11 +679,17 @@ unchanged afterwards by recomputing them from the cells, never by reading the sh
 | Field | State |
 |---|---|
 | Physical sciences | **Complete and fully re-verified (2026-09-10).** 55 census rows (28 VERIFIED, 27 BORDERLINE); 101 deleted rows, every one carrying a `Method` entry and 81 carrying an actual counted number (was 16). No duplicates in either direction. 6 rows remain queued for rung 5, and 2 are genuinely unreachable (Belarus: dead network; Russia: a Phase-1 gap naming no conference) |
-| Medicine & health | Phase 1 complete (313 candidates over 3 sweeps). Phase 2 27% done: 34 VERIFIED, 51 BORDERLINE, 1 deleted, 227 NOT YET CENSUSED. **Not yet re-verified under the ~700 floor or the `Method` column** — both passes still to run |
+| Medicine & health | **Phase 2 complete (2026-09-10)** — 249 of 252 rows, 3 never censused. 82 VERIFIED, 167 BORDERLINE; 143 rows carry a counted number, 106 remain UNKNOWN (71 paywall/browser-blocked, 26 ladder-exhausted, 9 search-starved). 56 rows deleted on evidence. **Rung 9 attendance pass STARTED 2026-09-11 and is the live front:** columns V–Y exist, character classified for 144/252 at zero search cost, ESC Congress is the only attendance figure written. The remaining 224 attendance rows are queued and blocked purely on the WebSearch cap — see the budget note in rung 9 |
 | CS / AI / engineering | Not started — the selective-paper world (NeurIPS: 21,575 submissions) |
 | Life sciences | Not started |
 | Chemistry | Not started — ACS placeholder awaiting a decision |
 | Social sciences | Not started |
+
+### Next action
+Run the rung 9 attendance wave over the 224 medicine rows lacking a figure. Slices,
+brief and writeback are on disk (`scratchpad/att/`, `scratchpad/attlib.py`). **Confirm the
+search budget first** — the last attempt died at 200/200 with zero rows researched.
+Physical-sciences attendance is the follow-on Rupert wants after medicine.
 
 ### Model numbers as of 2026-09-10
 SAM Global **112.15** (was 114.15 — the Iran and IPS duplicate fix is the only genuine model
