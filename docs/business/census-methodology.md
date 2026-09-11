@@ -35,7 +35,7 @@ context, never as the test. Two real examples of why: OFC has 16,700 attendees b
 (a trade show by attendance, but 1,300 papers clears the 800 floor, so it stays); APS DPP has
 2,190 attendees and 2,131 presentations (a research congress — in).
 
-## Six rules
+## Seven rules
 
 1. **Prove positives, never negatives.** Only look up conferences that might clear the bar.
    Never spend searches confirming that a small society is small. The result is an honest
@@ -78,6 +78,43 @@ context, never as the test. Two real examples of why: OFC has 16,700 attendees b
    different rungs, so the source column points at whatever *that* row's evidence actually was —
    the journal supplement issue page, the programme PDF, the society blog post — never a homepage
    or a generic conference page that merely mentions the meeting.
+7. **Never take a shortcut. If the method requires a search you cannot make, REFUSE and stop.**
+   This governs every number in this document — abstracts and attendance alike.
+
+   The method is not a suggestion that degrades gracefully when a tool runs out. Rungs 1–8 and
+   A1–A3 all *begin* with a search: search is what locates the countable artefact, or locates the
+   page that states the attendance. With no search there is no method, only guessing dressed up
+   as one.
+
+   **When the WebSearch budget is exhausted, the correct output is a refusal, not a thin file.**
+   Say plainly, to the user and in one line:
+
+   > **The session's search limit is used up. The chat has to be restarted to proceed.**
+
+   Then stop. Do not fill the rows in anyway. Do not substitute blind URL guessing, unaudited
+   directory sites, a cached recollection, or a figure from a search snippet you never opened.
+   Do not quietly lower the standard so the run *looks* finished.
+
+   **Why this is a rule and not a preference:** a search-starved run does not produce fewer
+   results, it produces *false* ones. Every unreachable row comes back `UNKNOWN` or null — and an
+   `UNKNOWN` in this workbook means "we looked and the number is not published", which is a claim
+   about the conference. A tooling block that masquerades as a finding corrupts the census in the
+   one direction that is hardest to detect later, because the row looks researched. This was
+   measured on 2026-09-11: with search exhausted, blind WebFetch against guessed society URLs
+   returned **1 usable figure in 15 fetches (~7%)** — five 403s, five 404s, four pages carrying no
+   number. Extrapolated over a 45-row slice: ~400 fetches, perhaps 5–8 real figures, and ~38 nulls
+   that are artefacts of the tooling rather than facts about the meetings. **That file is worse
+   than no file, because it looks like evidence and is not.**
+
+   The same applies to any other blocked rung: a paywalled PDF is `CLICK TO CONFIRM`, not a
+   guess; a browser-only count is a rung 5 queue entry, not an estimate. Refusing is the
+   diligent outcome — it hands the user a decision they can act on in ten seconds (raise the
+   budget, or restart the chat) instead of a file they have to audit row by row.
+
+   **Check the budget BEFORE launching a wave, not after.** ~45 rows x 2 searches x 5 agents is
+   ~450 calls against a default cap of 200, the cap is session-wide and shared by local *and*
+   remote subagents, and an earlier phase in the same session can leave a wave with zero budget
+   before it issues a single search. Raising it is Rupert's config change, never yours to make.
 
 ## Two phases (Phase 1 inline; Phase 2 may be parallelised — see the agent protocol)
 
@@ -208,7 +245,7 @@ restorations, and Pass B costs nothing but the ladder.
 ### Running Phase 2 with parallel agents
 
 **This section adds structure; it does not add a second method.** Everything above — the bar and
-the retention floor, the six rules, the escalation ladder, the citation and `Method` discipline —
+the retention floor, the seven rules, the escalation ladder, the citation and `Method` discipline —
 is mode-independent and binds identically whether a single operator works the rows inline or three
 agents work them in parallel. An agent is not following a different procedure; it is following
 *this* procedure, on a slice of the rows.
@@ -500,7 +537,7 @@ fanning out buys nothing, and a phase run earlier in the same session can leave 
 zero budget. Ask Rupert to set `CLAUDE_CODE_MAX_WEB_SEARCHES_PER_SESSION` (~1000) or run the wave
 in a fresh session. Never edit that setting yourself.
 
-**Do not substitute a degraded method to avoid asking.** This was measured, not guessed: with
+**Do not substitute a degraded method to avoid asking — this is rule 7, and it is a refusal, not a preference.** This was measured, not guessed: with
 search exhausted, blind WebFetch against guessed society URLs yielded **1 usable figure in 15
 fetches (~7%)** — five 403s, five 404s, four pages carrying no figure. Extrapolated, ~400 fetches
 for maybe 5–8 real numbers and ~38 nulls that are artefacts of tooling rather than findings about
