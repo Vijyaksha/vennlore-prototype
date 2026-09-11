@@ -1,0 +1,407 @@
+[
+ {
+  "row": 7,
+  "society": "American College of Cardiology (ACC)",
+  "country": "US",
+  "conference": "ACC Annual Scientific Session (ACC.25)",
+  "umbrella": "Cardiology",
+  "abstracts": "4,697 abstracts published (accepted) in the JACC ACC.25 supplement",
+  "tier": "VERIFIED"
+ },
+ {
+  "row": 17,
+  "society": "American Diabetes Association (ADA)",
+  "country": "US",
+  "conference": "ADA Scientific Sessions",
+  "umbrella": "Diabetes, endocrine & obesity",
+  "abstracts": "2,213 abstracts published in the Diabetes Scientific Sessions supplement",
+  "tier": "VERIFIED"
+ },
+ {
+  "row": 18,
+  "society": "ARVO (Assoc. for Research in Vision and Ophthalmology)",
+  "country": "US",
+  "conference": "ARVO Annual Meeting",
+  "umbrella": "Ophthalmology",
+  "abstracts": "UNKNOWN for a current year \u2014 existing DATED ~6,100/yr (2007-2010) neither confir",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 30,
+  "society": null,
+  "country": null,
+  "conference": "ESTRO Congress",
+  "umbrella": "Oncology",
+  "abstracts": "2,823 abstracts (ESTRO 2025 abstract book)",
+  "tier": "VERIFIED"
+ },
+ {
+  "row": 35,
+  "society": null,
+  "country": null,
+  "conference": "ONS Congress (oncology nursing)",
+  "umbrella": "Oncology",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 40,
+  "society": null,
+  "country": null,
+  "conference": "ICML (lymphoma, Lugano)",
+  "umbrella": "Oncology",
+  "abstracts": "926 abstracts (Hematological Oncology vol 43 issue S3)",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 47,
+  "society": null,
+  "country": null,
+  "conference": "SCAI Scientific Sessions",
+  "umbrella": "Cardiology",
+  "abstracts": "830 items in the SCAI 2025 abstract issue (JSCAI vol 4 issue 5, May 2025); ~800 ",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 52,
+  "society": null,
+  "country": null,
+  "conference": "ANA Annual Meeting",
+  "umbrella": "Neurology",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 55,
+  "society": null,
+  "country": null,
+  "conference": "ESOC \u2014 European Stroke Organisation Conference",
+  "umbrella": "Neurology",
+  "abstracts": "1,981 abstracts (European Stroke Journal vol 11, Supplement_1)",
+  "tier": "VERIFIED"
+ },
+ {
+  "row": 63,
+  "society": null,
+  "country": null,
+  "conference": "CROI \u2014 Retroviruses and Opportunistic Infections",
+  "umbrella": "Infectious disease",
+  "abstracts": "81 oral + more than 880 poster presentations accepted in the general round (~961",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 69,
+  "society": null,
+  "country": null,
+  "conference": "ECE \u2014 European Congress of Endocrinology",
+  "umbrella": "Diabetes, endocrine & obesity",
+  "abstracts": "2,115 contributed abstracts accepted (2,259 items in the volume incl. 144 invite",
+  "tier": "VERIFIED"
+ },
+ {
+  "row": 70,
+  "society": null,
+  "country": null,
+  "conference": "ATA Annual Meeting (thyroid)",
+  "umbrella": "Diabetes, endocrine & obesity",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 79,
+  "society": null,
+  "country": null,
+  "conference": "WCOG",
+  "umbrella": "Gastroenterology & hepatology",
+  "abstracts": "1,156 abstracts received",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 87,
+  "society": null,
+  "country": null,
+  "conference": "ESCRS Congress",
+  "umbrella": "Ophthalmology",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 88,
+  "society": null,
+  "country": null,
+  "conference": "ASCRS Annual Meeting",
+  "umbrella": "Ophthalmology",
+  "abstracts": "almost 700 scientific papers plus over 500 posters \u2014 ~1,200 contributed presenta",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 93,
+  "society": null,
+  "country": null,
+  "conference": "EFORT Congress",
+  "umbrella": "Orthopaedics",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 100,
+  "society": null,
+  "country": null,
+  "conference": "WPA World Congress",
+  "umbrella": "Psychiatry & neuroscience",
+  "abstracts": "2,420 abstract submissions",
+  "tier": "VERIFIED"
+ },
+ {
+  "row": 107,
+  "society": null,
+  "country": null,
+  "conference": "ASA Anesthesiology Annual Meeting",
+  "umbrella": "Anaesthesia & critical care",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 108,
+  "society": null,
+  "country": null,
+  "conference": "Euroanaesthesia (ESAIC)",
+  "umbrella": "Anaesthesia & critical care",
+  "abstracts": "1,491 abstracts accepted",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 114,
+  "society": null,
+  "country": null,
+  "conference": "ASRM Scientific Congress",
+  "umbrella": "Obstetrics, gynaecology & reproductive",
+  "abstracts": "994 abstracts published in the congress supplement (1,067 in 2024)",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 124,
+  "society": null,
+  "country": null,
+  "conference": "WCD \u2014 World Congress of Dermatology",
+  "umbrella": "Dermatology",
+  "abstracts": "4,065 abstract-driven (contributed) abstracts, plus 380 invited-speaker abstract",
+  "tier": "VERIFIED"
+ },
+ {
+  "row": 129,
+  "society": null,
+  "country": null,
+  "conference": "ASHG Annual Meeting",
+  "umbrella": "Genetics",
+  "abstracts": "2,611 poster abstracts (plus a separate 414-page platform-abstract book, uncount",
+  "tier": "VERIFIED"
+ },
+ {
+  "row": 132,
+  "society": null,
+  "country": null,
+  "conference": "EAACI Congress",
+  "umbrella": "Immunology & allergy",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 136,
+  "society": null,
+  "country": null,
+  "conference": "TTS World Congress",
+  "umbrella": "Transplantation",
+  "abstracts": "1,197 abstracts published (accepted)",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 145,
+  "society": null,
+  "country": null,
+  "conference": "CX Symposium",
+  "umbrella": "Sleep, pain & rehabilitation",
+  "abstracts": "CLICK TO CONFIRM - '50+ podium presentations' (CX 2025) and 'over 220 abstracts ",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 151,
+  "society": null,
+  "country": null,
+  "conference": "AMIA Annual Symposium",
+  "umbrella": "Health services, informatics & economics",
+  "abstracts": "400 proceedings papers in the 2024 volume of AMIA Annual Symposium Proceedings (",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 154,
+  "society": null,
+  "country": null,
+  "conference": "AAMC Learn Serve Lead",
+  "umbrella": "Medical education",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 158,
+  "society": null,
+  "country": null,
+  "conference": "NUTRITION (American Society for Nutrition)",
+  "umbrella": "Nutrition",
+  "abstracts": "1,363 abstracts published (accepted) in Current Developments in Nutrition Vol 9,",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 166,
+  "society": null,
+  "country": null,
+  "conference": "ASM Microbe",
+  "umbrella": "Microbiology & virology",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 170,
+  "society": null,
+  "country": null,
+  "conference": "Sigma Nursing Congress",
+  "umbrella": "Nursing & allied health",
+  "abstracts": "515 presentations deposited (303 oral presentation slides + 212 posters)",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 175,
+  "society": null,
+  "country": null,
+  "conference": "AAO-HNSF Annual Meeting",
+  "umbrella": "ENT / head & neck",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 181,
+  "society": null,
+  "country": null,
+  "conference": "EANS Congress",
+  "umbrella": "Neurosurgery",
+  "abstracts": "687 abstracts (Brain and Spine vol 5, article numbers 104909-105595)",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 185,
+  "society": null,
+  "country": null,
+  "conference": "ETS European Trauma Congress",
+  "umbrella": "Trauma & burns",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 193,
+  "society": null,
+  "country": null,
+  "conference": "AAFP FMX",
+  "umbrella": "Primary care & family medicine",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 194,
+  "society": null,
+  "country": null,
+  "conference": "WONCA World Conference",
+  "umbrella": "Primary care & family medicine",
+  "abstracts": "Over 1,200 abstracts received (WONCA World Conference, Seoul) \u2014 DATED, carried a",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 203,
+  "society": null,
+  "country": null,
+  "conference": "ICPE (ISPE Annual Meeting)",
+  "umbrella": "Pharmacoepidemiology & epidemiology",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 208,
+  "society": null,
+  "country": null,
+  "conference": "ISEE Annual Conference",
+  "umbrella": "Occupational & environmental health",
+  "abstracts": "1,864 abstracts",
+  "tier": "VERIFIED"
+ },
+ {
+  "row": 213,
+  "society": null,
+  "country": null,
+  "conference": "Chinese Medical Doctor Association Annual Conference",
+  "umbrella": "General & internal medicine",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 219,
+  "society": null,
+  "country": null,
+  "conference": "ICEM \u2014 International Conference on Emergency Medicine",
+  "umbrella": "Emergency medicine",
+  "abstracts": "UNKNOWN \u2014 the abstract supplement is CJEM 27(S1), 234 printed pages (pp. 1-234),",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 227,
+  "society": null,
+  "country": null,
+  "conference": "AABB Annual Meeting",
+  "umbrella": "Pathology & laboratory medicine",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 229,
+  "society": null,
+  "country": null,
+  "conference": "SID Annual Meeting (investigative dermatology)",
+  "umbrella": "Dermatology",
+  "abstracts": "1,263 abstracts accepted (1,017 regular, numbered 1-1023, plus 246 late-breakers",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 237,
+  "society": null,
+  "country": null,
+  "conference": "AOA Optometry\u2019s Meeting",
+  "umbrella": "Nursing & allied health",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 243,
+  "society": null,
+  "country": null,
+  "conference": "World Cancer Congress (UICC)",
+  "umbrella": "Public health & health informatics",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 245,
+  "society": null,
+  "country": null,
+  "conference": "ESPEN Congress (clinical nutrition & metabolism)",
+  "umbrella": "Nutrition & endocrine",
+  "abstracts": "Over 1,500 abstracts submitted (1,077 accepted and published)",
+  "tier": "VERIFIED"
+ },
+ {
+  "row": 253,
+  "society": null,
+  "country": null,
+  "conference": "ATA Annual Conference (American Telemedicine Association)",
+  "umbrella": "Simulation & telehealth",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ }
+]

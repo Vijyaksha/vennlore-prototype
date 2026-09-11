@@ -1,0 +1,407 @@
+[
+ {
+  "row": 8,
+  "society": "American Society of Clinical Oncology (ASCO)",
+  "country": "US",
+  "conference": "ASCO Annual Meeting",
+  "umbrella": "Oncology",
+  "abstracts": "6,456 abstracts published in the JCO Annual Meeting supplement",
+  "tier": "VERIFIED"
+ },
+ {
+  "row": 19,
+  "society": "American Association for Cancer Research (AACR)",
+  "country": "US",
+  "conference": "AACR Annual Meeting",
+  "umbrella": "Oncology",
+  "abstracts": "7,039 abstracts published in the Cancer Research AACR Annual Meeting supplements",
+  "tier": "VERIFIED"
+ },
+ {
+  "row": 25,
+  "society": "European Hematology Association (EHA)",
+  "country": "Europe",
+  "conference": "EHA Congress",
+  "umbrella": "Oncology",
+  "abstracts": "UNKNOWN \u2014 existing '4,000+ submitted' (third-party) neither confirmed nor overtu",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 31,
+  "society": null,
+  "country": null,
+  "conference": "SGO Annual Meeting on Women's Cancer",
+  "umbrella": "Oncology",
+  "abstracts": "695 abstracts (SGO 2026 Annual Meeting supplement)",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 39,
+  "society": null,
+  "country": null,
+  "conference": "EBMT Annual Meeting",
+  "umbrella": "Oncology",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 41,
+  "society": null,
+  "country": null,
+  "conference": "TCT \u2014 Transcatheter Cardiovascular Therapeutics",
+  "umbrella": "Cardiology",
+  "abstracts": "1,232 abstracts published in the JACC TCT supplement",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 50,
+  "society": null,
+  "country": null,
+  "conference": "AES \u2014 American Epilepsy Society",
+  "umbrella": "Neurology",
+  "abstracts": "1,656 abstracts in the AES abstract archive",
+  "tier": "VERIFIED"
+ },
+ {
+  "row": 56,
+  "society": null,
+  "country": null,
+  "conference": "AD/PD Conference",
+  "umbrella": "Neurology",
+  "abstracts": "2,710 abstracts submitted",
+  "tier": "VERIFIED"
+ },
+ {
+  "row": 58,
+  "society": null,
+  "country": null,
+  "conference": "ARRS Annual Meeting",
+  "umbrella": "Radiology & imaging",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 64,
+  "society": null,
+  "country": null,
+  "conference": "IAS / AIDS Conference",
+  "umbrella": "Infectious disease",
+  "abstracts": "5,257 abstracts submitted; 2,016 accepted (38% acceptance)",
+  "tier": "VERIFIED"
+ },
+ {
+  "row": 71,
+  "society": null,
+  "country": null,
+  "conference": "AACE Annual Meeting",
+  "umbrella": "Diabetes, endocrine & obesity",
+  "abstracts": "778 abstracts (Endocrine Practice vol 32 issue 4 supplement, pages S1-S367)",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 72,
+  "society": null,
+  "country": null,
+  "conference": "ObesityWeek",
+  "umbrella": "Diabetes, endocrine & obesity",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 80,
+  "society": null,
+  "country": null,
+  "conference": "CHEST Annual Meeting",
+  "umbrella": "Respiratory",
+  "abstracts": "3,696 abstracts accepted",
+  "tier": "VERIFIED"
+ },
+ {
+  "row": 89,
+  "society": null,
+  "country": null,
+  "conference": "EURETINA Congress",
+  "umbrella": "Ophthalmology",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 94,
+  "society": null,
+  "country": null,
+  "conference": "ORS Annual Meeting",
+  "umbrella": "Orthopaedics",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 95,
+  "society": null,
+  "country": null,
+  "conference": "SICOT Congress",
+  "umbrella": "Orthopaedics",
+  "abstracts": "1,896 abstracts presented (197 free papers + 737 short free papers + 191 JAM + 7",
+  "tier": "VERIFIED"
+ },
+ {
+  "row": 101,
+  "society": null,
+  "country": null,
+  "conference": "SIRS Congress (schizophrenia)",
+  "umbrella": "Psychiatry & neuroscience",
+  "abstracts": "532 poster abstracts, ~747 contributed items including symposium/workshop talks",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 109,
+  "society": null,
+  "country": null,
+  "conference": "IARS Annual Meeting",
+  "umbrella": "Anaesthesia & critical care",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 110,
+  "society": null,
+  "country": null,
+  "conference": "SCCM Critical Care Congress",
+  "umbrella": "Anaesthesia & critical care",
+  "abstracts": "1,745 abstracts and case reports accepted (SCCM cochairs claim 'more than 2,200 ",
+  "tier": "VERIFIED"
+ },
+ {
+  "row": 116,
+  "society": null,
+  "country": null,
+  "conference": "RCOG World Congress",
+  "umbrella": "Obstetrics, gynaecology & reproductive",
+  "abstracts": "over 2,500 abstracts submitted",
+  "tier": "VERIFIED"
+ },
+ {
+  "row": 125,
+  "society": null,
+  "country": null,
+  "conference": "AUA Annual Meeting",
+  "umbrella": "Urology",
+  "abstracts": "2,810 abstracts published (accepted) in The Journal of Urology Vol 213 Issue 5S ",
+  "tier": "VERIFIED"
+ },
+ {
+  "row": 131,
+  "society": null,
+  "country": null,
+  "conference": "AAAAI Annual Meeting",
+  "umbrella": "Immunology & allergy",
+  "abstracts": "1,064 abstracts published (accepted) in JACI Vol 155 Issue 2 (AAAAI 2025); 985 i",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 137,
+  "society": null,
+  "country": null,
+  "conference": "ASBMR Annual Meeting",
+  "umbrella": "Bone & musculoskeletal",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 138,
+  "society": null,
+  "country": null,
+  "conference": "WCO-IOF-ESCEO",
+  "umbrella": "Bone & musculoskeletal",
+  "abstracts": "1,664 accepted abstracts (1,623 posters + 41 oral communications); 1,473 in 2025",
+  "tier": "VERIFIED"
+ },
+ {
+  "row": 147,
+  "society": null,
+  "country": null,
+  "conference": "AGS Annual Meeting",
+  "umbrella": "Geriatrics & palliative",
+  "abstracts": "1,008 accepted abstracts (2023 in-person meeting); 745 for the 2026 virtual meet",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 152,
+  "society": null,
+  "country": null,
+  "conference": "AcademyHealth Annual Research Meeting",
+  "umbrella": "Health services, informatics & economics",
+  "abstracts": "1,784 unique presentations (2025), of which 1,640 from the Call for Abstracts; 2",
+  "tier": "VERIFIED"
+ },
+ {
+  "row": 155,
+  "society": null,
+  "country": null,
+  "conference": "AMEE Conference",
+  "umbrella": "Medical education",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 163,
+  "society": null,
+  "country": null,
+  "conference": "FIP World Congress",
+  "umbrella": "Pharmacology & pharmacy",
+  "abstracts": "1,286 accepted abstracts (1,140 posters + 146 presentations)",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 168,
+  "society": null,
+  "country": null,
+  "conference": "SAEM Annual Meeting",
+  "umbrella": "Emergency medicine",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 174,
+  "society": null,
+  "country": null,
+  "conference": "EuroPerio",
+  "umbrella": "Dentistry & oral health",
+  "abstracts": "more than 1,655 abstracts received; 1,505 accepted (154 oral O001-O154 + 236 pos",
+  "tier": "VERIFIED"
+ },
+ {
+  "row": 178,
+  "society": null,
+  "country": null,
+  "conference": "AANS Annual Scientific Meeting",
+  "umbrella": "Neurosurgery",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 182,
+  "society": null,
+  "country": null,
+  "conference": "ASPS Plastic Surgery The Meeting",
+  "umbrella": "Plastic & reconstructive surgery",
+  "abstracts": "863 abstracts accepted and published (780 main abstract book + 18 Global Partner",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 186,
+  "society": null,
+  "country": null,
+  "conference": "ASGCT Annual Meeting",
+  "umbrella": "Cell, gene & stem cell therapy",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 195,
+  "society": null,
+  "country": null,
+  "conference": "NAPCRG Annual Meeting",
+  "umbrella": "Primary care & family medicine",
+  "abstracts": "569 'Abstracts of Completed Research' published for the 52nd (2024) meeting; 412",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 197,
+  "society": null,
+  "country": null,
+  "conference": "ACP Internal Medicine Meeting",
+  "umbrella": "Internal & hospital medicine",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 205,
+  "society": null,
+  "country": null,
+  "conference": "CUGH Annual Conference",
+  "umbrella": "Global health",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 214,
+  "society": null,
+  "country": null,
+  "conference": "All India Medical Conference (IMA)",
+  "umbrella": "General & internal medicine",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 217,
+  "society": null,
+  "country": null,
+  "conference": "AACAP Annual Meeting (child & adolescent psychiatry)",
+  "umbrella": "Psychiatry",
+  "abstracts": "1,385 abstracts/presentations accepted (JAACAP vol 64 issue 10, the 2025 AACAP A",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 221,
+  "society": null,
+  "country": null,
+  "conference": "EUROSPINE Annual Meeting",
+  "umbrella": "Spine & orthopaedics",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 228,
+  "society": null,
+  "country": null,
+  "conference": "CAP Annual Meeting (College of American Pathologists)",
+  "umbrella": "Pathology & laboratory medicine",
+  "abstracts": "UNKNOWN \u2014 the abstract supplement is Archives of Pathology & Laboratory Medicine",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 233,
+  "society": null,
+  "country": null,
+  "conference": "ICN Congress (International Council of Nurses)",
+  "umbrella": "Nursing & allied health",
+  "abstracts": "Over 10,000 abstract submissions received (including 784 from student nurses); 8",
+  "tier": "VERIFIED"
+ },
+ {
+  "row": 238,
+  "society": null,
+  "country": null,
+  "conference": "APMA The National (podiatry)",
+  "umbrella": "Nursing & allied health",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 247,
+  "society": null,
+  "country": null,
+  "conference": "FDI World Dental Congress",
+  "umbrella": "Dentistry & oral health",
+  "abstracts": "1,187 abstracts accepted and published (e-posters and free communications)",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 249,
+  "society": null,
+  "country": null,
+  "conference": "EWMA Conference (European Wound Management Association)",
+  "umbrella": "Urology, continence & wound",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 254,
+  "society": null,
+  "country": null,
+  "conference": "BIO International Convention",
+  "umbrella": "Industry & trade (expected to fail the bar \u2014 logged so the exclusion is on the record)",
+  "abstracts": "",
+  "tier": "NOT YET CENSUSED"
+ }
+]

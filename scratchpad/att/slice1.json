@@ -1,0 +1,407 @@
+[
+ {
+  "row": 5,
+  "society": "American Society of Hematology (ASH)",
+  "country": "US",
+  "conference": "ASH Annual Meeting & Exposition",
+  "umbrella": "Oncology",
+  "abstracts": "7,964 abstracts published (accepted) in the Blood abstract supplement",
+  "tier": "VERIFIED"
+ },
+ {
+  "row": 11,
+  "society": "European Respiratory Society (ERS)",
+  "country": "Europe",
+  "conference": "ERS Congress",
+  "umbrella": "Respiratory",
+  "abstracts": "UNKNOWN \u2014 existing DERIVED ~5,000 could not be confirmed or sharpened",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 15,
+  "society": "American Academy of Neurology (AAN)",
+  "country": "US",
+  "conference": "AAN Annual Meeting",
+  "umbrella": "Neurology",
+  "abstracts": "3,078 abstracts published in the Neurology Annual Meeting supplement",
+  "tier": "VERIFIED"
+ },
+ {
+  "row": 26,
+  "society": "American Heart Association (AHA)",
+  "country": "US",
+  "conference": "AHA Scientific Sessions",
+  "umbrella": "Cardiology",
+  "abstracts": "4,297 abstracts published in the Circulation Scientific Sessions supplement",
+  "tier": "VERIFIED"
+ },
+ {
+  "row": 34,
+  "society": null,
+  "country": null,
+  "conference": "MASCC/ISOO Annual Meeting",
+  "umbrella": "Oncology",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 38,
+  "society": null,
+  "country": null,
+  "conference": "Tandem Meetings (ASTCT/CIBMTR)",
+  "umbrella": "Oncology",
+  "abstracts": "810 abstracts (Transplantation and Cellular Therapy vol 31 issue 2 supplement, p",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 46,
+  "society": null,
+  "country": null,
+  "conference": "ESC Heart Failure Congress",
+  "umbrella": "Cardiology",
+  "abstracts": "1,181 moderated/oral poster abstracts + 184 clinical case presentations = 1,365 ",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 49,
+  "society": null,
+  "country": null,
+  "conference": "ECTRIMS Congress",
+  "umbrella": "Neurology",
+  "abstracts": "UNKNOWN as an exact count \u2014 but the 2025 supplement is positively established as",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 54,
+  "society": null,
+  "country": null,
+  "conference": "ISC \u2014 International Stroke Conference",
+  "umbrella": "Neurology",
+  "abstracts": "1,238 abstracts accepted (against 'over 1,400 submitted' claimed by AHA)",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 62,
+  "society": null,
+  "country": null,
+  "conference": "IDWeek",
+  "umbrella": "Infectious disease",
+  "abstracts": "2,517 abstracts accepted",
+  "tier": "VERIFIED"
+ },
+ {
+  "row": 66,
+  "society": null,
+  "country": null,
+  "conference": "ESPID Meeting",
+  "umbrella": "Infectious disease",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 68,
+  "society": null,
+  "country": null,
+  "conference": "ENDO (Endocrine Society)",
+  "umbrella": "Diabetes, endocrine & obesity",
+  "abstracts": "2,511 abstracts accepted",
+  "tier": "VERIFIED"
+ },
+ {
+  "row": 78,
+  "society": null,
+  "country": null,
+  "conference": "APDW \u2014 Asian Pacific Digestive Week",
+  "umbrella": "Gastroenterology & hepatology",
+  "abstracts": "more than 1,500 abstracts (from 1,100 authors)",
+  "tier": "VERIFIED"
+ },
+ {
+  "row": 85,
+  "society": null,
+  "country": null,
+  "conference": "WCN \u2014 World Congress of Nephrology (ISN)",
+  "umbrella": "Nephrology",
+  "abstracts": "1,292 abstracts accepted and published",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 86,
+  "society": null,
+  "country": null,
+  "conference": "AAO Annual Meeting",
+  "umbrella": "Ophthalmology",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 92,
+  "society": null,
+  "country": null,
+  "conference": "AAOS Annual Meeting",
+  "umbrella": "Orthopaedics",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 99,
+  "society": null,
+  "country": null,
+  "conference": "SOBP Annual Meeting",
+  "umbrella": "Psychiatry & neuroscience",
+  "abstracts": "864 abstracts published in the meeting supplement",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 105,
+  "society": null,
+  "country": null,
+  "conference": "IHPBA World Congress",
+  "umbrella": "Surgery",
+  "abstracts": "1,143 abstracts published in the World Congress supplement",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 106,
+  "society": null,
+  "country": null,
+  "conference": "ESCP Annual Meeting",
+  "umbrella": "Surgery",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 113,
+  "society": null,
+  "country": null,
+  "conference": "ESHRE Annual Meeting",
+  "umbrella": "Obstetrics, gynaecology & reproductive",
+  "abstracts": "1,109 abstracts published (accepted) in Human Reproduction Vol 40 Supplement_1 (",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 123,
+  "society": null,
+  "country": null,
+  "conference": "EADV Congress",
+  "umbrella": "Dermatology",
+  "abstracts": "4,025 abstracts in the EADV Congress 2025 abstract book",
+  "tier": "VERIFIED"
+ },
+ {
+  "row": 128,
+  "society": null,
+  "country": null,
+  "conference": "ECP \u2014 European Congress of Pathology",
+  "umbrella": "Pathology & laboratory medicine",
+  "abstracts": "1,820 abstracts in the 38th ECP abstract book (Virchows Archiv supplement)",
+  "tier": "VERIFIED"
+ },
+ {
+  "row": 130,
+  "society": null,
+  "country": null,
+  "conference": "ESHG Conference",
+  "umbrella": "Genetics",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 135,
+  "society": null,
+  "country": null,
+  "conference": "ESOT Congress",
+  "umbrella": "Transplantation",
+  "abstracts": ">=1,182 abstracts (orals + moderated posters + e-posters + late-breaking)",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 143,
+  "society": null,
+  "country": null,
+  "conference": "AAPM&R Annual Assembly",
+  "umbrella": "Sleep, pain & rehabilitation",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 144,
+  "society": null,
+  "country": null,
+  "conference": "ISPRM World Congress",
+  "umbrella": "Sleep, pain & rehabilitation",
+  "abstracts": "CLICK TO CONFIRM - 912 abstract submissions reported for the 19th ISPRM World Co",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 150,
+  "society": null,
+  "country": null,
+  "conference": "IEA World Congress of Epidemiology",
+  "umbrella": "Public health & epidemiology",
+  "abstracts": "over 1,100 abstract submissions received in the general round (late-breakers sti",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 157,
+  "society": null,
+  "country": null,
+  "conference": "ECSS Congress",
+  "umbrella": "Sports medicine & physiology",
+  "abstracts": ">=1,372 contributed abstracts (structured abstracts in the Book of Abstracts; ex",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 161,
+  "society": null,
+  "country": null,
+  "conference": "ACCP Annual Meeting",
+  "umbrella": "Pharmacology & pharmacy",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 169,
+  "society": null,
+  "country": null,
+  "conference": "EUSEM Congress",
+  "umbrella": "Emergency medicine",
+  "abstracts": ">=163 oral abstracts scheduled (posters not individually listed in the programme",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 173,
+  "society": null,
+  "country": null,
+  "conference": "ADA SmileCon",
+  "umbrella": "Dentistry & oral health",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 179,
+  "society": null,
+  "country": null,
+  "conference": "CNS Annual Meeting",
+  "umbrella": "Neurosurgery",
+  "abstracts": "817 oral-presentation abstracts (e-posters not included)",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 184,
+  "society": null,
+  "country": null,
+  "conference": "AAST Annual Meeting",
+  "umbrella": "Trauma & burns",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 189,
+  "society": null,
+  "country": null,
+  "conference": "BMES Annual Meeting",
+  "umbrella": "Biomedical engineering & biomaterials",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 192,
+  "society": null,
+  "country": null,
+  "conference": "EMBC (IEEE EMBS)",
+  "umbrella": "Biomedical engineering & biomaterials",
+  "abstracts": "1,980 accepted papers (list of accepted papers, EMBC 2026 Toronto)",
+  "tier": "VERIFIED"
+ },
+ {
+  "row": 202,
+  "society": null,
+  "country": null,
+  "conference": "SCT Annual Meeting (clinical trials)",
+  "umbrella": "Clinical trials & regulatory",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 204,
+  "society": null,
+  "country": null,
+  "conference": "SER Annual Meeting",
+  "umbrella": "Pharmacoepidemiology & epidemiology",
+  "abstracts": "769 unique abstract IDs (179 oral-abstract-session + 591 poster entries; 770 ent",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 210,
+  "society": null,
+  "country": null,
+  "conference": "DGIM Kongress (German Society of Internal Medicine)",
+  "umbrella": "General & internal medicine",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 218,
+  "society": null,
+  "country": null,
+  "conference": "AAEM Scientific Assembly",
+  "umbrella": "Emergency medicine",
+  "abstracts": "UNKNOWN \u2014 the contributed programme is four named competitions, not a mass abstr",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 225,
+  "society": null,
+  "country": null,
+  "conference": "IFCC WorldLab",
+  "umbrella": "Pathology & laboratory medicine",
+  "abstracts": "More than 1,600 abstracts received (a record for WorldLab); accepted programme =",
+  "tier": "VERIFIED"
+ },
+ {
+  "row": 226,
+  "society": null,
+  "country": null,
+  "conference": "ISBT Congress (International Society of Blood Transfusion)",
+  "umbrella": "Pathology & laboratory medicine",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 236,
+  "society": null,
+  "country": null,
+  "conference": "WFOT Congress (occupational therapy)",
+  "umbrella": "Nursing & allied health",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 242,
+  "society": null,
+  "country": null,
+  "conference": "World One Health Congress",
+  "umbrella": "Public health & health informatics",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 244,
+  "society": null,
+  "country": null,
+  "conference": "IFMBE World Congress on Medical Physics & Biomedical Engineering",
+  "umbrella": "Biomedical engineering",
+  "abstracts": "498 proceedings papers published (accepted, full papers)",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 252,
+  "society": null,
+  "country": null,
+  "conference": "IMSH (International Meeting on Simulation in Healthcare)",
+  "umbrella": "Simulation & telehealth",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ }
+]
