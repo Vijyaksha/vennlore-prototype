@@ -310,9 +310,32 @@ vol 206, out of a 3,453-item journal-year), ESOC 1,981, EHRA 876 (DOIs `euaf085.
 contiguous with zero gaps), ICML 926, ASCO GU 882, ASCO GI 833, Tandem 810, AACE 778, SGO 695
 (696 S-paged items less one FOREWORD), EUROTOX 1,075.
 
-**Publisher boundary, established empirically:** Elsevier, LWW and OUP deposit abstracts per item,
-so they are countable this way. **Wiley, Springer, Karger, Liebert and AAPM do not** — they deposit
-the whole supplement under one DOI. For those, two workarounds beat the paywall before you resort
+**There are THREE deposit patterns, and the middle one was long mistaken for a dead end:**
+
+| Pattern | Publishers | What to do |
+|---|---|---|
+| **Per abstract** | Elsevier, LWW, OUP (+ *Alzheimer's & Dementia*) | Count the items — this is the exact figure |
+| **Per section** | Wiley on several titles | **Enumerate the volume/issue and SUM the sections.** RACS = 27 DOIs totalling 226 pages; ECTRIMS = 8 DOIs totalling 1,528 |
+| **Whole supplement, one DOI** | Springer, Karger, Liebert, Sage, Thieme, Cell Press, AAPM | No count available — but read its `page` field for the extent |
+
+Always query the volume *and* issue before concluding a publisher "doesn't deposit": a single-DOI
+lookup that returns `page: '3-4'` is not a lumped supplement, it is **one section of many**, and
+summing them reconstructs the whole thing.
+
+**Read the page extent off the lumped DOI — it is free.** Even when nothing is countable, the
+supplement's own Crossref record carries its page range: ESMRMB returns `1-889`, IARS `1-1247`,
+ICEM `1-234`, SSO `1-310`. No browser, no paywall, one API call.
+
+**Extent is TRIAGE, NOT A COUNT.** Calibrated against rows where both are known, the ratio runs
+**0.64 abstracts per page** (Radiotherapy and Oncology) to **2.18** (Toxicology Letters) — a 3.4x
+spread, because journals differ in how many abstracts they set per page. So 889 pages brackets to
+roughly 570-1,940, which straddles both the floor and the bar. Use extent to decide which paywalls
+are worth breaking; never write it as the figure.
+
+**PubMed and Europe PMC are a confirmed dead end for this purpose, and now for the right reason:**
+they *systematically exclude* meeting-abstract supplements. Europe PMC returns 312 items where
+Crossref has 695 (SGO), and 452 where Crossref has 2,823 (ESTRO). Strictly worse than Crossref —
+do not retry it hopefully. For those, two workarounds beat the paywall before you resort
 to rung 5:
 - **The society's own mirror.** AGS is the template: `agsjournals.onlinelibrary.wiley.com` 403s and
   deposits nothing, but AGS mirrors the entire JAGS supplement as a free PDF on its own meeting
