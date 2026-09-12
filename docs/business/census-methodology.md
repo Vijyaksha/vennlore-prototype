@@ -171,6 +171,11 @@ These are the gaps a second pass most often catches, worth a glance before calli
 Over-include. A name that turns out to be small costs one Phase 2 search; a name never
 listed is invisible forever.
 
+**Run a local-language sweep before calling Phase 1 done — it is a required pass, not a nicety.**
+See "Search in the conference's own language" below. Measured on chemistry, 2026-09-12: one such
+sweep took China from 15 names to 96 and Russia from 4 to 61, and opened Central Asia and the
+Caucasus from a standing blank. A list that has not had this pass is not a complete list.
+
 **Write the whole list into the sheet before starting Phase 2**, one row per conference,
 `Tier = NOT YET CENSUSED`, every number column empty. The sheet is now complete in *names*
 and empty in *numbers* — which is what makes progress measurable.
@@ -223,6 +228,11 @@ meet it rather than rediscovering it per row.
 
 Work down the candidate list **largest-first**, upgrading rows in place from
 `NOT YET CENSUSED` to `VERIFIED` or `BORDERLINE`.
+
+**A row is not UNKNOWN until it has been searched in its own language.** This applies to every
+rung, including rung 9: the figure may exist only on a society page written in the local language,
+as CSJ's 3,604 presentations and 6,000+ participants did. The Method text must name the language
+searched, so "not published" stays distinguishable from "not looked for".
 
 **Run Phase 2 in two passes, census sheet first, deleted sheet second.** Pass A works
 `Census - <Field>` and keeps the good ones. Pass B then runs the *same* process over
