@@ -253,17 +253,6 @@
   "implied": true
  },
  {
-  "conference": "Reunión del Grupo Especializado de Química Orgánica (GEQOR) — RSEQ",
-  "society": "Real Sociedad Española de Química (RSEQ)",
-  "country_or_region": "Spain",
-  "subfield": "organic",
-  "frequency_note": "recurring (typically biennial reunión)",
-  "why_listed": "one of the 30 RSEQ specialised groups; each runs its own recurring reunión",
-  "source_url": "https://geqor.rseq.org/",
-  "_src": "final",
-  "implied": true
- },
- {
   "conference": "Reunión del Grupo Especializado de Química Organometálica (GEQO) — RSEQ",
   "society": "Real Sociedad Española de Química (RSEQ)",
   "country_or_region": "Spain",
@@ -330,26 +319,6 @@
   "implied": true
  },
  {
-  "conference": "XXII Congresso Nazionale della Divisione di Chimica dell'Ambiente e dei Beni Culturali",
-  "society": "Società Chimica Italiana (SCI)",
-  "country_or_region": "Italy",
-  "subfield": "environmental & cultural heritage",
-  "frequency_note": "Palermo, June 2026",
-  "why_listed": "SCI divisional / interdivisional-group congress listed on the SCI events index",
-  "source_url": "https://www.societachimica.it/en/congressi-ed-eventi",
-  "_src": "final"
- },
- {
-  "conference": "XIII Workshop del Gruppo Interdivisionale di Green Chemistry",
-  "society": "Società Chimica Italiana (SCI)",
-  "country_or_region": "Italy",
-  "subfield": "green chemistry",
-  "frequency_note": "Naples, May 2026",
-  "why_listed": "SCI divisional / interdivisional-group congress listed on the SCI events index",
-  "source_url": "https://www.societachimica.it/en/congressi-ed-eventi",
-  "_src": "final"
- },
- {
   "conference": "2nd Joint Conference ACee–GISEL (Electrochemistry for Energy / Electrochemical Sensors)",
   "society": "Società Chimica Italiana (SCI)",
   "country_or_region": "Italy",
@@ -390,16 +359,6 @@
   "_src": "final"
  },
  {
-  "conference": "XLII Convegno Nazionale della Divisione di Chimica Organica (CDCO)",
-  "society": "Società Chimica Italiana (SCI)",
-  "country_or_region": "Italy",
-  "subfield": "organic",
-  "frequency_note": "annual",
-  "why_listed": "SCI divisional / interdivisional-group congress listed on the SCI events index",
-  "source_url": "https://www.societachimica.it/en/congressi-ed-eventi",
-  "_src": "final"
- },
- {
   "conference": "RDPA — Recent Developments in Pharmaceutical Analysis",
   "society": "Società Chimica Italiana (SCI)",
   "country_or_region": "Italy",
@@ -415,16 +374,6 @@
   "country_or_region": "Italy",
   "subfield": "chemistry for technologies",
   "frequency_note": "annual/biennial, Milazzo",
-  "why_listed": "SCI divisional / interdivisional-group congress listed on the SCI events index",
-  "source_url": "https://www.societachimica.it/en/congressi-ed-eventi",
-  "_src": "final"
- },
- {
-  "conference": "Congresso della Divisione di Chimica Fisica SCI (with European Conference on Physical Chemistry)",
-  "society": "Società Chimica Italiana (SCI)",
-  "country_or_region": "Italy",
-  "subfield": "physical chemistry",
-  "frequency_note": "biennial, Pisa",
   "why_listed": "SCI divisional / interdivisional-group congress listed on the SCI events index",
   "source_url": "https://www.societachimica.it/en/congressi-ed-eventi",
   "_src": "final"
@@ -2025,16 +1974,6 @@
   "_src": "final"
  },
  {
-  "conference": "Encontro Nacional de Química Orgânica (ENQO) / Encontro Nacional de Química Medicinal e Biológica (ENQMB) — joint 16ENQO/9ENQMB",
-  "society": "Sociedade Portuguesa de Química (SPQ) and its divisions",
-  "country_or_region": "Portugal",
-  "subfield": "organic / medicinal",
-  "frequency_note": "biennial",
-  "why_listed": "SPQ divisional / national meeting listed on the SPQ congress agenda",
-  "source_url": "https://www.spq.pt/agenda/list",
-  "_src": "final"
- },
- {
   "conference": "Encontro da Divisão de Química Analítica da SPQ (ANALITICA)",
   "society": "Sociedade Portuguesa de Química (SPQ) and its divisions",
   "country_or_region": "Portugal",
@@ -2090,16 +2029,6 @@
   "country_or_region": "Portugal",
   "subfield": "adsorption",
   "frequency_note": "biennial, 44th edition",
-  "why_listed": "SPQ divisional / national meeting listed on the SPQ congress agenda",
-  "source_url": "https://www.spq.pt/agenda/list",
-  "_src": "final"
- },
- {
-  "conference": "Encontro de Química dos Alimentos (Portuguese Food Chemistry Meeting)",
-  "society": "Sociedade Portuguesa de Química (SPQ) and its divisions",
-  "country_or_region": "Portugal",
-  "subfield": "food chemistry",
-  "frequency_note": "biennial, XVIII edition",
   "why_listed": "SPQ divisional / national meeting listed on the SPQ congress agenda",
   "source_url": "https://www.spq.pt/agenda/list",
   "_src": "final"
@@ -2258,6 +2187,438 @@
   "frequency_note": "recurring (2026 edition)",
   "why_listed": "international physical-sciences symposium hosted in Uzbekistan; chemistry-adjacent materials meeting",
   "source_url": "https://cheminform.ru/konferenczii-2026/",
+  "_src": "final"
+ },
+ {
+  "conference": "CATSYMP — National Symposium on Catalysis",
+  "society": "Catalysis Society of India (founded 1973)",
+  "country_or_region": "India",
+  "subfield": "catalysis",
+  "frequency_note": "biennial, 24th edition",
+  "why_listed": "recurring national symposium of an Indian learned society",
+  "source_url": "https://catalysissocietyofindia.in/",
+  "_src": "final"
+ },
+ {
+  "conference": "MACRO — International Conference on Polymer Science and Technology",
+  "society": "Society for Polymer Science India (SPSI)",
+  "country_or_region": "India",
+  "subfield": "polymers",
+  "frequency_note": "biennial",
+  "why_listed": "recurring national symposium of an Indian learned society",
+  "source_url": "https://blogs.rsc.org/jm/?p=6142",
+  "_src": "final"
+ },
+ {
+  "conference": "ISMC — International Symposium on Materials Chemistry (BARC Mumbai)",
+  "society": "Society for Materials Chemistry (SMC), BARC — 4,000+ life members",
+  "country_or_region": "India",
+  "subfield": "materials chemistry",
+  "frequency_note": "biennial, 11th edition (Dec 2026)",
+  "why_listed": "recurring national symposium of an Indian learned society",
+  "source_url": "https://www.smcindia.org/ismc-2026/",
+  "_src": "final"
+ },
+ {
+  "conference": "NUCAR — DAE-BRNS Biennial Symposium on Nuclear and Radiochemistry",
+  "society": "Indian Association of Nuclear Chemists and Allied Scientists (IANCAS) / BARC",
+  "country_or_region": "India",
+  "subfield": "nuclear & radiochemistry",
+  "frequency_note": "biennial, 17th edition",
+  "why_listed": "recurring national symposium of an Indian learned society",
+  "source_url": "https://www.iancas.org.in/nucar2025/",
+  "_src": "final"
+ },
+ {
+  "conference": "ISMAS Symposium / Workshop on Mass Spectrometry",
+  "society": "Indian Society for Mass Spectrometry (ISMAS)",
+  "country_or_region": "India",
+  "subfield": "mass spectrometry",
+  "frequency_note": "recurring (biennial symposium + triennial workshop)",
+  "why_listed": "recurring national symposium of an Indian learned society",
+  "source_url": "https://ismas.in/",
+  "_src": "final"
+ },
+ {
+  "conference": "RSC–CRSI Joint Symposium in Chemical Sciences",
+  "society": "Chemical Research Society of India + Royal Society of Chemistry",
+  "country_or_region": "India",
+  "subfield": "general chemistry",
+  "frequency_note": "annual",
+  "why_listed": "recurring national symposium of an Indian learned society",
+  "source_url": "https://www.rsc.org/events/asia/india",
+  "_src": "final"
+ },
+ {
+  "conference": "ChemSci Leaders in the Field Symposium (India, IISER)",
+  "society": "Royal Society of Chemistry with IISER Pune / IISER Bhopal",
+  "country_or_region": "India",
+  "subfield": "general chemistry",
+  "frequency_note": "annual",
+  "why_listed": "recurring national symposium of an Indian learned society",
+  "source_url": "https://www.rsc.org/events/find-an-event/chemsci-2026-leaders-in-the-field-symposium,-iiser-bhopal",
+  "_src": "final"
+ },
+ {
+  "conference": "Annual Meeting / IUMRS-ICA of the Materials Research Society of India",
+  "society": "Materials Research Society of India (MRSI)",
+  "country_or_region": "India",
+  "subfield": "materials",
+  "frequency_note": "annual",
+  "why_listed": "recurring national symposium of an Indian learned society",
+  "source_url": "https://www.mrsi.org.in/",
+  "_src": "final"
+ },
+ {
+  "conference": "Ulusal Kimya Kongresi (National Chemistry Congress of Türkiye)",
+  "society": "Türkiye Kimya Derneği + host university",
+  "country_or_region": "Türkiye",
+  "subfield": "general chemistry",
+  "frequency_note": "annual, 37th edition (2026, Erzurum)",
+  "why_listed": "recurring Turkish national chemistry congress",
+  "source_url": "https://kimya2026.com/",
+  "_src": "final"
+ },
+ {
+  "conference": "İlaç Kimyası, Üretimi ve Standardizasyonu Kongresi (International Drug Chemistry Congress)",
+  "society": "Turkish Chemists' Association (Kimyagerler Derneği)",
+  "country_or_region": "Türkiye",
+  "subfield": "medicinal / pharmaceutical",
+  "frequency_note": "annual, 14th edition",
+  "why_listed": "recurring Turkish national chemistry congress",
+  "source_url": "https://ilackongresi.org/",
+  "_src": "final"
+ },
+ {
+  "conference": "ACOC — Anatolian Conference on Organic Chemistry",
+  "society": "Turkish Chemical Society / Gebze Technical University",
+  "country_or_region": "Türkiye",
+  "subfield": "organic",
+  "frequency_note": "recurring, 6th edition",
+  "why_listed": "recurring Turkish national chemistry congress",
+  "source_url": "https://www.kongreuzmani.com/6-anatolian-conference-on-organic-chemistry-acoc6.html",
+  "_src": "final"
+ },
+ {
+  "conference": "Ulusal Farmasötik Kimya Kongresi (National Pharmaceutical Chemistry Congress)",
+  "society": "Turkish pharmaceutical chemistry community / Erciyes University",
+  "country_or_region": "Türkiye",
+  "subfield": "pharmaceutical",
+  "frequency_note": "recurring, 8th edition",
+  "why_listed": "recurring Turkish national chemistry congress",
+  "source_url": "https://www.kongreuzmani.com/8-ulusal-1-uluslararasi-katilimli-farmasotik-kimya-kongresi.html",
+  "_src": "final"
+ },
+ {
+  "conference": "Ulusal Kimya Öğrenci Kongresi (National Chemistry Students' Congress)",
+  "society": "Turkish chemistry student community / host universities",
+  "country_or_region": "Türkiye",
+  "subfield": "students / general",
+  "frequency_note": "annual, 11th edition",
+  "why_listed": "recurring Turkish national chemistry congress",
+  "source_url": "https://kongresempozyum.org/",
+  "_src": "final"
+ },
+ {
+  "conference": "Iranian Zeolite Conference (کنفرانس زئولیت ایران)",
+  "society": "Iranian Chemical Society (انجمن شیمی ایران)",
+  "country_or_region": "Iran",
+  "subfield": "catalysis / zeolites",
+  "frequency_note": "recurring, 10th edition",
+  "why_listed": "listed in the Iranian Chemical Society's own seminar/conference register on symposia.ir",
+  "source_url": "https://www.en.symposia.ir/ListAssociation/17",
+  "_src": "final"
+ },
+ {
+  "conference": "Iranian Physical Chemistry Conference (کنفرانس شیمی فیزیک ایران)",
+  "society": "Iranian Chemical Society (انجمن شیمی ایران)",
+  "country_or_region": "Iran",
+  "subfield": "physical",
+  "frequency_note": "recurring, 20th+ edition",
+  "why_listed": "listed in the Iranian Chemical Society's own seminar/conference register on symposia.ir",
+  "source_url": "https://www.en.symposia.ir/ListAssociation/17",
+  "_src": "final"
+ },
+ {
+  "conference": "Iranian Applied Chemistry Conference (کنفرانس شیمی کاربردی ایران)",
+  "society": "Iranian Chemical Society (انجمن شیمی ایران)",
+  "country_or_region": "Iran",
+  "subfield": "applied chemistry",
+  "frequency_note": "recurring, 4th edition",
+  "why_listed": "listed in the Iranian Chemical Society's own seminar/conference register on symposia.ir",
+  "source_url": "https://www.en.symposia.ir/ListAssociation/17",
+  "_src": "final"
+ },
+ {
+  "conference": "Iranian National Seminar on Chemistry and Environment (سمینار شیمی و محیط زیست)",
+  "society": "Iranian Chemical Society (انجمن شیمی ایران)",
+  "country_or_region": "Iran",
+  "subfield": "environmental",
+  "frequency_note": "recurring, 10th edition",
+  "why_listed": "listed in the Iranian Chemical Society's own seminar/conference register on symposia.ir",
+  "source_url": "https://www.en.symposia.ir/ListAssociation/17",
+  "_src": "final"
+ },
+ {
+  "conference": "Iranian National Conference on Chemical Education (کنفرانس آموزش شیمی ایران)",
+  "society": "Iranian Chemical Society (انجمن شیمی ایران)",
+  "country_or_region": "Iran",
+  "subfield": "chemical education",
+  "frequency_note": "recurring, 11th edition",
+  "why_listed": "listed in the Iranian Chemical Society's own seminar/conference register on symposia.ir",
+  "source_url": "https://www.en.symposia.ir/ListAssociation/17",
+  "_src": "final"
+ },
+ {
+  "conference": "Iranian Catalyst Conference (کنفرانس کاتالیست ایران)",
+  "society": "Iranian Chemical Society (انجمن شیمی ایران)",
+  "country_or_region": "Iran",
+  "subfield": "catalysis",
+  "frequency_note": "recurring, 3rd edition",
+  "why_listed": "listed in the Iranian Chemical Society's own seminar/conference register on symposia.ir",
+  "source_url": "https://www.en.symposia.ir/ListAssociation/17",
+  "_src": "final"
+ },
+ {
+  "conference": "Iranian Student Chemistry Conference",
+  "society": "Iranian Chemical Society (انجمن شیمی ایران)",
+  "country_or_region": "Iran",
+  "subfield": "students / general",
+  "frequency_note": "recurring",
+  "why_listed": "listed in the Iranian Chemical Society's own seminar/conference register on symposia.ir",
+  "source_url": "https://www.en.symposia.ir/ListAssociation/17",
+  "_src": "final"
+ },
+ {
+  "conference": "ICICS — International Conference on Innovation in Chemical Sciences (Indonesia)",
+  "society": "Himpunan Kimia Indonesia (HKI)",
+  "country_or_region": "Indonesia",
+  "subfield": "general chemistry",
+  "frequency_note": "annual, 14th edition",
+  "why_listed": "listed on the Indonesian Chemical Society (HKI) events index",
+  "source_url": "https://www.hki.or.id/events/all",
+  "_src": "final"
+ },
+ {
+  "conference": "ICCAI — Indonesian Conference on Chemical Analysis and Instrumentation",
+  "society": "Himpunan Kimia Indonesia (HKI)",
+  "country_or_region": "Indonesia",
+  "subfield": "analytical / instrumentation",
+  "frequency_note": "annual",
+  "why_listed": "listed on the Indonesian Chemical Society (HKI) events index",
+  "source_url": "https://www.hki.or.id/events/all",
+  "_src": "final"
+ },
+ {
+  "conference": "ICoACCE — International Conference on Advances in Chemistry and Chemistry Education",
+  "society": "Himpunan Kimia Indonesia (HKI)",
+  "country_or_region": "Indonesia",
+  "subfield": "chemical education",
+  "frequency_note": "annual",
+  "why_listed": "listed on the Indonesian Chemical Society (HKI) events index",
+  "source_url": "https://www.hki.or.id/events/all",
+  "_src": "final"
+ },
+ {
+  "conference": "Seminar Nasional Kimia (Indonesian National Chemistry Seminar, HKI / university-hosted)",
+  "society": "Himpunan Kimia Indonesia (HKI)",
+  "country_or_region": "Indonesia",
+  "subfield": "general chemistry",
+  "frequency_note": "annual, multiple host universities",
+  "why_listed": "listed on the Indonesian Chemical Society (HKI) events index",
+  "source_url": "https://www.hki.or.id/events/all",
+  "_src": "final"
+ },
+ {
+  "conference": "International Conference on Basic Science and Its Application (ICBSA, Indonesia)",
+  "society": "Himpunan Kimia Indonesia (HKI)",
+  "country_or_region": "Indonesia",
+  "subfield": "general / basic sciences",
+  "frequency_note": "annual",
+  "why_listed": "listed on the Indonesian Chemical Society (HKI) events index",
+  "source_url": "https://www.hki.or.id/events/all",
+  "_src": "final"
+ },
+ {
+  "conference": "Международная российско-казахстанская научно-практическая конференция «Химические технологии функциональных материалов» (International Russian-Kazakhstani Conference on Chemical Technologies of Functional Materials)",
+  "society": "Sokolsky Institute of Fuel, Catalysis and Electrochemistry / Al-Farabi Kazakh National University",
+  "country_or_region": "Kazakhstan",
+  "subfield": "materials / catalysis / petrochemistry",
+  "frequency_note": "recurring, VIII edition",
+  "why_listed": "recurring bilateral chemistry conference hosted at Al-Farabi KazNU, Almaty",
+  "source_url": "https://www.kaznu.kz/RU/25415/page/",
+  "_src": "final"
+ },
+ {
+  "conference": "Научные конференции Института топлива, катализа и электрохимии им. Д.В. Сокольского (Sokolsky Institute conference series, Almaty)",
+  "society": "D.V. Sokolsky Institute of Fuel, Catalysis and Electrochemistry, NAS of Kazakhstan",
+  "country_or_region": "Kazakhstan",
+  "subfield": "catalysis / electrochemistry",
+  "frequency_note": "recurring",
+  "why_listed": "the principal Kazakh chemistry research institute; runs its own recurring conference series",
+  "source_url": "https://www.kaznu.kz/ru/26170/page/",
+  "_src": "final",
+  "implied": true
+ },
+ {
+  "conference": "ACS Egypt International Chemical Sciences Chapter — International Conference on Chemical Sciences (Alexandria)",
+  "society": "ACS Egypt International Chemical Sciences Chapter with Alexandria University",
+  "country_or_region": "Egypt",
+  "subfield": "general chemistry",
+  "frequency_note": "annual, 3rd edition (2026)",
+  "why_listed": "ACS international chapter conference reported by C&EN",
+  "source_url": "https://cen.acs.org/acs-news/acs-egypt-third-international-conference-chemical-sciences/104/web/2026/07",
+  "_src": "final"
+ },
+ {
+  "conference": "Hội nghị Hóa học toàn quốc (National Chemistry Conference of Vietnam)",
+  "society": "Hội Hóa học Việt Nam (Chemical Society of Vietnam, founded 1955)",
+  "country_or_region": "Vietnam",
+  "subfield": "general chemistry",
+  "frequency_note": "recurring, IX edition",
+  "why_listed": "national congress of the Vietnamese Chemical Society",
+  "source_url": "https://www.vinachem.com.vn/nd/tin-tap-doan/hoi-nghi-hoa-hoc-toan-quoc-lan-thu-ix-hoa-hoc-viet-nam-vi-su-phat-trien-xanh-ben-vung.html",
+  "_src": "final"
+ },
+ {
+  "conference": "Hội nghị khoa học của Hội Khoa học Kỹ thuật Phân tích Hóa, Lý và Sinh học Việt Nam (Vietnam Association of Analytical Sciences conference)",
+  "society": "Hội KHKT Phân tích Hóa, Lý và Sinh học Việt Nam (VAAS)",
+  "country_or_region": "Vietnam",
+  "subfield": "analytical",
+  "frequency_note": "recurring (congress every 5 years plus scientific meetings)",
+  "why_listed": "national analytical-sciences society of Vietnam, hosted at VAST",
+  "source_url": "https://itt.vast.vn/hoi-khoa-hoc-ky-thuat-phan-tich-hoa-ly-va-sinh-hoc-viet-nam-to-chuc-dai-hoi-lan-thu-vi-nhiem-ky-2022-2027-294.html",
+  "_src": "final"
+ },
+ {
+  "conference": "Hội nghị khoa học Viện Hóa học — «Đa dạng sinh học và các chất có hoạt tính sinh học» (Institute of Chemistry VAST conference on Biodiversity and Bioactive Compounds)",
+  "society": "Viện Hóa học / Vietnam Academy of Science and Technology (VAST)",
+  "country_or_region": "Vietnam",
+  "subfield": "natural products / bioactive compounds",
+  "frequency_note": "recurring",
+  "why_listed": "recurring scientific conference of the VAST Institute of Chemistry",
+  "source_url": "https://vienhoahoc.ac.vn/vi/tin-tuc-su-kien/hoi-nghi-hoi-thao/363-hoi-nghi-khoa-hoc-da-dang-sinh-hoc-va-cac-chat-co-hoat-tinh-sinh-hoc-vi-su-phat-trien-ben-vung.html",
+  "_src": "final"
+ },
+ {
+  "conference": "QSEL — Regional Symposium on Total Laboratory Management",
+  "society": "Institut Kimia Malaysia (IKM)",
+  "country_or_region": "Malaysia",
+  "subfield": "analytical / laboratory management",
+  "frequency_note": "recurring",
+  "why_listed": "recurring regional symposium run by IKM",
+  "source_url": "https://ikm.org.my/category/events/",
+  "_src": "final"
+ },
+ {
+  "conference": "ASIANALYSIS — Asian Conference on Analytical Sciences",
+  "society": "Asian analytical chemistry societies (rotating host; FACS-affiliated)",
+  "country_or_region": "Asia",
+  "subfield": "analytical",
+  "frequency_note": "biennial, XVI edition",
+  "why_listed": "long-running Asian regional analytical chemistry conference series",
+  "source_url": "https://ikm.org.my/about-ikm/international-affiliations/",
+  "_src": "final"
+ },
+ {
+  "conference": "Научная конференция молодых учёных «Актуальные проблемы химии природных соединений» (Current Problems of the Chemistry of Natural Compounds, Tashkent)",
+  "society": "Институт химии растительных веществ им. акад. С.Ю. Юнусова АН РУз (Yunusov Institute of the Chemistry of Plant Substances, Uzbek Academy of Sciences)",
+  "country_or_region": "Uzbekistan",
+  "subfield": "natural products",
+  "frequency_note": "recurring",
+  "why_listed": "recurring conference of the Uzbek Academy's plant-substances chemistry institute, tied to the journal Chemistry of Natural Compounds",
+  "source_url": "https://uzicps.uz/ru/novosti/nauchnaya-konferentsiya-molodih-uchenih-aktualnie-problemi-himii-prirodnih-soedinenii",
+  "_src": "final"
+ },
+ {
+  "conference": "Международная научная конференция «Химия и технология растительных веществ» (International Conference on Chemistry and Technology of Plant Substances)",
+  "society": "rotating CIS hosts — Institute of Chemistry of the Academy of Sciences of Moldova / Russian and Central Asian institutes",
+  "country_or_region": "Russia / CIS (rotating)",
+  "subfield": "natural products / plant chemistry",
+  "frequency_note": "recurring, XIII edition",
+  "why_listed": "long-running CIS-wide conference series with published proceedings",
+  "source_url": "https://ichem.md/sites/default/files/2025-01/%D0%A5%D0%A2%D0%A0%D0%92-2024%20cnh.%20245.pdf",
+  "_src": "final"
+ },
+ {
+  "conference": "Конференции Института общей и неорганической химии АН Республики Узбекистан (Institute of General and Inorganic Chemistry, Uzbek Academy of Sciences — conference series)",
+  "society": "Институт общей и неорганической химии АН РУз",
+  "country_or_region": "Uzbekistan",
+  "subfield": "inorganic",
+  "frequency_note": "recurring",
+  "why_listed": "principal inorganic chemistry institute of the Uzbek Academy of Sciences; hosts recurring scientific conferences",
+  "source_url": "https://academy.uz/ru/page/institut-obsej-i-neorganiceskoj-himii-akademii-nauk-respubliki-uzbekistan",
+  "_src": "final",
+  "implied": true
+ },
+ {
+  "conference": "International Caucasian Symposium on Polymers and Advanced Materials (ICSP)",
+  "society": "Tbilisi State University / Georgian polymer community",
+  "country_or_region": "Georgia",
+  "subfield": "polymers / materials",
+  "frequency_note": "biennial, 8th edition",
+  "why_listed": "recurring series listed on the Georgian chemistry community's own conference archive (chemistry.ge)",
+  "source_url": "https://chemistry.ge/conferences/",
+  "_src": "final"
+ },
+ {
+  "conference": "International Conference of Young Scientists «Chemistry Today» (ICYS)",
+  "society": "Georgian Chemical Society / Tbilisi State University (rotates to Yerevan)",
+  "country_or_region": "Georgia",
+  "subfield": "general chemistry",
+  "frequency_note": "annual/biennial, 6th edition",
+  "why_listed": "recurring series listed on the Georgian chemistry community's own conference archive (chemistry.ge)",
+  "source_url": "https://chemistry.ge/conferences/",
+  "_src": "final"
+ },
+ {
+  "conference": "Eurasian Meeting on Heterocyclic Chemistry (EAMHC)",
+  "society": "Eurasian heterocyclic chemistry community (rotates Tbilisi / Istanbul / Italy)",
+  "country_or_region": "Eurasia (Georgia / Türkiye / Italy rotating)",
+  "subfield": "heterocyclic / organic",
+  "frequency_note": "biennial, 10th edition",
+  "why_listed": "recurring series listed on the Georgian chemistry community's own conference archive (chemistry.ge)",
+  "source_url": "https://chemistry.ge/conferences/",
+  "_src": "final"
+ },
+ {
+  "conference": "International Scientific-Practical Conference on Georgian Scientific Pharmacy (ISPC)",
+  "society": "Tbilisi State Medical University / Kutateladze Institute of Pharmacochemistry",
+  "country_or_region": "Georgia",
+  "subfield": "pharmaceutical chemistry",
+  "frequency_note": "recurring, II edition (2026)",
+  "why_listed": "recurring series listed on the Georgian chemistry community's own conference archive (chemistry.ge)",
+  "source_url": "https://chemistry.ge/conferences/",
+  "_src": "final"
+ },
+ {
+  "conference": "International Scientific Conference «Science, Education, Innovations and Chemical Technologies»",
+  "society": "Tbilisi State University",
+  "country_or_region": "Georgia",
+  "subfield": "chemical technology",
+  "frequency_note": "recurring, 2nd edition",
+  "why_listed": "recurring series listed on the Georgian chemistry community's own conference archive (chemistry.ge)",
+  "source_url": "https://chemistry.ge/conferences/",
+  "_src": "final"
+ },
+ {
+  "conference": "International Conference of Young Scientists: Chemistry, Agrochemistry and Biology",
+  "society": "Agricultural University of Georgia",
+  "country_or_region": "Georgia",
+  "subfield": "agricultural chemistry",
+  "frequency_note": "recurring, 6th edition",
+  "why_listed": "recurring series listed on the Georgian chemistry community's own conference archive (chemistry.ge)",
+  "source_url": "https://chemistry.ge/conferences/",
+  "_src": "final"
+ },
+ {
+  "conference": "Republic Scientific Conference on Natural and Synthetic Biologically Active Compounds",
+  "society": "National Academy of Sciences of Georgia",
+  "country_or_region": "Georgia",
+  "subfield": "natural products / medicinal",
+  "frequency_note": "recurring",
+  "why_listed": "recurring series listed on the Georgian chemistry community's own conference archive (chemistry.ge)",
+  "source_url": "https://chemistry.ge/conferences/",
   "_src": "final"
  }
 ]

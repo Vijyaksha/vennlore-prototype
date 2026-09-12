@@ -214,10 +214,10 @@ four, not 3.6), and Japanese and Chinese pages frequently write 件 (items) or �
 number. Read the unit, not just the digits. And a machine-translated page is fine to *read*, but
 cite the original URL: the translation layer is not the source.
 
-**Where the local-language artefacts live.** Japan: Confit (`confit.atlas.jp`) hosts programmes and
-abstract books for many societies. China: the Chinese Chemical Society meetings index
-(`chemsoc.org.cn/meeting/home/`) enumerates its division congresses. Both are rung-5 browser targets
-covering a whole national layer each.
+**Look for the national platform, not just the conference.** Non-anglophone countries tend to run
+many societies' programmes through one shared platform or society meetings index. Finding that
+platform once unlocks a whole national layer, so record it in the field's notes the first time you
+meet it rather than rediscovering it per row.
 
 ### Phase 2 — Verify each candidate (deep searches)
 
@@ -623,30 +623,24 @@ neither is reusing the field median because a row is hard. If the evidence is th
 `ratio_rationale` and give the figure you actually believe — an honest uncertain number is usable,
 a borrowed confident one is not.
 
-**Anchor the judgement against real counted rows, don't guess in a vacuum.** `attlib.ratio_rows()`
-lists every row carrying BOTH a counted abstract figure and an attendance figure. Medicine, n=21:
+**Anchor the judgement against real counted rows, don't guess in a vacuum.** Run
+`attlib.ratio_rows(sheet='Census - <Field>')` at the start of a wave: it returns every row in that
+field carrying BOTH a counted abstract figure and an attendance figure, which are the only ratios
+anyone has actually observed. Read them, then judge the conference in front of you.
 
-```
-EuroPCR 6% | PAS 9% | AAD 9% | RSNA 11% | ASHP 12% | ESC 15% | ERA 21% | ASTRO 21%
-SABCS 21% | EASL 24% | WCLC 25% | UEG 35% | ASN 35% | DDW 37% | ESCMID 40% | SOT 46%
-ECR 48% | ATS 50% | AAIC 50% | GSA 119% | ESPGHAN 155%
-```
+Name the comparable you reasoned from in the row's Method cell: *"judged 25%, against two counted
+oncology congresses of similar shape at 21% and 25%."* That sentence is what makes the row
+auditable later — and it belongs in the workbook beside the figure, not in this document.
 
-Physical sciences runs far higher (n=36, median 77%) — **never reuse one field's anchors in the
-other.** Name the comparable you reasoned from: *"judged 25%, against SABCS 21% and WCLC 25%, both
-oncology congresses of similar shape."* That sentence is what makes the row auditable later.
+**Every field starts its own anchor set and borrows from none.** Fields converge at very different
+rates, so an anchor from the wrong field is worse than no anchor at all.
 
-**Chemistry anchors (n=3, from the 2026-09-12 pilot — the seed of that field's set):**
-
-```
-ASMS 55% (3,352 accepted / 6,080)  |  CSJ 60% (3,604 / 6,000)  |  ACS Spring 89% (12,723 / 14,300)
-```
-
-Chemistry converts far higher than medicine — roughly 55–89% against medicine's 25% median. Using
-medicine's anchors on a chemistry row would understate it two- to threefold. **Every new field
-starts its own anchor set and borrows from none.** The set builds itself: `ratio_rows()` returns
-every row that has acquired both a counted abstract figure and an attendance figure, so each
-verified row makes the next judgement better.
+**Do not copy anchor numbers into this document — generate them.** `attlib.ratio_rows(sheet=...)`
+returns every row in that field carrying BOTH a counted abstract figure and an attendance figure,
+computed live from the workbook. A list written down here goes stale the moment a row gains a
+number; a generated one improves with every verified row. **Record the specific anchors you
+reasoned from in the row's own Method cell** — and only the ones you actually used. That way the
+justification sits next to the number it justifies, where anyone checking the row will find it.
 
 **Discount an inflated headcount before converting, or say you didn't.** EUROSPINE's 3,809 headline
 contains 1,478 industry representatives; converting the headline instead of the 2,331 delegates
