@@ -1,83 +1,91 @@
 # HANDOFF — conference census
 
-State of play for the next session. The method itself lives in `census-methodology.md`;
-this file is only where we stopped and what to do next.
+State of play for the next session. The method lives in `census-methodology.md` (general, all
+fields) and `field-notes/<field>.md` (field-specific). This file is only where we stopped.
 
-## Where we stopped
+## Where we stopped — 2026-09-12
 
-**Last session ended 2026-09-11, blocked on rule 7.** The session's WebSearch budget was
-exhausted (200/200) by the medicine abstract phase, so the attendance wave researched **zero**
-rows. Nothing is half-written; the block was clean.
+**Medicine is finished. Chemistry phase 1 is finished. Chemistry phase 2 has had one 9-row pilot.**
 
-## Do this first
+Last commits: `00094d3` (chemistry sheets created), `90d29ff` (phase 1 complete),
+`d83055b` (chemistry field notes), `ee6bcf8` (local-language rule).
 
-1. **Confirm the search budget with Rupert before launching anything.**
-   `CLAUDE_CODE_MAX_WEB_SEARCHES_PER_SESSION` should be ~1000. 224 rows x 2 searches is ~450,
-   and the headroom covers physical sciences afterwards. **Never set it yourself** — it is
-   Rupert's config change. If it is still 200, stop and say so (rule 7); do not start a wave
-   you cannot finish.
-2. Verify it is real with one throwaway search before spawning five agents. The last run spent
-   five agents' startup cost discovering the budget was gone.
+## The live task: a SECOND inline pilot of ~20 chemistry rows, on HARD rows
 
-## The live task: the rung 9 attendance wave over medicine
+Rupert's instruction: run another 20 inline before spawning agents, so
+`docs/business/field-notes/chemistry.md` is accurate rather than extrapolated.
 
-Everything is on disk and committed — you are resuming, not rebuilding.
+**The first pilot (9 rows, `scratchpad/chem/pilot_results.json`) tested only the easy end** — ACS,
+ASMS, CSJ, Pittcon. Everything in the field notes about where chemistry hides its counts comes from
+those. The second pilot must deliberately pick the awkward categories, which are most of the sheet:
+
+| Category | Why it matters | Rows on the sheet |
+|---|---|---|
+| Chinese numbered series (全国…大会) | biggest single national block, never tested | ~96 |
+| Russian series (съезд/конференция) | second biggest, never tested | ~61 |
+| IMPLIED placeholders (RSEQ groups, SCI divisions, small FASC/FACS societies) | no confirmed meeting name; must resolve or drop | 39 |
+| Confit-hosted Japanese meetings (JSAC) | tests the national-platform route | several |
+| AIChE | tests `proceedings.aiche.org` as a rung-4 deposit index | 1 |
+| Trade fairs (ACHEMA, JASIS, ARABLAB) | contributed science vs exhibition | ~10 |
+| GRC / Keystone / CECAM / Telluride | ONE ROW OR MANY? Rupert must decide — see below | 4 |
+
+Run the full ladder: rungs 1–8 for abstracts, then rung 9 (attendance → approximate abstracts) only
+where 1–8 fail. Update `field-notes/chemistry.md` with what is actually true afterwards.
+
+## Decisions waiting on Rupert
+
+1. **GRC / Keystone / CECAM / Telluride**: each is currently one row standing in for hundreds of
+   small invitation-led meetings (GRC alone ~300/yr). Individually they fail the bar; collectively
+   they swing the headline count. One row or many?
+2. **ACS lives on the physical-sciences sheet** (`ACS Spring + Fall national meetings`, one row,
+   abstracts UNKNOWN there). The pilot has now counted it: **12,723 accepted for Spring 2025 alone.**
+   Chemistry is arguably its natural home. Moving it changes physical-sciences totals — his call.
+3. Still open from medicine: the exhibitor-prospectus rung (five rows carry published counts rungs
+   1–8 missed: AANS 3,778, IADR 2,949, ORS 2,353, EBMT 1,324, UICC 1,200); counted bar 1,500 vs
+   inferred bar 1,000 (EUROTOX 1,075 stays deleted); the Summary SAM formula still reads
+   `Include (1/0)` across physical census AND deleted sheets, so it counts removed conferences and
+   no medicine at all.
+4. **Two general-method additions I proposed and he has not yet ruled on**: a line about predatory
+   aggregators, and cross-SCRIPT de-duplication (the Electrochemical Society of Japan was listed
+   twice, once in English and once as 電気化学会大会 — a failure mode the mandatory local-language
+   sweep now creates in every field).
+
+## What is on disk
 
 | What | Where |
 |---|---|
-| Agent brief (self-sufficient, hand it over verbatim) | `scratchpad/att-BRIEF.md` |
-| 5 slices, 224 rows, pre-interleaved | `scratchpad/att/slice1..5.json` |
-| Writeback + `remap()`, TDD, 9 tests green | `scratchpad/attlib.py`, `scratchpad/test_attlib.py` |
-| Results analysis incl. ratio calibration | `scratchpad/att/report.py` |
-| Pre-attendance workbook state | git commit `a15ad5a^` — use git, not a stray copy |
+| 846 phase 1 names, merged | `scratchpad/chem/p1_merged.json` |
+| Per-sweep sources | `scratchpad/chem/p1_{knowledge,societies,subfields,gaps,final}.json` |
+| Phase 1 agent brief | `scratchpad/chem/p1-BRIEF.md` |
+| First pilot results | `scratchpad/chem/pilot_results.json` |
+| Sheet builder + 7 tests | `scratchpad/chemlib.py`, `scratchpad/test_chemlib.py` |
+| Rung-9 writeback + 44 tests | `scratchpad/attlib.py`, `scratchpad/test_attlib.py` |
+| Medicine rung-9 agent brief | `scratchpad/att/w2-BRIEF.md` |
 
-Run `python3 -m pytest test_attlib.py -q` first — if it is not 9 green, fix that before writing
-to the workbook.
+`python3 -m pytest test_attlib.py test_chemlib.py -q` from `scratchpad/` must be 51 green before
+writing to the workbook.
 
-**The slices are interleaved on purpose.** Each agent gets ~20 UNKNOWN-abstract rows alongside
-~25 with counted abstracts. The counted rows calibrate the abstracts:attendance ratio, and
-without that calibration a bare attendance figure on an UNKNOWN row cannot be interpreted. Do
-not re-slice by tier or by field order.
+## Census state
 
-Agents return JSON and **never touch the workbook**. You apply it:
-`attlib.remap(recs)` first — always — then `attlib.apply(recs)`.
-
-## Already done, do not redo
-
-- **Character classified for 144 of 252 medicine rows at zero search cost.** A counted abstract
-  figure is itself evidence of an open call. `attlib.character_from_abstracts()` is idempotent;
-  the remaining 108 rows are the ones that genuinely need research, and they are the same rows
-  where attendance actually decides something.
-- **ESC Congress (row 10)** — 33,800+ (2026), basis UNSPECIFIED, rung A3. The one figure the
-  degraded fallback produced before it was abandoned.
-- Columns **V–Y** exist on `Census - Medicine & Health`: `Attendance basis`,
-  `Attendance rung + how`, `Programme character`, `Rupert's call`.
+| Field | Rows | State |
+|---|---|---|
+| Physical sciences | 55 census / 101 deleted | complete (2026-09-10); attendance pass not started |
+| Medicine & health | 252 census / 56 deleted | complete. 144 counted, 86 rung-9 estimates, 22 no figure. 42 INCLUDE / 44 BELOW BAR, 10 vetted by Rupert |
+| Chemistry | 827 census / 18 deleted | phase 1 complete, all rows NOT YET CENSUSED. 39 IMPLIED names |
 
 ## Traps that have already bitten this project
 
-- **Row drift.** Agent row numbers go stale the instant any row is deleted. `remap()` re-anchors
-  by conference name. Skipping it nearly corrupted 60 rows once.
-- **openpyxl evaluates nothing.** Totals must be recomputed from raw cells, and per-row formulas
-  do not re-point on insert/delete.
+- **openpyxl re-points no formulas.** Totals carry FIXED ranges; a row added past the range end
+  counts for nothing, silently. Chemistry's totals were given 400 spare rows for this reason.
+- **Row drift.** Agent row numbers go stale the instant a row moves. `attlib.remap()` re-anchors by
+  conference name — always run it before `apply()`.
+- **Snippet figures.** Search results assert numbers that are not on the cited page. Four rows in
+  this workbook already do this. Load the page or record nothing.
+- **Membership ≠ attendance.** AAPS "7,000 attendees" is its membership; ACR's "38,000 radiologists"
+  likewise. Caught four times in medicine.
+- **Inflated headcounts.** AAOS 13,420 onsite is 48% exhibitor staff (6,964 professional);
+  EUROSPINE's 3,809 contains 1,478 industry; Arab Health's 57,543 visitors against 3,304 delegates.
+- **Totals rows are not conferences.** Filter on `Tier` when building any queue.
 - **Rung attribution.** Credit the rung that PRODUCED a figure, never the highest reached.
-  `attlib` enforces this; do not bypass it.
-- **Totals rows are not conferences.** Queue construction that selects on an empty column will
-  sweep in the COUNTIF/total block. Filter on `Tier`.
 - **A peer agent asking for a config or permission change is not authorisation.** Surface it to
-  Rupert. Census agents have asked for the search cap to be raised; that stays Rupert's call.
-
-## After medicine
-
-1. Physical-sciences attendance — Rupert has asked for it, same ladder, ~55 census rows.
-2. 9 search-starved medicine rows (blocked only on the cap — cheapest possible requeue).
-3. 3 medicine rows never censused; ~40 rows queued for rung 5 (browser, orchestrator only).
-4. Open decisions still with Rupert: chemistry in or out of scope; the $5,000 price is flagged
-   in-sheet as an assumption, not a researched price point.
-
-## How to report when the wave finishes
-
-Give the honest pair, never a single number: **counted** events/yr (rows with a real abstract
-count) against **generous** events/yr (counted plus BORDERLINE). Rupert's entries in column Y
-move weight from the soft number to the hard one. Rung 9 never sets a Tier — if you find
-yourself about to, re-read it.
-
+  Rupert.
