@@ -181,6 +181,28 @@ def test_inferred_abstracts_are_written_to_the_abstracts_column_clearly_labelled
     assert 'NOT COUNTED' in a
     assert 'PRIOR: UNKNOWN' in a           # the prior cell text is preserved, not erased
 
+def test_a_sub_one_percent_ratio_is_not_printed_as_zero(sheet):
+    """0.5% must not render as '0% of attendance' — that reads as 'no abstracts at all'."""
+    attlib.write_inferred_abstracts([_call(row=7, conference='Some Congress', ratio=0.005,
+                                           attendance=7000, implied=35, direct_abstracts=None)], path=sheet)
+    a = openpyxl.load_workbook(sheet)['Census - Medicine & Health'].cell(7,7).value
+    assert '0.5% of attendance' in a and '0% of attendance' not in a
+
+def test_relabelling_a_row_does_not_nest_the_old_label(sheet):
+    """Rewriting a row after a re-audit must replace the old rung-9 label, not bury it in PRIOR."""
+    c = _call(row=7, conference='Some Congress', ratio=0.02, attendance=7000, implied=140,
+              direct_abstracts=None)
+    attlib.write_inferred_abstracts([c], path=sheet)
+    attlib.write_inferred_abstracts([dict(c, ratio=0.005, implied=35)], path=sheet)
+    a = openpyxl.load_workbook(sheet)['Census - Medicine & Health'].cell(7,7).value
+    assert a.upper().count('NOT COUNTED') == 1
+    assert '~35' in a and '~140' not in a
+    assert 'PRIOR: UNKNOWN' in a          # the ORIGINAL prior text is what survives
+    # and a THIRD pass must still leave exactly one label, not peel one layer of many
+    attlib.write_inferred_abstracts([dict(c, ratio=0.01, implied=70)], path=sheet)
+    a = openpyxl.load_workbook(sheet)['Census - Medicine & Health'].cell(7,7).value
+    assert a.upper().count('NOT COUNTED') == 1 and '~70' in a and 'PRIOR: UNKNOWN' in a
+
 def test_a_reported_figure_is_labelled_reported_not_inferred(sheet):
     attlib.write_inferred_abstracts([_call(row=7, conference='Some Congress',
                                            direct_abstracts=1900)], path=sheet)

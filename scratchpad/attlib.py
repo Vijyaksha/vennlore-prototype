@@ -194,7 +194,7 @@ def inclusion_text(c):
                      f"by a source found during the attendance pass — used in preference to the ratio.")
     else:
         parts.append(f"No abstract figure found; implied ~{_fmt(c['implied'])} abstracts at "
-                     f"{c['ratio']*100:.0f}% of attendance. RATIO JUDGED FOR THIS CONFERENCE: "
+                     f"{_pct(c['ratio'])} of attendance. RATIO JUDGED FOR THIS CONFERENCE: "
                      f"{c.get('ratio_rationale','')} Calibration context — {RATIO_NOTE}.")
     parts.append(f"Rupert's bar for this override: ~{_fmt(c['bar'])} abstracts.")
     parts.append("APPROXIMATION: the figure written into the Abstracts column carries the NOT COUNTED label "
@@ -249,6 +249,20 @@ def check_ratio(c):
     return problems
 
 
+def _pct(ratio):
+    """A ratio as a percentage that never rounds a real number to zero."""
+    pct = ratio * 100
+    return f'{pct:.1f}%' if pct < 10 else f'{pct:.0f}%'
+
+
+def _strip_rung9_label(text):
+    """The cell as it was BEFORE any rung-9 label, so a relabel replaces rather than nests."""
+    t = str(text or '').strip()
+    if NOT_COUNTED not in t.upper():
+        return t
+    return t.split('PRIOR: ', 1)[1].strip() if 'PRIOR: ' in t else 'UNKNOWN'
+
+
 def write_inferred_abstracts(calls, path=WB):
     """Write the rung-9 abstract figure into the Abstracts column, clearly labelled.
 
@@ -261,7 +275,7 @@ def write_inferred_abstracts(calls, path=WB):
     written = []
     for c in calls:
         row = c['row']
-        prior = str(ws.cell(row, 7).value or '').strip()
+        prior = _strip_rung9_label(ws.cell(row, 7).value)
         if _counted(prior) is not None:
             continue                                  # a counted figure already stands
         if c.get('direct_abstracts'):
@@ -270,7 +284,7 @@ def write_inferred_abstracts(calls, path=WB):
                     f"pass; no artefact was counted)")
         else:
             head = (f"~{_fmt(c['implied'])} INFERRED FROM ATTENDANCE, {NOT_COUNTED} "
-                    f"(rung 9 — {_fmt(c['attendance'])} attendees x {c['ratio']*100:.0f}% of attendance, "
+                    f"(rung 9 — {_fmt(c['attendance'])} attendees x {_pct(c['ratio'])} of attendance, "
                     f"a ratio judged for this conference, not a default)")
         ws.cell(row, 7).value = f"{head} — see Method column. PRIOR: {prior}" if prior else head
         written.append(row)
