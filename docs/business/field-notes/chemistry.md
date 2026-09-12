@@ -43,10 +43,24 @@ are **not** the ones the medicine ladder looks for:
 4. **Publisher deposit / proceedings index for chemical engineering.** `proceedings.aiche.org`
    indexes papers per meeting — the chem-eng equivalent of medicine's Crossref route. Untested but
    the obvious next step for AIChE, whose "6,000 papers" figure is snippet-only so far.
-5. **National platforms.** Japan: Confit (`confit.atlas.jp`) hosts programmes and abstract books for
-   many societies including JSAC. China: the Chinese Chemical Society meetings index
-   (`chemsoc.org.cn/meeting/home/`) enumerates its division congresses. Each is one browser target
-   covering a whole national layer.
+5. **National platforms and calendars — the highest-yield pages in the whole census.** Each is one
+   fetch that unlocks a national layer:
+
+   | Country | Page | What it gives |
+   |---|---|---|
+   | China | `chemsoc.org.cn/meeting/home/internal.html?page=N` (paginates, 22 pages) | ~117 distinct numbered CCS national series; 6 pages yielded 144 meetings |
+   | Russia | `cheminform.ru/konferenczii-2026/`, `zioc.ru/science/conf` | an 85-meeting calendar; took Russia from 4 names to 62 |
+   | Japan | Confit (`confit.atlas.jp`) | programmes and abstract books for many societies incl. JSAC |
+   | Spain | `rseq.org/grupos-especializados/` | all 30 RSEQ specialised groups, each with its own reunión |
+   | Italy | `societachimica.it/en/congressi-ed-eventi` | 11 SCI divisional congresses |
+   | Georgia | `chemistry.ge` | a 42-entry conference archive |
+   | Portugal | `spq.pt/agenda/list` (note: `/agenda` alone does not work) | SPQ calendar |
+   | Iran | `symposia.ir` | association register |
+   | Indonesia | `hki.or.id` | society calendar |
+   | Africa | `faschem.co.za` societies-in-africa | 27 member societies — already saturated |
+
+   **Dead end, do not retry:** `allchemy.iq.usp.br` (the Brazilian national index) now 301s to the
+   IQ-USP portal and `/eventos.php` 404s. Brazil needs another route and is certainly under-counted.
 
 ## Conversion ratio — chemistry runs high
 
@@ -85,20 +99,42 @@ meetings below.
   meetings with no open abstract call. Individually they fail the bar; collectively they would swing
   the headline conference count. **Open question for Rupert: one row or many?**
 
-## Phase 1 state (2026-09-12)
+## Phase 1 state — COMPLETE (2026-09-12)
 
-582 unique names merged from four sources: a knowledge-first list, a societies/geography sweep, a
-subfields/techniques sweep, and a gap sweep — ~105 searches. A final sweep for index expansion and
-Russian/Korean/Portuguese/Central Asian coverage was running when these notes were written.
+**846 unique conference names**, merged from five sweeps for ~131 searches: a knowledge-first list,
+societies/geography, subfields/techniques, a gap sweep, and a final index-expansion and
+local-language sweep.
+
+**The local-language sweep is the reason this list is credible.** Before it, the list was deep where
+societies publish in English and blind everywhere else. After it:
+
+| Region | Before | After |
+|---|---|---|
+| China | 15 | 96 |
+| Russia | 4 | 61 |
+| Spain | 6 | 35 |
+| India | 9 | 24 |
+| South Korea | 2 | 14 |
+| Portugal | 0 | 14 |
+| Iran | 0 | 11 |
+| Central Asia & Caucasus | 0 | 15 |
+
+An English-only census would have undercounted the world's largest chemistry community roughly
+sixfold. Treat that as the standing argument for the mandatory local-language rule.
 
 Known weaknesses to resolve in phase 2:
 
-- **~60 entries are society-implied placeholders** — "Annual meeting of the X Chemical Society",
-  where a federation member list proves the society exists but the meeting's real name was never
-  confirmed. Honest placeholders, not inventions. Each must resolve to a real name or be dropped.
-  Concentrated in small African and FACS member societies and the Baltics/Balkans.
-- **Thin coverage**: Central Asia and the Caucasus (a complete blank), India (under-listed for its
-  size), Latin America outside the big five, Portugal, Korea, Russia.
+- **42 entries are society-implied placeholders** (`"implied": true`) — a federation or group list
+  proves the body exists, but the meeting's real title was never confirmed. Honest placeholders,
+  not inventions. Each needs one confirmation fetch to resolve to a real name, or be dropped.
+  Concentrated in the 30 RSEQ groups, 6 SCI divisions, and small FACS/FASC member societies.
+- **Azerbaijan** — the one country that defeated the sweep. ANAS and the Nagiyev Institute clearly
+  run chemistry meetings; every angle returned the institute itself or predatory aggregators.
+  Nothing was listed rather than invent a name.
+- **Brazil** — 6 entries only, because its national index died (see above). Certainly under-counted.
+- **CCS depth** — the meetings index was crawled to page 6 of 22; the rest are older editions of
+  series already captured, but a full crawl would catch dormant ones.
+- **Kyrgyzstan** — nothing found; may genuinely have no standalone chemistry congress.
 
 ## Pilot results
 

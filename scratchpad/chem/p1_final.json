@@ -2620,5 +2620,106 @@
   "why_listed": "recurring series listed on the Georgian chemistry community's own conference archive (chemistry.ge)",
   "source_url": "https://chemistry.ge/conferences/",
   "_src": "final"
+ },
+ {
+  "conference": "NMRS Annual National Symposium (National Magnetic Resonance Society of India)",
+  "society": "National Magnetic Resonance Society of India (est. 1995)",
+  "country_or_region": "India",
+  "subfield": "NMR / magnetic resonance",
+  "frequency_note": "annual, 31st edition (2026, IISER Bhopal)",
+  "why_listed": "recurring national symposium of an Indian learned society",
+  "source_url": "https://sites.google.com/iiserb.ac.in/nmrs2026",
+  "_src": "final"
+ },
+ {
+  "conference": "ISCBC — ISCB International Conference",
+  "society": "Indian Society of Chemists and Biologists (ISCB, est. 1995)",
+  "country_or_region": "India",
+  "subfield": "chemical biology / medicinal",
+  "frequency_note": "annual, 33rd edition (2027)",
+  "why_listed": "recurring national symposium of an Indian learned society",
+  "source_url": "https://www.iscbconference.com/",
+  "_src": "final"
+ },
+ {
+  "conference": "National Symposium on Thermal Analysis (India)",
+  "society": "Indian Thermal Analysis Society (ITAS) / BARC",
+  "country_or_region": "India",
+  "subfield": "thermal analysis",
+  "frequency_note": "biennial",
+  "why_listed": "recurring national symposium of an Indian learned society",
+  "source_url": "https://inis.iaea.org/records/vthac-rnj11",
+  "_src": "final"
+ },
+ {
+  "conference": "Guha Research Conference",
+  "society": "Indian biochemistry/chemical-biology community (Guha Research Conference series)",
+  "country_or_region": "India",
+  "subfield": "biochemistry / chemical biology",
+  "frequency_note": "annual",
+  "why_listed": "recurring national symposium of an Indian learned society",
+  "source_url": "https://en.wikipedia.org/wiki/Guha_Research_Conference",
+  "_src": "final"
+ },
+ {
+  "conference": "Indian Science Congress — Chemical Sciences section",
+  "society": "Indian Science Congress Association (est. 1914)",
+  "country_or_region": "India",
+  "subfield": "general chemistry (section of a multi-discipline congress)",
+  "frequency_note": "annual",
+  "why_listed": "recurring national symposium of an Indian learned society",
+  "source_url": "https://en.wikipedia.org/wiki/Indian_Science_Congress_Association",
+  "_src": "final"
+ },
+ {
+  "conference": "Indian Institute of Metals National Metallurgists' Meet / ATM",
+  "society": "Indian Institute of Metals (IIM, est. 1946)",
+  "country_or_region": "India",
+  "subfield": "metallurgy / materials chemistry",
+  "frequency_note": "annual",
+  "why_listed": "recurring national symposium of an Indian learned society",
+  "source_url": "https://en.wikipedia.org/wiki/Indian_Institute_of_Metals",
+  "_src": "final"
+ },
+ {
+  "conference": "Annual meeting of the Electrochemical Society of India (Bengaluru)",
+  "society": "Electrochemical Society of India (IISc Bangalore)",
+  "country_or_region": "India",
+  "subfield": "electrochemistry",
+  "frequency_note": "recurring",
+  "why_listed": "recurring national symposium of an Indian learned society",
+  "source_url": "https://crsi-india.org/",
+  "_src": "final",
+  "implied": true
+ },
+ {
+  "conference": "Международная конференция «Химия и химическая технология» (Dushanbe — Chemistry and Chemical Technology)",
+  "society": "Национальная академия наук Таджикистана, Институт химии им. В.И. Никитина (NAS of Tajikistan, Nikitin Institute of Chemistry)",
+  "country_or_region": "Tajikistan",
+  "subfield": "general / inorganic / polymer / green chemistry",
+  "frequency_note": "recurring CIS-wide conference in Dushanbe",
+  "why_listed": "national academy chemistry conference reported by the Zelinsky Institute (RAS)",
+  "source_url": "https://zioc.ru/events/news-announcements/pub-40285913",
+  "_src": "final"
+ },
+ {
+  "conference": "Международная научная конференция «Химия и химические технологии: достижения и перспективы развития» (Ashgabat)",
+  "society": "Институт химии Академии наук Туркменистана (Institute of Chemistry, Academy of Sciences of Turkmenistan)",
+  "country_or_region": "Turkmenistan",
+  "subfield": "general chemistry / chemical technology",
+  "frequency_note": "recurring, hybrid format with international participation",
+  "why_listed": "national academy chemistry conference reported on the Turkmen government science portal",
+  "source_url": "https://turkmenistan.gov.tm/ru/post/106264/nauchnyj-potencial-himicheskoj-promyshlennosti",
+  "_src": "final"
+ },
+ {
+  "conference": "Научно-практическая конференция Узбекистана и Таджикистана по химии (Uzbekistan–Tajikistan joint scientific-practical chemistry conference)",
+  "society": "Академия наук Республики Узбекистан / НАН Таджикистана",
+  "country_or_region": "Uzbekistan / Tajikistan",
+  "subfield": "general chemistry",
+  "frequency_note": "recurring bilateral",
+  "why_listed": "bilateral academy-of-sciences chemistry conference announced by the Uzbek Academy",
+  "source_url": "https://academy.uz/ru/news/ozbekiston-va-tojikiston-ilmiy-amaliy-konferensiyasi-otkazildi",
+  "_src": "final"
  }
 ]
