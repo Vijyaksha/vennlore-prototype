@@ -226,7 +226,10 @@ def log_inclusion(calls, path=WB):
     return [c['row'] for c in calls]
 
 
-RATIO_MIN, RATIO_MAX = 0.02, 2.0   # widest plausible, from the observed 0.061-1.55 spread
+RATIO_MIN, RATIO_MAX = 0.005, 2.0
+# Floor is 0.5%, not the observed 6% minimum: a headcount padded with exhibition footfall or
+# online viewers (Japan Medical Congress, ~540,000 incl. exhibition) needs a ratio far below any
+# counted anchor to stay honest. Ceiling 200% covers meetings where nearly everyone presents.
 
 
 def check_ratio(c):
@@ -275,9 +278,87 @@ def write_inferred_abstracts(calls, path=WB):
     return written
 
 
+NEAR_BAR = 100      # a figure this close to the bar counts as clearing it
+RATIO_FLEX = 0.20   # relative, not percentage points — see resolve_borderline
+
+
+def resolve_borderline(c, bar=None, near=NEAR_BAR, flex=RATIO_FLEX):
+    """Rupert's rule (2026-09-12) for a row that lands near the bar.
+
+    Two tests, either one includes the row:
+      1. the figure is within `near` of the bar;
+      2. flexing the judged ratio up by `flex` brings it within `near` of the bar.
+
+    The flex is RELATIVE (25% -> 20-30%), never percentage points. Adding points would
+    rescue exactly the rows that should fail: a 2% teaching meeting flexed by +5 points
+    becomes 7%, a 3.5x change that would drag a CE-and-trade meeting over the bar.
+
+    A figure a source STATED is not flexed — there is no ratio behind it to vary.
+    """
+    bar = bar if bar is not None else c.get('bar', 1000)
+    threshold = bar - near
+    if c.get('direct_abstracts'):
+        fig = c['direct_abstracts']
+        return {'decision': 'INCLUDE' if fig >= threshold else 'BELOW BAR',
+                'low': fig, 'high': fig, 'figure': fig,
+                'why': (f'{_fmt(fig)} reported by a source, not flexed: there is no judged ratio behind it. '
+                        f'{"Within" if fig >= threshold else "Short of"} {_fmt(near)} of the {_fmt(bar)} bar.')}
+    fig = c.get('implied')
+    ratio, att = c.get('ratio'), c.get('attendance')
+    low = high = fig
+    if ratio and att:
+        low = implied_abstracts(att, ratio * (1 - flex))
+        high = implied_abstracts(att, ratio * (1 + flex))
+    if fig is not None and fig >= threshold:
+        why = f'{_fmt(fig)} is within {_fmt(near)} of the {_fmt(bar)} bar.'
+        decision = 'INCLUDE'
+    elif high is not None and high >= threshold:
+        why = (f'{_fmt(fig)} at {ratio*100:.0f}% falls short, but flexing the ratio +-{flex*100:.0f}% relative '
+               f'({ratio*(1-flex)*100:.0f}%-{ratio*(1+flex)*100:.0f}%) gives {_fmt(low)}-{_fmt(high)}, and the '
+               f'top of that band is within {_fmt(near)} of the {_fmt(bar)} bar.')
+        decision = 'INCLUDE'
+    else:
+        why = (f'{_fmt(fig)} at {ratio*100:.0f}% stays short even flexed: the +-{flex*100:.0f}% relative band is '
+               f'{_fmt(low)}-{_fmt(high)}, and {_fmt(high)} is still more than {_fmt(near)} under the '
+               f'{_fmt(bar)} bar.')
+        decision = 'BELOW BAR'
+    return {'decision': decision, 'low': low, 'high': high, 'figure': fig, 'why': why}
+
+
 DELETED_SHEET = 'Deleted - Medicine & Health'
 DEL_ON, DEL_WHY, DEL_METHOD = 20, 21, 22      # deleted-sheet columns
 CEN_NOTES, CEN_METHOD = 19, 20                # census-sheet columns
+
+
+def apply_deleted(recs, path=WB, deleted_sheet=DELETED_SHEET):
+    """Record attendance on the DELETED sheet for rows that stay removed.
+
+    Rule 5: the deleted sheet is a reversible parking place, so a row that stays there
+    still gets its figure and method. Restoring it later must be a re-read, never a
+    re-run of the research. Touches only attendance (10), source (11) and Method (22).
+    """
+    wb = openpyxl.load_workbook(path)
+    wd = wb[deleted_sheet]
+    index = {}
+    for row in range(5, wd.max_row + 1):
+        name = wd.cell(row, 5).value
+        if name:
+            index.setdefault(str(name).strip(), row)
+    written = []
+    for r in recs:
+        row = index.get(str(r.get('conference', '')).strip())
+        if row is None:
+            continue
+        if r.get('attendance_numeric') is not None:
+            year = r.get('attendance_year')
+            wd.cell(row, ATT).value = (f"{r.get('attendance')} ({year})" if year else r.get('attendance'))
+            wd.cell(row, SRC).value = r.get('attendance_source_url')
+        prior = str(wd.cell(row, DEL_METHOD).value or '').strip()
+        note = method_text(r)
+        wd.cell(row, DEL_METHOD).value = (prior + ' ' + note).strip() if prior else note
+        written.append(row)
+    wb.save(path)
+    return written
 
 
 def _last_data_row(ws):

@@ -1,0 +1,36 @@
+[
+ {
+  "conference": "Chicago Dental Society Midwinter Meeting",
+  "decision": "INCLUDE",
+  "programme_type": "majority-teaching",
+  "ratio": 0.02,
+  "attendance": 30000,
+  "attendance_year": "recent",
+  "attendance_basis": "TOTAL_INC_VIRTUAL",
+  "attendance_rung": "carried in sheet",
+  "attendance_source_url": "https://www.cds.org/event/2026-midwinter-meeting/",
+  "ratio_rationale": "RUPERT'S OVERRIDE (2026-09-12) \u2014 recorded as an override of the evidence, not a revised judgement. The ratio stands at 2%: a CE and trade meeting whose only contributed science is a student-led poster session, giving ~600 implied abstracts, UNDER the ~1,000 bar, and a real count would likely be LOWER (poster sessions of this kind typically run 100-300). Rupert directs that attendee type is irrelevant \u2014 student presenters count exactly as professional ones do, and what matters is only that abstracts are presented. RECOMMENDED: settle this row with a rung-5 browser count of the eventscribe poster listing, which costs no searches and replaces the estimate with a real number.",
+  "programme_evidence": "CE course catalogue plus exhibit floor; student-led scientific poster session",
+  "direct_abstracts": null,
+  "bar": 1000,
+  "row": 246,
+  "implied": 600
+ },
+ {
+  "conference": "Japan Medical Congress (General Assembly)",
+  "decision": "INCLUDE",
+  "programme_type": "half-and-half",
+  "ratio": 0.01,
+  "attendance": 540000,
+  "attendance_year": "2023",
+  "attendance_basis": "TOTAL_INC_VIRTUAL",
+  "attendance_rung": "carried in sheet",
+  "attendance_source_url": "https://www.congre.com/en/report/20230614/",
+  "ratio_rationale": "RUPERT'S DIRECTION (2026-09-12): online participation COUNTS, because the product is a matching system and an abstract presented online is as matchable as one presented in a room. The earlier refusal to convert this row is WITHDRAWN. Ratio set at a deliberately brutal 1%, far below every counted anchor including EuroPCR at 6%, because the 540,000 also contains exhibition footfall and trade-show visitors are not presenters. Even so it gives ~5,400, five times the bar, so the decision is robust: no ratio between 0.2% and 6% would exclude this row. Quadrennial JAMS umbrella congress.",
+  "programme_evidence": "quadrennial JAMS umbrella congress spanning all member societies; ~540,000 incl. online and exhibition",
+  "direct_abstracts": null,
+  "bar": 1000,
+  "row": 211,
+  "implied": 5400
+ }
+]

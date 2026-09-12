@@ -1,0 +1,147 @@
+[
+ {
+  "row": 107,
+  "conference": "ASA Anesthesiology Annual Meeting",
+  "umbrella": "Anaesthesia & critical care",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN"
+ },
+ {
+  "row": 186,
+  "conference": "ASGCT Annual Meeting",
+  "umbrella": "Cell, gene & stem cell therapy",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN"
+ },
+ {
+  "row": 172,
+  "conference": "IADR General Session",
+  "umbrella": "Dentistry & oral health",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN"
+ },
+ {
+  "row": 175,
+  "conference": "AAO-HNSF Annual Meeting",
+  "umbrella": "ENT / head & neck",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN"
+ },
+ {
+  "row": 213,
+  "conference": "Chinese Medical Doctor Association Annual Conference",
+  "umbrella": "General & internal medicine",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN"
+ },
+ {
+  "row": 206,
+  "conference": "ECTMIH",
+  "umbrella": "Global health",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN"
+ },
+ {
+  "row": 255,
+  "conference": "HLTH",
+  "umbrella": "Industry & trade (expected to fail the bar \u2014 logged so the exclusion is on the record)",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": ""
+ },
+ {
+  "row": 155,
+  "conference": "AMEE Conference",
+  "umbrella": "Medical education",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN"
+ },
+ {
+  "row": 236,
+  "conference": "WFOT Congress (occupational therapy)",
+  "umbrella": "Nursing & allied health",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN"
+ },
+ {
+  "row": 34,
+  "conference": "MASCC/ISOO Annual Meeting",
+  "umbrella": "Oncology",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN"
+ },
+ {
+  "row": 87,
+  "conference": "ESCRS Congress",
+  "umbrella": "Ophthalmology",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN"
+ },
+ {
+  "row": 94,
+  "conference": "ORS Annual Meeting",
+  "umbrella": "Orthopaedics",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN"
+ },
+ {
+  "row": 227,
+  "conference": "AABB Annual Meeting",
+  "umbrella": "Pathology & laboratory medicine",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN"
+ },
+ {
+  "row": 183,
+  "conference": "IPRAS World Congress",
+  "umbrella": "Plastic & reconstructive surgery",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN"
+ },
+ {
+  "row": 242,
+  "conference": "World One Health Congress",
+  "umbrella": "Public health & health informatics",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN"
+ },
+ {
+  "row": 252,
+  "conference": "IMSH (International Meeting on Simulation in Healthcare)",
+  "umbrella": "Simulation & telehealth",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN"
+ },
+ {
+  "row": 15,
+  "conference": "American Surgical Association Annual Meeting",
+  "umbrella": "Surgery",
+  "society": null,
+  "list": "REMOVED",
+  "abstracts_note": "32 papers in the scientific programme",
+  "why_deleted": "Below the ~700 retention floor on counted evidence: 32 papers in the scientific programme"
+ },
+ {
+  "row": 185,
+  "conference": "ETS European Trauma Congress",
+  "umbrella": "Trauma & burns",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN"
+ }
+]

@@ -1,0 +1,67 @@
+"""Rung 9 for the 8 medicine rows that already carried an attendance figure.
+
+No searches: the attendance number and the programme context were already in the sheet.
+Ratio judged per conference, as always.
+"""
+CALLS = [
+ dict(conference='Neuroscience (SfN Annual Meeting)', decision='INCLUDE', programme_type='majority-abstract',
+      ratio=0.40,
+      ratio_rationale='The archetypal poster-driven meeting: the programme IS the abstract book, and the sheet '
+                      'already records a dated 2001-2006 study putting it at ~13,000+ abstracts a year against '
+                      "~30,000 attendees — 43%, which is context for this judgement, not a finding of ours. Sits "
+                      'with ECR 48% and ATS 50% among counted rows. Judged slightly below that dated implied rate '
+                      'at 40%. Clears the bar by an order of magnitude on any plausible ratio.',
+      programme_evidence='poster-dominated neuroscience meeting; 2,500 late-breaking cap alone implies scale',
+      direct_abstracts=None),
+ dict(conference='DIA Global Annual Meeting', decision='BELOW BAR', programme_type='majority-teaching', ratio=0.08,
+      ratio_rationale='Session-led regulatory-affairs meeting — the programme is built from invited panels and '
+                      'tracks, with a modest professional/student poster programme attached. That is the EuroPCR '
+                      '(6%) shape rather than a research congress. The existing sheet note already reads "likely '
+                      'FAILS the bar". 8% of 5,000 is ~400, nowhere near 1,000.',
+      programme_evidence='session-led regulatory meeting with a modest poster programme',
+      direct_abstracts=None),
+ dict(conference='DGK Jahrestagung (German Cardiac Society)', decision='INCLUDE', programme_type='majority-abstract',
+      ratio=0.20,
+      ratio_rationale='National cardiology research congress whose abstracts publish as Clinical Research in '
+                      'Cardiology supplements — a real contributed backbone. Anchored on ESC at 15%, the only '
+                      'counted cardiology row, and nudged up because a national congress draws a higher presenting '
+                      'share than a global one where many attend to learn. 20% of 8,700 is ~1,740.',
+      programme_evidence='abstracts publish as Clinical Research in Cardiology supplements; 8,700 attendees (2026)',
+      direct_abstracts=None),
+ dict(conference='RACS Annual Scientific Congress', decision='BELOW BAR', programme_type='majority-abstract',
+      ratio=0.40,
+      ratio_rationale='Multidisciplinary surgical congress with a genuine ANZ J Surg supplement, so a high '
+                      'presenting share is right — judged at 40%, near DDW 37% and SOT 46%. But the delegate base '
+                      'is small (more than 1,750), so even a generous ratio gives ~700. It would need ~57% to '
+                      'reach the bar. NOTE the supplement is countable at rung 3 (ANZ J Surg 95(S1), 211 pages) — '
+                      'a real count should replace this estimate.',
+      programme_evidence='ANZ J Surg 95(S1) abstract supplement; 500+ lectures incl. invited speakers',
+      direct_abstracts=None),
+ dict(conference='International Headache Congress (IHS)', decision='BELOW BAR', programme_type='majority-abstract',
+      ratio=0.35,
+      ratio_rationale='Focused specialty congress with a Cephalalgia abstract supplement each edition — the shape '
+                      'where most delegates present, so judged at 35% near UEG/ASN. The constraint is size: 1,600 '
+                      'delegates gives ~560. It would need 63% to clear. NOTE the supplement is countable at rung 3 '
+                      '(Cephalalgia, doi 10.1177/03331024251366059) — a real count should replace this estimate.',
+      programme_evidence='Cephalalgia abstract supplement per edition; over 1,600 delegates from 90+ countries',
+      direct_abstracts=None),
+ dict(conference='ASHA Convention (speech-language-hearing)', decision='INCLUDE', programme_type='half-and-half',
+      ratio=0.15,
+      ratio_rationale='Large professional convention: 2,500+ sessions, but the sheet notes many are CE rather than '
+                      'research, so this is NOT a 40%+ congress. It does run a competitive Call for Papers feeding '
+                      'a large poster and technical-session programme, which puts it above the pure teaching '
+                      'meetings. Judged 15%, level with ESC and above AAD 9%. 15% of ~15,000 is ~2,250. Robust to '
+                      'the judgement: even at 8% it clears the bar, which is why this is an INCLUDE despite the '
+                      'uncertainty about the CE share.',
+      programme_evidence='2,500+ sessions, many CE-eligible, alongside a competitive Call for Papers',
+      direct_abstracts=None),
+ dict(conference='Chicago Dental Society Midwinter Meeting', decision='BELOW BAR', programme_type='majority-teaching',
+      ratio=0.02,
+      ratio_rationale='A CE and trade meeting: 30,000+ people come for courses and the exhibit floor, and the only '
+                      'contributed science is a student-led poster session. Same shape as Yankee Dental Congress, '
+                      'already on the removed list for exactly this reason. Judged 2% — below EuroPCR 6% — and even '
+                      'that gives ~600. This row is the clearest demonstration that attendance alone would mislead: '
+                      'the biggest headcount in this batch produces almost no submitted science.',
+      programme_evidence='CE course catalogue plus exhibit floor; student-led scientific poster session only',
+      direct_abstracts=None),
+]

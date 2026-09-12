@@ -1,0 +1,148 @@
+[
+ {
+  "row": 189,
+  "conference": "BMES Annual Meeting",
+  "umbrella": "Biomedical engineering & biomaterials",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN"
+ },
+ {
+  "row": 188,
+  "conference": "ESGCT Congress",
+  "umbrella": "Cell, gene & stem cell therapy",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN"
+ },
+ {
+  "row": 70,
+  "conference": "ATA Annual Meeting (thyroid)",
+  "umbrella": "Diabetes, endocrine & obesity",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN"
+ },
+ {
+  "row": 218,
+  "conference": "AAEM Scientific Assembly",
+  "umbrella": "Emergency medicine",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN \u2014 the contributed programme is four named competitions, not a mass abstract call"
+ },
+ {
+  "row": 215,
+  "conference": "AOA OMED (osteopathic)",
+  "umbrella": "General & internal medicine",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN"
+ },
+ {
+  "row": 62,
+  "conference": "Arab Health",
+  "umbrella": "Industry & trade (expected to fail the bar \u2014 logged so the exclusion is on the record)",
+  "society": null,
+  "list": "REMOVED",
+  "abstracts_note": "0 contributed abstracts - trade exhibition with CME conferences, no call for abstracts",
+  "why_deleted": "Below the ~700 retention floor on counted evidence: 0 contributed abstracts - trade exhibition with CME conferences, no call for abstracts"
+ },
+ {
+  "row": 66,
+  "conference": "ESPID Meeting",
+  "umbrella": "Infectious disease",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN"
+ },
+ {
+  "row": 49,
+  "conference": "ECTRIMS Congress",
+  "umbrella": "Neurology",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN as an exact count \u2014 but the 2025 supplement is positively established as spanning 1,469 abstract pages across six blocks, which corr"
+ },
+ {
+  "row": 207,
+  "conference": "ACOEM AOHC",
+  "umbrella": "Occupational & environmental health",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN"
+ },
+ {
+  "row": 39,
+  "conference": "EBMT Annual Meeting",
+  "umbrella": "Oncology",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN"
+ },
+ {
+  "row": 90,
+  "conference": "ASRS Annual Meeting",
+  "umbrella": "Ophthalmology",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN"
+ },
+ {
+  "row": 231,
+  "conference": "American Academy of Pain Medicine Annual Meeting",
+  "umbrella": "Pain & headache",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN \u2014 the abstract call is for scientific POSTERS only, with 'up to six' selected for podium presentation"
+ },
+ {
+  "row": 159,
+  "conference": "ASCPT Annual Meeting",
+  "umbrella": "Pharmacology & pharmacy",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN"
+ },
+ {
+  "row": 96,
+  "conference": "APA Annual Meeting (psychiatry)",
+  "umbrella": "Psychiatry & neuroscience",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN"
+ },
+ {
+  "row": 51,
+  "conference": "ACR Annual Meeting (American College of Radiology)",
+  "umbrella": "Radiology & imaging",
+  "society": null,
+  "list": "REMOVED",
+  "abstracts_note": "22 posters",
+  "why_deleted": "Below the ~700 retention floor on counted evidence: 22 posters. A governance/policy meeting, not a contributed-abstract congress."
+ },
+ {
+  "row": 140,
+  "conference": "ESRS Congress",
+  "umbrella": "Sleep, pain & rehabilitation",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN"
+ },
+ {
+  "row": 223,
+  "conference": "The Aesthetic Meeting (ASAPS)",
+  "umbrella": "Surgery",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN"
+ },
+ {
+  "row": 250,
+  "conference": "SAWC (Symposium on Advanced Wound Care)",
+  "umbrella": "Urology, continence & wound",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN"
+ }
+]

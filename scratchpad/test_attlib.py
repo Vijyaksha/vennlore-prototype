@@ -232,6 +232,36 @@ def test_the_log_carries_the_reason_for_the_ratio(sheet):
     t = openpyxl.load_workbook(sheet)['Census - Medicine & Health'].cell(7,20).value
     assert 'poster-dominated' in t and '35%' in t
 
+# ---- resolving borderline rows (Rupert's sensitivity rule, 2026-09-12) ----------------
+
+def test_a_figure_within_100_of_the_bar_is_included():
+    v = attlib.resolve_borderline({'implied': 920, 'ratio': 0.25, 'bar': 1000})
+    assert v['decision'] == 'INCLUDE' and 'within 100' in v['why']
+
+def test_a_figure_that_reaches_the_band_when_the_ratio_flexes_up_is_included():
+    # 3,500 x 25% = 875; flexing the ratio +20% relative -> 30% -> 1,050, which clears 900
+    v = attlib.resolve_borderline({'implied': 875, 'ratio': 0.25, 'attendance': 3500, 'bar': 1000})
+    assert v['decision'] == 'INCLUDE'
+    assert v['high'] == 1050 and v['low'] == 700
+
+def test_a_figure_that_stays_short_even_when_flexed_is_excluded():
+    # 2,331 x 30% = 699; +20% relative -> 36% -> 839, still under 900
+    v = attlib.resolve_borderline({'implied': 699, 'ratio': 0.30, 'attendance': 2331, 'bar': 1000})
+    assert v['decision'] == 'BELOW BAR' and v['high'] == 839
+
+def test_the_flex_is_relative_so_a_tiny_ratio_is_not_blown_up():
+    """A teaching meeting at 2% must not be rescued by adding percentage points to its ratio."""
+    v = attlib.resolve_borderline({'implied': 600, 'ratio': 0.02, 'attendance': 30000, 'bar': 1000})
+    assert v['decision'] == 'BELOW BAR'
+    assert v['high'] == 720                      # 2.4%, not 7%
+
+def test_a_reported_figure_is_not_flexed_by_a_ratio():
+    """A number a source stated has no ratio behind it to vary."""
+    v = attlib.resolve_borderline({'direct_abstracts': 800, 'ratio': 0.27, 'attendance': 3000, 'bar': 1000})
+    assert v['decision'] == 'BELOW BAR'
+    assert v['high'] == 800 and 'not flexed' in v['why']
+
+
 # ---- the upgrade sweep: removed list -> approved list ---------------------------------
 
 @pytest.fixture
@@ -260,6 +290,24 @@ def twosheets(tmp_path):
     d.cell(5,22).value='RUNG 6 reached, nothing published.'
     d.cell(6,5).value='Stays Deleted'; d.cell(6,14).value='OUT'
     p = tmp_path/'wb2.xlsx'; wb.save(p); return str(p)
+
+def test_attendance_is_recorded_on_the_deleted_sheet_too(twosheets):
+    """Rule 5: write the number even when the row stays deleted. The deleted sheet is a
+    reversible parking place, so restoring a row must never mean re-running the research."""
+    rec = {'conference': 'Upgradeable Congress', 'attendance': '19,084 attendees',
+           'attendance_numeric': 19084, 'attendance_year': '2025', 'attendance_basis': 'TOTAL_ONSITE',
+           'attendance_rung': 'A2', 'attendance_rung_name': 'post-show report',
+           'attendance_source_url': 'https://x/postshow', 'attendance_method': 'Read the post-show PDF.',
+           'alt_figures': [], 'character': 'CURATED', 'character_evidence': 'no call for abstracts',
+           'confidence': 'HIGH', 'searches_used': 2}
+    attlib.apply_deleted([rec], path=twosheets)
+    d = openpyxl.load_workbook(twosheets)['Deleted - Medicine & Health']
+    assert d.cell(5,10).value == '19,084 attendees (2025)'
+    assert d.cell(5,11).value == 'https://x/postshow'
+    m = d.cell(5,22).value
+    assert 'RUNG A2 PRODUCED THIS FIGURE' in m
+    assert 'RUNG 6 reached' in m              # the row's existing method text is kept
+    assert d.cell(5,14).value == 'OUT'        # still deleted; rung 9 moved nothing
 
 def _upg(**kw):
     base = dict(conference='Upgradeable Congress', attendance=6000, attendance_year='2025',

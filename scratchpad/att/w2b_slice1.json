@@ -1,0 +1,155 @@
+[
+ {
+  "row": 199,
+  "conference": "ASAM Annual Conference",
+  "umbrella": "Addiction medicine",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN"
+ },
+ {
+  "row": 137,
+  "conference": "ASBMR Annual Meeting",
+  "umbrella": "Bone & musculoskeletal",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN"
+ },
+ {
+  "row": 202,
+  "conference": "SCT Annual Meeting (clinical trials)",
+  "umbrella": "Clinical trials & regulatory",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN"
+ },
+ {
+  "row": 72,
+  "conference": "ObesityWeek",
+  "umbrella": "Diabetes, endocrine & obesity",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN"
+ },
+ {
+  "row": 219,
+  "conference": "ICEM \u2014 International Conference on Emergency Medicine",
+  "umbrella": "Emergency medicine",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN \u2014 the abstract supplement is CJEM 27(S1), 234 printed pages (pp. 1-234), paywalled"
+ },
+ {
+  "row": 216,
+  "conference": "National Medical Association Annual Convention",
+  "umbrella": "General & internal medicine",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN"
+ },
+ {
+  "row": 63,
+  "conference": "FIME (Florida International Medical Expo)",
+  "umbrella": "Industry & trade (expected to fail the bar \u2014 logged so the exclusion is on the record)",
+  "society": null,
+  "list": "REMOVED",
+  "abstracts_note": "0 contributed abstracts - trade show, no call for abstracts",
+  "why_deleted": "Below the ~700 retention floor on counted evidence: 0 contributed abstracts - trade show, no call for abstracts"
+ },
+ {
+  "row": 197,
+  "conference": "ACP Internal Medicine Meeting",
+  "umbrella": "Internal & hospital medicine",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN"
+ },
+ {
+  "row": 52,
+  "conference": "ANA Annual Meeting",
+  "umbrella": "Neurology",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN"
+ },
+ {
+  "row": 25,
+  "conference": "EHA Congress",
+  "umbrella": "Oncology",
+  "society": "European Hematology Association (EHA)",
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN \u2014 existing '4,000+ submitted' (third-party) neither confirmed nor overturned"
+ },
+ {
+  "row": 18,
+  "conference": "ARVO Annual Meeting",
+  "umbrella": "Ophthalmology",
+  "society": "ARVO (Assoc. for Research in Vision and Ophthalmology)",
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN for a current year \u2014 existing DATED ~6,100/yr (2007-2010) neither confirmed nor overturned"
+ },
+ {
+  "row": 92,
+  "conference": "AAOS Annual Meeting",
+  "umbrella": "Orthopaedics",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN"
+ },
+ {
+  "row": 232,
+  "conference": "North American Neuromodulation Society Annual Meeting",
+  "umbrella": "Pain & headache",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN"
+ },
+ {
+  "row": 160,
+  "conference": "AAPS PharmSci 360",
+  "umbrella": "Pharmacology & pharmacy",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN"
+ },
+ {
+  "row": 240,
+  "conference": "World Congress on Public Health (WFPHA)",
+  "umbrella": "Public health & health informatics",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN"
+ },
+ {
+  "row": 58,
+  "conference": "ARRS Annual Meeting",
+  "umbrella": "Radiology & imaging",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN"
+ },
+ {
+  "row": 142,
+  "conference": "ASRA Annual Meeting",
+  "umbrella": "Sleep, pain & rehabilitation",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN"
+ },
+ {
+  "row": 224,
+  "conference": "ICMM World Congress of Military Medicine",
+  "umbrella": "Surgery",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN"
+ },
+ {
+  "row": 251,
+  "conference": "ISV Annual Congress (International Society for Vaccines)",
+  "umbrella": "Vaccines",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN"
+ }
+]

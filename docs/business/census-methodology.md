@@ -526,6 +526,28 @@ delegates only, or delegates + exhibitor staff + press + virtual. Tags: `DELEGAT
 `TOTAL_ONSITE`, `TOTAL_INC_VIRTUAL`, `UNSPECIFIED`. If the source does not say, the tag is
 `UNSPECIFIED` — never guess. This is the single most abused number in the whole census.
 
+**What the basis tag is NOT for** (Rupert, 2026-09-12). Two things that look like disqualifiers are
+explicitly NOT disqualifiers:
+
+- **Virtual and online participation counts.** The product is a matching system, and an abstract
+  presented online is exactly as matchable as one presented in a room. A `TOTAL_INC_VIRTUAL` figure
+  is not to be discounted for being virtual. This is why Japan Medical Congress, whose only figure
+  is ~540,000 including online participation, is converted rather than refused.
+- **Attendee type is irrelevant.** Students, trainees, allied health, industry scientists — a
+  presenter is a presenter. Never discount a meeting for having the "wrong sort" of attendees.
+
+The tag exists for one purpose only: so the *number* can be read correctly. Discount a headcount
+only where the people counted **cannot submit an abstract at all** — exhibitor booth staff, trade
+-show visitors, accompanying persons. That is a statement about who submits, never about who counts
+as a real scientist.
+
+**The corollary, which bit on 2026-09-12:** if a meeting is judged small, the reason must be that
+*little contributed science happens there*, never that its attendees are the wrong kind. Chicago
+Dental Society Midwinter Meeting is the worked example: 30,000+ attendees, briefly included on the
+"students count too" principle, then correctly left out — not because the presenters are students,
+but because the only contributed science is one poster session, so even a generous 2% gives ~600
+against a ~1,000 bar.
+
 **2. Record disagreement; do not resolve it.** If the prospectus says 15,000 and the press release
 says 11,400, keep both — headline = the more accountable rung, the rest in `alt_figures`.
 The spread IS a finding: it measures that society's marketing inflation. **Never average.**
@@ -601,6 +623,30 @@ large. Above it the row stays on `Census - <Field>`; below it the row belongs on
 
 **A row with no attendance figure at all is never moved to the removed list.** No evidence of size
 is not evidence of small size (rule 1); those rows stay put and go back in the queue.
+
+### Resolving a row that lands near the bar (Rupert, 2026-09-12)
+
+A hard cutoff at 1,000 would be false precision on top of an estimate, so a row near the line gets a
+sensitivity test instead of a coin flip. `attlib.resolve_borderline()` applies it; **either test
+includes the row**:
+
+1. **Within 100 of the bar.** A figure of 900 or more counts as clearing 1,000.
+2. **Flex the ratio and see if it reaches.** Vary the judged ratio up and down, and if the top of
+   that band reaches 900, include the row. This measures the error in the judgement: if a small,
+   defensible change of mind about the conversion rate flips the answer, the row deserves the
+   benefit of the doubt.
+
+**The flex is RELATIVE (±20%), never percentage points.** 25% flexes to 20–30%. Adding *points*
+would rescue precisely the rows that should fail: a 2% CE-and-trade meeting flexed by +5 points
+becomes 7%, a 3.5x change that drags it over the bar on arithmetic alone. Chicago Dental Midwinter
+is the live example — ~600 at 2%, and 720 at the top of its relative band, so it stays out.
+
+**A figure a source stated is not flexed.** There is no judged ratio behind it to vary, so it faces
+only test 1. WOC's reported 800 posters therefore fails, though the log notes that orals are not in
+that 800 — a real count could still overturn it.
+
+Record the band (`low`–`high`) and which test decided it in the Method column, so the call can be
+re-checked without redoing the reasoning.
 
 ### The upgrade sweep — rescuing rows from the removed list
 

@@ -1,0 +1,66 @@
+[
+ {
+  "row": 16,
+  "conference": "Neuroscience (SfN Annual Meeting)",
+  "umbrella": "Psychiatry & neuroscience",
+  "society": "Society for Neuroscience (SfN)",
+  "abstracts_cell": "UNKNOWN for a current year \u2014 existing DATED ~13,000+/yr (2001-2006 study) neither confirmed nor overturned",
+  "attendance_in_sheet": "30,000+"
+ },
+ {
+  "row": 201,
+  "conference": "DIA Global Annual Meeting",
+  "umbrella": "Clinical trials & regulatory",
+  "society": null,
+  "abstracts_cell": "UNKNOWN",
+  "attendance_in_sheet": "More than 5,000 (2023, Boston)"
+ },
+ {
+  "row": 209,
+  "conference": "DGK Jahrestagung (German Cardiac Society)",
+  "umbrella": "Cardiology",
+  "society": null,
+  "abstracts_cell": "UNKNOWN",
+  "attendance_in_sheet": "8,700 (92nd, 2026); 8,400 (91st, 2025); 7,800 (90th, 2024)"
+ },
+ {
+  "row": 211,
+  "conference": "Japan Medical Congress (General Assembly)",
+  "umbrella": "General & internal medicine",
+  "society": null,
+  "abstracts_cell": "UNKNOWN",
+  "attendance_in_sheet": "~540,000 total incl. online and exhibition (31st, Tokyo 2023) \u2014 not comparable to abstract counts"
+ },
+ {
+  "row": 212,
+  "conference": "RACS Annual Scientific Congress",
+  "umbrella": "General & internal medicine",
+  "society": null,
+  "abstracts_cell": "UNKNOWN \u2014 the abstract supplement is ANZ J Surg 95(S1), 211 printed pages (pp. 3-213); the society separately reports 'more than 500 lectures and keynote addres",
+  "attendance_in_sheet": "more than 1,750 delegates"
+ },
+ {
+  "row": 230,
+  "conference": "International Headache Congress (IHS)",
+  "umbrella": "Pain & headache",
+  "society": null,
+  "abstracts_cell": "UNKNOWN",
+  "attendance_in_sheet": "Over 1,600 delegates from 90+ countries (21st IHC, Seoul 2023)"
+ },
+ {
+  "row": 234,
+  "conference": "ASHA Convention (speech-language-hearing)",
+  "umbrella": "Nursing & allied health",
+  "society": null,
+  "abstracts_cell": "UNKNOWN",
+  "attendance_in_sheet": "~15,000 (2,500+ CE-eligible sessions)"
+ },
+ {
+  "row": 246,
+  "conference": "Chicago Dental Society Midwinter Meeting",
+  "umbrella": "Dentistry & oral health",
+  "society": null,
+  "abstracts_cell": "UNKNOWN",
+  "attendance_in_sheet": "30,000+"
+ }
+]
