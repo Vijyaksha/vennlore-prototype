@@ -12,7 +12,8 @@ SHEET = 'Census - Medicine & Health'
 NEW_COLS = {22: 'Attendance basis', 23: 'Attendance rung + how',
             24: 'Programme character', 25: "Rupert's call"}
 ATT, SRC = 10, 11
-TODAY = '2026-09-11'
+TODAY = '2026-09-11'        # the attendance research pass
+CALL_DATE = '2026-09-12'    # the day Rupert's inclusion rule was applied
 
 
 def _ws(wb):
@@ -112,13 +113,239 @@ def apply_character(recs, path=WB):
     return [r['row'] for r in recs]
 
 
+NOT_COUNTED = 'NOT COUNTED'   # the machine-readable marker for a rung-9 figure
+
+
 def _counted(text):
-    """A real counted abstract figure, or None."""
+    """A real COUNTED abstract figure, or None.
+
+    A rung-9 figure (inferred from attendance, or reported by a source without a
+    count behind it) is not a counted figure. It must never be read back as one:
+    that would let the ratio feed on its own output.
+    """
     t = str(text or '')
-    if not t or 'UNKNOWN' in t.upper():
+    if not t or 'UNKNOWN' in t.upper() or NOT_COUNTED in t.upper():
         return None
     m = re.search(r'([\d][\d,]{2,})', t)
     return int(m.group(1).replace(',', '')) if m else None
+
+
+def parse_attendance(text):
+    """The headline attendance figure in a cell, or None.
+
+    Takes the FIRST figure, which is the headline one by writeback convention.
+    A bare year is not an attendance figure: an unpunctuated 1900-2100 is
+    rejected (so a real attendance of exactly '2024' would be missed — write
+    such a figure with a comma).
+    """
+    t = str(text or '')
+    if not t or 'UNKNOWN' in t.upper():
+        return None
+    for m in re.finditer(r'\d{1,3}(?:,\d{3})+|\d{3,}', t):
+        raw = m.group(0)
+        n = int(raw.replace(',', ''))
+        if ',' not in raw and 1900 <= n <= 2100:
+            continue                      # a year, not a headcount
+        return n
+    return None
+
+
+def implied_abstracts(attendance, ratio):
+    """Abstracts implied by a headcount at a given abstracts:attendance ratio."""
+    if attendance is None or ratio is None:
+        return None
+    return round(attendance * ratio)
+
+
+def ratio_rows(path=WB, sheet=SHEET):
+    """Rows carrying BOTH a counted abstract figure and an attendance figure.
+
+    These are the only rows that can calibrate the abstracts:attendance ratio.
+    """
+    wb = openpyxl.load_workbook(path)
+    ws = wb[sheet]
+    out = []
+    for row in range(5, ws.max_row + 1):
+        abstracts = _counted(ws.cell(row, 7).value)
+        attendance = parse_attendance(ws.cell(row, 10).value)
+        if not abstracts or not attendance:
+            continue
+        out.append({'row': row, 'conference': ws.cell(row, 5).value,
+                    'abstracts': abstracts, 'attendance': attendance,
+                    'ratio': abstracts / attendance})
+    return out
+
+
+RATIO_NOTE = ('medicine calibration n=21 rows carrying BOTH a counted abstract figure and an '
+              'attendance figure: median 0.246, range 0.061 (EuroPCR, a teaching course) to 1.55 '
+              '(ESPGHAN). The ratio varies ~25x by conference type, so this is an order-of-'
+              'magnitude indicator, never a measurement')
+
+
+def inclusion_text(c):
+    """The audit log for a row included on attendance rather than a counted abstract figure."""
+    parts = [f"RUNG 9 ATTENDANCE-BASED CALL ({CALL_DATE}) — decision: {c['decision']}."]
+    year = f" ({c['attendance_year']})" if c.get('attendance_year') else ''
+    parts.append(f"Attendance {_fmt(c['attendance'])}{year}, basis {c.get('attendance_basis') or 'UNSPECIFIED'}, "
+                 f"produced by rung {c.get('attendance_rung')}: {c.get('attendance_source_url')}.")
+    parts.append(f"Programme type judged {c['programme_type']} — {c.get('programme_evidence','')}".strip() + '.')
+    if c.get('direct_abstracts'):
+        parts.append(f"ABSTRACT EVIDENCE: {_fmt(c['direct_abstracts'])} abstracts reported for this meeting "
+                     f"by a source found during the attendance pass — used in preference to the ratio.")
+    else:
+        parts.append(f"No abstract figure found; implied ~{_fmt(c['implied'])} abstracts at "
+                     f"{c['ratio']*100:.0f}% of attendance. RATIO JUDGED FOR THIS CONFERENCE: "
+                     f"{c.get('ratio_rationale','')} Calibration context — {RATIO_NOTE}.")
+    parts.append(f"Rupert's bar for this override: ~{_fmt(c['bar'])} abstracts.")
+    parts.append("APPROXIMATION: the figure written into the Abstracts column carries the NOT COUNTED label "
+                 "because it is arithmetic on a headcount and is NOT a counted abstract figure. No abstract "
+                 "artefact was counted for this row; rungs 1-8 found none.")
+    return ' '.join(parts)
+
+
+def log_inclusion(calls, path=WB):
+    """Append the attendance-based call to the Method column and Rupert's call column.
+
+    Adds no columns, no switches and no files: the existing Method text is kept and the
+    log appended after it. Tier, Include and the abstracts columns are never touched.
+    """
+    wb = openpyxl.load_workbook(path)
+    ws = _ws(wb)
+    _ensure_cols(ws)
+    for c in calls:
+        row = c['row']
+        prior = ws.cell(row, 20).value or ''
+        note = inclusion_text(c)
+        ws.cell(row, 20).value = (str(prior).rstrip() + ' ' + note).strip() if prior else note
+        figure = c.get('direct_abstracts') or c.get('implied')
+        short = (f"{c['decision']} ({CALL_DATE}) — rung 9: ~{_fmt(figure)} abstracts from attendance "
+                 f"{_fmt(c['attendance'])}, against Rupert's ~{_fmt(c['bar'])} bar. "
+                 f"See Method column for the full log.")
+        ws.cell(row, 25).value = short
+    wb.save(path)
+    return [c['row'] for c in calls]
+
+
+RATIO_MIN, RATIO_MAX = 0.02, 2.0   # widest plausible, from the observed 0.061-1.55 spread
+
+
+def check_ratio(c):
+    """Problems with a judged conversion ratio. Empty list means it is usable.
+
+    The ratio is NEVER a lookup from a band table: it is a judgement about THIS
+    conference, and it must arrive with the reasoning that produced it.
+    """
+    problems = []
+    r = c.get('ratio')
+    if r is None:
+        problems.append('no ratio stated — every rung-9 row must state its own conversion ratio')
+    elif not RATIO_MIN <= r <= RATIO_MAX:
+        problems.append(f'ratio {r} outside the plausible range {RATIO_MIN}-{RATIO_MAX}')
+    if len((c.get('ratio_rationale') or '').strip()) < 20:
+        problems.append('no rationale — say what about THIS conference puts it at that ratio')
+    return problems
+
+
+def write_inferred_abstracts(calls, path=WB):
+    """Write the rung-9 abstract figure into the Abstracts column, clearly labelled.
+
+    The label carries the marker NOT COUNTED so the figure can never be mistaken —
+    by a human or by _counted() — for an abstract count taken off a real artefact.
+    A row that already has a counted figure is left alone: rungs 1-8 outrank rung 9.
+    """
+    wb = openpyxl.load_workbook(path)
+    ws = _ws(wb)
+    written = []
+    for c in calls:
+        row = c['row']
+        prior = str(ws.cell(row, 7).value or '').strip()
+        if _counted(prior) is not None:
+            continue                                  # a counted figure already stands
+        if c.get('direct_abstracts'):
+            head = (f"~{_fmt(c['direct_abstracts'])} REPORTED BY SOURCE, {NOT_COUNTED} "
+                    f"(rung 9 — figure stated by an organiser/report found during the attendance "
+                    f"pass; no artefact was counted)")
+        else:
+            head = (f"~{_fmt(c['implied'])} INFERRED FROM ATTENDANCE, {NOT_COUNTED} "
+                    f"(rung 9 — {_fmt(c['attendance'])} attendees x {c['ratio']*100:.0f}% of attendance, "
+                    f"a ratio judged for this conference, not a default)")
+        ws.cell(row, 7).value = f"{head} — see Method column. PRIOR: {prior}" if prior else head
+        written.append(row)
+    wb.save(path)
+    return written
+
+
+DELETED_SHEET = 'Deleted - Medicine & Health'
+DEL_ON, DEL_WHY, DEL_METHOD = 20, 21, 22      # deleted-sheet columns
+CEN_NOTES, CEN_METHOD = 19, 20                # census-sheet columns
+
+
+def _last_data_row(ws):
+    """Last row carrying a conference name, before any totals block."""
+    last = 4
+    for row in range(5, ws.max_row + 1):
+        if ws.cell(row, 5).value and ws.cell(row, 14).value:
+            last = row
+    return last
+
+
+def _widen_totals(ws, new_end):
+    """Totals formulas carry FIXED ranges (N5:N257). openpyxl re-points nothing, so a row
+    inserted past the end would sit outside every total, silently. Widen them by hand."""
+    for row in range(5, ws.max_row + 1):
+        for col in (5, 6):
+            v = ws.cell(row, col).value
+            if isinstance(v, str) and v.startswith('='):
+                ws.cell(row, col).value = re.sub(
+                    r'([A-Z]{1,2})5:([A-Z]{1,2})(\d+)',
+                    lambda m: f'{m.group(1)}5:{m.group(2)}{max(int(m.group(3)), new_end)}', v)
+
+
+def upgrade_rows(calls, path=WB, sheet=SHEET, deleted_sheet=DELETED_SHEET):
+    """Move rows the rung-9 figure lifts over the bar from the removed list to the approved one.
+
+    Refuses any row under the bar, and any row whose ratio arrives without reasoning.
+    The upgraded row lands as BORDERLINE, never VERIFIED: nothing was counted for it.
+    """
+    wb = openpyxl.load_workbook(path)
+    ws, wd = wb[sheet], wb[deleted_sheet]
+    moved = []
+    for c in calls:
+        figure = c.get('direct_abstracts') or c.get('implied')
+        if figure is None or figure < c.get('bar', 1000) or check_ratio(c):
+            continue
+        src = None
+        for row in range(5, wd.max_row + 1):
+            if str(wd.cell(row, 5).value or '').strip() == str(c['conference']).strip():
+                src = row
+                break
+        if src is None:
+            continue
+        values = {col: wd.cell(src, col).value for col in range(1, DEL_METHOD + 1)}
+        dest = _last_data_row(ws) + 1
+        ws.insert_rows(dest)
+        for col in range(1, 19):                       # Field .. Rev/yr, as-is
+            if col not in (7, 14):
+                ws.cell(dest, col).value = values.get(col)
+        ws.cell(dest, 14).value = 'BORDERLINE'         # never VERIFIED — nothing was counted
+        ws.cell(dest, CEN_NOTES).value = values.get(19)
+        history = (f"UPGRADED FROM THE REMOVED LIST ({CALL_DATE}) by rung 9. "
+                   f"Previously deleted on {values.get(DEL_ON)} because: {values.get(DEL_WHY)}. "
+                   f"Tier set to BORDERLINE, never VERIFIED: no abstract artefact was ever counted "
+                   f"for this row. Prior method text follows. || {values.get(DEL_METHOD) or ''}")
+        ws.cell(dest, CEN_METHOD).value = history
+        _widen_totals(ws, dest)
+        wd.delete_rows(src)
+        c = dict(c, row=dest)
+        moved.append(c)
+        wb.save(path)
+        wb = openpyxl.load_workbook(path)
+        ws, wd = wb[sheet], wb[deleted_sheet]
+    wb.save(path)
+    if moved:
+        write_inferred_abstracts(moved, path=path)
+        log_inclusion(moved, path=path)
+    return moved
 
 
 def character_from_abstracts(path=WB):

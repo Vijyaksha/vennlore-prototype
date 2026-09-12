@@ -60,6 +60,11 @@ context, never as the test. Two real examples of why: OFC has 16,700 attendees b
    can be clicked and checked. Link PDFs directly.
 3. **No figure without a source is written down.** Mark it `UNKNOWN`. Never estimate,
    interpolate, or reason "probably about X".
+   **The one exception is rung 9**, and it is a bounded one (Rupert, 2026-09-12): when rungs 1–8
+   have all failed, an abstract figure may be INFERRED from a sourced attendance number times a
+   programme-type ratio. The attendance number itself still obeys this rule — it must be read off
+   a page that actually loaded — and the inferred figure must carry the `NOT COUNTED` label
+   wherever it is written. Everything else in this document still forbids estimating.
 4. **Record the method, not just the number.** Both physical-sciences sheets carry a
    `Method — which escalation-ladder rung produced the number, and exactly how` column (col `T`
    on the census sheet, col `V` on the deleted sheet). Every figure you write must name the rung
@@ -457,14 +462,34 @@ intact; without it the old rule stands.
 
 Report progress as **verified / total candidates** so completeness is always legible.
 
-## Rung 9 — the attendance pass (NON-DECIDING)
+## Rung 9 — attendance converted to abstracts (the last rung of the ladder)
 
-Rung 9 sits outside the abstract ladder and **never decides a row's fate**. It does not set a
-Tier and does not move a row between the census and deleted sheets. It produces a referral
-packet — attendance, what that number counts, and whether the meeting is contributed or
-curated — and the call is Rupert's.
+**Changed 2026-09-12 by Rupert.** Rung 9 used to sit outside the ladder as a non-deciding
+referral packet. It is now **the ninth and final rung of the abstract ladder, inside Phase 2**:
+when rungs 1–8 fail to produce a countable artefact, rung 9 finds the attendance figure, judges
+what kind of programme the meeting runs, and converts attendance into an approximate abstract
+number. That number decides whether the row is large enough for the approved list.
 
-It exists because abstracts turned out to be unrecoverable for a large slice of medicine.
+The purpose is completeness, not precision. Rupert's framing: *"We don't need exact abstract
+numbers. What we really need is approximate numbers, so we can get all of the conferences that
+are large enough on the list, and the ones that are not large enough on the removed list."*
+
+**The four constraints that keep this honest:**
+
+1. **The attendance figure must be real.** Read off a page that actually loaded, with its basis
+   tag and the rung that produced it. Only the *conversion* is approximate. A snippet is not a
+   source (see rule 7 and "What rung 9 must never do" below).
+2. **The inferred figure goes in the Abstracts column, labelled.** Write it as
+   `~N INFERRED FROM ATTENDANCE, NOT COUNTED (rung 9 — <attendance> x <ratio> for a
+   <programme type> programme) — see Method column. PRIOR: <what the cell said before>`.
+   A figure an organiser merely states, with no artefact behind it, is labelled
+   `~N REPORTED BY SOURCE, NOT COUNTED` instead. The prior cell text is preserved, never erased.
+3. **Rungs 1–8 outrank rung 9.** A row that already carries a counted figure is never overwritten.
+4. **Inferred figures are excluded from the ratio calibration**, or the ratio feeds on its own
+   output and becomes self-fulfilling. The `NOT COUNTED` marker is what makes this mechanical:
+   `attlib._counted()` returns `None` for any cell carrying it.
+
+Rung 9 exists because abstracts turned out to be unrecoverable for a large slice of medicine.
 The decisive test across 26 blocked rows carrying a Crossref handle returned **2 countable,
 23 extent-only, 1 no handle**. Behind those paywalls is a PDF that needs a subscription, and
 no metadata route substitutes for opening it. So for the ~70 blocked rows, the ~26 with no
@@ -505,9 +530,114 @@ delegates only, or delegates + exhibitor staff + press + virtual. Tags: `DELEGAT
 says 11,400, keep both — headline = the more accountable rung, the rest in `alt_figures`.
 The spread IS a finding: it measures that society's marketing inflation. **Never average.**
 
-**3. Stop at the first rung that yields a figure with a basis.** Nothing here decides anything, so
-unlike the abstract ladder there is no completeness obligation and no `UNKNOWN`-only-at-the-end
-rule. Cap: **2 searches per row**, 3 for a genuinely hard one.
+**3. Stop at the first rung that yields a figure with a basis.** Cap: **2 searches per row**, 3 for
+a genuinely hard one. The conversion below is approximate by design, so a second corroborating
+figure rarely changes the answer — spend the search on the next row instead.
+
+### The conversion — attendance to abstracts
+
+**There is no band table and no default ratio. Do not hard-code one** (Rupert, 2026-09-12). For
+every row, the agent judges *this conference's* ratio from the wording it actually found, states it
+as a percentage, and says what justifies it. A ratio that arrives without its reasoning is rejected
+(`attlib.check_ratio()` enforces both, plus a 2%–200% plausibility range).
+
+The question to answer per conference: **what share of the people in the room submitted something?**
+Read it off the programme's own wording — is the meeting built on an open call, or on invited
+faculty and courses? Does the abstract deadline page read like the spine of the event or like a
+sideshow? Is the headline headcount padded with exhibitor staff, industry, virtual viewers?
+
+`implied abstracts = attendance x the judged ratio`. Round it; never carry decimals into the sheet.
+
+**Anchor the judgement against real counted rows, don't guess in a vacuum.** `attlib.ratio_rows()`
+lists every row carrying BOTH a counted abstract figure and an attendance figure. Medicine, n=21:
+
+```
+EuroPCR 6% | PAS 9% | AAD 9% | RSNA 11% | ASHP 12% | ESC 15% | ERA 21% | ASTRO 21%
+SABCS 21% | EASL 24% | WCLC 25% | UEG 35% | ASN 35% | DDW 37% | ESCMID 40% | SOT 46%
+ECR 48% | ATS 50% | AAIC 50% | GSA 119% | ESPGHAN 155%
+```
+
+Physical sciences runs far higher (n=36, median 77%) — **never reuse one field's anchors in the
+other.** Name the comparable you reasoned from: *"judged 25%, against SABCS 21% and WCLC 25%, both
+oncology congresses of similar shape."* That sentence is what makes the row auditable later.
+
+**Discount an inflated headcount before converting, or say you didn't.** EUROSPINE's 3,809 headline
+contains 1,478 industry representatives; converting the headline instead of the 2,331 delegates
+would overstate that row by 63%. Virtual-inclusive and exhibitor-inclusive totals inflate the same
+way.
+
+**Treat the result as an order of magnitude, not a measurement.** The medicine spread is ~25x end to
+end, so a single row can be wrong by 3x either way. It is good enough to sort large from small,
+which is all it is for.
+
+**A figure stated by a source beats any ratio.** If the attendance pass turns up an organiser saying
+"nearly 2,000 abstracts", use it, label it `REPORTED BY SOURCE, NOT COUNTED`, and note whether it
+counts submissions (higher) or accepted papers (lower).
+
+#### What the ratio is NOT (Rupert, 2026-09-12)
+
+**Do not go hunting for an exact number to back-derive the ratio.** That is the failure mode here:
+an agent decides it must find "the real abstract count" to justify a percentage, spends its search
+budget chasing a figure rungs 1–8 have already failed to find, and ends up either empty or
+asserting something it cannot source.
+
+The ratio is **a qualitative read of the conference** — the agent reads about the meeting, takes in
+the context (numbers that happen to appear are part of that context, not the object of the
+exercise), and forms a judgement: this looks *majority-abstract*, or *minority-abstract*, or
+somewhere between. In Rupert's words: **"an imperfect science, a gut feel from the LLM."**
+
+That is acceptable *because* the output is labelled `NOT COUNTED` everywhere it appears, and
+because the bar it feeds (~1,000) only has to sort large from small. What is NOT acceptable is
+dressing that judgement up as precision, or spending a row's whole search budget trying to make it
+precise. Read, judge, state the reasoning, move to the next row.
+
+### The bar for the approved list
+
+**~1,000 implied abstracts** (Rupert, 2026-09-12) — deliberately below the ≥1,500 counted bar,
+because an inferred figure is coarse and the aim is to catch every conference that is plausibly
+large. Above it the row stays on `Census - <Field>`; below it the row belongs on
+`Deleted - <Field>`. A row straddling the bar between its band and the next one up is recorded as
+`BORDERLINE` in `Rupert's call` and left for him.
+
+**A row with no attendance figure at all is never moved to the removed list.** No evidence of size
+is not evidence of small size (rule 1); those rows stay put and go back in the queue.
+
+### The upgrade sweep — rescuing rows from the removed list
+
+**Run this as the final sweep, after the main rung-9 pass** (Rupert, 2026-09-12). Rows landed on
+`Deleted - <Field>` for two very different reasons, and only one of them is reversible here:
+
+- **Deleted because a counted figure came in under the bar** — leave it alone. A counted number
+  outranks any rung-9 estimate; do not "rescue" it with arithmetic.
+- **Deleted because no abstract count could be found** — this is the upgrade candidate. Run rung 9
+  on it. If the resulting approximate figure reaches the ~1,000 bar, **move the row back onto
+  `Census - <Field>` automatically**, without asking. That is the whole point of the sweep.
+
+`attlib.upgrade_rows()` performs the move and is the only sanctioned way to do it, because three
+things have to happen together or the workbook quietly breaks:
+
+1. **The row lands as `BORDERLINE`, never `VERIFIED`.** Nothing was counted for it. `VERIFIED`
+   means a published count ≥1,500 seen on a page, and an upgraded row has no such thing.
+2. **The totals block must be widened.** The census totals carry FIXED ranges (`N5:N257`) and
+   openpyxl re-points nothing on insert. A row appended past the range end sits outside every
+   total, silently — the row looks present and counts for nothing. `_widen_totals()` extends the
+   ranges to cover the new row.
+3. **The history travels with the row**: when it was deleted, why it was deleted, and its prior
+   method text, all preserved in the Method column ahead of the new rung-9 log. A row that has been
+   out and back must be able to explain both trips.
+
+A row is refused an upgrade if its figure is under the bar, or if its ratio arrives without
+reasoning (`check_ratio()`).
+
+**Report every upgrade in a table in chat** — conference, attendance and its source, the judged
+ratio and why, the resulting figure, and the old deletion reason — so Rupert can vet the moves.
+This step carries more error risk than anything upstream: it is the only place where an estimate
+changes which list a conference sits on. Never report an upgrade count without the table behind it.
+
+**A known inconsistency to watch.** The counted bar is ≥1,500 but the inferred bar is ~1,000, so a
+row with a *counted* 1,200 stays removed while a row with an *inferred* ~1,100 gets upgraded — the
+better-evidenced row treated more harshly. One row is currently affected: EUROTOX / ISES joint
+meetings, counted 1,075, on `Deleted - Medicine & Health`. Flag it; do not silently fix it.
 
 ### Programme character — the second signal
 
@@ -553,17 +683,40 @@ Unaudited conference-directory sites (10times and similar) are fetchable and cov
 row, but their numbers are self-reported and sit below A4. Do not use them without Rupert's
 explicit word, and if used, tag every such row `confidence: LOW`, basis `UNSPECIFIED`.
 
+### NON-NEGOTIABLE — a rung-9 abstract number is an APPROXIMATION and must say so
+
+This is the rule most likely to cause real damage if it slips, because an unlabelled estimate is
+indistinguishable from a counted figure six months later, and the whole census is built on the
+promise that every number is re-derivable from its source.
+
+**A rung-9 abstract figure is NOT ACCURATE. It is arithmetic on a headcount, not a count of
+anything.** Wherever such a figure appears — spreadsheet cell, agent JSON, report, chat summary,
+slide — it carries, in the same breath as the number:
+
+- the words **`NOT COUNTED`**, plus `INFERRED FROM ATTENDANCE` or `REPORTED BY SOURCE`;
+- the inputs that produced it: the attendance figure, the ratio, and the programme type;
+- a `~` before the number. Never write a rung-9 figure as a bare integer.
+
+Never round a rung-9 figure to false precision (`~2,900`, not `2,872`, in prose). Never let one
+into the `Abstracts (exact, as published)` column unlabelled — that column's name is a promise.
+Never quote one in a total, a TAM/SAM figure or a sentence to Rupert without repeating that it is
+inferred. Never let one be re-used as an input to the ratio calibration. If you are ever unsure
+whether a number in the sheet was counted or inferred, that is the failure this rule exists to
+prevent: check the `NOT COUNTED` marker.
+
 ### What rung 9 must never do
 
-1. Never set, suggest, or touch a Tier. Never write VERIFIED / BORDERLINE / OUT / DELETE.
+1. Never overwrite a counted figure from rungs 1–8, and never change a Tier directly — Tier is the
+   record of the *abstract* test. Rung 9's verdict goes in `Rupert's call` and the Method column,
+   and list membership is expressed by which sheet the row sits on.
 2. Never report a figure not seen on a page actually loaded. A number asserted only in a search
    snippet is not evidence. Four rows in this workbook already assert figures their own cited
    sources do not contain — do not add a fifth.
-3. Never touch or re-research the abstracts columns. The abstracts value is context for the
-   character call only.
+3. Never present an inferred figure as a counted one. See the NON-NEGOTIABLE section above.
 4. Never carry forward a number already in the sheet as if it were a finding. "Carried forward"
    is not a method.
-5. Absence of evidence is not evidence the meeting is small — say so explicitly in the method text.
+5. Absence of evidence is not evidence the meeting is small — say so explicitly in the method text,
+   and leave the row where it is.
 
 ### Columns and writeback
 
@@ -571,12 +724,14 @@ Rung 9 writes only these, on `Census - <Field>`:
 
 | Col | Field |
 |---|---|
+| G | `Abstracts (exact, as published)` — ONLY the labelled rung-9 figure, and ONLY where no counted figure exists. Prior text preserved after `PRIOR:` |
 | J | `Attendance` — as published, with the year |
 | K | `Attendance source (click)` — the page the number is ON, never a search page |
+| T | `Method` — the full audit log, appended after any existing method text: decision, attendance + basis + rung + URL, programme type and its evidence, the ratio, the bar, and the statement that the abstracts column holds an inferred figure |
 | V | `Attendance basis` — DELEGATES / TOTAL_ONSITE / TOTAL_INC_VIRTUAL / UNSPECIFIED |
 | W | `Attendance rung + how` — which rung PRODUCED it, plus any DISAGREEMENT block |
 | X | `Programme character` — CONTRIBUTED / CURATED / HYBRID / UNKNOWN |
-| Y | `Rupert's call` — left empty for Rupert |
+| Y | `Rupert's call` — INCLUDE / BORDERLINE / BELOW BAR, dated, with the figure and the bar |
 
 `scratchpad/attlib.py` (tests in `scratchpad/test_attlib.py`, TDD) does the writeback. It credits
 **only the rung that produced a figure**, never the highest rung reached; renders disagreement
@@ -585,15 +740,20 @@ row numbers go stale the instant any row is deleted. Agents return JSON and neve
 workbook. Per-row agent contract: `row`, `conference` (echoed verbatim for re-anchoring),
 `attendance`, `attendance_numeric`, `attendance_year`, `attendance_basis`, `attendance_rung`,
 `attendance_rung_name`, `attendance_source_url`, `attendance_method`, `alt_figures[]`,
-`character`, `character_evidence`, `confidence`, `searches_used`.
+`character`, `character_evidence`, `confidence`, `searches_used`, plus the conversion fields
+`programme_type`, `programme_evidence`, `direct_abstracts` (a figure a source states, else null),
+**`ratio`** (judged for this conference, as a decimal) and **`ratio_rationale`** (what about this
+conference puts it at that ratio, naming the counted comparable reasoned from). Both are mandatory
+on any row with an attendance figure; `check_ratio()` rejects a bare ratio with no reasoning.
+The orchestrator — never the agent — computes `implied`, writes the labelled abstracts cell via
+`write_inferred_abstracts()` and the audit log via `log_inclusion()`.
 
 ### Reporting
 
-Because rung 9 does not decide, report the honest pair rather than one number:
-**counted** events/yr (rows with a real abstract count) against **generous** events/yr (counted
-plus BORDERLINE). Rupert's calls in column Y move weight from the soft number to the hard one.
-Consider a `REFERRED` marker so rows awaiting his call stop counting silently toward the
-generous total.
+Always report **counted** events/yr (rows with a real abstract count) separately from **inferred**
+events/yr (rows admitted on a rung-9 estimate). Never merge them into a single headline number:
+the whole point of the `NOT COUNTED` marker is lost if the two are added together silently. State
+the ratio and the bar alongside any inferred total, and name the rows still awaiting evidence.
 
 
 ## Tiers
@@ -623,9 +783,16 @@ Method — which escalation-ladder rung produced the number, and exactly how
 ```
 
 - `Events/yr`: 1 for annual, 2 for twice-yearly, 0.5 biennial, 0.33 triennial.
-- `Include = 0` on every non-physical-science sheet. SAM is physical sciences only; nothing
-  from another field may leak into it. New fields feed **TAM** via Method C on the
-  `TAM large-conf estimate` sheet.
+- `Abstracts (exact, as published)` means exactly that: a counted figure off a real artefact. The
+  only other thing allowed in it is a rung-9 figure carrying `NOT COUNTED` — see the
+  NON-NEGOTIABLE section under rung 9.
+- **SAM = every conference on the approved (census) sheets of medicine AND physical sciences,
+  minus everything on the `Deleted - <Field>` sheets** (Rupert, 2026-09-12). This replaces the old
+  "SAM is physical sciences only" rule. Membership of the approved list IS the inclusion
+  mechanism — no switch column, no separate override file, no parallel list.
+  **Not yet wired:** the Summary sheet still computes SAM from the `Include (1/0)` column across
+  the physical-sciences census AND deleted sheets — so it currently counts ~62 events/yr of
+  *removed* conferences and no medicine at all. Fixing that formula is a pending change.
 - `US (1/0)` drives the US / non-US split — always fill it.
 - `Method` (col `T` census / col `V` deleted) is mandatory on every row whose number you touched —
   see rule 4. It was appended at the end of each sheet deliberately, so no existing SAM/SOM

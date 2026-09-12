@@ -1,0 +1,122 @@
+[
+ {
+  "row": 11,
+  "conference": "ERS Congress",
+  "umbrella": "Respiratory",
+  "abstracts": "UNKNOWN \u2014 existing DERIVED ~5,000 could not be confirmed or sharpened"
+ },
+ {
+  "row": 33,
+  "conference": "SIOP Congress (paediatric oncology)",
+  "umbrella": "Oncology",
+  "abstracts": "UNKNOWN"
+ },
+ {
+  "row": 48,
+  "conference": "EAN Congress",
+  "umbrella": "Neurology",
+  "abstracts": "UNKNOWN \u2014 existing third-party '1,986 posters + 951 presentations' (2,937 accepted) neither confirmed nor overturned"
+ },
+ {
+  "row": 61,
+  "conference": "RANZCR ASM",
+  "umbrella": "Radiology & imaging",
+  "abstracts": "UNKNOWN"
+ },
+ {
+  "row": 83,
+  "conference": "APLAR Congress",
+  "umbrella": "Rheumatology",
+  "abstracts": "UNKNOWN"
+ },
+ {
+  "row": 91,
+  "conference": "WOC \u2014 World Ophthalmology Congress",
+  "umbrella": "Ophthalmology",
+  "abstracts": "UNKNOWN"
+ },
+ {
+  "row": 103,
+  "conference": "SAGES Annual Meeting",
+  "umbrella": "Surgery",
+  "abstracts": "UNKNOWN"
+ },
+ {
+  "row": 115,
+  "conference": "FIGO World Congress",
+  "umbrella": "Obstetrics, gynaecology & reproductive",
+  "abstracts": "UNKNOWN"
+ },
+ {
+  "row": 140,
+  "conference": "ESRS Congress",
+  "umbrella": "Sleep, pain & rehabilitation",
+  "abstracts": "UNKNOWN"
+ },
+ {
+  "row": 159,
+  "conference": "ASCPT Annual Meeting",
+  "umbrella": "Pharmacology & pharmacy",
+  "abstracts": "UNKNOWN"
+ },
+ {
+  "row": 171,
+  "conference": "AACN NTI",
+  "umbrella": "Nursing & allied health",
+  "abstracts": "UNKNOWN"
+ },
+ {
+  "row": 180,
+  "conference": "WFNS World Congress",
+  "umbrella": "Neurosurgery",
+  "abstracts": "UNKNOWN"
+ },
+ {
+  "row": 187,
+  "conference": "ISSCR Annual Meeting",
+  "umbrella": "Cell, gene & stem cell therapy",
+  "abstracts": "UNKNOWN"
+ },
+ {
+  "row": 199,
+  "conference": "ASAM Annual Conference",
+  "umbrella": "Addiction medicine",
+  "abstracts": "UNKNOWN"
+ },
+ {
+  "row": 205,
+  "conference": "CUGH Annual Conference",
+  "umbrella": "Global health",
+  "abstracts": "UNKNOWN"
+ },
+ {
+  "row": 214,
+  "conference": "All India Medical Conference (IMA)",
+  "umbrella": "General & internal medicine",
+  "abstracts": "UNKNOWN"
+ },
+ {
+  "row": 221,
+  "conference": "EUROSPINE Annual Meeting",
+  "umbrella": "Spine & orthopaedics",
+  "abstracts": "UNKNOWN"
+ },
+ {
+  "row": 228,
+  "conference": "CAP Annual Meeting (College of American Pathologists)",
+  "umbrella": "Pathology & laboratory medicine",
+  "abstracts": "UNKNOWN \u2014 the abstract supplement is Archives of Pathology & Laboratory Medicine, web-only supplement to the September issue: 2024 = 148(9) e171-e334 (164 pages); 2023 = 147(9) e2-e154; 2019 = 143(9) e2-e226"
+ },
+ {
+  "row": 238,
+  "conference": "APMA The National (podiatry)",
+  "umbrella": "Nursing & allied health",
+  "abstracts": "UNKNOWN"
+ },
+ {
+  "row": 249,
+  "conference": "EWMA Conference (European Wound Management Association)",
+  "umbrella": "Urology, continence & wound",
+  "abstracts": "UNKNOWN"
+ }
+]
