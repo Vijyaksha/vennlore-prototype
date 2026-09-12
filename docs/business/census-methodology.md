@@ -175,6 +175,50 @@ listed is invisible forever.
 `Tier = NOT YET CENSUSED`, every number column empty. The sheet is now complete in *names*
 and empty in *numbers* — which is what makes progress measurable.
 
+### Search in the conference's own language — mandatory, both phases
+
+**An English-only search does not mean the figure is unpublished. It means you did not look.**
+This has now bitten twice, in two different fields, and both times the missing rows were large:
+
+- **Medicine, 2026-09-10.** A completeness pass reported 9 rows as unresearchable. Re-run with
+  local-language queries, three of them turned out to have conferences the sheet claimed did not
+  exist: Kazakhstan (~70 reports), Mongolia (43), and a co-organised Greater Bay Area congress in
+  Macau. All were invisible to English-language searching alone.
+- **Chemistry, 2026-09-12.** The Chemical Society of Japan's 106th meeting publishes **3,604
+  presentations and 6,000+ participants** on its own news page — in Japanese. English queries
+  returned nothing usable for one of the largest chemistry meetings in the world.
+
+**The rule:** when a conference is run by a non-anglophone society, at least one query must be in
+the society's working language, using the local term for the artefact. A row may only be marked
+`UNKNOWN` once that has been tried — and the method text must say which language was searched.
+
+| Language | Annual meeting | Abstract(s) | Attendance / participants |
+|---|---|---|---|
+| Japanese | 年会 / 大会 / 討論会 | 要旨 / 講演要旨集 / 発表件数 | 参加者数 |
+| Chinese | 年会 / 大会 / 学术会议 | 摘要 / 论文集 / 报告数 | 参会人数 / 参加人数 |
+| Korean | 학술발표회 / 총회 | 초록 / 초록집 | 참가자 수 |
+| German | Jahrestagung / Tagung / Kongress | Beiträge / Kurzfassungen / Abstracts | Teilnehmerzahl / Teilnehmende |
+| French | congrès / journées / réunion annuelle | résumés / communications | participants / congressistes |
+| Spanish | congreso / reunión bienal | resúmenes / comunicaciones | participantes / asistentes |
+| Portuguese | congresso / reunião anual | resumos / trabalhos | participantes |
+| Italian | congresso nazionale / convegno | riassunti / contributi / comunicazioni | partecipanti |
+| Russian | съезд / конференция | тезисы / тезисы докладов | участников |
+| Polish | zjazd / kongres | streszczenia | uczestników |
+| Turkish | kongre / kurultay | bildiri özetleri | katılımcı |
+| Dutch | congres / jaarvergadering | samenvattingen | deelnemers |
+| Nordic | møte / möte / kokous | sammendrag / abstrakt | deltakere / deltagare |
+
+**Two practical notes.** Figures in these sources are often written in local numeral conventions —
+German and Italian use `.` as the thousands separator (`3.604` is three thousand six hundred and
+four, not 3.6), and Japanese and Chinese pages frequently write 件 (items) or 名 (people) after the
+number. Read the unit, not just the digits. And a machine-translated page is fine to *read*, but
+cite the original URL: the translation layer is not the source.
+
+**Where the local-language artefacts live.** Japan: Confit (`confit.atlas.jp`) hosts programmes and
+abstract books for many societies. China: the Chinese Chemical Society meetings index
+(`chemsoc.org.cn/meeting/home/`) enumerates its division congresses. Both are rung-5 browser targets
+covering a whole national layer each.
+
 ### Phase 2 — Verify each candidate (deep searches)
 
 Work down the candidate list **largest-first**, upgrading rows in place from
@@ -570,6 +614,15 @@ sideshow? Is the headline headcount padded with exhibitor staff, industry, virtu
 
 `implied abstracts = attendance x the judged ratio`. Round it; never carry decimals into the sheet.
 
+**NO SHORTCUTS ON THE CONVERSION** (Rupert, 2026-09-12). The anchors below are *reference material*,
+never a lookup table. You may consult them, an industry rule of thumb, or the same conference's
+figure from a previous year — but the ratio you write down must be a judgement about **this
+conference**, reached by reading what this conference says about itself. Copying a comparable's
+percentage across because the two meetings are in the same field is a shortcut and is not allowed;
+neither is reusing the field median because a row is hard. If the evidence is thin, say so in
+`ratio_rationale` and give the figure you actually believe — an honest uncertain number is usable,
+a borrowed confident one is not.
+
 **Anchor the judgement against real counted rows, don't guess in a vacuum.** `attlib.ratio_rows()`
 lists every row carrying BOTH a counted abstract figure and an attendance figure. Medicine, n=21:
 
@@ -582,6 +635,18 @@ ECR 48% | ATS 50% | AAIC 50% | GSA 119% | ESPGHAN 155%
 Physical sciences runs far higher (n=36, median 77%) — **never reuse one field's anchors in the
 other.** Name the comparable you reasoned from: *"judged 25%, against SABCS 21% and WCLC 25%, both
 oncology congresses of similar shape."* That sentence is what makes the row auditable later.
+
+**Chemistry anchors (n=3, from the 2026-09-12 pilot — the seed of that field's set):**
+
+```
+ASMS 55% (3,352 accepted / 6,080)  |  CSJ 60% (3,604 / 6,000)  |  ACS Spring 89% (12,723 / 14,300)
+```
+
+Chemistry converts far higher than medicine — roughly 55–89% against medicine's 25% median. Using
+medicine's anchors on a chemistry row would understate it two- to threefold. **Every new field
+starts its own anchor set and borrows from none.** The set builds itself: `ratio_rows()` returns
+every row that has acquired both a counted abstract figure and an attendance figure, so each
+verified row makes the next judgement better.
 
 **Discount an inflated headcount before converting, or say you didn't.** EUROSPINE's 3,809 headline
 contains 1,478 industry representatives; converting the headline instead of the 2,331 delegates
@@ -933,17 +998,47 @@ unchanged afterwards by recomputing them from the cells, never by reading the sh
 | Field | State |
 |---|---|
 | Physical sciences | **Complete and fully re-verified (2026-09-10).** 55 census rows (28 VERIFIED, 27 BORDERLINE); 101 deleted rows, every one carrying a `Method` entry and 81 carrying an actual counted number (was 16). No duplicates in either direction. 6 rows remain queued for rung 5, and 2 are genuinely unreachable (Belarus: dead network; Russia: a Phase-1 gap naming no conference) |
-| Medicine & health | **Phase 2 complete (2026-09-10)** — 249 of 252 rows, 3 never censused. 82 VERIFIED, 167 BORDERLINE; 143 rows carry a counted number, 106 remain UNKNOWN (71 paywall/browser-blocked, 26 ladder-exhausted, 9 search-starved). 56 rows deleted on evidence. **Rung 9 attendance pass STARTED 2026-09-11 and is the live front:** columns V–Y exist, character classified for 144/252 at zero search cost, ESC Congress is the only attendance figure written. The remaining 224 attendance rows are queued and blocked purely on the WebSearch cap — see the budget note in rung 9 |
-| CS / AI / engineering | Not started — the selective-paper world (NeurIPS: 21,575 submissions) |
-| Life sciences | Not started |
-| Chemistry | Not started — ACS placeholder awaiting a decision |
+| Medicine & health | **Phase 2 and rung 9 both COMPLETE (2026-09-12).** 252 census rows: 144 carry a counted abstract figure, 86 carry a rung-9 estimate labelled `NOT COUNTED`, 22 have no figure of any kind. Rung-9 calls: 42 INCLUDE, 44 BELOW BAR, 10 of them personally vetted by Rupert. 56 deleted rows, all now carrying attendance where one exists. The upgrade sweep produced **no upgrades**: of 5 candidates, 3 convert far below the bar (Yankee Dental ~95 on 19,084 attendees, Arab Health ~33, ACR ~24) and 2 yielded no figure |
+| CS / AI / engineering | Not started — the selective-paper world (NeurIPS: 21,575 submissions). **Needs a bar redefinition before a census**: papers-with-acceptance-rates do not map onto "1,500 abstracts" |
+| Life sciences | Not started. Partly pre-empted: SfN, ASM, ESHG and others already sit in the medicine census |
+| Chemistry | **Phase 1 running (2026-09-12).** The richest uncounted pool left: ACS Spring+Fall alone run ~12,000–16,000 abstracts each and sit as ONE physical-sciences row with abstracts UNKNOWN. Dedup against physical sciences (ACS, MRS, E-MRS, SciX) before trusting any total |
+| Earth sciences | Effectively done inside physical sciences — AGU (25,000+) and EGU (18,896) are the field |
 | Social sciences | Not started |
 
+### Settled by Rupert, 2026-09-12 — do not reopen without him
+
+- **The unit is ACCEPTED contributed presentations: orals + posters.** Not submissions (an upper
+  bound including rejects), not posters alone (a lower bound missing the orals).
+- **Invited speakers are NOT counted.** Measured on this workbook's own data: invited programmes
+  run 2–16% of abstracts at real research congresses, but 2–10x the abstracts at teaching and
+  trade events — so counting them would admit exactly the meetings the bar exists to exclude.
+  BIO International is the worked example: ~108 abstracts, 1,100 invited speakers, no call for
+  abstracts at all; counting invited would clear it over a 1,000 bar. Most sources also say
+  "speakers" rather than "invited speakers", and that figure usually already contains the abstract
+  presenters — adding it double-counts the same people.
+- Consequence to accept knowingly: the bar measures *contributed science*, not *total matchable
+  content*. Those come apart at teaching-heavy meetings. That is a product question, not a data
+  fault.
+
 ### Next action
-Run the rung 9 attendance wave over the 224 medicine rows lacking a figure. Slices,
-brief and writeback are on disk (`scratchpad/att/`, `scratchpad/attlib.py`). **Confirm the
-search budget first** — the last attempt died at 200/200 with zero rows researched.
-Physical-sciences attendance is the follow-on Rupert wants after medicine.
+Chemistry phase 1 — discovery, names only, cast as wide as possible; then phase 2 over the
+candidate list. After that: physical-sciences attendance (rung 9), which Rupert has asked for,
+and the ~80 medicine rows whose rungs 1–8 came back empty before the exhibitor-prospectus route
+was known.
+
+### Open, awaiting Rupert
+1. **The abstract ladder has a hole.** Five medicine rows turned up PUBLISHED abstract counts that
+   rungs 1–8 missed because they sit in exhibitor prospectuses, not supplements: AANS 3,778,
+   IADR 2,949, ORS 2,353, EBMT 1,324, UICC 1,200 — the first three clear the 1,500 counted bar
+   outright. Add that route as a rung and re-run it over the rows that came back empty.
+2. **Counted bar 1,500 vs inferred bar 1,000** punishes the better-evidenced row. One row affected:
+   EUROTOX / ISES, counted 1,075, still on the deleted sheet.
+3. **Summary SAM formula does not implement Rupert's definition** — it reads `Include (1/0)` across
+   the physical-science census AND deleted sheets, so it counts ~62 events/yr of removed
+   conferences and no medicine at all.
+4. **Identity collisions**: ACCP is two societies (pharmacology ~546 vs pharmacy, much larger);
+   ASRA runs two annual meetings and the row names neither. **Renamed**: IPRAS→ICOPLAST,
+   ETS→ECTES, SmileCon→ADA Scientific Session, ATA→ATA Nexus; CMDA holds no single meeting.
 
 ### Model numbers as of 2026-09-10
 SAM Global **112.15** (was 114.15 — the Iran and IPS duplicate fix is the only genuine model

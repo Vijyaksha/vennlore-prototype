@@ -1,0 +1,1532 @@
+[
+ {
+  "conference": "EuChemS Chemistry Congress (ECC)",
+  "society": "European Chemical Society (EuChemS)",
+  "country_or_region": "Europe",
+  "subfield": "general chemistry",
+  "frequency_note": "biennial; ECC10 in 2026",
+  "why_listed": "flagship federated congress of European chemistry",
+  "source_url": "https://www.euchems.eu/events-overview/euchems-chemistry-congresses/"
+ },
+ {
+  "conference": "European Symposium on Organic Chemistry (ESOC)",
+  "society": "EuChemS Division of Organic Chemistry",
+  "country_or_region": "Europe",
+  "subfield": "organic chemistry",
+  "frequency_note": "biennial; 23rd edition 2025 Copenhagen",
+  "why_listed": "main European organic chemistry symposium series",
+  "source_url": "https://www.euchems.eu/divisions/organic-chemistry-2/conferences/"
+ },
+ {
+  "conference": "European Conference on Organometallic Chemistry (EuCOMC)",
+  "society": "EuChemS Division of Organometallic Chemistry",
+  "country_or_region": "Europe",
+  "subfield": "organometallic chemistry",
+  "frequency_note": "biennial since 1976 (formerly FECHEM)",
+  "why_listed": "European organometallic series",
+  "source_url": "https://www.euchems.eu/divisions/organometallic-chemistry-2/conferences/"
+ },
+ {
+  "conference": "European Conference on Computational and Theoretical Chemistry (EuCO-CC)",
+  "society": "EuChemS Division of Computational and Theoretical Chemistry",
+  "country_or_region": "Europe",
+  "subfield": "computational/theoretical chemistry",
+  "frequency_note": "series since 1994 (Nancy)",
+  "why_listed": "European computational chemistry series",
+  "source_url": "https://www.euchems.eu/divisions/computational-chemistry-2/"
+ },
+ {
+  "conference": "European Conference on Research in Chemical Education (ECRICE)",
+  "society": "EuChemS Division of Chemical Education",
+  "country_or_region": "Europe",
+  "subfield": "chemistry education",
+  "frequency_note": "biennial; 17th in 2026 joint with ICCE",
+  "why_listed": "European chemistry education research series",
+  "source_url": "https://www.euchems.eu/divisions/chemical-education-2/conferences/"
+ },
+ {
+  "conference": "International Conference on Chemistry Education (ICCE)",
+  "society": "IUPAC Committee on Chemistry Education",
+  "country_or_region": "international",
+  "subfield": "chemistry education",
+  "frequency_note": "biennial; 28th in 2026 Erzurum, Turkey",
+  "why_listed": "IUPAC flagship chemistry education conference",
+  "source_url": "https://www.euchems.eu/divisions/chemical-education-2/conferences/"
+ },
+ {
+  "conference": "International Conference on Chemistry and the Environment (ICCE)",
+  "society": "EuChemS Division of Chemistry and the Environment",
+  "country_or_region": "Europe",
+  "subfield": "environmental chemistry",
+  "frequency_note": "biennial; 2026 Gdansk, Poland",
+  "why_listed": "European environmental chemistry congress",
+  "source_url": "https://www.euchems.eu/events-overview/euchems-events-calendar/"
+ },
+ {
+  "conference": "Conference on Colloid Chemistry",
+  "society": "Hungarian Chemical Society",
+  "country_or_region": "Hungary",
+  "subfield": "colloid and surface chemistry",
+  "frequency_note": "12th edition, Budapest",
+  "why_listed": "recurring colloid chemistry meeting listed by EuChemS",
+  "source_url": "https://www.euchems.eu/events-overview/euchems-events-calendar/"
+ },
+ {
+  "conference": "Food Chemistry Meeting (Encontro de Quimica dos Alimentos)",
+  "society": "Portuguese Chemical Society (SPQ)",
+  "country_or_region": "Portugal",
+  "subfield": "food chemistry",
+  "frequency_note": "XVIII edition, Coimbra",
+  "why_listed": "national food chemistry series",
+  "source_url": "https://www.euchems.eu/events-overview/euchems-events-calendar/"
+ },
+ {
+  "conference": "Mediterranean Organic Chemistry Meeting",
+  "society": "regional (Spain/Mediterranean)",
+  "country_or_region": "Mediterranean",
+  "subfield": "organic chemistry",
+  "frequency_note": "XII edition, Almeria",
+  "why_listed": "regional organic chemistry series",
+  "source_url": "https://www.euchems.eu/events-overview/euchems-events-calendar/"
+ },
+ {
+  "conference": "International Conference on Fundamental and Applied Aspects of Physical Chemistry (Physical Chemistry)",
+  "society": "Society of Physical Chemists of Serbia",
+  "country_or_region": "Serbia",
+  "subfield": "physical chemistry",
+  "frequency_note": "18th edition, Belgrade",
+  "why_listed": "long-running physical chemistry conference series",
+  "source_url": "https://www.euchems.eu/events-overview/euchems-events-calendar/"
+ },
+ {
+  "conference": "Croatian Meeting of Chemists and Chemical Engineers",
+  "society": "Croatian Chemical Society",
+  "country_or_region": "Croatia",
+  "subfield": "general chemistry / chemical engineering",
+  "frequency_note": "30th edition, Dubrovnik",
+  "why_listed": "national chemistry congress",
+  "source_url": "https://www.euchems.eu/events-overview/euchems-events-calendar/"
+ },
+ {
+  "conference": "Congress of the Society of Chemists and Technologists of Macedonia",
+  "society": "Society of Chemists and Technologists of Macedonia",
+  "country_or_region": "North Macedonia",
+  "subfield": "general chemistry",
+  "frequency_note": "28th edition, Ohrid",
+  "why_listed": "national chemistry congress",
+  "source_url": "https://www.euchems.eu/events-overview/euchems-events-calendar/"
+ },
+ {
+  "conference": "Isoprenoid Conference",
+  "society": "independent",
+  "country_or_region": "Czech Republic",
+  "subfield": "organic/natural products chemistry",
+  "frequency_note": "26th edition 2026",
+  "why_listed": "long-running natural products chemistry series",
+  "source_url": "https://www.euchems.eu/events-overview/euchems-events-calendar/"
+ },
+ {
+  "conference": "International Conference on Polysaccharides and Glycoscience",
+  "society": "Czech Chemical Society",
+  "country_or_region": "Czech Republic",
+  "subfield": "carbohydrate chemistry",
+  "frequency_note": "22nd edition, Prague",
+  "why_listed": "recurring glycoscience series",
+  "source_url": "https://www.euchems.eu/events-overview/euchems-events-calendar/"
+ },
+ {
+  "conference": "Ilmac",
+  "society": "trade fair (Switzerland)",
+  "country_or_region": "Switzerland",
+  "subfield": "instrumentation / process chemistry",
+  "frequency_note": "Lausanne and Basel editions",
+  "why_listed": "Swiss lab and process chemistry trade fair with congress programme",
+  "source_url": "https://www.euchems.eu/events-overview/euchems-events-calendar/"
+ },
+ {
+  "conference": "International Symposium on Chromatography (ISC)",
+  "society": "EuChemS Division of Analytical Chemistry / national hosts",
+  "country_or_region": "Europe/international",
+  "subfield": "separations / chromatography",
+  "frequency_note": "biennial; 35th in 2026 Prague; series since 1956",
+  "why_listed": "oldest international separation science congress",
+  "source_url": "https://www.isc2026.org/"
+ },
+ {
+  "conference": "International Symposium on Capillary Chromatography (ISCC) and GCxGC Symposium",
+  "society": "independent (Riva del Garda)",
+  "country_or_region": "Italy/international",
+  "subfield": "separations / gas chromatography",
+  "frequency_note": "annual; 44th ISCC / 21st GCxGC in 2026",
+  "why_listed": "main capillary GC and GCxGC forum",
+  "source_url": "https://www.chromatographyonline.com/view/the-44th-international-symposium-on-capillary-chromatography-and-the-21st-gc-gc-symposium"
+ },
+ {
+  "conference": "HPLC - International Symposium on High Performance Liquid Phase Separations and Related Techniques",
+  "society": "independent permanent scientific committee",
+  "country_or_region": "international (rotating Europe/US/Asia)",
+  "subfield": "separations / liquid chromatography",
+  "frequency_note": "annual, rotating continents",
+  "why_listed": "flagship LC separations symposium series",
+  "source_url": "https://hplc.eu/events.htm"
+ },
+ {
+  "conference": "RAFA - Recent Advances in Food Analysis",
+  "society": "University of Chemistry and Technology Prague",
+  "country_or_region": "Czech Republic",
+  "subfield": "food chemistry / analytical",
+  "frequency_note": "biennial; 2026 Prague",
+  "why_listed": "leading food analysis symposium",
+  "source_url": "https://hplc.eu/events.htm"
+ },
+ {
+  "conference": "CAC - Chemometrics in Analytical Chemistry",
+  "society": "independent chemometrics community",
+  "country_or_region": "international",
+  "subfield": "chemometrics / analytical",
+  "frequency_note": "biennial; CAC-2026 Tarragona, Spain",
+  "why_listed": "principal chemometrics conference series",
+  "source_url": "https://www.spectroscopyonline.com/view/previewing-the-chemometrics-in-analytical-chemistry-cac-2026-international-conference"
+ },
+ {
+  "conference": "International Mass Spectrometry Conference (IMSC)",
+  "society": "International Mass Spectrometry Foundation (IMSF)",
+  "country_or_region": "international",
+  "subfield": "mass spectrometry",
+  "frequency_note": "biennial; 26th in 2026 Lyon; series since 1958",
+  "why_listed": "world congress of mass spectrometry",
+  "source_url": "https://www.imss.nl/"
+ },
+ {
+  "conference": "ASMS Annual Conference on Mass Spectrometry and Allied Topics",
+  "society": "American Society for Mass Spectrometry",
+  "country_or_region": "US",
+  "subfield": "mass spectrometry",
+  "frequency_note": "annual",
+  "why_listed": "largest mass spectrometry meeting worldwide",
+  "source_url": "https://www.asms.org/conferences/annual-conference"
+ },
+ {
+  "conference": "European Mass Spectrometry Conference (EMSC)",
+  "society": "national European MS societies (DGMS, SFSM, etc.)",
+  "country_or_region": "Europe",
+  "subfield": "mass spectrometry",
+  "frequency_note": "biennial",
+  "why_listed": "European counterpart to ASMS",
+  "source_url": "https://en.wikipedia.org/wiki/International_Mass_Spectrometry_Foundation"
+ },
+ {
+  "conference": "DGMS Jahrestagung (German Society for Mass Spectrometry Annual Conference)",
+  "society": "Deutsche Gesellschaft fuer Massenspektrometrie",
+  "country_or_region": "Germany",
+  "subfield": "mass spectrometry",
+  "frequency_note": "annual",
+  "why_listed": "largest national MS meeting in Europe",
+  "source_url": "https://www.mass-spec-capital.com/product/Mass-Spectrometry-Events-Conferences-Meetings-List-Table-Dates-Europe-Analytica-ASMS-HPLC-DGMS-Medica-Biotechnica-Achema-1001-54-5-0-2-asc.html"
+ },
+ {
+  "conference": "EUROMAR (European Magnetic Resonance Conference)",
+  "society": "AMPERE / European magnetic resonance community",
+  "country_or_region": "Europe",
+  "subfield": "NMR / magnetic resonance",
+  "frequency_note": "annual, early July",
+  "why_listed": "merged European NMR/ESR/MRI congress",
+  "source_url": "https://www.euromar.org/about"
+ },
+ {
+  "conference": "ENC - Experimental Nuclear Magnetic Resonance Conference",
+  "society": "ENC Inc.",
+  "country_or_region": "US",
+  "subfield": "NMR",
+  "frequency_note": "annual",
+  "why_listed": "principal US NMR methodology conference",
+  "source_url": "https://www.enc-conference.org/"
+ },
+ {
+  "conference": "ICMRBS - International Conference on Magnetic Resonance in Biological Systems",
+  "society": "International Council on Magnetic Resonance in Biological Systems",
+  "country_or_region": "international",
+  "subfield": "biomolecular NMR",
+  "frequency_note": "biennial; 2026 Davos",
+  "why_listed": "world biomolecular NMR meeting",
+  "source_url": "https://www.icmrbs.org/"
+ },
+ {
+  "conference": "ISMAR - International Society of Magnetic Resonance Conference",
+  "society": "International Society of Magnetic Resonance",
+  "country_or_region": "international",
+  "subfield": "magnetic resonance",
+  "frequency_note": "biennial; joint with ENC in 2025",
+  "why_listed": "international magnetic resonance congress",
+  "source_url": "https://www.ismar.org/"
+ },
+ {
+  "conference": "SMASH NMR Conference (Small Molecule NMR Conference)",
+  "society": "SMASH",
+  "country_or_region": "international (US/Europe alternating)",
+  "subfield": "NMR / small molecule",
+  "frequency_note": "annual",
+  "why_listed": "industrial and small-molecule NMR series",
+  "source_url": "https://www.smashnmr.org/"
+ },
+ {
+  "conference": "International Congress on Catalysis (ICC)",
+  "society": "International Association of Catalysis Societies (IACS)",
+  "country_or_region": "international",
+  "subfield": "catalysis",
+  "frequency_note": "every four years",
+  "why_listed": "world congress of catalysis",
+  "source_url": "http://www.iacs-catalysis.org/events.html"
+ },
+ {
+  "conference": "EuropaCat - European Congress on Catalysis",
+  "society": "European Federation of Catalysis Societies (EFCATS)",
+  "country_or_region": "Europe",
+  "subfield": "catalysis",
+  "frequency_note": "biennial; 16th in 2025 Trondheim",
+  "why_listed": "European catalysis congress",
+  "source_url": "https://efcats.org/archive.html"
+ },
+ {
+  "conference": "TOCAT - Tokyo Conference on Advanced Catalytic Science and Technology",
+  "society": "Catalysis Society of Japan",
+  "country_or_region": "Japan",
+  "subfield": "catalysis",
+  "frequency_note": "roughly every four years",
+  "why_listed": "Asian flagship catalysis conference",
+  "source_url": "http://www.iacs-catalysis.org/events.html"
+ },
+ {
+  "conference": "North American Catalysis Society Meeting (NAM)",
+  "society": "North American Catalysis Society",
+  "country_or_region": "North America",
+  "subfield": "catalysis",
+  "frequency_note": "biennial; 2026 New London NH, 2027 Toronto",
+  "why_listed": "premier North American catalysis meeting",
+  "source_url": "https://nacatsoc.org/"
+ },
+ {
+  "conference": "ISE Annual Meeting",
+  "society": "International Society of Electrochemistry",
+  "country_or_region": "international",
+  "subfield": "electrochemistry",
+  "frequency_note": "annual, plus ISE Topical Meetings",
+  "why_listed": "world electrochemistry society annual meeting",
+  "source_url": "https://www.ise-online.org/"
+ },
+ {
+  "conference": "ECS Meeting (Electrochemical Society Biannual Meeting)",
+  "society": "The Electrochemical Society",
+  "country_or_region": "US/international",
+  "subfield": "electrochemistry and solid state science",
+  "frequency_note": "twice yearly (spring + fall); 250th in 2026 Calgary",
+  "why_listed": "largest electrochemistry meeting series",
+  "source_url": "https://www.electrochem.org/upcoming-meetings"
+ },
+ {
+  "conference": "IUPAC World Polymer Congress (MACRO)",
+  "society": "IUPAC Polymer Division",
+  "country_or_region": "international",
+  "subfield": "polymer chemistry",
+  "frequency_note": "biennial; 51st MACRO 2026 Kuching, Malaysia",
+  "why_listed": "largest biennial international polymer science congress",
+  "source_url": "https://macro2026.org/"
+ },
+ {
+  "conference": "European Polymer Congress (EPF Congress)",
+  "society": "European Polymer Federation",
+  "country_or_region": "Europe",
+  "subfield": "polymer chemistry",
+  "frequency_note": "biennial since 2001",
+  "why_listed": "main European polymer science congress",
+  "source_url": "https://iupac.org/event/european-polymer-congress-2025-epf-2025/"
+ },
+ {
+  "conference": "APME - International Conference on Advanced Polymers via Macromolecular Engineering",
+  "society": "independent polymer community",
+  "country_or_region": "international",
+  "subfield": "polymer chemistry",
+  "frequency_note": "biennial",
+  "why_listed": "recurring polymer engineering series",
+  "source_url": "https://www.imc.cas.cz/en/conferences/upcoming-conferences"
+ },
+ {
+  "conference": "POLYCHAR World Forum on Advanced Materials",
+  "society": "POLYCHAR",
+  "country_or_region": "international",
+  "subfield": "polymers and materials",
+  "frequency_note": "annual",
+  "why_listed": "long-running polymer characterisation forum",
+  "source_url": "https://www.imc.cas.cz/en/conferences/upcoming-conferences"
+ },
+ {
+  "conference": "Prague Meetings on Macromolecules (PMM)",
+  "society": "Institute of Macromolecular Chemistry, Czech Academy of Sciences",
+  "country_or_region": "Czech Republic",
+  "subfield": "polymer chemistry",
+  "frequency_note": "annual",
+  "why_listed": "long-running macromolecular meeting series",
+  "source_url": "https://www.imc.cas.cz/en/conferences/upcoming-conferences"
+ },
+ {
+  "conference": "ICCC - International Conference on Coordination Chemistry",
+  "society": "IUPAC-affiliated ICCC series",
+  "country_or_region": "international",
+  "subfield": "coordination chemistry",
+  "frequency_note": "biennial; 46th 2026 Odense, Denmark",
+  "why_listed": "world congress of coordination chemistry",
+  "source_url": "https://iccc2026.com/"
+ },
+ {
+  "conference": "ICBIC - International Conference on Biological Inorganic Chemistry",
+  "society": "Society of Biological Inorganic Chemistry (SBIC)",
+  "country_or_region": "international",
+  "subfield": "bioinorganic chemistry",
+  "frequency_note": "biennial",
+  "why_listed": "world bioinorganic chemistry conference",
+  "source_url": "https://sbic.memberclicks.net/"
+ },
+ {
+  "conference": "ICOMC - International Conference on Organometallic Chemistry",
+  "society": "IUPAC-affiliated",
+  "country_or_region": "international",
+  "subfield": "organometallic chemistry",
+  "frequency_note": "biennial",
+  "why_listed": "world organometallic chemistry congress",
+  "source_url": "https://www.euchems.eu/divisions/organometallic-chemistry-2/conferences/"
+ },
+ {
+  "conference": "ICCOC-GTL - International Conference on the Coordination and Organometallic Chemistry of Germanium, Tin and Lead",
+  "society": "independent",
+  "country_or_region": "international",
+  "subfield": "main group / organometallic chemistry",
+  "frequency_note": "roughly triennial",
+  "why_listed": "specialised main-group organometallic series",
+  "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2365066/"
+ },
+ {
+  "conference": "ICQC - International Congress of Quantum Chemistry",
+  "society": "International Academy of Quantum Molecular Science",
+  "country_or_region": "international",
+  "subfield": "quantum chemistry",
+  "frequency_note": "triennial since 1973; 18th 2026 Berkeley",
+  "why_listed": "principal quantum chemistry congress",
+  "source_url": "https://www.iaqms.org/congress.php"
+ },
+ {
+  "conference": "WATOC Congress",
+  "society": "World Association of Theoretical and Computational Chemists",
+  "country_or_region": "international",
+  "subfield": "theoretical and computational chemistry",
+  "frequency_note": "triennial; 13th 2025 Oslo",
+  "why_listed": "largest theoretical/computational chemistry congress",
+  "source_url": "https://watoc.net/watoc.past.html"
+ },
+ {
+  "conference": "Bunsentagung (Annual Meeting of the German Bunsen Society for Physical Chemistry)",
+  "society": "Deutsche Bunsen-Gesellschaft fuer Physikalische Chemie",
+  "country_or_region": "Germany",
+  "subfield": "physical chemistry",
+  "frequency_note": "annual",
+  "why_listed": "national physical chemistry meeting, largest in Europe",
+  "source_url": "https://www.bunsen.de/"
+ },
+ {
+  "conference": "EFMC Medicinal Chemistry / EFMC-ISMC International Symposium on Medicinal Chemistry",
+  "society": "European Federation for Medicinal Chemistry and Chemical Biology (EFMC)",
+  "country_or_region": "Europe",
+  "subfield": "medicinal chemistry",
+  "frequency_note": "biennial; 2026 Basel, ~1000 participants",
+  "why_listed": "flagship European medicinal chemistry symposium",
+  "source_url": "https://www.efmc-ismc.org/"
+ },
+ {
+  "conference": "EFMC-ASMC - International Symposium on Advances in Synthetic and Medicinal Chemistry",
+  "society": "EFMC",
+  "country_or_region": "Europe",
+  "subfield": "synthetic and medicinal chemistry",
+  "frequency_note": "biennial (alternating with ISMC)",
+  "why_listed": "second EFMC flagship series",
+  "source_url": "https://www.efmc-asmc.org/"
+ },
+ {
+  "conference": "EFMC-ACSMEDI Medicinal Chemistry Frontiers",
+  "society": "EFMC + ACS Division of Medicinal Chemistry",
+  "country_or_region": "international",
+  "subfield": "medicinal chemistry",
+  "frequency_note": "annual; 2026 Dublin",
+  "why_listed": "transatlantic medicinal chemistry meeting",
+  "source_url": "https://www.medchemfrontiers.org/"
+ },
+ {
+  "conference": "EuroChemBio",
+  "society": "EFMC",
+  "country_or_region": "Europe",
+  "subfield": "chemical biology",
+  "frequency_note": "biennial; 2027 Milan",
+  "why_listed": "European chemical biology conference",
+  "source_url": "https://www.efmc.info/"
+ },
+ {
+  "conference": "Annual Meeting of the German Pharmaceutical Society (DPhG Jahrestagung)",
+  "society": "Deutsche Pharmazeutische Gesellschaft",
+  "country_or_region": "Germany",
+  "subfield": "pharmaceutical sciences",
+  "frequency_note": "annual",
+  "why_listed": "national pharmaceutical sciences meeting",
+  "source_url": "https://www.efmc.info/"
+ },
+ {
+  "conference": "National Meeting on Medicinal Chemistry (NMMC)",
+  "society": "Italian Chemical Society, Division of Medicinal Chemistry",
+  "country_or_region": "Italy",
+  "subfield": "medicinal chemistry",
+  "frequency_note": "biennial; 30th edition 2026 Messina",
+  "why_listed": "national medicinal chemistry series",
+  "source_url": "https://www.efmc.info/"
+ },
+ {
+  "conference": "National and International Pharmaceutical Chemistry Congress (Turkiye)",
+  "society": "Turkish pharmaceutical chemistry community",
+  "country_or_region": "Turkiye",
+  "subfield": "pharmaceutical chemistry",
+  "frequency_note": "recurring; 8th national / 1st international 2026",
+  "why_listed": "national pharmaceutical chemistry congress",
+  "source_url": "https://www.efmc.info/"
+ },
+ {
+  "conference": "IUPAC International Conference on Green Chemistry (ICGC)",
+  "society": "IUPAC",
+  "country_or_region": "international",
+  "subfield": "green and sustainable chemistry",
+  "frequency_note": "biennial since 2006; 11th 2026 Lisbon",
+  "why_listed": "flagship international green chemistry conference",
+  "source_url": "https://publications.iupac.org/pac/conferences/family/ICGC/index.html"
+ },
+ {
+  "conference": "ACS Green Chemistry & Engineering Conference (GC&E)",
+  "society": "ACS Green Chemistry Institute",
+  "country_or_region": "US",
+  "subfield": "green and sustainable chemistry",
+  "frequency_note": "annual",
+  "why_listed": "largest green chemistry meeting in North America",
+  "source_url": "https://www.acs.org/greenchemistry/events/green-chemistry-engineering-conference.html"
+ },
+ {
+  "conference": "IUCr Congress and General Assembly",
+  "society": "International Union of Crystallography",
+  "country_or_region": "international",
+  "subfield": "crystallography",
+  "frequency_note": "triennial; 27th 2026 Calgary",
+  "why_listed": "world congress of crystallography",
+  "source_url": "https://www.iucr.org/"
+ },
+ {
+  "conference": "ECM - European Crystallographic Meeting",
+  "society": "European Crystallographic Association",
+  "country_or_region": "Europe",
+  "subfield": "crystallography",
+  "frequency_note": "annual/biennial; ECM-36 2027 Prague",
+  "why_listed": "European crystallography congress",
+  "source_url": "https://ecanews.org/iucr-congresses/"
+ },
+ {
+  "conference": "ACA Annual Meeting",
+  "society": "American Crystallographic Association",
+  "country_or_region": "US",
+  "subfield": "crystallography",
+  "frequency_note": "annual",
+  "why_listed": "North American crystallography meeting",
+  "source_url": "https://www.iucr.org/world/associates/aca"
+ },
+ {
+  "conference": "AsCA Conference",
+  "society": "Asian Crystallographic Association",
+  "country_or_region": "Asia-Pacific",
+  "subfield": "crystallography",
+  "frequency_note": "biennial; 2027 Bangkok",
+  "why_listed": "Asian crystallography congress",
+  "source_url": "https://asca.iucr.org/"
+ },
+ {
+  "conference": "LACA Meeting",
+  "society": "Latin American Crystallographic Association",
+  "country_or_region": "Latin America",
+  "subfield": "crystallography",
+  "frequency_note": "recurring",
+  "why_listed": "Latin American regional crystallography meeting",
+  "source_url": "https://www.iucr.org/iucr/ab.html/regional-associates"
+ },
+ {
+  "conference": "AIChE Annual Meeting",
+  "society": "American Institute of Chemical Engineers",
+  "country_or_region": "US",
+  "subfield": "chemical engineering",
+  "frequency_note": "annual",
+  "why_listed": "largest chemical engineering meeting worldwide",
+  "source_url": "https://www.aiche.org/conferences-events"
+ },
+ {
+  "conference": "AIChE Spring Meeting and Global Congress on Process Safety",
+  "society": "American Institute of Chemical Engineers",
+  "country_or_region": "US",
+  "subfield": "chemical engineering / process safety",
+  "frequency_note": "annual; 2026 New Orleans",
+  "why_listed": "major applied chemical engineering meeting",
+  "source_url": "https://www.aiche.org/conferences-events"
+ },
+ {
+  "conference": "ECCE - European Congress of Chemical Engineering (with ECAB, European Congress of Applied Biotechnology)",
+  "society": "European Federation of Chemical Engineering (EFCE)",
+  "country_or_region": "Europe",
+  "subfield": "chemical engineering",
+  "frequency_note": "biennial; 2027 edition",
+  "why_listed": "European chemical engineering congress",
+  "source_url": "https://efce.info/Events/ECCEs-p-2464.html"
+ },
+ {
+  "conference": "WCCE - World Congress of Chemical Engineering",
+  "society": "World Chemical Engineering Council / national hosts",
+  "country_or_region": "international",
+  "subfield": "chemical engineering",
+  "frequency_note": "every four years; WCCE12 2026 Beijing",
+  "why_listed": "world congress of chemical engineering",
+  "source_url": "https://efce.info/events_overview.html"
+ },
+ {
+  "conference": "CHISA - International Congress of Chemical and Process Engineering",
+  "society": "Czech Society of Chemical Engineering",
+  "country_or_region": "Czech Republic/Europe",
+  "subfield": "chemical engineering",
+  "frequency_note": "biennial since 1962",
+  "why_listed": "long-running pan-European process engineering congress",
+  "source_url": "https://www.aiche.org/conferences/co-sponsored/2022"
+ },
+ {
+  "conference": "Gordon Research Conferences (GRC) - series",
+  "society": "Gordon Research Conferences",
+  "country_or_region": "US/Europe/Asia",
+  "subfield": "all chemistry subfields",
+  "frequency_note": "300+ conferences and seminars annually",
+  "why_listed": "invite-led series covering most chemistry subfields; list as one series",
+  "source_url": "https://www.grc.org/"
+ },
+ {
+  "conference": "Pittcon - Pittsburgh Conference on Analytical Chemistry and Applied Spectroscopy",
+  "society": "Pittsburgh Conference (non-profit)",
+  "country_or_region": "US",
+  "subfield": "analytical chemistry / instrumentation",
+  "frequency_note": "annual",
+  "why_listed": "world's leading analytical instrumentation conference and exposition",
+  "source_url": "https://pittcon.org/"
+ },
+ {
+  "conference": "SciX - The Great Scientific Exchange",
+  "society": "FACSS (Federation of Analytical Chemistry and Spectroscopy Societies)",
+  "country_or_region": "US",
+  "subfield": "analytical chemistry / spectroscopy",
+  "frequency_note": "annual; 1000+ attendees",
+  "why_listed": "main US federated analytical/spectroscopy meeting",
+  "source_url": "https://www.scixconference.org/"
+ },
+ {
+  "conference": "EAS - Eastern Analytical Symposium and Exposition",
+  "society": "Eastern Analytical Symposium",
+  "country_or_region": "US",
+  "subfield": "analytical chemistry",
+  "frequency_note": "annual, November, Princeton NJ; 2000+ attendees",
+  "why_listed": "large regional analytical chemistry symposium",
+  "source_url": "https://en.wikipedia.org/wiki/Eastern_Analytical_Symposium"
+ },
+ {
+  "conference": "ACHEMA",
+  "society": "DECHEMA",
+  "country_or_region": "Germany",
+  "subfield": "chemical engineering / process industry",
+  "frequency_note": "every three years, Frankfurt",
+  "why_listed": "world forum for chemical engineering and process industry",
+  "source_url": "https://www.achema.de/"
+ },
+ {
+  "conference": "analytica",
+  "society": "Messe Muenchen",
+  "country_or_region": "Germany",
+  "subfield": "analytical chemistry / laboratory instrumentation",
+  "frequency_note": "biennial, Munich; with analytica conference",
+  "why_listed": "major European lab technology trade fair plus scientific conference",
+  "source_url": "https://www.analytica.de/"
+ },
+ {
+  "conference": "MARC - International Conference on Methods and Applications of Radioanalytical Chemistry",
+  "society": "American Nuclear Society / radioanalytical community",
+  "country_or_region": "US (Hawaii)",
+  "subfield": "radioanalytical chemistry",
+  "frequency_note": "roughly every three years since 1987",
+  "why_listed": "major international radioanalytical forum",
+  "source_url": "https://www.ans.org/meetings/view-433/"
+ },
+ {
+  "conference": "RadChem - Radiochemical Conference",
+  "society": "Czech radiochemistry community, with IAEA",
+  "country_or_region": "Czech Republic",
+  "subfield": "nuclear and radiochemistry",
+  "frequency_note": "roughly every four years; 20th RadChem 2026",
+  "why_listed": "long-running international radiochemistry conference",
+  "source_url": "https://www.iaea.org/events/evt2504791"
+ },
+ {
+  "conference": "Migration - International Conference on the Chemistry and Migration Behaviour of Actinides and Fission Products in the Geosphere",
+  "society": "independent actinide geochemistry community",
+  "country_or_region": "international",
+  "subfield": "actinide / environmental radiochemistry",
+  "frequency_note": "biennial",
+  "why_listed": "specialised actinide migration series",
+  "source_url": "https://www.euchems.eu/divisions/nuclear-and-radiochemistry-2/conferences/"
+ },
+ {
+  "conference": "Actinides Conference",
+  "society": "international actinide science community",
+  "country_or_region": "international",
+  "subfield": "actinide chemistry",
+  "frequency_note": "roughly every four years",
+  "why_listed": "international actinide chemistry conference",
+  "source_url": "https://www.euchems.eu/divisions/nuclear-and-radiochemistry-2/conferences/"
+ },
+ {
+  "conference": "NRC - International Conference on Nuclear and Radiochemistry",
+  "society": "EuChemS Division of Nuclear and Radiochemistry",
+  "country_or_region": "Europe",
+  "subfield": "nuclear and radiochemistry",
+  "frequency_note": "every four years",
+  "why_listed": "European nuclear and radiochemistry congress",
+  "source_url": "https://www.euchems.eu/divisions/nuclear-and-radiochemistry-2/conferences/"
+ },
+ {
+  "conference": "IUPAC Symposium on Photochemistry (PhotoIUPAC)",
+  "society": "IUPAC / European Photochemistry Association",
+  "country_or_region": "international",
+  "subfield": "photochemistry",
+  "frequency_note": "biennial (even years) since 1964; 30th 2026 Zagreb",
+  "why_listed": "principal international photochemistry symposium",
+  "source_url": "https://photochemistry.eu/abstract-28th-photoiupac/"
+ },
+ {
+  "conference": "ICP - International Conference on Photochemistry",
+  "society": "international photochemistry community",
+  "country_or_region": "international",
+  "subfield": "photochemistry",
+  "frequency_note": "biennial (odd years)",
+  "why_listed": "second global photochemistry series",
+  "source_url": "http://publications.iupac.org/pac/conferences/family/PHOTO/index.html"
+ },
+ {
+  "conference": "ICPOC - IUPAC International Conference on Physical Organic Chemistry",
+  "society": "IUPAC",
+  "country_or_region": "international",
+  "subfield": "physical organic chemistry",
+  "frequency_note": "biennial; 27th edition",
+  "why_listed": "world physical organic chemistry conference",
+  "source_url": "https://iupac.org/event/icpoc-27/"
+ },
+ {
+  "conference": "ESOR - European Symposium on Organic Reactivity",
+  "society": "EuChemS Division of Organic Chemistry",
+  "country_or_region": "Europe",
+  "subfield": "physical organic chemistry",
+  "frequency_note": "biennial",
+  "why_listed": "European physical organic chemistry series",
+  "source_url": "https://www.euchems.eu/divisions/organic-chemistry-2/conferences/"
+ },
+ {
+  "conference": "ECIS Conference",
+  "society": "European Colloid and Interface Society",
+  "country_or_region": "Europe",
+  "subfield": "colloid and interface science",
+  "frequency_note": "annual; 40th 2026 Granada, 700+ attendees",
+  "why_listed": "European colloid and interface congress",
+  "source_url": "https://www.utwente.nl/en/iacis/archives/newsletters/nl90.pdf"
+ },
+ {
+  "conference": "ACS Colloid and Surface Science Symposium",
+  "society": "ACS Division of Colloid and Surface Chemistry",
+  "country_or_region": "US",
+  "subfield": "colloid and surface chemistry",
+  "frequency_note": "annual since 1923; 500-700 attendees",
+  "why_listed": "longest-running colloid science symposium",
+  "source_url": "https://acswebcontent.acs.org/colloid/index.html"
+ },
+ {
+  "conference": "IACIS International Conference on Surface and Colloid Science",
+  "society": "International Association of Colloid and Interface Scientists",
+  "country_or_region": "international",
+  "subfield": "colloid and surface science",
+  "frequency_note": "every three years",
+  "why_listed": "world colloid and interface science congress",
+  "source_url": "https://www.utwente.nl/en/iacis/archives/newsletters/nl90.pdf"
+ },
+ {
+  "conference": "SIS - International Symposium on Surfactants in Solution",
+  "society": "independent surfactant science community",
+  "country_or_region": "international",
+  "subfield": "surfactant / colloid chemistry",
+  "frequency_note": "biennial",
+  "why_listed": "long-running surfactant science series",
+  "source_url": "https://blogs.rsc.org/ra/?p=1997"
+ },
+ {
+  "conference": "ICOS - International Conference on Organic Synthesis",
+  "society": "IUPAC-sponsored",
+  "country_or_region": "international",
+  "subfield": "organic synthesis",
+  "frequency_note": "biennial since 1976; 24-ICOS 2026 Lodz; 600-800 attendees",
+  "why_listed": "flagship international organic synthesis conference",
+  "source_url": "https://publications.iupac.org/pac/conferences/family/ICOS/index.html"
+ },
+ {
+  "conference": "OMCOS - International Symposium on Organometallic Chemistry Directed Toward Organic Synthesis",
+  "society": "IUPAC",
+  "country_or_region": "international",
+  "subfield": "organometallic catalysis / organic synthesis",
+  "frequency_note": "biennial; OMCOS 22",
+  "why_listed": "major IUPAC organometallic-synthesis series",
+  "source_url": "https://publications.iupac.org/pac/conferences/family/OMCOS/index.html"
+ },
+ {
+  "conference": "ISHC Congress - International Society of Heterocyclic Chemistry Congress",
+  "society": "International Society of Heterocyclic Chemistry",
+  "country_or_region": "international",
+  "subfield": "heterocyclic chemistry",
+  "frequency_note": "biennial; 2026 Brazil",
+  "why_listed": "world heterocyclic chemistry congress",
+  "source_url": "https://www.organicdivision.org/meetings/"
+ },
+ {
+  "conference": "Reaction Mechanisms Conference",
+  "society": "independent (North America)",
+  "country_or_region": "US",
+  "subfield": "physical organic chemistry",
+  "frequency_note": "biennial",
+  "why_listed": "long-running mechanistic organic chemistry conference",
+  "source_url": "https://www.organicdivision.org/meetings/"
+ },
+ {
+  "conference": "Balticum Organicum Syntheticum (BOS)",
+  "society": "Baltic organic chemistry community",
+  "country_or_region": "Baltic states",
+  "subfield": "organic synthesis",
+  "frequency_note": "biennial",
+  "why_listed": "regional organic synthesis conference",
+  "source_url": "https://www.organicdivision.org/meetings/"
+ },
+ {
+  "conference": "National Organic Chemistry Symposium (NOS)",
+  "society": "ACS Division of Organic Chemistry",
+  "country_or_region": "US",
+  "subfield": "organic chemistry",
+  "frequency_note": "biennial",
+  "why_listed": "premier US organic chemistry symposium",
+  "source_url": "https://www.organicdivision.org/meetings/"
+ },
+ {
+  "conference": "Empowering Women in Organic Chemistry (EWOC) Conference",
+  "society": "EWOC",
+  "country_or_region": "US",
+  "subfield": "organic chemistry",
+  "frequency_note": "annual",
+  "why_listed": "recurring organic chemistry community conference",
+  "source_url": "https://www.organicdivision.org/meetings/"
+ },
+ {
+  "conference": "Burgenstock Conference (EUCHEM Conference on Stereochemistry)",
+  "society": "Swiss Chemical Society",
+  "country_or_region": "Switzerland",
+  "subfield": "stereochemistry / organic chemistry",
+  "frequency_note": "annual, invitation-led",
+  "why_listed": "historic elite stereochemistry conference",
+  "source_url": "https://www.stereochemistry-buergenstock.ch/"
+ },
+ {
+  "conference": "ICORS - International Conference on Raman Spectroscopy",
+  "society": "international Raman community",
+  "country_or_region": "international",
+  "subfield": "Raman spectroscopy",
+  "frequency_note": "biennial since 1969; 2026 Istanbul",
+  "why_listed": "world Raman spectroscopy conference",
+  "source_url": "https://uia.org/s/or/en/1100043901"
+ },
+ {
+  "conference": "ICAVS - International Conference on Advanced Vibrational Spectroscopy",
+  "society": "independent vibrational spectroscopy community",
+  "country_or_region": "international",
+  "subfield": "vibrational spectroscopy",
+  "frequency_note": "biennial",
+  "why_listed": "world vibrational spectroscopy conference",
+  "source_url": "https://www.icavs.info/"
+ },
+ {
+  "conference": "CSI - Colloquium Spectroscopicum Internationale",
+  "society": "international spectroscopy community",
+  "country_or_region": "international",
+  "subfield": "atomic/analytical spectroscopy",
+  "frequency_note": "biennial",
+  "why_listed": "long-running international spectroscopy colloquium",
+  "source_url": "https://www.photothermal.com/events/colloquium-spectroscopicum-internationale/"
+ },
+ {
+  "conference": "Faraday Discussions",
+  "society": "Royal Society of Chemistry",
+  "country_or_region": "UK/international",
+  "subfield": "physical chemistry (varying topics)",
+  "frequency_note": "several meetings per year since 1907",
+  "why_listed": "historic RSC discussion meeting series",
+  "source_url": "https://www.rsc.org/events/faraday-discussions/"
+ },
+ {
+  "conference": "MRS Fall Meeting & Exhibit",
+  "society": "Materials Research Society",
+  "country_or_region": "US",
+  "subfield": "materials chemistry",
+  "frequency_note": "annual, Boston",
+  "why_listed": "largest materials research meeting in North America",
+  "source_url": "https://www.mrs.org/meetings-events/annual-meetings"
+ },
+ {
+  "conference": "MRS Spring Meeting & Exhibit",
+  "society": "Materials Research Society",
+  "country_or_region": "US",
+  "subfield": "materials chemistry",
+  "frequency_note": "annual, Seattle/Phoenix",
+  "why_listed": "second MRS flagship meeting",
+  "source_url": "https://www.mrs.org/meetings-events/annual-meetings"
+ },
+ {
+  "conference": "E-MRS Spring Meeting",
+  "society": "European Materials Research Society",
+  "country_or_region": "Europe",
+  "subfield": "materials chemistry",
+  "frequency_note": "annual, Strasbourg; 24 parallel symposia",
+  "why_listed": "European materials research congress",
+  "source_url": "https://www.european-mrs.com/meetings/2026-spring-meeting-exhibit"
+ },
+ {
+  "conference": "E-MRS Fall Meeting",
+  "society": "European Materials Research Society",
+  "country_or_region": "Europe",
+  "subfield": "materials chemistry",
+  "frequency_note": "annual, Warsaw",
+  "why_listed": "second E-MRS flagship meeting",
+  "source_url": "https://www.european-mrs.com/meetings/2026-fall-meeting-exhibit"
+ },
+ {
+  "conference": "ICMAT - International Conference on Materials for Advanced Technologies",
+  "society": "Materials Research Society of Singapore",
+  "country_or_region": "Singapore/Asia",
+  "subfield": "materials chemistry",
+  "frequency_note": "biennial",
+  "why_listed": "major Asian materials congress",
+  "source_url": "https://www.mrs.org.sg/icmat/"
+ },
+ {
+  "conference": "AAFS Annual Scientific Conference",
+  "society": "American Academy of Forensic Sciences",
+  "country_or_region": "US",
+  "subfield": "forensic chemistry / forensic science",
+  "frequency_note": "annual since 1948; 79th edition",
+  "why_listed": "largest forensic science meeting, strong forensic chemistry track",
+  "source_url": "https://www.aafs.org/annual-conference"
+ },
+ {
+  "conference": "EAFS - European Academy of Forensic Science Conference",
+  "society": "European Network of Forensic Science Institutes (ENFSI)",
+  "country_or_region": "Europe",
+  "subfield": "forensic chemistry / forensic science",
+  "frequency_note": "triennial; 2025 Dublin with ENFSI Annual Meeting",
+  "why_listed": "European forensic science congress",
+  "source_url": "https://eafs2025.org/"
+ },
+ {
+  "conference": "IAFS Meeting - International Association of Forensic Sciences Triennial Meeting",
+  "society": "International Association of Forensic Sciences",
+  "country_or_region": "international",
+  "subfield": "forensic science / forensic chemistry",
+  "frequency_note": "triennial",
+  "why_listed": "world forensic science congress",
+  "source_url": "https://www.iafs.international/"
+ },
+ {
+  "conference": "EUROFOODCHEM",
+  "society": "EuChemS Division of Food Chemistry",
+  "country_or_region": "Europe",
+  "subfield": "food chemistry",
+  "frequency_note": "biennial; XXIV in Parma 2024",
+  "why_listed": "European food chemistry congress",
+  "source_url": "https://www.euchems.eu/divisions/food-chemistry/conferences/"
+ },
+ {
+  "conference": "IFT FIRST / IFT Annual Event & Food Expo",
+  "society": "Institute of Food Technologists",
+  "country_or_region": "US",
+  "subfield": "food science and chemistry",
+  "frequency_note": "annual",
+  "why_listed": "largest food science meeting in North America",
+  "source_url": "https://www.ift.org/"
+ },
+ {
+  "conference": "IUFoST World Food Science and Technology Congress",
+  "society": "International Union of Food Science and Technology",
+  "country_or_region": "international",
+  "subfield": "food science and chemistry",
+  "frequency_note": "biennial; 23rd World Food Congress 2026",
+  "why_listed": "world food science congress",
+  "source_url": "https://iufost.org/iufost-world-food-congress-2026"
+ },
+ {
+  "conference": "IFSCC Congress / IFSCC Conference",
+  "society": "International Federation of Societies of Cosmetic Chemists",
+  "country_or_region": "international",
+  "subfield": "cosmetic chemistry",
+  "frequency_note": "congress and conference in alternating years",
+  "why_listed": "world cosmetic science congress",
+  "source_url": "https://www.ifscc.org/"
+ },
+ {
+  "conference": "Weurman Flavour Research Symposium",
+  "society": "independent flavour science community",
+  "country_or_region": "Europe/international",
+  "subfield": "flavour chemistry",
+  "frequency_note": "every three years",
+  "why_listed": "principal flavour chemistry symposium series",
+  "source_url": "https://www.euchems.eu/divisions/food-chemistry/conferences/"
+ },
+ {
+  "conference": "ICBS Annual Conference",
+  "society": "International Chemical Biology Society",
+  "country_or_region": "international",
+  "subfield": "chemical biology",
+  "frequency_note": "annual since 2011; 15th ICBS2026",
+  "why_listed": "world chemical biology society meeting",
+  "source_url": "https://www.chemical-biology.org/"
+ },
+ {
+  "conference": "ECBS - European Chemical Biology Symposium",
+  "society": "EU-OPENSCREEN ERIC",
+  "country_or_region": "Europe",
+  "subfield": "chemical biology",
+  "frequency_note": "biennial since 2008",
+  "why_listed": "European chemical biology symposium",
+  "source_url": "https://www.euchems.eu/events/international-chemical-biology-society-european-chemical-biology-symposium-joint-meeting-icbs-ecbs-joint-meeting/"
+ },
+ {
+  "conference": "Keystone Symposia on Molecular and Cellular Biology (series)",
+  "society": "Keystone Symposia",
+  "country_or_region": "international",
+  "subfield": "chemical biology / drug discovery",
+  "frequency_note": "50-60 conferences annually",
+  "why_listed": "invite-led series with many chemical biology meetings; list as one series",
+  "source_url": "https://www.keystonesymposia.org/"
+ },
+ {
+  "conference": "RSC Chemical Biology Symposium",
+  "society": "Royal Society of Chemistry",
+  "country_or_region": "UK",
+  "subfield": "chemical biology",
+  "frequency_note": "annual",
+  "why_listed": "national chemical biology symposium",
+  "source_url": "https://www.rsc.org/events/detail/82207/chemical-biology-symposium-2026"
+ },
+ {
+  "conference": "EFMC-ISCB - EFMC Short Course on Chemical Biology / ISCB symposium",
+  "society": "EFMC",
+  "country_or_region": "Europe",
+  "subfield": "chemical biology",
+  "frequency_note": "recurring; 2025 Basel",
+  "why_listed": "EFMC chemical biology strand",
+  "source_url": "https://www.efmc-iscb.org/"
+ },
+ {
+  "conference": "SETAC Europe Annual Meeting",
+  "society": "Society of Environmental Toxicology and Chemistry",
+  "country_or_region": "Europe",
+  "subfield": "environmental chemistry and toxicology",
+  "frequency_note": "annual; 36th 2026 Maastricht",
+  "why_listed": "largest European environmental chemistry meeting",
+  "source_url": "https://www.setac.org/"
+ },
+ {
+  "conference": "SETAC North America Annual Meeting",
+  "society": "Society of Environmental Toxicology and Chemistry",
+  "country_or_region": "North America",
+  "subfield": "environmental chemistry and toxicology",
+  "frequency_note": "annual",
+  "why_listed": "North American counterpart of SETAC Europe",
+  "source_url": "https://www.setac.org/"
+ },
+ {
+  "conference": "Goldschmidt Conference",
+  "society": "Geochemical Society + European Association of Geochemistry",
+  "country_or_region": "international",
+  "subfield": "geochemistry / environmental chemistry",
+  "frequency_note": "annual; 2026 Montreal; 3500+ researchers",
+  "why_listed": "world geochemistry conference, strong environmental chemistry content",
+  "source_url": "https://geochemsoc.org/events/goldschmidt-conference"
+ },
+ {
+  "conference": "Dioxin - International Symposium on Halogenated Persistent Organic Pollutants (POPs)",
+  "society": "independent POPs research community",
+  "country_or_region": "international",
+  "subfield": "environmental / analytical chemistry",
+  "frequency_note": "annual; 45th in 2025 Antalya",
+  "why_listed": "principal POPs and dioxin analysis symposium",
+  "source_url": "https://dioxin20xx.org/"
+ },
+ {
+  "conference": "ISMSC - International Symposium on Macrocyclic and Supramolecular Chemistry",
+  "society": "IUPAC-endorsed; merged ISMC + ISSC since 2006",
+  "country_or_region": "international",
+  "subfield": "supramolecular chemistry",
+  "frequency_note": "annual; 21st edition",
+  "why_listed": "world supramolecular chemistry symposium",
+  "source_url": "https://iupac.org/event/14th-international-symposium-macrocyclic-supramolecular-chemistry/"
+ },
+ {
+  "conference": "ISFC - International Symposium on Fluorine Chemistry",
+  "society": "international steering committee",
+  "country_or_region": "international",
+  "subfield": "fluorine chemistry",
+  "frequency_note": "every three years since 1959; 25th in 2027",
+  "why_listed": "world fluorine chemistry symposium",
+  "source_url": "https://en.wikipedia.org/wiki/International_Symposium_on_Fluorine_Chemistry"
+ },
+ {
+  "conference": "ISoFT - International Symposium on Fluorous Technologies",
+  "society": "international steering committee",
+  "country_or_region": "international",
+  "subfield": "fluorous chemistry",
+  "frequency_note": "every three years, alongside ISFC",
+  "why_listed": "companion fluorous technologies symposium",
+  "source_url": "https://isfc2027.com/welcome"
+ },
+ {
+  "conference": "IZC - International Zeolite Conference",
+  "society": "International Zeolite Association",
+  "country_or_region": "international",
+  "subfield": "porous materials / zeolites / MOFs",
+  "frequency_note": "triennial; 22nd edition; 500+ attendees",
+  "why_listed": "world zeolite and porous materials congress",
+  "source_url": "https://www.iza-online.org/IZC_Org.htm"
+ },
+ {
+  "conference": "ZMPC - Zeolites and Microporous Crystals",
+  "society": "Japanese zeolite community",
+  "country_or_region": "Japan",
+  "subfield": "zeolites / microporous materials",
+  "frequency_note": "every four years",
+  "why_listed": "Asian zeolite conference series",
+  "source_url": "https://zmpc.org/"
+ },
+ {
+  "conference": "ISPC - International Symposium on Plasma Chemistry",
+  "society": "International Plasma Chemistry Society",
+  "country_or_region": "international",
+  "subfield": "plasma chemistry",
+  "frequency_note": "biennial",
+  "why_listed": "world plasma chemistry symposium",
+  "source_url": "http://pac.iupac.org/publications/pac/conferences/family/ISPC/"
+ },
+ {
+  "conference": "IUPAC International Congress of Crop Protection Chemistry (formerly Pesticide Chemistry)",
+  "society": "IUPAC Division of Chemistry and the Environment",
+  "country_or_region": "international",
+  "subfield": "agricultural / pesticide chemistry",
+  "frequency_note": "every four years since 1967; 15th 2023 New Delhi; 1500+ attendees",
+  "why_listed": "world congress of agrochemical chemistry",
+  "source_url": "https://iupac.org/event/15th-iupac-international-congress-of-crop-protection-chemistry/"
+ },
+ {
+  "conference": "APCAT - Asia-Pacific Congress on Catalysis",
+  "society": "Asia-Pacific Association of Catalysis Societies (APACS)",
+  "country_or_region": "Asia-Pacific",
+  "subfield": "catalysis",
+  "frequency_note": "every three years since 1997; APCAT-10 2025 Singapore",
+  "why_listed": "Asian regional catalysis congress",
+  "source_url": "https://apacs.dicp.ac.cn/APCATs.htm"
+ },
+ {
+  "conference": "APC - Asian and Oceanian Photochemistry Conference",
+  "society": "Asian and Oceanian Photochemistry Association",
+  "country_or_region": "Asia-Oceania",
+  "subfield": "photochemistry",
+  "frequency_note": "biennial; 14th APC2026",
+  "why_listed": "Asian regional photochemistry conference",
+  "source_url": "https://www.asianphotochem.org/APC2026/invitation.html"
+ },
+ {
+  "conference": "IUPAC World Chemistry Congress",
+  "society": "IUPAC",
+  "country_or_region": "international",
+  "subfield": "general chemistry",
+  "frequency_note": "biennial, with IUPAC General Assembly",
+  "why_listed": "world congress of chemistry",
+  "source_url": "https://publications.iupac.org/pac/conferences/family/CONGRESS/index.html"
+ },
+ {
+  "conference": "ICTAC - International Congress on Thermal Analysis and Calorimetry",
+  "society": "International Confederation for Thermal Analysis and Calorimetry",
+  "country_or_region": "international",
+  "subfield": "thermal analysis and calorimetry",
+  "frequency_note": "quadrennial; 18th 2024 India; 24 affiliated societies",
+  "why_listed": "world thermal analysis congress",
+  "source_url": "http://www.ictac.org/"
+ },
+ {
+  "conference": "ESEAC - International Conference on Electroanalysis",
+  "society": "EuChemS Division of Analytical Chemistry (Electroanalysis)",
+  "country_or_region": "Europe/international",
+  "subfield": "electroanalytical chemistry",
+  "frequency_note": "biennial since 1986; 20th ESEAC 2026 Portugal",
+  "why_listed": "principal electroanalysis conference series",
+  "source_url": "https://eseac2026.events.chemistry.pt/"
+ },
+ {
+  "conference": "EUROCORR - The European Corrosion Congress",
+  "society": "European Federation of Corrosion",
+  "country_or_region": "Europe",
+  "subfield": "corrosion science / electrochemistry",
+  "frequency_note": "annual, September; 1000+ delegates; 2026 Dublin",
+  "why_listed": "flagship corrosion congress",
+  "source_url": "https://eurocorr.org/"
+ },
+ {
+  "conference": "ICC - International Corrosion Congress",
+  "society": "International Corrosion Council",
+  "country_or_region": "international",
+  "subfield": "corrosion science",
+  "frequency_note": "triennial; joint with EUROCORR 2027",
+  "why_listed": "world corrosion congress",
+  "source_url": "https://www.eurocorr-icc2027.org/"
+ },
+ {
+  "conference": "Flow Chemistry Europe (FCE)",
+  "society": "Flow Chemistry Society",
+  "country_or_region": "Europe",
+  "subfield": "flow chemistry / process chemistry",
+  "frequency_note": "annual; 14th FCE-26 2026 Malaga",
+  "why_listed": "main flow chemistry conference series",
+  "source_url": "https://flowchemistryeurope.com/"
+ },
+ {
+  "conference": "Flow Chemistry and Continuous Processing Conference",
+  "society": "Scientific Update / RSC",
+  "country_or_region": "UK/international",
+  "subfield": "process and flow chemistry",
+  "frequency_note": "annual; 7th edition",
+  "why_listed": "industrial process chemistry conference",
+  "source_url": "https://www.scientificupdate.com/conference_events/flow-chemistry-and-continuous-processing-conference/"
+ },
+ {
+  "conference": "ICSSC - International Conference on Solid State Chemistry",
+  "society": "IUPAC-endorsed / Czech hosts",
+  "country_or_region": "international",
+  "subfield": "solid state chemistry",
+  "frequency_note": "biennial; 15th edition",
+  "why_listed": "world solid state chemistry conference",
+  "source_url": "https://iupac.org/event/14th-international-conference-on-solid-state-chemistry-2/"
+ },
+ {
+  "conference": "ECSSC - European Conference on Solid State Chemistry",
+  "society": "EuChemS Division of Solid State and Materials Chemistry",
+  "country_or_region": "Europe",
+  "subfield": "solid state and materials chemistry",
+  "frequency_note": "biennial; 19th 2025 Malaga",
+  "why_listed": "European solid state chemistry congress",
+  "source_url": "https://www.euchems.eu/divisions/solid-state-and-materials-chemistry/conferences/"
+ },
+ {
+  "conference": "JCC - Journees de Chimie de Coordination",
+  "society": "Societe Chimique de France, Division de Chimie de Coordination",
+  "country_or_region": "France",
+  "subfield": "coordination chemistry",
+  "frequency_note": "annual",
+  "why_listed": "French national coordination chemistry meeting",
+  "source_url": "https://jcc2025.sciencesconf.org/"
+ },
+ {
+  "conference": "GDCh Wissenschaftsforum Chemie (WiFo)",
+  "society": "Gesellschaft Deutscher Chemiker (GDCh)",
+  "country_or_region": "Germany",
+  "subfield": "general chemistry",
+  "frequency_note": "biennial",
+  "why_listed": "largest German chemistry congress",
+  "source_url": "https://www.gdch.de/wifo"
+ },
+ {
+  "conference": "Chemiedozententagung",
+  "society": "Gesellschaft Deutscher Chemiker (GDCh)",
+  "country_or_region": "Germany",
+  "subfield": "general chemistry / academic chemistry",
+  "frequency_note": "annual",
+  "why_listed": "German academic chemistry faculty meeting",
+  "source_url": "https://www.gdch.de/"
+ },
+ {
+  "conference": "CLAQ - Latin American Congress of Chemistry (Congreso Latinoamericano de Quimica)",
+  "society": "FLAQ - Federacion Latinoamericana de Asociaciones Quimicas",
+  "country_or_region": "Latin America",
+  "subfield": "general chemistry",
+  "frequency_note": "biennial; XXXVII CLAQ 2026 Lima",
+  "why_listed": "flagship Latin American chemistry congress",
+  "source_url": "https://iupac.org/events/category/international-conference/"
+ },
+ {
+  "conference": "ACRICE - African Conference on Research in Chemical Education",
+  "society": "IUPAC / African chemistry education community",
+  "country_or_region": "Africa",
+  "subfield": "chemistry education",
+  "frequency_note": "biennial; 2026 Winneba, Ghana",
+  "why_listed": "African chemistry education conference",
+  "source_url": "https://iupac.org/events/category/international-conference/"
+ },
+ {
+  "conference": "International Symposium on Ionic Polymerization (IP)",
+  "society": "IUPAC Polymer Division",
+  "country_or_region": "international",
+  "subfield": "polymer chemistry",
+  "frequency_note": "biennial; 16th 2026 Kolkata",
+  "why_listed": "specialised polymerisation symposium series",
+  "source_url": "https://iupac.org/events/category/international-conference/"
+ },
+ {
+  "conference": "POLYSOLVAT - International Symposium on Polymer-Solvent Complexes and Intercalates",
+  "society": "IUPAC-endorsed",
+  "country_or_region": "international",
+  "subfield": "polymer chemistry",
+  "frequency_note": "biennial; 16th 2026 Tutzing",
+  "why_listed": "specialised polymer symposium series",
+  "source_url": "https://iupac.org/events/category/international-conference/"
+ },
+ {
+  "conference": "International Conference on Retinal Proteins",
+  "society": "independent",
+  "country_or_region": "international",
+  "subfield": "chemical biology / photobiology",
+  "frequency_note": "biennial; 21st 2026 Siena",
+  "why_listed": "specialised photobiology chemistry series",
+  "source_url": "https://iupac.org/events/category/international-conference/"
+ },
+ {
+  "conference": "Next Horizons in Polymers (IUPAC-PSK)",
+  "society": "IUPAC + Polymer Society of Korea",
+  "country_or_region": "Korea/international",
+  "subfield": "polymer chemistry",
+  "frequency_note": "2026 Busan",
+  "why_listed": "IUPAC-endorsed Asian polymer congress",
+  "source_url": "https://iupac.org/events/category/international-conference/"
+ },
+ {
+  "conference": "EWCPS - European Winter Conference on Plasma Spectrochemistry",
+  "society": "European plasma spectrochemistry community",
+  "country_or_region": "Europe",
+  "subfield": "atomic spectrometry / ICP-MS",
+  "frequency_note": "biennial (odd years) since 1985; 21st 2027 Athens",
+  "why_listed": "principal European plasma spectrochemistry conference",
+  "source_url": "https://www.ewcps.eu/"
+ },
+ {
+  "conference": "Winter Conference on Plasma Spectrochemistry (US)",
+  "society": "US plasma spectrochemistry community",
+  "country_or_region": "US",
+  "subfield": "atomic spectrometry / ICP-MS",
+  "frequency_note": "biennial (even years), alternating with EWCPS",
+  "why_listed": "US counterpart of EWCPS",
+  "source_url": "https://www.spectroscopyonline.com/conferences/european-winter-conference-on-plasma-spectrochemistry-ewcps"
+ },
+ {
+  "conference": "ANAKON",
+  "society": "GDCh Fachgruppe Analytische Chemie + Swiss Chemical Society + ASAC (Austria)",
+  "country_or_region": "Germany/Austria/Switzerland",
+  "subfield": "analytical chemistry",
+  "frequency_note": "biennial",
+  "why_listed": "flagship German-language analytical chemistry conference",
+  "source_url": "https://www.chemistryviews.org/details/event/11316944/ANAKON/"
+ },
+ {
+  "conference": "Gulf Coast Conference",
+  "society": "Gulf Coast Conference (non-profit)",
+  "country_or_region": "US",
+  "subfield": "analytical chemistry / petrochemical analysis",
+  "frequency_note": "annual, Texas",
+  "why_listed": "petrochemical analytical chemistry conference and exposition",
+  "source_url": "https://www.gulfcoastconference.com/"
+ },
+ {
+  "conference": "SIMS - International Conference on Secondary Ion Mass Spectrometry",
+  "society": "SIMS international community",
+  "country_or_region": "international",
+  "subfield": "surface analysis / mass spectrometry",
+  "frequency_note": "biennial",
+  "why_listed": "world SIMS surface analysis conference",
+  "source_url": "https://www.mass-spec-capital.com/"
+ },
+ {
+  "conference": "iCACGP-IGAC International Atmospheric Chemistry Conference",
+  "society": "International Commission on Atmospheric Chemistry and Global Pollution + IGAC",
+  "country_or_region": "international",
+  "subfield": "atmospheric chemistry",
+  "frequency_note": "biennial (odd years); 2026 joint conference",
+  "why_listed": "world atmospheric chemistry conference",
+  "source_url": "https://igacproject.org/conferences"
+ },
+ {
+  "conference": "Gordon Research Conference on Atmospheric Chemistry",
+  "society": "Gordon Research Conferences",
+  "country_or_region": "US",
+  "subfield": "atmospheric chemistry",
+  "frequency_note": "biennial; 2025 Newry, Maine",
+  "why_listed": "leading invite-led atmospheric chemistry conference",
+  "source_url": "https://www.grc.org/atmospheric-chemistry-conference/"
+ },
+ {
+  "conference": "CECAM Workshops and Schools (series)",
+  "society": "Centre Europeen de Calcul Atomique et Moleculaire",
+  "country_or_region": "Europe/international",
+  "subfield": "computational chemistry and materials",
+  "frequency_note": "many workshops per year",
+  "why_listed": "European computational chemistry workshop network; list as one series",
+  "source_url": "https://www.cecam.org/"
+ },
+ {
+  "conference": "Telluride Science Workshops (series)",
+  "society": "Telluride Science Research Center",
+  "country_or_region": "US",
+  "subfield": "theoretical and computational chemistry",
+  "frequency_note": "many workshops per year",
+  "why_listed": "invite-led theoretical chemistry workshop series",
+  "source_url": "https://telluridescience.org/"
+ },
+ {
+  "conference": "Sanibel Symposium on Quantum Chemistry",
+  "society": "University of Florida Quantum Theory Project",
+  "country_or_region": "US",
+  "subfield": "quantum chemistry",
+  "frequency_note": "annual; 60th edition in 2020",
+  "why_listed": "historic US quantum chemistry symposium",
+  "source_url": "https://quantumtheory.phys.ufl.edu/sanibel/"
+ },
+ {
+  "conference": "Gordon Research Conference on Solid State Chemistry",
+  "society": "Gordon Research Conferences",
+  "country_or_region": "US",
+  "subfield": "solid state chemistry",
+  "frequency_note": "biennial; 2026 edition",
+  "why_listed": "invite-led solid state chemistry conference",
+  "source_url": "https://www.grc.org/solid-state-chemistry-conference/"
+ },
+ {
+  "conference": "AAPS PharmSci 360",
+  "society": "American Association of Pharmaceutical Scientists",
+  "country_or_region": "US",
+  "subfield": "pharmaceutical sciences",
+  "frequency_note": "annual; 2026 New Orleans; thousands of attendees",
+  "why_listed": "largest pharmaceutical sciences meeting in North America",
+  "source_url": "https://www.aaps.org/pharmsci/annual-meeting"
+ },
+ {
+  "conference": "CPHI Worldwide",
+  "society": "Informa Markets",
+  "country_or_region": "Europe/international",
+  "subfield": "pharmaceutical chemistry / API industry",
+  "frequency_note": "annual, rotating European cities; tens of thousands of attendees",
+  "why_listed": "largest pharma ingredient industry event where process chemists meet",
+  "source_url": "https://www.cphi.com/"
+ },
+ {
+  "conference": "Controlled Release Society Annual Meeting",
+  "society": "Controlled Release Society",
+  "country_or_region": "international",
+  "subfield": "drug delivery / pharmaceutical chemistry",
+  "frequency_note": "annual",
+  "why_listed": "principal drug delivery science meeting",
+  "source_url": "https://www.controlledreleasesociety.org/"
+ },
+ {
+  "conference": "IMLB - International Meeting on Lithium Batteries",
+  "society": "IMLB / electrochemical energy community",
+  "country_or_region": "international",
+  "subfield": "battery and energy chemistry",
+  "frequency_note": "biennial; 23rd 2026 Montreal",
+  "why_listed": "world lithium battery science conference",
+  "source_url": "https://imlb.org/"
+ },
+ {
+  "conference": "IBA Meeting - International Battery Association Meeting",
+  "society": "International Battery Association",
+  "country_or_region": "international",
+  "subfield": "battery and energy chemistry",
+  "frequency_note": "annual",
+  "why_listed": "international battery materials chemistry meeting",
+  "source_url": "https://imlb.org/"
+ },
+ {
+  "conference": "WHEC - World Hydrogen Energy Conference",
+  "society": "International Association for Hydrogen Energy",
+  "country_or_region": "international",
+  "subfield": "hydrogen / energy chemistry",
+  "frequency_note": "biennial",
+  "why_listed": "world hydrogen energy congress",
+  "source_url": "https://ih2con.com/en"
+ },
+ {
+  "conference": "ICPC - International Conference on Phosphorus Chemistry",
+  "society": "IUPAC-endorsed",
+  "country_or_region": "international",
+  "subfield": "phosphorus chemistry",
+  "frequency_note": "biennial; 25th in Montpellier",
+  "why_listed": "world phosphorus chemistry conference",
+  "source_url": "https://icpc25.sciencesconf.org/?lang=en"
+ },
+ {
+  "conference": "ICPP - International Conference on Porphyrins and Phthalocyanines",
+  "society": "Society of Porphyrins and Phthalocyanines (SPP)",
+  "country_or_region": "international",
+  "subfield": "porphyrin chemistry",
+  "frequency_note": "biennial; ICPP-14 2026 Kyoto",
+  "why_listed": "world porphyrin and phthalocyanine conference",
+  "source_url": "https://www.spp-jpp.org/icpp/"
+ },
+ {
+  "conference": "ISOM - International Symposium on Olefin Metathesis and Related Chemistry",
+  "society": "international metathesis community",
+  "country_or_region": "international",
+  "subfield": "catalysis / organic synthesis",
+  "frequency_note": "biennial",
+  "why_listed": "world olefin metathesis symposium",
+  "source_url": "https://www.rsc.org/events/detail/2990/isom-xviii-18th-international-symposium-on-olefin-metathesis-and-related-chemistry"
+ },
+ {
+  "conference": "IMEBORON - International Conference on Boron Chemistry",
+  "society": "international boron chemistry community",
+  "country_or_region": "international",
+  "subfield": "boron / main group chemistry",
+  "frequency_note": "every three years",
+  "why_listed": "world boron chemistry conference",
+  "source_url": "https://iupac.org/events/"
+ },
+ {
+  "conference": "ICCT - International Conference on Chemical Thermodynamics",
+  "society": "IUPAC Physical and Biophysical Chemistry Division",
+  "country_or_region": "international",
+  "subfield": "chemical thermodynamics",
+  "frequency_note": "biennial",
+  "why_listed": "world chemical thermodynamics conference",
+  "source_url": "https://iupac.org/events/"
+ },
+ {
+  "conference": "ISNA - International Symposium on Novel Aromatic Compounds",
+  "society": "international aromatic chemistry community",
+  "country_or_region": "international",
+  "subfield": "organic / aromatic chemistry",
+  "frequency_note": "biennial",
+  "why_listed": "world novel aromatics symposium",
+  "source_url": "https://iupac.org/events/"
+ }
+]

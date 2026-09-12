@@ -1,0 +1,185 @@
+[
+ {
+  "conference": "ACS Spring National Meeting & Exposition",
+  "society": "American Chemical Society",
+  "country_or_region": "US",
+  "subfield": "general",
+  "frequency_note": "twice yearly with Fall",
+  "why_listed": "largest chemical society national meeting; ~12,000-16,000 abstracts",
+  "_src": "knowledge"
+ },
+ {
+  "conference": "Annual Meeting of the Chemical Society of Japan (CSJ)",
+  "society": "Chemical Society of Japan",
+  "country_or_region": "Japan",
+  "subfield": "general",
+  "frequency_note": "annual, spring",
+  "why_listed": "very large; ~7,000 presentations",
+  "_src": "knowledge"
+ },
+ {
+  "conference": "AIChE Annual Meeting",
+  "society": "AIChE",
+  "country_or_region": "US",
+  "subfield": "chemical engineering",
+  "frequency_note": "annual",
+  "why_listed": "~6,000 papers",
+  "_src": "knowledge"
+ },
+ {
+  "conference": "Pittcon (Conference on Analytical Chemistry and Applied Spectroscopy)",
+  "society": "Pittsburgh Conference",
+  "country_or_region": "US",
+  "subfield": "analytical",
+  "frequency_note": "annual",
+  "why_listed": "large analytical meeting + exposition",
+  "_src": "knowledge"
+ },
+ {
+  "conference": "ASMS Annual Conference on Mass Spectrometry and Allied Topics",
+  "society": "American Society for Mass Spectrometry",
+  "country_or_region": "US",
+  "subfield": "mass spectrometry",
+  "frequency_note": "annual",
+  "why_listed": "very large; several thousand posters",
+  "_src": "knowledge"
+ },
+ {
+  "conference": "EuChemS Chemistry Congress (ECC)",
+  "society": "EuChemS",
+  "country_or_region": "Europe",
+  "subfield": "general",
+  "frequency_note": "biennial",
+  "why_listed": "European umbrella congress",
+  "_src": "knowledge"
+ },
+ {
+  "conference": "IUPAC World Chemistry Congress",
+  "society": "IUPAC",
+  "country_or_region": "international",
+  "subfield": "general",
+  "frequency_note": "biennial",
+  "why_listed": "global umbrella congress",
+  "_src": "knowledge"
+ },
+ {
+  "conference": "GDCh Wissenschaftsforum Chemie (WiFo)",
+  "society": "Gesellschaft Deutscher Chemiker",
+  "country_or_region": "Germany",
+  "subfield": "general",
+  "frequency_note": "biennial",
+  "why_listed": "German national congress",
+  "_src": "knowledge"
+ },
+ {
+  "conference": "Reuniao Anual da Sociedade Brasileira de Quimica (RASBQ)",
+  "society": "Sociedade Brasileira de Quimica",
+  "country_or_region": "Brazil",
+  "subfield": "general",
+  "frequency_note": "annual",
+  "why_listed": "large Latin American national meeting",
+  "_src": "knowledge"
+ },
+ {
+  "conference": "KCS General Meeting (Korean Chemical Society)",
+  "society": "Korean Chemical Society",
+  "country_or_region": "Korea",
+  "subfield": "general",
+  "frequency_note": "twice yearly",
+  "why_listed": "large national meeting",
+  "_src": "knowledge"
+ },
+ {
+  "conference": "RSEQ Bienal (Real Sociedad Espanola de Quimica)",
+  "society": "RSEQ",
+  "country_or_region": "Spain",
+  "subfield": "general",
+  "frequency_note": "biennial",
+  "why_listed": "Spanish national congress",
+  "_src": "knowledge"
+ },
+ {
+  "conference": "SCI Congresso Nazionale (Societa Chimica Italiana)",
+  "society": "SCI",
+  "country_or_region": "Italy",
+  "subfield": "general",
+  "frequency_note": "annual/biennial",
+  "why_listed": "Italian national congress",
+  "_src": "knowledge"
+ },
+ {
+  "conference": "EuropaCat",
+  "society": "EFCATS",
+  "country_or_region": "Europe",
+  "subfield": "catalysis",
+  "frequency_note": "biennial",
+  "why_listed": "European catalysis congress",
+  "_src": "knowledge"
+ },
+ {
+  "conference": "ISE Annual Meeting (International Society of Electrochemistry)",
+  "society": "ISE",
+  "country_or_region": "international",
+  "subfield": "electrochemistry",
+  "frequency_note": "annual",
+  "why_listed": "electrochemistry",
+  "_src": "knowledge"
+ },
+ {
+  "conference": "IUPAC World Polymer Congress (MACRO)",
+  "society": "IUPAC",
+  "country_or_region": "international",
+  "subfield": "polymers",
+  "frequency_note": "biennial",
+  "why_listed": "polymer flagship",
+  "_src": "knowledge"
+ },
+ {
+  "conference": "EFMC-ISMC \u2014 International Symposium on Medicinal Chemistry",
+  "society": "EFMC",
+  "country_or_region": "Europe",
+  "subfield": "medicinal",
+  "frequency_note": "biennial",
+  "why_listed": "medicinal chemistry flagship",
+  "_src": "knowledge"
+ },
+ {
+  "conference": "ACS Green Chemistry & Engineering Conference",
+  "society": "ACS GCI",
+  "country_or_region": "US",
+  "subfield": "green chemistry",
+  "frequency_note": "annual",
+  "why_listed": "green chemistry",
+  "_src": "knowledge"
+ },
+ {
+  "conference": "European Coatings Show Conference",
+  "society": "Vincentz Network / European Coatings",
+  "country_or_region": "Germany (Nuremberg)",
+  "subfield": "coatings, paints, adhesives, printing inks",
+  "frequency_note": "biennial; 2027 April Nuremberg",
+  "why_listed": "largest coatings technical conference worldwide",
+  "source_url": "https://www.european-coatings.com/events/conference/",
+  "_src": "gaps"
+ },
+ {
+  "conference": "JSAC Annual Meeting (\u65e5\u672c\u5206\u6790\u5316\u5b66\u4f1a\u5e74\u4f1a)",
+  "society": "Japan Society for Analytical Chemistry",
+  "country_or_region": "Japan",
+  "subfield": "analytical chemistry",
+  "frequency_note": "annual",
+  "why_listed": "Japanese national analytical chemistry meeting",
+  "source_url": "https://www.chemistry.or.jp/en/events/calendar/index.html",
+  "_src": "societies"
+ },
+ {
+  "conference": "Chemical Society of Nigeria Annual International Conference",
+  "society": "Chemical Society of Nigeria",
+  "country_or_region": "Nigeria",
+  "subfield": "general chemistry",
+  "frequency_note": "annual",
+  "why_listed": "national conference, FASC member",
+  "source_url": "https://faschem.co.za/societies-in-africa/",
+  "_src": "societies"
+ }
+]
