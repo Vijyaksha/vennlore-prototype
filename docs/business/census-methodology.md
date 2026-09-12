@@ -848,7 +848,22 @@ Rung 9 writes only these, on `Census - <Field>`:
 | X | `Programme character` — CONTRIBUTED / CURATED / HYBRID / UNKNOWN |
 | Y | `Rupert's call` — INCLUDE / BORDERLINE / BELOW BAR, dated, with the figure and the bar |
 
-`scratchpad/attlib.py` (tests in `scratchpad/test_attlib.py`, TDD) does the writeback. It credits
+**The write sequence, in order** (`scratchpad/attlib.py`, tests in `scratchpad/test_attlib.py`):
+
+```python
+recs  = attlib.remap(records)              # ALWAYS first — re-anchors by conference name
+attlib.apply(recs)                         # attendance, source, basis, method, character (census sheet)
+attlib.apply_deleted(rows_that_stay_out)   # same, for rows on the Deleted sheet (rule 5)
+calls = [dict(r, attendance=r['attendance_numeric'], bar=1000) for r in recs if r['attendance_numeric']]
+attlib.write_inferred_abstracts(calls)     # the labelled NOT COUNTED figure, into the Abstracts column
+attlib.log_inclusion(calls)                # the audit log into Method + Rupert's call
+attlib.upgrade_rows(calls)                 # ONLY for removed-list rows that clear the bar
+```
+
+`attlib.resolve_borderline()` decides INCLUDE vs BELOW BAR for anything near the bar;
+`attlib.check_ratio()` rejects a ratio with no reasoning. A new field's sheet pair is built with
+`scratchpad/chemlib.py::build_field(names, duplicates, field)`, which is field-agnostic despite the
+name. The writeback It credits
 **only the rung that produced a figure**, never the highest rung reached; renders disagreement
 without averaging; and **re-anchors every record by conference name** via `remap()`, because agent
 row numbers go stale the instant any row is deleted. Agents return JSON and never touch the

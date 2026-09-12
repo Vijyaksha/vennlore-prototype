@@ -50,6 +50,19 @@ where 1–8 fail. Update `field-notes/chemistry.md` with what is actually true a
    twice, once in English and once as 電気化学会大会 — a failure mode the mandatory local-language
    sweep now creates in every field).
 
+## Before you write anything
+
+- **The workbook is `docs/business/tam-sam-som-v3.xlsx`** (path also hard-coded as `attlib.WB`).
+  It is tracked in git, so every write is revertible with `git checkout -- <path>`. Check
+  `git status` is clean before a wave, so a bad write can be undone in one command.
+- **Confirm the WebSearch budget BEFORE launching anything.** `echo $CLAUDE_CODE_MAX_WEB_SEARCHES_PER_SESSION`
+  — it should be ~1000 and it is Rupert's config change, never yours. A session died at 200/200 with
+  zero rows researched on 2026-09-11. Spend one throwaway search to prove the budget is real before
+  spawning agents. Rough costs measured: phase 1 chemistry ~131 searches for 846 names; medicine
+  rung-9 wave ~132 searches for 91 rows; an inline pilot ~1.3 searches per row.
+- **Run the tests**: `cd scratchpad && python3 -m pytest test_attlib.py test_chemlib.py -q` must be
+  51 green.
+
 ## What is on disk
 
 | What | Where |
