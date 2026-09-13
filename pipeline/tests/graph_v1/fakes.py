@@ -1,5 +1,6 @@
 """Deterministic stand-ins: an LLM that answers by prompt type, an embedder
 that answers by keyword, and a 6-node PhySH tree."""
+from gps_core.llm import LLMRefusal
 from gps_engines.graph_v1.physh import PhySH
 
 
@@ -8,9 +9,13 @@ class RoutingFakeLLM:
     runs stages on a thread pool)."""
 
     def __init__(self, methods_by_title: dict[str, list[str]],
-                 rubric_by_title: dict[str, dict]):
+                 rubric_by_title: dict[str, dict],
+                 raise_refusal_for: set[str] | None = None):
         self.methods_by_title = methods_by_title
         self.rubric_by_title = rubric_by_title
+        # titles whose RUBRIC call the API "refuses" — the engine must
+        # default to no-match loudly rather than silently
+        self.raise_refusal_for = set(raise_refusal_for or ())
         self.prompts: list[str] = []
 
     def _title_in(self, prompt: str, table: dict):
@@ -33,6 +38,9 @@ class RoutingFakeLLM:
         if "Two research-method names" in prompt:               # pair judge
             return {"verdict": "related", "strength": 7, "why": "kin"}
         if "METHOD-related" in prompt:                          # rubric
+            for title in self.raise_refusal_for:
+                if title in prompt:
+                    raise LLMRefusal("test refusal")
             r = self._title_in(prompt, self.rubric_by_title)
             return r or {"strongest_parallel": "none", "same_method": 0,
                          "specificity": 0, "usage_parallel": 0, "match": False, "why": "no"}

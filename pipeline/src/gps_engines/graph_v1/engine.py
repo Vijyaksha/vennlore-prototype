@@ -79,7 +79,8 @@ class GraphV1Engine:
             lambda: file_method(name, ctx, candidate_shortlist(
                 name, ctx, self.physh, self.embed, self._targets_vecs()), self.physh, self.extract_llm))
 
-    def _judge_pair(self, out: Path, d: Decision, name_context: dict) -> dict:
+    def _judge_pair(self, out: Path, d: Decision, name_context: dict,
+                    status: Status) -> dict:
         def judge():
             try:
                 return judge_pair(d.a, d.b, self.pair_llm,
@@ -87,9 +88,16 @@ class GraphV1Engine:
                                   context_b=name_context.get(_norm(d.b), ""),
                                   evidence=d.evidence)
             except LLMRefusal:
+                status.set(f"REFUSAL (pair, defaulting to no-edge): {d.a!r} vs {d.b!r}")
                 return {"verdict": "unrelated",
                         "why": "API REFUSAL; defaulted to no-edge, not a real judgment"}
         return checkpointed(self._ck(out, "verdicts", d.a, d.b, d.evidence), judge)
+
+    @staticmethod
+    def _n_refused(results) -> int:
+        """Refusals counted from the results themselves, so a resumed run
+        reports the same number as the run that first hit them."""
+        return sum(1 for r in results if "API REFUSAL" in (r.get("why") or ""))
 
     @staticmethod
     def _verdicts(decisions: list[Decision], judged: dict) -> list[tuple[str, str, dict]]:
@@ -106,6 +114,7 @@ class GraphV1Engine:
     # ---- contract operations -------------------------------------------
 
     def index(self, corpus: list[Talk], out: Path) -> IndexArtifact:
+        assert len({t.id for t in corpus}) == len(corpus), "duplicate talk ids in corpus"
         status = Status(out)
         status.set("extraction")
         ordered = sorted(corpus, key=lambda t: t.id)
@@ -123,6 +132,7 @@ class GraphV1Engine:
                                          else f'used in "{t.title[:70]}"')
         status.set("filing")
         names = sorted({n for nid in g.nodes() for n in g.names_of(nid)})
+        self._targets_vecs()          # embed PhySH once, on this thread
         filed = parallel("filing", names,
                          lambda n: self._file(out, n, name_context.get(_norm(n), "")),
                          workers=self.workers, status=status)
@@ -134,7 +144,7 @@ class GraphV1Engine:
         status.set(f"cascade: {len(kept) - len(to_judge)} auto, {len(to_judge)} to judge, {n_dropped} dropped")
         judged = dict(zip([(d.a, d.b) for d in to_judge],
                           parallel("verdicts", to_judge,
-                                   lambda d: self._judge_pair(out, d, name_context),
+                                   lambda d: self._judge_pair(out, d, name_context, status),
                                    workers=self.workers, status=status)))
         apply_verdicts(g, self._verdicts(kept, judged))
         g.save(out / "graph.json")
@@ -142,12 +152,15 @@ class GraphV1Engine:
         (out / "filings.json").write_text(json.dumps(filings))
         (out / "talks.json").write_text(json.dumps({t.id: {"title": t.title, "abstract": t.abstract,
                                                            "units": list(t.units)} for t in ordered}))
-        status.set(f"done — {len(names)} methods, {len(ordered)} talks")
+        status.set(f"done — {len(names)} methods, {len(ordered)} talks, "
+                   f"{self._n_refused(judged.values())} pair refusals")
         return IndexArtifact(path=out, engine_id=self.id)
 
     def recommend(self, anchor: Talk, index: IndexArtifact) -> list[Recommendation]:
         idx = index.path
-        out = idx / "queries" / str(anchor.id)
+        # keyed by content, not by id: every external anchor is id 0, so an
+        # id-keyed dir would let two queries overwrite each other's status
+        out = idx / "queries" / content_key(anchor.id, anchor.title, anchor.abstract)
         status = Status(out)
         g = MethodGraph.load(idx / "graph.json")
         name_context = json.loads((idx / "name_context.json").read_text())
@@ -164,17 +177,23 @@ class GraphV1Engine:
                 d = descs.get(m) or descs.get(key) or ""
                 name_context[key] = (f'in "{anchor.title[:70]}": {d}' if d
                                      else f'used in "{anchor.title[:70]}"')
-        for n in ms:
+        # Normalised throughout: filings, name_context and `existing` are all
+        # keyed on normalised names, and the cascade compares raw strings — so
+        # an anchor method already in the index must not be re-filed, nor
+        # cross-judged against its own twin.
+        new_names = sorted({_norm(m) for m in ms})
+        self._targets_vecs()          # embed PhySH once, on this thread
+        for n in new_names:
             if n not in filings:
-                filings[n] = self._file(idx, n, name_context.get(_norm(n), ""))
+                filings[n] = self._file(idx, n, name_context.get(n, ""))
 
         status.set("bipartite cascade")
-        texts = {n: f"{n}: {name_context.get(_norm(n), '')}" for n in set(existing) | set(ms)}
-        ds = decide_pairs_cross(ms, existing, filings, self.physh, self.embed, texts)
+        texts = {n: f"{n}: {name_context.get(n, '')}" for n in set(existing) | set(new_names)}
+        ds = decide_pairs_cross(new_names, existing, filings, self.physh, self.embed, texts)
         to_judge = [d for d in ds if d.action == "judge"]
         judged = dict(zip([(d.a, d.b) for d in to_judge],
                           parallel("verdicts", to_judge,
-                                   lambda d: self._judge_pair(idx, d, name_context),
+                                   lambda d: self._judge_pair(idx, d, name_context, status),
                                    workers=self.workers, status=status)))
         apply_verdicts(g, self._verdicts(ds, judged))
 
@@ -183,6 +202,8 @@ class GraphV1Engine:
         anchor_digest = claims_digest(anchor_claims)
 
         def rubric_one(cid: int) -> dict:
+            # only id/title/abstract/units are load-bearing here: the rubric
+            # and the extraction checkpoint key read nothing else off a Talk
             cand = replace(anchor, id=cid, title=talks[cid]["title"],
                            abstract=talks[cid]["abstract"], units=tuple(talks[cid]["units"]))
             _ms, _d, cand_claims = self._extract(idx, cand)
@@ -196,6 +217,7 @@ class GraphV1Engine:
                             "usage_parallel": j.usage_parallel, "why": j.why,
                             "strongest_parallel": j.strongest_parallel}
                 except LLMRefusal:
+                    status.set(f"REFUSAL (rubric, defaulting to no-match): talk {cid}")
                     return {"same_method": 0, "specificity": 0, "usage_parallel": 0,
                             "strongest_parallel": "",
                             "why": "API REFUSAL; defaulted to no-match, not a real judgment"}
@@ -210,6 +232,8 @@ class GraphV1Engine:
             rows.append(Recommendation(
                 for_talk_id=anchor.id, candidate_id=cid, score=total / RUBRIC_MAX, rank=0,
                 match=total >= MATCH_MIN_SCORE,
+                # default_cross_domain compares units only; the stand-in Talk
+                # carries the candidate's units and nothing else of its own
                 cross_domain=default_cross_domain(anchor, replace(anchor, units=cand_units)),
                 why=j["why"], strongest_parallel=j["strongest_parallel"],
                 shared_methods=tuple(self._shared_methods(g, cid)),
@@ -217,7 +241,8 @@ class GraphV1Engine:
                           "usage_parallel": j["usage_parallel"], "rubric_sum": total,
                           "match_min_score": MATCH_MIN_SCORE},
                 engine_id=self.id, run_id=""))
-        status.set(f"done — {sum(r.match for r in rows)} matches of {len(rows)} candidates")
+        status.set(f"done — {sum(r.match for r in rows)} matches of {len(rows)} candidates, "
+                   f"{self._n_refused(judgments)} rubric refusals")
         return rows
 
     @staticmethod
@@ -238,12 +263,18 @@ class GraphV1Engine:
 
 
 def build(provider: str = "deepseek", workers: int = 8, embed=None, physh=None,
-          llm_factory=None) -> GraphV1Engine:
-    """Registry factory. Live clients by default; tests inject fakes."""
+          llm_factory=None, extract_model=None, pair_judge_model=None,
+          rubric_model=None) -> GraphV1Engine:
+    """Registry factory. Live clients by default; tests inject fakes.
+    Per-stage model overrides exist because the stage-0 reference run judged
+    PAIRS with deepseek-reasoner while PROVIDERS carries the stage-1 choice
+    (deepseek-chat); models always records the EFFECTIVE choice."""
     cfg = PROVIDERS[provider]
     make = llm_factory or cfg["client"]
+    models = {"extract": extract_model or cfg["extract"],
+              "pair_judge": pair_judge_model or cfg["pair_judge"],
+              "rubric": rubric_model or cfg["rubric"]}
     return GraphV1Engine(
-        extract_llm=make(cfg["extract"]), pair_llm=make(cfg["pair_judge"]),
-        rubric_llm=make(cfg["rubric"]), embed=embed or sbert_embedder(),
-        physh=physh or load_physh(), workers=workers,
-        models={"extract": cfg["extract"], "pair_judge": cfg["pair_judge"], "rubric": cfg["rubric"]})
+        extract_llm=make(models["extract"]), pair_llm=make(models["pair_judge"]),
+        rubric_llm=make(models["rubric"]), embed=embed or sbert_embedder(),
+        physh=physh or load_physh(), workers=workers, models=models)
