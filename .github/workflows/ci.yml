@@ -42,6 +42,8 @@ jobs:
         run: npm run check-types
       - name: Tests
         run: npm run test
+      - name: Loaded-parts script
+        run: npm run test:scripts && npm run status
       - name: Contract schema drift
         run: |
           npm run emit --workspace=@repo/contracts
