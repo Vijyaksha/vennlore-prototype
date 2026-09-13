@@ -63,12 +63,17 @@
           "allow": ["contract", "tooling"]
         },
         "dependents": {
-          "allow": ["app"]
+          "allow": ["web"]
         }
       },
       "app": {
         "dependencies": {
           "allow": ["data", "ui", "contract", "tooling"]
+        }
+      },
+      "tooling": {
+        "dependencies": {
+          "allow": ["tooling"]
         }
       }
     }

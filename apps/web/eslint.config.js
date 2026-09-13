@@ -1,24 +1,6 @@
 import { nextJsConfig } from "@repo/eslint-config/next-js";
 
+// The database-driver guards live in the shared config so every Next app gets
+// them; only-warn means this package's --max-warnings 0 is what enforces them.
 /** @type {import("eslint").Linter.Config[]} */
-export default [
-  ...nextJsConfig,
-  {
-    rules: {
-      // The app meets the data layer only through @repo/api's public surface.
-      "no-restricted-imports": [
-        "error",
-        {
-          paths: [
-            { name: "drizzle-orm", message: "Database access lives in @repo/api." },
-            { name: "postgres", message: "Database access lives in @repo/api." },
-          ],
-          patterns: [
-            { group: ["drizzle-orm/*"], message: "Database access lives in @repo/api." },
-            { group: ["@repo/api/*"], message: "Import from the @repo/api barrel only." },
-          ],
-        },
-      ],
-    },
-  },
-];
+export default nextJsConfig;
