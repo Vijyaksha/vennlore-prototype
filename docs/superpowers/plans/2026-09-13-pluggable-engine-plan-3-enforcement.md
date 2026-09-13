@@ -28,6 +28,7 @@ Co-Authored-By: Claude Fable 5.1 <noreply@anthropic.com>
 - **Task 2 review changes.** The router groups the agenda on `TalkRow` directly (no `agendaEntry`); the in-process grouped type is `TimedItem`, so the contract's `AgendaItem` is the only type of that name. `talk.get` takes a strict input like the presenter procedures. A wire test pins that a row with `contract_version` other than 1 fails the contract; the cast in `wire.ts` stays because the column is a plain integer. Output validation costs about 1 ms per 70 strict Talk parses. Keep the contract schemas free of `transform`/`default`, because tRPC serves the parser's return value, not the procedure's.
 - **Task 3 review changes.** The web view models take ISO strings only (`Date |` unions removed), since output schemas make every timestamp a string at the source. `lib/conference.ts` no longer re-exports `Subject`; consumers import it from `@repo/contracts`. The subject one-key test was folded into one test covering all three branches, so the web suite is 62, not 63.
 - **Task 4 review changes.** The restricted-import rules live in the shared `@repo/eslint-config/next-js` config, so every Next app inherits them; `apps/web/eslint.config.js` is a plain re-export again. A `no-restricted-modules` rule covers CommonJS `require(...)`, which neither `turbo boundaries` nor `no-restricted-imports` sees. `eslint-plugin-only-warn` downgrades every rule to a warning, so each workspace's `--max-warnings 0` is what makes lint fail; both configs say so. Only `web` may depend on `@repo/api` (`data.dependents.allow: ["web"]`); `tooling` may depend only on `tooling`. Boundary rules are transitive. The root README documents the tags and the allow table. `turbo boundaries` catches dynamic `import()` and exits 1 on a violation with no TTY needed.
+- **Task 5 review changes.** `gps_core.registry` is also forbidden to engines, since an engine importing the registry would close a cycle the layers contract cannot see. The one dynamic import in core (`run.py` reflecting on an engine instance's module for its version) is benign and not a hidden dependency. `uv lock --check` passes, so Task 6's `uv sync --locked` will not drift.
 
 ## File structure (end state)
 
@@ -710,11 +711,11 @@ git commit -m "build: Turborepo boundaries tags and rules; apps cannot import da
 - Create: `pipeline/.importlinter`
 - Modify: `pipeline/pyproject.toml`, `pipeline/README.md`
 
-- [ ] **Step 1: The "failing test": a deliberate violation**
+- [x] **Step 1: The "failing test": a deliberate violation**
 
 Add `from gps_core.store import write_seed  # noqa: F401` near the top of `pipeline/src/gps_engines/graph_v1/engine.py` (check the actual exported name in `gps_core/store.py`; any symbol works). Keep it for Step 3.
 
-- [ ] **Step 2: Configure**
+- [x] **Step 2: Configure**
 
 `cd pipeline && uv add --group dev import-linter` (adds to the `dev` group in `pyproject.toml` and the lockfile).
 
@@ -754,13 +755,13 @@ forbidden_modules =
     uv run lint-imports                                         # layering: engines > core > data; engines never import store/run
 ```
 
-- [ ] **Step 3: Verify, revert, verify**
+- [x] **Step 3: Verify, revert, verify**
 
 Run: `cd pipeline && uv run lint-imports` → FAIL: "engines never write the store or drive runs" broken by `gps_engines.graph_v1.engine -> gps_core.store`. Remove the temporary import. Run again → both contracts KEPT. Run `uv run pytest -q` → 145 passed.
 
 If the layers contract reports a real import of `gps_core` from `gps_data`, or of `gps_engines` from `gps_core`, stop and report it: that is an existing layering bug, and the fix (moving the symbol) needs a decision, not a loosened rule.
 
-- [ ] **Step 4: Commit**
+- [x] **Step 4: Commit**
 
 ```bash
 git add pipeline/.importlinter pipeline/pyproject.toml pipeline/uv.lock pipeline/README.md
