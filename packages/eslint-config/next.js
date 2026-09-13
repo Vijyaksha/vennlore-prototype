@@ -60,6 +60,14 @@ export const nextJsConfig = [
           ],
         },
       ],
+      // no-restricted-imports ignores dynamic import(); this covers it.
+      "no-restricted-syntax": [
+        "error",
+        {
+          selector: "ImportExpression > Literal[value=/^(drizzle-orm|postgres)(\\/|$)|^@repo\\/api\\//]",
+          message: "Database access lives in @repo/api.",
+        },
+      ],
       // no-restricted-imports only sees ESM; this covers `require(...)` too.
       "no-restricted-modules": [
         "error",

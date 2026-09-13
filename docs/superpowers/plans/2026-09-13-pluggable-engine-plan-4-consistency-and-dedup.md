@@ -24,6 +24,7 @@ Co-Authored-By: Claude Fable 5.1 <noreply@anthropic.com>
 
 - **Task 1 done** (PR #4, merged). Foreign keys are `ON DELETE no action`, so Task 7's per-engine delete must precede any talk or run deletion. `toSeedFile` reports only the first issue; a `(+N more issues)` suffix is a cheap improvement for Task 7.
 - **Task 2 done** (PR #5, merged). Migration 0003 drops each array default, changes the type with a USING cast, then sets the bigint default, so it is safe on populated tables. Talk id columns (`talks.id`, `for_talk_id`, `candidate_id`, `session_id`) stay int32 by plan; widening them later must move all four in one migration because of the foreign keys. Existing float4 scores regain precision only when Task 9 reseeds.
+- **Task 3 done** (PR #6, merged). Stale-version rows are now skipped silently; nothing counts them. A log line or health check for non-current rows is a later improvement.
 
 ## File structure (end state)
 
@@ -194,7 +195,7 @@ Keep `intArray` only if something still uses it; otherwise delete it. `$inferSel
 **Files:**
 - Modify: `packages/api/src/repo.ts`, `packages/api/src/repo.db.ts`, `packages/api/test/repo.test.ts`
 
-- [ ] **Step 1: Failing test** (in `repo.test.ts`, add to the `recs` fixture `rec(10, 11, { rank: 9, contractVersion: 2 })` and this test):
+- [x] **Step 1: Failing test** (in `repo.test.ts`, add to the `recs` fixture `rec(10, 11, { rank: 9, contractVersion: 2 })` and this test):
 
 ```ts
 test("getMatches ignores rows written under another contract version", async () => {
@@ -204,9 +205,9 @@ test("getMatches ignores rows written under another contract version", async () 
 
 Run → FAIL (11 is returned). (After Task 6 the key is `candidate_id`; write it for the current names now.)
 
-- [ ] **Step 2: Implement.** `repo.ts` `getMatches` filter adds `&& r.contractVersion === CONTRACT_VERSION` (import `CONTRACT_VERSION` from `@repo/contracts`). `repo.db.ts` `where(and(...))` adds `eq(recommendations.contractVersion, CONTRACT_VERSION)`. Update the JSDoc on `Repo.getMatches`: "match=true rows of one engine written under the current contract version…". The router's `wire.ts` cast now has a filter behind it; update its comment to say so. Tests, types, lint → green.
+- [x] **Step 2: Implement.** `repo.ts` `getMatches` filter adds `&& r.contractVersion === CONTRACT_VERSION` (import `CONTRACT_VERSION` from `@repo/contracts`). `repo.db.ts` `where(and(...))` adds `eq(recommendations.contractVersion, CONTRACT_VERSION)`. Update the JSDoc on `Repo.getMatches`: "match=true rows of one engine written under the current contract version…". The router's `wire.ts` cast now has a filter behind it; update its comment to say so. Tests, types, lint → green.
 
-- [ ] **Step 3: PR** (`plan4/task-3-version-filter`, "fix(api): serve only rows of the current contract version").
+- [x] **Step 3: PR** (`plan4/task-3-version-filter`, "fix(api): serve only rows of the current contract version").
 
 ---
 

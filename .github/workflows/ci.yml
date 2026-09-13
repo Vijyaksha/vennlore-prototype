@@ -32,6 +32,12 @@ jobs:
         run: npm run boundaries
       - name: Lint
         run: npm run lint
+      # `.*` not `[^\n]*`: GNU grep reads a backslash inside brackets literally,
+      # so `[^\n]` would exclude the letter n and never match "-next-line".
+      - name: Guard comments (no disabling the import guards)
+        run: |
+          if grep -rnE 'eslint-disable.*no-restricted-(imports|modules|syntax)|@boundaries-ignore' apps packages --include='*.ts' --include='*.tsx' --include='*.js' --include='*.mjs' --exclude-dir=node_modules --exclude-dir=.next; then
+            echo "::error::a comment disables an import guard"; exit 1; fi
       - name: Types
         run: npm run check-types
       - name: Tests
