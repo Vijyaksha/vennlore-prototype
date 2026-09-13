@@ -1,132 +1,75 @@
-import type { locations, recommendations, talks } from "./schema";
+import { z } from "zod";
 
-export interface SeedTalkRow {
-  id?: number;
-  title?: string;
-  session_title?: string | null;
-  units?: string[];
-  start?: string | null;
-  end?: string | null;
-  building?: string | null;
-  room?: string | null;
-  abstract?: string;
-}
+import {
+  CONTRACT_VERSION, RecommendationSchema, RunSchema, TalkSchema,
+  type Recommendation, type Run, type Talk,
+} from "@repo/contracts";
 
-export interface SeedRecommendationRow {
-  for_talk_id?: number;
-  candidate_id?: number;
-  same_method?: number;
-  specificity?: number;
-  usage_parallel?: number;
-  score?: number;
-  match?: boolean;
-  cross_domain?: boolean;
-  why?: string;
-  strongest_parallel?: string;
-}
-
-export interface SeedLocationRow {
-  id?: number;
-  building?: string;
-  room?: string;
-}
-
-export interface SeedFile {
-  talks: SeedTalkRow[];
-  locations: SeedLocationRow[];
-  recommendations: SeedRecommendationRow[];
-}
+import type { locations, recommendations, runs, talks } from "./schema";
 
 export type TalkInsert = typeof talks.$inferInsert;
 export type RecommendationInsert = typeof recommendations.$inferInsert;
+export type RunInsert = typeof runs.$inferInsert;
 export type LocationInsert = typeof locations.$inferInsert;
 
-function parseDate(value: string | null | undefined, label: string): Date | null {
-  if (value === null || value === undefined) return null;
-  const date = new Date(value);
-  if (Number.isNaN(date.getTime())) {
-    throw new Error(`${label}: unparseable date "${value}"`);
-  }
-  return date;
-}
+const LocationSchema = z.strictObject({ id: z.int(), building: z.string().min(1), room: z.string().min(1) });
 
+const SeedFileSchema = z.strictObject({
+  contract_version: z.literal(CONTRACT_VERSION),
+  talks: z.array(TalkSchema),
+  locations: z.array(LocationSchema),
+  recommendations: z.array(RecommendationSchema),
+  runs: z.array(RunSchema),
+});
+export type SeedFile = z.infer<typeof SeedFileSchema>;
+
+/** Validates the whole seed against the contract; errors name the offending row. */
 export function toSeedFile(value: unknown): SeedFile {
-  if (typeof value !== "object" || value === null || Array.isArray(value)) {
-    throw new Error("seed file: expected a JSON object");
+  const result = SeedFileSchema.safeParse(value);
+  if (!result.success) {
+    const issue = result.error.issues[0]!;
+    const where = issue.path.map((p, i) => (typeof p === "number" ? `[${p}]` : i ? `.${String(p)}` : String(p))).join("");
+    throw new Error(`seed file: ${where || "<root>"}: ${issue.message}`);
   }
-  for (const key of ["talks", "locations", "recommendations"] as const) {
-    if (!Array.isArray((value as Record<string, unknown>)[key])) {
-      throw new Error(`seed file: missing ${key} array`);
-    }
-  }
-  return value as unknown as SeedFile;
+  return result.data;
 }
 
-export function toTalkInsert(row: SeedTalkRow): TalkInsert {
-  const label = `talk ${row.id ?? "<missing id>"}`;
-  if (typeof row.id !== "number") {
-    throw new Error(`${label}: missing id`);
-  }
-  if (!row.title) {
-    throw new Error(`${label}: missing title`);
-  }
+const date = (v: string | null) => (v === null ? null : new Date(v));
+
+export function toTalkInsert(t: Talk): TalkInsert {
   return {
-    id: row.id,
-    title: row.title,
-    sessionTitle: row.session_title ?? null,
-    units: row.units ?? [],
-    start: parseDate(row.start, label),
-    end: parseDate(row.end, label),
-    building: row.building ?? null,
-    room: row.room ?? null,
-    abstract: row.abstract ?? "",
+    id: t.id, externalId: t.external_id, title: t.title, abstract: t.abstract,
+    units: t.units, topics: t.topics, type: t.type, isInvited: t.is_invited,
+    isWithdrawn: t.is_withdrawn, start: date(t.start), end: date(t.end),
+    sortOrder: t.sort_order, presentationLocation: t.presentation_location,
+    authorIds: t.author_ids, presenterIds: t.presenter_ids,
+    publicationReference: t.publication_reference,
+    fundingAcknowledgement: t.funding_acknowledgement,
+    teamAcknowledgement: t.team_acknowledgement, sessionId: t.session_id,
+    sessionTitle: t.session_title, sessionCode: t.session_code,
+    sessionType: t.session_type, sessionTopics: t.session_topics,
+    building: t.building, room: t.room,
   };
 }
 
-export function toRecommendationInsert(
-  row: SeedRecommendationRow,
-): RecommendationInsert {
-  const label = `recommendation ${row.for_talk_id ?? "<missing for_talk_id>"} -> ${row.candidate_id ?? "<missing candidate_id>"}`;
-  const requireNumber = (value: number | undefined, field: string): number => {
-    if (typeof value !== "number") {
-      throw new Error(`${label}: missing ${field}`);
-    }
-    return value;
-  };
-  const requireBoolean = (value: boolean | undefined, field: string): boolean => {
-    if (typeof value !== "boolean") {
-      throw new Error(`${label}: missing ${field}`);
-    }
-    return value;
-  };
+export function toRecommendationInsert(r: Recommendation): RecommendationInsert {
   return {
-    forTalkId: requireNumber(row.for_talk_id, "for_talk_id"),
-    candidateId: requireNumber(row.candidate_id, "candidate_id"),
-    sameMethod: requireNumber(row.same_method, "same_method"),
-    specificity: requireNumber(row.specificity, "specificity"),
-    usageParallel: requireNumber(row.usage_parallel, "usage_parallel"),
-    score: requireNumber(row.score, "score"),
-    match: requireBoolean(row.match, "match"),
-    crossDomain: requireBoolean(row.cross_domain, "cross_domain"),
-    why: row.why ?? "",
-    strongestParallel: row.strongest_parallel ?? "",
+    engineId: r.engine_id, forTalkId: r.for_talk_id, candidateId: r.candidate_id,
+    score: r.score, rank: r.rank, match: r.match, crossDomain: r.cross_domain,
+    why: r.why, strongestParallel: r.strongest_parallel, sharedMethods: r.shared_methods,
+    evidence: r.evidence, runId: r.run_id, contractVersion: r.contract_version,
   };
 }
 
-export function toLocationInsert(row: SeedLocationRow): LocationInsert {
-  const label = `location ${row.id ?? "<missing id>"}`;
-  if (typeof row.id !== "number") {
-    throw new Error(`${label}: missing id`);
-  }
-  if (!row.building) {
-    throw new Error(`${label}: missing building`);
-  }
-  if (!row.room) {
-    throw new Error(`${label}: missing room`);
-  }
+export function toRunInsert(m: Run): RunInsert {
   return {
-    id: row.id,
-    building: row.building,
-    room: row.room,
+    runId: m.run_id, engineId: m.engine_id, kind: m.kind, engineVersion: m.engine_version,
+    models: m.models, corpusHash: m.corpus_hash, anchorIds: m.anchor_ids,
+    startedAt: new Date(m.started_at), finishedAt: new Date(m.finished_at),
+    indexPath: m.index_path, contractVersion: m.contract_version,
   };
+}
+
+export function toLocationInsert(l: z.infer<typeof LocationSchema>): LocationInsert {
+  return { id: l.id, building: l.building, room: l.room };
 }

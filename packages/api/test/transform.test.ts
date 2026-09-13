@@ -1,172 +1,53 @@
+import { readFileSync } from "node:fs";
+import { createRequire } from "node:module";
 import { describe, expect, test } from "vitest";
 
-import {
-  toLocationInsert,
-  toRecommendationInsert,
-  toSeedFile,
-  toTalkInsert,
-} from "../src/db/transform";
+import { toRecommendationInsert, toRunInsert, toSeedFile, toTalkInsert } from "../src/db/transform";
 
-const seedTalk = {
-  id: 7,
-  title: "Photoconductivity of Self-Assembled Porphyrin Nanorods",
-  session_title: "Organic Electronics",
-  units: ["DPOLY", "DCMP"],
-  start: "2026-03-19T15:12:00.000Z",
-  end: "2026-03-19T15:24:00.000Z",
-  building: "Convention Center",
-  room: "Meeting Room 404",
-  abstract: "The photoconductivity of nanorods is described.",
-};
-
-const seedRecommendation = {
-  for_talk_id: 0,
-  candidate_id: 1846,
-  same_method: 1,
-  specificity: 2,
-  usage_parallel: 3,
-  score: 6,
-  match: true,
-  cross_domain: false,
-  why: "Shared pump-probe apparatus.",
-  strongest_parallel: "Both use 488 nm excitation.",
-};
-
-const seedLocation = {
-  id: 4109684556,
-  building: "Convention Center",
-  room: "Meeting Room 704",
-};
-
-describe("toTalkInsert", () => {
-  test("maps seed fields to schema columns and parses ISO dates", () => {
-    const row = toTalkInsert(seedTalk);
-
-    expect(row).toEqual({
-      id: 7,
-      title: "Photoconductivity of Self-Assembled Porphyrin Nanorods",
-      sessionTitle: "Organic Electronics",
-      units: ["DPOLY", "DCMP"],
-      start: new Date("2026-03-19T15:12:00.000Z"),
-      end: new Date("2026-03-19T15:24:00.000Z"),
-      building: "Convention Center",
-      room: "Meeting Room 404",
-      abstract: "The photoconductivity of nanorods is described.",
-    });
-    expect(row.start).toBeInstanceOf(Date);
-    expect(row.start?.toISOString()).toBe("2026-03-19T15:12:00.000Z");
-  });
-
-  test("keeps null start/end/session_title/building/room as null", () => {
-    const row = toTalkInsert({
-      ...seedTalk,
-      session_title: null,
-      start: null,
-      end: null,
-      building: null,
-      room: null,
-    });
-
-    expect(row.sessionTitle).toBeNull();
-    expect(row.start).toBeNull();
-    expect(row.end).toBeNull();
-    expect(row.building).toBeNull();
-    expect(row.room).toBeNull();
-  });
-
-  test("throws naming the talk id when title is missing", () => {
-    expect(() => toTalkInsert({ ...seedTalk, title: "" })).toThrow(/talk 7/);
-  });
-
-  test("throws naming the talk id on an unparseable date", () => {
-    expect(() => toTalkInsert({ ...seedTalk, start: "not-a-date" })).toThrow(
-      /talk 7/,
-    );
-  });
-
-  test("throws naming the talk id when id is missing", () => {
-    const withoutId = Object.fromEntries(
-      Object.entries(seedTalk).filter(([k]) => k !== "id"),
-    );
-    expect(() => toTalkInsert(withoutId)).toThrow(/talk/);
-  });
-});
-
-describe("toRecommendationInsert", () => {
-  test("maps seed fields to schema columns, including match booleans", () => {
-    expect(toRecommendationInsert(seedRecommendation)).toEqual({
-      forTalkId: 0,
-      candidateId: 1846,
-      sameMethod: 1,
-      specificity: 2,
-      usageParallel: 3,
-      score: 6,
-      match: true,
-      crossDomain: false,
-      why: "Shared pump-probe apparatus.",
-      strongestParallel: "Both use 488 nm excitation.",
-    });
-  });
-
-  test("defaults missing why/strongest_parallel to empty strings", () => {
-    const row = toRecommendationInsert({
-      ...seedRecommendation,
-      why: undefined,
-      strongest_parallel: undefined,
-    });
-
-    expect(row.why).toBe("");
-    expect(row.strongestParallel).toBe("");
-  });
-
-  test("throws naming the pair when a score field is missing", () => {
-    expect(() =>
-      toRecommendationInsert({ ...seedRecommendation, score: undefined }),
-    ).toThrow(/0.*1846/);
-  });
-});
+const req = createRequire(import.meta.url);
+const fixture = (kind: string) =>
+  JSON.parse(readFileSync(req.resolve(`@repo/contracts/fixtures/valid/${kind}.json`), "utf8"));
 
 describe("toSeedFile", () => {
-  const validSeed = {
-    talks: [seedTalk],
-    locations: [seedLocation],
-    recommendations: [seedRecommendation],
-  };
-
-  test("accepts a file with talks/locations/recommendations arrays", () => {
-    expect(toSeedFile(validSeed)).toBe(validSeed);
+  test("accepts a contract-shaped seed and validates every row", () => {
+    const seed = toSeedFile({
+      contract_version: 1, talks: [fixture("talk")], locations: [],
+      recommendations: [fixture("recommendation")], runs: [fixture("run")],
+    });
+    expect(seed.talks).toHaveLength(1);
   });
-
-  test("throws naming the missing array", () => {
-    expect(() => toSeedFile({ ...validSeed, talks: undefined })).toThrow(
-      /seed file.*talks/,
-    );
-    expect(() => toSeedFile({ ...validSeed, locations: "nope" })).toThrow(
-      /seed file.*locations/,
-    );
-    expect(() => toSeedFile({ ...validSeed, recommendations: null })).toThrow(
-      /seed file.*recommendations/,
-    );
+  test("rejects a row that breaks the contract, naming the row", () => {
+    expect(() => toSeedFile({
+      contract_version: 1, talks: [{ ...fixture("talk"), title: "" }], locations: [], recommendations: [], runs: [],
+    })).toThrow(/talks\[0\]/);
   });
-
-  test("throws on a non-object payload", () => {
-    expect(() => toSeedFile(null)).toThrow(/seed file/);
-    expect(() => toSeedFile([])).toThrow(/seed file/);
+  test("rejects an unknown contract version", () => {
+    expect(() => toSeedFile({ contract_version: 2, talks: [], locations: [], recommendations: [], runs: [] }))
+      .toThrow(/contract_version/);
   });
 });
 
-describe("toLocationInsert", () => {
-  test("maps seed fields and preserves ids beyond int32", () => {
-    expect(toLocationInsert(seedLocation)).toEqual({
-      id: 4109684556,
-      building: "Convention Center",
-      room: "Meeting Room 704",
-    });
+describe("row transforms", () => {
+  test("talk: snake_case → camelCase, ISO strings → Date, lists kept", () => {
+    const row = toTalkInsert(fixture("talk"));
+    expect(row.id).toBe(2802);
+    expect(row.externalId).toBe("SMT26-3750532");
+    expect(row.start).toEqual(new Date("2026-03-19T15:12:00.000Z"));
+    expect(row.authorIds).toEqual([101, 102]);
+    expect(row.sessionCode).toBe("MAR-B31");
+    expect(Object.keys(row)).toHaveLength(25);
   });
-
-  test("throws naming the location id when building is missing", () => {
-    expect(() => toLocationInsert({ ...seedLocation, building: "" })).toThrow(
-      /location 4109684556/,
-    );
+  test("recommendation keeps evidence as-is and shared_methods as an array", () => {
+    const row = toRecommendationInsert(fixture("recommendation"));
+    expect(row.engineId).toBe("graph_v1");
+    expect(row.score).toBe(0.8);
+    expect(row.evidence).toEqual({ same_method: 4, specificity: 3, usage_parallel: 5, rubric_sum: 12 });
+    expect(row.sharedMethods).toEqual(["transient photocurrent measurement"]);
+    expect(row.contractVersion).toBe(1);
+  });
+  test("run converts timestamps", () => {
+    const row = toRunInsert(fixture("run"));
+    expect(row.startedAt).toEqual(new Date("2026-09-12T12:00:00Z"));
+    expect(row.anchorIds).toEqual([0]);
   });
 });
