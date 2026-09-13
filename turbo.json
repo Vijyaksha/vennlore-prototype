@@ -45,5 +45,32 @@
     "DATABASE_URL",
     "ENGINE_ID",
     "PLAYWRIGHT_BASE_URL"
-  ]
+  ],
+  "boundaries": {
+    "tags": {
+      "contract": {
+        "dependencies": {
+          "allow": ["tooling"]
+        }
+      },
+      "ui": {
+        "dependencies": {
+          "allow": ["tooling"]
+        }
+      },
+      "data": {
+        "dependencies": {
+          "allow": ["contract", "tooling"]
+        },
+        "dependents": {
+          "allow": ["app"]
+        }
+      },
+      "app": {
+        "dependencies": {
+          "allow": ["data", "ui", "contract", "tooling"]
+        }
+      }
+    }
+  }
 }
