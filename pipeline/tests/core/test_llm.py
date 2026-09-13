@@ -1,5 +1,5 @@
 import pytest
-from gps_engine.llm import AnthropicLLM, FakeLLM
+from gps_core.llm import AnthropicLLM, FakeLLM
 
 
 def test_fake_llm_returns_queued_json():
@@ -28,7 +28,7 @@ def test_anthropic_llm_rejects_non_text_block(monkeypatch):
         content = [object()]  # not a TextBlock
 
     llm._client.messages.create = lambda **kwargs: StubMessage()
-    import gps_engine.llm as llm_mod
+    import gps_core.llm as llm_mod
     monkeypatch.setattr(llm_mod.time, "sleep", lambda s: None)
 
     with pytest.raises(RuntimeError, match="no usable JSON response after 3 attempts"):
@@ -54,7 +54,7 @@ def test_anthropic_llm_skips_thinking_block(monkeypatch):
 def test_anthropic_llm_raises_llm_refusal(monkeypatch):
     """stop_reason 'refusal' is deterministic — must raise LLMRefusal
     immediately (no retries) so callers can apply a fallback policy."""
-    from gps_engine.llm import LLMRefusal
+    from gps_core.llm import LLMRefusal
     monkeypatch.setenv("ANTHROPIC_API_KEY", "fake-key")
     llm = AnthropicLLM(model="claude-x")
 
@@ -91,7 +91,7 @@ def test_anthropic_llm_tolerates_trailing_prose(monkeypatch):
 
 def test_anthropic_llm_retries_malformed_json(monkeypatch):
     from anthropic.types import TextBlock
-    import gps_engine.llm as llm_mod
+    import gps_core.llm as llm_mod
     monkeypatch.setenv("ANTHROPIC_API_KEY", "fake-key")
     monkeypatch.setattr(llm_mod.time, "sleep", lambda s: None)
     llm = AnthropicLLM(model="claude-x")
@@ -110,7 +110,7 @@ def test_anthropic_llm_retries_malformed_json(monkeypatch):
 # ---------- DeepSeekLLM (OpenAI-compatible endpoint) ----------
 
 def _ds(monkeypatch):
-    from gps_engine.llm import DeepSeekLLM
+    from gps_core.llm import DeepSeekLLM
     monkeypatch.setenv("DEEPSEEK_API_KEY", "fake-key")
     return DeepSeekLLM(model="deepseek-chat")
 
@@ -151,7 +151,7 @@ def test_deepseek_llm_tolerates_fences_and_trailing_prose(monkeypatch):
 
 
 def test_deepseek_llm_retries_malformed_then_succeeds(monkeypatch):
-    import gps_engine.llm as llm_mod
+    import gps_core.llm as llm_mod
     monkeypatch.setattr(llm_mod.time, "sleep", lambda s: None)
     llm = _ds(monkeypatch)
     replies = ['{"broken": ,}', '{"ok": 2}']
@@ -161,7 +161,7 @@ def test_deepseek_llm_retries_malformed_then_succeeds(monkeypatch):
 
 
 def test_deepseek_llm_empty_content_exhausts_retries(monkeypatch):
-    import gps_engine.llm as llm_mod
+    import gps_core.llm as llm_mod
     monkeypatch.setattr(llm_mod.time, "sleep", lambda s: None)
     llm = _ds(monkeypatch)
     llm._client.chat.completions.create = lambda **kwargs: _Resp(None)
@@ -172,7 +172,7 @@ def test_deepseek_llm_empty_content_exhausts_retries(monkeypatch):
 def test_deepseek_llm_content_filter_raises_llm_refusal(monkeypatch):
     """finish_reason 'content_filter' is the OpenAI-compatible analogue of
     Anthropic's 'refusal' stop reason — deterministic, no retries."""
-    from gps_engine.llm import LLMRefusal
+    from gps_core.llm import LLMRefusal
     llm = _ds(monkeypatch)
     calls = []
 

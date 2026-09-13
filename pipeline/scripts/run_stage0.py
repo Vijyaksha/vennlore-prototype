@@ -23,7 +23,7 @@ from gps_engine.graph import MethodGraph  # noqa: E402
 from gps_engine.li_extraction import (  # noqa: E402
     build_extractor, extract_methods_json, extract_methods_with_retry,
     glean_and_describe)
-from gps_engine.llm import AnthropicLLM, DeepSeekLLM, LLMRefusal  # noqa: E402
+from gps_core.llm import AnthropicLLM, DeepSeekLLM, LLMRefusal  # noqa: E402
 from gps_engine.recommend import assemble  # noqa: E402
 from gps_engine.rubric import Judgment, judge_candidate  # noqa: E402
 from gps_engine.similarity import apply_verdicts, judge_pair, sbert_embedder  # noqa: E402

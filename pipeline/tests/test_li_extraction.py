@@ -110,7 +110,7 @@ def test_build_extractor_rejects_unknown_provider():
 
 def test_glean_merges_missed_methods_and_dedupes():
     from gps_engine.li_extraction import glean_and_describe
-    from gps_engine.llm import FakeLLM
+    from gps_core.llm import FakeLLM
 
     talk = Talk(id=7, title="T", abstract="A", topics=(), units=(),
                 session_title="", start=None, end=None)
@@ -129,7 +129,7 @@ def test_glean_merges_missed_methods_and_dedupes():
 
 def test_glean_handles_empty_response_fields():
     from gps_engine.li_extraction import glean_and_describe
-    from gps_engine.llm import FakeLLM
+    from gps_core.llm import FakeLLM
 
     talk = Talk(id=8, title="T", abstract="A", topics=(), units=(),
                 session_title="", start=None, end=None)
@@ -181,7 +181,7 @@ def test_extract_methods_json_returns_deduped_methods():
     unreliable) must mirror extract_methods_li's contract: authors'-own-
     terminology method names, case-insensitively deduped, order kept."""
     from gps_engine.li_extraction import extract_methods_json
-    from gps_engine.llm import FakeLLM
+    from gps_core.llm import FakeLLM
     llm = FakeLLM(responses=[
         {"methods": ["DMRG", "dmrg", "  Monte Carlo  ", ""]},
     ])
@@ -193,6 +193,6 @@ def test_extract_methods_json_returns_deduped_methods():
 
 def test_extract_methods_json_empty_is_explicit():
     from gps_engine.li_extraction import extract_methods_json
-    from gps_engine.llm import FakeLLM
+    from gps_core.llm import FakeLLM
     llm = FakeLLM(responses=[{"methods": []}])
     assert extract_methods_json(TALK, llm) == []

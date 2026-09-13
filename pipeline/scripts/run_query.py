@@ -28,7 +28,7 @@ from gps_engine.filing import candidate_shortlist, embed_targets, file_method  #
 from gps_engine.funnel import candidates  # noqa: E402
 from gps_engine.graph import MethodGraph  # noqa: E402
 from gps_engine.li_extraction import extract_methods_json, glean_and_describe  # noqa: E402
-from gps_engine.llm import DeepSeekLLM, LLMRefusal  # noqa: E402
+from gps_core.llm import DeepSeekLLM, LLMRefusal  # noqa: E402
 from gps_engine.physh import load_physh  # noqa: E402
 from gps_engine.rubric import judge_candidate  # noqa: E402
 from gps_engine.similarity import apply_verdicts, judge_pair, sbert_embedder  # noqa: E402

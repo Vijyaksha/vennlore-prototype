@@ -2,7 +2,7 @@ import pytest
 
 from gps_engine.similarity import propose_pairs
 from gps_engine.graph import MethodGraph
-from gps_engine.llm import FakeLLM
+from gps_core.llm import FakeLLM
 from gps_engine.similarity import apply_verdicts, judge_pair
 
 
@@ -59,7 +59,7 @@ def test_apply_verdicts_rejects_unknown_verdict():
 
 
 def test_judge_pair_includes_context_when_given():
-    from gps_engine.llm import FakeLLM
+    from gps_core.llm import FakeLLM
     from gps_engine.similarity import judge_pair
 
     llm = FakeLLM(responses=[{"verdict": "unrelated", "why": "w"}])
@@ -71,7 +71,7 @@ def test_judge_pair_includes_context_when_given():
 
 
 def test_judge_pair_omits_context_lines_when_absent():
-    from gps_engine.llm import FakeLLM
+    from gps_core.llm import FakeLLM
     from gps_engine.similarity import judge_pair
 
     llm = FakeLLM(responses=[{"verdict": "same", "why": "w"}])

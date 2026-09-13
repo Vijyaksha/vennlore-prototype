@@ -3,7 +3,7 @@ MAX_NODES PhySH concepts with confidences — the librarian step. Candidate
 shelves come from local embeddings (cheap); the assignment judgment is one
 LLM call per method. 'none' is a legal answer: an unfiled method simply
 gets no tree prior and falls back to the embedding+LLM path."""
-from gps_engine.llm import LLMClient
+from gps_core.llm import LLMClient
 from gps_engine.physh import PhySH
 
 MAX_NODES = 3

@@ -1,7 +1,7 @@
 import pytest
 
 from gps_engine.corpus import Talk
-from gps_engine.llm import FakeLLM
+from gps_core.llm import FakeLLM
 from gps_engine.rubric import Judgment, judge_candidate
 
 ME = Talk(id=1, title="Porphyrin nanorod photoconductivity",
@@ -54,7 +54,7 @@ def test_empty_units_is_not_cross_domain():
 
 
 def test_judge_candidate_includes_claims_when_given():
-    from gps_engine.llm import FakeLLM
+    from gps_core.llm import FakeLLM
     llm = FakeLLM(responses=[{"same_method": 3, "specificity": 3,
                               "usage_parallel": 3, "match": True, "why": "w"}])
     judge_candidate(ME, OTHER, llm,
@@ -66,7 +66,7 @@ def test_judge_candidate_includes_claims_when_given():
 
 
 def test_judge_candidate_without_claims_has_no_claims_block():
-    from gps_engine.llm import FakeLLM
+    from gps_core.llm import FakeLLM
     llm = FakeLLM(responses=[{"same_method": 1, "specificity": 1,
                               "usage_parallel": 1, "match": False, "why": "w"}])
     judge_candidate(ME, OTHER, llm)

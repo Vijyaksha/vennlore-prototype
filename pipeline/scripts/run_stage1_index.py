@@ -23,7 +23,7 @@ from gps_engine.corpus import Talk, load_talks  # noqa: E402
 from gps_engine.filing import candidate_shortlist, embed_targets, file_method  # noqa: E402
 from gps_engine.graph import MethodGraph  # noqa: E402
 from gps_engine.li_extraction import extract_methods_json, glean_and_describe  # noqa: E402
-from gps_engine.llm import DeepSeekLLM, LLMRefusal  # noqa: E402
+from gps_core.llm import DeepSeekLLM, LLMRefusal  # noqa: E402
 from gps_engine.physh import load_physh  # noqa: E402
 from gps_engine.similarity import apply_verdicts, judge_pair, sbert_embedder  # noqa: E402
 

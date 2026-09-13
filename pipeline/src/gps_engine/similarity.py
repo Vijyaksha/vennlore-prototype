@@ -2,7 +2,7 @@ import math
 from typing import Callable
 
 from gps_engine.graph import MethodGraph
-from gps_engine.llm import LLMClient
+from gps_core.llm import LLMClient
 
 Embedder = Callable[[list[str]], list[list[float]]]
 

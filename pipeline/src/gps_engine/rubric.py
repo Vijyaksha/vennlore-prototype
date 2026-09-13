@@ -4,7 +4,7 @@ from unit metadata, never from the LLM."""
 from dataclasses import dataclass
 
 from gps_engine.corpus import Talk
-from gps_engine.llm import LLMClient
+from gps_core.llm import LLMClient
 
 RUBRIC_PROMPT = """You judge whether a candidate talk is METHOD-related to a
 researcher's work.

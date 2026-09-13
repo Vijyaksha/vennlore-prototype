@@ -1,6 +1,6 @@
 from gps_engine.claims import claims_digest, extract_claims
 from gps_engine.corpus import Talk
-from gps_engine.llm import FakeLLM
+from gps_core.llm import FakeLLM
 
 
 def _talk(abstract):

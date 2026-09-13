@@ -3,7 +3,7 @@ import pytest
 
 from gps_engine.cascade import Decision, _decide
 from gps_engine.filing import file_method
-from gps_engine.llm import FakeLLM
+from gps_core.llm import FakeLLM
 from gps_engine.physh import PhySH, Relation
 
 

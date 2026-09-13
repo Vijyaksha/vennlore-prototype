@@ -10,7 +10,7 @@ from llama_index.core.schema import TextNode
 from llama_index.llms.anthropic import Anthropic
 
 from gps_engine.corpus import Talk
-from gps_engine.llm import LLMClient
+from gps_core.llm import LLMClient
 
 # Two entity types, not one: a METHOD--USES_METHOD-->METHOD schema only
 # surfaces entities that appear in a valid, non-self-referencing triplet, so
