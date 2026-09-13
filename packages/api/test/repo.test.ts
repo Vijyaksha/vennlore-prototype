@@ -27,6 +27,7 @@ const recs = [
   rec(10, 11, { rank: 3, match: false }),
   rec(10, 999, { rank: 4 }),
   rec(10, 13, { engineId: "other", rank: 1 }),
+  rec(10, 11, { rank: 9, contractVersion: 2 }),
 ];
 const repo = memoryRepo(talks, recs);
 
@@ -54,6 +55,9 @@ describe("memoryRepo", () => {
   });
   test("getMatches for another engine sees only its rows", async () => {
     expect((await repo.getMatches([10], "other")).map((r) => r.candidateId)).toEqual([13]);
+  });
+  test("getMatches ignores rows written under another contract version", async () => {
+    expect((await repo.getMatches([10], "graph_v1")).map((r) => r.candidateId)).not.toContain(11);
   });
   test("getMatches breaks rank ties by candidateId", async () => {
     const tied = memoryRepo(talks, [rec(10, 13, { rank: 1 }), rec(10, 12, { rank: 1 })]);

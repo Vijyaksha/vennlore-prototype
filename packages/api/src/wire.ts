@@ -27,8 +27,9 @@ export function toRecommendation(r: RecRow): Recommendation {
     match: r.match, cross_domain: r.crossDomain, why: r.why,
     strongest_parallel: r.strongestParallel, shared_methods: r.sharedMethods,
     evidence: r.evidence, engine_id: r.engineId, run_id: r.runId,
-    // The column is a plain integer; the contract pins it to the literal 1. The
-    // .output() validator rejects any other value at runtime.
+    // The column is a plain integer; the contract pins it to the literal 1.
+    // getMatches filters on CONTRACT_VERSION, so every served row already
+    // carries it, and the .output() validator rejects any other value at runtime.
     contract_version: r.contractVersion as Recommendation["contract_version"],
   };
 }

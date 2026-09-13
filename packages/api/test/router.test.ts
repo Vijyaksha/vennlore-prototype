@@ -63,6 +63,14 @@ describe("presenter.picks", () => {
     const r = await call().presenter.picks({ talk_id: 0, engine_id: "other" });
     expect(r.recommendations.map((x) => x.score)).toEqual([0.1]);
   });
+  test("a row written under another contract version is skipped, not served or thrown on", async () => {
+    const r2 = memoryRepo([anchor, bluebird, hall], [
+      rec(0, 2802, { rank: 1, score: 0.8 }),
+      rec(0, 12342, { rank: 2, score: 0.4, contractVersion: 2 }),
+    ]);
+    const r = await call("graph_v1", r2).presenter.picks({ talk_id: 0 });
+    expect(r.recommendations.map((x) => x.candidate_id)).toEqual([2802]);
+  });
   test("unknown presenter → NOT_FOUND", async () => {
     await expect(call().presenter.picks({ presenter_id: 404 })).rejects.toThrow(/not found/i);
   });
