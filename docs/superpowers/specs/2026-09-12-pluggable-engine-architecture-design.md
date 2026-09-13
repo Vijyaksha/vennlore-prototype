@@ -27,13 +27,14 @@ packages/api           tRPC router + repository; presenter-based; takes an engin
 packages/ui            shadcn components (exists)
 apps/web               UI v1 (Kindred)  ── each app mounts @repo/api and @repo/ui
 apps/web-v2            UI v2            ─┘
-pipeline/              uv workspace
-  engine-core          Engine protocol, registry, checkpointing, progress, resume,
-                       LLM clients, store writer, exclusion filter, eval harness
-  engines/graph_v1     today's pipeline, assembled once
-  engines/baseline_*   embedding kNN, embed+rubric, brute rubric, long-context
-  engines/<next>       e.g. solvent_v2
-  eval/                datasets, pooled labels, precision-at-K protocol
+pipeline/              one uv project
+  src/gps_core         Engine protocol, registry, records, contracts, checkpointing,
+                       progress, resume, LLM clients, filters, run, store writer
+  src/gps_data         Talk record (25 fields), archive loader, presenter helpers
+  src/gps_engines/graph_v1     today's pipeline, assembled once
+  src/gps_engines/baseline_*   embedding kNN, embed+rubric, brute rubric, long-context
+  src/gps_engines/<next>       e.g. solvent_v2
+  src/gps_eval         datasets, pooled labels, precision-at-K protocol
 store                  Postgres (Supabase); recommendations keyed (engine_id, for_talk_id, candidate_id)
 ```
 
@@ -51,7 +52,7 @@ layer joins the full Talk record back on when the UI asks.
 
 ## 3. Data layer
 
-### 3.1 Talk record (24 fields)
+### 3.1 Talk record (25 fields)
 
 Produced by one loader from the three archive files (`presentations/`, `events/`, `locations/`
 under `data/gps2026`), and later served from the store in the same shape. Text fields are
@@ -110,7 +111,7 @@ The data layer, not the engine, resolves a person to talks:
 
 Postgres via Drizzle. Migrations through `drizzle-kit`, never ad-hoc DDL.
 
-- `talks`: the 24 fields above. Adds 15 columns to today's table.
+- `talks`: the 25 fields above. Adds 16 columns to today's table.
 - `recommendations`: the Recommendation record (§4.2). Primary key
   `(engine_id, for_talk_id, candidate_id)`. Adds `engine_id`, `run_id`, `contract_version`,
   `rank`, `shared_methods`, `evidence`; `score` becomes a float; the three rubric sub-scores move
@@ -121,7 +122,7 @@ Postgres via Drizzle. Migrations through `drizzle-kit`, never ad-hoc DDL.
 ### 3.5 What the data layer can serve
 
 One talk by id; any set of talks; the anchors for a presenter; the recommendations for a
-presenter under a given `engine_id`, each joined to its candidate Talk. Always in the 24-field
+presenter under a given `engine_id`, each joined to its candidate Talk. Always in the 25-field
 shape.
 
 ## 4. Matching engine
@@ -177,8 +178,8 @@ This is what makes a result reproducible and what the eval harness records.
 
 An engine author fills in the two functions and inherits all of this:
 
-- **Registry and switch.** Engines register under a name via Python entry points
-  (`[project.entry-points."gps.engines"]`). One setting, `ENGINE=<id>`, selects the engine for a
+- **Registry and switch.** Engines register under a name in `gps_core.registry` (one line per
+  engine; packaging entry points can replace this when engines become separate packages). One setting, `ENGINE=<id>`, selects the engine for a
   run; the same setting on the app side selects which rows the API serves. Switching is that one
   line plus a re-run of the export.
 - **Checkpointing, progress, resume.** Per-artifact skip-if-exists checkpoints, a probeable
@@ -201,21 +202,20 @@ An engine author fills in the two functions and inherits all of this:
 ### 4.5 Folder layout
 
 ```
-pipeline/
-  pyproject.toml            uv workspace root
-  engine-core/              gps_core: protocol, registry, checkpoint, progress, llm, store, eval
-  engines/
-    graph_v1/               gps_engine_graph_v1: today's extraction→filing→cascade→graph→funnel→rubric
+pipeline/                   one uv project
+  src/gps_core/             protocol, registry, records, contracts, checkpoint, progress, llm, filters, run, store
+  src/gps_data/             Talk record (25 fields) + archive loader + presenter helpers
+  src/gps_engines/
+    graph_v1/               today's extraction→filing→cascade→graph→funnel→rubric, assembled once
     baseline_embed/         cosine kNN over abstracts, no LLM
     baseline_embed_rubric/  embedding top-k → rubric
     baseline_brute_rubric/  rubric over every talk (quality ceiling)
     baseline_longctx/       one long-context call
-  eval/
-    datasets/               micro-corpus, held-out anchors, pooled labels, SOLVENT gold (sanity)
-    protocol.py             precision@K%, hit/miss/FP per anchor, cross-domain recall
+  src/gps_eval/             datasets, protocol (precision@K%, hit/miss/FP per anchor, cross-domain recall)
+  tests/{core,data,graph_v1,eval}/
 ```
 
-`graph_v1` is the current `gps_engine` package assembled **once**: the orchestration that is
+`graph_v1` is the current `gps_engine` package moved to `gps_engines/graph_v1` and assembled **once**: the orchestration that is
 currently pasted across `run_stage0.py`, `run_stage1_index.py` and `run_query.py` becomes one
 `index` and one `recommend`. The library modules (`li_extraction`, `claims`, `filing`, `cascade`,
 `similarity`, `graph`, `funnel`, `rubric`, `recommend`) move under the engine folder unchanged.
@@ -294,7 +294,7 @@ Each step is test-first (repo rule) and independently shippable.
 
 1. **Contracts.** Create `packages/contracts` with the three zod schemas, JSON Schema emit, drift
    test, golden fixtures. TS + Python contract tests green.
-2. **Data layer loader.** `load_talks` produces the 24-field Talk, excludes withdrawn talks,
+2. **Data layer loader.** `load_talks` produces the 25-field Talk, excludes withdrawn talks,
    joins session and location. Drizzle migration adds the new `talks` columns.
 3. **engine-core.** Protocol, registry, checkpoint/progress/resume (lifted from the scripts,
    content-hash keyed), LLM clients (moved), validation, exclusion filter, store writer,
