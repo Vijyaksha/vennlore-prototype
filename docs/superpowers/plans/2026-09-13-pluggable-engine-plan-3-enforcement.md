@@ -29,6 +29,7 @@ Co-Authored-By: Claude Fable 5.1 <noreply@anthropic.com>
 - **Task 3 review changes.** The web view models take ISO strings only (`Date |` unions removed), since output schemas make every timestamp a string at the source. `lib/conference.ts` no longer re-exports `Subject`; consumers import it from `@repo/contracts`. The subject one-key test was folded into one test covering all three branches, so the web suite is 62, not 63.
 - **Task 4 review changes.** The restricted-import rules live in the shared `@repo/eslint-config/next-js` config, so every Next app inherits them; `apps/web/eslint.config.js` is a plain re-export again. A `no-restricted-modules` rule covers CommonJS `require(...)`, which neither `turbo boundaries` nor `no-restricted-imports` sees. `eslint-plugin-only-warn` downgrades every rule to a warning, so each workspace's `--max-warnings 0` is what makes lint fail; both configs say so. Only `web` may depend on `@repo/api` (`data.dependents.allow: ["web"]`); `tooling` may depend only on `tooling`. Boundary rules are transitive. The root README documents the tags and the allow table. `turbo boundaries` catches dynamic `import()` and exits 1 on a violation with no TTY needed.
 - **Task 5 review changes.** `gps_core.registry` is also forbidden to engines, since an engine importing the registry would close a cycle the layers contract cannot see. The one dynamic import in core (`run.py` reflecting on an engine instance's module for its version) is benign and not a hidden dependency. `uv lock --check` passes, so Task 6's `uv sync --locked` will not drift.
+- **Task 6 outcome.** CI is live: PR #1 (draft, feat/stage0-engine → main) runs jobs `web`, `pipeline`, `e2e`; all green on runs 34768144017, 34768419889 and 34768556016. `workflow_dispatch` only works once the workflow is on `main`, so a PR is the trigger until then. No pytest test reads the local archive (the conftest builds a synthetic one), so no skip guard exists. The schema-drift step stages intent-to-add so an uncommitted new schema file fails it. `permissions: contents: read`, a concurrency group that cancels only superseded PR runs, and per-job timeouts are set. `CI` and `SEED_PATH` are in `turbo.json` globalEnv. The three CI commits (`292c923`, `dd38d2f`, `c42f120`) may be squashed at merge.
 
 ## File structure (end state)
 
@@ -776,11 +777,11 @@ git commit -m "build(pipeline): import-linter enforces engines > core > data; en
 - Create: `.github/workflows/ci.yml`
 - Modify: any `pipeline/tests/**` file that needs the local `data/` archive (skip cleanly when absent)
 
-- [ ] **Step 1: Find tests that need the gitignored archive**
+- [x] **Step 1: Find tests that need the gitignored archive**
 
 `data/` is local-only. Simulate a CI checkout: `git worktree add /tmp/ci-sim HEAD && cd /tmp/ci-sim/pipeline && uv sync && uv run pytest -q; cd - && git worktree remove /tmp/ci-sim`. Expected: some tests under `tests/data/` fail or error on a missing `data/gps2026` path. List them.
 
-- [ ] **Step 2: Skip them without the archive (the failing-first is Step 1's red run)**
+- [x] **Step 2: Skip them without the archive (the failing-first is Step 1's red run)**
 
 In `pipeline/tests/data/conftest.py` add a module-level guard and apply it to the archive-reading fixtures:
 
@@ -794,7 +795,7 @@ requires_archive = pytest.mark.skipif(not ARCHIVE.exists(), reason="local data/ 
 
 Decorate each test module or function that reads the archive with `@requires_archive` (import it from `conftest` via `from .conftest import requires_archive` or, cleaner, apply `pytestmark = requires_archive` at the top of each affected module). Re-run the worktree simulation: expected `N passed, M skipped`, zero failures. Run the normal `uv run pytest -q` locally: still 145 passed, 0 skipped.
 
-- [ ] **Step 3: Workflow**
+- [x] **Step 3: Workflow**
 
 `.github/workflows/ci.yml`:
 
@@ -857,7 +858,7 @@ jobs:
 
 Notes for the implementer: the pipeline job installs `sentence-transformers` and its torch dependency, so the first run takes several minutes; the uv cache makes later runs fast. `NEXT_PUBLIC_*` are unset in CI, so the build resolves the default subject.
 
-- [ ] **Step 3b: Frozen e2e seed and a `SEED_PATH` override**
+- [x] **Step 3b: Frozen e2e seed and a `SEED_PATH` override**
 
 The seed script reads `pipeline/out/app_seed.v2.json`, which is run output and gitignored. CI needs a committed copy. Copy the current export (58 talks, 118 locations, 1 run, 19 recommendations; public programme data, 195 KB) to `apps/web/e2e/fixtures/app_seed.v2.json`:
 
@@ -894,7 +895,7 @@ export function resolveSeedPath(env: { SEED_PATH?: string }, defaultPath: string
 
 In `seed.ts`, replace the `SEED_PATH` constant's use with `const SEED_PATH = resolveSeedPath(process.env, DEFAULT_SEED_PATH);` where `DEFAULT_SEED_PATH` is the existing four-levels-up join. Add `SEED_PATH` to `turbo.json` `globalEnv`. Run the test → green.
 
-- [ ] **Step 3c: Playwright starts the built app itself when no base URL is given**
+- [x] **Step 3c: Playwright starts the built app itself when no base URL is given**
 
 `apps/web/playwright.config.ts`:
 
@@ -921,7 +922,7 @@ export default defineConfig({
 });
 ```
 
-- [ ] **Step 3d: The e2e CI job** (append to `.github/workflows/ci.yml` under `jobs:`)
+- [x] **Step 3d: The e2e CI job** (append to `.github/workflows/ci.yml` under `jobs:`)
 
 ```yaml
   e2e:
@@ -970,7 +971,7 @@ export default defineConfig({
 
 The database is a container GitHub starts for this job and destroys afterwards; the connection string is a fixed localhost address, so no secret exists. Supabase is never touched by CI. The seed step is also the only place the migration and seed scripts run from an empty database, so a broken migration fails here.
 
-- [ ] **Step 3e: Local equivalent** (documented; Docker is not installed on Rupert's machine, so this is verified in CI only)
+- [x] **Step 3e: Local equivalent** (documented; Docker is not installed on Rupert's machine, so this is verified in CI only)
 
 Root `compose.yaml`:
 
@@ -995,11 +996,11 @@ Append to `apps/web/.env.example` a commented block:
 #   DATABASE_URL=postgres://kindred:kindred@localhost:5432/kindred npm run build --workspace=web && npm run e2e --workspace=web
 ```
 
-- [ ] **Step 4: Run it**
+- [x] **Step 4: Run it**
 
 Commit and push the branch (`git push origin feat/stage0-engine`), then `gh run watch --exit-status` (or `gh run list --branch feat/stage0-engine` and `gh run view <id> --log-failed`). Expected: all three jobs (`web`, `pipeline`, `e2e`) green. If `web` fails on Node 24 where local Node 22 passed, fix the incompatibility rather than lowering the version: `engines` already declares `>=24`. Record the local/CI Node mismatch in this plan's execution notes.
 
-- [ ] **Step 5: Commit** (if Step 4 needed fixes, amend nothing; add a follow-up commit)
+- [x] **Step 5: Commit** (if Step 4 needed fixes, amend nothing; add a follow-up commit)
 
 ```bash
 git add .github/workflows/ci.yml pipeline/tests apps/web/e2e/fixtures apps/web/playwright.config.ts apps/web/.env.example packages/api/src/db packages/api/test/seed-path.test.ts turbo.json compose.yaml
@@ -1017,7 +1018,7 @@ The repo has three human collaborators with push access: Rupertlim88 (admin), ry
 **Files:**
 - Create: `.github/CODEOWNERS`
 
-- [ ] **Step 1: CODEOWNERS** (commit this part without the gate; it is inert until protection is on)
+- [x] **Step 1: CODEOWNERS** (commit this part without the gate; it is inert until protection is on)
 
 ```
 # Any one of the three humans below may approve a pull request. Contract and spec
