@@ -67,19 +67,18 @@ describe("round trip: every contract field lands on its own column", () => {
   test("talk", () => {
     const talk = TalkSchema.parse({
       ...fixture("talk"),
-      is_invited: true, is_withdrawn: false,
+      is_invited: true,
       presentation_location: "Poster board 12",
       publication_reference: "Phys. Rev. B 110, 045101",
       funding_acknowledgement: "NSF DMR-2401234",
       team_acknowledgement: "Thanks to the cleanroom staff",
-      session_title: "Organic Electronics & Photonics", session_code: "MAR-B31", session_type: "ORAL",
-      start: "2026-03-19T15:12:00.000Z", end: "2026-03-19T15:24:00.000Z",
+      session_topics: ["Photonics"],
     });
     expectRoundTrip(talk, toTalkInsert(talk));
   });
   test("recommendation", () => {
     const rec = RecommendationSchema.parse({
-      ...fixture("recommendation"), match: true, cross_domain: false,
+      ...fixture("recommendation"), rank: 3, match: true, cross_domain: false,
       why: "Both read carrier dynamics.", strongest_parallel: "Time-resolved photocurrent.",
     });
     expectRoundTrip(rec, toRecommendationInsert(rec));
