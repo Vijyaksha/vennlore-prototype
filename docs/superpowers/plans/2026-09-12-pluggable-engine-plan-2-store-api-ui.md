@@ -12,7 +12,7 @@
 
 **Not in this plan:** Turborepo boundaries, CODEOWNERS, branch protection (Plan 3). A Supabase project already exists (`DATABASE_URL` in `apps/web/.env`, gitignored — never print it); running `db:migrate`/`db:seed` against it is the last, gated step.
 
-**Rules for every task:** TDD (failing test, watch it fail, implement, green); surgical edits; relative imports inside `packages/*` need `.js` suffixes (NodeNext); never stage `docs/business/` or `scratchpad/`; commit trailers:
+**Rules for every task:** TDD (failing test, watch it fail, implement, green); surgical edits; relative imports inside `packages/api` are **extensionless** (see execution note below); never stage `docs/business/` or `scratchpad/`; commit trailers:
 
 ```
 Co-Authored-By: Claude Fable 5.1 <noreply@anthropic.com>
@@ -20,6 +20,11 @@ Claude-Session: https://claude.ai/code/session_01GyR4M6ie2tftRPoSLdJdxY
 ```
 
 ---
+
+## Execution notes (2026-09-13)
+
+- **Import style in `packages/api` (Task 1 deviation).** The plan text below shows `.js` suffixes on relative imports. Turbopack only rewrites `.js` → `.ts` when the consuming app's tsconfig uses `moduleResolution: nodenext`, which breaks `apps/web`. `packages/api` therefore uses extensionless relative imports with `module: ESNext` / `moduleResolution: Bundler`. When copying code from this plan into `packages/api`, drop the `.js` suffixes. `packages/contracts` keeps its `.js` style until the web app imports it directly, at which point it needs the same treatment.
+- **Local `DATABASE_URL`.** `apps/web/.env` moved to `packages/api/.env`, so `npm run dev` in `apps/web` no longer sees `DATABASE_URL`. For Task 9 step 4, source `packages/api/.env` into the shell before starting the dev server. Vercel production is unaffected.
 
 ## File structure (end state)
 
@@ -56,7 +61,7 @@ pipeline/
 - Move (git mv): `apps/web/db/{schema,index,transform,seed}.ts` → `packages/api/src/db/`; `apps/web/drizzle/**` → `packages/api/drizzle/`; `apps/web/drizzle.config.ts` → `packages/api/drizzle.config.ts`; `apps/web/server/{trpc,router,data}.ts` → `packages/api/src/{trpc,router,repo.db}.ts`; `apps/web/lib/walk.ts` → `packages/api/src/walk.ts`; `apps/web/test/{router,transform,walk}.test.ts` → `packages/api/test/`; `apps/web/.env` → `packages/api/.env`
 - Modify: `apps/web/app/api/trpc/[trpc]/route.ts`, `apps/web/lib/trpc.ts`, `apps/web/package.json` (drop db scripts + drizzle/postgres/tsx deps, add `@repo/api`), `apps/web/components/walk-segment.tsx` and `agenda-item.tsx` only if they import `lib/walk` types (grep first)
 
-- [ ] **Step 1: Scaffold**
+- [x] **Step 1: Scaffold**
 
 `packages/api/package.json`:
 
@@ -97,7 +102,7 @@ pipeline/
 
 `packages/api/tsconfig.json`: same shape as `packages/contracts/tsconfig.json` (extends base, `noEmit`, `types: ["node"]`, include `src/**/*.ts`, `test/**/*.ts`, `drizzle.config.ts`). `packages/api/eslint.config.mjs`: `import { config } from "@repo/eslint-config/base"; export default config;`.
 
-- [ ] **Step 2: Move with git and fix imports**
+- [x] **Step 2: Move with git and fix imports**
 
 ```bash
 cd /Users/rupertlim/AI_Projects/ConferenceApp
@@ -131,12 +136,12 @@ export { walkMinutes, connection, type Connection, type Loc } from "./walk.js";
 
 `apps/web/app/api/trpc/[trpc]/route.ts`: import `{ appRouter, dbRepo }` from `"@repo/api"`. `apps/web/lib/trpc.ts`: `import type { AppRouter } from "@repo/api"`. `apps/web/package.json`: add `"@repo/api": "*"`, remove `db:generate|db:migrate|db:seed` scripts and the `drizzle-orm`, `postgres`, `drizzle-kit`, `tsx` deps (they now live in `@repo/api`). Any web component importing `lib/walk` types switches to `@repo/api`.
 
-- [ ] **Step 3: Verify nothing changed**
+- [x] **Step 3: Verify nothing changed**
 
 Run: `npm install && npm run test --workspace=@repo/api && npm run test --workspace=web && npm run check-types && npm run lint && npm run build --workspace=web`
 Expected: api 3 files pass (the moved router/transform/walk tests, same counts as before: 58 total across both workspaces), web builds. `cd packages/api && npx drizzle-kit generate` reports "No schema changes" (proves the moved journal is intact).
 
-- [ ] **Step 4: Commit**
+- [x] **Step 4: Commit**
 
 ```bash
 git add packages/api apps/web package.json package-lock.json
