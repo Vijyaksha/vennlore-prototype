@@ -1,6 +1,6 @@
 import { describe, expect, test } from "vitest";
 
-import { connection, walkMinutes, type Loc } from "../lib/walk";
+import { connection, walkMinutes, type Loc } from "../src/walk";
 
 const loc = (building: string | null, room: string | null): Loc => ({
   building,

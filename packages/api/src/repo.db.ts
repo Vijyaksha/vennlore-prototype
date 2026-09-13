@@ -1,7 +1,7 @@
 import { and, asc, desc, eq } from "drizzle-orm";
 
-import { getDb } from "../db";
-import { recommendations, talks } from "../db/schema";
+import { getDb } from "./db/index";
+import { recommendations, talks } from "./db/schema";
 
 export type TalkRow = typeof talks.$inferSelect;
 export type RecRow = typeof recommendations.$inferSelect;

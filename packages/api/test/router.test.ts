@@ -1,8 +1,8 @@
 import { describe, expect, test } from "vitest";
 
-import { appRouter } from "../server/router";
-import { createCallerFactory } from "../server/trpc";
-import { type Repo, type RecRow, type TalkRow } from "../server/data";
+import { appRouter } from "../src/router";
+import { createCallerFactory } from "../src/trpc";
+import { type Repo, type RecRow, type TalkRow } from "../src/repo.db";
 
 const talk = (overrides: Partial<TalkRow> & { id: number }): TalkRow => ({
   title: `Talk ${overrides.id}`,

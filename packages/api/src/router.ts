@@ -1,8 +1,8 @@
 import { TRPCError } from "@trpc/server";
 import { z } from "zod";
 
-import { connection, walkMinutes, type Connection } from "../lib/walk";
-import type { RecRow, TalkRow } from "./data";
+import { connection, walkMinutes, type Connection } from "./walk";
+import type { RecRow, TalkRow } from "./repo.db";
 import { publicProcedure, router } from "./trpc";
 
 export interface PickRow {

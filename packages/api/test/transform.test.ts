@@ -5,7 +5,7 @@ import {
   toRecommendationInsert,
   toSeedFile,
   toTalkInsert,
-} from "../db/transform";
+} from "../src/db/transform";
 
 const seedTalk = {
   id: 7,

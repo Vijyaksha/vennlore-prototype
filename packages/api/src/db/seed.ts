@@ -15,7 +15,7 @@ import {
 
 const SEED_PATH = join(
   dirname(fileURLToPath(import.meta.url)),
-  "../../../pipeline/out/app_seed.json",
+  "../../../../pipeline/out/app_seed.json",
 );
 const BATCH_SIZE = 500;
 

@@ -2,7 +2,7 @@ import { defineConfig } from "drizzle-kit";
 
 export default defineConfig({
   dialect: "postgresql",
-  schema: "./db/schema.ts",
+  schema: "./src/db/schema.ts",
   out: "./drizzle",
   dbCredentials: {
     // Only migrate/push/studio read this; `generate` works without a database.
