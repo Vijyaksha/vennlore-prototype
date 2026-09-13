@@ -43,12 +43,12 @@ def load_talks(archive: Path, only_ids: set[int] | None = None) -> dict[int, Tal
             loc = locations.get(e["location_ids"][0])
         talks[pid] = Talk(
             id=pid,
-            external_id=p.get("external_id") or None,
+            external_id=_opt(p.get("external_id")),
             title=clean_text(p.get("title")),
             abstract=clean_text(p.get("abstract")),
             units=tuple((e or {}).get("sponsor_units") or []),
             topics=tuple(p.get("topics") or []),
-            type=p.get("type") or None,
+            type=_opt(p.get("type")),
             is_invited=bool(p.get("is_invited")),
             is_withdrawn=bool(p.get("is_withdrawn")),
             start=p.get("start"), end=p.get("end"),
@@ -61,11 +61,11 @@ def load_talks(archive: Path, only_ids: set[int] | None = None) -> dict[int, Tal
             team_acknowledgement=_opt(p.get("team_acknowledgement")),
             session_id=e["id"] if e else None,
             session_title=_opt(e.get("title")) if e else None,
-            session_code=(e.get("code") or None) if e else None,
-            session_type=(e.get("type") or None) if e else None,
+            session_code=_opt(e.get("code")) if e else None,
+            session_type=_opt(e.get("type")) if e else None,
             session_topics=tuple((e or {}).get("topics") or []),
-            building=(loc or {}).get("building") or None,
-            room=(loc or {}).get("room") or None,
+            building=_opt((loc or {}).get("building")),
+            room=_opt((loc or {}).get("room")),
         )
     return talks
 
