@@ -30,6 +30,9 @@ Co-Authored-By: Claude Fable 5.1 <noreply@anthropic.com>
 - **Task 6 done** (PR #9, merged). The parity test loops one query per talk and presenter (fine at 58; sample if the seed grows). The transform round-trip test now compares key sets exactly.
 - **Task 7 done** (PR #10, merged). The seed now replaces each seeded engine's recommendations inside one transaction, so a hand-trimmed seed for an engine is destructive for that engine by design.
 
+- **Task 8 done** (PR #11, merged).
+- **Task 9 done (2026-09-13).** Migrations 0002 and 0003 applied to the live Supabase store; reseeded 58 talks / 118 locations / 1 run / 19 recommendations; Playwright 5/5 against a dev server on the live store. The parity test agreed on every talk, presenter and match; scores differed only in the 16th digit because the hosted Postgres formats float8 with 15 significant digits, so the test now compares scores at 15 digits and carries a 120 s timeout for remote stores (one query per talk and presenter). A stale `next dev` from a mistyped port flag caused one false e2e failure; the rerun on a clean server passed.
+
 ## File structure (end state)
 
 ```
@@ -371,10 +374,10 @@ Run `npm run test --workspace=@repo/api && npm run check-types && npm run lint &
 
 **Requires Rupert's explicit go. Touches the Supabase database (`DATABASE_URL` in `packages/api/.env`).**
 
-- [ ] **Step 1: Ask.** "Task 9 applies two migrations to the live Supabase Postgres: foreign keys on recommendations (fails if any existing row points at a missing talk or run; the seeded data was checked in Task 1 and resolves) and column type changes (score to double precision, person id arrays to bigint). Then it reseeds so scores regain full precision. Proceed?"
-- [ ] **Step 2:** `cd packages/api && set -a && . ./.env && set +a && npm run db:migrate && npm run db:seed` → migrations 0002, 0003 applied; "Seeded 58 talks / 118 locations / 1 runs / 19 recommendations".
-- [ ] **Step 3:** Smoke: with `DATABASE_URL` sourced, `npm run test --workspace=@repo/api -- test/repo.parity.test.ts` with `SEED_PATH` pointing at `apps/web/e2e/fixtures/app_seed.v2.json` → passes against the live store (read-only). Then the Playwright suite against a dev server as in plan 2 Task 9.
-- [ ] **Step 4:** Append `Migrated live on <date>; parity and e2e green.` under this task; commit through a PR.
+- [x] **Step 1: Ask.** "Task 9 applies two migrations to the live Supabase Postgres: foreign keys on recommendations (fails if any existing row points at a missing talk or run; the seeded data was checked in Task 1 and resolves) and column type changes (score to double precision, person id arrays to bigint). Then it reseeds so scores regain full precision. Proceed?"
+- [x] **Step 2:** `cd packages/api && set -a && . ./.env && set +a && npm run db:migrate && npm run db:seed` → migrations 0002, 0003 applied; "Seeded 58 talks / 118 locations / 1 runs / 19 recommendations".
+- [x] **Step 3:** Smoke: with `DATABASE_URL` sourced, `npm run test --workspace=@repo/api -- test/repo.parity.test.ts` with `SEED_PATH` pointing at `apps/web/e2e/fixtures/app_seed.v2.json` → passes against the live store (read-only). Then the Playwright suite against a dev server as in plan 2 Task 9.
+- [x] **Step 4:** Append `Migrated live on <date>; parity and e2e green.` under this task; commit through a PR.
 
 ---
 
