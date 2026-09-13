@@ -4,6 +4,7 @@ import { fileURLToPath } from "node:url";
 
 import { getDb } from "./index";
 import { locations, recommendations, runs, talks } from "./schema";
+import { resolveSeedPath } from "./seed-path";
 import {
   toLocationInsert,
   toRecommendationInsert,
@@ -13,10 +14,12 @@ import {
 } from "./transform";
 import { batches, updateSet } from "./upsert";
 
-const SEED_PATH = join(
+const DEFAULT_SEED_PATH = join(
   dirname(fileURLToPath(import.meta.url)),
   "../../../../pipeline/out/app_seed.v2.json",
 );
+
+const SEED_PATH = resolveSeedPath(process.env, DEFAULT_SEED_PATH);
 
 /** Idempotent upsert of the v2 contract seed: talks, locations, runs, then recommendations. */
 async function main() {

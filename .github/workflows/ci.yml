@@ -1,0 +1,98 @@
+name: ci
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+env:
+  TURBO_TELEMETRY_DISABLED: "1"
+  DO_NOT_TRACK: "1"
+
+jobs:
+  web:
+    name: web
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - name: Boundaries (package graph)
+        run: npm run boundaries
+      - name: Lint
+        run: npm run lint
+      - name: Types
+        run: npm run check-types
+      - name: Tests
+        run: npm run test
+      - name: Contract schema drift
+        run: |
+          npm run emit --workspace=@repo/contracts
+          git diff --exit-code -- packages/contracts/schema
+      - name: Build web (no database needed)
+        run: npm run build --workspace=web
+
+  pipeline:
+    name: pipeline
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: pipeline
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          enable-cache: true
+          cache-dependency-glob: pipeline/uv.lock
+      - run: uv python install 3.12
+      - run: uv sync --locked
+      - name: Layering
+        run: uv run lint-imports
+      - name: Tests (offline; archive-dependent tests skip)
+        run: uv run pytest -q
+
+  e2e:
+    name: e2e
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: kindred
+          POSTGRES_PASSWORD: kindred
+          POSTGRES_DB: kindred
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U kindred"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+    env:
+      DATABASE_URL: postgres://kindred:kindred@localhost:5432/kindred
+      ENGINE_ID: graph_v1
+      SEED_PATH: ${{ github.workspace }}/apps/web/e2e/fixtures/app_seed.v2.json
+      CI: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - name: Migrate and seed the throwaway database
+        run: |
+          npm run db:migrate --workspace=@repo/api
+          npm run db:seed --workspace=@repo/api
+      - name: Build
+        run: npm run build --workspace=web
+      - name: End-to-end
+        run: npm run e2e --workspace=web
+      - if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-traces
+          path: apps/web/test-results/

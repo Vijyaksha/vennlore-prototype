@@ -1,0 +1,8 @@
+services:
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: kindred
+      POSTGRES_PASSWORD: kindred
+      POSTGRES_DB: kindred
+    ports: ["5432:5432"]
