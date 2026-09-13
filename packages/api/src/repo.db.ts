@@ -1,13 +1,13 @@
-import { and, asc, eq, inArray, sql } from "drizzle-orm";
+import { and, arrayContains, asc, eq, inArray } from "drizzle-orm";
 
 import { getDb } from "./db/index";
 import { recommendations, talks } from "./db/schema";
-import type { MatchRow, Repo, TalkRow } from "./repo";
+import type { Repo } from "./repo";
 
 /** Repo over Drizzle. getDb() is called inside each method, so importing this
  *  module never needs DATABASE_URL. */
 export const dbRepo: Repo = {
-  async getTalk(id): Promise<TalkRow | null> {
+  async getTalk(id) {
     const rows = await getDb().select().from(talks).where(eq(talks.id, id)).limit(1);
     return rows[0] ?? null;
   },
@@ -21,7 +21,7 @@ export const dbRepo: Repo = {
     return getDb()
       .select()
       .from(talks)
-      .where(sql`${presenterId} = ANY(${talks.presenterIds})`)
+      .where(arrayContains(talks.presenterIds, [presenterId]))
       .orderBy(asc(talks.id));
   },
 
@@ -29,11 +29,11 @@ export const dbRepo: Repo = {
     const rows = await getDb()
       .select({ id: talks.id })
       .from(talks)
-      .where(sql`${presenterId} = ANY(${talks.authorIds})`);
+      .where(arrayContains(talks.authorIds, [presenterId]));
     return new Set(rows.map((r) => r.id));
   },
 
-  async getMatches(forTalkIds, engineId): Promise<MatchRow[]> {
+  async getMatches(forTalkIds, engineId) {
     if (forTalkIds.length === 0) return [];
     const rows = await getDb()
       .select()
@@ -46,7 +46,11 @@ export const dbRepo: Repo = {
           inArray(recommendations.forTalkId, forTalkIds),
         ),
       )
-      .orderBy(asc(recommendations.forTalkId), asc(recommendations.rank));
+      .orderBy(
+        asc(recommendations.forTalkId),
+        asc(recommendations.rank),
+        asc(recommendations.candidateId),
+      );
     return rows.map((row) => ({ ...row.recommendations, candidate: row.talks }));
   },
 };

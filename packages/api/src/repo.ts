@@ -8,10 +8,11 @@ export type MatchRow = RecRow & { candidate: TalkRow };
  *  Drizzle; memoryRepo implements it over arrays for tests. */
 export interface Repo {
   getTalk(id: number): Promise<TalkRow | null>;
+  /** Unique talks for the given ids, sorted by id. */
   getTalks(ids: number[]): Promise<TalkRow[]>;
   anchorsFor(presenterId: number): Promise<TalkRow[]>;
   authoredBy(presenterId: number): Promise<Set<number>>;
-  /** match=true rows of one engine for the given anchors, ordered by for_talk_id then rank. */
+  /** match=true rows of one engine for the given anchors, ordered by for_talk_id, rank, candidate_id. */
   getMatches(forTalkIds: number[], engineId: string): Promise<MatchRow[]>;
 }
 
@@ -20,7 +21,7 @@ export function memoryRepo(talkRows: TalkRow[], recRows: RecRow[]): Repo {
   return {
     getTalk: async (id) => byId.get(id) ?? null,
     getTalks: async (ids) =>
-      ids
+      [...new Set(ids)]
         .map((id) => byId.get(id))
         .filter((t): t is TalkRow => t !== undefined)
         .sort((a, b) => a.id - b.id),
@@ -31,7 +32,7 @@ export function memoryRepo(talkRows: TalkRow[], recRows: RecRow[]): Repo {
     getMatches: async (forTalkIds, engineId) =>
       recRows
         .filter((r) => r.engineId === engineId && r.match && forTalkIds.includes(r.forTalkId))
-        .sort((a, b) => a.forTalkId - b.forTalkId || a.rank - b.rank)
+        .sort((a, b) => a.forTalkId - b.forTalkId || a.rank - b.rank || a.candidateId - b.candidateId)
         .flatMap((r) => {
           const c = byId.get(r.candidateId);
           return c ? [{ ...r, candidate: c }] : [];
