@@ -113,6 +113,12 @@ describe("toSeedFile referential checks", () => {
     expect(() => toSeedFile({ ...ok, locations: [{ id: 1, building: "A", room: "1" }, { id: 1, building: "A", room: "2" }] })).toThrow(/locations\[1\]\.id.*duplicate/);
     expect(() => toSeedFile({ ...ok, recommendations: [ok.recommendations[0], ok.recommendations[0]] })).toThrow(/recommendations\[1\].*duplicate/);
   });
+  test("counts the remaining problems after the first", () => {
+    const two = { ...withTalks([0, 0]) }; // duplicate talk id 0 AND candidate 12772 missing
+    expect(() => toSeedFile(two)).toThrow(/\(\+1 more issue\)$/);
+    const three = { ...two, runs: [{ ...fixture("run"), run_id: "other-run" }] };
+    expect(() => toSeedFile(three)).toThrow(/\(\+2 more issues\)$/);
+  });
   test("accepts a seed whose references all resolve", () => {
     expect(toSeedFile(withTalks([0, 12772])).recommendations).toHaveLength(1);
   });

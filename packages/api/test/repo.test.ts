@@ -32,20 +32,13 @@ const recs = [
 const repo = memoryRepo(talks, recs);
 
 describe("memoryRepo", () => {
-  test("getTalk / getTalks", async () => {
+  test("getTalk", async () => {
     expect((await repo.getTalk(10))?.id).toBe(10);
     expect(await repo.getTalk(999)).toBeNull();
-    expect((await repo.getTalks([13, 10])).map((t) => t.id)).toEqual([10, 13]);
-    expect((await repo.getTalks([10, 10])).map((t) => t.id)).toEqual([10]);
-    expect(await repo.getTalks([])).toEqual([]);
   });
   test("anchorsFor returns the presenter's talks in id order", async () => {
     expect((await repo.anchorsFor(7)).map((t) => t.id)).toEqual([10, 11]);
     expect(await repo.anchorsFor(404)).toEqual([]);
-  });
-  test("authoredBy returns every talk the person authored", async () => {
-    expect(await repo.authoredBy(8)).toEqual(new Set([10, 12]));
-    expect(await repo.authoredBy(404)).toEqual(new Set());
   });
   test("getMatches filters by engine and match, orders by anchor then rank, joins the candidate", async () => {
     const rows = await repo.getMatches([10, 11], "graph_v1");

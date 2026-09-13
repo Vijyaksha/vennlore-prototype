@@ -23,6 +23,10 @@ describe("retryUnlessNotFound", () => {
     expect(retryUnlessNotFound(0, trpcError("NOT_FOUND"))).toBe(false);
   });
 
+  test("never retries BAD_REQUEST", () => {
+    expect(retryUnlessNotFound(0, trpcError("BAD_REQUEST"))).toBe(false);
+  });
+
   test("retries other errors once", () => {
     const error = trpcError("INTERNAL_SERVER_ERROR");
     expect(retryUnlessNotFound(0, error)).toBe(true);

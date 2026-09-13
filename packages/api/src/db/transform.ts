@@ -5,12 +5,10 @@ import {
   type Run, type Talk,
 } from "@repo/contracts";
 
-import type { locations, recommendations, runs, talks } from "./schema";
+import type { runs, talks } from "./schema";
 
 export type TalkInsert = typeof talks.$inferInsert;
-export type RecommendationInsert = typeof recommendations.$inferInsert;
 export type RunInsert = typeof runs.$inferInsert;
-export type LocationInsert = typeof locations.$inferInsert;
 
 const LocationSchema = z.strictObject({ id: z.int(), building: z.string().min(1), room: z.string().min(1) });
 
@@ -55,7 +53,9 @@ export function toSeedFile(value: unknown): SeedFile {
   if (!result.success) {
     const issue = result.error.issues[0]!;
     const where = issue.path.map((p, i) => (typeof p === "number" ? `[${p}]` : i ? `.${String(p)}` : String(p))).join("");
-    throw new Error(`seed file: ${where || "<root>"}: ${issue.message}`);
+    const rest = result.error.issues.length - 1;
+    const more = rest > 0 ? ` (+${rest} more issue${rest > 1 ? "s" : ""})` : "";
+    throw new Error(`seed file: ${where || "<root>"}: ${issue.message}${more}`);
   }
   return result.data;
 }
