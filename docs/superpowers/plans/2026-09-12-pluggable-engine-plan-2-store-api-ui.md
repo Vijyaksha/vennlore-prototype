@@ -34,6 +34,8 @@ Claude-Session: https://claude.ai/code/session_01GyR4M6ie2tftRPoSLdJdxY
 - **Task 6 review changes.** `trpc.ts` masks INTERNAL_SERVER_ERROR messages outside development, so database errors cannot leak SQL. Deliberate TRPCErrors keep their messages. The `Subject` branches are strict, so sending both `presenterId` and `talkId` is rejected. `engineId` reuses the contract's engine_id rule and is capped at 64 characters. Agenda items are slim (id, title, sessionTitle, start, end, building, room, transit, kind, units). A candidate's kind follows its highest-scoring match, and "mine" sorts first on equal start times. `ENGINE_ID` is declared in turbo.json. With no tRPC transformer, dates reach the client as ISO strings.
 - **Open spec question.** `presenter.picks` sends each recommendation row whole, including `evidence`, `engine_id`, `run_id` and `contract_version`. Spec §5.2 says the UI "never sees" those fields. Either reword §5.2 to "never renders", or strip the fields in picks. Decide in Plan 3.
 
+- **Task 7 review changes.** `packages/contracts` also uses extensionless imports and Bundler resolution. The web build pulls it in through the api router, and its emitted schemas stayed byte-identical. `subjectFromEnv` in `apps/web/lib/conference.ts` throws on a malformed presenter or anchor id, so a bad Vercel env var fails the build instead of showing someone else's picks. When both vars are valid, the presenter wins, with a warning outside production only. NOT_FOUND gets its own message with no retry. The route logs full errors only for INTERNAL_SERVER_ERROR. The anchor heading separator goes through next-intl. Still pre-existing: the `division · kind` badge in `pick-card.tsx` joins with a hardcoded separator.
+
 ## File structure (end state)
 
 ```
@@ -819,14 +821,14 @@ git commit -m "feat(api): presenter-based picks and agenda over the contract sto
 **Files:**
 - Modify: `apps/web/app/api/trpc/[trpc]/route.ts` (use `createContext` from `@repo/api`), `apps/web/lib/conference.ts` (replace `ANCHOR_TALK_ID`/`SCORE_MAX` with `SUBJECT`), `apps/web/app/page.tsx`, `apps/web/app/calendar/page.tsx`, `apps/web/components/pick-card.tsx`, `apps/web/components/pick-rail.tsx`, `apps/web/messages/en.json`, `apps/web/test/components/pick-rail.test.tsx`, `apps/web/e2e/kindred.e2e.ts`, `apps/web/.env.example` (new, documents `NEXT_PUBLIC_PRESENTER_ID`, `NEXT_PUBLIC_ANCHOR_TALK_ID`, `ENGINE_ID`, `DATABASE_URL`)
 
-- [ ] **Step 1: Failing component tests** (edit `pick-rail.test.tsx`):
+- [x] **Step 1: Failing component tests** (edit `pick-rail.test.tsx`):
   - score renders as a percentage: a pick with `score: 0.8` shows `80%` (message `"score": "{score, number, percent}"`); the `11/15` assertion goes away.
   - shared-method chips: a pick with `sharedMethods: ["transient photocurrent", "self-assembly"]` renders both as chips (`getByText("transient photocurrent")`).
   - anchor chip only for multi-anchor presenters: with `anchors` of length 2, each card shows `for your talk on …` (message `"forTalk": "for your talk on {title}"`) truncated title; with one anchor no chip.
   - merged rail keeps the best score per candidate when the same candidate appears under two anchors.
   - existing caps (2 core / 3 unexpected), empty slots, dots and Denver time tests remain.
 
-- [ ] **Step 2: Implement**
+- [x] **Step 2: Implement**
   - `lib/conference.ts`: `export const SUBJECT = process.env.NEXT_PUBLIC_PRESENTER_ID ? { presenterId: Number(process.env.NEXT_PUBLIC_PRESENTER_ID) } : { talkId: Number(process.env.NEXT_PUBLIC_ANCHOR_TALK_ID ?? "0") };` Remove `ANCHOR_TALK_ID` and `SCORE_MAX`.
   - `Pick` type: `candidateId, forTalkId, title, sessionTitle, units, start, score (0–1), crossDomain, why, sharedMethods: string[]`. `PickRail` props: `{ anchors: { id: number; title: string }[]; recommendations: Pick[] }`; it dedupes by `candidateId` keeping max score, splits core/unexpected by `crossDomain`, applies the caps, sorts by score desc then id, shows the honest empty slot rule as today. `PickCard` renders the percent score, chips (`Badge` variant outline, `font-mono text-[10.5px]`), and the anchor chip when `anchors.length > 1` (title from the anchors array by `forTalkId`).
   - `app/page.tsx`: `trpc.presenter.picks.useQuery(SUBJECT)`; heading = anchors' titles joined by " · " when several; pass `anchors` and `recommendations` to the rail.
@@ -836,7 +838,7 @@ git commit -m "feat(api): presenter-based picks and agenda over the contract sto
 
 Run: `npm run test --workspace=web && npm run check-types && npm run lint && npm run build --workspace=web` → green.
 
-- [ ] **Step 3: Commit**
+- [x] **Step 3: Commit**
 
 ```bash
 git add apps/web
