@@ -22,6 +22,10 @@ Co-Authored-By: Claude Fable 5.1 <noreply@anthropic.com>
 
 ---
 
+## Execution notes (2026-09-13)
+
+- **Task 1 review changes.** `Talk` carries `.meta({ id: "Talk" })`, so the emitted picks_response schema references one `$defs.Talk` instead of inlining it twice. `Recommendation` has the same id but still inlines inside `Pick`, because zod's `.extend()` builds a new object without the id; a test pins that. `AgendaDay` is titled and its `date` is `z.iso.date()`. Invalid fixtures exist for `subject` (both ids) and `picks_response` (missing candidate); the Python invalid-fixture test skips kinds outside its row `KINDS`, since Python validates rows only. Field-count guards: Pick 14, AgendaItem 10.
+
 ## File structure (end state)
 
 ```
@@ -76,7 +80,7 @@ compose.yaml                     # NEW: local throwaway Postgres
 - Modify: `packages/contracts/src/schemas.ts`, `packages/contracts/src/index.ts`, `packages/contracts/test/schemas.test.ts`
 - Generated: `packages/contracts/schema/{subject,picks_response,agenda_response}.schema.json`
 
-- [ ] **Step 1: Failing tests**
+- [x] **Step 1: Failing tests**
 
 Append to `packages/contracts/test/schemas.test.ts`:
 
@@ -156,12 +160,12 @@ fs.writeFileSync("fixtures/valid/picks_response.json", JSON.stringify(out, null,
 }
 ```
 
-- [ ] **Step 2: Run to verify failure**
+- [x] **Step 2: Run to verify failure**
 
 Run: `npm run test --workspace=@repo/contracts`
 Expected: FAIL. The new `describe("api schemas")` fails on missing exports; "valid fixtures parse" does not yet see the new kinds.
 
-- [ ] **Step 3: Implement `src/api.ts`**
+- [x] **Step 3: Implement `src/api.ts`**
 
 ```ts
 import { z } from "zod";
@@ -269,7 +273,7 @@ export {
 } from "./api";
 ```
 
-- [ ] **Step 4: Emit, run tests, lint, types**
+- [x] **Step 4: Emit, run tests, lint, types**
 
 Run: `npm run emit --workspace=@repo/contracts` → prints `emitted talk, recommendation, run, subject, picks_response, agenda_response` (update the `console.log` in `scripts/emit.ts` to print `Object.keys(emitAll()).join(", ")` instead of the hardcoded list). Open `schema/subject.schema.json` and confirm it is an `anyOf` of two objects with `additionalProperties: false`. Open `schema/picks_response.schema.json` and confirm the recommendation item has 14 required keys (13 + `candidate`).
 
@@ -278,7 +282,7 @@ Expected: all green; test count rises from 12 to 12 + 3 (api) + 3 (valid fixture
 
 Run: `cd pipeline && uv run pytest -q tests/core/test_contracts.py` → still 7 passed (Python `KINDS` is unchanged and ignores the new files).
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add packages/contracts
