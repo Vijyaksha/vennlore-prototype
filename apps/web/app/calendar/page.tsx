@@ -16,6 +16,7 @@ import {
   SUBJECT,
   TIME_ZONE,
 } from "@/lib/conference";
+import { isNotFound, retryUnlessNotFound } from "@/lib/query-errors";
 import { trpc } from "@/lib/trpc";
 
 function CalendarSkeleton() {
@@ -41,7 +42,9 @@ function CalendarScreen() {
   const format = useFormatter();
   const searchParams = useSearchParams();
 
-  const agenda = trpc.presenter.agenda.useQuery(SUBJECT);
+  const agenda = trpc.presenter.agenda.useQuery(SUBJECT, {
+    retry: retryUnlessNotFound,
+  });
 
   const paramIndex = (CONFERENCE_DAYS as readonly string[]).indexOf(
     searchParams.get("date") ?? "",
@@ -51,7 +54,12 @@ function CalendarScreen() {
   );
 
   if (agenda.isError) {
-    return <ErrorState onRetry={() => void agenda.refetch()} />;
+    return (
+      <ErrorState
+        notFound={isNotFound(agenda.error)}
+        onRetry={() => void agenda.refetch()}
+      />
+    );
   }
 
   if (agenda.isPending) {

@@ -9,49 +9,63 @@ export const TIME_ZONE = "America/Denver";
 export type Subject = { presenterId: number } | { talkId: number };
 
 // The claimed anchor talk (the porphyrin-nanorod photoconductivity paper),
-// seeded as talk id 0. Used when no subject is configured or a value is bad.
+// seeded as talk id 0. Used when no subject is configured.
 const DEFAULT_SUBJECT: Subject = { talkId: 0 };
 
-/** Parses a non-negative integer id, or null when the value is malformed. */
-function parseId(raw: string): number | null {
-  const trimmed = raw.trim();
-  if (!/^\d+$/.test(trimmed)) return null;
-  const id = Number(trimmed);
-  return Number.isSafeInteger(id) ? id : null;
+/** The trimmed value, or null when the variable is unset or blank. */
+function setValue(raw: string | undefined): string | null {
+  const trimmed = raw?.trim() ?? "";
+  return trimmed === "" ? null : trimmed;
 }
 
+/** Parses a set value as an integer id of at least `min`, or throws naming the variable. */
+function parseId(name: string, raw: string, value: string, min: number): number {
+  const id = /^\d+$/.test(value) ? Number(value) : NaN;
+  if (!Number.isSafeInteger(id) || id < min) {
+    throw new Error(
+      `${name}=${JSON.stringify(raw)} is not an integer >= ${min}. Fix or unset it.`,
+    );
+  }
+  return id;
+}
+
+// Console noise only helps while developing; production visitors never see it.
+const devWarn = (message: string) => {
+  // Set by Next itself, not a build input we choose, so it stays out of turbo's hash.
+  // eslint-disable-next-line turbo/no-undeclared-env-vars
+  if (process.env.NODE_ENV !== "production") console.warn(message);
+};
+
 /**
- * Builds the subject from the public env. A presenter id wins over an anchor
- * talk id; when both are set, the ignored one is reported through `warn`.
- * A malformed value is reported and treated as unset, so nothing valid
- * configured means the default anchor talk.
+ * Builds the subject from the public env. Unset or blank values count as
+ * unset. A set but malformed value throws, so a bad deploy fails at build
+ * (prerender) instead of silently showing someone else's picks. A presenter
+ * id wins over an anchor talk id; when both are set, `warn` reports it.
  */
 export function subjectFromEnv(
   env: { presenterId?: string; anchorTalkId?: string },
-  warn: (message: string) => void = console.warn,
+  warn: (message: string) => void = devWarn,
 ): Subject {
-  if (env.presenterId !== undefined) {
-    const presenterId = parseId(env.presenterId);
-    if (presenterId !== null && presenterId >= 1) {
-      if (env.anchorTalkId !== undefined) {
-        warn(
-          `Both NEXT_PUBLIC_PRESENTER_ID and NEXT_PUBLIC_ANCHOR_TALK_ID are set; NEXT_PUBLIC_ANCHOR_TALK_ID is ignored and presenter ${presenterId} is used.`,
-        );
-      }
-      return { presenterId };
+  const presenterValue = setValue(env.presenterId);
+  const talkValue = setValue(env.anchorTalkId);
+  const presenterId =
+    presenterValue === null
+      ? null
+      : parseId("NEXT_PUBLIC_PRESENTER_ID", env.presenterId!, presenterValue, 1);
+  const talkId =
+    talkValue === null
+      ? null
+      : parseId("NEXT_PUBLIC_ANCHOR_TALK_ID", env.anchorTalkId!, talkValue, 0);
+
+  if (presenterId !== null) {
+    if (talkId !== null) {
+      warn(
+        `Both NEXT_PUBLIC_PRESENTER_ID and NEXT_PUBLIC_ANCHOR_TALK_ID are set; NEXT_PUBLIC_ANCHOR_TALK_ID is ignored and presenter ${presenterId} is used.`,
+      );
     }
-    warn(
-      `NEXT_PUBLIC_PRESENTER_ID=${JSON.stringify(env.presenterId)} is not a positive integer; ignoring it.`,
-    );
+    return { presenterId };
   }
-  if (env.anchorTalkId !== undefined) {
-    const talkId = parseId(env.anchorTalkId);
-    if (talkId !== null) return { talkId };
-    warn(
-      `NEXT_PUBLIC_ANCHOR_TALK_ID=${JSON.stringify(env.anchorTalkId)} is not a non-negative integer; using the default anchor talk.`,
-    );
-  }
-  return DEFAULT_SUBJECT;
+  return talkId !== null ? { talkId } : DEFAULT_SUBJECT;
 }
 
 // Direct process.env.NEXT_PUBLIC_* references so Next inlines them at build.

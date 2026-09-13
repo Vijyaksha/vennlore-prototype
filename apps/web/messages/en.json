@@ -2,6 +2,7 @@
   "common": {
     "error": "Something went wrong loading this.",
     "retry": "Try again",
+    "notFound": "We couldn't find this presenter or talk.",
     "loading": "Loading"
   },
   "picks": {
@@ -16,7 +17,7 @@
     "calendar": "Calendar",
     "noSecondCore": "No second core match cleared the bar.",
     "noCore": "No core match cleared the bar.",
-    "noMatches": "No matches cleared the bar for this talk.",
+    "noMatches": "No matches cleared the bar for {count, plural, one {this talk} other {your talks}}.",
     "railLabel": "Recommended talks"
   },
   "agenda": {

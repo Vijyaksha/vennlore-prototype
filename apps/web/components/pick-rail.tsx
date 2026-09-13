@@ -50,7 +50,7 @@ export function PickRail({ anchors, recommendations }: PickRailProps) {
   if (picks.length === 0) {
     return (
       <div className="mx-5 my-7 rounded-lg border border-dashed border-border px-4 py-9 text-center text-[13.5px] text-faint">
-        {t("noMatches")}
+        {t("noMatches", { count: anchors.length })}
       </div>
     );
   }

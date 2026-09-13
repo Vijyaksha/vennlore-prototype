@@ -9,14 +9,22 @@ import { ErrorState } from "@/components/error-state";
 import type { Pick } from "@/components/pick-card";
 import { PickRail } from "@/components/pick-rail";
 import { SUBJECT } from "@/lib/conference";
+import { isNotFound, retryUnlessNotFound } from "@/lib/query-errors";
 import { trpc } from "@/lib/trpc";
 
 export default function PicksPage() {
   const t = useTranslations("common");
-  const picks = trpc.presenter.picks.useQuery(SUBJECT);
+  const picks = trpc.presenter.picks.useQuery(SUBJECT, {
+    retry: retryUnlessNotFound,
+  });
 
   if (picks.isError) {
-    return <ErrorState onRetry={() => void picks.refetch()} />;
+    return (
+      <ErrorState
+        notFound={isNotFound(picks.error)}
+        onRetry={() => void picks.refetch()}
+      />
+    );
   }
 
   if (picks.isPending) {

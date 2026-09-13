@@ -1,6 +1,6 @@
 // @vitest-environment jsdom
 import "@testing-library/jest-dom/vitest";
-import { screen } from "@testing-library/react";
+import { screen, within } from "@testing-library/react";
 import { describe, expect, test } from "vitest";
 
 import type { Pick } from "../../components/pick-card";
@@ -157,9 +157,8 @@ describe("PickRail", () => {
     );
 
     const group = screen.getByRole("group", { name: "Shared methods" });
-    expect(group).toHaveTextContent("transient photocurrent");
-    expect(screen.getByText("transient photocurrent")).toBeInTheDocument();
-    expect(screen.getByText("self-assembly")).toBeInTheDocument();
+    expect(within(group).getByText("transient photocurrent")).toBeInTheDocument();
+    expect(within(group).getByText("self-assembly")).toBeInTheDocument();
   });
 
   test("omits the shared-method group when there are none", () => {
@@ -183,13 +182,18 @@ describe("PickRail", () => {
       />,
     );
 
-    const first = screen.getByText("for your talk on Porphyrin nanorods");
-    expect(first).toHaveClass("truncate");
+    expect(
+      screen.getByText("for your talk on Porphyrin nanorods"),
+    ).toBeInTheDocument();
+    // The chip may be visually truncated; the full title stays reachable.
     expect(
       screen.getByText(
         "for your talk on Ultrafast carrier dynamics in perovskite films",
       ),
-    ).toBeInTheDocument();
+    ).toHaveAttribute(
+      "title",
+      "Ultrafast carrier dynamics in perovskite films",
+    );
   });
 
   test("merges a candidate matched under two anchors, keeping its best score", () => {
@@ -211,5 +215,41 @@ describe("PickRail", () => {
         "for your talk on Ultrafast carrier dynamics in perovskite films",
       ),
     ).toBeInTheDocument();
+  });
+
+  test("a multi-anchor presenter with no matches reads in the plural", () => {
+    renderWithIntl(<Rail anchors={TWO_ANCHORS} />);
+
+    expect(
+      screen.getByText("No matches cleared the bar for your talks."),
+    ).toBeInTheDocument();
+  });
+
+  test("equal scores under two anchors keep the first match", () => {
+    renderWithIntl(
+      <Rail
+        anchors={TWO_ANCHORS}
+        unexpected={[
+          pick({ candidateId: 5, forTalkId: 0, score: 0.5 }),
+          pick({ candidateId: 5, forTalkId: 1, score: 0.5 }),
+        ]}
+      />,
+    );
+
+    expect(screen.getAllByText("Pick 5")).toHaveLength(1);
+    expect(
+      screen.getByText("for your talk on Porphyrin nanorods"),
+    ).toBeInTheDocument();
+    expect(screen.queryByText(/perovskite films/)).toBeNull();
+  });
+
+  test.each([
+    [0, "0%"],
+    [1, "100%"],
+    [0.005, "1%"],
+  ])("score %s renders as %s", (score, text) => {
+    renderWithIntl(<Rail core={[core(1, score)]} />);
+
+    expect(screen.getByText(text)).toBeInTheDocument();
   });
 });

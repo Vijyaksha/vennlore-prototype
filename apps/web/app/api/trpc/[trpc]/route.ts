@@ -8,9 +8,14 @@ const handler = (req: Request) =>
     req,
     router: appRouter,
     createContext,
-    // Clients see masked internal errors; the server log keeps the real one.
+    // Clients see masked internal errors, so the server log keeps the real
+    // one. Expected codes (NOT_FOUND, BAD_REQUEST, ...) get a single line.
     onError({ path, error }) {
-      console.error(`tRPC error on ${path ?? "<no-path>"}:`, error);
+      if (error.code === "INTERNAL_SERVER_ERROR") {
+        console.error(`tRPC ${error.code} on ${path ?? "<no-path>"}:`, error);
+      } else {
+        console.error(`${error.code} ${path ?? "<no-path>"}`);
+      }
     },
   });
 
