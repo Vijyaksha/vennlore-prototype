@@ -26,6 +26,16 @@
         "^check-types"
       ]
     },
+    "test": {
+      "dependsOn": [
+        "^build"
+      ],
+      "inputs": [
+        "$TURBO_DEFAULT$",
+        "fixtures/**",
+        "schema/**"
+      ]
+    },
     "dev": {
       "cache": false,
       "persistent": true

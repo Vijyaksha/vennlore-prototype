@@ -2,33 +2,37 @@ import { readdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import { describe, expect, test } from "vitest";
 
-import { RecommendationSchema, RunSchema, TalkSchema } from "../src/index.js";
-import { emitAll } from "../scripts/emit.js";
+import { RecommendationSchema, SCHEMAS, TalkSchema, emitAll } from "../src/index.js";
 
 const ROOT = join(import.meta.dirname, "..");
 const read = (p: string) => JSON.parse(readFileSync(join(ROOT, p), "utf8"));
 
-const BY_KIND = {
-  talk: TalkSchema,
-  recommendation: RecommendationSchema,
-  run: RunSchema,
-} as const;
-
 describe("valid fixtures parse", () => {
-  for (const kind of Object.keys(BY_KIND) as (keyof typeof BY_KIND)[]) {
+  for (const kind of Object.keys(SCHEMAS) as (keyof typeof SCHEMAS)[]) {
     test(kind, () => {
       const row = read(`fixtures/valid/${kind}.json`);
-      expect(BY_KIND[kind].safeParse(row).success).toBe(true);
+      expect(SCHEMAS[kind].safeParse(row).success).toBe(true);
     });
   }
 });
 
+const EXPECTED_PATH: Record<string, string> = {
+  "recommendation-score-out-of-range.json": "score",
+  "recommendation-unknown-key.json": "same_method",
+  "talk-missing-title.json": "title",
+};
+
 describe("invalid fixtures are rejected", () => {
   for (const file of readdirSync(join(ROOT, "fixtures/invalid"))) {
     test(file, () => {
-      const kind = file.split("-")[0] as keyof typeof BY_KIND;
+      const kind = file.split("-")[0] as keyof typeof SCHEMAS;
       const row = read(`fixtures/invalid/${file}`);
-      expect(BY_KIND[kind].safeParse(row).success).toBe(false);
+      const result = SCHEMAS[kind].safeParse(row);
+      expect(result.success).toBe(false);
+      const issues = result.error!.issues;
+      const paths = issues.map((i) => i.path.join("."));
+      const keys = issues.flatMap((i) => ("keys" in i ? i.keys : []));
+      expect([...paths, ...keys]).toContain(EXPECTED_PATH[file]);
     });
   }
 });
@@ -39,6 +43,14 @@ describe("committed JSON Schema matches the zod source", () => {
       expect(read(`schema/${kind}.schema.json`)).toEqual(schema);
     });
   }
+});
+
+test("every committed schema file has an emitter entry and vice versa", () => {
+  expect(readdirSync(join(ROOT, "schema")).sort()).toEqual(
+    Object.keys(emitAll())
+      .map((k) => `${k}.schema.json`)
+      .sort(),
+  );
 });
 
 test("talk has exactly 25 fields", () => {
