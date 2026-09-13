@@ -1,34 +1,52 @@
-import { and, asc, desc, eq } from "drizzle-orm";
+import { and, asc, eq, inArray, sql } from "drizzle-orm";
 
 import { getDb } from "./db/index";
 import { recommendations, talks } from "./db/schema";
+import type { MatchRow, Repo, TalkRow } from "./repo";
 
-export type TalkRow = typeof talks.$inferSelect;
-export type RecRow = typeof recommendations.$inferSelect;
-
-export interface Repo {
-  getTalk(id: number): Promise<TalkRow | null>;
-  getMatches(forTalkId: number): Promise<(RecRow & { talk: TalkRow })[]>;
-}
-
+/** Repo over Drizzle. getDb() is called inside each method, so importing this
+ *  module never needs DATABASE_URL. */
 export const dbRepo: Repo = {
-  async getTalk(id) {
+  async getTalk(id): Promise<TalkRow | null> {
     const rows = await getDb().select().from(talks).where(eq(talks.id, id)).limit(1);
     return rows[0] ?? null;
   },
 
-  async getMatches(forTalkId) {
+  async getTalks(ids) {
+    if (ids.length === 0) return [];
+    return getDb().select().from(talks).where(inArray(talks.id, ids)).orderBy(asc(talks.id));
+  },
+
+  async anchorsFor(presenterId) {
+    return getDb()
+      .select()
+      .from(talks)
+      .where(sql`${presenterId} = ANY(${talks.presenterIds})`)
+      .orderBy(asc(talks.id));
+  },
+
+  async authoredBy(presenterId) {
+    const rows = await getDb()
+      .select({ id: talks.id })
+      .from(talks)
+      .where(sql`${presenterId} = ANY(${talks.authorIds})`);
+    return new Set(rows.map((r) => r.id));
+  },
+
+  async getMatches(forTalkIds, engineId): Promise<MatchRow[]> {
+    if (forTalkIds.length === 0) return [];
     const rows = await getDb()
       .select()
       .from(recommendations)
       .innerJoin(talks, eq(recommendations.candidateId, talks.id))
       .where(
         and(
-          eq(recommendations.forTalkId, forTalkId),
+          eq(recommendations.engineId, engineId),
           eq(recommendations.match, true),
+          inArray(recommendations.forTalkId, forTalkIds),
         ),
       )
-      .orderBy(desc(recommendations.score), asc(recommendations.candidateId));
-    return rows.map((row) => ({ ...row.recommendations, talk: row.talks }));
+      .orderBy(asc(recommendations.forTalkId), asc(recommendations.rank));
+    return rows.map((row) => ({ ...row.recommendations, candidate: row.talks }));
   },
 };

@@ -1,6 +1,6 @@
 import { initTRPC } from "@trpc/server";
 
-import type { Repo } from "./repo.db";
+import type { Repo } from "./repo";
 
 export interface Context {
   repo: Repo;
