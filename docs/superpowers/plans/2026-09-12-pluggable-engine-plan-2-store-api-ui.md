@@ -854,9 +854,9 @@ git commit -m "feat(web): Kindred reads presenter.picks/agenda; percent score, s
 - Delete: `pipeline/src/gps_data/legacy_seed.py`, `pipeline/tests/data/test_legacy_seed.py`
 - Modify: `pipeline/tests/data/test_datasets.py` only if it imported from legacy_seed (it should not)
 
-- [ ] **Step 1:** `grep -rn "legacy_seed\|app_seed.json\b" pipeline/ apps/ packages/` → list every reference; remove them. `git rm` the two files. In `export_app_seed.py` drop the legacy write and the import.
-- [ ] **Step 2:** `cd pipeline && uv run pytest -q` → green (count drops by the deleted tests). `grep -rn "build_talk_row\|build_seed" pipeline` → nothing.
-- [ ] **Step 3:** Commit: `git add -A pipeline/src/gps_data pipeline/tests/data pipeline/scripts/export_app_seed.py pipeline/README.md && git commit -m "chore(pipeline): remove the legacy seed shape; the contract seed is the only output"`
+- [x] **Step 1:** `grep -rn "legacy_seed\|app_seed.json\b" pipeline/ apps/ packages/` → list every reference; remove them. `git rm` the two files. In `export_app_seed.py` drop the legacy write and the import.
+- [x] **Step 2:** `cd pipeline && uv run pytest -q` → green (count drops by the deleted tests). `grep -rn "build_talk_row\|build_seed" pipeline` → nothing.
+- [x] **Step 3:** Commit: `git add -A pipeline/src/gps_data pipeline/tests/data pipeline/scripts/export_app_seed.py pipeline/README.md && git commit -m "chore(pipeline): remove the legacy seed shape; the contract seed is the only output"`
 
 ---
 
