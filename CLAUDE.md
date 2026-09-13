@@ -4,6 +4,7 @@
 - Every experiment or long-running shell must checkpoint incrementally: if stopped at any point, all work completed up to that moment stays saved on disk and a rerun resumes rather than restarts.
 - ALL code is written with the superpowers:test-driven-development skill (invoke it BEFORE writing any code): failing test first, watch it fail, minimal code to green, refactor. No production code without a failing test first — code written before its test gets deleted and rebuilt with the tests. Running the resulting tests is always allowed; running experiments/downloads still requires Rupert's go.
 - Census work (conference market sizing) is governed by `docs/business/census-methodology.md` and the per-field notes in `docs/business/field-notes/`. Start by reading `docs/business/HANDOFF.md`, which says where the last session stopped.
+- Only when the model is Fable 5.1: when it will not affect the end result, surgically edit a file (targeted Edit of the changed lines) rather than rewriting the entire file.
 - This file contains only these rules and nothing else. Never add experiment progress, project status, or notes to it.
 
 ## Required stack — agents MUST use these tools
