@@ -157,7 +157,7 @@ git commit -m "refactor(api): move data layer, router and walking engine into pa
 - Modify: `packages/api/src/db/schema.ts`
 - Create: `packages/api/drizzle/0001_*.sql` + `meta/0001_snapshot.json` (generated), `packages/api/test/schema.test.ts`
 
-- [ ] **Step 1: Failing test — column names equal contract keys**
+- [x] **Step 1: Failing test — column names equal contract keys**
 
 `packages/api/test/schema.test.ts`:
 
@@ -187,7 +187,7 @@ describe("store schema is derived from the contract", () => {
 
 Run: `npm run test --workspace=@repo/api -- test/schema.test.ts` → FAIL (`runs` not exported; talks has 9 columns).
 
-- [ ] **Step 2: Rewrite `schema.ts`**
+- [x] **Step 2: Rewrite `schema.ts`**
 
 ```ts
 import { sql } from "drizzle-orm";
@@ -272,13 +272,13 @@ export const locations = pgTable("locations", {
 
 Note the column rename `is_match` → `match` (contract name). The old `same_method/specificity/usage_parallel` columns are dropped; they live in `evidence`.
 
-- [ ] **Step 3: Generate the migration and run tests**
+- [x] **Step 3: Generate the migration and run tests**
 
 Run: `cd packages/api && npx drizzle-kit generate --name contract_v1` → writes `drizzle/0001_contract_v1.sql` and updates `meta/`. Open the SQL and confirm: `ALTER TABLE "talks" ADD COLUMN` ×16, `recommendations` drops the three sub-score columns, renames/recreates the PK to `(engine_id, for_talk_id, candidate_id)`, adds `rank`, `shared_methods`, `evidence`, `run_id`, `contract_version`, converts `score` to `real`; `CREATE TABLE "runs"`. If drizzle-kit asks interactively whether `is_match` was renamed to `match`, answer rename. (Data note: the live table holds only the 18 legacy rows for anchor 0; they will be reseeded from v2 in Task 9, so a destructive PK change is acceptable.)
 
 Run: `npm run test --workspace=@repo/api` → schema tests pass; the OLD transform and router tests now FAIL to type-check (expected; fixed in Tasks 3 and 6). To keep the commit green, run only `-- test/schema.test.ts test/walk.test.ts` here and note the rest are red until Task 6.
 
-- [ ] **Step 4: Commit**
+- [x] **Step 4: Commit**
 
 ```bash
 git add packages/api/src/db/schema.ts packages/api/drizzle packages/api/test/schema.test.ts

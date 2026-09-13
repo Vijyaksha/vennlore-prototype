@@ -12,6 +12,8 @@ CREATE TABLE "runs" (
 	"contract_version" integer NOT NULL
 );
 --> statement-breakpoint
+-- Intentional data reset: the 18 legacy rows predate the contract and are reseeded from app_seed.v2.json.
+-- Required because engine_id/rank/run_id/contract_version are added NOT NULL with no default.
 DELETE FROM "recommendations";--> statement-breakpoint
 ALTER TABLE "recommendations" RENAME COLUMN "is_match" TO "match";--> statement-breakpoint
 ALTER TABLE "recommendations" DROP CONSTRAINT "recommendations_for_talk_id_candidate_id_pk";--> statement-breakpoint
