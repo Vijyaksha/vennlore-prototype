@@ -15,7 +15,18 @@ export function createContext(): Context {
   return { repo: dbRepo, engineId: process.env.ENGINE_ID ?? "graph_v1" };
 }
 
-const t = initTRPC.context<Context>().create();
+const t = initTRPC.context<Context>().create({
+  // Unexpected errors (e.g. Drizzle "Failed query: <sql> params: ...") must not
+  // reach clients outside development. Deliberate TRPCErrors keep their message.
+  errorFormatter({ shape, error }) {
+    // Runtime switch only, not a build input, so it stays out of turbo's hash.
+    // eslint-disable-next-line turbo/no-undeclared-env-vars
+    if (error.code !== "INTERNAL_SERVER_ERROR" || process.env.NODE_ENV === "development") return shape;
+    const data = { ...shape.data };
+    delete data.stack;
+    return { ...shape, message: "Internal server error", data };
+  },
+});
 
 export const router = t.router;
 export const publicProcedure = t.procedure;

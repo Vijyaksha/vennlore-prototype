@@ -1,4 +1,5 @@
 import { TRPCError } from "@trpc/server";
+import { RecommendationSchema } from "@repo/contracts";
 import { z } from "zod";
 
 import { groupByDenverDay } from "./agenda";
@@ -6,9 +7,10 @@ import type { MatchRow, Repo, TalkRow } from "./repo";
 import { publicProcedure, router } from "./trpc";
 
 /** Who the picks are for: a presenter (all their talks are anchors) or one talk. */
+const EngineId = RecommendationSchema.shape.engine_id.max(64);
 const Subject = z.union([
-  z.object({ presenterId: z.int().min(1), engineId: z.string().optional() }),
-  z.object({ talkId: z.int().min(0), engineId: z.string().optional() }),
+  z.strictObject({ presenterId: z.int().min(1), engineId: EngineId.optional() }),
+  z.strictObject({ talkId: z.int().min(0), engineId: EngineId.optional() }),
 ]);
 type Subject = z.infer<typeof Subject>;
 
@@ -65,12 +67,19 @@ export const appRouter = router({
         anchors.map((a) => a.id),
         input.engineId ?? ctx.engineId,
       );
-      // A candidate matched under several anchors keeps the last kind written;
-      // a presenter's own talk is always "mine".
+      // A candidate matched under several anchors takes its kind from its
+      // best-scoring match (first in getMatches order on ties), agreeing with the
+      // merged picks rail; a presenter's own talk is always "mine".
+      const best = new Map<number, MatchRow>();
+      for (const m of matches) {
+        const prev = best.get(m.candidateId);
+        if (prev === undefined || m.score > prev.score) best.set(m.candidateId, m);
+      }
       const entries = new Map<number, ReturnType<typeof agendaEntry>>();
-      for (const m of matches) entries.set(m.candidateId, agendaEntry(m.candidate, m.crossDomain ? "surprise" : "core"));
+      for (const m of best.values()) entries.set(m.candidateId, agendaEntry(m.candidate, m.crossDomain ? "surprise" : "core"));
       for (const a of anchors) entries.set(a.id, agendaEntry(a, "mine"));
-      return { presenterId, days: groupByDenverDay([...entries.values()]) };
+      const mineFirst = (a: { kind: AgendaKind }, b: { kind: AgendaKind }) => Number(b.kind === "mine") - Number(a.kind === "mine");
+      return { presenterId, days: groupByDenverDay([...entries.values()], mineFirst) };
     }),
   }),
 });

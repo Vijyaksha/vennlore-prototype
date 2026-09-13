@@ -21,13 +21,16 @@ const denverDate = new Intl.DateTimeFormat("en-CA", {
   day: "2-digit",
 });
 
-/** Drops untimed items, sorts by start, groups by conference-local (Denver) date
- *  and annotates each item after the first with walk time and slack. Extra
- *  fields on the input items are carried through unchanged. */
-export function groupByDenverDay<T extends AgendaInput>(items: T[]): { date: string; items: AgendaItem<T>[] }[] {
+/** Drops untimed items, sorts by start (then `tiebreak`, then id), groups by
+ *  conference-local (Denver) date and annotates each item after the first with
+ *  walk time and slack. Extra fields on the input items are carried through. */
+export function groupByDenverDay<T extends AgendaInput>(
+  items: T[],
+  tiebreak: (a: T, b: T) => number = () => 0,
+): { date: string; items: AgendaItem<T>[] }[] {
   const timed = items
     .filter((t): t is T & { start: Date } => t.start !== null)
-    .sort((a, b) => a.start.getTime() - b.start.getTime());
+    .sort((a, b) => a.start.getTime() - b.start.getTime() || tiebreak(a, b) || a.id - b.id);
   const byDate = new Map<string, AgendaItem<T>[]>();
   for (const t of timed) {
     const date = denverDate.format(t.start);

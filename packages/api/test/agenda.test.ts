@@ -19,3 +19,15 @@ describe("groupByDenverDay", () => {
     expect(days[1]?.items[1]?.transit).toEqual({ walk: 15, slack: 21, tight: false });
   });
 });
+
+describe("groupByDenverDay ordering on equal start", () => {
+  const at = "2026-03-19T15:12:00Z";
+  test("breaks ties by id by default", () => {
+    const days = groupByDenverDay([item(9, at, null), item(3, at, null)]);
+    expect(days[0]?.items.map((i) => i.id)).toEqual([3, 9]);
+  });
+  test("applies a caller tiebreak before id", () => {
+    const days = groupByDenverDay([item(3, at, null), item(9, at, null), item(1, at, null)], (a, b) => Number(b.id === 9) - Number(a.id === 9));
+    expect(days[0]?.items.map((i) => i.id)).toEqual([9, 1, 3]);
+  });
+});

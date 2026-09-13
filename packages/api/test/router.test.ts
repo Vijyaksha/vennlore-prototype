@@ -1,8 +1,9 @@
-import { describe, expect, test } from "vitest";
+import { fetchRequestHandler } from "@trpc/server/adapters/fetch";
+import { afterEach, describe, expect, test, vi } from "vitest";
 
 import { appRouter } from "../src/router";
-import { createCallerFactory } from "../src/trpc";
-import { memoryRepo, type RecRow, type TalkRow } from "../src/repo";
+import { createCallerFactory, createContext } from "../src/trpc";
+import { memoryRepo, type Repo, type RecRow, type TalkRow } from "../src/repo";
 
 const talk = (o: Partial<TalkRow> & { id: number }): TalkRow => ({
   externalId: null, title: `Talk ${o.id}`, abstract: "", units: [], topics: [], type: null,
@@ -27,8 +28,13 @@ const repo = memoryRepo([anchor, mine1, mine2, bluebird, hall], [
   rec(10, 2802, { rank: 1, score: 0.9 }), rec(11, 12342, { rank: 1, score: 0.7, crossDomain: true }),
   rec(10, 12342, { rank: 2, score: 0.3, match: false }),
   rec(0, 2802, { engineId: "other", rank: 1, score: 0.1 }),
+  rec(11, 10, { rank: 1, score: 0.6 }),
 ]);
-const call = (engineId = "graph_v1") => createCallerFactory(appRouter)({ repo, engineId });
+const call = (engineId = "graph_v1", r: Repo = repo) => createCallerFactory(appRouter)({ repo: r, engineId });
+
+afterEach(() => {
+  vi.unstubAllEnvs();
+});
 
 describe("talk.get", () => {
   test("returns the talk or NOT_FOUND", async () => {
@@ -48,7 +54,7 @@ describe("presenter.picks", () => {
     const r = await call().presenter.picks({ presenterId: 7 });
     expect(r.presenterId).toBe(7);
     expect(r.anchors.map((t) => t.id)).toEqual([10, 11]);
-    expect(r.recommendations.map((x) => [x.forTalkId, x.candidateId])).toEqual([[10, 2802], [11, 12342]]);
+    expect(r.recommendations.map((x) => [x.forTalkId, x.candidateId])).toEqual([[10, 2802], [11, 10], [11, 12342]]);
   });
   test("engineId override selects another engine's rows", async () => {
     const r = await call().presenter.picks({ talkId: 0, engineId: "other" });
@@ -56,6 +62,16 @@ describe("presenter.picks", () => {
   });
   test("unknown presenter → NOT_FOUND", async () => {
     await expect(call().presenter.picks({ presenterId: 404 })).rejects.toThrow(/not found/i);
+  });
+  test("unknown talk → NOT_FOUND", async () => {
+    await expect(call().presenter.picks({ talkId: 1 })).rejects.toThrow(/not found/i);
+  });
+  test("rejects an input naming both presenterId and talkId", async () => {
+    await expect(call().presenter.picks({ presenterId: 7, talkId: 0 } as never)).rejects.toThrow();
+  });
+  test("rejects an engineId outside the contract's engine_id rule", async () => {
+    await expect(call().presenter.picks({ talkId: 0, engineId: "DROP TABLE" })).rejects.toThrow();
+    await expect(call().presenter.picks({ talkId: 0, engineId: "a".repeat(65) })).rejects.toThrow();
   });
 });
 
@@ -69,5 +85,84 @@ describe("presenter.agenda", () => {
   test("by talkId works for the untimed anchor: only candidates appear", async () => {
     const r = await call().presenter.agenda({ talkId: 0 });
     expect(r.days.flatMap((d) => d.items.map((i) => i.id))).toEqual([2802, 12342]);
+  });
+  test("a presenter's own talk matched under another of their anchors appears once, as mine", async () => {
+    const r = await call().presenter.agenda({ presenterId: 7 });
+    const tens = r.days.flatMap((d) => d.items).filter((i) => i.id === 10);
+    expect(tens.map((i) => i.kind)).toEqual(["mine"]);
+  });
+  test("unknown talk → NOT_FOUND", async () => {
+    await expect(call().presenter.agenda({ talkId: 1 })).rejects.toThrow(/not found/i);
+  });
+  test("engineId override selects another engine's rows", async () => {
+    const r = await call().presenter.agenda({ talkId: 0, engineId: "other" });
+    expect(r.days.flatMap((d) => d.items.map((i) => i.id))).toEqual([2802]);
+  });
+  test("kind follows the highest-scoring match when a candidate matches under two anchors", async () => {
+    const r2 = memoryRepo([mine1, mine2, bluebird], [
+      rec(10, 2802, { score: 0.9, crossDomain: true }),
+      rec(11, 2802, { score: 0.3, crossDomain: false }),
+    ]);
+    const r = await call("graph_v1", r2).presenter.agenda({ presenterId: 7 });
+    expect(r.days.flatMap((d) => d.items).find((i) => i.id === 2802)?.kind).toBe("surprise");
+  });
+  test("on equal scores kind follows the first match in getMatches order", async () => {
+    const r2 = memoryRepo([mine1, mine2, bluebird], [
+      rec(10, 2802, { score: 0.5, crossDomain: false }),
+      rec(11, 2802, { score: 0.5, crossDomain: true }),
+    ]);
+    const r = await call("graph_v1", r2).presenter.agenda({ presenterId: 7 });
+    expect(r.days.flatMap((d) => d.items).find((i) => i.id === 2802)?.kind).toBe("core");
+  });
+  test("on equal start times the presenter's own talk comes first", async () => {
+    const early = talk({ id: 5, title: "Same slot", start: mine1.start, end: mine1.end, building: "Convention Center", room: "Bluebird 2B" });
+    const r2 = memoryRepo([mine1, early], [rec(10, 5)]);
+    const r = await call("graph_v1", r2).presenter.agenda({ presenterId: 7 });
+    expect(r.days[0]?.items.map((i) => [i.id, i.kind])).toEqual([[10, "mine"], [5, "core"]]);
+  });
+});
+
+describe("error masking over HTTP", () => {
+  const serve = (r: Repo, path: string, input: unknown) =>
+    fetchRequestHandler({
+      endpoint: "/api/trpc",
+      router: appRouter,
+      req: new Request(`http://test/api/trpc/${path}?input=${encodeURIComponent(JSON.stringify(input))}`),
+      createContext: () => ({ repo: r, engineId: "graph_v1" }),
+    });
+  const leaky: Repo = {
+    ...repo,
+    getTalk: async () => {
+      throw new Error("Failed query: select secret");
+    },
+  };
+
+  test("internal errors reach the client as a generic message without a stack in production", async () => {
+    vi.stubEnv("NODE_ENV", "production");
+    const res = await serve(leaky, "talk.get", { id: 5 });
+    const body = await res.text();
+    expect(res.status).toBe(500);
+    expect(body).not.toContain("secret");
+    expect(body).toContain("Internal server error");
+    expect(body).not.toContain("\"stack\"");
+  });
+  test("NOT_FOUND keeps its message in production", async () => {
+    vi.stubEnv("NODE_ENV", "production");
+    const res = await serve(repo, "talk.get", { id: 1 });
+    expect(res.status).toBe(404);
+    expect(await res.text()).toContain("talk 1 not found");
+  });
+});
+
+describe("createContext", () => {
+  test("reads ENGINE_ID, defaulting to graph_v1", () => {
+    vi.stubEnv("ENGINE_ID", "x");
+    expect(createContext().engineId).toBe("x");
+    vi.stubEnv("ENGINE_ID", undefined);
+    expect(createContext().engineId).toBe("graph_v1");
+  });
+  test("does not need DATABASE_URL", () => {
+    vi.stubEnv("DATABASE_URL", undefined);
+    expect(() => createContext()).not.toThrow();
   });
 });
