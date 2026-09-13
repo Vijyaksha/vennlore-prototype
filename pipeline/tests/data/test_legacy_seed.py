@@ -1,4 +1,6 @@
-from gps_data.legacy_seed import build_seed, build_talk_row, clean_text
+from gps_core.records import Recommendation
+from gps_data.legacy_seed import build_seed, build_talk_row, clean_text, legacy_seed
+from gps_data.talk import external_anchor
 
 
 def test_clean_text_decodes_entities_strips_tags_collapses_whitespace():
@@ -100,11 +102,6 @@ def test_match_derived_from_score_not_llm_boolean():
     assert rec["score"] == 6 and rec["match"] is True
 
 
-from gps_core.records import Recommendation
-from gps_data.legacy_seed import legacy_seed
-from gps_data.talk import external_anchor
-
-
 def test_legacy_seed_recovers_rubric_scores_from_evidence():
     r = Recommendation(for_talk_id=0, candidate_id=5, score=0.8, rank=1, match=True,
                        cross_domain=True, why="w", strongest_parallel="p", shared_methods=(),
@@ -115,3 +112,20 @@ def test_legacy_seed_recovers_rubric_scores_from_evidence():
     assert rec["score"] == 12 and rec["same_method"] == 4 and rec["match"] is True
     assert set(seed["talks"][0]) == {"id", "title", "session_title", "units", "start", "end",
                                      "building", "room", "abstract"}
+
+
+def _rec(cid, score, evidence):
+    return Recommendation(for_talk_id=0, candidate_id=cid, score=score, rank=1, match=False,
+                          cross_domain=False, why="", strongest_parallel="", shared_methods=(),
+                          evidence=evidence, engine_id="graph_v1", run_id="r")
+
+
+def test_legacy_seed_falls_back_to_the_scaled_score_and_sorts_by_candidate_id():
+    """No rubric_sum in evidence (a non-rubric engine): the 0..1 score is
+    projected onto the legacy 0-15 scale."""
+    rows = [_rec(30, 0.8, {}), _rec(10, 0.0, {}), _rec(20, 0.2, {"same_method": 1})]
+    seed = legacy_seed([], rows, [])
+    assert [r["candidate_id"] for r in seed["recommendations"]] == [10, 20, 30]
+    assert [r["score"] for r in seed["recommendations"]] == [0, 3, 12]
+    assert seed["recommendations"][1]["same_method"] == 1
+    assert seed["recommendations"][2]["usage_parallel"] == 0

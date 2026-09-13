@@ -22,7 +22,7 @@ def build_talk_row(presentation: dict, event: dict | None,
 
 # The match decision is OURS, derived from the calibrated score sum — the
 # rubric checkpoints store the LLM's own (unused) boolean. Keep in sync with
-# MATCH_MIN_SCORE in scripts/run_stage0.py.
+# MATCH_MIN_SCORE in src/gps_engines/graph_v1/engine.py.
 MATCH_MIN_SCORE = 5
 
 
