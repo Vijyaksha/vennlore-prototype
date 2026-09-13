@@ -2450,3 +2450,16 @@ git commit -m "docs(plan): stage-0 reproduced through graph_v1 engine"
 - §6 contracts: Task 1 (zod, emit, drift test, fixtures), Task 2 (Python validation). Versioning field: Tasks 1 and 4. Enforcement (CI, boundaries, CODEOWNERS): Plan 3.
 - §8 migration steps 1–5 are covered here; 6–9 are Plans 2 and 3.
 - Names used consistently: `Talk`, `to_row`, `from_row`, `external_anchor`, `load_talks`, `anchors_for`, `authored_by`, `Recommendation`, `RunManifest`, `IndexArtifact`, `Engine`, `get_engine`, `ENGINES`, `run_index`, `run_recommend`, `write_seed`, `validate`, `ContractError`, `checkpointed`, `content_key`, `Status`, `parallel`, `default_cross_domain`, `exclude_authored`, `ranked`, `GraphV1Engine`, `build`, `MATCH_MIN_SCORE`.
+
+## Task 12 outcome (2026-09-12)
+
+Run with `deepseek-chat` pair judging (`out/graph_v1/stage0-chat/`, gitignored): hits 9/10
+(2802, 3100, 5432, 8500, 9437, 11810, 12292, 12342, 12772), miss 5389 (not funneled), false
+positives 2799, 5514, 5810, 6585 (all same-domain negatives at rubric sums 5–6). Reference was
+8/10, 0 FP. NOT a faithful reproduction, and the reason is not the refactor: extraction is
+stochastic (only 2 of 57 talks got the same method set as the reference run; mean overlap 0.27),
+and chat pair judging returned twice as many `related` edges (391 vs 191), widening the funnel
+from 12 to 19 candidates. One rubric call returned empty content and was retried by deleting its
+checkpoint. Refactor fidelity rests on the 156 offline tests with fakes; a deterministic replay
+test (recorded LLM outputs replayed through the new code) is the right regression tool and is
+deferred to Plan 3. A reasoner-pairs run was started and abandoned at 142/989 verdicts on cost.
