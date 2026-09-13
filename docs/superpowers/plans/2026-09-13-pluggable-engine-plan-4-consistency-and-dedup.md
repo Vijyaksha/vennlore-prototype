@@ -27,6 +27,7 @@ Co-Authored-By: Claude Fable 5.1 <noreply@anthropic.com>
 - **Task 3 done** (PR #6, merged). Stale-version rows are now skipped silently; nothing counts them. A log line or health check for non-current rows is a later improvement.
 - **Task 4 done** (PR #7, merged). The CI grep uses `.*`, not `[^\n]*`: GNU grep reads a backslash inside brackets literally, so the plan's pattern would never have matched.
 - **Task 5 done** (PR #8, merged).
+- **Task 6 done** (PR #9, merged). The parity test loops one query per talk and presenter (fine at 58; sample if the seed grows). The transform round-trip test now compares key sets exactly.
 
 ## File structure (end state)
 
@@ -348,9 +349,9 @@ Run `npm run test --workspace=@repo/api && npm run check-types && npm run lint &
 **Files:**
 - Modify: `packages/api/src/index.ts`, `src/repo.ts`, `src/repo.db.ts`, `test/repo.test.ts`, `src/db/seed.ts`, `apps/web/lib/query-errors.ts`, `apps/web/test/lib/query-errors.test.ts`
 
-- [ ] **Step 1: Failing tests.** `query-errors.test.ts`: `retryUnlessNotFound(0, { data: { code: "BAD_REQUEST" } })` is `false`. `repo.test.ts`: delete the `getTalks`/`authoredBy` tests (dead in the request path; author exclusion is Python's). Run → the retry test FAILS.
-- [ ] **Step 2: Implement.** `query-errors.ts`: permanent codes are `NOT_FOUND` and `BAD_REQUEST`. `Repo` interface loses `getTalks` and `authoredBy`; remove both implementations. `index.ts` exports only `appRouter`, `type AppRouter`, `createContext` (tests import from `../src/*` directly; confirm with grep that nothing else imports the removed names). `seed.ts`: wrap the four loops in `await db.transaction(async (tx) => { ... })` using `tx` for every insert, and before the recommendations loop: `await tx.delete(recommendations).where(inArray(recommendations.engine_id, [...new Set(seed.recommendations.map((r) => r.engine_id))]))` so a reseed replaces each engine's rows completely (stale rows gone). Keep the counts log. Gate check: `cd packages/api && env -u DATABASE_URL SEED_PATH=../../apps/web/e2e/fixtures/app_seed.v2.json npx tsx src/db/seed.ts` → exits 1 on the DATABASE_URL message.
-- [ ] **Step 3: PR** (`plan4/task-7-trim`, "refactor(api): trim the barrel and dead repo methods; transactional seed replaces each engine's rows; web does not retry BAD_REQUEST"). The e2e job runs the seed inside the transaction against a fresh database.
+- [x] **Step 1: Failing tests.** `query-errors.test.ts`: `retryUnlessNotFound(0, { data: { code: "BAD_REQUEST" } })` is `false`. `repo.test.ts`: delete the `getTalks`/`authoredBy` tests (dead in the request path; author exclusion is Python's). Run → the retry test FAILS.
+- [x] **Step 2: Implement.** `query-errors.ts`: permanent codes are `NOT_FOUND` and `BAD_REQUEST`. `Repo` interface loses `getTalks` and `authoredBy`; remove both implementations. `index.ts` exports only `appRouter`, `type AppRouter`, `createContext` (tests import from `../src/*` directly; confirm with grep that nothing else imports the removed names). `seed.ts`: wrap the four loops in `await db.transaction(async (tx) => { ... })` using `tx` for every insert, and before the recommendations loop: `await tx.delete(recommendations).where(inArray(recommendations.engine_id, [...new Set(seed.recommendations.map((r) => r.engine_id))]))` so a reseed replaces each engine's rows completely (stale rows gone). Keep the counts log. Gate check: `cd packages/api && env -u DATABASE_URL SEED_PATH=../../apps/web/e2e/fixtures/app_seed.v2.json npx tsx src/db/seed.ts` → exits 1 on the DATABASE_URL message.
+- [x] **Step 3: PR** (`plan4/task-7-trim`, "refactor(api): trim the barrel and dead repo methods; transactional seed replaces each engine's rows; web does not retry BAD_REQUEST"). The e2e job runs the seed inside the transaction against a fresh database.
 
 ---
 

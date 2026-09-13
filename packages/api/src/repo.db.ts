@@ -13,25 +13,12 @@ export const dbRepo: Repo = {
     return rows[0] ?? null;
   },
 
-  async getTalks(ids) {
-    if (ids.length === 0) return [];
-    return getDb().select().from(talks).where(inArray(talks.id, ids)).orderBy(asc(talks.id));
-  },
-
   async anchorsFor(presenterId) {
     return getDb()
       .select()
       .from(talks)
       .where(arrayContains(talks.presenter_ids, [presenterId]))
       .orderBy(asc(talks.id));
-  },
-
-  async authoredBy(presenterId) {
-    const rows = await getDb()
-      .select({ id: talks.id })
-      .from(talks)
-      .where(arrayContains(talks.author_ids, [presenterId]));
-    return new Set(rows.map((r) => r.id));
   },
 
   async getMatches(forTalkIds, engine_id) {
