@@ -3,7 +3,7 @@ abstract along fixed lines of inquiry. cross_domain is derived deterministically
 from unit metadata, never from the LLM."""
 from dataclasses import dataclass
 
-from gps_engine.corpus import Talk
+from gps_data.talk import Talk
 from gps_core.llm import LLMClient
 
 RUBRIC_PROMPT = """You judge whether a candidate talk is METHOD-related to a

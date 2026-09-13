@@ -1,12 +1,18 @@
 import pytest
 from llama_index.core.graph_stores.types import KG_NODES_KEY, EntityNode
 
-from gps_engine.corpus import Talk
-from gps_engine.li_extraction import build_extractor, extract_methods_li
+from gps_engines.graph_v1.li_extraction import build_extractor, extract_methods_li
 
-TALK = Talk(id=1, title="Kondo physics probed by STM",
-            abstract="We use scanning tunneling microscopy and DMRG simulations.",
-            topics=(), units=("DCMP",), session_title="", start=None, end=None)
+from dataclasses import replace
+from gps_data.talk import external_anchor
+
+
+def mk_talk(id, title, abstract, units=()):
+    return replace(external_anchor(title, abstract, list(units)), id=id)
+
+TALK = mk_talk(1, "Kondo physics probed by STM",
+               "We use scanning tunneling microscopy and DMRG simulations.",
+               units=("DCMP",))
 
 
 class FakeExtractor:
@@ -109,11 +115,10 @@ def test_build_extractor_rejects_unknown_provider():
 
 
 def test_glean_merges_missed_methods_and_dedupes():
-    from gps_engine.li_extraction import glean_and_describe
+    from gps_engines.graph_v1.li_extraction import glean_and_describe
     from gps_core.llm import FakeLLM
 
-    talk = Talk(id=7, title="T", abstract="A", topics=(), units=(),
-                session_title="", start=None, end=None)
+    talk = mk_talk(7, "T", "A")
     llm = FakeLLM(responses=[{
         "missed_methods": ["self-assembly", "Transient Analysis", "  "],
         "descriptions": {"self-assembly": "builds the monolayer",
@@ -128,11 +133,10 @@ def test_glean_merges_missed_methods_and_dedupes():
 
 
 def test_glean_handles_empty_response_fields():
-    from gps_engine.li_extraction import glean_and_describe
+    from gps_engines.graph_v1.li_extraction import glean_and_describe
     from gps_core.llm import FakeLLM
 
-    talk = Talk(id=8, title="T", abstract="A", topics=(), units=(),
-                session_title="", start=None, end=None)
+    talk = mk_talk(8, "T", "A")
     llm = FakeLLM(responses=[{"missed_methods": [], "descriptions": {}}])
     methods, desc = glean_and_describe(talk, ["afm"], llm)
     assert methods == ["afm"] and desc == {}
@@ -143,8 +147,8 @@ def test_extract_with_retry_survives_transient_tool_call_flake(monkeypatch):
     which SchemaLLMPathExtractor surfaces as ValueError (raise_on_error=True).
     The retry wrapper builds a FRESH extractor per attempt (asyncio safety)
     and only re-raises once attempts are exhausted."""
-    from gps_engine.li_extraction import extract_methods_with_retry
-    import gps_engine.li_extraction as li_mod
+    from gps_engines.graph_v1.li_extraction import extract_methods_with_retry
+    import gps_engines.graph_v1.li_extraction as li_mod
     monkeypatch.setattr(li_mod.time, "sleep", lambda s: None)
 
     built = []
@@ -164,8 +168,8 @@ def test_extract_with_retry_survives_transient_tool_call_flake(monkeypatch):
 
 
 def test_extract_with_retry_reraises_after_exhaustion(monkeypatch):
-    from gps_engine.li_extraction import extract_methods_with_retry
-    import gps_engine.li_extraction as li_mod
+    from gps_engines.graph_v1.li_extraction import extract_methods_with_retry
+    import gps_engines.graph_v1.li_extraction as li_mod
     monkeypatch.setattr(li_mod.time, "sleep", lambda s: None)
 
     class AlwaysFlaky:
@@ -180,7 +184,7 @@ def test_extract_methods_json_returns_deduped_methods():
     """JSON-mode extraction (used for providers whose function-calling is
     unreliable) must mirror extract_methods_li's contract: authors'-own-
     terminology method names, case-insensitively deduped, order kept."""
-    from gps_engine.li_extraction import extract_methods_json
+    from gps_engines.graph_v1.li_extraction import extract_methods_json
     from gps_core.llm import FakeLLM
     llm = FakeLLM(responses=[
         {"methods": ["DMRG", "dmrg", "  Monte Carlo  ", ""]},
@@ -192,7 +196,7 @@ def test_extract_methods_json_returns_deduped_methods():
 
 
 def test_extract_methods_json_empty_is_explicit():
-    from gps_engine.li_extraction import extract_methods_json
+    from gps_engines.graph_v1.li_extraction import extract_methods_json
     from gps_core.llm import FakeLLM
     llm = FakeLLM(responses=[{"methods": []}])
     assert extract_methods_json(TALK, llm) == []

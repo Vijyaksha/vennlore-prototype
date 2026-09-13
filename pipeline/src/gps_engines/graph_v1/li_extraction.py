@@ -9,7 +9,7 @@ from llama_index.core.indices.property_graph import SchemaLLMPathExtractor
 from llama_index.core.schema import TextNode
 from llama_index.llms.anthropic import Anthropic
 
-from gps_engine.corpus import Talk
+from gps_data.talk import Talk
 from gps_core.llm import LLMClient
 
 # Two entity types, not one: a METHOD--USES_METHOD-->METHOD schema only

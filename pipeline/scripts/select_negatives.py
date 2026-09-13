@@ -7,7 +7,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
-from gps_engine.corpus import load_talks  # noqa: E402
+from gps_data.archive import load_talks  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[2]
 POSITIVES = {p["id"] for p in json.loads(

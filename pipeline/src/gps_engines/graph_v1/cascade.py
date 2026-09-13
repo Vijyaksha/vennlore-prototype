@@ -8,7 +8,7 @@ kill a true edge)."""
 import math
 from dataclasses import dataclass
 
-from gps_engine.physh import PhySH
+from gps_engines.graph_v1.physh import PhySH
 
 CONF_AUTO = 0.8        # both filings at least this confident for auto-decisions
 FANIN_MAX = 4          # a shelf holding more methods than this is a hub: it

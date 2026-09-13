@@ -1,4 +1,4 @@
-from gps_engine.sampling import allocate, stratified_sample
+from gps_engines.graph_v1.sampling import allocate, stratified_sample
 
 
 def test_allocate_sqrt_proportional_with_floor():

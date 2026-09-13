@@ -1,4 +1,4 @@
-from gps_engine.app_export import build_seed, build_talk_row, clean_text
+from gps_data.legacy_seed import build_seed, build_talk_row, clean_text
 
 
 def test_clean_text_decodes_entities_strips_tags_collapses_whitespace():

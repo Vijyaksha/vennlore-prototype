@@ -1,10 +1,10 @@
 """Offline tests for the PhySH tree module, filing, and the edge cascade."""
 import pytest
 
-from gps_engine.cascade import Decision, _decide
-from gps_engine.filing import file_method
+from gps_engines.graph_v1.cascade import Decision, _decide
+from gps_engines.graph_v1.filing import file_method
 from gps_core.llm import FakeLLM
-from gps_engine.physh import PhySH, Relation
+from gps_engines.graph_v1.physh import PhySH, Relation
 
 
 def tiny_tree():
@@ -113,7 +113,7 @@ def test_decide_pairs_screens_on_max_of_name_and_text_sim():
     text 0.43 / names 0.51 with a 0.50 unfiled gate). The screen must pass a
     pair when EITHER view clears the floor — the judge, which sees the
     descriptions, keeps precision."""
-    from gps_engine.cascade import decide_pairs
+    from gps_engines.graph_v1.cascade import decide_pairs
     p = tiny_tree()
 
     def embed(items):
@@ -132,7 +132,7 @@ def test_decide_pairs_screens_on_max_of_name_and_text_sim():
 def test_decide_pairs_bulk_matches_decide_pairs():
     """The bulk path (numpy sims, relation caching, drops summarized) must
     reach identical decisions to the reference implementation."""
-    from gps_engine.cascade import decide_pairs, decide_pairs_bulk
+    from gps_engines.graph_v1.cascade import decide_pairs, decide_pairs_bulk
     p = tiny_tree()
     names = ["a", "b", "c", "d"]
     filings = {"a": [F("sa", .9)], "b": [F("sa", .9)], "c": [F("sb", .9)]}
@@ -153,7 +153,7 @@ def test_decide_pairs_bulk_matches_decide_pairs():
 def test_decide_pairs_cross_bipartite_only():
     """Query-time cascade: new (anchor) methods are decided against every
     existing name, but existing-existing pairs are NOT re-decided."""
-    from gps_engine.cascade import decide_pairs_cross
+    from gps_engines.graph_v1.cascade import decide_pairs_cross
     p = tiny_tree()
     filings = {"new1": [F("sa", .9)], "old1": [F("sa", .9)]}
 

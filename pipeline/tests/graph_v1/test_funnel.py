@@ -1,5 +1,5 @@
-from gps_engine.funnel import candidates
-from gps_engine.graph import MethodGraph
+from gps_engines.graph_v1.funnel import candidates
+from gps_engines.graph_v1.graph import MethodGraph
 
 def build():
     g = MethodGraph()

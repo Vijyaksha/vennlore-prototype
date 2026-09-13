@@ -1,11 +1,16 @@
-from gps_engine.claims import claims_digest, extract_claims
-from gps_engine.corpus import Talk
+from gps_engines.graph_v1.claims import claims_digest, extract_claims
 from gps_core.llm import FakeLLM
+
+from dataclasses import replace
+from gps_data.talk import external_anchor
+
+
+def mk_talk(id, title, abstract, units=()):
+    return replace(external_anchor(title, abstract, list(units)), id=id)
 
 
 def _talk(abstract):
-    return Talk(id=1, title="T", abstract=abstract, topics=(), units=(),
-                session_title="", start=None, end=None)
+    return mk_talk(1, "T", abstract)
 
 
 def test_grounded_claim_verified_against_abstract():

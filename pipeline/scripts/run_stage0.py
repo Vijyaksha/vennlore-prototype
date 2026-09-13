@@ -13,20 +13,21 @@ from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
-from gps_engine.cascade import decide_pairs  # noqa: E402
-from gps_engine.claims import claims_digest, extract_claims  # noqa: E402
-from gps_engine.filing import candidate_shortlist, embed_targets, file_method  # noqa: E402
-from gps_engine.physh import load_physh  # noqa: E402
-from gps_engine.corpus import Talk, load_talks  # noqa: E402
-from gps_engine.funnel import candidates  # noqa: E402
-from gps_engine.graph import MethodGraph  # noqa: E402
-from gps_engine.li_extraction import (  # noqa: E402
+from gps_engines.graph_v1.cascade import decide_pairs  # noqa: E402
+from gps_engines.graph_v1.claims import claims_digest, extract_claims  # noqa: E402
+from gps_engines.graph_v1.filing import candidate_shortlist, embed_targets, file_method  # noqa: E402
+from gps_engines.graph_v1.physh import load_physh  # noqa: E402
+from gps_data.talk import Talk
+from gps_data.archive import load_talks  # noqa: E402
+from gps_engines.graph_v1.funnel import candidates  # noqa: E402
+from gps_engines.graph_v1.graph import MethodGraph  # noqa: E402
+from gps_engines.graph_v1.li_extraction import (  # noqa: E402
     build_extractor, extract_methods_json, extract_methods_with_retry,
     glean_and_describe)
 from gps_core.llm import AnthropicLLM, DeepSeekLLM, LLMRefusal  # noqa: E402
-from gps_engine.recommend import assemble  # noqa: E402
-from gps_engine.rubric import Judgment, judge_candidate  # noqa: E402
-from gps_engine.similarity import apply_verdicts, judge_pair, sbert_embedder  # noqa: E402
+from gps_engines.graph_v1.recommend import assemble  # noqa: E402
+from gps_engines.graph_v1.rubric import Judgment, judge_candidate  # noqa: E402
+from gps_engines.graph_v1.similarity import apply_verdicts, judge_pair, sbert_embedder  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[2]
 

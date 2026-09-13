@@ -83,7 +83,7 @@ class PhySH:
 
 def load_physh(path: Path | None = None) -> PhySH:
     if path is None:
-        path = Path(__file__).resolve().parents[2] / "resources" / "physh.json.gz"
+        path = Path(__file__).resolve().parents[3] / "resources" / "physh.json.gz"
     raw = json.loads(gzip.decompress(path.read_bytes()))
     label, alt, broader, facet_of, facets = {}, {}, {}, {}, {}
     for rec in raw:

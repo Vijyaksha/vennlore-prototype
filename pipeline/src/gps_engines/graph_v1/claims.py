@@ -3,7 +3,7 @@ specific factual assertions a talk makes, each anchored to a verbatim quote
 from the abstract so any downstream justification can show where it came
 from. Grounding is checked mechanically: a claim whose quote is not actually
 a substring of the abstract is marked ungrounded, never silently trusted."""
-from gps_engine.corpus import Talk
+from gps_data.talk import Talk
 from gps_core.llm import LLMClient
 
 CLAIMS_PROMPT = """Title: {title}

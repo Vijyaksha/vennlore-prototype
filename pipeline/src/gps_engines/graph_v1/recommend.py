@@ -2,7 +2,7 @@
 Thresholds gate inclusion, not top-k — an empty result is an honest answer."""
 from dataclasses import dataclass
 
-from gps_engine.rubric import Judgment
+from gps_engines.graph_v1.rubric import Judgment
 
 
 @dataclass(frozen=True)

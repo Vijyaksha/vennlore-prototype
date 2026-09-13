@@ -2,7 +2,7 @@
 sharing a method node or one RELATED_TO hop away. No scoring/filtering here
 beyond the caller-chosen edge-strength floor — precision comes later from the
 rubric."""
-from gps_engine.graph import MethodGraph
+from gps_engines.graph_v1.graph import MethodGraph
 
 
 def candidates(g: MethodGraph, talk_id: int, min_strength: int = 0) -> set[int]:

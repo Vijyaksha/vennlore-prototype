@@ -20,7 +20,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/gps_engine", "src/gps_core", "src/gps_data", "src/gps_engines"]
+packages = ["src/gps_core", "src/gps_data", "src/gps_engines"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

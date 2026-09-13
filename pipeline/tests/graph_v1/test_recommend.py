@@ -1,5 +1,5 @@
-from gps_engine.recommend import assemble
-from gps_engine.rubric import Judgment
+from gps_engines.graph_v1.recommend import assemble
+from gps_engines.graph_v1.rubric import Judgment
 
 
 def J(cid, score, match=True, cross=False):

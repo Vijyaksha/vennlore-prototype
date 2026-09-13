@@ -6,7 +6,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
-from gps_engine.app_export import build_seed  # noqa: E402
+from gps_data.legacy_seed import build_seed  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[2]
 ARCHIVE = ROOT / "data" / "gps2026"

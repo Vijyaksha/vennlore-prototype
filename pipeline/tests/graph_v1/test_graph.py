@@ -1,4 +1,4 @@
-from gps_engine.graph import MethodGraph
+from gps_engines.graph_v1.graph import MethodGraph
 
 def test_identical_strings_share_a_node():
     g = MethodGraph()
