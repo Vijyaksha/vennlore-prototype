@@ -1,3 +1,5 @@
+import { CONTRACT_VERSION } from "@repo/contracts";
+
 import type { recommendations, talks } from "./db/schema";
 
 export type TalkRow = typeof talks.$inferSelect;
@@ -12,7 +14,8 @@ export interface Repo {
   getTalks(ids: number[]): Promise<TalkRow[]>;
   anchorsFor(presenterId: number): Promise<TalkRow[]>;
   authoredBy(presenterId: number): Promise<Set<number>>;
-  /** match=true rows of one engine for the given anchors, ordered by for_talk_id, rank, candidate_id. */
+  /** match=true rows of one engine written under the current contract version,
+   *  for the given anchors, ordered by for_talk_id, rank, candidate_id. */
   getMatches(forTalkIds: number[], engineId: string): Promise<MatchRow[]>;
 }
 
@@ -31,7 +34,13 @@ export function memoryRepo(talkRows: TalkRow[], recRows: RecRow[]): Repo {
       new Set(talkRows.filter((t) => t.authorIds.includes(presenterId)).map((t) => t.id)),
     getMatches: async (forTalkIds, engineId) =>
       recRows
-        .filter((r) => r.engineId === engineId && r.match && forTalkIds.includes(r.forTalkId))
+        .filter(
+          (r) =>
+            r.engineId === engineId &&
+            r.match &&
+            r.contractVersion === CONTRACT_VERSION &&
+            forTalkIds.includes(r.forTalkId),
+        )
         .sort((a, b) => a.forTalkId - b.forTalkId || a.rank - b.rank || a.candidateId - b.candidateId)
         .flatMap((r) => {
           const c = byId.get(r.candidateId);

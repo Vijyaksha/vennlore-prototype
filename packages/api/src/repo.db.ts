@@ -1,3 +1,4 @@
+import { CONTRACT_VERSION } from "@repo/contracts";
 import { and, arrayContains, asc, eq, inArray } from "drizzle-orm";
 
 import { getDb } from "./db/index";
@@ -43,6 +44,7 @@ export const dbRepo: Repo = {
         and(
           eq(recommendations.engineId, engineId),
           eq(recommendations.match, true),
+          eq(recommendations.contractVersion, CONTRACT_VERSION),
           inArray(recommendations.forTalkId, forTalkIds),
         ),
       )

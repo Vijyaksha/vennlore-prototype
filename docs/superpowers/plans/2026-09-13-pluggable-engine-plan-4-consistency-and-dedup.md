@@ -23,6 +23,7 @@ Co-Authored-By: Claude Fable 5.1 <noreply@anthropic.com>
 ## Execution notes (2026-09-13)
 
 - **Task 1 done** (PR #4, merged). Foreign keys are `ON DELETE no action`, so Task 7's per-engine delete must precede any talk or run deletion. `toSeedFile` reports only the first issue; a `(+N more issues)` suffix is a cheap improvement for Task 7.
+- **Task 2 done** (PR #5, merged). Migration 0003 drops each array default, changes the type with a USING cast, then sets the bigint default, so it is safe on populated tables. Talk id columns (`talks.id`, `for_talk_id`, `candidate_id`, `session_id`) stay int32 by plan; widening them later must move all four in one migration because of the foreign keys. Existing float4 scores regain precision only when Task 9 reseeds.
 
 ## File structure (end state)
 
@@ -156,7 +157,7 @@ gh pr merge --merge --delete-branch
 - Modify: `packages/api/src/db/schema.ts`, `packages/api/test/schema.test.ts`
 - Generated: `packages/api/drizzle/0003_contract_types.sql` + `meta/`
 
-- [ ] **Step 1: Failing test** (append to `test/schema.test.ts`):
+- [x] **Step 1: Failing test** (append to `test/schema.test.ts`):
 
 ```ts
 import { getTableColumns } from "drizzle-orm";
@@ -172,7 +173,7 @@ test("score is double precision and person ids are bigint, as the contract's num
 
 Run → FAIL (`real`, `integer[]`).
 
-- [ ] **Step 2: Schema**
+- [x] **Step 2: Schema**
 
 ```ts
 import { bigint, boolean, doublePrecision, integer, jsonb, pgTable, primaryKey, text, timestamp } from "drizzle-orm/pg-core";
@@ -184,7 +185,7 @@ const bigintArray = (name: string) => bigint(name, { mode: "number" }).array().n
 
 Keep `intArray` only if something still uses it; otherwise delete it. `$inferSelect` types stay `number[]` and `number`, so nothing else changes. Run `npx drizzle-kit generate --name contract_types` → `0003_contract_types.sql` with `ALTER COLUMN ... SET DATA TYPE double precision` / `bigint[]` (with `USING` casts if drizzle emits them; if it does not and the SQL would fail on existing rows, add `USING "author_ids"::bigint[]` by hand and confirm a second generate still says no changes). Tests, types, lint → green.
 
-- [ ] **Step 3: PR** as in Task 1 (`plan4/task-2-contract-types`, message "feat(api): score is double precision; person ids are bigint; columns honour the contract's ranges").
+- [x] **Step 3: PR** as in Task 1 (`plan4/task-2-contract-types`, message "feat(api): score is double precision; person ids are bigint; columns honour the contract's ranges").
 
 ---
 
