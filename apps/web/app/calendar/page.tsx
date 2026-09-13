@@ -7,7 +7,7 @@ import { Suspense, useState } from "react";
 import { Button } from "@repo/ui/components/button";
 import { Skeleton } from "@repo/ui/components/skeleton";
 
-import { Agenda, type AgendaEntry } from "@/components/agenda";
+import { Agenda } from "@/components/agenda";
 import { DayStrip } from "@/components/day-strip";
 import { ErrorState } from "@/components/error-state";
 import {
@@ -67,25 +67,10 @@ function CalendarScreen() {
   }
 
   const byDate = new Map(
-    agenda.data.days.map((day) => [
-      day.date,
-      day.items.map(
-        (item): AgendaEntry => ({
-          id: item.id,
-          title: item.title,
-          sessionTitle: item.session_title,
-          start: item.start,
-          end: item.end,
-          room: item.room,
-          transit: item.transit,
-          kind: item.kind,
-          units: item.units,
-        }),
-      ),
-    ]),
+    agenda.data.days.map((day) => [day.date, day.items]),
   );
   const days = CONFERENCE_DAYS.map((date) => {
-    const items: AgendaEntry[] = byDate.get(date) ?? [];
+    const items = byDate.get(date) ?? [];
     return { date, items, pips: items.map((item) => item.kind) };
   });
 

@@ -3,12 +3,12 @@
 import { Fragment } from "react";
 import { useTranslations } from "next-intl";
 
-import { AgendaItem, type AgendaEntry } from "./agenda-item";
+import type { AgendaItem as AgendaItemType } from "@repo/contracts";
+
+import { AgendaItem } from "./agenda-item";
 import { WalkSegment } from "./walk-segment";
 
-export type { AgendaEntry, AgendaKind } from "./agenda-item";
-
-export function Agenda({ items }: { items: AgendaEntry[] }) {
+export function Agenda({ items }: { items: AgendaItemType[] }) {
   const t = useTranslations("agenda");
 
   if (items.length === 0) {

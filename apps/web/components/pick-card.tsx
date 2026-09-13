@@ -3,27 +3,12 @@
 import Link from "next/link";
 import { useFormatter, useTranslations } from "next-intl";
 
+import type { Pick } from "@repo/contracts";
 import { Badge } from "@repo/ui/components/badge";
 import { Card } from "@repo/ui/components/card";
 import { cn } from "@repo/ui/lib/utils";
 
 import { denverDayKey, TIME_ZONE } from "@/lib/conference";
-
-// Dates cross the tRPC HTTP boundary as ISO strings.
-export interface Pick {
-  candidateId: number;
-  /** The presenter's anchor talk this pick was recommended for. */
-  forTalkId: number;
-  title: string;
-  sessionTitle: string | null;
-  units: string[];
-  start: string | null;
-  /** Engine score between 0 and 1. */
-  score: number;
-  crossDomain: boolean;
-  why: string;
-  sharedMethods: string[];
-}
 
 export interface Anchor {
   id: number;
@@ -34,13 +19,15 @@ export function PickCard({ pick, anchors }: { pick: Pick; anchors: Anchor[] }) {
   const t = useTranslations("picks");
   const format = useFormatter();
 
-  const start = pick.start === null ? null : new Date(pick.start);
-  const kind = pick.crossDomain ? t("unexpected") : t("core");
-  const division = pick.units.join("/");
+  const candidate = pick.candidate;
+  // Dates cross the tRPC HTTP boundary as ISO strings.
+  const start = candidate.start === null ? null : new Date(candidate.start);
+  const kind = pick.cross_domain ? t("unexpected") : t("core");
+  const division = candidate.units.join("/");
   // Only a presenter with several talks needs to know which one a pick is for.
   const forTalk =
     anchors.length > 1
-      ? anchors.find((anchor) => anchor.id === pick.forTalkId)
+      ? anchors.find((anchor) => anchor.id === pick.for_talk_id)
       : undefined;
   const calendarHref =
     start === null
@@ -59,7 +46,7 @@ export function PickCard({ pick, anchors }: { pick: Pick; anchors: Anchor[] }) {
         <Badge
           className={cn(
             "h-auto rounded-full border-transparent px-2.5 py-[3px] font-mono text-[10.5px] font-normal tracking-[0.06em]",
-            pick.crossDomain
+            pick.cross_domain
               ? "bg-surprise-soft text-surprise"
               : "bg-accent-soft text-primary",
           )}
@@ -79,23 +66,23 @@ export function PickCard({ pick, anchors }: { pick: Pick; anchors: Anchor[] }) {
         </span>
       )}
       <h3 className="text-lg leading-[1.32] font-semibold text-balance text-card-foreground">
-        {pick.title}
+        {candidate.title}
       </h3>
-      {pick.sessionTitle !== null && (
+      {candidate.session_title !== null && (
         <span className="font-mono text-[11.5px] text-faint tabular-nums">
-          {pick.sessionTitle}
+          {candidate.session_title}
         </span>
       )}
       <p className="flex-1 border-l-2 border-primary pl-3 font-serif text-[14.5px] leading-[1.55] italic">
         {pick.why}
       </p>
-      {pick.sharedMethods.length > 0 && (
+      {pick.shared_methods.length > 0 && (
         <div
           role="group"
           aria-label={t("sharedMethods")}
           className="flex flex-wrap gap-1.5"
         >
-          {pick.sharedMethods.map((method) => (
+          {pick.shared_methods.map((method) => (
             <Badge
               key={method}
               variant="outline"

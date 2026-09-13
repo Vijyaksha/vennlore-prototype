@@ -1,28 +1,56 @@
 // @vitest-environment jsdom
 import "@testing-library/jest-dom/vitest";
+import { readFileSync } from "node:fs";
+import { createRequire } from "node:module";
+
 import { screen, within } from "@testing-library/react";
 import { describe, expect, test } from "vitest";
 
-import type { Pick } from "../../components/pick-card";
+import type { Pick, Talk } from "@repo/contracts";
+
 import { PickRail } from "../../components/pick-rail";
 import { renderWithIntl } from "./intl";
 
-const pick = (overrides: Partial<Pick> & { candidateId: number }): Pick => ({
-  title: `Pick ${overrides.candidateId}`,
-  sessionTitle: "Some Session",
-  units: ["DLS"],
-  start: "2026-03-18T19:24:00.000Z",
+const req = createRequire(import.meta.url);
+const fixture = (kind: string) =>
+  JSON.parse(
+    readFileSync(req.resolve(`@repo/contracts/fixtures/valid/${kind}.json`), "utf8"),
+  );
+
+/** A contract Pick: every Recommendation field plus a full candidate Talk. */
+const pick = ({
+  candidate,
+  ...overrides
+}: Partial<Omit<Pick, "candidate">> & {
+  candidate_id: number;
+  candidate?: Partial<Talk>;
+}): Pick => ({
+  ...(fixture("recommendation") as Omit<Pick, "candidate">),
+  for_talk_id: 0,
   score: 0.6,
-  crossDomain: true,
+  cross_domain: true,
   why: "shared measurement loop",
-  forTalkId: 0,
-  sharedMethods: [],
+  shared_methods: [],
   ...overrides,
+  candidate: {
+    ...(fixture("talk") as Talk),
+    id: overrides.candidate_id,
+    title: `Pick ${overrides.candidate_id}`,
+    session_title: "Some Session",
+    units: ["DLS"],
+    start: "2026-03-18T19:24:00.000Z",
+    ...candidate,
+  },
 });
 
 const core = (id: number, score = 0.6) =>
-  pick({ candidateId: id, score, crossDomain: false, units: ["DPOLY"] });
-const unexpected = (id: number, score = 0.6) => pick({ candidateId: id, score });
+  pick({
+    candidate_id: id,
+    score,
+    cross_domain: false,
+    candidate: { units: ["DPOLY"] },
+  });
+const unexpected = (id: number, score = 0.6) => pick({ candidate_id: id, score });
 
 const ONE_ANCHOR = [{ id: 0, title: "Porphyrin nanorods" }];
 const TWO_ANCHORS = [
@@ -148,9 +176,9 @@ describe("PickRail", () => {
       <Rail
         core={[
           pick({
-            candidateId: 1,
-            crossDomain: false,
-            sharedMethods: ["transient photocurrent", "self-assembly"],
+            candidate_id: 1,
+            cross_domain: false,
+            shared_methods: ["transient photocurrent", "self-assembly"],
           }),
         ]}
       />,
@@ -177,8 +205,8 @@ describe("PickRail", () => {
     renderWithIntl(
       <Rail
         anchors={TWO_ANCHORS}
-        core={[pick({ candidateId: 1, crossDomain: false, forTalkId: 0 })]}
-        unexpected={[pick({ candidateId: 2, forTalkId: 1 })]}
+        core={[pick({ candidate_id: 1, cross_domain: false, for_talk_id: 0 })]}
+        unexpected={[pick({ candidate_id: 2, for_talk_id: 1 })]}
       />,
     );
 
@@ -201,8 +229,8 @@ describe("PickRail", () => {
       <Rail
         anchors={TWO_ANCHORS}
         unexpected={[
-          pick({ candidateId: 5, forTalkId: 0, score: 0.4 }),
-          pick({ candidateId: 5, forTalkId: 1, score: 0.9 }),
+          pick({ candidate_id: 5, for_talk_id: 0, score: 0.4 }),
+          pick({ candidate_id: 5, for_talk_id: 1, score: 0.9 }),
         ]}
       />,
     );
@@ -230,8 +258,8 @@ describe("PickRail", () => {
       <Rail
         anchors={TWO_ANCHORS}
         unexpected={[
-          pick({ candidateId: 5, forTalkId: 0, score: 0.5 }),
-          pick({ candidateId: 5, forTalkId: 1, score: 0.5 }),
+          pick({ candidate_id: 5, for_talk_id: 0, score: 0.5 }),
+          pick({ candidate_id: 5, for_talk_id: 1, score: 0.5 }),
         ]}
       />,
     );
