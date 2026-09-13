@@ -25,6 +25,7 @@ Co-Authored-By: Claude Fable 5.1 <noreply@anthropic.com>
 - **Task 1 done** (PR #4, merged). Foreign keys are `ON DELETE no action`, so Task 7's per-engine delete must precede any talk or run deletion. `toSeedFile` reports only the first issue; a `(+N more issues)` suffix is a cheap improvement for Task 7.
 - **Task 2 done** (PR #5, merged). Migration 0003 drops each array default, changes the type with a USING cast, then sets the bigint default, so it is safe on populated tables. Talk id columns (`talks.id`, `for_talk_id`, `candidate_id`, `session_id`) stay int32 by plan; widening them later must move all four in one migration because of the foreign keys. Existing float4 scores regain precision only when Task 9 reseeds.
 - **Task 3 done** (PR #6, merged). Stale-version rows are now skipped silently; nothing counts them. A log line or health check for non-current rows is a later improvement.
+- **Task 4 done** (PR #7, merged). The CI grep uses `.*`, not `[^\n]*`: GNU grep reads a backslash inside brackets literally, so the plan's pattern would never have matched.
 
 ## File structure (end state)
 
@@ -216,9 +217,9 @@ Run → FAIL (11 is returned). (After Task 6 the key is `candidate_id`; write it
 **Files:**
 - Modify: `packages/eslint-config/next.js`, `.github/workflows/ci.yml`
 
-- [ ] **Step 1: Plant.** In `apps/web/lib/trpc.ts` add `const _m = await import("drizzle-orm");` won't parse at top level in a non-async module; instead add `export const _probe = () => import("drizzle-orm");`. Add `"drizzle-orm": "*"` to `apps/web/package.json` dependencies (no install). Run `npm run lint --workspace=web` → passes (the gap). Also add `// eslint-disable-next-line no-restricted-imports` above a planted `import "postgres";` → lint passes (the second gap). Record both.
+- [x] **Step 1: Plant.** In `apps/web/lib/trpc.ts` add `const _m = await import("drizzle-orm");` won't parse at top level in a non-async module; instead add `export const _probe = () => import("drizzle-orm");`. Add `"drizzle-orm": "*"` to `apps/web/package.json` dependencies (no install). Run `npm run lint --workspace=web` → passes (the gap). Also add `// eslint-disable-next-line no-restricted-imports` above a planted `import "postgres";` → lint passes (the second gap). Record both.
 
-- [ ] **Step 2: Rule.** In `packages/eslint-config/next.js`, in the same rules object as `no-restricted-imports`:
+- [x] **Step 2: Rule.** In `packages/eslint-config/next.js`, in the same rules object as `no-restricted-imports`:
 
 ```js
       // no-restricted-imports ignores dynamic import(); this covers it.
@@ -231,7 +232,7 @@ Run → FAIL (11 is returned). (After Task 6 the key is `candidate_id`; write it
       ],
 ```
 
-- [ ] **Step 3: CI guard-comment check.** In `.github/workflows/ci.yml`, `web` job, after Lint:
+- [x] **Step 3: CI guard-comment check.** In `.github/workflows/ci.yml`, `web` job, after Lint:
 
 ```yaml
       - name: Guard comments (no disabling the import guards)
@@ -242,7 +243,7 @@ Run → FAIL (11 is returned). (After Task 6 the key is `candidate_id`; write it
 
 Run the grep locally with the planted disable → matches; lint with the planted dynamic import → fails on `no-restricted-syntax`. Revert both plants and the package.json edit; `git status` clean; root lint 5/5.
 
-- [ ] **Step 4: PR** (`plan4/task-4-guard-bypasses`, "build: forbid dynamic driver imports and guard-disabling comments").
+- [x] **Step 4: PR** (`plan4/task-4-guard-bypasses`, "build: forbid dynamic driver imports and guard-disabling comments").
 
 ---
 

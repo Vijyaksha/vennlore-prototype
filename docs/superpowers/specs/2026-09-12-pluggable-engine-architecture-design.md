@@ -227,26 +227,35 @@ currently pasted across `run_stage0.py`, `run_stage1_index.py` and `run_query.py
 Presenter-based. Every procedure takes `engine_id` from server config; a per-request override is
 allowed for evaluation sessions but never exposed in the product UI.
 
-- `presenter.picks({ presenterId })` →
-  `{ presenterId, anchors: Talk[], recommendations: (Recommendation & { candidate: Talk })[] }`.
+- `presenter.picks(Subject)` → `{ presenter_id, anchors: Talk[], recommendations: Pick[] }`, where
+  `Subject` is the strict union `{ presenter_id } | { talk_id }` with an optional `engine_id`, and
+  `Pick = Recommendation & { candidate: Talk }`.
   Only rows with `match = true` for the configured engine, ordered by `for_talk_id` then `rank`.
-- `presenter.agenda({ presenterId })` → matched candidate Talks plus the presenter's own talks,
-  grouped by conference day (America/Denver), consecutive pairs annotated with the existing
-  walking-time connection. No engine fields.
+- `presenter.agenda(Subject)` → `{ presenter_id, days: { date, items: AgendaItem[] }[] }`: matched
+  candidate Talks plus the presenter's own talks, grouped by conference day (America/Denver),
+  consecutive pairs annotated with the existing walking-time connection. No engine fields.
 - `talk.get({ id })` → one Talk.
 - External anchors are served the same way once a live query path exists (§9); the response
   shape does not change.
+
+Request and response shapes are zod schemas in `packages/contracts` (`api.ts`), emitted to JSON
+Schema like the rows, and attached as tRPC output validators, so a non-conforming response is a
+server error, never a wrong payload.
 
 ### 5.2 What a UI receives and renders
 
 From a recommendation the UI renders six of the thirteen fields: `score`, `cross_domain`,
 `why`, `strongest_parallel`, `shared_methods`, and `for_talk_id` (to group by anchor). From the
 candidate Talk it renders title, session title/code, type, start/end, building/room, units. It
-never sees `evidence`, `engine_id`, `run_id` or `contract_version`.
+receives the full Recommendation but renders none of `evidence`, `engine_id`, `run_id` or
+`contract_version`.
 
 Presenters with several talks: rows stay per anchor; the default UI shows one merged rail with a
 "for your talk on …" chip per card and keeps the best score per candidate. A per-talk rail is a
 UI-only choice.
+
+The picks rail shows at most 2 core and 3 unexpected picks; the calendar lists every match. The
+rail is the highlight, the calendar is the complete plan; the two are not meant to agree in count.
 
 ### 5.3 UI packaging
 
@@ -259,8 +268,9 @@ and `@repo/api` only. All strings through next-intl; all times America/Denver.
 - **Source of truth:** zod schemas for `Talk`, `Recommendation`, `Run`, and the API response
   shapes. TypeScript consumers import them directly; no generation step.
 - **JSON Schema:** a build script emits `talk.schema.json`, `recommendation.schema.json`,
-  `run.schema.json` via `z.toJSONSchema()` (zod 4). The files are committed. A test fails if the
-  committed copy drifts from the zod source.
+  `run.schema.json` and the API shapes (`subject.schema.json`, `picks_response.schema.json`,
+  `agenda_response.schema.json`) via `z.toJSONSchema()` (zod 4). The files are committed. A test
+  fails if the committed copy drifts from the zod source.
 - **Python side:** `engine-core` validates every row against the committed JSON Schema with
   `jsonschema`. Typed models, if wanted, are generated from the same files with
   `datamodel-code-generator`.
@@ -272,9 +282,11 @@ and `@repo/api` only. All strings through next-intl; all times America/Denver.
 - **Enforcement:**
   - CI runs both suites whenever `packages/contracts` changes.
   - Turborepo `boundaries` fails the build if an app imports from the database or engine
-    packages.
-  - `CODEOWNERS`: `packages/contracts` requires Rupert's review; engine and UI folders are owned
-    by their teams.
+    packages. ESLint forbids driver imports in apps (static, CommonJS and dynamic) and CI fails on
+    any comment that disables those rules; import-linter enforces engines > core > data in Python.
+  - `CODEOWNERS` lists the collaborators as a notification list. Branch protection on `main`
+    requires the three CI checks (web, pipeline, e2e) and nothing else: no review requirement, by
+    decision (plan 3, task 7). CI is the only gate.
 
 The four situations this covers: an engine records something new (goes in `evidence`, no
 contract change); a UI needs a field the engine does not produce (PR to contracts, Python tests
