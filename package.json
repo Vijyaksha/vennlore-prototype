@@ -9,7 +9,9 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "boundaries": "turbo boundaries",
     "check-types": "turbo run check-types",
-    "test": "turbo run test"
+    "test": "turbo run test",
+    "status": "node scripts/loaded-parts.mjs",
+    "test:scripts": "node --test scripts/*.test.mjs"
   },
   "devDependencies": {
     "prettier": "3.9.6",

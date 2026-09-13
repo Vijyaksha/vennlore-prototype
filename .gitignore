@@ -48,3 +48,7 @@ yarn-error.log*
 # Re-downloadable from the URLs recorded in each row's Method column; never committed.
 scratchpad/chem/artefacts/
 scratchpad/__pycache__/
+
+# Claude Code local runtime state (project settings.json is shared)
+.claude/worktrees/
+.claude/scheduled_tasks.lock
