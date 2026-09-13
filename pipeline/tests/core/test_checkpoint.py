@@ -23,4 +23,4 @@ def test_checkpointed_runs_once_and_resumes(tmp_path):
     assert checkpointed(p, lambda: calls.append(1) or {"v": 2}) == {"v": 1}
     assert calls == [1]
     assert json.loads(p.read_text()) == {"v": 1}
-    assert not p.with_suffix(".tmp").exists()
+    assert not (tmp_path / "x.json.tmp").exists()

@@ -2,6 +2,7 @@
 printed line. parallel() runs fn over items on a thread pool, preserves
 input order, and reports every few completions."""
 import json
+import os
 import threading
 import time
 from concurrent.futures import ThreadPoolExecutor
@@ -20,8 +21,10 @@ class Status:
 
     def set(self, msg: str) -> None:
         elapsed = round(time.time() - self.t0)
-        (self.out / "status.json").write_text(json.dumps(
-            {"phase": msg, "elapsed_s": elapsed}))
+        status_path = self.out / "status.json"
+        tmp = status_path.with_name(status_path.name + ".tmp")
+        tmp.write_text(json.dumps({"phase": msg, "elapsed_s": elapsed}))
+        os.replace(tmp, status_path)
         print(f"[{elapsed}s] {msg}", flush=True)
 
 

@@ -16,3 +16,10 @@ def test_parallel_preserves_order_and_reports(tmp_path):
     out = parallel("sq", [3, 1, 2], lambda x: x * x, workers=2, status=s)
     assert out == [9, 1, 4]
     assert json.loads((tmp_path / "status.json").read_text())["phase"] == "sq 3/3"
+
+
+def test_status_set_leaves_no_tmp_litter_and_file_parses(tmp_path):
+    s = Status(tmp_path)
+    s.set("phase 1")
+    assert not (tmp_path / "status.json.tmp").exists()
+    assert json.loads((tmp_path / "status.json").read_text())["phase"] == "phase 1"
