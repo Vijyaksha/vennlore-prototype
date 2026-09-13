@@ -1,0 +1,22 @@
+{
+  "presenter_id": 7,
+  "days": [
+    {
+      "date": "2026-03-19",
+      "items": [
+        {
+          "id": 10, "title": "My first talk", "session_title": null,
+          "start": "2026-03-19T14:00:00.000Z", "end": "2026-03-19T14:12:00.000Z",
+          "building": "Convention Center", "room": "Bluebird 2A",
+          "units": [], "kind": "mine", "transit": null
+        },
+        {
+          "id": 2802, "title": "Bluebird talk", "session_title": "Organic Electronics & Photonics",
+          "start": "2026-03-19T15:12:00.000Z", "end": "2026-03-19T15:24:00.000Z",
+          "building": "Convention Center", "room": "Bluebird 3C",
+          "units": ["DPOLY"], "kind": "core", "transit": { "walk": 15, "slack": 45, "tight": false }
+        }
+      ]
+    }
+  ]
+}

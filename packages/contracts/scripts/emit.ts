@@ -12,5 +12,5 @@ if (isMain) {
   for (const [kind, schema] of Object.entries(emitAll())) {
     writeFileSync(join(dir, `${kind}.schema.json`), JSON.stringify(schema, null, 2) + "\n");
   }
-  console.log("emitted talk, recommendation, run");
+  console.log(`emitted ${Object.keys(emitAll()).join(", ")}`);
 }

@@ -1,9 +1,17 @@
 import { z } from "zod";
+import { AgendaResponseSchema, PicksResponseSchema, SubjectSchema } from "./api";
 import { RecommendationSchema } from "./recommendation";
 import { RunSchema } from "./run";
 import { TalkSchema } from "./talk";
 
-export const SCHEMAS = { talk: TalkSchema, recommendation: RecommendationSchema, run: RunSchema } as const;
+export const SCHEMAS = {
+  talk: TalkSchema,
+  recommendation: RecommendationSchema,
+  run: RunSchema,
+  subject: SubjectSchema,
+  picks_response: PicksResponseSchema,
+  agenda_response: AgendaResponseSchema,
+} as const;
 export type SchemaKind = keyof typeof SCHEMAS;
 
 /** JSON Schema (draft 2020-12) for every contract kind, keyed by kind. */
