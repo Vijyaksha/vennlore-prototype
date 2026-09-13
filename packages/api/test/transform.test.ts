@@ -11,13 +11,18 @@ const req = createRequire(import.meta.url);
 const fixture = (kind: string) =>
   JSON.parse(readFileSync(req.resolve(`@repo/contracts/fixtures/valid/${kind}.json`), "utf8"));
 
+
+const base = () => ({
+  contract_version: 1, talks: [fixture("talk")], locations: [],
+  recommendations: [fixture("recommendation")], runs: [fixture("run")],
+});
+// fixture recommendation: for_talk_id 0, candidate_id 12772, run_id "graph_v1-20260912T120000Z-a1b2c3"; fixture talk id 2802.
+const withTalks = (ids: number[]) => ({ ...base(), talks: ids.map((id) => ({ ...fixture("talk"), id })) });
+
 describe("toSeedFile", () => {
   test("accepts a contract-shaped seed and validates every row", () => {
-    const seed = toSeedFile({
-      contract_version: 1, talks: [fixture("talk")], locations: [],
-      recommendations: [fixture("recommendation")], runs: [fixture("run")],
-    });
-    expect(seed.talks).toHaveLength(1);
+    const seed = toSeedFile(withTalks([0, 12772]));
+    expect(seed.talks).toHaveLength(2);
   });
   test("rejects a row that breaks the contract, naming the row", () => {
     expect(() => toSeedFile({
@@ -102,5 +107,30 @@ describe("locations", () => {
       contract_version: 1, talks: [], recommendations: [], runs: [],
       locations: [{ id: 1, building: "Convention Center", room: "" }],
     })).toThrow(/locations\[0\]/);
+  });
+});
+
+describe("toSeedFile referential checks", () => {
+  test("rejects a recommendation whose candidate_id has no talk", () => {
+    const seed = withTalks([0]); // candidate 12772 missing
+    expect(() => toSeedFile(seed)).toThrow(/recommendations\[0\]\.candidate_id.*no talk 12772/);
+  });
+  test("rejects a recommendation whose for_talk_id has no talk", () => {
+    const seed = withTalks([12772]); // anchor 0 missing
+    expect(() => toSeedFile(seed)).toThrow(/recommendations\[0\]\.for_talk_id.*no talk 0/);
+  });
+  test("rejects a recommendation whose run_id has no run", () => {
+    const seed = { ...withTalks([0, 12772]), runs: [{ ...fixture("run"), run_id: "other-run" }] };
+    expect(() => toSeedFile(seed)).toThrow(/recommendations\[0\]\.run_id.*no run/);
+  });
+  test("rejects duplicate talk ids, run ids, location ids and recommendation keys", () => {
+    const ok = withTalks([0, 12772]);
+    expect(() => toSeedFile({ ...ok, talks: [...ok.talks, ok.talks[0]] })).toThrow(/talks\[2\]\.id.*duplicate/);
+    expect(() => toSeedFile({ ...ok, runs: [ok.runs[0], ok.runs[0]] })).toThrow(/runs\[1\]\.run_id.*duplicate/);
+    expect(() => toSeedFile({ ...ok, locations: [{ id: 1, building: "A", room: "1" }, { id: 1, building: "A", room: "2" }] })).toThrow(/locations\[1\]\.id.*duplicate/);
+    expect(() => toSeedFile({ ...ok, recommendations: [ok.recommendations[0], ok.recommendations[0]] })).toThrow(/recommendations\[1\].*duplicate/);
+  });
+  test("accepts a seed whose references all resolve", () => {
+    expect(toSeedFile(withTalks([0, 12772])).recommendations).toHaveLength(1);
   });
 });

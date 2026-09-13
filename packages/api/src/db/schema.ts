@@ -51,30 +51,6 @@ export const talks = pgTable("talks", {
   room: text("room"),
 });
 
-/** One row per Recommendation contract field. Engine-specific detail stays in evidence. */
-export const recommendations = pgTable(
-  "recommendations",
-  {
-    engineId: text("engine_id").notNull(),
-    forTalkId: integer("for_talk_id").notNull(),
-    candidateId: integer("candidate_id").notNull(),
-    score: real("score").notNull(),
-    rank: integer("rank").notNull(),
-    match: boolean("match").notNull(),
-    crossDomain: boolean("cross_domain").notNull(),
-    why: text("why").notNull().default(""),
-    strongestParallel: text("strongest_parallel").notNull().default(""),
-    sharedMethods: textArray("shared_methods"),
-    evidence: jsonb("evidence")
-      .$type<Record<string, unknown>>()
-      .notNull()
-      .default({}),
-    runId: text("run_id").notNull(),
-    contractVersion: integer("contract_version").notNull(),
-  },
-  (t) => [primaryKey({ columns: [t.engineId, t.forTalkId, t.candidateId] })],
-);
-
 /** Provenance for one index build or one recommend batch. */
 export const runs = pgTable("runs", {
   runId: text("run_id").primaryKey(),
@@ -89,6 +65,36 @@ export const runs = pgTable("runs", {
   indexPath: text("index_path"),
   contractVersion: integer("contract_version").notNull(),
 });
+
+/** One row per Recommendation contract field. Engine-specific detail stays in evidence. */
+export const recommendations = pgTable(
+  "recommendations",
+  {
+    engineId: text("engine_id").notNull(),
+    forTalkId: integer("for_talk_id")
+      .notNull()
+      .references(() => talks.id),
+    candidateId: integer("candidate_id")
+      .notNull()
+      .references(() => talks.id),
+    score: real("score").notNull(),
+    rank: integer("rank").notNull(),
+    match: boolean("match").notNull(),
+    crossDomain: boolean("cross_domain").notNull(),
+    why: text("why").notNull().default(""),
+    strongestParallel: text("strongest_parallel").notNull().default(""),
+    sharedMethods: textArray("shared_methods"),
+    evidence: jsonb("evidence")
+      .$type<Record<string, unknown>>()
+      .notNull()
+      .default({}),
+    runId: text("run_id")
+      .notNull()
+      .references(() => runs.runId),
+    contractVersion: integer("contract_version").notNull(),
+  },
+  (t) => [primaryKey({ columns: [t.engineId, t.forTalkId, t.candidateId] })],
+);
 
 // Location ids come from the conference API and exceed int32 (e.g. 4109684556).
 export const locations = pgTable("locations", {
