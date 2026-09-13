@@ -60,21 +60,21 @@ export const appRouter = router({
         // merged picks rail; a presenter's own talk is always "mine".
         const best = new Map<number, MatchRow>();
         for (const m of matches) {
-          const prev = best.get(m.candidateId);
-          if (prev === undefined || m.score > prev.score) best.set(m.candidateId, m);
+          const prev = best.get(m.candidate_id);
+          if (prev === undefined || m.score > prev.score) best.set(m.candidate_id, m);
         }
         // TalkRow already satisfies AgendaInput and groupByDenverDay carries extra
         // fields through, so the rows themselves are the in-process agenda entries;
         // the slim AgendaItem is cut from them once transit has been computed.
         const entries = new Map<number, TalkRow & { kind: AgendaKind }>();
         for (const m of best.values())
-          entries.set(m.candidateId, { ...m.candidate, kind: m.crossDomain ? "surprise" : "core" });
+          entries.set(m.candidate_id, { ...m.candidate, kind: m.cross_domain ? "surprise" : "core" });
         for (const a of anchors) entries.set(a.id, { ...a, kind: "mine" });
         const mineFirst = (a: { kind: AgendaKind }, b: { kind: AgendaKind }) => Number(b.kind === "mine") - Number(a.kind === "mine");
         const days = groupByDenverDay([...entries.values()], mineFirst).map((d) => ({
           date: d.date,
           items: d.items.map((i): AgendaItem => ({
-            id: i.id, title: i.title, session_title: i.sessionTitle,
+            id: i.id, title: i.title, session_title: i.session_title,
             start: i.start.toISOString(), end: i.end === null ? null : i.end.toISOString(),
             building: i.building, room: i.room, units: i.units, kind: i.kind, transit: i.transit,
           })),

@@ -16,20 +16,21 @@ describe("excluded", () => {
 });
 
 describe("updateSet (skip takes SQL column names)", () => {
-  test("talks: the 24 non-id columns, keyed by camelCase property", () => {
+  test("talks: the 24 non-id columns, keyed by the contract's field names", () => {
     const set = updateSet(talks, ["id"]);
     const keys = Object.keys(set);
     expect(keys).toHaveLength(24);
     expect(keys).not.toContain("id");
-    expect(keys).toContain("externalId");
-    expect(keys).toContain("sessionTopics");
-    expect(keys).not.toContain("session_topics");
+    expect(keys).toContain("external_id");
+    expect(keys).toContain("session_topics");
+    expect(keys).not.toContain("externalId");
+    expect(keys).not.toContain("sessionTopics");
   });
 
   test("each value renders excluded.<sql name> of its own column", () => {
     const set = updateSet(talks, ["id"]);
-    expect(render(set.sessionTopics!)).toBe('excluded."session_topics"');
-    expect(render(set.externalId!)).toBe('excluded."external_id"');
+    expect(render(set.session_topics!)).toBe('excluded."session_topics"');
+    expect(render(set.external_id!)).toBe('excluded."external_id"');
     expect(render(set.end!)).toBe('excluded."end"');
   });
 
@@ -44,22 +45,22 @@ describe("updateSet (skip takes SQL column names)", () => {
         "score",
         "rank",
         "match",
-        "crossDomain",
+        "cross_domain",
         "why",
-        "strongestParallel",
-        "sharedMethods",
+        "strongest_parallel",
+        "shared_methods",
         "evidence",
-        "runId",
-        "contractVersion",
+        "run_id",
+        "contract_version",
       ].sort(),
     );
-    expect(render(set.contractVersion!)).toBe('excluded."contract_version"');
+    expect(render(set.contract_version!)).toBe('excluded."contract_version"');
   });
 
   test("runs: the 10 non-PK columns", () => {
     const set = updateSet(runs, ["run_id"]);
     expect(Object.keys(set)).toHaveLength(10);
-    expect(Object.keys(set)).not.toContain("runId");
+    expect(Object.keys(set)).not.toContain("run_id");
   });
 });
 

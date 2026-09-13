@@ -5,13 +5,7 @@ import { fileURLToPath } from "node:url";
 import { getDb } from "./index";
 import { locations, recommendations, runs, talks } from "./schema";
 import { resolveSeedPath } from "./seed-path";
-import {
-  toLocationInsert,
-  toRecommendationInsert,
-  toRunInsert,
-  toSeedFile,
-  toTalkInsert,
-} from "./transform";
+import { toRunInsert, toSeedFile, toTalkInsert } from "./transform";
 import { batches, updateSet } from "./upsert";
 
 const DEFAULT_SEED_PATH = join(
@@ -35,9 +29,9 @@ async function main() {
   const seed = toSeedFile(JSON.parse(raw));
 
   const talkRows = seed.talks.map(toTalkInsert);
-  const locationRows = seed.locations.map(toLocationInsert);
+  const locationRows = seed.locations;
   const runRows = seed.runs.map(toRunInsert);
-  const recommendationRows = seed.recommendations.map(toRecommendationInsert);
+  const recommendationRows = seed.recommendations;
 
   const db = getDb();
 
@@ -65,7 +59,7 @@ async function main() {
       .insert(runs)
       .values(batch)
       .onConflictDoUpdate({
-        target: runs.runId,
+        target: runs.run_id,
         set: updateSet(runs, ["run_id"]),
       });
   }
@@ -77,9 +71,9 @@ async function main() {
       .values(batch)
       .onConflictDoUpdate({
         target: [
-          recommendations.engineId,
-          recommendations.forTalkId,
-          recommendations.candidateId,
+          recommendations.engine_id,
+          recommendations.for_talk_id,
+          recommendations.candidate_id,
         ],
         set: updateSet(recommendations, [
           "engine_id",

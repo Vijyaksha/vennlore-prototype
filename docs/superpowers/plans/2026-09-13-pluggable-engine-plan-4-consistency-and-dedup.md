@@ -26,6 +26,7 @@ Co-Authored-By: Claude Fable 5.1 <noreply@anthropic.com>
 - **Task 2 done** (PR #5, merged). Migration 0003 drops each array default, changes the type with a USING cast, then sets the bigint default, so it is safe on populated tables. Talk id columns (`talks.id`, `for_talk_id`, `candidate_id`, `session_id`) stay int32 by plan; widening them later must move all four in one migration because of the foreign keys. Existing float4 scores regain precision only when Task 9 reseeds.
 - **Task 3 done** (PR #6, merged). Stale-version rows are now skipped silently; nothing counts them. A log line or health check for non-current rows is a later improvement.
 - **Task 4 done** (PR #7, merged). The CI grep uses `.*`, not `[^\n]*`: GNU grep reads a backslash inside brackets literally, so the plan's pattern would never have matched.
+- **Task 5 done** (PR #8, merged).
 
 ## File structure (end state)
 
@@ -251,12 +252,12 @@ Run the grep locally with the planted disable → matches; lint with the planted
 
 **Files:** `docs/superpowers/specs/2026-09-12-pluggable-engine-architecture-design.md`
 
-- [ ] **Step 1:** Edit these sentences (exact search strings):
+- [x] **Step 1:** Edit these sentences (exact search strings):
   - §5.1: `presenter.picks({ presenterId })` → `presenter.picks(Subject)` where Subject is the strict union `{ presenter_id } | { talk_id }`, optional `engine_id`; the response is `{ presenter_id, anchors: Talk[], recommendations: Pick[] }` with `Pick = Recommendation & { candidate: Talk }`. Same for `presenter.agenda`. Add: "Request and response shapes are zod schemas in `packages/contracts` (`api.ts`), emitted to JSON Schema like the rows, and attached as tRPC output validators."
   - §5.2: "It never sees `evidence`, `engine_id`, `run_id` or `contract_version`." → "It receives the full Recommendation but renders none of `evidence`, `engine_id`, `run_id` or `contract_version`." Append: "The picks rail shows at most 2 core and 3 unexpected picks; the calendar lists every match. The rail is the highlight, the calendar is the complete plan; the two are not meant to agree in count."
   - §6 JSON Schema bullet: "emits `talk.schema.json`, `recommendation.schema.json`, `run.schema.json`" → add "and the API shapes (`subject`, `picks_response`, `agenda_response`)".
   - §6 Enforcement, CODEOWNERS bullet → "`CODEOWNERS` lists the collaborators as a notification list. Branch protection on `main` requires the three CI checks (web, pipeline, e2e) and nothing else: no review requirement, by decision (plan 3, task 7). CI is the only gate."
-- [ ] **Step 2: PR** (`plan4/task-5-spec`, "docs(spec): API shapes, wire vs render, six schema files, CI-only gate").
+- [x] **Step 2: PR** (`plan4/task-5-spec`, "docs(spec): API shapes, wire vs render, six schema files, CI-only gate").
 
 ---
 
@@ -267,7 +268,7 @@ Run the grep locally with the planted disable → matches; lint with the planted
 - Create: `packages/api/test/repo.parity.test.ts`
 - Modify: `.github/workflows/ci.yml` (parity step in the e2e job)
 
-- [ ] **Step 1: The failing parity test** (written first; it skips without `DATABASE_URL`, so "watch it fail" is done in CI on the PR, and locally by confirming it is skipped):
+- [x] **Step 1: The failing parity test** (written first; it skips without `DATABASE_URL`, so "watch it fail" is done in CI on the PR, and locally by confirming it is skipped):
 
 ```ts
 import { readFileSync } from "node:fs";
@@ -304,9 +305,9 @@ describe.skipIf(!url || !seedPath)("memoryRepo and dbRepo agree on the seeded st
 
 (`toEqual` compares `Date` objects by value; after Task 2 scores are float64 on both sides, so no tolerance is needed. `toTalkInsert` sets every column, hence the `as TalkRow`.) Locally: `npm run test --workspace=@repo/api -- test/repo.parity.test.ts` → 1 skipped.
 
-- [ ] **Step 2: Rename the schema properties.** In `schema.ts`, every property becomes its column name and the explicit name string is dropped: `external_id: text()`, `is_invited: boolean().notNull().default(false)`, `start: timestamp({ withTimezone: true })`, `author_ids: bigintArray()`, … for all 25 talk columns, 13 recommendation columns (`for_talk_id`, `candidate_id`, `cross_domain`, `strongest_parallel`, `shared_methods`, `engine_id`, `run_id`, `contract_version`), 11 run columns (`run_id`, `engine_id`, `engine_version`, `corpus_hash`, `anchor_ids`, `started_at`, `finished_at`, `index_path`, `contract_version`) and `locations`. Helpers become `const textArray = () => text().array()...`. Run `cd packages/api && npx drizzle-kit generate` → **must print "No schema changes"**; if it emits anything, a name string was dropped wrongly. `schema.test.ts` passes unchanged (it compares column `name`).
+- [x] **Step 2: Rename the schema properties.** In `schema.ts`, every property becomes its column name and the explicit name string is dropped: `external_id: text()`, `is_invited: boolean().notNull().default(false)`, `start: timestamp({ withTimezone: true })`, `author_ids: bigintArray()`, … for all 25 talk columns, 13 recommendation columns (`for_talk_id`, `candidate_id`, `cross_domain`, `strongest_parallel`, `shared_methods`, `engine_id`, `run_id`, `contract_version`), 11 run columns (`run_id`, `engine_id`, `engine_version`, `corpus_hash`, `anchor_ids`, `started_at`, `finished_at`, `index_path`, `contract_version`) and `locations`. Helpers become `const textArray = () => text().array()...`. Run `cd packages/api && npx drizzle-kit generate` → **must print "No schema changes"**; if it emits anything, a name string was dropped wrongly. `schema.test.ts` passes unchanged (it compares column `name`).
 
-- [ ] **Step 3: Collapse the mappers.** `transform.ts`:
+- [x] **Step 3: Collapse the mappers.** `transform.ts`:
 
 ```ts
 const date = (v: string | null) => (v === null ? null : new Date(v));
@@ -331,14 +332,14 @@ export function toPick(m: MatchRow): Pick { const { candidate, ...rec } = m; ret
 
 Run `npm run test --workspace=@repo/api && npm run check-types && npm run lint && env -u DATABASE_URL npm run build --workspace=web` → green. `apps/web` needs no change (it reads contract-shaped responses already).
 
-- [ ] **Step 4: CI parity step.** In `ci.yml`, `e2e` job, after "Migrate and seed the throwaway database":
+- [x] **Step 4: CI parity step.** In `ci.yml`, `e2e` job, after "Migrate and seed the throwaway database":
 
 ```yaml
       - name: Repository parity (memoryRepo vs dbRepo on the seeded store)
         run: npm run test --workspace=@repo/api -- test/repo.parity.test.ts
 ```
 
-- [ ] **Step 5: PR** (`plan4/task-6-rename`, "refactor(api): Drizzle properties are the contract's field names; mappers collapse; parity test on the seeded store"). Watch the e2e job: the parity step must run (not skip) and pass. If it fails, the rename changed behaviour: fix the code, never the test.
+- [x] **Step 5: PR** (`plan4/task-6-rename`, "refactor(api): Drizzle properties are the contract's field names; mappers collapse; parity test on the seeded store"). Watch the e2e job: the parity step must run (not skip) and pass. If it fails, the rename changed behaviour: fix the code, never the test.
 
 ---
 

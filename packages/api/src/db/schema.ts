@@ -11,94 +11,94 @@ import {
   timestamp,
 } from "drizzle-orm/pg-core";
 
-const textArray = (name: string) =>
-  text(name)
+const textArray = () =>
+  text()
     .array()
     .notNull()
     .default(sql`'{}'::text[]`);
-const bigintArray = (name: string) =>
-  bigint(name, { mode: "number" })
+const bigintArray = () =>
+  bigint({ mode: "number" })
     .array()
     .notNull()
     .default(sql`'{}'::bigint[]`);
 
 /** One row per Talk contract field, same names. id 0 is the external anchor. */
 export const talks = pgTable("talks", {
-  id: integer("id").primaryKey(),
-  externalId: text("external_id"),
-  title: text("title").notNull(),
-  abstract: text("abstract").notNull().default(""),
-  units: textArray("units"),
-  topics: textArray("topics"),
-  type: text("type"),
-  isInvited: boolean("is_invited").notNull().default(false),
-  isWithdrawn: boolean("is_withdrawn").notNull().default(false),
-  start: timestamp("start", { withTimezone: true }),
-  end: timestamp("end", { withTimezone: true }),
-  sortOrder: integer("sort_order"),
-  presentationLocation: text("presentation_location"),
-  authorIds: bigintArray("author_ids"),
-  presenterIds: bigintArray("presenter_ids"),
-  publicationReference: text("publication_reference"),
-  fundingAcknowledgement: text("funding_acknowledgement"),
-  teamAcknowledgement: text("team_acknowledgement"),
-  sessionId: integer("session_id"),
-  sessionTitle: text("session_title"),
-  sessionCode: text("session_code"),
-  sessionType: text("session_type"),
-  sessionTopics: textArray("session_topics"),
-  building: text("building"),
-  room: text("room"),
+  id: integer().primaryKey(),
+  external_id: text(),
+  title: text().notNull(),
+  abstract: text().notNull().default(""),
+  units: textArray(),
+  topics: textArray(),
+  type: text(),
+  is_invited: boolean().notNull().default(false),
+  is_withdrawn: boolean().notNull().default(false),
+  start: timestamp({ withTimezone: true }),
+  end: timestamp({ withTimezone: true }),
+  sort_order: integer(),
+  presentation_location: text(),
+  author_ids: bigintArray(),
+  presenter_ids: bigintArray(),
+  publication_reference: text(),
+  funding_acknowledgement: text(),
+  team_acknowledgement: text(),
+  session_id: integer(),
+  session_title: text(),
+  session_code: text(),
+  session_type: text(),
+  session_topics: textArray(),
+  building: text(),
+  room: text(),
 });
 
 /** Provenance for one index build or one recommend batch. */
 export const runs = pgTable("runs", {
-  runId: text("run_id").primaryKey(),
-  engineId: text("engine_id").notNull(),
-  kind: text("kind").notNull(),
-  engineVersion: text("engine_version").notNull(),
-  models: jsonb("models").$type<Record<string, string>>().notNull().default({}),
-  corpusHash: text("corpus_hash").notNull().default(""),
-  anchorIds: bigintArray("anchor_ids"),
-  startedAt: timestamp("started_at", { withTimezone: true }).notNull(),
-  finishedAt: timestamp("finished_at", { withTimezone: true }).notNull(),
-  indexPath: text("index_path"),
-  contractVersion: integer("contract_version").notNull(),
+  run_id: text().primaryKey(),
+  engine_id: text().notNull(),
+  kind: text().notNull(),
+  engine_version: text().notNull(),
+  models: jsonb().$type<Record<string, string>>().notNull().default({}),
+  corpus_hash: text().notNull().default(""),
+  anchor_ids: bigintArray(),
+  started_at: timestamp({ withTimezone: true }).notNull(),
+  finished_at: timestamp({ withTimezone: true }).notNull(),
+  index_path: text(),
+  contract_version: integer().notNull(),
 });
 
 /** One row per Recommendation contract field. Engine-specific detail stays in evidence. */
 export const recommendations = pgTable(
   "recommendations",
   {
-    engineId: text("engine_id").notNull(),
-    forTalkId: integer("for_talk_id")
+    engine_id: text().notNull(),
+    for_talk_id: integer()
       .notNull()
       .references(() => talks.id),
-    candidateId: integer("candidate_id")
+    candidate_id: integer()
       .notNull()
       .references(() => talks.id),
-    score: doublePrecision("score").notNull(),
-    rank: integer("rank").notNull(),
-    match: boolean("match").notNull(),
-    crossDomain: boolean("cross_domain").notNull(),
-    why: text("why").notNull().default(""),
-    strongestParallel: text("strongest_parallel").notNull().default(""),
-    sharedMethods: textArray("shared_methods"),
-    evidence: jsonb("evidence")
+    score: doublePrecision().notNull(),
+    rank: integer().notNull(),
+    match: boolean().notNull(),
+    cross_domain: boolean().notNull(),
+    why: text().notNull().default(""),
+    strongest_parallel: text().notNull().default(""),
+    shared_methods: textArray(),
+    evidence: jsonb()
       .$type<Record<string, unknown>>()
       .notNull()
       .default({}),
-    runId: text("run_id")
+    run_id: text()
       .notNull()
-      .references(() => runs.runId),
-    contractVersion: integer("contract_version").notNull(),
+      .references(() => runs.run_id),
+    contract_version: integer().notNull(),
   },
-  (t) => [primaryKey({ columns: [t.engineId, t.forTalkId, t.candidateId] })],
+  (t) => [primaryKey({ columns: [t.engine_id, t.for_talk_id, t.candidate_id] })],
 );
 
 // Location ids come from the conference API and exceed int32 (e.g. 4109684556).
 export const locations = pgTable("locations", {
-  id: bigint("id", { mode: "number" }).primaryKey(),
-  building: text("building").notNull(),
-  room: text("room").notNull(),
+  id: bigint({ mode: "number" }).primaryKey(),
+  building: text().notNull(),
+  room: text().notNull(),
 });
