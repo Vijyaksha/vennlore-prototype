@@ -3,7 +3,9 @@ import { join } from "node:path";
 import { describe, expect, test } from "vitest";
 
 import {
+  AgendaItemSchema,
   AgendaResponseSchema,
+  PickSchema,
   PicksResponseSchema,
   RecommendationSchema,
   SCHEMAS,
@@ -28,6 +30,9 @@ const EXPECTED_PATH: Record<string, string> = {
   "recommendation-score-out-of-range.json": "score",
   "recommendation-unknown-key.json": "same_method",
   "talk-missing-title.json": "title",
+  // A union rejects at the root, so the only path a subject issue can name is "".
+  "subject-both-ids.json": "",
+  "picks_response-missing-candidate.json": "recommendations.0.candidate",
 };
 
 describe("invalid fixtures are rejected", () => {
@@ -69,6 +74,29 @@ test("recommendation has exactly 13 fields", () => {
   expect(Object.keys(RecommendationSchema.shape)).toHaveLength(13);
 });
 
+test("agenda item has exactly 10 fields", () => {
+  expect(Object.keys(AgendaItemSchema.shape)).toHaveLength(10);
+});
+
+test("pick has exactly 14 fields", () => {
+  expect(Object.keys(PickSchema.shape)).toHaveLength(14);
+});
+
+// Recommendation is not a $def here: Pick extends it into a new object, so its
+// fields are inlined. Talk is embedded as itself twice and must be shared.
+test("Talk is emitted once as a named definition, not inlined per use", () => {
+  const picks = emitAll().picks_response as unknown as {
+    $defs: Record<string, unknown>;
+    properties: {
+      anchors: { items: { $ref: string } };
+      recommendations: { items: { properties: { candidate: { $ref: string } } } };
+    };
+  };
+  expect(Object.keys(picks.$defs)).toEqual(["Talk"]);
+  expect(picks.properties.anchors.items.$ref).toBe("#/$defs/Talk");
+  expect(picks.properties.recommendations.items.properties.candidate.$ref).toBe("#/$defs/Talk");
+});
+
 describe("api schemas", () => {
   test("subject accepts exactly one of presenter_id or talk_id", () => {
     expect(SubjectSchema.safeParse({ presenter_id: 7 }).success).toBe(true);
@@ -84,6 +112,13 @@ describe("api schemas", () => {
     expect(PicksResponseSchema.safeParse(row).success).toBe(true);
     const bad = { ...row, recommendations: [{ ...row.recommendations[0], candidate: undefined }] };
     expect(PicksResponseSchema.safeParse(bad).success).toBe(false);
+  });
+  test("picks_response embeds the row fixtures verbatim", () => {
+    const pr = read("fixtures/valid/picks_response.json");
+    const { candidate, ...rec } = pr.recommendations[0];
+    expect(pr.anchors[0]).toEqual(read("fixtures/valid/talk.json"));
+    expect(candidate).toEqual(read("fixtures/valid/talk.json"));
+    expect(rec).toEqual(read("fixtures/valid/recommendation.json"));
   });
   test("agenda response items carry kind, units and transit", () => {
     const row = read("fixtures/valid/agenda_response.json");

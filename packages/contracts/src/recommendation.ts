@@ -19,6 +19,6 @@ export const RecommendationSchema = z
     run_id: z.string().min(1),
     contract_version: z.literal(CONTRACT_VERSION),
   })
-  .meta({ title: "Recommendation" });
+  .meta({ id: "Recommendation", title: "Recommendation" });
 
 export type Recommendation = z.infer<typeof RecommendationSchema>;

@@ -1,0 +1,67 @@
+{
+  "presenter_id": null,
+  "anchors": [
+    {
+      "id": 2802,
+      "external_id": "SMT26-3750532",
+      "title": "Memristive Properties of Ni-DNA Thin-Film Devices",
+      "abstract": "DNA is a natural one-dimensional nanowire.",
+      "units": [
+        "DPOLY"
+      ],
+      "topics": [
+        "Organic Electronics"
+      ],
+      "type": "Oral-In-person",
+      "is_invited": false,
+      "is_withdrawn": false,
+      "start": "2026-03-19T15:12:00.000Z",
+      "end": "2026-03-19T15:24:00.000Z",
+      "sort_order": 4,
+      "presentation_location": null,
+      "author_ids": [
+        101,
+        102
+      ],
+      "presenter_ids": [
+        101
+      ],
+      "publication_reference": null,
+      "funding_acknowledgement": "NSF",
+      "team_acknowledgement": null,
+      "session_id": 245,
+      "session_title": "Organic Electronics & Photonics",
+      "session_code": "MAR-B31",
+      "session_type": "ORAL",
+      "session_topics": [
+        "Organic Electronics"
+      ],
+      "building": "Convention Center",
+      "room": "Bluebird 3C"
+    }
+  ],
+  "recommendations": [
+    {
+      "for_talk_id": 0,
+      "candidate_id": 12772,
+      "score": 0.8,
+      "rank": 1,
+      "match": true,
+      "cross_domain": true,
+      "why": "Both read carrier dynamics from the photocurrent transient.",
+      "strongest_parallel": "Time-resolved photocurrent as the readout of carrier dynamics.",
+      "shared_methods": [
+        "transient photocurrent measurement"
+      ],
+      "evidence": {
+        "same_method": 4,
+        "specificity": 3,
+        "usage_parallel": 5,
+        "rubric_sum": 12
+      },
+      "engine_id": "graph_v1",
+      "run_id": "graph_v1-20260912T120000Z-a1b2c3",
+      "contract_version": 1
+    }
+  ]
+}

@@ -3,7 +3,7 @@ from pathlib import Path
 
 import pytest
 
-from gps_core.contracts import ContractError, FIXTURES, validate
+from gps_core.contracts import ContractError, FIXTURES, KINDS, validate
 
 VALID = FIXTURES / "valid"
 INVALID = FIXTURES / "invalid"
@@ -17,6 +17,9 @@ def test_valid_fixture_passes(kind):
 @pytest.mark.parametrize("path", sorted(INVALID.glob("*.json")), ids=lambda p: p.stem)
 def test_invalid_fixture_fails(path: Path):
     kind = path.stem.split("-")[0]
+    # Python validates rows only; API-shape fixtures belong to the TypeScript side.
+    if kind not in KINDS:
+        pytest.skip(f"{kind} is not a row kind")
     with pytest.raises(ContractError):
         validate(kind, json.loads(path.read_text()))
 

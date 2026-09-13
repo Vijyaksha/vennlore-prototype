@@ -32,6 +32,6 @@ export const TalkSchema = z
     building: nullableString,
     room: nullableString,
   })
-  .meta({ title: "Talk" });
+  .meta({ id: "Talk", title: "Talk" });
 
 export type Talk = z.infer<typeof TalkSchema>;
