@@ -13,7 +13,10 @@ dependencies = [
 ]
 
 [dependency-groups]
-dev = ["pytest>=8"]
+dev = [
+    "import-linter>=2.15",
+    "pytest>=8",
+]
 
 [build-system]
 requires = ["hatchling"]

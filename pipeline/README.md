@@ -8,6 +8,7 @@ and every row an engine emits is validated against it before it is written.
 
     uv sync
     uv run pytest -q                                            # always allowed
+    uv run lint-imports                                         # layering: engines > core > data; engines never import store/run
     ENGINE=graph_v1 uv run python scripts/eval_stage0.py        # LIVE LLM — needs Rupert's go
     ENGINE=graph_v1 uv run python scripts/run_engine.py index --ids datasets/sample-500.json --out out/graph_v1/sample500
     ENGINE=graph_v1 uv run python scripts/run_engine.py recommend --presenter 199897 --index out/graph_v1/sample500
@@ -24,6 +25,10 @@ a prompt or model change produces new keys, so stale results are never reused.
     src/gps_data/       25-field Talk record, archive loader, presenter resolution, dataset ids
     src/gps_engines/    one folder per engine (graph_v1 today)
     tests/{core,data,graph_v1}/
+
+The layering is enforced by `.importlinter`: `gps_engines` may import `gps_core` and
+`gps_data`, `gps_core` may import `gps_data`, `gps_data` imports nothing internal, and no
+engine may import `gps_core.store` or `gps_core.run`. `uv run lint-imports` checks it.
 
 ## Add an engine
 
