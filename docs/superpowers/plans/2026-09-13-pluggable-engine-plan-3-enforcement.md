@@ -25,6 +25,7 @@ Co-Authored-By: Claude Fable 5.1 <noreply@anthropic.com>
 ## Execution notes (2026-09-13)
 
 - **Task 1 review changes.** `Talk` carries `.meta({ id: "Talk" })`, so the emitted picks_response schema references one `$defs.Talk` instead of inlining it twice. `Recommendation` has the same id but still inlines inside `Pick`, because zod's `.extend()` builds a new object without the id; a test pins that. `AgendaDay` is titled and its `date` is `z.iso.date()`. Invalid fixtures exist for `subject` (both ids) and `picks_response` (missing candidate); the Python invalid-fixture test skips kinds outside its row `KINDS`, since Python validates rows only. Field-count guards: Pick 14, AgendaItem 10.
+- **Task 2 review changes.** The router groups the agenda on `TalkRow` directly (no `agendaEntry`); the in-process grouped type is `TimedItem`, so the contract's `AgendaItem` is the only type of that name. `talk.get` takes a strict input like the presenter procedures. A wire test pins that a row with `contract_version` other than 1 fails the contract; the cast in `wire.ts` stays because the column is a plain integer. Output validation costs about 1 ms per 70 strict Talk parses. Keep the contract schemas free of `transform`/`default`, because tRPC serves the parser's return value, not the procedure's.
 
 ## File structure (end state)
 
@@ -297,7 +298,7 @@ git commit -m "feat(contracts): Subject, PicksResponse and AgendaResponse schema
 - Create: `packages/api/src/wire.ts`, `packages/api/test/wire.test.ts`
 - Modify: `packages/api/src/router.ts`, `packages/api/src/index.ts`, `packages/api/test/router.test.ts`
 
-- [ ] **Step 1: Failing wire tests**
+- [x] **Step 1: Failing wire tests**
 
 `packages/api/test/wire.test.ts`:
 
@@ -344,7 +345,7 @@ describe("wire: Drizzle row -> contract row", () => {
 
 Run: `npm run test --workspace=@repo/api -- test/wire.test.ts` → FAIL, cannot find `../src/wire`.
 
-- [ ] **Step 2: Implement `src/wire.ts`**
+- [x] **Step 2: Implement `src/wire.ts`**
 
 ```ts
 import type { Pick, Recommendation, Talk } from "@repo/contracts";
@@ -389,7 +390,7 @@ If `contract_version` needs the cast because the row type is `number` and the co
 
 Run: `npm run test --workspace=@repo/api -- test/wire.test.ts` → 4 pass.
 
-- [ ] **Step 3: Failing router tests**
+- [x] **Step 3: Failing router tests**
 
 Rewrite the expectations in `packages/api/test/router.test.ts` to the contract shape. The fixtures, factories and the HTTP/createContext tests stay; change only inputs and asserted keys:
 
@@ -421,7 +422,7 @@ describe("output validation", () => {
 
 Run: `npm run test --workspace=@repo/api -- test/router.test.ts` → FAIL (inputs rejected by the old camelCase Subject; keys missing).
 
-- [ ] **Step 4: Rewrite `src/router.ts`**
+- [x] **Step 4: Rewrite `src/router.ts`**
 
 ```ts
 import { TRPCError } from "@trpc/server";
@@ -517,12 +518,12 @@ export type AppRouter = typeof appRouter;
 
 Remove the local `EngineId`, `Subject` and `AgendaKind` definitions (they now come from the contract). `src/index.ts`: add `export { toTalk, toRecommendation, toPick } from "./wire";` and drop the `AgendaKind` export if it was re-exported from the router (the contract exports it).
 
-- [ ] **Step 5: Green**
+- [x] **Step 5: Green**
 
 Run: `npm run test --workspace=@repo/api && npm run check-types --workspace=@repo/api && npm run lint --workspace=@repo/api`
 Expected: all green. `apps/web` is red until Task 3 (expected).
 
-- [ ] **Step 6: Commit**
+- [x] **Step 6: Commit**
 
 ```bash
 git add packages/api/src packages/api/test
