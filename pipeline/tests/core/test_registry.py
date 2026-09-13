@@ -38,3 +38,26 @@ def test_target_without_a_factory_is_rejected(monkeypatch):
     monkeypatch.setitem(registry.ENGINES, "broken", "gps_core.registry")
     with pytest.raises(ValueError, match="expected 'module:factory'"):
         registry.get_engine("broken")
+
+
+def test_engine_from_env_reads_name_and_json_config(monkeypatch):
+    monkeypatch.setitem(registry.ENGINES, "dummy", f"{__name__}:build_dummy")
+    monkeypatch.setenv("ENGINE", "dummy")
+    monkeypatch.setenv("ENGINE_CONFIG", '{"pair_judge_model": "x"}')
+    seen = {}
+
+    def build_recording(**kw):
+        seen.update(kw)
+        return DummyEngine()
+
+    monkeypatch.setitem(registry.ENGINES, "dummy", f"{__name__}:build_recording")
+    globals()["build_recording"] = build_recording
+    e = registry.engine_from_env()
+    assert e.id == "dummy" and seen == {"pair_judge_model": "x"}
+
+
+def test_engine_from_env_defaults(monkeypatch):
+    monkeypatch.delenv("ENGINE", raising=False)
+    monkeypatch.delenv("ENGINE_CONFIG", raising=False)
+    monkeypatch.setitem(registry.ENGINES, "graph_v1", f"{__name__}:build_dummy")
+    assert registry.engine_from_env().id == "dummy"

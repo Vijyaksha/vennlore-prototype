@@ -16,7 +16,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 from gps_core.checkpoint import content_key  # noqa: E402
 from gps_core.protocol import IndexArtifact  # noqa: E402
-from gps_core.registry import get_engine  # noqa: E402
+from gps_core.registry import engine_from_env  # noqa: E402
 from gps_core.run import run_index, run_recommend  # noqa: E402
 from gps_data.archive import anchors_for, authored_by, load_talks  # noqa: E402
 from gps_data.datasets import corpus_ids  # noqa: E402
@@ -48,7 +48,7 @@ def main() -> None:
     src.add_argument("--presenter", type=int)
     src.add_argument("--talk", type=int)
     a = ap.parse_args()
-    engine = get_engine(os.environ.get("ENGINE", "graph_v1"))
+    engine = engine_from_env()
 
     ids = corpus_ids(resolve(a.ids))
     talks = load_talks(ARCHIVE, only_ids=ids)

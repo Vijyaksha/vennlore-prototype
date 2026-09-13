@@ -8,7 +8,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 from gps_core.records import Recommendation  # noqa: E402
-from gps_core.registry import get_engine  # noqa: E402
+from gps_core.registry import engine_from_env  # noqa: E402
 from gps_core.run import run_index, run_recommend  # noqa: E402
 from gps_data.archive import load_talks  # noqa: E402
 from gps_data.talk import external_anchor  # noqa: E402
@@ -46,8 +46,9 @@ def report(rows: list[Recommendation], positives: set[int], corpus_size: int) ->
 
 
 def main() -> None:
-    engine = get_engine(os.environ.get("ENGINE", "graph_v1"))
-    out = Path(__file__).resolve().parents[1] / "out" / engine.id / "stage0"
+    engine = engine_from_env()
+    tag = os.environ.get("RUN_TAG", "stage0")   # keeps two configurations' outputs apart
+    out = Path(__file__).resolve().parents[1] / "out" / engine.id / tag
     mc = json.loads((ROOT / "datasets" / "micro-corpus.json").read_text())
     neg = mc["negatives"]
     positives = {p["id"] for p in mc["positives"]}
