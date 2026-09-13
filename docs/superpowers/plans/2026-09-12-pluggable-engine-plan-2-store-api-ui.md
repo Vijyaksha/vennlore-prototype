@@ -292,7 +292,7 @@ git commit -m "feat(api): store schema derived from the contract; migration 0001
 **Files:**
 - Rewrite: `packages/api/src/db/transform.ts`, `packages/api/test/transform.test.ts`
 
-- [ ] **Step 1: Failing tests**
+- [x] **Step 1: Failing tests**
 
 `packages/api/test/transform.test.ts`:
 
@@ -356,7 +356,7 @@ describe("row transforms", () => {
 
 Run → FAIL (`toRunInsert` missing; `toSeedFile` shape differs).
 
-- [ ] **Step 2: Rewrite `transform.ts`**
+- [x] **Step 2: Rewrite `transform.ts`**
 
 ```ts
 import { z } from "zod";
@@ -438,7 +438,7 @@ export function toLocationInsert(l: z.infer<typeof LocationSchema>): LocationIns
 
 Run: `npm run test --workspace=@repo/api -- test/transform.test.ts test/schema.test.ts` → all pass.
 
-- [ ] **Step 3: Commit**
+- [x] **Step 3: Commit**
 
 ```bash
 git add packages/api/src/db/transform.ts packages/api/test/transform.test.ts packages/contracts/package.json
