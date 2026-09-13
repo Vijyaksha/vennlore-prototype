@@ -91,6 +91,7 @@ async function main() {
 }
 
 main().catch((error: unknown) => {
-  console.error(error instanceof Error ? error.message : error);
+  // Our own errors read best as a message; database errors carry code/detail/constraint, so print them whole.
+  console.error(error instanceof Error && !("code" in error) ? error.message : error);
   process.exit(1);
 });

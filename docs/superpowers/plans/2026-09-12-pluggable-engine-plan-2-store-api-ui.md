@@ -26,6 +26,9 @@ Claude-Session: https://claude.ai/code/session_01GyR4M6ie2tftRPoSLdJdxY
 - **Import style in `packages/api` (Task 1 deviation).** The plan text below shows `.js` suffixes on relative imports. Turbopack only rewrites `.js` → `.ts` when the consuming app's tsconfig uses `moduleResolution: nodenext`, which breaks `apps/web`. `packages/api` therefore uses extensionless relative imports with `module: ESNext` / `moduleResolution: Bundler`. When copying code from this plan into `packages/api`, drop the `.js` suffixes. `packages/contracts` keeps its `.js` style until the web app imports it directly, at which point it needs the same treatment.
 - **Local `DATABASE_URL`.** `apps/web/.env` moved to `packages/api/.env`, so `npm run dev` in `apps/web` no longer sees `DATABASE_URL`. For Task 9 step 4, source `packages/api/.env` into the shell before starting the dev server. Vercel production is unaffected.
 
+- **Task 4 deviation.** The pure upsert helpers (`excluded`, `batches`, `updateSet`) live in `packages/api/src/db/upsert.ts` with a test, because the repo requires TDD and `seed.ts` runs on import.
+- **Seed follow-ups (review minors, not blocking).** The seed script does not run in a transaction. It exits without closing the postgres client. It never deletes an engine's stale recommendations on reseed, which does not matter for the first seed after migration 0001. `toSeedFile` does not reject duplicate keys, or a recommendation whose `run_id` has no matching run.
+
 ## File structure (end state)
 
 ```
@@ -452,7 +455,7 @@ git commit -m "feat(api): seed transform reads the v2 contract seed and validate
 **Files:**
 - Rewrite: `packages/api/src/db/seed.ts`
 
-- [ ] **Step 1: Rewrite** (no unit test: it touches the DB; verified by the friendly-failure check and by Task 9)
+- [x] **Step 1: Rewrite** (no unit test: it touches the DB; verified by the friendly-failure check and by Task 9)
 
 Keep the `batches`/`excluded` helpers. Change `SEED_PATH` to `.../pipeline/out/app_seed.v2.json`; parse with `toSeedFile`; upsert in this order: `talks` (`onConflictDoUpdate` target `talks.id`, `set` every non-id column via `excluded("<sql name>")`), `locations` (as before), `runs` (target `runs.runId`), `recommendations` (target `[recommendations.engineId, recommendations.forTalkId, recommendations.candidateId]`, set score, rank, match, cross_domain, why, strongest_parallel, shared_methods, evidence, run_id, contract_version). Log four counts. Generate the `set` maps from the schema's column list rather than hand-typing 25 names:
 
@@ -467,12 +470,12 @@ function updateSet<T extends Parameters<typeof getTableColumns>[0]>(table: T, sk
 
 and pass `updateSet(talks, ["id"])` etc. (Drizzle's `set` accepts SQL fragments keyed by column property; if it requires property keys rather than SQL names, key by the object property instead — check the type error and pick the one that compiles.)
 
-- [ ] **Step 2: Verify the gate**
+- [x] **Step 2: Verify the gate**
 
 Run: `cd packages/api && env -u DATABASE_URL npx tsx src/db/seed.ts`
 Expected: exits 1 with `DATABASE_URL is not set — connect Supabase first` (or the "Seed file not found" message if `app_seed.v2.json` is absent, which is also fine — the point is no DB is touched).
 
-- [ ] **Step 3: Commit**
+- [x] **Step 3: Commit**
 
 ```bash
 git add packages/api/src/db/seed.ts
