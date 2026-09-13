@@ -5,6 +5,7 @@
 - ALL code is written with the superpowers:test-driven-development skill (invoke it BEFORE writing any code): failing test first, watch it fail, minimal code to green, refactor. No production code without a failing test first — code written before its test gets deleted and rebuilt with the tests. Running the resulting tests is always allowed; running experiments/downloads still requires Rupert's go.
 - Census work (conference market sizing) is governed by `docs/business/census-methodology.md` and the per-field notes in `docs/business/field-notes/`. Start by reading `docs/business/HANDOFF.md`, which says where the last session stopped.
 - Only when the model is Fable 5.1: when it will not affect the end result, surgically edit a file (targeted Edit of the changed lines) rather than rewriting the entire file.
+- **The contracts are binding.** The data layer, matching engines and UIs meet only at the contracts in `packages/contracts` (Talk, Recommendation, Run — see `docs/superpowers/specs/2026-09-12-pluggable-engine-architecture-design.md`). All code must respect them: engines write rows in that shape, UIs read rows in that shape, neither imports the other. Changing how data flows means changing the contract there first, with both the TypeScript and Python contract tests green; never work around a contract locally.
 - This file contains only these rules and nothing else. Never add experiment progress, project status, or notes to it.
 
 ## Required stack — agents MUST use these tools
