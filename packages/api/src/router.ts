@@ -1,132 +1,78 @@
 import { TRPCError } from "@trpc/server";
 import { z } from "zod";
 
-import { connection, walkMinutes, type Connection } from "./walk";
-import type { RecRow, TalkRow } from "./repo.db";
+import { groupByDenverDay } from "./agenda";
+import type { MatchRow, Repo, TalkRow } from "./repo";
 import { publicProcedure, router } from "./trpc";
 
-export interface PickRow {
-  candidateId: number;
-  title: string;
-  sessionTitle: string | null;
-  units: string[];
-  start: Date | null;
-  end: Date | null;
-  building: string | null;
-  room: string | null;
-  score: number;
-  sameMethod: number;
-  specificity: number;
-  usageParallel: number;
-  why: string;
-  strongestParallel: string;
-  crossDomain: boolean;
+/** Who the picks are for: a presenter (all their talks are anchors) or one talk. */
+const Subject = z.union([
+  z.object({ presenterId: z.int().min(1), engineId: z.string().optional() }),
+  z.object({ talkId: z.int().min(0), engineId: z.string().optional() }),
+]);
+type Subject = z.infer<typeof Subject>;
+
+export type AgendaKind = "mine" | "core" | "surprise";
+
+async function resolveAnchors(repo: Repo, input: Subject): Promise<{ presenterId: number | null; anchors: TalkRow[] }> {
+  if ("presenterId" in input) {
+    const anchors = await repo.anchorsFor(input.presenterId);
+    if (anchors.length === 0) {
+      throw new TRPCError({ code: "NOT_FOUND", message: `presenter ${input.presenterId} not found` });
+    }
+    return { presenterId: input.presenterId, anchors };
+  }
+  const talk = await repo.getTalk(input.talkId);
+  if (talk === null) throw new TRPCError({ code: "NOT_FOUND", message: `talk ${input.talkId} not found` });
+  return { presenterId: null, anchors: [talk] };
 }
 
-export interface AgendaItem {
-  id: number;
-  title: string;
-  sessionTitle: string | null;
-  start: Date;
-  end: Date | null;
-  building: string | null;
-  room: string | null;
-  transit: Connection | null;
-}
-
-function toPickRow(match: RecRow & { talk: TalkRow }): PickRow {
+/** The slim agenda fields: what the calendar renders, not the whole talk row. */
+function agendaEntry(t: TalkRow, kind: AgendaKind) {
   return {
-    candidateId: match.candidateId,
-    title: match.talk.title,
-    sessionTitle: match.talk.sessionTitle,
-    units: match.talk.units,
-    start: match.talk.start,
-    end: match.talk.end,
-    building: match.talk.building,
-    room: match.talk.room,
-    score: match.score,
-    sameMethod: match.sameMethod,
-    specificity: match.specificity,
-    usageParallel: match.usageParallel,
-    why: match.why,
-    strongestParallel: match.strongestParallel,
-    crossDomain: match.crossDomain,
+    id: t.id,
+    title: t.title,
+    sessionTitle: t.sessionTitle,
+    start: t.start,
+    end: t.end,
+    building: t.building,
+    room: t.room,
+    units: t.units,
+    kind,
   };
 }
 
-const denverDate = new Intl.DateTimeFormat("en-CA", {
-  timeZone: "America/Denver",
-  year: "numeric",
-  month: "2-digit",
-  day: "2-digit",
-});
-
-async function getTalkOrThrow(
-  repo: { getTalk(id: number): Promise<TalkRow | null> },
-  talkId: number,
-): Promise<TalkRow> {
-  const talk = await repo.getTalk(talkId);
-  if (talk === null) {
-    throw new TRPCError({ code: "NOT_FOUND", message: `talk ${talkId} not found` });
-  }
-  return talk;
-}
-
 export const appRouter = router({
-  picks: publicProcedure
-    .input(z.object({ talkId: z.number() }))
-    .query(async ({ ctx, input }) => {
-      const talk = await getTalkOrThrow(ctx.repo, input.talkId);
-      const matches = await ctx.repo.getMatches(input.talkId);
-      const picks = matches.map(toPickRow);
-      return {
-        talk,
-        core: picks.filter((p) => !p.crossDomain),
-        unexpected: picks.filter((p) => p.crossDomain),
-      };
+  talk: router({
+    get: publicProcedure.input(z.object({ id: z.int().min(0) })).query(async ({ ctx, input }) => {
+      const talk = await ctx.repo.getTalk(input.id);
+      if (talk === null) throw new TRPCError({ code: "NOT_FOUND", message: `talk ${input.id} not found` });
+      return talk;
     }),
-
-  agenda: publicProcedure
-    .input(z.object({ talkId: z.number() }))
-    .query(async ({ ctx, input }) => {
-      const talk = await getTalkOrThrow(ctx.repo, input.talkId);
-      const matches = await ctx.repo.getMatches(input.talkId);
-
-      const timed = [talk, ...matches.map((m) => m.talk)].filter(
-        (t): t is TalkRow & { start: Date } => t.start !== null,
+  }),
+  presenter: router({
+    picks: publicProcedure.input(Subject).query(async ({ ctx, input }) => {
+      const { presenterId, anchors } = await resolveAnchors(ctx.repo, input);
+      const recommendations: MatchRow[] = await ctx.repo.getMatches(
+        anchors.map((a) => a.id),
+        input.engineId ?? ctx.engineId,
       );
-      timed.sort((a, b) => a.start.getTime() - b.start.getTime());
-
-      const byDate = new Map<string, AgendaItem[]>();
-      for (const t of timed) {
-        const date = denverDate.format(t.start);
-        const items = byDate.get(date) ?? [];
-        const previous = items.at(-1);
-        let transit: Connection | null = null;
-        if (previous !== undefined) {
-          const departure = previous.end ?? previous.start;
-          const gapMinutes = (t.start.getTime() - departure.getTime()) / 60_000;
-          transit = connection(gapMinutes, walkMinutes(previous, t));
-        }
-        items.push({
-          id: t.id,
-          title: t.title,
-          sessionTitle: t.sessionTitle,
-          start: t.start,
-          end: t.end,
-          building: t.building,
-          room: t.room,
-          transit,
-        });
-        byDate.set(date, items);
-      }
-
-      return {
-        days: [...byDate.entries()]
-          .sort(([a], [b]) => a.localeCompare(b))
-          .map(([date, items]) => ({ date, items })),
-      };
+      return { presenterId, anchors, recommendations };
     }),
+    agenda: publicProcedure.input(Subject).query(async ({ ctx, input }) => {
+      const { presenterId, anchors } = await resolveAnchors(ctx.repo, input);
+      const matches = await ctx.repo.getMatches(
+        anchors.map((a) => a.id),
+        input.engineId ?? ctx.engineId,
+      );
+      // A candidate matched under several anchors keeps the last kind written;
+      // a presenter's own talk is always "mine".
+      const entries = new Map<number, ReturnType<typeof agendaEntry>>();
+      for (const m of matches) entries.set(m.candidateId, agendaEntry(m.candidate, m.crossDomain ? "surprise" : "core"));
+      for (const a of anchors) entries.set(a.id, agendaEntry(a, "mine"));
+      return { presenterId, days: groupByDenverDay([...entries.values()]) };
+    }),
+  }),
 });
 
 export type AppRouter = typeof appRouter;

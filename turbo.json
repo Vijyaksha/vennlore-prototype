@@ -43,6 +43,7 @@
   },
   "globalEnv": [
     "DATABASE_URL",
+    "ENGINE_ID",
     "PLAYWRIGHT_BASE_URL"
   ]
 }
