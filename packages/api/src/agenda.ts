@@ -3,7 +3,6 @@ import { connection, walkMinutes, type Connection } from "./walk";
 export interface AgendaInput {
   id: number;
   title: string;
-  sessionTitle: string | null;
   start: Date | null;
   end: Date | null;
   building: string | null;

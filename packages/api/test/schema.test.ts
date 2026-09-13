@@ -28,7 +28,7 @@ test("score is double precision and person ids are bigint, as the contract's num
   expect(getTableColumns(recommendations).score.getSQLType()).toBe(
     "double precision",
   );
-  expect(getTableColumns(talks).authorIds.getSQLType()).toBe("bigint[]");
-  expect(getTableColumns(talks).presenterIds.getSQLType()).toBe("bigint[]");
-  expect(getTableColumns(runs).anchorIds.getSQLType()).toBe("bigint[]");
+  expect(getTableColumns(talks).author_ids.getSQLType()).toBe("bigint[]");
+  expect(getTableColumns(talks).presenter_ids.getSQLType()).toBe("bigint[]");
+  expect(getTableColumns(runs).anchor_ids.getSQLType()).toBe("bigint[]");
 });

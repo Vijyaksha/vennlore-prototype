@@ -22,7 +22,7 @@ export const dbRepo: Repo = {
     return getDb()
       .select()
       .from(talks)
-      .where(arrayContains(talks.presenterIds, [presenterId]))
+      .where(arrayContains(talks.presenter_ids, [presenterId]))
       .orderBy(asc(talks.id));
   },
 
@@ -30,28 +30,28 @@ export const dbRepo: Repo = {
     const rows = await getDb()
       .select({ id: talks.id })
       .from(talks)
-      .where(arrayContains(talks.authorIds, [presenterId]));
+      .where(arrayContains(talks.author_ids, [presenterId]));
     return new Set(rows.map((r) => r.id));
   },
 
-  async getMatches(forTalkIds, engineId) {
+  async getMatches(forTalkIds, engine_id) {
     if (forTalkIds.length === 0) return [];
     const rows = await getDb()
       .select()
       .from(recommendations)
-      .innerJoin(talks, eq(recommendations.candidateId, talks.id))
+      .innerJoin(talks, eq(recommendations.candidate_id, talks.id))
       .where(
         and(
-          eq(recommendations.engineId, engineId),
+          eq(recommendations.engine_id, engine_id),
           eq(recommendations.match, true),
-          eq(recommendations.contractVersion, CONTRACT_VERSION),
-          inArray(recommendations.forTalkId, forTalkIds),
+          eq(recommendations.contract_version, CONTRACT_VERSION),
+          inArray(recommendations.for_talk_id, forTalkIds),
         ),
       )
       .orderBy(
-        asc(recommendations.forTalkId),
+        asc(recommendations.for_talk_id),
         asc(recommendations.rank),
-        asc(recommendations.candidateId),
+        asc(recommendations.candidate_id),
       );
     return rows.map((row) => ({ ...row.recommendations, candidate: row.talks }));
   },

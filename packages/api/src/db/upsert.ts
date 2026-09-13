@@ -17,9 +17,10 @@ export function* batches<T>(rows: T[]): Generator<T[]> {
 }
 
 /**
- * The `set` map for onConflictDoUpdate: every column except `skip` (SQL names),
- * keyed by the column's property name (what Drizzle's `set` expects) and valued
- * `excluded."<sql name>"`, so every upsert overwrites the whole row.
+ * The `set` map for onConflictDoUpdate: every column except `skip`, keyed by the
+ * column's property name (what Drizzle's `set` expects) and valued
+ * `excluded."<sql name>"`, so every upsert overwrites the whole row. Since the
+ * rename, a column's property name and its SQL name are the same string.
  */
 export function updateSet(table: Table, skip: string[]): Record<string, SQL> {
   return Object.fromEntries(

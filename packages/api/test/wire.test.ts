@@ -4,7 +4,7 @@ import { describe, expect, test } from "vitest";
 
 import { PickSchema, RecommendationSchema, TalkSchema } from "@repo/contracts";
 
-import { toRecommendationInsert, toTalkInsert } from "../src/db/transform";
+import { toTalkInsert } from "../src/db/transform";
 import type { RecRow, TalkRow } from "../src/repo";
 import { toPick, toRecommendation, toTalk } from "../src/wire";
 
@@ -12,9 +12,9 @@ const req = createRequire(import.meta.url);
 const fixture = (kind: string) =>
   JSON.parse(readFileSync(req.resolve(`@repo/contracts/fixtures/valid/${kind}.json`), "utf8"));
 
-// toTalkInsert / toRecommendationInsert set every column, so the insert shape is a full row.
+// toTalkInsert sets every column, so the insert shape is a full row; a Recommendation is already the row shape.
 const talkRow = () => toTalkInsert(TalkSchema.parse(fixture("talk"))) as TalkRow;
-const recRow = () => toRecommendationInsert(RecommendationSchema.parse(fixture("recommendation"))) as RecRow;
+const recRow = () => RecommendationSchema.parse(fixture("recommendation")) as RecRow;
 
 describe("wire: Drizzle row -> contract row", () => {
   test("toTalk round-trips the talk fixture exactly", () => {
@@ -30,7 +30,7 @@ describe("wire: Drizzle row -> contract row", () => {
     expect(toRecommendation(recRow())).toEqual(fixture("recommendation"));
   });
   test("a row whose contract_version is not 1 fails the contract", () => {
-    const r = toRecommendation({ ...recRow(), contractVersion: 2 });
+    const r = toRecommendation({ ...recRow(), contract_version: 2 });
     expect(r.contract_version).toBe(2);
     expect(RecommendationSchema.safeParse(r).success).toBe(false);
   });

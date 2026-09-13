@@ -6,28 +6,28 @@ import { createCallerFactory, createContext } from "../src/trpc";
 import { memoryRepo, type Repo, type RecRow, type TalkRow } from "../src/repo";
 
 const talk = (o: Partial<TalkRow> & { id: number }): TalkRow => ({
-  externalId: null, title: `Talk ${o.id}`, abstract: "", units: [], topics: [], type: null,
-  isInvited: false, isWithdrawn: false, start: null, end: null, sortOrder: null,
-  presentationLocation: null, authorIds: [], presenterIds: [], publicationReference: null,
-  fundingAcknowledgement: null, teamAcknowledgement: null, sessionId: null, sessionTitle: null,
-  sessionCode: null, sessionType: null, sessionTopics: [], building: null, room: null, ...o,
+  external_id: null, title: `Talk ${o.id}`, abstract: "", units: [], topics: [], type: null,
+  is_invited: false, is_withdrawn: false, start: null, end: null, sort_order: null,
+  presentation_location: null, author_ids: [], presenter_ids: [], publication_reference: null,
+  funding_acknowledgement: null, team_acknowledgement: null, session_id: null, session_title: null,
+  session_code: null, session_type: null, session_topics: [], building: null, room: null, ...o,
 });
-const rec = (forTalkId: number, candidateId: number, o: Partial<RecRow> = {}): RecRow => ({
-  engineId: "graph_v1", forTalkId, candidateId, score: 0.5, rank: 1, match: true,
-  crossDomain: false, why: "", strongestParallel: "", sharedMethods: [], evidence: {},
-  runId: "r", contractVersion: 1, ...o,
+const rec = (for_talk_id: number, candidate_id: number, o: Partial<RecRow> = {}): RecRow => ({
+  engine_id: "graph_v1", for_talk_id, candidate_id, score: 0.5, rank: 1, match: true,
+  cross_domain: false, why: "", strongest_parallel: "", shared_methods: [], evidence: {},
+  run_id: "r", contract_version: 1, ...o,
 });
 
 const anchor = talk({ id: 0, title: "Porphyrin nanorods" });
-const mine1 = talk({ id: 10, title: "My first talk", presenterIds: [7], authorIds: [7], start: new Date("2026-03-19T14:00:00Z"), end: new Date("2026-03-19T14:12:00Z"), building: "Convention Center", room: "Bluebird 2A" });
-const mine2 = talk({ id: 11, title: "My second talk", presenterIds: [7], authorIds: [7] });
+const mine1 = talk({ id: 10, title: "My first talk", presenter_ids: [7], author_ids: [7], start: new Date("2026-03-19T14:00:00Z"), end: new Date("2026-03-19T14:12:00Z"), building: "Convention Center", room: "Bluebird 2A" });
+const mine2 = talk({ id: 11, title: "My second talk", presenter_ids: [7], author_ids: [7] });
 const bluebird = talk({ id: 2802, title: "Bluebird talk", units: ["DPOLY"], start: new Date("2026-03-19T15:12:00Z"), end: new Date("2026-03-19T15:24:00Z"), building: "Convention Center", room: "Bluebird 3C" });
 const hall = talk({ id: 12342, title: "Hall talk", units: ["FIAP"], start: new Date("2026-03-19T16:00:00Z"), end: new Date("2026-03-19T16:12:00Z"), building: "Convention Center", room: "Exhibit Hall D, E & F, Level 2" });
 const repo = memoryRepo([anchor, mine1, mine2, bluebird, hall], [
-  rec(0, 2802, { rank: 1, score: 0.8 }), rec(0, 12342, { rank: 2, score: 0.4, crossDomain: true }),
-  rec(10, 2802, { rank: 1, score: 0.9 }), rec(11, 12342, { rank: 1, score: 0.7, crossDomain: true }),
+  rec(0, 2802, { rank: 1, score: 0.8 }), rec(0, 12342, { rank: 2, score: 0.4, cross_domain: true }),
+  rec(10, 2802, { rank: 1, score: 0.9 }), rec(11, 12342, { rank: 1, score: 0.7, cross_domain: true }),
   rec(10, 12342, { rank: 2, score: 0.3, match: false }),
-  rec(0, 2802, { engineId: "other", rank: 1, score: 0.1 }),
+  rec(0, 2802, { engine_id: "other", rank: 1, score: 0.1 }),
   rec(11, 10, { rank: 1, score: 0.6 }),
 ]);
 const call = (engineId = "graph_v1", r: Repo = repo) => createCallerFactory(appRouter)({ repo: r, engineId });
@@ -66,7 +66,7 @@ describe("presenter.picks", () => {
   test("a row written under another contract version is skipped, not served or thrown on", async () => {
     const r2 = memoryRepo([anchor, bluebird, hall], [
       rec(0, 2802, { rank: 1, score: 0.8 }),
-      rec(0, 12342, { rank: 2, score: 0.4, contractVersion: 2 }),
+      rec(0, 12342, { rank: 2, score: 0.4, contract_version: 2 }),
     ]);
     const r = await call("graph_v1", r2).presenter.picks({ talk_id: 0 });
     expect(r.recommendations.map((x) => x.candidate_id)).toEqual([2802]);
@@ -126,16 +126,16 @@ describe("presenter.agenda", () => {
   });
   test("kind follows the highest-scoring match when a candidate matches under two anchors", async () => {
     const r2 = memoryRepo([mine1, mine2, bluebird], [
-      rec(10, 2802, { score: 0.9, crossDomain: true }),
-      rec(11, 2802, { score: 0.3, crossDomain: false }),
+      rec(10, 2802, { score: 0.9, cross_domain: true }),
+      rec(11, 2802, { score: 0.3, cross_domain: false }),
     ]);
     const r = await call("graph_v1", r2).presenter.agenda({ presenter_id: 7 });
     expect(r.days.flatMap((d) => d.items).find((i) => i.id === 2802)?.kind).toBe("surprise");
   });
   test("on equal scores kind follows the first match in getMatches order", async () => {
     const r2 = memoryRepo([mine1, mine2, bluebird], [
-      rec(10, 2802, { score: 0.5, crossDomain: false }),
-      rec(11, 2802, { score: 0.5, crossDomain: true }),
+      rec(10, 2802, { score: 0.5, cross_domain: false }),
+      rec(11, 2802, { score: 0.5, cross_domain: true }),
     ]);
     const r = await call("graph_v1", r2).presenter.agenda({ presenter_id: 7 });
     expect(r.days.flatMap((d) => d.items).find((i) => i.id === 2802)?.kind).toBe("core");

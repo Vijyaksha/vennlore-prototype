@@ -3,7 +3,7 @@ import { describe, expect, test } from "vitest";
 import { groupByDenverDay } from "../src/agenda";
 
 const item = (id: number, start: string | null, end: string | null, building = "Convention Center", room = "Bluebird 3C") =>
-  ({ id, title: `T${id}`, sessionTitle: null, start: start ? new Date(start) : null, end: end ? new Date(end) : null, building, room });
+  ({ id, title: `T${id}`, session_title: null, start: start ? new Date(start) : null, end: end ? new Date(end) : null, building, room });
 
 describe("groupByDenverDay", () => {
   test("groups by Denver date, sorts by start, annotates transit after the first item", () => {
