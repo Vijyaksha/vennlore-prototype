@@ -32,3 +32,9 @@ def test_unknown_engine_lists_known_names():
 
 def test_graph_v1_is_registered():
     assert "graph_v1" in registry.ENGINES
+
+
+def test_target_without_a_factory_is_rejected(monkeypatch):
+    monkeypatch.setitem(registry.ENGINES, "broken", "gps_core.registry")
+    with pytest.raises(ValueError, match="expected 'module:factory'"):
+        registry.get_engine("broken")

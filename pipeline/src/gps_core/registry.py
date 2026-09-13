@@ -14,5 +14,7 @@ def get_engine(name: str, **config) -> Engine:
         target = ENGINES[name]
     except KeyError:
         raise KeyError(f"unknown engine {name!r}; known: {sorted(ENGINES)}") from None
-    module, factory = target.split(":")
+    module, _, factory = target.partition(":")
+    if not factory:
+        raise ValueError(f"engine {name!r} maps to {target!r}; expected 'module:factory'")
     return getattr(importlib.import_module(module), factory)(**config)
