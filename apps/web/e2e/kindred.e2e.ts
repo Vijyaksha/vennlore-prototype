@@ -53,7 +53,7 @@ test("agenda API groups all matched picks into conference days", async ({
 }) => {
   const res = await request.get(
     `${baseURL}/api/trpc/presenter.agenda?input=${encodeURIComponent(
-      JSON.stringify({ talkId: 0 }),
+      JSON.stringify({ talk_id: 0 }),
     )}`,
   );
   expect(res.ok()).toBe(true);
@@ -66,13 +66,13 @@ test("agenda API groups all matched picks into conference days", async ({
   // whatever the seeded run produced. Ids are not pinned: reruns are stochastic.
   const picks = await request.get(
     `${baseURL}/api/trpc/presenter.picks?input=${encodeURIComponent(
-      JSON.stringify({ talkId: 0 }),
+      JSON.stringify({ talk_id: 0 }),
     )}`,
   );
   expect(picks.ok()).toBe(true);
   const matched = ((await picks.json()).result.data.recommendations as {
-    candidateId: number;
-  }[]).map((r) => r.candidateId);
+    candidate_id: number;
+  }[]).map((r) => r.candidate_id);
   expect(matched.length).toBeGreaterThan(0);
   expect(ids.sort((a, b) => a - b)).toEqual(matched.sort((a, b) => a - b));
 });

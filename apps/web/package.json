@@ -15,6 +15,7 @@
   "dependencies": {
     "@base-ui/react": "^1.7.0",
     "@repo/api": "*",
+    "@repo/contracts": "*",
     "@repo/ui": "*",
     "@supabase/ssr": "^0.12.5",
     "@supabase/supabase-js": "^2.112.4",

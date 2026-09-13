@@ -44,16 +44,16 @@ export default function PicksPage() {
 
   const { anchors, recommendations } = picks.data;
   const rail: Pick[] = recommendations.map((rec) => ({
-    candidateId: rec.candidateId,
-    forTalkId: rec.forTalkId,
+    candidateId: rec.candidate_id,
+    forTalkId: rec.for_talk_id,
     title: rec.candidate.title,
-    sessionTitle: rec.candidate.sessionTitle,
+    sessionTitle: rec.candidate.session_title,
     units: rec.candidate.units,
     start: rec.candidate.start,
     score: rec.score,
-    crossDomain: rec.crossDomain,
+    crossDomain: rec.cross_domain,
     why: rec.why,
-    sharedMethods: rec.sharedMethods,
+    sharedMethods: rec.shared_methods,
   }));
 
   return (

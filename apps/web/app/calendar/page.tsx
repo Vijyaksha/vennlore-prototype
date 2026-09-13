@@ -66,7 +66,24 @@ function CalendarScreen() {
     return <CalendarSkeleton />;
   }
 
-  const byDate = new Map(agenda.data.days.map((day) => [day.date, day.items]));
+  const byDate = new Map(
+    agenda.data.days.map((day) => [
+      day.date,
+      day.items.map(
+        (item): AgendaEntry => ({
+          id: item.id,
+          title: item.title,
+          sessionTitle: item.session_title,
+          start: item.start,
+          end: item.end,
+          room: item.room,
+          transit: item.transit,
+          kind: item.kind,
+          units: item.units,
+        }),
+      ),
+    ]),
+  );
   const days = CONFERENCE_DAYS.map((date) => {
     const items: AgendaEntry[] = byDate.get(date) ?? [];
     return { date, items, pips: items.map((item) => item.kind) };

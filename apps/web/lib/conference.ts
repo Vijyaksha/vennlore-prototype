@@ -1,3 +1,5 @@
+import type { Subject } from "@repo/contracts";
+
 // App identity and conference facts. Brand names stay constants, not messages.
 export const APP_NAME = "Kindred";
 export const MEETING_LABEL = "APS GPS 2026";
@@ -6,11 +8,11 @@ export const TIME_ZONE = "America/Denver";
 // Who the app shows picks for: exactly one of a presenter (every talk they
 // present is an anchor) or a single anchor talk. The server's Subject schema
 // is strict, so the object carries exactly one key.
-export type Subject = { presenterId: number } | { talkId: number };
+export type { Subject };
 
 // The claimed anchor talk (the porphyrin-nanorod photoconductivity paper),
 // seeded as talk id 0. Used when no subject is configured.
-const DEFAULT_SUBJECT: Subject = { talkId: 0 };
+const DEFAULT_SUBJECT: Subject = { talk_id: 0 };
 
 /** The trimmed value, or null when the variable is unset or blank. */
 function setValue(raw: string | undefined): string | null {
@@ -63,9 +65,9 @@ export function subjectFromEnv(
         `Both NEXT_PUBLIC_PRESENTER_ID and NEXT_PUBLIC_ANCHOR_TALK_ID are set; NEXT_PUBLIC_ANCHOR_TALK_ID is ignored and presenter ${presenterId} is used.`,
       );
     }
-    return { presenterId };
+    return { presenter_id: presenterId };
   }
-  return talkId !== null ? { talkId } : DEFAULT_SUBJECT;
+  return talkId !== null ? { talk_id: talkId } : DEFAULT_SUBJECT;
 }
 
 // Direct process.env.NEXT_PUBLIC_* references so Next inlines them at build.
