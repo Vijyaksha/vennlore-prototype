@@ -4,7 +4,7 @@
 
 **Goal:** Make the contract the enforced truth: every API request and response shape is declared in `packages/contracts` and validated at runtime, a change to the contract fails every non-conforming consumer in CI, no package can reach across the contract boundary, and `main` cannot take a change that skips those checks.
 
-**Architecture:** Three layers of enforcement. (1) *Shape:* the API's inputs and responses become zod schemas in `@repo/contracts`, emitted to JSON Schema like the row schemas; the router attaches them as tRPC `.output()` validators and serves contract rows (snake_case, ISO timestamps), so one row shape really does flow from engine to screen. (2) *Reach:* Turborepo `boundaries` tags fix which workspace package may depend on which; an ESLint rule keeps database drivers out of the app; `import-linter` fixes the Python layering so an engine can never write to the store directly. (3) *Gate:* a GitHub Actions workflow runs all suites, the boundary checks and the schema-drift check on every push and PR; CODEOWNERS and branch protection on `main` require those checks to pass.
+**Architecture:** Three layers of enforcement. (1) *Shape:* the API's inputs and responses become zod schemas in `@repo/contracts`, emitted to JSON Schema like the row schemas; the router attaches them as tRPC `.output()` validators and serves contract rows (snake_case, ISO timestamps), so one row shape really does flow from engine to screen. (2) *Reach:* Turborepo `boundaries` tags fix which workspace package may depend on which; an ESLint rule keeps database drivers out of the app; `import-linter` fixes the Python layering so an engine can never write to the store directly. (3) *Gate:* a GitHub Actions workflow runs all suites, the boundary checks, the schema-drift check and the Playwright e2e against a throwaway Postgres container on every push and PR; CODEOWNERS and branch protection on `main` require those checks to pass.
 
 **Tech Stack:** Turborepo 2.10 (`turbo boundaries`, experimental), tRPC v11 `.output()`, zod 4 `z.toJSONSchema`, ESLint `no-restricted-imports`, import-linter (Python), GitHub Actions with `actions/setup-node@v4` (Node 24, per `engines`) and `astral-sh/setup-uv@v6`, `gh` CLI for branch protection.
 
@@ -59,7 +59,11 @@ pipeline/
   pyproject.toml                 # dev group + import-linter
   README.md                      # lint-imports in Run
   tests/**                       # data-dependent tests skip without data/
-.github/workflows/ci.yml         # NEW
+apps/web/e2e/fixtures/app_seed.v2.json   # NEW: frozen seed for CI/local e2e
+apps/web/playwright.config.ts    # webServer starts `next start` when no base URL
+packages/api/src/db/seed-path.ts # NEW: SEED_PATH override
+compose.yaml                     # NEW: local throwaway Postgres
+.github/workflows/ci.yml         # NEW (jobs: web, pipeline, e2e)
 .github/CODEOWNERS               # NEW
 ```
 
@@ -843,17 +847,155 @@ jobs:
         run: uv run pytest -q
 ```
 
-Notes for the implementer: the pipeline job installs `sentence-transformers` and its torch dependency, so the first run takes several minutes; the uv cache makes later runs fast. The Playwright e2e is not in CI: it needs a live database and stays a Task-9-style manual gate. `NEXT_PUBLIC_*` are unset in CI, so the build resolves the default subject.
+Notes for the implementer: the pipeline job installs `sentence-transformers` and its torch dependency, so the first run takes several minutes; the uv cache makes later runs fast. `NEXT_PUBLIC_*` are unset in CI, so the build resolves the default subject.
+
+- [ ] **Step 3b: Frozen e2e seed and a `SEED_PATH` override**
+
+The seed script reads `pipeline/out/app_seed.v2.json`, which is run output and gitignored. CI needs a committed copy. Copy the current export (58 talks, 118 locations, 1 run, 19 recommendations; public programme data, 195 KB) to `apps/web/e2e/fixtures/app_seed.v2.json`:
+
+```bash
+cp pipeline/out/app_seed.v2.json apps/web/e2e/fixtures/app_seed.v2.json
+```
+
+Failing test first: `packages/api/test/seed-path.test.ts`
+
+```ts
+import { describe, expect, test } from "vitest";
+import { resolveSeedPath } from "../src/db/seed-path";
+
+describe("resolveSeedPath", () => {
+  test("uses SEED_PATH when set", () => {
+    expect(resolveSeedPath({ SEED_PATH: "/tmp/x.json" }, "/default.json")).toBe("/tmp/x.json");
+  });
+  test("falls back to the default when unset or blank", () => {
+    expect(resolveSeedPath({}, "/default.json")).toBe("/default.json");
+    expect(resolveSeedPath({ SEED_PATH: "  " }, "/default.json")).toBe("/default.json");
+  });
+});
+```
+
+Run: `npm run test --workspace=@repo/api -- test/seed-path.test.ts` → FAIL (module missing). Then `packages/api/src/db/seed-path.ts`:
+
+```ts
+/** The seed file to load: SEED_PATH when set and non-blank, else the pipeline's default export. */
+export function resolveSeedPath(env: { SEED_PATH?: string }, defaultPath: string): string {
+  const value = env.SEED_PATH?.trim() ?? "";
+  return value === "" ? defaultPath : value;
+}
+```
+
+In `seed.ts`, replace the `SEED_PATH` constant's use with `const SEED_PATH = resolveSeedPath(process.env, DEFAULT_SEED_PATH);` where `DEFAULT_SEED_PATH` is the existing four-levels-up join. Add `SEED_PATH` to `turbo.json` `globalEnv`. Run the test → green.
+
+- [ ] **Step 3c: Playwright starts the built app itself when no base URL is given**
+
+`apps/web/playwright.config.ts`:
+
+```ts
+import { defineConfig } from "@playwright/test";
+
+// E2E targets:
+//   PLAYWRIGHT_BASE_URL=https://<deployment> npm run e2e --workspace=web   (a deployed instance)
+//   npm run e2e --workspace=web   (starts `next start` on :3000 against DATABASE_URL; CI and local Docker)
+const baseURL = process.env.PLAYWRIGHT_BASE_URL;
+export default defineConfig({
+  testDir: "./e2e",
+  testMatch: "**/*.e2e.ts",
+  use: { baseURL: baseURL ?? "http://localhost:3000", trace: "retain-on-failure" },
+  reporter: [["list"]],
+  webServer: baseURL
+    ? undefined
+    : {
+        command: "npm run start -- --port 3000",
+        url: "http://localhost:3000",
+        reuseExistingServer: !process.env.CI,
+        timeout: 60_000,
+      },
+});
+```
+
+- [ ] **Step 3d: The e2e CI job** (append to `.github/workflows/ci.yml` under `jobs:`)
+
+```yaml
+  e2e:
+    name: e2e
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: kindred
+          POSTGRES_PASSWORD: kindred
+          POSTGRES_DB: kindred
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U kindred"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+    env:
+      DATABASE_URL: postgres://kindred:kindred@localhost:5432/kindred
+      ENGINE_ID: graph_v1
+      SEED_PATH: ${{ github.workspace }}/apps/web/e2e/fixtures/app_seed.v2.json
+      CI: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - name: Migrate and seed the throwaway database
+        run: |
+          npm run db:migrate --workspace=@repo/api
+          npm run db:seed --workspace=@repo/api
+      - name: Build
+        run: npm run build --workspace=web
+      - name: End-to-end
+        run: npm run e2e --workspace=web
+      - if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-traces
+          path: apps/web/test-results/
+```
+
+The database is a container GitHub starts for this job and destroys afterwards; the connection string is a fixed localhost address, so no secret exists. Supabase is never touched by CI. The seed step is also the only place the migration and seed scripts run from an empty database, so a broken migration fails here.
+
+- [ ] **Step 3e: Local equivalent** (documented; Docker is not installed on Rupert's machine, so this is verified in CI only)
+
+Root `compose.yaml`:
+
+```yaml
+services:
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: kindred
+      POSTGRES_PASSWORD: kindred
+      POSTGRES_DB: kindred
+    ports: ["5432:5432"]
+```
+
+Append to `apps/web/.env.example` a commented block:
+
+```
+# Local e2e against a throwaway Postgres (needs Docker):
+#   docker compose up -d postgres
+#   DATABASE_URL=postgres://kindred:kindred@localhost:5432/kindred SEED_PATH=$PWD/apps/web/e2e/fixtures/app_seed.v2.json \
+#     npm run db:migrate --workspace=@repo/api && npm run db:seed --workspace=@repo/api
+#   DATABASE_URL=postgres://kindred:kindred@localhost:5432/kindred npm run build --workspace=web && npm run e2e --workspace=web
+```
 
 - [ ] **Step 4: Run it**
 
-Commit and push the branch (`git push origin feat/stage0-engine`), then `gh run watch --exit-status` (or `gh run list --branch feat/stage0-engine` and `gh run view <id> --log-failed`). Expected: both jobs green. If `web` fails on Node 24 where local Node 22 passed, fix the incompatibility rather than lowering the version: `engines` already declares `>=24`. Record the local/CI Node mismatch in this plan's execution notes.
+Commit and push the branch (`git push origin feat/stage0-engine`), then `gh run watch --exit-status` (or `gh run list --branch feat/stage0-engine` and `gh run view <id> --log-failed`). Expected: all three jobs (`web`, `pipeline`, `e2e`) green. If `web` fails on Node 24 where local Node 22 passed, fix the incompatibility rather than lowering the version: `engines` already declares `>=24`. Record the local/CI Node mismatch in this plan's execution notes.
 
 - [ ] **Step 5: Commit** (if Step 4 needed fixes, amend nothing; add a follow-up commit)
 
 ```bash
-git add .github/workflows/ci.yml pipeline/tests
-git commit -m "ci: boundaries, lint, types, tests, schema drift and web build; pipeline layering and tests"
+git add .github/workflows/ci.yml pipeline/tests apps/web/e2e/fixtures apps/web/playwright.config.ts apps/web/.env.example packages/api/src/db packages/api/test/seed-path.test.ts turbo.json compose.yaml
+git commit -m "ci: boundaries, lint, types, tests, schema drift, web build, pipeline layering; e2e against a throwaway Postgres"
 ```
 
 ---
@@ -883,7 +1025,7 @@ git commit -m "chore: CODEOWNERS — the three collaborators own the contract an
 git push origin feat/stage0-engine
 ```
 
-- [ ] **Step 2: Ask.** "Task 7 step 3 turns on branch protection for `main`: required status checks `web` and `pipeline`, one approving review from a code owner (any of the three collaborators, never the author), stale approvals dismissed on new pushes, force-pushes and deletion blocked, and the rules apply to admins too. Proceed?"
+- [ ] **Step 2: Ask.** "Task 7 step 3 turns on branch protection for `main`: required status checks `web`, `pipeline` and `e2e`, one approving review from a code owner (any of the three collaborators, never the author), stale approvals dismissed on new pushes, force-pushes and deletion blocked, and the rules apply to admins too. Proceed?"
 
 - [ ] **Step 3: Protect `main`** (after the go)
 
@@ -891,7 +1033,7 @@ git push origin feat/stage0-engine
 gh api -X PUT repos/Rupertlim88/ConferenceApp/branches/main/protection \
   --input - <<'JSON'
 {
-  "required_status_checks": { "strict": true, "contexts": ["web", "pipeline"] },
+  "required_status_checks": { "strict": true, "contexts": ["web", "pipeline", "e2e"] },
   "enforce_admins": true,
   "required_pull_request_reviews": {
     "required_approving_review_count": 1,
@@ -908,13 +1050,13 @@ JSON
 gh api repos/Rupertlim88/ConferenceApp/branches/main/protection --jq '{checks: .required_status_checks.contexts, approvals: .required_pull_request_reviews.required_approving_review_count, owners: .required_pull_request_reviews.require_code_owner_reviews, admins: .enforce_admins.enabled, force: .allow_force_pushes.enabled}'
 ```
 
-Expected: `{"checks":["web","pipeline"],"approvals":1,"owners":true,"admins":true,"force":false}`. `require_last_push_approval` means the person who pushed the latest commit cannot be the one whose approval counts, so an AI session pushing under Rupert's account still needs another human's approval.
+Expected: `{"checks":["web","pipeline","e2e"],"approvals":1,"owners":true,"admins":true,"force":false}`. `require_last_push_approval` means the person who pushed the latest commit cannot be the one whose approval counts, so an AI session pushing under Rupert's account still needs another human's approval.
 
 - [ ] **Step 4: Prove it** (read-only check): open a throwaway pull request from a branch with a one-line README change, confirm GitHub shows "Review required" and "Code owner review required" and that the author's own approve button is absent, then close the PR without merging and delete the branch.
 
 - [ ] **Step 5: Record**
 
-Append under this task: `Protected main on <date>: checks web+pipeline required, 1 code-owner approval from any of three collaborators, admins included.` Commit that line.
+Append under this task: `Protected main on <date>: checks web+pipeline+e2e required, 1 code-owner approval from any of three collaborators, admins included.` Commit that line.
 
 ---
 
@@ -922,5 +1064,5 @@ Append under this task: `Protected main on <date>: checks web+pipeline required,
 
 - **Spec coverage.** §6 "CI runs both suites whenever packages/contracts changes": Task 6 runs both suites on every push and PR, which is a superset, plus the schema-drift check. §6 "Turborepo boundaries fails the build if an app imports from the database or engine packages": Task 4 (package graph via tags; the driver-level rule via ESLint because the database lives inside `@repo/api`); Python engines cannot reach the store: Task 5. §6 CODEOWNERS: Task 7 (all three collaborators own the contract and specs; one human approval required, never the author). §8 step 9 branch protection: Task 7. §6 "zod schemas for … the API response shapes": Tasks 1 and 2 (`.output()` makes them enforced, not just declared). Plan 2's open goal "one row shape from engine to screen": Task 2 serves `Talk`/`Recommendation` rows; Task 3 makes the UI read them.
 - **Placeholders.** The picks fixture in Task 1 says "paste the contents of" the two existing fixtures rather than repeating 40 lines; that is a copy instruction, not a TBD. Task 6 Step 2 names the mechanism (`pytestmark = requires_archive`) but the affected module list comes from Step 1's red run.
-- **Type consistency.** `SubjectSchema`/`Subject` (`presenter_id` | `talk_id`, optional `engine_id`) used in Tasks 1, 2, 3. `PickSchema` = Recommendation + `candidate: Talk` (Task 1) produced by `toPick` (Task 2), read as `rec.candidate_id`/`rec.candidate.title` (Task 3). `AgendaItem` fields `session_title`, `start` (ISO), `transit`, `kind`, `units` (Task 1) built in the router (Task 2) and mapped to the UI's `AgendaEntry` (Task 3). Tags `app`, `data`, `contract`, `ui`, `tooling` (Task 4) match the rule table. CI job names `web` and `pipeline` (Task 6) are the status-check contexts in Task 7.
+- **Type consistency.** `SubjectSchema`/`Subject` (`presenter_id` | `talk_id`, optional `engine_id`) used in Tasks 1, 2, 3. `PickSchema` = Recommendation + `candidate: Talk` (Task 1) produced by `toPick` (Task 2), read as `rec.candidate_id`/`rec.candidate.title` (Task 3). `AgendaItem` fields `session_title`, `start` (ISO), `transit`, `kind`, `units` (Task 1) built in the router (Task 2) and mapped to the UI's `AgendaEntry` (Task 3). Tags `app`, `data`, `contract`, `ui`, `tooling` (Task 4) match the rule table. CI job names `web`, `pipeline` and `e2e` (Task 6) are the status-check contexts in Task 7. `SEED_PATH` (Task 6 step 3b) is read by `seed.ts` and set by the e2e job.
 - **Contract versioning.** Only additive schemas; `contract_version` stays 1; Python `KINDS` unchanged; emitted files for the three row kinds are untouched (Task 1 Step 4 re-emits and the drift test proves it).
