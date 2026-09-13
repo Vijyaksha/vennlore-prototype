@@ -28,6 +28,7 @@ Co-Authored-By: Claude Fable 5.1 <noreply@anthropic.com>
 - **Task 4 done** (PR #7, merged). The CI grep uses `.*`, not `[^\n]*`: GNU grep reads a backslash inside brackets literally, so the plan's pattern would never have matched.
 - **Task 5 done** (PR #8, merged).
 - **Task 6 done** (PR #9, merged). The parity test loops one query per talk and presenter (fine at 58; sample if the seed grows). The transform round-trip test now compares key sets exactly.
+- **Task 7 done** (PR #10, merged). The seed now replaces each seeded engine's recommendations inside one transaction, so a hand-trimmed seed for an engine is destructive for that engine by design.
 
 ## File structure (end state)
 
@@ -360,9 +361,9 @@ Run `npm run test --workspace=@repo/api && npm run check-types && npm run lint &
 **Files:**
 - Modify: `apps/web/components/pick-card.tsx`, `pick-rail.tsx`, `agenda-item.tsx`, `agenda.tsx`, `app/page.tsx`, `app/calendar/page.tsx`, `test/components/pick-rail.test.tsx`, `test/components/agenda.test.tsx`
 
-- [ ] **Step 1: Failing tests.** Rewrite the component test fixtures to contract shapes: rail tests build `Pick` objects from `@repo/contracts` (`candidate_id`, `for_talk_id`, `cross_domain`, `shared_methods`, `candidate: { title, session_title, units, start, … }`); agenda tests build `AgendaItem` objects (`session_title`, `kind`, `units`, `transit`). Keep every assertion (percent score, chips, anchor chip, caps, empty slots, dots, Denver time). Run → FAIL on the old prop names.
-- [ ] **Step 2: Implement.** `PickRail` props: `{ anchors: { id: number; title: string }[]; recommendations: Pick[] }`; `PickCard` takes `pick: Pick` and reads `pick.candidate.title`, `pick.candidate.session_title`, `pick.candidate.start`, `pick.shared_methods`, `pick.cross_domain`, `pick.for_talk_id`, `pick.candidate_id`. `AgendaEntry` is replaced by `AgendaItem` from the contract (`session_title`, `start: string`, `end: string | null`). `app/page.tsx` passes `picks.data.recommendations` straight through; `app/calendar/page.tsx` passes `day.items` straight through. Delete the local `Pick` and `AgendaEntry` interfaces. Web tests, root types, lint, build → green.
-- [ ] **Step 3: PR** (`plan4/task-8-ui-contract-types`, "refactor(web): components render the contract Pick and AgendaItem directly").
+- [x] **Step 1: Failing tests.** Rewrite the component test fixtures to contract shapes: rail tests build `Pick` objects from `@repo/contracts` (`candidate_id`, `for_talk_id`, `cross_domain`, `shared_methods`, `candidate: { title, session_title, units, start, … }`); agenda tests build `AgendaItem` objects (`session_title`, `kind`, `units`, `transit`). Keep every assertion (percent score, chips, anchor chip, caps, empty slots, dots, Denver time). Run → FAIL on the old prop names.
+- [x] **Step 2: Implement.** `PickRail` props: `{ anchors: { id: number; title: string }[]; recommendations: Pick[] }`; `PickCard` takes `pick: Pick` and reads `pick.candidate.title`, `pick.candidate.session_title`, `pick.candidate.start`, `pick.shared_methods`, `pick.cross_domain`, `pick.for_talk_id`, `pick.candidate_id`. `AgendaEntry` is replaced by `AgendaItem` from the contract (`session_title`, `start: string`, `end: string | null`). `app/page.tsx` passes `picks.data.recommendations` straight through; `app/calendar/page.tsx` passes `day.items` straight through. Delete the local `Pick` and `AgendaEntry` interfaces. Web tests, root types, lint, build → green.
+- [x] **Step 3: PR** (`plan4/task-8-ui-contract-types`, "refactor(web): components render the contract Pick and AgendaItem directly").
 
 ---
 

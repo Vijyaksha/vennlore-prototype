@@ -3,16 +3,19 @@ import "@testing-library/jest-dom/vitest";
 import { screen } from "@testing-library/react";
 import { describe, expect, test } from "vitest";
 
-import { Agenda, type AgendaEntry } from "../../components/agenda";
+import type { AgendaItem } from "@repo/contracts";
+
+import { Agenda } from "../../components/agenda";
 import { renderWithIntl } from "./intl";
 
 const entry = (
-  overrides: Partial<AgendaEntry> & { id: number },
-): AgendaEntry => ({
+  overrides: Partial<AgendaItem> & { id: number },
+): AgendaItem => ({
   title: `Talk ${overrides.id}`,
-  sessionTitle: "Some Session",
+  session_title: "Some Session",
   start: "2026-03-19T15:12:00.000Z",
   end: "2026-03-19T15:24:00.000Z",
+  building: "Convention Center",
   room: "Bluebird 3C",
   transit: null,
   kind: "surprise",
@@ -33,6 +36,7 @@ describe("Agenda", () => {
     // 15:12Z / 15:24Z are 9:12 / 9:24 AM in Denver (MDT).
     expect(screen.getByText("9:12 AM")).toBeInTheDocument();
     expect(screen.getByText("9:24 AM")).toBeInTheDocument();
+    expect(screen.getByText("Some Session")).toBeInTheDocument();
   });
 
   test("the user's own talk renders the outlined 'mine' variant", () => {

@@ -2,25 +2,12 @@
 
 import { useFormatter, useTranslations } from "next-intl";
 
+import type { AgendaItem as AgendaItemType } from "@repo/contracts";
 import { Badge } from "@repo/ui/components/badge";
 import { Card } from "@repo/ui/components/card";
 import { cn } from "@repo/ui/lib/utils";
 
 import { TIME_ZONE } from "@/lib/conference";
-
-export type AgendaKind = "core" | "surprise" | "mine";
-
-export interface AgendaEntry {
-  id: number;
-  title: string;
-  sessionTitle: string | null;
-  start: string;
-  end: string | null;
-  room: string | null;
-  transit: { walk: number; slack: number; tight: boolean } | null;
-  kind: AgendaKind;
-  units: string[];
-}
 
 function Grip() {
   return (
@@ -35,12 +22,12 @@ function Grip() {
   );
 }
 
-export function AgendaItem({ item }: { item: AgendaEntry }) {
+export function AgendaItem({ item }: { item: AgendaItemType }) {
   const t = useTranslations("agenda");
   const format = useFormatter();
 
   const mine = item.kind === "mine";
-  const time = (value: Date | string) =>
+  const time = (value: string) =>
     format.dateTime(new Date(value), {
       hour: "numeric",
       minute: "2-digit",
@@ -92,7 +79,7 @@ export function AgendaItem({ item }: { item: AgendaEntry }) {
           {item.title}
         </h3>
         <span className="block font-mono text-[11.5px] text-muted-foreground tabular-nums">
-          {mine ? t("presenting") : item.sessionTitle}
+          {mine ? t("presenting") : item.session_title}
         </span>
         <Grip />
       </Card>

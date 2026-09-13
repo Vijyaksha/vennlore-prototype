@@ -1,11 +1,11 @@
 "use client";
 
+import type { AgendaKind } from "@repo/contracts";
 import { useFormatter, useTranslations } from "next-intl";
 
 import { cn } from "@repo/ui/lib/utils";
 
 import { dayDate, TIME_ZONE } from "@/lib/conference";
-import type { AgendaKind } from "./agenda-item";
 
 export interface DayStripDay {
   date: string;
