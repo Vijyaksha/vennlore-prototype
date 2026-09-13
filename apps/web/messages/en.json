@@ -9,6 +9,7 @@
     "unexpected": "unexpected",
     "score": "{score, number, percent}",
     "forTalk": "for your talk on {title}",
+    "titleSeparator": " · ",
     "sharedMethods": "Shared methods",
     "when": "{dow} {date} · {time}",
     "untimed": "Time TBD",

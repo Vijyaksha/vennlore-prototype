@@ -4,6 +4,7 @@ import { useTranslations } from "next-intl";
 
 import { Skeleton } from "@repo/ui/components/skeleton";
 
+import { AnchorHeading } from "@/components/anchor-heading";
 import { ErrorState } from "@/components/error-state";
 import type { Pick } from "@/components/pick-card";
 import { PickRail } from "@/components/pick-rail";
@@ -50,9 +51,7 @@ export default function PicksPage() {
   return (
     <section>
       <div className="px-5 pt-5 pb-0.5">
-        <h1 className="max-w-[34ch] font-serif text-[19px] leading-[1.3] font-normal text-balance">
-          {anchors.map((anchor) => anchor.title).join(" · ")}
-        </h1>
+        <AnchorHeading titles={anchors.map((anchor) => anchor.title)} />
       </div>
       <PickRail
         anchors={anchors.map(({ id, title }) => ({ id, title }))}
