@@ -31,6 +31,9 @@ Claude-Session: https://claude.ai/code/session_01GyR4M6ie2tftRPoSLdJdxY
 
 - **Task 5 review changes.** The presenter and author lookups use Drizzle `arrayContains` (`@>`), not raw `= ANY(...)`. `getMatches` orders by for_talk_id, rank, then candidate_id in both repos. The repo test fixtures are deliberately unsorted, so ordering and match filtering are really tested. Later: add a GIN index on `presenter_ids` and `author_ids` if the store grows well past GPS scale.
 
+- **Task 6 review changes.** `trpc.ts` masks INTERNAL_SERVER_ERROR messages outside development, so database errors cannot leak SQL. Deliberate TRPCErrors keep their messages. The `Subject` branches are strict, so sending both `presenterId` and `talkId` is rejected. `engineId` reuses the contract's engine_id rule and is capped at 64 characters. Agenda items are slim (id, title, sessionTitle, start, end, building, room, transit, kind, units). A candidate's kind follows its highest-scoring match, and "mine" sorts first on equal start times. `ENGINE_ID` is declared in turbo.json. With no tRPC transformer, dates reach the client as ISO strings.
+- **Open spec question.** `presenter.picks` sends each recommendation row whole, including `evidence`, `engine_id`, `run_id` and `contract_version`. Spec §5.2 says the UI "never sees" those fields. Either reword §5.2 to "never renders", or strip the fields in picks. Decide in Plan 3.
+
 ## File structure (end state)
 
 ```
@@ -610,7 +613,7 @@ git commit -m "feat(api): Repo interface with in-memory fake and Drizzle impleme
 - Create: `packages/api/src/agenda.ts`, `packages/api/test/agenda.test.ts`
 - Rewrite: `packages/api/src/trpc.ts` (context gains `engineId`), `packages/api/src/router.ts`, `packages/api/test/router.test.ts`
 
-- [ ] **Step 1: Failing tests**
+- [x] **Step 1: Failing tests**
 
 `packages/api/test/agenda.test.ts` (pure grouping, lifted from the old agenda procedure):
 
@@ -706,7 +709,7 @@ describe("presenter.agenda", () => {
 
 Run → FAIL.
 
-- [ ] **Step 2: Implement**
+- [x] **Step 2: Implement**
 
 `packages/api/src/agenda.ts`:
 
@@ -802,7 +805,7 @@ Update `src/index.ts` to export `createContext` and `groupByDenverDay`.
 
 Run: `npm run test --workspace=@repo/api && npm run check-types --workspace=@repo/api && npm run lint --workspace=@repo/api` → all green (`apps/web` is now red until Task 7).
 
-- [ ] **Step 3: Commit**
+- [x] **Step 3: Commit**
 
 ```bash
 git add packages/api/src packages/api/test
