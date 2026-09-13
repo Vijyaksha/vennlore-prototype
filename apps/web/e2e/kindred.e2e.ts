@@ -62,8 +62,17 @@ test("agenda API groups all matched picks into conference days", async ({
     items: { id: number }[];
   }[];
   const ids = days.flatMap((d) => d.items.map((i) => i.id));
-  // The 8 matches from the calibrated Stage-0 run, minus nothing.
-  expect(ids.sort((a, b) => a - b)).toEqual([
-    2802, 3100, 5432, 8500, 9437, 12292, 12342, 12772,
-  ]);
+  // Every matched pick for the (untimed) anchor is on the agenda, exactly once,
+  // whatever the seeded run produced. Ids are not pinned: reruns are stochastic.
+  const picks = await request.get(
+    `${baseURL}/api/trpc/presenter.picks?input=${encodeURIComponent(
+      JSON.stringify({ talkId: 0 }),
+    )}`,
+  );
+  expect(picks.ok()).toBe(true);
+  const matched = ((await picks.json()).result.data.recommendations as {
+    candidateId: number;
+  }[]).map((r) => r.candidateId);
+  expect(matched.length).toBeGreaterThan(0);
+  expect(ids.sort((a, b) => a - b)).toEqual(matched.sort((a, b) => a - b));
 });

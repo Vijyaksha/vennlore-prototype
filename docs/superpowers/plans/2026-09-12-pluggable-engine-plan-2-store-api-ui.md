@@ -864,13 +864,15 @@ git commit -m "feat(web): Kindred reads presenter.picks/agenda; percent score, s
 
 **Requires Rupert's explicit go. Touches the Supabase database (`DATABASE_URL` in `packages/api/.env`).**
 
-- [ ] **Step 1:** Ask: "Task 9 runs migration 0001 against the live Supabase Postgres (drops the three sub-score columns and recreates the recommendations PK; existing 18 legacy rows are replaced) and reseeds from `app_seed.v2.json`. Proceed?"
-- [ ] **Step 2:** `cd pipeline && uv run python scripts/export_app_seed.py --query out/graph_v1/stage0-chat/query --ids datasets/micro-corpus.json` (offline; uses the run from Plan 1 Task 12).
-- [ ] **Step 3:** `cd packages/api && set -a && . ./.env && set +a && npm run db:migrate && npm run db:seed` → "Seeded 58 talks / 118 locations / 1 runs / 19 recommendations".
-- [ ] **Step 4:** `cd apps/web && ENGINE_ID=graph_v1 npm run dev` and, in a browser or via Playwright, confirm `/` shows the porphyrin heading, cards with percent scores and chips, and `/calendar` renders days; then `npm run e2e` against the dev server (set `PLAYWRIGHT_BASE_URL`).
-- [ ] **Step 5:** Commit nothing (outputs are gitignored); append one line to this plan under this task: `Migrated + seeded on <date>; e2e N passed`, and commit that line.
+- [x] **Step 1:** Ask: "Task 9 runs migration 0001 against the live Supabase Postgres (drops the three sub-score columns and recreates the recommendations PK; existing 18 legacy rows are replaced) and reseeds from `app_seed.v2.json`. Proceed?"
+- [x] **Step 2:** `cd pipeline && uv run python scripts/export_app_seed.py --query out/graph_v1/stage0-chat/query --ids datasets/micro-corpus.json` (offline; uses the run from Plan 1 Task 12).
+- [x] **Step 3:** `cd packages/api && set -a && . ./.env && set +a && npm run db:migrate && npm run db:seed` → "Seeded 58 talks / 118 locations / 1 runs / 19 recommendations".
+- [x] **Step 4:** `cd apps/web && ENGINE_ID=graph_v1 npm run dev` and, in a browser or via Playwright, confirm `/` shows the porphyrin heading, cards with percent scores and chips, and `/calendar` renders days; then `npm run e2e` against the dev server (set `PLAYWRIGHT_BASE_URL`).
+- [x] **Step 5:** Commit nothing (outputs are gitignored); append one line to this plan under this task: `Migrated + seeded on <date>; e2e N passed`, and commit that line.
 
 ---
+
+**Outcome (2026-09-13).** Migrated + seeded on 2026-09-13; e2e 5 passed. Migration 0001 applied to the live Supabase Postgres; seed wrote 58 talks / 118 locations / 1 runs / 19 recommendations from the plan 1 `stage0-chat` run (13 match rows). The agenda e2e test had pinned the 8 ids of the original calibrated run, which the seeded rerun does not reproduce (see plan 1 Task 12 outcome); it now asserts the invariant that every matched pick appears on the agenda exactly once, so it survives stochastic reruns.
 
 ## Self-review
 
