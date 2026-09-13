@@ -12,7 +12,7 @@ export interface AgendaInput {
 
 /** An input item that has a start time, annotated with the connection from the
  *  previous item on the same Denver day (null for the first item of the day). */
-export type AgendaItem<T extends AgendaInput = AgendaInput> = T & { start: Date; transit: Connection | null };
+export type TimedItem<T extends AgendaInput = AgendaInput> = T & { start: Date; transit: Connection | null };
 
 const denverDate = new Intl.DateTimeFormat("en-CA", {
   timeZone: "America/Denver",
@@ -27,11 +27,11 @@ const denverDate = new Intl.DateTimeFormat("en-CA", {
 export function groupByDenverDay<T extends AgendaInput>(
   items: T[],
   tiebreak: (a: T, b: T) => number = () => 0,
-): { date: string; items: AgendaItem<T>[] }[] {
+): { date: string; items: TimedItem<T>[] }[] {
   const timed = items
     .filter((t): t is T & { start: Date } => t.start !== null)
     .sort((a, b) => a.start.getTime() - b.start.getTime() || tiebreak(a, b) || a.id - b.id);
-  const byDate = new Map<string, AgendaItem<T>[]>();
+  const byDate = new Map<string, TimedItem<T>[]>();
   for (const t of timed) {
     const date = denverDate.format(t.start);
     const list = byDate.get(date) ?? [];

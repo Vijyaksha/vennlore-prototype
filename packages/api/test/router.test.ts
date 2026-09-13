@@ -41,6 +41,9 @@ describe("talk.get", () => {
     expect((await call().talk.get({ id: 2802 })).title).toBe("Bluebird talk");
     await expect(call().talk.get({ id: 1 })).rejects.toThrow(/not found/i);
   });
+  test("rejects an input carrying an unknown key, like the presenter procedures", async () => {
+    await expect(call().talk.get({ id: 0, extra: 1 } as never)).rejects.toMatchObject({ code: "BAD_REQUEST" });
+  });
 });
 
 describe("presenter.picks", () => {

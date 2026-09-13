@@ -29,6 +29,11 @@ describe("wire: Drizzle row -> contract row", () => {
   test("toRecommendation round-trips the recommendation fixture exactly", () => {
     expect(toRecommendation(recRow())).toEqual(fixture("recommendation"));
   });
+  test("a row whose contract_version is not 1 fails the contract", () => {
+    const r = toRecommendation({ ...recRow(), contractVersion: 2 });
+    expect(r.contract_version).toBe(2);
+    expect(RecommendationSchema.safeParse(r).success).toBe(false);
+  });
   test("toPick joins the candidate and validates against PickSchema", () => {
     const pick = toPick({ ...recRow(), candidate: talkRow() });
     expect(pick.candidate.id).toBe(2802);

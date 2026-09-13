@@ -23,26 +23,10 @@ async function resolveAnchors(repo: Repo, input: Subject): Promise<{ presenterId
   return { presenterId: null, anchors: [talk] };
 }
 
-/** In-process agenda entry: the slim agenda fields, with Date starts so
- *  groupByDenverDay can sort and compute transit before they become ISO strings. */
-function agendaEntry(t: TalkRow, kind: AgendaKind) {
-  return {
-    id: t.id,
-    title: t.title,
-    sessionTitle: t.sessionTitle,
-    start: t.start,
-    end: t.end,
-    building: t.building,
-    room: t.room,
-    units: t.units,
-    kind,
-  };
-}
-
 export const appRouter = router({
   talk: router({
     get: publicProcedure
-      .input(z.object({ id: z.int().min(0) }))
+      .input(z.strictObject({ id: z.int().min(0) }))
       .output(TalkSchema)
       .query(async ({ ctx, input }) => {
         const talk = await ctx.repo.getTalk(input.id);
@@ -79,9 +63,13 @@ export const appRouter = router({
           const prev = best.get(m.candidateId);
           if (prev === undefined || m.score > prev.score) best.set(m.candidateId, m);
         }
-        const entries = new Map<number, ReturnType<typeof agendaEntry>>();
-        for (const m of best.values()) entries.set(m.candidateId, agendaEntry(m.candidate, m.crossDomain ? "surprise" : "core"));
-        for (const a of anchors) entries.set(a.id, agendaEntry(a, "mine"));
+        // TalkRow already satisfies AgendaInput and groupByDenverDay carries extra
+        // fields through, so the rows themselves are the in-process agenda entries;
+        // the slim AgendaItem is cut from them once transit has been computed.
+        const entries = new Map<number, TalkRow & { kind: AgendaKind }>();
+        for (const m of best.values())
+          entries.set(m.candidateId, { ...m.candidate, kind: m.crossDomain ? "surprise" : "core" });
+        for (const a of anchors) entries.set(a.id, { ...a, kind: "mine" });
         const mineFirst = (a: { kind: AgendaKind }, b: { kind: AgendaKind }) => Number(b.kind === "mine") - Number(a.kind === "mine");
         const days = groupByDenverDay([...entries.values()], mineFirst).map((d) => ({
           date: d.date,
