@@ -1,8 +1,11 @@
 import { readFileSync } from "node:fs";
 import { createRequire } from "node:module";
+import { RecommendationSchema, RunSchema, TalkSchema } from "@repo/contracts";
 import { describe, expect, test } from "vitest";
 
-import { toRecommendationInsert, toRunInsert, toSeedFile, toTalkInsert } from "../src/db/transform";
+import {
+  toLocationInsert, toRecommendationInsert, toRunInsert, toSeedFile, toTalkInsert,
+} from "../src/db/transform";
 
 const req = createRequire(import.meta.url);
 const fixture = (kind: string) =>
@@ -49,5 +52,56 @@ describe("row transforms", () => {
     const row = toRunInsert(fixture("run"));
     expect(row.startedAt).toEqual(new Date("2026-09-12T12:00:00Z"));
     expect(row.anchorIds).toEqual([0]);
+  });
+});
+
+const camel = (k: string) => k.replace(/_([a-z])/g, (_, c: string) => c.toUpperCase());
+const DATE_KEYS = new Set(["start", "end", "started_at", "finished_at"]);
+function expectRoundTrip(input: Record<string, unknown>, row: Record<string, unknown>) {
+  expect(Object.keys(row).sort()).toEqual(Object.keys(input).map(camel).sort());
+  for (const [k, v] of Object.entries(input))
+    expect(row[camel(k)], k).toEqual(DATE_KEYS.has(k) && v !== null ? new Date(v as string) : v);
+}
+
+describe("round trip: every contract field lands on its own column", () => {
+  test("talk", () => {
+    const talk = TalkSchema.parse({
+      ...fixture("talk"),
+      is_invited: true, is_withdrawn: false,
+      presentation_location: "Poster board 12",
+      publication_reference: "Phys. Rev. B 110, 045101",
+      funding_acknowledgement: "NSF DMR-2401234",
+      team_acknowledgement: "Thanks to the cleanroom staff",
+      session_title: "Organic Electronics & Photonics", session_code: "MAR-B31", session_type: "ORAL",
+      start: "2026-03-19T15:12:00.000Z", end: "2026-03-19T15:24:00.000Z",
+    });
+    expectRoundTrip(talk, toTalkInsert(talk));
+  });
+  test("recommendation", () => {
+    const rec = RecommendationSchema.parse({
+      ...fixture("recommendation"), match: true, cross_domain: false,
+      why: "Both read carrier dynamics.", strongest_parallel: "Time-resolved photocurrent.",
+    });
+    expectRoundTrip(rec, toRecommendationInsert(rec));
+  });
+  test("run", () => {
+    const run = RunSchema.parse({
+      ...fixture("run"), started_at: "2026-09-12T12:00:00Z", finished_at: "2026-09-12T12:00:34Z",
+    });
+    expectRoundTrip(run, toRunInsert(run));
+  });
+});
+
+describe("locations", () => {
+  test("accepts an id above int32 and maps it unchanged", () => {
+    const location = { id: 4109684556, building: "Convention Center", room: "Bluebird 3C" };
+    const seed = toSeedFile({ contract_version: 1, talks: [], locations: [location], recommendations: [], runs: [] });
+    expect(toLocationInsert(seed.locations[0]!)).toEqual(location);
+  });
+  test("rejects an empty room, naming the row", () => {
+    expect(() => toSeedFile({
+      contract_version: 1, talks: [], recommendations: [], runs: [],
+      locations: [{ id: 1, building: "Convention Center", room: "" }],
+    })).toThrow(/locations\[0\]/);
   });
 });
