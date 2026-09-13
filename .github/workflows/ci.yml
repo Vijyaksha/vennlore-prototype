@@ -9,8 +9,8 @@ permissions:
   contents: read
 
 concurrency:
-  group: ci-${{ github.ref }}
-  cancel-in-progress: true
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 env:
   TURBO_TELEMETRY_DISABLED: "1"
@@ -107,3 +107,4 @@ jobs:
         with:
           name: playwright-traces
           path: apps/web/test-results/
+          if-no-files-found: ignore
