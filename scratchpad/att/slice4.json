@@ -1,0 +1,407 @@
+[
+ {
+  "row": 10,
+  "society": "European Society of Cardiology (ESC)",
+  "country": "Europe",
+  "conference": "ESC Congress",
+  "umbrella": "Cardiology",
+  "abstracts": "4,935 abstracts published in the European Heart Journal ESC Congress supplement",
+  "tier": "VERIFIED"
+ },
+ {
+  "row": 20,
+  "society": "European Society for Medical Oncology (ESMO)",
+  "country": "Europe",
+  "conference": "ESMO Congress",
+  "umbrella": "Oncology",
+  "abstracts": "3,743 abstracts published in the Annals of Oncology ESMO Congress supplement (of",
+  "tier": "VERIFIED"
+ },
+ {
+  "row": 32,
+  "society": null,
+  "country": null,
+  "conference": "SSO Annual Cancer Symposium",
+  "umbrella": "Oncology",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 36,
+  "society": null,
+  "country": null,
+  "conference": "ASCO GI Cancers Symposium",
+  "umbrella": "Oncology",
+  "abstracts": "833 abstracts (JCO vol 43, issue 4_suppl)",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 43,
+  "society": null,
+  "country": null,
+  "conference": "HRS \u2014 Heart Rhythm Society",
+  "umbrella": "Cardiology",
+  "abstracts": "1,691 abstracts published in the Heart Rhythm annual-meeting supplement",
+  "tier": "VERIFIED"
+ },
+ {
+  "row": 45,
+  "society": null,
+  "country": null,
+  "conference": "HFSA Annual Scientific Meeting",
+  "umbrella": "Cardiology",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 51,
+  "society": null,
+  "country": null,
+  "conference": "MDS International Congress",
+  "umbrella": "Neurology",
+  "abstracts": "1,805 abstracts accepted/published",
+  "tier": "VERIFIED"
+ },
+ {
+  "row": 57,
+  "society": null,
+  "country": null,
+  "conference": "ISMRM Annual Meeting",
+  "umbrella": "Radiology & imaging",
+  "abstracts": "5,347 abstracts (unique proceedings pages)",
+  "tier": "VERIFIED"
+ },
+ {
+  "row": 60,
+  "society": null,
+  "country": null,
+  "conference": "ESMRMB Congress",
+  "umbrella": "Radiology & imaging",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 65,
+  "society": null,
+  "country": null,
+  "conference": "ASTMH Annual Meeting",
+  "umbrella": "Infectious disease",
+  "abstracts": "2,217 abstract IDs counted (numbering 5000-7267, i.e. 2,268 slots issued)",
+  "tier": "VERIFIED"
+ },
+ {
+  "row": 73,
+  "society": null,
+  "country": null,
+  "conference": "ECO \u2014 European Congress on Obesity",
+  "umbrella": "Diabetes, endocrine & obesity",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 75,
+  "society": null,
+  "country": null,
+  "conference": "ACG Annual Scientific Meeting",
+  "umbrella": "Gastroenterology & hepatology",
+  "abstracts": "5,212 abstracts accepted",
+  "tier": "VERIFIED"
+ },
+ {
+  "row": 81,
+  "society": null,
+  "country": null,
+  "conference": "APSR Congress",
+  "umbrella": "Respiratory",
+  "abstracts": "512 abstracts accepted (highest submission ID 1,028, i.e. roughly 1,000 submitte",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 90,
+  "society": null,
+  "country": null,
+  "conference": "ASRS Annual Meeting",
+  "umbrella": "Ophthalmology",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 96,
+  "society": null,
+  "country": null,
+  "conference": "APA Annual Meeting (psychiatry)",
+  "umbrella": "Psychiatry & neuroscience",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 97,
+  "society": null,
+  "country": null,
+  "conference": "ECNP Congress",
+  "umbrella": "Psychiatry & neuroscience",
+  "abstracts": "1,469 abstracts (individually deposited)",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 102,
+  "society": null,
+  "country": null,
+  "conference": "ACS Clinical Congress",
+  "umbrella": "Surgery",
+  "abstracts": "More than 2,400 abstracts submitted",
+  "tier": "VERIFIED"
+ },
+ {
+  "row": 111,
+  "society": null,
+  "country": null,
+  "conference": "ESICM LIVES",
+  "umbrella": "Anaesthesia & critical care",
+  "abstracts": "~1,122 abstracts accepted",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 115,
+  "society": null,
+  "country": null,
+  "conference": "FIGO World Congress",
+  "umbrella": "Obstetrics, gynaecology & reproductive",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 118,
+  "society": null,
+  "country": null,
+  "conference": "AAP National Conference",
+  "umbrella": "Paediatrics",
+  "abstracts": "More than 800 abstracts presented (2025); over 1,200 (2026)",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 126,
+  "society": null,
+  "country": null,
+  "conference": "EAU Congress",
+  "umbrella": "Urology",
+  "abstracts": "5,745 poster and video abstracts SUBMITTED (5,265 posters + 480 videos); 1,674 p",
+  "tier": "VERIFIED"
+ },
+ {
+  "row": 133,
+  "society": null,
+  "country": null,
+  "conference": "AAI IMMUNOLOGY",
+  "umbrella": "Immunology & allergy",
+  "abstracts": "882 abstracts published (accepted)",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 139,
+  "society": null,
+  "country": null,
+  "conference": "SLEEP (AASM/SRS)",
+  "umbrella": "Sleep, pain & rehabilitation",
+  "abstracts": "1,517 abstracts published (accepted) in SLEEP Vol 48 Supplement_1",
+  "tier": "VERIFIED"
+ },
+ {
+  "row": 140,
+  "society": null,
+  "country": null,
+  "conference": "ESRS Congress",
+  "umbrella": "Sleep, pain & rehabilitation",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 148,
+  "society": null,
+  "country": null,
+  "conference": "IAGG World Congress",
+  "umbrella": "Geriatrics & palliative",
+  "abstracts": "5,175 abstracts published",
+  "tier": "VERIFIED"
+ },
+ {
+  "row": 153,
+  "society": null,
+  "country": null,
+  "conference": "ISPOR (US + Europe)",
+  "umbrella": "Health services, informatics & economics",
+  "abstracts": "2,701 abstracts at ISPOR Europe 2025 (Value in Health Vol 28 Issue 12) and 1,777",
+  "tier": "VERIFIED"
+ },
+ {
+  "row": 159,
+  "society": null,
+  "country": null,
+  "conference": "ASCPT Annual Meeting",
+  "umbrella": "Pharmacology & pharmacy",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 165,
+  "society": null,
+  "country": null,
+  "conference": "EUROTOX Congress",
+  "umbrella": "Toxicology",
+  "abstracts": "898 abstracts/presentations published (accepted)",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 171,
+  "society": null,
+  "country": null,
+  "conference": "AACN NTI",
+  "umbrella": "Nursing & allied health",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 176,
+  "society": null,
+  "country": null,
+  "conference": "Triological Society COSM",
+  "umbrella": "ENT / head & neck",
+  "abstracts": "over 850 scientific posters (posters only; oral programmes of the 9 member socie",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 180,
+  "society": null,
+  "country": null,
+  "conference": "WFNS World Congress",
+  "umbrella": "Neurosurgery",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 187,
+  "society": null,
+  "country": null,
+  "conference": "ISSCR Annual Meeting",
+  "umbrella": "Cell, gene & stem cell therapy",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 190,
+  "society": null,
+  "country": null,
+  "conference": "TERMIS World Congress",
+  "umbrella": "Biomedical engineering & biomaterials",
+  "abstracts": "1,042 poster abstracts (A/B/C day-prefixed IDs); oral presentations not included",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 196,
+  "society": null,
+  "country": null,
+  "conference": "SGIM Annual Meeting",
+  "umbrella": "Primary care & family medicine",
+  "abstracts": "~2,100 abstracts (2,112 unique Control IDs by PyMuPDF, 2,094 by pdftotext -raw) ",
+  "tier": "VERIFIED"
+ },
+ {
+  "row": 199,
+  "society": null,
+  "country": null,
+  "conference": "ASAM Annual Conference",
+  "umbrella": "Addiction medicine",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 206,
+  "society": null,
+  "country": null,
+  "conference": "ECTMIH",
+  "umbrella": "Global health",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 215,
+  "society": null,
+  "country": null,
+  "conference": "AOA OMED (osteopathic)",
+  "umbrella": "General & internal medicine",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 220,
+  "society": null,
+  "country": null,
+  "conference": "NASS Annual Meeting (North American Spine Society)",
+  "umbrella": "Spine & orthopaedics",
+  "abstracts": "1,688 abstract submissions received from nearly 40 countries (a record); 369 sel",
+  "tier": "VERIFIED"
+ },
+ {
+  "row": 223,
+  "society": null,
+  "country": null,
+  "conference": "The Aesthetic Meeting (ASAPS)",
+  "umbrella": "Surgery",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 231,
+  "society": null,
+  "country": null,
+  "conference": "American Academy of Pain Medicine Annual Meeting",
+  "umbrella": "Pain & headache",
+  "abstracts": "UNKNOWN \u2014 the abstract call is for scientific POSTERS only, with 'up to six' sel",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 235,
+  "society": null,
+  "country": null,
+  "conference": "World Physiotherapy Congress",
+  "umbrella": "Nursing & allied health",
+  "abstracts": "3,355 abstract submissions completed and submitted by the closing date (a record",
+  "tier": "VERIFIED"
+ },
+ {
+  "row": 240,
+  "society": null,
+  "country": null,
+  "conference": "World Congress on Public Health (WFPHA)",
+  "umbrella": "Public health & health informatics",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 248,
+  "society": null,
+  "country": null,
+  "conference": "ICS Annual Meeting (International Continence Society)",
+  "umbrella": "Urology, continence & wound",
+  "abstracts": "849 abstracts published (IDs 1-864, 15 unused)",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 250,
+  "society": null,
+  "country": null,
+  "conference": "SAWC (Symposium on Advanced Wound Care)",
+  "umbrella": "Urology, continence & wound",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 255,
+  "society": null,
+  "country": null,
+  "conference": "HLTH",
+  "umbrella": "Industry & trade (expected to fail the bar \u2014 logged so the exclusion is on the record)",
+  "abstracts": "",
+  "tier": "NOT YET CENSUSED"
+ }
+]

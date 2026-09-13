@@ -6,34 +6,51 @@ import { useRef, useState } from "react";
 import { cn } from "@repo/ui/lib/utils";
 
 import { EmptySlot } from "./empty-slot";
-import { PickCard, type Pick } from "./pick-card";
+import { PickCard, type Anchor, type Pick } from "./pick-card";
 
 const CORE_MAX = 2;
 const UNEXPECTED_MAX = 3;
 const RAIL_GAP = 14;
 
 export interface PickRailProps {
-  core: Pick[];
-  unexpected: Pick[];
+  anchors: Anchor[];
+  recommendations: Pick[];
 }
 
-export function PickRail({ core, unexpected }: PickRailProps) {
+const byScore = (a: Pick, b: Pick) =>
+  b.score - a.score || a.candidateId - b.candidateId;
+
+/** One pick per candidate: a talk matched under several anchors keeps its
+ *  best-scoring match (the first one on ties). */
+function mergeByCandidate(recommendations: Pick[]): Pick[] {
+  const best = new Map<number, Pick>();
+  for (const pick of recommendations) {
+    const prev = best.get(pick.candidateId);
+    if (prev === undefined || pick.score > prev.score) {
+      best.set(pick.candidateId, pick);
+    }
+  }
+  return [...best.values()].sort(byScore);
+}
+
+export function PickRail({ anchors, recommendations }: PickRailProps) {
   const t = useTranslations("picks");
   const railRef = useRef<HTMLDivElement>(null);
   const [active, setActive] = useState(0);
 
-  const keptCore = core.slice(0, CORE_MAX);
-  const keptUnexpected = unexpected.slice(0, UNEXPECTED_MAX);
-  const picks = [...keptCore, ...keptUnexpected].sort(
-    (a, b) => b.score - a.score || a.candidateId - b.candidateId,
-  );
+  const merged = mergeByCandidate(recommendations);
+  const keptCore = merged.filter((pick) => !pick.crossDomain).slice(0, CORE_MAX);
+  const keptUnexpected = merged
+    .filter((pick) => pick.crossDomain)
+    .slice(0, UNEXPECTED_MAX);
+  const picks = [...keptCore, ...keptUnexpected].sort(byScore);
   const showSlot = picks.length > 0 && keptCore.length < CORE_MAX;
   const count = picks.length + (showSlot ? 1 : 0);
 
   if (picks.length === 0) {
     return (
       <div className="mx-5 my-7 rounded-lg border border-dashed border-border px-4 py-9 text-center text-[13.5px] text-faint">
-        {t("noMatches")}
+        {t("noMatches", { count: anchors.length })}
       </div>
     );
   }
@@ -57,7 +74,7 @@ export function PickRail({ core, unexpected }: PickRailProps) {
         className="no-scrollbar grid snap-x snap-mandatory auto-cols-[min(76vw,310px)] grid-flow-col gap-3.5 overflow-x-auto px-5 pt-[18px] pb-3.5"
       >
         {picks.map((pick) => (
-          <PickCard key={pick.candidateId} pick={pick} />
+          <PickCard key={pick.candidateId} pick={pick} anchors={anchors} />
         ))}
         {showSlot && <EmptySlot hasCore={keptCore.length > 0} />}
       </div>

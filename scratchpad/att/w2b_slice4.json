@@ -1,0 +1,146 @@
+[
+ {
+  "row": 109,
+  "conference": "IARS Annual Meeting",
+  "umbrella": "Anaesthesia & critical care",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN"
+ },
+ {
+  "row": 187,
+  "conference": "ISSCR Annual Meeting",
+  "umbrella": "Cell, gene & stem cell therapy",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN"
+ },
+ {
+  "row": 173,
+  "conference": "ADA SmileCon",
+  "umbrella": "Dentistry & oral health",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN"
+ },
+ {
+  "row": 168,
+  "conference": "SAEM Annual Meeting",
+  "umbrella": "Emergency medicine",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN"
+ },
+ {
+  "row": 214,
+  "conference": "All India Medical Conference (IMA)",
+  "umbrella": "General & internal medicine",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN"
+ },
+ {
+  "row": 132,
+  "conference": "EAACI Congress",
+  "umbrella": "Immunology & allergy",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN"
+ },
+ {
+  "row": 256,
+  "conference": "ViVE",
+  "umbrella": "Industry & trade (expected to fail the bar \u2014 logged so the exclusion is on the record)",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": ""
+ },
+ {
+  "row": 166,
+  "conference": "ASM Microbe",
+  "umbrella": "Microbiology & virology",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN"
+ },
+ {
+  "row": 237,
+  "conference": "AOA Optometry\u2019s Meeting",
+  "umbrella": "Nursing & allied health",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN"
+ },
+ {
+  "row": 35,
+  "conference": "ONS Congress (oncology nursing)",
+  "umbrella": "Oncology",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN"
+ },
+ {
+  "row": 89,
+  "conference": "EURETINA Congress",
+  "umbrella": "Ophthalmology",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN"
+ },
+ {
+  "row": 121,
+  "conference": "EAP Congress",
+  "umbrella": "Paediatrics",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN"
+ },
+ {
+  "row": 203,
+  "conference": "ICPE (ISPE Annual Meeting)",
+  "umbrella": "Pharmacoepidemiology & epidemiology",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN"
+ },
+ {
+  "row": 193,
+  "conference": "AAFP FMX",
+  "umbrella": "Primary care & family medicine",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN"
+ },
+ {
+  "row": 243,
+  "conference": "World Cancer Congress (UICC)",
+  "umbrella": "Public health & health informatics",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN"
+ },
+ {
+  "row": 253,
+  "conference": "ATA Annual Conference (American Telemedicine Association)",
+  "umbrella": "Simulation & telehealth",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN"
+ },
+ {
+  "row": 106,
+  "conference": "ESCP Annual Meeting",
+  "umbrella": "Surgery",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN"
+ },
+ {
+  "row": 249,
+  "conference": "EWMA Conference (European Wound Management Association)",
+  "umbrella": "Urology, continence & wound",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN"
+ }
+]

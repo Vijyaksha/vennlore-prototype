@@ -42,4 +42,32 @@ export const nextJsConfig = [
     },
   },
   pluginReactHooks.configs.flat.recommended,
+  {
+    rules: {
+      // A Next app meets the data layer only through @repo/api's public surface.
+      // Severity "error" is downgraded to a warning by eslint-plugin-only-warn,
+      // so these guards fail a lint run only via each package's --max-warnings 0.
+      "no-restricted-imports": [
+        "error",
+        {
+          paths: [
+            { name: "drizzle-orm", message: "Database access lives in @repo/api." },
+            { name: "postgres", message: "Database access lives in @repo/api." },
+          ],
+          patterns: [
+            { group: ["drizzle-orm/*"], message: "Database access lives in @repo/api." },
+            { group: ["@repo/api/*"], message: "Import from the @repo/api barrel only." },
+          ],
+        },
+      ],
+      // no-restricted-imports only sees ESM; this covers `require(...)` too.
+      "no-restricted-modules": [
+        "error",
+        {
+          paths: ["drizzle-orm", "postgres"],
+          patterns: ["drizzle-orm/*", "@repo/api/*"],
+        },
+      ],
+    },
+  },
 ];

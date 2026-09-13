@@ -19,7 +19,7 @@ test("picks rail shows real engine recommendations with scores", async ({
   await page.goto("/");
   // Core pick 2802 (Ni-DNA memristive nanowires) surfaced by the Stage-0 run.
   await expect(page.getByText(/Memristive/i).first()).toBeVisible();
-  await expect(page.getByText(/\/15/).first()).toBeVisible();
+  await expect(page.getByText(/%/).first()).toBeVisible();
 });
 
 test("bottom nav flips between the two screens", async ({ page }) => {
@@ -52,8 +52,8 @@ test("agenda API groups all matched picks into conference days", async ({
   baseURL,
 }) => {
   const res = await request.get(
-    `${baseURL}/api/trpc/agenda?input=${encodeURIComponent(
-      JSON.stringify({ talkId: 0 }),
+    `${baseURL}/api/trpc/presenter.agenda?input=${encodeURIComponent(
+      JSON.stringify({ talk_id: 0 }),
     )}`,
   );
   expect(res.ok()).toBe(true);
@@ -62,8 +62,17 @@ test("agenda API groups all matched picks into conference days", async ({
     items: { id: number }[];
   }[];
   const ids = days.flatMap((d) => d.items.map((i) => i.id));
-  // The 8 matches from the calibrated Stage-0 run, minus nothing.
-  expect(ids.sort((a, b) => a - b)).toEqual([
-    2802, 3100, 5432, 8500, 9437, 12292, 12342, 12772,
-  ]);
+  // Every matched pick for the (untimed) anchor is on the agenda, exactly once,
+  // whatever the seeded run produced. Ids are not pinned: reruns are stochastic.
+  const picks = await request.get(
+    `${baseURL}/api/trpc/presenter.picks?input=${encodeURIComponent(
+      JSON.stringify({ talk_id: 0 }),
+    )}`,
+  );
+  expect(picks.ok()).toBe(true);
+  const matched = ((await picks.json()).result.data.recommendations as {
+    candidate_id: number;
+  }[]).map((r) => r.candidate_id);
+  expect(matched.length).toBeGreaterThan(0);
+  expect(ids.sort((a, b) => a - b)).toEqual(matched.sort((a, b) => a - b));
 });

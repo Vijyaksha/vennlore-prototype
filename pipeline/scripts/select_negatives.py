@@ -7,7 +7,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
-from gps_engine.corpus import load_talks  # noqa: E402
+from gps_data.archive import load_talks  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[2]
 POSITIVES = {p["id"] for p in json.loads(
@@ -29,8 +29,8 @@ for t in sorted(rng.sample(eligible, 40), key=lambda t: t.id):
 
 print("\n== same-domain shortlist (pick ~10 with NONE of the anchor's methods) ==")
 same_domain = [t for t in eligible
-               if "organic electronic" in t.session_title.lower()
-               or "molecular electronic" in t.session_title.lower()
-               or ("DPOLY" in t.units and "electro" in t.session_title.lower())]
+               if "organic electronic" in (t.session_title or "").lower()
+               or "molecular electronic" in (t.session_title or "").lower()
+               or ("DPOLY" in t.units and "electro" in (t.session_title or "").lower())]
 for t in same_domain[:25]:
     print(f"{t.id}\t[{','.join(t.units)}]\t{t.title[:80]}  <<{t.session_title[:50]}>>")

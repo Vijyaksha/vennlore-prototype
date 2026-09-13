@@ -21,6 +21,9 @@ export const config = [
       "turbo/no-undeclared-env-vars": "warn",
     },
   },
+  // only-warn downgrades every rule in every workspace to a warning, so the
+  // `--max-warnings 0` flag in each package's lint script is load-bearing:
+  // without it, no rule can ever fail a lint run.
   {
     plugins: {
       onlyWarn,

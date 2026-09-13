@@ -1,0 +1,398 @@
+[
+ {
+  "row": 12,
+  "society": "EULAR (European Alliance of Assoc. for Rheumatology)",
+  "country": "Europe",
+  "conference": "EULAR European Congress of Rheumatology",
+  "umbrella": "Rheumatology",
+  "abstracts": "3,083 abstracts published (accepted) in the Annals of the Rheumatic Diseases con",
+  "tier": "VERIFIED"
+ },
+ {
+  "row": 22,
+  "society": "American College of Rheumatology (ACR)",
+  "country": "US",
+  "conference": "ACR Convergence",
+  "umbrella": "Rheumatology",
+  "abstracts": "2,690 abstracts in the ACR Convergence 2024 abstract archive",
+  "tier": "VERIFIED"
+ },
+ {
+  "row": 33,
+  "society": null,
+  "country": null,
+  "conference": "SIOP Congress (paediatric oncology)",
+  "umbrella": "Oncology",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 37,
+  "society": null,
+  "country": null,
+  "conference": "ASCO GU Cancers Symposium",
+  "umbrella": "Oncology",
+  "abstracts": "882 abstracts (JCO vol 43, issue 5_suppl)",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 44,
+  "society": null,
+  "country": null,
+  "conference": "EHRA Congress",
+  "umbrella": "Cardiology",
+  "abstracts": "876 abstracts (Europace vol 27, Supplement_1)",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 48,
+  "society": null,
+  "country": null,
+  "conference": "EAN Congress",
+  "umbrella": "Neurology",
+  "abstracts": "UNKNOWN \u2014 existing third-party '1,986 posters + 951 presentations' (2,937 accept",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 53,
+  "society": null,
+  "country": null,
+  "conference": "WCN \u2014 World Congress of Neurology",
+  "umbrella": "Neurology",
+  "abstracts": "1,923 abstract records (Journal of the Neurological Sciences vol 455, WCN 2023 s",
+  "tier": "VERIFIED"
+ },
+ {
+  "row": 59,
+  "society": null,
+  "country": null,
+  "conference": "SNMMI Annual Meeting",
+  "umbrella": "Radiology & imaging",
+  "abstracts": "998 abstracts accepted",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 61,
+  "society": null,
+  "country": null,
+  "conference": "RANZCR ASM",
+  "umbrella": "Radiology & imaging",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 67,
+  "society": null,
+  "country": null,
+  "conference": "EASD Annual Meeting",
+  "umbrella": "Diabetes, endocrine & obesity",
+  "abstracts": "~1,146 abstracts accepted",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 76,
+  "society": null,
+  "country": null,
+  "conference": "AASLD The Liver Meeting",
+  "umbrella": "Gastroenterology & hepatology",
+  "abstracts": "2,600 abstracts (oral and poster), including over 2,400 posters",
+  "tier": "VERIFIED"
+ },
+ {
+  "row": 82,
+  "society": null,
+  "country": null,
+  "conference": "OARSI World Congress",
+  "umbrella": "Rheumatology",
+  "abstracts": "752 abstracts published in the congress supplement",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 83,
+  "society": null,
+  "country": null,
+  "conference": "APLAR Congress",
+  "umbrella": "Rheumatology",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 91,
+  "society": null,
+  "country": null,
+  "conference": "WOC \u2014 World Ophthalmology Congress",
+  "umbrella": "Ophthalmology",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 98,
+  "society": null,
+  "country": null,
+  "conference": "ACNP Annual Meeting",
+  "umbrella": "Psychiatry & neuroscience",
+  "abstracts": "914 poster abstracts (P1\u2013P914), plus the panel/mini-panel/study-group programme",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 103,
+  "society": null,
+  "country": null,
+  "conference": "SAGES Annual Meeting",
+  "umbrella": "Surgery",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 104,
+  "society": null,
+  "country": null,
+  "conference": "AATS Annual Meeting",
+  "umbrella": "Surgery",
+  "abstracts": "more than 2,000 abstract and case-video submissions",
+  "tier": "VERIFIED"
+ },
+ {
+  "row": 112,
+  "society": null,
+  "country": null,
+  "conference": "SMFM Pregnancy Meeting",
+  "umbrella": "Obstetrics, gynaecology & reproductive",
+  "abstracts": "Record 2,300+ abstracts submitted (101 orals + ~1,200 posters selected); 1,185 a",
+  "tier": "VERIFIED"
+ },
+ {
+  "row": 120,
+  "society": null,
+  "country": null,
+  "conference": "ESPE Meeting",
+  "umbrella": "Paediatrics",
+  "abstracts": "3,169 abstracts (2,951 contributed: 1,600 e-posters + 1,190 posters + 85 oral + ",
+  "tier": "VERIFIED"
+ },
+ {
+  "row": 121,
+  "society": null,
+  "country": null,
+  "conference": "EAP Congress",
+  "umbrella": "Paediatrics",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 127,
+  "society": null,
+  "country": null,
+  "conference": "USCAP Annual Meeting",
+  "umbrella": "Pathology & laboratory medicine",
+  "abstracts": "1,852 abstracts published (accepted) in Laboratory Investigation Vol 105 Issue 3",
+  "tier": "VERIFIED"
+ },
+ {
+  "row": 134,
+  "society": null,
+  "country": null,
+  "conference": "ATC \u2014 American Transplant Congress",
+  "umbrella": "Transplantation",
+  "abstracts": "2,454 abstracts published (accepted) in American Journal of Transplantation Vol ",
+  "tier": "VERIFIED"
+ },
+ {
+  "row": 141,
+  "society": null,
+  "country": null,
+  "conference": "IASP World Congress on Pain",
+  "umbrella": "Sleep, pain & rehabilitation",
+  "abstracts": "More than 2,000 poster abstracts from the 2024 congress published online (societ",
+  "tier": "VERIFIED"
+ },
+ {
+  "row": 142,
+  "society": null,
+  "country": null,
+  "conference": "ASRA Annual Meeting",
+  "umbrella": "Sleep, pain & rehabilitation",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 149,
+  "society": null,
+  "country": null,
+  "conference": "APHA Annual Meeting",
+  "umbrella": "Public health & epidemiology",
+  "abstracts": "6,160 papers in the APHA 2024 Annual Meeting programme",
+  "tier": "VERIFIED"
+ },
+ {
+  "row": 156,
+  "society": null,
+  "country": null,
+  "conference": "ACSM Annual Meeting",
+  "umbrella": "Sports medicine & physiology",
+  "abstracts": "1,909 abstracts published (accepted) in Medicine & Science in Sports & Exercise ",
+  "tier": "VERIFIED"
+ },
+ {
+  "row": 160,
+  "society": null,
+  "country": null,
+  "conference": "AAPS PharmSci 360",
+  "umbrella": "Pharmacology & pharmacy",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 167,
+  "society": null,
+  "country": null,
+  "conference": "ASV Annual Meeting",
+  "umbrella": "Microbiology & virology",
+  "abstracts": "over 1,000 participant-submitted abstracts (society's own published statement)",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 172,
+  "society": null,
+  "country": null,
+  "conference": "IADR General Session",
+  "umbrella": "Dentistry & oral health",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 177,
+  "society": null,
+  "country": null,
+  "conference": "ARO MidWinter Meeting",
+  "umbrella": "ENT / head & neck",
+  "abstracts": "813 abstracts (SA1-SA204, SU1-SU203, M1-M203, T1-T203)",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 183,
+  "society": null,
+  "country": null,
+  "conference": "IPRAS World Congress",
+  "umbrella": "Plastic & reconstructive surgery",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 188,
+  "society": null,
+  "country": null,
+  "conference": "ESGCT Congress",
+  "umbrella": "Cell, gene & stem cell therapy",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 191,
+  "society": null,
+  "country": null,
+  "conference": "Society For Biomaterials Annual Meeting",
+  "umbrella": "Biomedical engineering & biomaterials",
+  "abstracts": "840 presentations (469 posters + 371 oral talks)",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 198,
+  "society": null,
+  "country": null,
+  "conference": "SHM Converge",
+  "umbrella": "Internal & hospital medicine",
+  "abstracts": "993 abstracts published for SHM Converge 2025 (1,009 listings across 101 archive",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 200,
+  "society": null,
+  "country": null,
+  "conference": "ISAM Congress",
+  "umbrella": "Addiction medicine",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 207,
+  "society": null,
+  "country": null,
+  "conference": "ACOEM AOHC",
+  "umbrella": "Occupational & environmental health",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 216,
+  "society": null,
+  "country": null,
+  "conference": "National Medical Association Annual Convention",
+  "umbrella": "General & internal medicine",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 222,
+  "society": null,
+  "country": null,
+  "conference": "ASCRS Annual Meeting (colon & rectal surgery)",
+  "umbrella": "Surgery",
+  "abstracts": "1,684 presentations (2025 Annual Scientific Meeting)",
+  "tier": "VERIFIED"
+ },
+ {
+  "row": 224,
+  "society": null,
+  "country": null,
+  "conference": "ICMM World Congress of Military Medicine",
+  "umbrella": "Surgery",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 232,
+  "society": null,
+  "country": null,
+  "conference": "North American Neuromodulation Society Annual Meeting",
+  "umbrella": "Pain & headache",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 239,
+  "society": null,
+  "country": null,
+  "conference": "EPH Conference (European Public Health)",
+  "umbrella": "Public health & health informatics",
+  "abstracts": "3,294 abstracts received (incl. 291 workshop submissions); 1,970 abstracts publi",
+  "tier": "VERIFIED"
+ },
+ {
+  "row": 241,
+  "society": null,
+  "country": null,
+  "conference": "World Health Summit",
+  "umbrella": "Public health & health informatics",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 251,
+  "society": null,
+  "country": null,
+  "conference": "ISV Annual Congress (International Society for Vaccines)",
+  "umbrella": "Vaccines",
+  "abstracts": "UNKNOWN",
+  "tier": "BORDERLINE"
+ },
+ {
+  "row": 256,
+  "society": null,
+  "country": null,
+  "conference": "ViVE",
+  "umbrella": "Industry & trade (expected to fail the bar \u2014 logged so the exclusion is on the record)",
+  "abstracts": "",
+  "tier": "NOT YET CENSUSED"
+ }
+]

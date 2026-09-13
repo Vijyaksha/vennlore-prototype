@@ -14,8 +14,8 @@ export interface AgendaEntry {
   id: number;
   title: string;
   sessionTitle: string | null;
-  start: Date | string;
-  end: Date | string | null;
+  start: string;
+  end: string | null;
   room: string | null;
   transit: { walk: number; slack: number; tight: boolean } | null;
   kind: AgendaKind;

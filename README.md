@@ -147,6 +147,27 @@ npm exec turbo link
 npm exec turbo link
 ```
 
+## Package boundaries
+
+Every package carries a tag in its own `turbo.json`: `apps/web` and `apps/docs`
+are `app`, `packages/api` is `data`, `packages/contracts` is `contract`,
+`packages/ui` is `ui`, and the two config packages are `tooling`. The root
+`turbo.json` says which tags each may depend on:
+
+| Tag        | May depend on                         | May be depended on by |
+| ---------- | ------------------------------------- | --------------------- |
+| `contract` | `tooling`                             | anyone                |
+| `ui`       | `tooling`                             | anyone                |
+| `data`     | `contract`, `tooling`                 | `web` only            |
+| `app`      | `data`, `ui`, `contract`, `tooling`   | anyone                |
+| `tooling`  | `tooling`                             | anyone                |
+
+Dependency rules are transitive, so an allow list must name every tag reachable
+through the graph, not just the direct dependency. Apps therefore cannot import
+each other, and the database driver stays inside `@repo/api`. Run `npm run
+boundaries` to check; the app-side import rule in `apps/web/eslint.config.js`
+catches driver imports that boundaries cannot see.
+
 ## Useful Links
 
 Learn more about the power of Turborepo:

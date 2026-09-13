@@ -1,0 +1,15 @@
+{
+  "for_talk_id": 0,
+  "candidate_id": 12772,
+  "score": 12,
+  "rank": 1,
+  "match": true,
+  "cross_domain": true,
+  "why": "Both read carrier dynamics from the photocurrent transient.",
+  "strongest_parallel": "Time-resolved photocurrent as the readout of carrier dynamics.",
+  "shared_methods": ["transient photocurrent measurement"],
+  "evidence": { "same_method": 4, "specificity": 3, "usage_parallel": 5, "rubric_sum": 12 },
+  "engine_id": "graph_v1",
+  "run_id": "graph_v1-20260912T120000Z-a1b2c3",
+  "contract_version": 1
+}

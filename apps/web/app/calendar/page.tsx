@@ -7,15 +7,16 @@ import { Suspense, useState } from "react";
 import { Button } from "@repo/ui/components/button";
 import { Skeleton } from "@repo/ui/components/skeleton";
 
-import { Agenda, type AgendaEntry, type AgendaKind } from "@/components/agenda";
+import { Agenda, type AgendaEntry } from "@/components/agenda";
 import { DayStrip } from "@/components/day-strip";
 import { ErrorState } from "@/components/error-state";
 import {
-  ANCHOR_TALK_ID,
   CONFERENCE_DAYS,
   dayDate,
+  SUBJECT,
   TIME_ZONE,
 } from "@/lib/conference";
+import { isNotFound, retryUnlessNotFound } from "@/lib/query-errors";
 import { trpc } from "@/lib/trpc";
 
 function CalendarSkeleton() {
@@ -40,10 +41,10 @@ function CalendarScreen() {
   const t = useTranslations("agenda");
   const format = useFormatter();
   const searchParams = useSearchParams();
-  const talkId = ANCHOR_TALK_ID;
 
-  const agenda = trpc.agenda.useQuery({ talkId });
-  const picks = trpc.picks.useQuery({ talkId });
+  const agenda = trpc.presenter.agenda.useQuery(SUBJECT, {
+    retry: retryUnlessNotFound,
+  });
 
   const paramIndex = (CONFERENCE_DAYS as readonly string[]).indexOf(
     searchParams.get("date") ?? "",
@@ -52,37 +53,39 @@ function CalendarScreen() {
     paramIndex >= 0 ? paramIndex : null,
   );
 
-  if (agenda.isError || picks.isError) {
+  if (agenda.isError) {
     return (
       <ErrorState
-        onRetry={() => {
-          void agenda.refetch();
-          void picks.refetch();
-        }}
+        notFound={isNotFound(agenda.error)}
+        onRetry={() => void agenda.refetch()}
       />
     );
   }
 
-  if (agenda.isPending || picks.isPending) {
+  if (agenda.isPending) {
     return <CalendarSkeleton />;
   }
 
-  const kinds = new Map<number, { kind: AgendaKind; units: string[] }>();
-  for (const pick of picks.data.core) {
-    kinds.set(pick.candidateId, { kind: "core", units: pick.units });
-  }
-  for (const pick of picks.data.unexpected) {
-    kinds.set(pick.candidateId, { kind: "surprise", units: pick.units });
-  }
-  kinds.set(talkId, { kind: "mine", units: picks.data.talk.units });
-
-  const byDate = new Map(agenda.data.days.map((day) => [day.date, day.items]));
+  const byDate = new Map(
+    agenda.data.days.map((day) => [
+      day.date,
+      day.items.map(
+        (item): AgendaEntry => ({
+          id: item.id,
+          title: item.title,
+          sessionTitle: item.session_title,
+          start: item.start,
+          end: item.end,
+          room: item.room,
+          transit: item.transit,
+          kind: item.kind,
+          units: item.units,
+        }),
+      ),
+    ]),
+  );
   const days = CONFERENCE_DAYS.map((date) => {
-    const items: AgendaEntry[] = (byDate.get(date) ?? []).map((item) => ({
-      ...item,
-      kind: kinds.get(item.id)?.kind ?? "surprise",
-      units: kinds.get(item.id)?.units ?? [],
-    }));
+    const items: AgendaEntry[] = byDate.get(date) ?? [];
     return { date, items, pips: items.map((item) => item.kind) };
   });
 

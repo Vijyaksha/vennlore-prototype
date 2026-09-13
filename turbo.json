@@ -26,13 +26,58 @@
         "^check-types"
       ]
     },
+    "test": {
+      "dependsOn": [
+        "^build"
+      ],
+      "inputs": [
+        "$TURBO_DEFAULT$",
+        "fixtures/**",
+        "schema/**"
+      ]
+    },
     "dev": {
       "cache": false,
       "persistent": true
     }
   },
   "globalEnv": [
+    "CI",
     "DATABASE_URL",
-    "PLAYWRIGHT_BASE_URL"
-  ]
+    "ENGINE_ID",
+    "PLAYWRIGHT_BASE_URL",
+    "SEED_PATH"
+  ],
+  "boundaries": {
+    "tags": {
+      "contract": {
+        "dependencies": {
+          "allow": ["tooling"]
+        }
+      },
+      "ui": {
+        "dependencies": {
+          "allow": ["tooling"]
+        }
+      },
+      "data": {
+        "dependencies": {
+          "allow": ["contract", "tooling"]
+        },
+        "dependents": {
+          "allow": ["web"]
+        }
+      },
+      "app": {
+        "dependencies": {
+          "allow": ["data", "ui", "contract", "tooling"]
+        }
+      },
+      "tooling": {
+        "dependencies": {
+          "allow": ["tooling"]
+        }
+      }
+    }
+  }
 }

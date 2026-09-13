@@ -1,0 +1,5 @@
+# Any one of the three humans below may approve a pull request. Contract and spec
+# changes are listed explicitly so GitHub requests owner review on them by name.
+*                                   @Rupertlim88 @ryudayo @ryut-glitch
+/packages/contracts/                @Rupertlim88 @ryudayo @ryut-glitch
+/docs/superpowers/specs/            @Rupertlim88 @ryudayo @ryut-glitch

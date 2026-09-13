@@ -1,70 +1,53 @@
-"""Export everything the web app needs into pipeline/out/app_seed.json.
-Offline: pure file reading over data/gps2026, datasets/micro-corpus.json,
-and the Stage-0 judgment checkpoints. Safe to rerun anytime."""
+"""Export a run's rows for the web app. Writes one file:
+  out/app_seed.v2.json  — the contract shape (talks×25, recommendations×13, runs)
+Offline: reads the archive and a run directory. Usage:
+  uv run python scripts/export_app_seed.py --query out/graph_v1/stage0/query --ids datasets/micro-corpus.json"""
+import argparse
 import json
 import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
-from gps_engine.app_export import build_seed  # noqa: E402
+from gps_core.records import Recommendation, RunManifest  # noqa: E402
+from gps_core.store import write_seed  # noqa: E402
+from gps_data.archive import load_talks  # noqa: E402
+from gps_data.datasets import corpus_ids  # noqa: E402
+from gps_data.talk import from_row  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[2]
-ARCHIVE = ROOT / "data" / "gps2026"
-OUT = Path(__file__).resolve().parents[1] / "out" / "app_seed.json"
+OUT = Path(__file__).resolve().parents[1] / "out"
 
-# The anchor is an external paper (Nano Lett. 2004, 4, 1261-1265), not a GPS
-# talk; its row carries the real published abstract, same as run_stage0.
-ANCHOR_ROW = {
-    "id": 0,
-    "title": "Photoconductivity of Self-Assembled Porphyrin Nanorods",
-    "session_title": None,
-    "units": ["DPOLY"],
-    "start": None, "end": None,
-    "building": None, "room": None,
-    "abstract": (
-        "The photoconductivity of nanorods self-assembled from "
-        "meso-tetrakis(4-sulfonatophenyl)porphine is described. The "
-        "nanorods are insulating in the dark. Upon illumination with "
-        "488 nm light, the nanorods become photoconductive, exhibiting "
-        "a rapid turn on/off (<100 ms) of the current when the light is "
-        "turned on/off. This photoconductivity grows over hundreds of "
-        "seconds with light exposure and decays slowly when the light "
-        "is off. The nanorods can be trained via an applied bias to "
-        "exhibit a short-circuit photocurrent (with corresponding "
-        "open-circuit photovoltage) that flows in the direction "
-        "opposite that of the training bias. A qualitative model is "
-        "proposed, in which conduction occurs through the tightly "
-        "coupled LUMOs of close-packed porphyrin molecules."),
-}
+
+def resolve(path: str) -> Path:
+    """Accept a path relative to the cwd or to the repo root."""
+    p = Path(path)
+    if p.is_absolute() or p.exists():
+        return p
+    return ROOT / p
 
 
 def main() -> None:
-    mc = json.loads((ROOT / "datasets" / "micro-corpus.json").read_text())
-    neg = mc["negatives"]
-    ids = ({p["id"] for p in mc["positives"]}
-           | set(neg["random_unrelated"])
-           | set(neg["same_domain_different_method"]))
-
-    presentations = []
-    for pid in sorted(ids):
-        f = ARCHIVE / "presentations" / f"{pid}.json"
-        if not f.exists():
-            raise SystemExit(f"corpus id {pid} has no presentation file at {f}")
-        presentations.append(json.loads(f.read_text()))
-
-    events = [json.loads(f.read_text())
-              for f in sorted((ARCHIVE / "events").glob("*.json"))]
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--query", required=True, help="run_recommend output dir")
+    ap.add_argument("--ids", required=True, help="dataset json naming the corpus ids")
+    a = ap.parse_args()
+    q = resolve(a.query)
+    ids = corpus_ids(resolve(a.ids))
+    talks = load_talks(ROOT / "data" / "gps2026", only_ids=ids)
+    anchor = from_row(json.loads((q / "anchor.json").read_text()))
+    rows = []
+    for r in json.loads((q / "recommendations.json").read_text()):
+        r = {k: v for k, v in r.items() if k != "contract_version"}
+        rows.append(Recommendation(**{**r, "shared_methods": tuple(r["shared_methods"])}))
+    mrow = json.loads((q / "run.json").read_text())
+    mrow.pop("contract_version")
+    manifest = RunManifest(**{**mrow, "anchor_ids": tuple(mrow["anchor_ids"])})
     locations = [json.loads(f.read_text())
-                 for f in sorted((ARCHIVE / "locations").glob("*.json"))]
-    judgments = [json.loads(f.read_text())
-                 for f in sorted((Path(__file__).resolve().parents[1]
-                                  / "out" / "stage0" / "judgments").glob("*.json"))]
-
-    seed = build_seed(presentations, events, locations, judgments, ANCHOR_ROW)
-    OUT.write_text(json.dumps(seed, indent=1))
-    print(f"wrote {OUT}: {len(seed['talks'])} talks, "
-          f"{len(seed['locations'])} locations, "
-          f"{len(seed['recommendations'])} recommendations")
+                 for f in sorted((ROOT / "data/gps2026/locations").glob("*.json"))]
+    loc_rows = [{"id": l["id"], "building": l["building"], "room": l["room"]} for l in locations]
+    all_talks = [anchor] + list(talks.values())
+    write_seed(OUT / "app_seed.v2.json", all_talks, rows, [manifest], loc_rows)
+    print(f"wrote app_seed.v2.json ({len(all_talks)} talks, {len(rows)} recommendations)")
 
 
 if __name__ == "__main__":

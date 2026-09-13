@@ -1,0 +1,147 @@
+[
+ {
+  "row": 200,
+  "conference": "ISAM Congress",
+  "umbrella": "Addiction medicine",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN"
+ },
+ {
+  "row": 45,
+  "conference": "HFSA Annual Scientific Meeting",
+  "umbrella": "Cardiology",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN"
+ },
+ {
+  "row": 58,
+  "conference": "Yankee Dental Congress",
+  "umbrella": "Dentistry & oral health",
+  "society": null,
+  "list": "REMOVED",
+  "abstracts_note": "0 - no contributed-abstract programme; CE course catalogue plus exhibit floor",
+  "why_deleted": "Below the ~700 retention floor on counted evidence: 0 - no contributed-abstract programme; CE course catalogue plus exhibit floor"
+ },
+ {
+  "row": 73,
+  "conference": "ECO \u2014 European Congress on Obesity",
+  "umbrella": "Diabetes, endocrine & obesity",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN"
+ },
+ {
+  "row": 210,
+  "conference": "DGIM Kongress (German Society of Internal Medicine)",
+  "umbrella": "General & internal medicine",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN"
+ },
+ {
+  "row": 130,
+  "conference": "ESHG Conference",
+  "umbrella": "Genetics",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN"
+ },
+ {
+  "row": 254,
+  "conference": "BIO International Convention",
+  "umbrella": "Industry & trade (expected to fail the bar \u2014 logged so the exclusion is on the record)",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": ""
+ },
+ {
+  "row": 154,
+  "conference": "AAMC Learn Serve Lead",
+  "umbrella": "Medical education",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN"
+ },
+ {
+  "row": 178,
+  "conference": "AANS Annual Scientific Meeting",
+  "umbrella": "Neurosurgery",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN"
+ },
+ {
+  "row": 32,
+  "conference": "SSO Annual Cancer Symposium",
+  "umbrella": "Oncology",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN"
+ },
+ {
+  "row": 86,
+  "conference": "AAO Annual Meeting",
+  "umbrella": "Ophthalmology",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN"
+ },
+ {
+  "row": 93,
+  "conference": "EFORT Congress",
+  "umbrella": "Orthopaedics",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN"
+ },
+ {
+  "row": 226,
+  "conference": "ISBT Congress (International Society of Blood Transfusion)",
+  "umbrella": "Pathology & laboratory medicine",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN"
+ },
+ {
+  "row": 161,
+  "conference": "ACCP Annual Meeting",
+  "umbrella": "Pharmacology & pharmacy",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN"
+ },
+ {
+  "row": 241,
+  "conference": "World Health Summit",
+  "umbrella": "Public health & health informatics",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN"
+ },
+ {
+  "row": 60,
+  "conference": "ESMRMB Congress",
+  "umbrella": "Radiology & imaging",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN"
+ },
+ {
+  "row": 143,
+  "conference": "AAPM&R Annual Assembly",
+  "umbrella": "Sleep, pain & rehabilitation",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN"
+ },
+ {
+  "row": 184,
+  "conference": "AAST Annual Meeting",
+  "umbrella": "Trauma & burns",
+  "society": null,
+  "list": "APPROVED",
+  "abstracts_note": "UNKNOWN"
+ }
+]

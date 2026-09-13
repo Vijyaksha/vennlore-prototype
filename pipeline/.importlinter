@@ -1,0 +1,27 @@
+[importlinter]
+root_packages =
+    gps_engines
+    gps_core
+    gps_data
+
+; Engines sit on core, core sits on the data layer. Lower layers never import higher ones.
+; The registry reaches engines by importlib string, not by import, so core stays below engines.
+[importlinter:contract:layers]
+name = engines > core > data
+type = layers
+layers =
+    gps_engines
+    gps_core
+    gps_data
+
+; An engine returns rows; only core's run driver validates and writes them.
+; The registry names engines by string; an engine importing it would close a cycle by design.
+[importlinter:contract:no-store-from-engines]
+name = engines never write the store or drive runs
+type = forbidden
+source_modules =
+    gps_engines
+forbidden_modules =
+    gps_core.store
+    gps_core.run
+    gps_core.registry

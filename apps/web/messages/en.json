@@ -2,18 +2,22 @@
   "common": {
     "error": "Something went wrong loading this.",
     "retry": "Try again",
+    "notFound": "We couldn't find this presenter or talk.",
     "loading": "Loading"
   },
   "picks": {
     "core": "core",
     "unexpected": "unexpected",
-    "score": "{score}/{max}",
+    "score": "{score, number, percent}",
+    "forTalk": "for your talk on {title}",
+    "titleSeparator": " · ",
+    "sharedMethods": "Shared methods",
     "when": "{dow} {date} · {time}",
     "untimed": "Time TBD",
     "calendar": "Calendar",
     "noSecondCore": "No second core match cleared the bar.",
     "noCore": "No core match cleared the bar.",
-    "noMatches": "No matches cleared the bar for this talk.",
+    "noMatches": "No matches cleared the bar for {count, plural, one {this talk} other {your talks}}.",
     "railLabel": "Recommended talks"
   },
   "agenda": {

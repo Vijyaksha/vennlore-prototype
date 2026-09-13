@@ -1,0 +1,4447 @@
+{
+ "contract_version": 1,
+ "talks": [
+  {
+   "id": 0,
+   "external_id": null,
+   "title": "Photoconductivity of Self-Assembled Porphyrin Nanorods",
+   "abstract": "The photoconductivity of nanorods self-assembled from meso-tetrakis(4-sulfonatophenyl)porphine is described. The nanorods are insulating in the dark. Upon illumination with 488 nm light, the nanorods become photoconductive, exhibiting a rapid turn on/off (<100 ms) of the current when the light is turned on/off. This photoconductivity grows over hundreds of seconds with light exposure and decays slowly when the light is off. The nanorods can be trained via an applied bias to exhibit a short-circuit photocurrent (with corresponding open-circuit photovoltage) that flows in the direction opposite that of the training bias. A qualitative model is proposed, in which conduction occurs through the tightly coupled LUMOs of close-packed porphyrin molecules.",
+   "units": [
+    "DPOLY"
+   ],
+   "topics": [],
+   "type": null,
+   "is_invited": false,
+   "is_withdrawn": false,
+   "start": null,
+   "end": null,
+   "sort_order": null,
+   "presentation_location": null,
+   "author_ids": [],
+   "presenter_ids": [],
+   "publication_reference": null,
+   "funding_acknowledgement": null,
+   "team_acknowledgement": null,
+   "session_id": null,
+   "session_title": null,
+   "session_code": null,
+   "session_type": null,
+   "session_topics": [],
+   "building": null,
+   "room": null
+  },
+  {
+   "id": 39,
+   "external_id": "SMT26-3757286",
+   "title": "Is disorder both friend and foe to melting of Wigner-Mott insulators? \u2013 Part 2",
+   "abstract": "Building on the arguments presented in part one, we further demonstrate the stabilizing role of disorder through explicit microscopic model calculations. These show that disorder can significantly stabilize Wigner crystals, allowing them to persist to much higher temperatures and densities than in the clean (disorder-free) limit. As discussed in the first part, bond fluctuations play a central role in the stabilization mechanism. We again utilize a local marker to characterize the spatial features of phase coexistence. We argue that in two dimensions, disorder causes the melting transition to become significantly \"smeared,\" resulting in spatial coexistence of solid-like and liquid-like regions. This phenomenon has been directly observed in recent STM experiments. Our results offer a new physical picture for the melting of Wigner-Mott solids in two dimensions\u2014akin to a Mott-Hubbard model with spatially varying local electronic bandwidth.",
+   "units": [
+    "DCMP"
+   ],
+   "topics": [
+    "Condensed Matter",
+    "Computational Physics",
+    "Insulators",
+    "Electronic Phases",
+    "Strongly Correlated Electrons",
+    "Disordered Systems",
+    "Scanned Probe Microscopy",
+    "Low-Dimensional Systems",
+    "Phase Transitions"
+   ],
+   "type": "Oral-In-person",
+   "is_invited": false,
+   "is_withdrawn": false,
+   "start": "2026-03-20T00:06:00.000Z",
+   "end": "2026-03-20T00:18:00.000Z",
+   "sort_order": 14,
+   "presentation_location": null,
+   "author_ids": [
+    83007,
+    110112,
+    46125,
+    89816
+   ],
+   "presenter_ids": [
+    83007
+   ],
+   "publication_reference": null,
+   "funding_acknowledgement": "S.J. acknowledges support from Florida State University through the Quantum Postdoctoral Fellowship and the National High Magnetic Field Laboratory. C.L. was supported by start-up funds from Florida State University and the National High Magnetic Field Laboratory. M. H. and V. D. were supported by the NSF Grant No. DMR-2409911 and the National High Magnetic Field Laboratory. The National High Magnetic Field Laboratory is supported by the National Science Foundation through NSF/DMR-2128556 and the State of Florida.",
+   "team_acknowledgement": "Cyprian Lewandowski, Vladimir Dobrosavljevic, Sandeep Joy",
+   "session_id": 3,
+   "session_title": "New Frontiers in Modelling of Electron Phase Transitions",
+   "session_code": "MAR-W34",
+   "session_type": "ORAL",
+   "session_topics": [
+    "Condensed Matter",
+    "Electronic Phases",
+    "Strongly Correlated Systems",
+    "Phase Transitions",
+    "Computational Physics",
+    "Low-Dimensional Systems",
+    "Many-Body Physics",
+    "Topological Systems",
+    "Scanned Probe Microscopy",
+    "AI/Machine Learning",
+    "2D Materials"
+   ],
+   "building": "Convention Center",
+   "room": "Meeting Room 404"
+  },
+  {
+   "id": 1195,
+   "external_id": "SMT26-3686699",
+   "title": "Deciphering the predator-prey dynamics between protists and bacterial biofilms",
+   "abstract": "Bacteria and protists represent two of the largest contributors to biomass in ocean ecosystems, thus they influence major geochemical cycles such as carbon cycling and constitute an important sector of the marine food web. However, the nature of bacteria-protist interactions, specifically in the context of bacterial biofilms, has been unexplored with at most empirical or qualitative insight. Here, we address this gap in knowledge using the model biofilm-forming species Vibrio cholerae and the ciliate protist Tetrahymena pyriformis. Preliminary results indicate that a biofilm\u2019s size and extracellular matrix serve as the primary defenses against protist grazing suggesting that a biofilm\u2019s physical properties strongly influence the ecological outcomes between protists and bacteria. Through these quantitative experiments, we can start developing a mechanistic framework for understanding bacteria-protist interactions and their implications for microbial ecology and biogeochemical cycling in aquatic environments.",
+   "units": [
+    "DBIO"
+   ],
+   "topics": [
+    "Biological Physics",
+    "Soft Matter",
+    "Bacteria",
+    "Ecology",
+    "Dynamics",
+    "Biophysics",
+    "Biological Active Matter",
+    "Mechanobiology"
+   ],
+   "type": "Oral-In-person",
+   "is_invited": false,
+   "is_withdrawn": false,
+   "start": "2026-03-19T20:48:00.000Z",
+   "end": "2026-03-19T21:00:00.000Z",
+   "sort_order": 13,
+   "presentation_location": null,
+   "author_ids": [
+    65578,
+    215013
+   ],
+   "presenter_ids": [
+    65578
+   ],
+   "publication_reference": null,
+   "funding_acknowledgement": null,
+   "team_acknowledgement": null,
+   "session_id": 106,
+   "session_title": "Microbial Communities III",
+   "session_code": "MAR-U60",
+   "session_type": "FOCUS",
+   "session_topics": [
+    "Biological Physics",
+    "Bacteria",
+    "Microscopy",
+    "Populations",
+    "Ecology",
+    "Living Matter",
+    "Mechanobiology",
+    "Cellular Biophysics",
+    "Collective Behavior",
+    "Biological Active Matter",
+    "Pattern Formation",
+    "AI/Machine Learning"
+   ],
+   "building": "Convention Center",
+   "room": "Bluebird 2D"
+  },
+  {
+   "id": 1846,
+   "external_id": "SMT26-3715876",
+   "title": "Quantum Stimulated Emission Spectroscopy",
+   "abstract": "Stimulated emission has a wide variety of useful applications including biomedical sensing. One of the drawbacks of stimulated emission is high background noise from the excitation laser and the sample's fluorescence. We propose and demonstrate the use of entangled photons to enhance the detection of stimulated emission photons and better distinguish the signal from noise. A BBO crystal is pumped with a blue laser to produce Spontaneous Parametric Down-Converted entangled photon pairs. The photons are then split down two paths, one path going to a detector the other going through the sample as a stimulating photon. The stimulating path is split again so that the stimulated and stimulating photons go to separate detectors. A stimulated emission signal is detected when 3-way coincidence is measured. The wavelengths measured are chosen using bandpass filters tilted to the appropriate angle, enabling spectroscopic measurements of the stimulated emission. This setup allows for tuning of the wavelength of measured stimulated emission without having to change the stimulated source itself, and is sensitive to weak signals which would benefit imaging, and Raman spectroscopy applications.",
+   "units": [
+    "DAMOP"
+   ],
+   "topics": [
+    "AMO Physics",
+    "Raman Spectroscopy",
+    "Imaging",
+    "Spectroscopy",
+    "Biomedical Imaging",
+    "Quantum Enhanced Sensing",
+    "Quantum Optics",
+    "Quantum Sensing",
+    "Entanglement"
+   ],
+   "type": "Oral-In-person",
+   "is_invited": false,
+   "is_withdrawn": false,
+   "start": "2026-03-18T19:12:00.000Z",
+   "end": "2026-03-18T19:24:00.000Z",
+   "sort_order": 7,
+   "presentation_location": null,
+   "author_ids": [
+    161388,
+    179040
+   ],
+   "presenter_ids": [
+    161388
+   ],
+   "publication_reference": null,
+   "funding_acknowledgement": null,
+   "team_acknowledgement": null,
+   "session_id": 156,
+   "session_title": "Fundamental of Quantum Optics, with Davisson-Germer Prize",
+   "session_code": "MAR-M29",
+   "session_type": "FOCUS",
+   "session_topics": [
+    "AMO Physics",
+    "Quantum Optics",
+    "Quantum Light-Matter Interactions",
+    "Nanophotonics",
+    "Quantum Sensing",
+    "Cooperative Phenomena",
+    "Metamaterials",
+    "Dielectrics"
+   ],
+   "building": "Convention Center",
+   "room": "Meeting Room 302"
+  },
+  {
+   "id": 2798,
+   "external_id": "SMT26-3482356",
+   "title": "Deep Blue Phosphorescent OLEDs: Can Organics Live Long Enough at High Energies to be Useful?",
+   "abstract": "Perhaps the single most important problem confronting the development of OLED displays and lighting today is how to achieve sufficiently long triplet-controlled emission device lifetime to prevent rapid color change during operation, while achieving 100% internal emission efficiency. It has been shown1 that bimolecular (e.g. triplet-polaron, triplet-triplet) annihilation provides a source of energy sufficient to destroy the blue triplet chromophore (whether a phosphor or a TADF molecule) or its host. Many materials, structures and strategies to extend blue emission lifetime based on this understanding have been demonstrated. Unfortunately, a fully satisfactory solution has not been shown where blue triplet emitter lifetime is sufficient to meet the standards of high performance displays, although white OLED illumination sources now have adequate lifetime to meet industry standards. In this talk I will discuss progress in extending blue phosphorescent OLED (PHOLED), phosphor sensitized fluorescence, and TADF lifetimes using a combination of plasmons and polaritons.2,3 In particular, I will focus on the relationship between radiative state lifetime, exciton density, and the longevity of PHOLEDs. I will discuss routes resulting in increasing the deep blue phosphorescent longevity by at least 100X via emitter design, polaritons, and optical cavity engineering, leading to blue lifetimes as long as green PHOLEDs. Lessons learned can be applied to all organic electronics that operate at high energies and energy densities.1. \u201cIntrinsic luminance loss in phosphorescent small-molecule organic light emitting devices due to bimolecular annihilation reactions\u201d. N.C. Giebink, B.W. D\u2019Andrade, M.S. Weaver, P.B. Mackenzie, J.J. Brown, M.E. Thompson, and S.R. Forrest, J. Appl. Phys., 2008. 103, 044509.2. \"Stable blue phosphorescent organic LEDs that use polariton-enhanced Purcell effects\", H. Zhao, C. E. Arneson, D. Fan, and S. R. Forrest, Nature 2024 626, 3003.\"Stable, deep blue tandem phosphorescent organic light-emitting diode enabled by the double-sided polariton-enhanced Purcell effect\", H. Zhao, C. E. Arneson and S. R. Forrest, Nature Photonics 2025 19, 607",
+   "units": [
+    "DPOLY"
+   ],
+   "topics": [
+    "Polymer Physics",
+    "Materials Physics",
+    "Chemical Physics",
+    "Photonics",
+    "Polaritronics",
+    "Plasmonics",
+    "Organic Materials",
+    "Semiconductor Devices",
+    "Excitons"
+   ],
+   "type": "Invited-In-person",
+   "is_invited": true,
+   "is_withdrawn": false,
+   "start": "2026-03-19T14:00:00.000Z",
+   "end": "2026-03-19T14:36:00.000Z",
+   "sort_order": 1,
+   "presentation_location": null,
+   "author_ids": [
+    56927
+   ],
+   "presenter_ids": [
+    56927
+   ],
+   "publication_reference": null,
+   "funding_acknowledgement": "The authors thank the US Department of Energy BENEFIT program and Universal Display Corp. for partial support of this work.",
+   "team_acknowledgement": null,
+   "session_id": 245,
+   "session_title": "Organic Electronics & Photonics",
+   "session_code": "MAR-S67",
+   "session_type": "FOCUS",
+   "session_topics": [
+    "Polymer Physics",
+    "Organic Materials",
+    "Electronic Transport",
+    "Polymers",
+    "Excitons",
+    "Thin Films",
+    "Materials Physics",
+    "Photovoltaics",
+    "Density Functional Theory",
+    "Semiconductor Devices",
+    "Materials Design"
+   ],
+   "building": "Convention Center",
+   "room": "Bluebird 3C"
+  },
+  {
+   "id": 2799,
+   "external_id": "SMT26-3751117",
+   "title": "Investigation of Microcavity Effect on Exciton-Polaron Quenching in Organic Light-Emitting Devices",
+   "abstract": "Despite their widespread use in displays, organic light-emitting devices (OLEDs) can suffer from bimolecular exciton quenching that leads to efficiency roll-off and degradation. The roll-off often reflects exciton-polaron quenching (EPQ) and electron-hole charge imbalance. In prior work, optical microcavities have been applied to accelerate the radiative decay of the exciton and reduce the roll-off due to bimolecular quenching. Direct device-level probing of EPQ is often complicated by competing loss mechanisms and inconsistencies in estimating the polaron density. Here, we systematically probe the impact of an optical microcavity on EPQ in an OLED. By designing OLEDs based on an electron transport layer (ETL) that exhibits spontaneous orientation polarization (SOP), a localized, predictable, and voltage-tunable density of polarons can be generated in the OLED emissive layer. With the emissive layer optically pumped under applied bias, the interaction of optically generated excitons and accumulated polarons can be monitored via the EML photoluminescence intensity. Since accumulation occurs prior to turn-on voltage, other loss pathways can be excluded. We find that in full-\u03bb Fabry-P\u00e9rot microcavity OLEDs, a ~10% reduction in quenching is observed when a metallic microcavity is applied. This work will be discussed in the context of how cavity design directly impacts exciton-polaron quenching as well as the impact of coupling strength on the observed behavior.",
+   "units": [
+    "DPOLY"
+   ],
+   "topics": [
+    "Polymer Physics",
+    "Materials Physics",
+    "Excitons",
+    "Organic Materials",
+    "Optics",
+    "Semiconductor Devices",
+    "Photonics",
+    "Quantum Light-Matter Interactions",
+    "Electronic Properties"
+   ],
+   "type": "Oral-In-person",
+   "is_invited": false,
+   "is_withdrawn": false,
+   "start": "2026-03-19T14:36:00.000Z",
+   "end": "2026-03-19T14:48:00.000Z",
+   "sort_order": 2,
+   "presentation_location": null,
+   "author_ids": [
+    115242,
+    78820
+   ],
+   "presenter_ids": [
+    115242
+   ],
+   "publication_reference": null,
+   "funding_acknowledgement": "Supported by the Air Force Office of Scientific Research under award number FA9550-23-1-0645",
+   "team_acknowledgement": null,
+   "session_id": 245,
+   "session_title": "Organic Electronics & Photonics",
+   "session_code": "MAR-S67",
+   "session_type": "FOCUS",
+   "session_topics": [
+    "Polymer Physics",
+    "Organic Materials",
+    "Electronic Transport",
+    "Polymers",
+    "Excitons",
+    "Thin Films",
+    "Materials Physics",
+    "Photovoltaics",
+    "Density Functional Theory",
+    "Semiconductor Devices",
+    "Materials Design"
+   ],
+   "building": "Convention Center",
+   "room": "Bluebird 3C"
+  },
+  {
+   "id": 2802,
+   "external_id": "SMT26-3741238",
+   "title": "Memristive Properties of Ni\u2013DNA Thin-Film Devices",
+   "abstract": "DNA is a natural one-dimensional nanowire. However, its low electrical conductivity limits its applicability in nanoelectronics systems. To enhance conductivity, nickel ions were chelated into the DNA base-pair, forming a conductive Ni\u2013DNA complex. In this study, we fabricated a gold thin-film device incorporating a self-assembled monolayer (SAM) of Ni\u2013DNA molecules covalently anchored to the gold electrode through Au\u2013thiol bonds, as confirmed by Raman spectroscopy. The electrical conductance of the Ni\u2013DNA thin film was initially characterized by cyclic voltammetry, followed by current\u2013voltage (I\u2013V) measurements. The device exhibited pronounced memristive behavior, displaying a distinct resistive switching effect within the voltage range of 2\u20133 V. These findings highlight the potential of Ni\u2013DNA hybrid nanostructures as functional materials for neuromorphic computing and next-generation memory technologies.",
+   "units": [
+    "DPOLY"
+   ],
+   "topics": [
+    "Polymer Physics",
+    "Devices",
+    "Raman Spectroscopy",
+    "Nanostructures",
+    "Molecule-Metal Interfaces",
+    "Biomaterials",
+    "Self-Assembly",
+    "Thin Films",
+    "Electronic Transport"
+   ],
+   "type": "Oral-In-person",
+   "is_invited": false,
+   "is_withdrawn": false,
+   "start": "2026-03-19T15:12:00.000Z",
+   "end": "2026-03-19T15:24:00.000Z",
+   "sort_order": 5,
+   "presentation_location": null,
+   "author_ids": [
+    205292,
+    194076,
+    113414,
+    117182,
+    29084,
+    87502,
+    31573,
+    29079
+   ],
+   "presenter_ids": [
+    205292
+   ],
+   "publication_reference": null,
+   "funding_acknowledgement": null,
+   "team_acknowledgement": null,
+   "session_id": 245,
+   "session_title": "Organic Electronics & Photonics",
+   "session_code": "MAR-S67",
+   "session_type": "FOCUS",
+   "session_topics": [
+    "Polymer Physics",
+    "Organic Materials",
+    "Electronic Transport",
+    "Polymers",
+    "Excitons",
+    "Thin Films",
+    "Materials Physics",
+    "Photovoltaics",
+    "Density Functional Theory",
+    "Semiconductor Devices",
+    "Materials Design"
+   ],
+   "building": "Convention Center",
+   "room": "Bluebird 3C"
+  },
+  {
+   "id": 2804,
+   "external_id": "SMT26-3692757",
+   "title": "Understanding the role of entropy and electron delocalization in triggering spontaneous charge separation at organic donor-acceptor interfaces",
+   "abstract": "Understanding the dissociation of excitons in organic semiconductors is essential for improving the performance of next-generation photovoltaic devices. Here, we used a multiscale approach that combines a tight-binding model parameterized by DFT calculations, and kinetic Monte Carlo simulation to model the charge separation (CS) dynamics at an organic donor\u2013acceptor interface. The model allows us to understand how entropy and electron delocalization can facilitate the enthalpy-uphill CS. Effects from a small band bending, and the arrangement of molecules near the interface on the CS dynamics are studied. These findings highlight the role of molecular-scale design in optimizing organic materials for photovoltaic applications.",
+   "units": [
+    "DPOLY"
+   ],
+   "topics": [
+    "Polymer Physics",
+    "Organic Materials",
+    "Excitons",
+    "Interfaces",
+    "Semiconductors",
+    "Photovoltaics",
+    "Thermodynamics",
+    "Materials Design",
+    "Density Functional Theory"
+   ],
+   "type": "Oral-In-person",
+   "is_invited": false,
+   "is_withdrawn": false,
+   "start": "2026-03-19T15:24:00.000Z",
+   "end": "2026-03-19T15:36:00.000Z",
+   "sort_order": 6,
+   "presentation_location": null,
+   "author_ids": [
+    145998,
+    5567,
+    149689,
+    28862
+   ],
+   "presenter_ids": [
+    145998
+   ],
+   "publication_reference": null,
+   "funding_acknowledgement": "We acknowledge the support from the NSF REU program under PHY-2447841, and DOE BES under DE-SC0024525.",
+   "team_acknowledgement": null,
+   "session_id": 245,
+   "session_title": "Organic Electronics & Photonics",
+   "session_code": "MAR-S67",
+   "session_type": "FOCUS",
+   "session_topics": [
+    "Polymer Physics",
+    "Organic Materials",
+    "Electronic Transport",
+    "Polymers",
+    "Excitons",
+    "Thin Films",
+    "Materials Physics",
+    "Photovoltaics",
+    "Density Functional Theory",
+    "Semiconductor Devices",
+    "Materials Design"
+   ],
+   "building": "Convention Center",
+   "room": "Bluebird 3C"
+  },
+  {
+   "id": 3100,
+   "external_id": "SMT26-3833610",
+   "title": "Chiral-induced spin selectivity in polypeptides on Ta/CoFeB/MgO/Ta/Pt thin films exhibiting perpendicular magnetic anisotropy",
+   "abstract": "The chiral-induced spin selectivity (CISS) effect describes multiple phenomena in which an apparent relation exists between the spin orientation of electrons and the chirality of the transport medium [1]. For charge transport studies, this spin selectivity is commonly detected via magnetoresistance measurements. Here, we present a spin valve platform based on a Ta/CoFeB/MgO/Ta/Pt thin film with perpendicular magnetic anisotropy and a coercive field window of 5 \u2013 10 mT. Thiolated 31-monomer polypeptides (C[AAAAK]6) were deposited as self-assembled monolayers (SAMs). Both atomic force microscopy and X-ray photoelectron spectroscopy indicate the presence of the molecules in a predominantly flat-lying position. Preliminary magnetoelectrical measurements using a modified eutectic gallium-indium top electrode setup suggest the manifestation of magnetoresistance and an apparent spin polarization of ca. 20 %. By varying the thickness of the underlying Pt layer, the spin polarization injected into the chiral SAM can be altered. First results indicate the absence of any significant magnetoresistance at a Pt thickness of \u2265 4 nm, which may be assigned to the strong spin-orbit coupling in Pt, effectively limiting the spin decay length. Overall, the presented architecture could serve as a platform for future studies that evaluate the impact of injected spin polarization and contact potential [2] on the magnitude of the measured CISS effect. [1] Bloom et al. Chem. Rev. 2024 [2] Tirion and van Wees ACS Nano 2024",
+   "units": [
+    "DCOMP"
+   ],
+   "topics": [
+    "Computational Physics",
+    "Magnetism",
+    "Spin-Orbit Coupling",
+    "Thin Films",
+    "Molecule-Metal Interfaces",
+    "Chiral Spin Dynamics",
+    "Biopolymers",
+    "Self-Assembly",
+    "Electronic Transport"
+   ],
+   "type": "Oral-In-person",
+   "is_invited": false,
+   "is_withdrawn": false,
+   "start": "2026-03-16T21:42:00.000Z",
+   "end": "2026-03-16T21:54:00.000Z",
+   "sort_order": 2,
+   "presentation_location": null,
+   "author_ids": [
+    151625,
+    151655,
+    100045,
+    137065,
+    2591,
+    69618,
+    14091,
+    98022,
+    195248
+   ],
+   "presenter_ids": [
+    151625
+   ],
+   "publication_reference": null,
+   "funding_acknowledgement": null,
+   "team_acknowledgement": null,
+   "session_id": 272,
+   "session_title": "Interfacial Charge, Spin, and Chemical Dynamics in Energy and Quantum Materials II",
+   "session_code": "MAR-C43",
+   "session_type": "FOCUS",
+   "session_topics": [
+    "Computational Physics",
+    "Magnetism",
+    "Electronic Transport",
+    "Spin-Orbit Coupling",
+    "Molecule-Metal Interfaces",
+    "Chiral Spin Dynamics",
+    "Spin",
+    "Semiconductors",
+    "Nonequilibrium Quantum Physics",
+    "Electronic Structure"
+   ],
+   "building": "Convention Center",
+   "room": "Meeting Room 601"
+  },
+  {
+   "id": 3358,
+   "external_id": "SMT26-3717020",
+   "title": "Accelerating Quantum Simulations via Machine-Learned Basis Optimization",
+   "abstract": "Quantum simulations hold the potential to transform molecular modeling but are constrained by limited computational resources. We present a general data-driven framework that learns compact molecular representations, enabling faster and more accurate hybrid quantum\u2013classical simulations. By leveraging physical symmetries and electronic correlations, the model generates reduced subspaces that preserve essential quantum accuracy while greatly lowering computational demands. When incorporated into quantum algorithms, the learned representations accelerate convergence and enhance numerical stability. This approach establishes a scalable path toward automated basis optimization and efficient Hamiltonian reduction, broadening the applicability of quantum simulation across chemistry and materials science.",
+   "units": [
+    "DCOMP"
+   ],
+   "topics": [
+    "Computational Physics",
+    "Materials Science",
+    "Quantum Simulations",
+    "Algorithms",
+    "Quantum Molecular Science",
+    "AI/Machine Learning",
+    "Quantum Computing",
+    "Electronic Structure"
+   ],
+   "type": "Oral-In-person",
+   "is_invited": false,
+   "is_withdrawn": false,
+   "start": "2026-03-18T16:24:00.000Z",
+   "end": "2026-03-18T16:36:00.000Z",
+   "sort_order": 9,
+   "presentation_location": null,
+   "author_ids": [
+    74731,
+    183035,
+    213871,
+    60136,
+    73524,
+    190879,
+    213760,
+    205797,
+    110934
+   ],
+   "presenter_ids": [
+    74731
+   ],
+   "publication_reference": null,
+   "funding_acknowledgement": "This work was supported by Honda Research Institute (HRI-USA). Computations were performed at TACC and NERSC.",
+   "team_acknowledgement": null,
+   "session_id": 298,
+   "session_title": "Modelling Charges and Electronic Structure with Machine-Learning Approaches",
+   "session_code": "MAR-L45",
+   "session_type": "FOCUS",
+   "session_topics": [
+    "Computational Physics",
+    "AI/Machine Learning",
+    "Electronic Structure",
+    "Materials Physics",
+    "Materials Science",
+    "Chemical Physics",
+    "Density Functional Theory",
+    "Materials Design",
+    "Molecular Dynamics",
+    "Many-Body Systems",
+    "Electronic Properties",
+    "Many-Body Physics",
+    "Algorithms",
+    "Excitons",
+    "Atomistic Simulations"
+   ],
+   "building": "Convention Center",
+   "room": "Meeting Room 605"
+  },
+  {
+   "id": 3699,
+   "external_id": "SMT26-3818250",
+   "title": "Schwinger effect in arbitrary electric fields and full backreaction in 1+1D QED using bosonization",
+   "abstract": "Electron-positron pairs are created in the presence of a classical background electric field through the Schwinger effect, causing discharge of the field over time. In this talk, we demonstrate how bosonization\u2013a map from a fermion theory to a corresponding boson theory\u2013 can be used to study the 1+1D Schwinger effect. By restricting to the strong field limit where the fermion mass is much smaller compared to the background field, we analyze the Schwinger effect as an interacting boson theory. Our results are two fold. First, we compute the current expectation value in the presence of arbitrary time-dependent and spatially inhomogeneous background electric fields. Bosonization naturally incorporates the renormalization of the current, enabling us to find the fully renormalized result that would be difficult to obtain in the fermion formulation. Second, using full 1+1D QED, we perform fully quantum calculations including the backreaction. Our result shows that the expectation value of the electric field during the discharge satisfies a simple classical nonlinear partial differential equation. Direct comparison between the full quantum result and the semiclassical approximation reveals clear quantitative differences.",
+   "units": [
+    "DGRAV"
+   ],
+   "topics": [
+    "Gravitational Physics",
+    "Particles & Fields",
+    "Nonlinear Physics",
+    "Strong-field Phenomena",
+    "Quantum Field Theory",
+    "Formal Theory",
+    "Nonequilibrium Quantum Physics",
+    "Quantum Dynamics",
+    "Low-Dimensional Systems"
+   ],
+   "type": "Oral-In-person",
+   "is_invited": false,
+   "is_withdrawn": false,
+   "start": "2026-03-16T17:18:00.000Z",
+   "end": "2026-03-16T17:30:00.000Z",
+   "sort_order": 5,
+   "presentation_location": null,
+   "author_ids": [
+    131303,
+    66758
+   ],
+   "presenter_ids": [
+    131303
+   ],
+   "publication_reference": null,
+   "funding_acknowledgement": null,
+   "team_acknowledgement": null,
+   "session_id": 339,
+   "session_title": "Quantum Fields in Curved Spacetime",
+   "session_code": "APR-B93",
+   "session_type": "ORAL",
+   "session_topics": [
+    "Gravitational Physics",
+    "Quantum Field Theory",
+    "Curved Spacetime",
+    "General Relativity",
+    "Formal Theory",
+    "Quantum Gravity",
+    "Particles & Fields",
+    "Black Holes",
+    "Quantum Effects",
+    "Nonequilibrium Quantum Physics",
+    "Quantum Dynamics"
+   ],
+   "building": "Convention Center",
+   "room": "Meeting Room 103"
+  },
+  {
+   "id": 3834,
+   "external_id": "SMT26-3800254",
+   "title": "Transformer networks for continuous gravitational-wave searches",
+   "abstract": "Continuous gravitational waves (CWs) are emitted by rapidly spinning neutron stars with a non-axisymmetric deformation and lie in the sensitive band of the LIGO detectors. Wide parameter-space searches for these waves using the semi-coherent matched-filter methods require enormous computing power, which limits their achievable sensitivity. We explore an alternative search method based on training neural networks as classifiers on detector strain data with minimal pre-processing. Contrary to our previous studies using convolutional neural networks (CNNs), we investigate the suitability of the transformer architecture, specifically the Vision Transformer (ViT). We train ViTs to perform different types of CW benchmark searches: targeted search using 10 days of data, directed and all-sky searches using 1 day of data, and compare their sensitivity with the coherent matched filter method. The trained ViTs achieve essentially matched-filter sensitivity on the targeted benchmarks, and close to matched filter sensitivity on the directed and all-sky benchmarks. We find that unlike the CNNs in our previous studies, which required extensive manual design and hyperparameter tuning, the ViT achieves better performance with a standard architecture and minimal tuning.",
+   "units": [
+    "DGRAV"
+   ],
+   "topics": [
+    "Gravitational Physics",
+    "Computational Physics",
+    "Searches",
+    "Neutron Stars",
+    "Gravitational Waves",
+    "Data Analysis",
+    "Algorithms",
+    "AI/Machine Learning"
+   ],
+   "type": "Oral-In-person",
+   "is_invited": false,
+   "is_withdrawn": false,
+   "start": "2026-03-17T15:12:00.000Z",
+   "end": "2026-03-17T15:24:00.000Z",
+   "sort_order": 7,
+   "presentation_location": null,
+   "author_ids": [
+    89686,
+    155470
+   ],
+   "presenter_ids": [
+    89686
+   ],
+   "publication_reference": "Arxiv preprint: https://arxiv.org/abs/2509.10912",
+   "funding_acknowledgement": null,
+   "team_acknowledgement": null,
+   "session_id": 372,
+   "session_title": "Searches for Persistent Gravitational Waves",
+   "session_code": "APR-G85",
+   "session_type": "ORAL",
+   "session_topics": [
+    "Gravitational Physics",
+    "Gravitational Waves",
+    "Data Analysis",
+    "Neutron Stars",
+    "Computational Astrophysics",
+    "Computational Physics",
+    "Searches",
+    "Compact Objects",
+    "Algorithms",
+    "Astrophysics",
+    "Black Holes",
+    "Parameter Estimation",
+    "Axions",
+    "Dark Matter"
+   ],
+   "building": "Hyatt Regency",
+   "room": "Capitol 6"
+  },
+  {
+   "id": 3929,
+   "external_id": "SMT26-3790428",
+   "title": "Toward the incorporation of marginal events into the gravitational-wave population inference of compact binaries",
+   "abstract": "The fourth Gravitational-Wave Transient Catalog (GWTC-4.0) from the latest observing run has nearly doubled the number of confidently detected compact binary coalescences, providing unprecedented statistical power to probe the astrophysical population of black holes. While GWTC-4.0 reveals possible new features in the binary black hole population, additional astrophysical information may reside in marginal candidates below the standard event selection thresholds. We present a new hierarchical framework that incorporates such marginal events while accounting for potential noise contamination. Using a toy-model analysis based on the GWTC-3.0 dataset, we demonstrate that this method robustly infers both signal and noise population properties with minimal bias across varying event selection thresholds. We further apply the framework to the GWTC-4.0 dataset, highlighting its potential to extract additional astrophysical insights.",
+   "units": [
+    "DGRAV"
+   ],
+   "topics": [
+    "Gravitational Physics",
+    "Astrophysics",
+    "Compact Binaries",
+    "Noise",
+    "Black Holes",
+    "Populations",
+    "Computational Astrophysics",
+    "Gravitational Waves",
+    "Data Analysis"
+   ],
+   "type": "Oral-In-person",
+   "is_invited": false,
+   "is_withdrawn": false,
+   "start": "2026-03-17T20:39:00.000Z",
+   "end": "2026-03-17T20:51:00.000Z",
+   "sort_order": 8,
+   "presentation_location": null,
+   "author_ids": [
+    196923,
+    73904,
+    167224,
+    25293,
+    209801,
+    200735,
+    175306,
+    160236
+   ],
+   "presenter_ids": [
+    196923
+   ],
+   "publication_reference": null,
+   "funding_acknowledgement": null,
+   "team_acknowledgement": null,
+   "session_id": 392,
+   "session_title": "Gravitational Wave Data Analysis II",
+   "session_code": "APR-J85",
+   "session_type": "ORAL",
+   "session_topics": [
+    "Gravitational Physics",
+    "Gravitational Waves",
+    "Data Analysis",
+    "Compact Binaries",
+    "Neutron Stars",
+    "Multi-Messenger Astronomy",
+    "Astrophysics",
+    "Signal Processing",
+    "Computational Astrophysics",
+    "Mergers",
+    "Noise",
+    "Time Domain Astronomy",
+    "Black Holes",
+    "Nuclear Astrophysics",
+    "Gamma Ray Astronomy",
+    "Parameter Estimation"
+   ],
+   "building": "Hyatt Regency",
+   "room": "Capitol 6"
+  },
+  {
+   "id": 4039,
+   "external_id": "SMT26-3907858",
+   "title": "Test of Waveform Consistency with chirplets",
+   "abstract": "Gravitational-wave (GW) signals can be reconstructed using two complementary approaches. The first employs waveform templates derived from General Relativity (GR) to estimate source parameters. The second is implemented via an algorithm called BayesWave, which reconstructs signals using basis functions without assuming a specific physical model, enabling robust tests of waveform consistency. Previous comparisons of the templated and template-free reconstructions have used a sine-Gaussian wavelet basis in BayesWave. However, allowing linear time evolution of the frequency in wavelets can lead to better reconstruction of low signal-to-noise ratio (SNR) events. We refer to these frequency-evolving wavelets as chirplets. In this work, we revisit the third Gravitational-Wave Transient Catalog using chirplet-based BayesWave reconstructions to perform updated waveform consistency tests. We first analyze all events using chirplets, and then restrict chirplet usage to low-SNR events. We compare both strategies to the standard wavelet-based analysis and quantify the improvement while using chirplets. Our results argue for the inclusion of chirplets in future consistency tests to broaden the range of signals that can be robustly analyzed.",
+   "units": [
+    "DGRAV",
+    "DAP"
+   ],
+   "topics": [
+    "Gravitational Physics",
+    "General Relativity",
+    "General Relativity Tests",
+    "Waveform Modeling",
+    "Signal Processing",
+    "Parameter Estimation",
+    "Gravitational Waves",
+    "Data Analysis",
+    "Algorithms"
+   ],
+   "type": "Oral-In-person",
+   "is_invited": false,
+   "is_withdrawn": false,
+   "start": "2026-03-18T17:18:00.000Z",
+   "end": "2026-03-18T17:30:00.000Z",
+   "sort_order": 5,
+   "presentation_location": null,
+   "author_ids": [
+    158908,
+    129989,
+    24814
+   ],
+   "presenter_ids": [
+    158908
+   ],
+   "publication_reference": null,
+   "funding_acknowledgement": "NSF grants PHY-1809572 & PHY-211048",
+   "team_acknowledgement": null,
+   "session_id": 414,
+   "session_title": "Characterization and Calibration of Gravitational Wave Detectors",
+   "session_code": "APR-P85",
+   "session_type": "ORAL",
+   "session_topics": [
+    "Gravitational Waves",
+    "Data Analysis",
+    "Gravitational Physics",
+    "Signal Processing",
+    "Waveform Modeling",
+    "Noise",
+    "Detectors",
+    "Algorithms",
+    "Astrophysics",
+    "Instrumentation",
+    "Parameter Estimation",
+    "AI/Machine Learning",
+    "Transients",
+    "Computational Physics",
+    "General Relativity Tests",
+    "Computational Astrophysics"
+   ],
+   "building": "Hyatt Regency",
+   "room": "Capitol 6"
+  },
+  {
+   "id": 4116,
+   "external_id": "SMT26-3803076",
+   "title": "The excitation of linear perturbations of higher dimensional black holes.",
+   "abstract": "The study of general relativity in more than four-dimensional spacetimes is important for various reasons, ranging from the AdS/CFT correspondence to the development of grand unification theories. In this work, we study the linear perturbations of a Schwarzschild black hole solution using the covariant and gauge invariant formalism in n dimensions developed by Kodama and Ishibashi. Remarkably, when n > 4, a new tensorial degree of freedom appears in the perturbations, as opposed to the classical scalar and vector perturbations, described respectively by the Zerilli and Regge-Wheeler master equations in four dimensions. In this presentation, we report our current work on obtaining analytical expressions that describe how each of these perturbations is excited by a general source. This work paves the way for understanding the generation of gravitational radiation in higher dimensions.",
+   "units": [
+    "DGRAV"
+   ],
+   "topics": [
+    "Gravitational Physics",
+    "General Relativity",
+    "Black Holes",
+    "String Theory",
+    "Curved Spacetime",
+    "Formal Theory",
+    "Analytical Methods",
+    "Gravitational Waves"
+   ],
+   "type": "Oral-In-person",
+   "is_invited": false,
+   "is_withdrawn": false,
+   "start": "2026-03-18T20:27:00.000Z",
+   "end": "2026-03-18T20:39:00.000Z",
+   "sort_order": 7,
+   "presentation_location": null,
+   "author_ids": [
+    44698,
+    141577
+   ],
+   "presenter_ids": [
+    44698
+   ],
+   "publication_reference": null,
+   "funding_acknowledgement": "This work is supported by the Loreta and Silvio Corsetti Memorial Fellowship from the University of Illinois Urbana-Champaign.",
+   "team_acknowledgement": null,
+   "session_id": 428,
+   "session_title": "Extensions of General Relativity I",
+   "session_code": "APR-R94",
+   "session_type": "ORAL",
+   "session_topics": [
+    "Gravitational Physics",
+    "General Relativity",
+    "Black Holes",
+    "Gravitational Waves",
+    "General Relativity Tests",
+    "Curved Spacetime",
+    "Analytical Methods",
+    "Scattering",
+    "Superradiation",
+    "Compact Objects",
+    "Spacetime Symmetries",
+    "Compact Binaries",
+    "Waveform Modeling"
+   ],
+   "building": "Convention Center",
+   "room": "Meeting Room 104"
+  },
+  {
+   "id": 4139,
+   "external_id": "SMT26-3792662",
+   "title": "Detection of Interstellar Pickup Ions within our Solar System: New Instrument Concept",
+   "abstract": "We discuss the importance of measuring the composition of the local interstellar medium. Composition measurements of the local interstellar medium pickup ions are confined to mass less than or equal to 20Ne+. It is desireable to extend the mass range up to 56Fe+ if not up to 84Kr+ which will require 2-3 stop coincidence designs. It's not clear the IMAP mission can detect pickup ions with mass > 20Ne+. At present most techniques are similar to the SWICS design, which uses a combination of energy/charge (E/Q) analyzer, post-acceleration VPA > |-15| kV for positive ion measurements, followed by time-of-flight (TOF) section to measure the ion's velocity to give the ion's mass/charge (M/Q). Then by combing the ion's M/Q and E/Q, and then using a solid ststae detector (SSD) to measure the ion's total energy E = (E/Q + VPA)*Q, allows one to separate ion's M and Q for high charge state solar wind ions with 2-stop detection. But for singly charged heavy ions with mass M \u2265 16 it's difficult to detect pulses from the SSD so only a single stop design is achieved. We're developing a Tandem Ion Mass Spectrometer (TIMS) (1 V \u2264 E/Q \u2264 50 kV) composed of frontend which measures the ion's approximate E/Q and M/Q, followed by a post-acceleration VPA ~ -15 kV (i.e., ion E/M (keV/nucleon) is estimated) after which the ion enters TIMS 3-stop TOF unit (does not use SSD) where the ions mass resolution is increased (10 \u2264 M/\u0394M \u2264 60 at FWHM). With the ion approximate E/Q, M/Q and E/M provided by the frontend to the TOF unit, an algorithm that corrects for carbon foil induced ion scattering (path length changes) and energy straggling corrections can be made to make the TOF peaks narrower and boost the instruments mass resolution. In addition dE/dx effects can separate ions of similar M/Q and by making the TOF peaks narrower they can be separated. Finally, the 3-stop design allows for long integration times > years, so the only limiting factor for rare species is signal (i.e., instrument's maximum E/Q and its geometric factor).",
+   "units": [
+    "DAP",
+    "DQI"
+   ],
+   "topics": [
+    "Astrophysics",
+    "Instrumentation",
+    "Interstellar Medium",
+    "Heavy Ions",
+    "Atomic Ions",
+    "Plasma Physics",
+    "Detectors",
+    "Algorithms"
+   ],
+   "type": "Oral-In-person",
+   "is_invited": false,
+   "is_withdrawn": false,
+   "start": "2026-03-18T22:42:00.000Z",
+   "end": "2026-03-18T22:54:00.000Z",
+   "sort_order": 7,
+   "presentation_location": null,
+   "author_ids": [
+    180744,
+    168806,
+    129232,
+    172400,
+    25431,
+    139286,
+    162468,
+    60900,
+    30359,
+    33581,
+    130497,
+    212786
+   ],
+   "presenter_ids": [
+    180744
+   ],
+   "publication_reference": "None at this time except for two non-provisional patents submitted by Goddard's patent office to the U.S. Patent Office.",
+   "funding_acknowledgement": "NASA Goddard Space Flight Center Internal Research and Development funds for FY24 and FY25.",
+   "team_acknowledgement": "None at this time.",
+   "session_id": 435,
+   "session_title": "Missions, Instruments, and Surveys",
+   "session_code": "APR-S80",
+   "session_type": "ORAL",
+   "session_topics": [
+    "Astrophysics",
+    "Instrumentation",
+    "Detectors",
+    "Neutrino Astronomy",
+    "Neutrinos",
+    "Cosmic Rays",
+    "Quantum Information",
+    "Dark Energy",
+    "Missions",
+    "Cosmology",
+    "Simulations",
+    "Signal Processing",
+    "Superconductivity",
+    "Data Analysis"
+   ],
+   "building": "Hyatt Regency",
+   "room": "Capitol 1"
+  },
+  {
+   "id": 4510,
+   "external_id": "SMT26-3839642",
+   "title": "Antigenic Shielding with a Dynamically Evolving Cross-Reactivity Network",
+   "abstract": "Long-term viral persistence within hosts in commonly explained by immune escape, where the rapid mutations enable evasion from immune elimination. Another mechanism, antigenic shielding, emerges from cooperative interactions among viral variants through immune cross-reactivity. In this study we develop a stochastic coevolution model that integrates viral mutation dynamics with a dynamically evolving cross-reactivity network (CRN). The probability of forming a cross-reactivity link depends on the phylogenetic distance between variants. Our simulation shows that antigenic shielding can substantially extend the lifetime of moderately mutating viruses that would otherwise be quickly eliminated by immune system. The simulated averages of variant progeny number and virus population extinction time are consistent with analytical predictions from stochastic process theory. This framework offers a quantitative perspective on intra-host virus\u2013immune coevolution and provides insights into persistent infections such as HCV.",
+   "units": [
+    "DBIO"
+   ],
+   "topics": [
+    "Biological Physics",
+    "Evolution",
+    "Immunology",
+    "Physical Virology",
+    "Biological Networks",
+    "Stochasticity",
+    "Statistical Physics",
+    "Simulations"
+   ],
+   "type": "Oral-In-person",
+   "is_invited": false,
+   "is_withdrawn": false,
+   "start": "2026-03-16T14:48:00.000Z",
+   "end": "2026-03-16T15:00:00.000Z",
+   "sort_order": 3,
+   "presentation_location": null,
+   "author_ids": [
+    112134,
+    139060,
+    62250,
+    109996
+   ],
+   "presenter_ids": [
+    112134
+   ],
+   "publication_reference": null,
+   "funding_acknowledgement": null,
+   "team_acknowledgement": null,
+   "session_id": 488,
+   "session_title": "Physics of the Immune System & Immunology I",
+   "session_code": "MAR-A61",
+   "session_type": "FOCUS",
+   "session_topics": [
+    "Biological Physics",
+    "Immunology",
+    "Evolution",
+    "Dynamics",
+    "Modeling",
+    "Stochasticity",
+    "Statistical Physics",
+    "Complex Systems",
+    "Cellular Biophysics"
+   ],
+   "building": "Convention Center",
+   "room": "Bluebird 2E"
+  },
+  {
+   "id": 4569,
+   "external_id": "SMT26-3763534",
+   "title": "Swelling equilibria, dynamics, and rheology of charged coacervate gels",
+   "abstract": "We have investigated swelling and dynamic properties of the composite hydrogel composed of anionic poly(acrylamide-r-sodium acrylate) gel matrix and linear polycationic poly(allylamine) hydrochloride. We have quantified the role of added salt concentration on the extent of volume shrinkage and enhancement of shear modulusarising from electrostatic complexation between the guest polymer and the host gel. In tandem, the dynamics of the guest polymer, as monitored using FCS and FRET, exhibits diffusive\u2013subdiffusive\u2013diffusive behavior depending on the time scale. At intermediate time scales, the degree of anomalous diffusion increases as the salt concentration is decreased. Our results show design rules to tune the mechanical properties of composite hydrogels using concentration of added salt.",
+   "units": [
+    "DPOLY",
+    "DBIO",
+    "DSOFT"
+   ],
+   "topics": [
+    "Polymer Physics",
+    "Gels",
+    "Dynamics",
+    "Rheology",
+    "Mechanical Properties",
+    "Charged Polymers",
+    "Composites",
+    "Polyelectrolytes",
+    "Polymer Networks"
+   ],
+   "type": "Oral-In-person",
+   "is_invited": false,
+   "is_withdrawn": false,
+   "start": "2026-03-16T15:48:00.000Z",
+   "end": "2026-03-16T16:00:00.000Z",
+   "sort_order": 8,
+   "presentation_location": null,
+   "author_ids": [
+    110468,
+    30806,
+    135974
+   ],
+   "presenter_ids": [
+    110468
+   ],
+   "publication_reference": null,
+   "funding_acknowledgement": "Acknowledgment is made to the National Science Foundation (Grant No. DMR2309539) and AFOSR (Grant No. FA9550-23-1-0584).",
+   "team_acknowledgement": null,
+   "session_id": 492,
+   "session_title": "Polyelectrolyte Complexes and Biomolecular Condensates I",
+   "session_code": "MAR-A68",
+   "session_type": "FOCUS",
+   "session_topics": [
+    "Polymer Physics",
+    "Polyelectrolytes",
+    "Charged Polymers",
+    "Biomolecular Condensates",
+    "Rheology",
+    "Molecular Dynamics",
+    "Biological Physics",
+    "Soft Matter",
+    "Phase Transitions",
+    "Micelles",
+    "Proteins",
+    "Scattering",
+    "Biopolymers",
+    "Self-Assembly",
+    "Thermodynamics"
+   ],
+   "building": "Convention Center",
+   "room": "Bluebird 3D"
+  },
+  {
+   "id": 4789,
+   "external_id": "SMT26-3850892",
+   "title": "From Aggregate to Organism: Emergence of Multicellularity in Sea Sponges",
+   "abstract": "What marks the transition from a loosely connected collection of cells to a cohesive multicellular organism that behaves as an individual? We address this fundamental question using sea sponges as a model system. Remarkably, when sponge tissue is dissociated into single cells, these cells can migrate, reaggregate, and re-differentiate to form a fully functional sponge, a striking example of self-organization. We combine experiments and theory to quantify the dynamics of cell aggregation and the mechanical communication that emerges between cells. From these measurements, we identify the minimal set of interactions required to establish multicellularity. Implementing these interaction rules in silico, we reconstruct the emergence of multicellular organization from initially independent cells. Our findings illuminate how multicellularity can arise as a biophysical consequence of collective dynamics and self-organization, providing new insights into one of life's most profound transitions.",
+   "units": [
+    "DBIO"
+   ],
+   "topics": [
+    "Biological Physics",
+    "Self-Organization",
+    "Emergence",
+    "Morphogenesis",
+    "Biological Active Matter",
+    "Mechanobiology",
+    "Collective Behavior",
+    "Cellular Biophysics",
+    "Modeling"
+   ],
+   "type": "Oral-In-person",
+   "is_invited": false,
+   "is_withdrawn": false,
+   "start": "2026-03-16T20:00:00.000Z",
+   "end": "2026-03-16T20:12:00.000Z",
+   "sort_order": 11,
+   "presentation_location": null,
+   "author_ids": [
+    23871,
+    38325,
+    210649,
+    208716,
+    224187,
+    58070,
+    52851
+   ],
+   "presenter_ids": [
+    23871
+   ],
+   "publication_reference": null,
+   "funding_acknowledgement": null,
+   "team_acknowledgement": null,
+   "session_id": 515,
+   "session_title": "Collective Behaviors in Biology",
+   "session_code": "MAR-B59",
+   "session_type": "FOCUS",
+   "session_topics": [
+    "Biological Physics",
+    "Collective Behavior",
+    "Biological Active Matter",
+    "Self-Organization",
+    "Cellular Biophysics",
+    "Pattern Formation",
+    "Mechanobiology",
+    "Active Matter",
+    "Computational Physics",
+    "Motility",
+    "Biophysics",
+    "Simulations"
+   ],
+   "building": "Convention Center",
+   "room": "Bluebird 2C"
+  },
+  {
+   "id": 5194,
+   "external_id": "SMT26-3858877",
+   "title": "To Swell or Not to Swell: Intermediate \"Swelling Alloy\" Phases in Microgel Crystals",
+   "abstract": "Colloidal crystals made from soft microgel particles have a phase behavior that is distinct from hard particle colloidal crystals. Since these particles can be embedded with different core materials, there is interest in the creation of photonic and plasmonic metamaterials using different lattice structures. However, prior work has focused on particle shape or designing interactions to target certain lattice structures. Microgels such as Poly(N-isopropylacrylamide) can undergo a discontinuous swelling phase transition. We use this property to propose that phase coexistence between swollen and deswollen states can lead to new equilibrium lattice structures that are intermediate phases of microgel colloidal suspensions. We use Flory-Rehner theory with Hertzian contact mechanics as the basis for a lattice model of packed microgels. By assuming identical \"reference\" microgels, we numerically solve for the equilibrium states of the gel lattice. We find, at fixed volume, new equilibrium states corresponding to binary alloy configurations, where the unit cell consists of varying populations of swollen and deswollen microgels. This opens new questions about multiple metastable states for microgel crystals as well as phase transition/transformation kinetics.",
+   "units": [
+    "DSOFT",
+    "DBIO",
+    "DPOLY"
+   ],
+   "topics": [
+    "Soft Matter",
+    "Computational Physics",
+    "Gels",
+    "Crystals",
+    "Metamaterials",
+    "Colloids",
+    "Polymers",
+    "Phase Transitions"
+   ],
+   "type": "Oral-In-person",
+   "is_invited": false,
+   "is_withdrawn": false,
+   "start": "2026-03-16T22:18:00.000Z",
+   "end": "2026-03-16T22:30:00.000Z",
+   "sort_order": 3,
+   "presentation_location": null,
+   "author_ids": [
+    18317,
+    45442
+   ],
+   "presenter_ids": [
+    18317
+   ],
+   "publication_reference": null,
+   "funding_acknowledgement": null,
+   "team_acknowledgement": null,
+   "session_id": 554,
+   "session_title": "Granular Hydrogels and Soft Particle Assemblies",
+   "session_code": "MAR-C70",
+   "session_type": "FOCUS",
+   "session_topics": [
+    "Soft Matter",
+    "Gels",
+    "Jamming",
+    "Granular Matter",
+    "Biomaterials",
+    "Polymers",
+    "3D Printing",
+    "Mechanical Properties",
+    "Biological Active Matter",
+    "Collective Behavior",
+    "Phase Transitions"
+   ],
+   "building": "Convention Center",
+   "room": "Bluebird 3F"
+  },
+  {
+   "id": 5284,
+   "external_id": "SMT26-3738949",
+   "title": "Hybrid repeaters with encoding for long distance entanglement distribution",
+   "abstract": "Long-distance entanglement distribution will require error correction/distillation in order to compensate for the loss of coherence in quantum memories and noise addition during entanglement swapping. In this paper, we argue why repeaters with error correction abilities should utilize more than one physical platform. Hybrid repeaters introduced in this work utilize the best features of different platforms, such as high entanglement generation rates of one type and the low two-qubit gate errors and high coherence times offered by another type. At the same time, taking the resource-intensive nature of hybrid repeaters (financial or difficulty of deployment) into account, we propose an architecture where only some repeaters need to be hybrid, whereas the others can be simpler with no error correction abilities. We show through detailed simulations that these hybrid repeater architectures can outperform architectures that rely only on a single kind of quantum memory platform in terms of end-to-end fidelity and entanglement distribution rates/secret key rates. The advantage is greater in more resource-constrained scenarios, making hybrid architectures relevant for current implementations. Finally, we provide a concrete implementation scheme for a hybrid repeater chain using silicon-vacancy and ion-trap qubits as examples of the two constituent physical platforms. We evaluate its performance under hardware constraints and show that hybrid retains advantage over monolithic architectures.",
+   "units": [
+    "DQI"
+   ],
+   "topics": [
+    "Quantum Information",
+    "Entanglement",
+    "Error Correction",
+    "Qubits",
+    "Simulations",
+    "Trapped Ions",
+    "Quantum Networks",
+    "Spin Defects",
+    "Hybrid Quantum Systems"
+   ],
+   "type": "Oral-In-person",
+   "is_invited": false,
+   "is_withdrawn": false,
+   "start": "2026-03-17T15:36:00.000Z",
+   "end": "2026-03-17T15:48:00.000Z",
+   "sort_order": 9,
+   "presentation_location": null,
+   "author_ids": [
+    71082,
+    68805,
+    195596,
+    165844
+   ],
+   "presenter_ids": [
+    71082
+   ],
+   "publication_reference": "Accepted in IEEE QCE proceedings 2025",
+   "funding_acknowledgement": "This work is supported by the \"NSF Engineering Research Center for Quantum Networks (CQN)\" awarded under Grant 1941583.",
+   "team_acknowledgement": null,
+   "session_id": 562,
+   "session_title": "Distributed Quantum Computing",
+   "session_code": "MAR-F09",
+   "session_type": "ORAL",
+   "session_topics": [
+    "Quantum Information",
+    "Entanglement",
+    "Quantum Networks",
+    "Quantum Computing",
+    "Quantum Technology",
+    "Qubits",
+    "Algorithms",
+    "Error Correction",
+    "Hybrid Quantum Systems",
+    "Quantum Optics",
+    "Photonics"
+   ],
+   "building": "Convention Center",
+   "room": "Mile High Ballroom 1E"
+  },
+  {
+   "id": 5389,
+   "external_id": "SMT26-3674600",
+   "title": "Self-Assembly of Biomimetic Nanostructures with High Complexity",
+   "abstract": "In materials engineering, the belief that perfect order equals high performance is challenged by the high energy cost and sustainability concerns of achieving it. Studies on nacre-like biomimetic nanocomposites suggest that living organisms strategically integrate disorder with repeatable organizational motifs to achieve difficult-to-attain property combinations. However, the simultaneous presence of order, disorder, and the typical hierarchical organization of biological materials makes them intractable to conventional structural analysis developed for crystals or glasses. Biomimetic nanocomposites, particularly those based on cellulose and other nanofibers, present an ideal opportunity to understand the interplay between order and disorder. They are also an attractive, resource- and energy-conscious alternative for load-bearing, charge-transporting, ion-selective, and optically-active materials. We propose an integrated approach to account for (1) structural stochasticity (disorder), (2) repeatable structural patterns (order), and (3) hierarchical organization in complex high-performance nanocomposites using Graph Theory (GT) and topometric materials design. Graphs, composed of nodes and edges, enable the quantification of order and disorder across multiple structural scales. GT descriptors, extracted from electron microscopy images, reveal regularities while accounting for statistical variation. Examples involving fibrous nanocomposites (cellulose nanocrystals, metal nanowires, gold nanodendrites, and aramid nanofibers) demonstrate the universality of this approach.Topometric relationships\u2014where physical properties are derived from both GT descriptors and metric parameters\u2014have been shown for nanowire coatings, battery cathodes, and chiroptical nanodendrites. GT methods can be applied to both synthetic and evolution-optimized biomaterials, enabling the quantitative replication and ultimate outperformance of biological blueprints. Crucially, the deliberate and controllable integration of disorder in materials design offers a pathway to scalability, addressing critical bottlenecks in modern nanocomposites",
+   "units": [
+    "DSOFT"
+   ],
+   "topics": [
+    "Soft Matter",
+    "Nanocomposites",
+    "Biomaterials",
+    "Self-Assembly",
+    "Materials Design",
+    "Nanostructures",
+    "Complex Structured Materials",
+    "Disordered Materials",
+    "Network Theory"
+   ],
+   "type": "Invited-In-person",
+   "is_invited": true,
+   "is_withdrawn": false,
+   "start": "2026-03-17T14:00:00.000Z",
+   "end": "2026-03-17T14:36:00.000Z",
+   "sort_order": 1,
+   "presentation_location": null,
+   "author_ids": [
+    100898
+   ],
+   "presenter_ids": [
+    100898
+   ],
+   "publication_reference": null,
+   "funding_acknowledgement": "National Science Foundation, #2243104, Center for Complex Particle Systems",
+   "team_acknowledgement": null,
+   "session_id": 573,
+   "session_title": "Complexity, Disorder, and Functionality of Soft Matter Systems",
+   "session_code": "MAR-F55",
+   "session_type": "INVITED",
+   "session_topics": [
+    "Soft Matter",
+    "Materials Design",
+    "Biological Physics",
+    "Nanocomposites",
+    "Complex Networks",
+    "Self-Assembly",
+    "Disordered Materials",
+    "Chemical Physics",
+    "Soft Materials",
+    "Statistical Mechanics",
+    "Frustration",
+    "Emergence",
+    "Biomaterials",
+    "Fracture",
+    "Active Matter",
+    "Collective Behavior",
+    "Nanoparticles",
+    "Polymers",
+    "Metamaterials",
+    "Living Matter",
+    "Nanostructures",
+    "Neural Systems",
+    "Self-Organization",
+    "Disordered Systems",
+    "Biological Networks",
+    "Mechanobiology",
+    "Complex Structured Materials",
+    "Nonlinear Dynamics",
+    "Mechanical Properties",
+    "Nonequilibrium Physics",
+    "Phase Transitions",
+    "AI/Machine Learning",
+    "Network Theory"
+   ],
+   "building": "Convention Center",
+   "room": "Bluebird 1B"
+  },
+  {
+   "id": 5432,
+   "external_id": "SMT26-3753355",
+   "title": "Sequence and Phosphorylation Modifications Dictate Charge Transport in Cell-Penetrating Peptides for Bioelectronic Applications",
+   "abstract": "Cell-penetrating peptides (CPPs) are promising building blocks for molecular bioelectronics however, how sequence and phosphorylation govern their electronic properties is unclear. Here we measured electron tunneling through self-assembled monolayers (SAMs) of short CPPs on gold using Ga2O3/EGaIn soft junctions. Alongside native CPPs, we studied tryptophan-enriched sequences and variants bearing site-specific phosphate groups to map how defined chemical variations affect conductance. J\u2013V data show transport is highly sequence-sensitive: aromatic substitution and phosphorylation introduce localized dipoles that tune the tunneling barrier, shift frontier-orbital alignment, and change the net dipole moment. Phosphate position produced striking, site-dependent effects, shifting conductance by orders of magnitude across the series. Cys-Trp-(Arg)8 yielded the highest currents, whereas an Ala\u2013Gly control was lowest\u2014nearly an order below native R9. Relocating the phosphate along the backbone systematically modulated currents, with certain sites markedly enhancing transport. These results define a direct link between sequence chemistry and electron transport, enabling CPP-based biomolecular junctions with tunable electrical characteristics for next-generation bioelectronics.",
+   "units": [
+    "DBIO"
+   ],
+   "topics": [
+    "Biological Physics",
+    "Tunneling",
+    "Molecule-Metal Interfaces",
+    "Biophysical Chemistry",
+    "Biomaterials",
+    "Molecular Biophysics",
+    "Proteins",
+    "Self-Assembly",
+    "Electronic Transport"
+   ],
+   "type": "Oral-In-person",
+   "is_invited": false,
+   "is_withdrawn": false,
+   "start": "2026-03-17T16:48:00.000Z",
+   "end": "2026-03-17T17:00:00.000Z",
+   "sort_order": 13,
+   "presentation_location": null,
+   "author_ids": [
+    193640,
+    8351
+   ],
+   "presenter_ids": [
+    193640
+   ],
+   "publication_reference": "Plan to submit.. William Thompson, Ali Akbar Ashkarran, Charge Transport in Cell-Penetrating Peptides: Influence of Sequence Modification and Phosphorylation, Small, 2025.",
+   "funding_acknowledgement": "Authors acknowledge the financial support from the UCCS Department of Physics and Energy Science and UCCS BioFrontiers Center.",
+   "team_acknowledgement": null,
+   "session_id": 577,
+   "session_title": "Physics of Proteins III: Intrinsically Disordered Proteins & Protein Folding",
+   "session_code": "MAR-F59",
+   "session_type": "ORAL",
+   "session_topics": [
+    "Biological Physics",
+    "Proteins",
+    "Molecular Biophysics",
+    "Soft Matter",
+    "Molecular Dynamics",
+    "Biophysics",
+    "Biomolecular Condensates",
+    "Phase Transitions",
+    "Disease",
+    "Biophysical Chemistry",
+    "Self-Assembly",
+    "Statistical Physics",
+    "Atomistic Simulations"
+   ],
+   "building": "Convention Center",
+   "room": "Bluebird 2C"
+  },
+  {
+   "id": 5504,
+   "external_id": "SMT26-3941084",
+   "title": "Enhancing the mechanical performance of polyolefin blends through immersion annealing",
+   "abstract": "Conventional mechanical recycling methods for polyolefins at high temperature high shear environment can trigger unwanted chain scission and crosslinking, breaking down the polymer into lower-molecular-weight fragments with fewer tie chains connecting crystalline lamellae. As a result, the recycled materials show noticeably weaker mechanical properties, posing a major challenge for reusing post-consumer polyolefins. To address these issues, previous approaches have relied on chemical crosslinking or the addition of compatibilizers. However, these methods tend to be time-intensive, expensive at large scale, and add further complexity to recycling streams. In this presentation, we will discuss an immersion annealing method that swells polyolefin blends containing high and low MW fractions, promoting their co-crystallization, which leads to significantly improved mechanical performance of the blended materials. Specifically, our results show an over 6-fold increase in extensibility of polypropylene (PP) blends, effectively enabling their reuse and extended lifetime. This work presents an innovative and straightforward method to address the recycling challenges of low MW PP without the need for additives,",
+   "units": [
+    "DPOLY"
+   ],
+   "topics": [
+    "Industrial Physics",
+    "Polymer Physics",
+    "Materials Physics",
+    "Soft Matter",
+    "Mechanical Properties",
+    "Sustainable Polymers",
+    "Sustainability",
+    "Phase Transitions"
+   ],
+   "type": "Oral-In-person",
+   "is_invited": false,
+   "is_withdrawn": false,
+   "start": "2026-03-17T16:12:00.000Z",
+   "end": "2026-03-17T16:24:00.000Z",
+   "sort_order": 8,
+   "presentation_location": null,
+   "author_ids": [
+    156437,
+    48618
+   ],
+   "presenter_ids": [
+    156437
+   ],
+   "publication_reference": null,
+   "funding_acknowledgement": "The authors acknowledge finanicial support from US National Science Foundation under award OIA-231635.",
+   "team_acknowledgement": null,
+   "session_id": 583,
+   "session_title": "Sustainable Polymers",
+   "session_code": "MAR-F67",
+   "session_type": "FOCUS",
+   "session_topics": [
+    "Polymer Physics",
+    "Sustainable Polymers",
+    "Polymers",
+    "Sustainability",
+    "Soft Matter",
+    "Mechanical Properties",
+    "Rheology",
+    "Materials Design",
+    "Phase Transitions"
+   ],
+   "building": "Convention Center",
+   "room": "Bluebird 3C"
+  },
+  {
+   "id": 5514,
+   "external_id": "SMT26-3608870",
+   "title": "Impact of Composition and Viscosity on Ion Transport and Dendrite Resistance in Viscoelastic Polymer Electrolytes",
+   "abstract": "This study investigates the ion transport, rheological, and electrochemical properties of a series of poly(vinyl ethylene carbonate - lithium styrene bis(trifluoromethanesulfonyl)imide) (p(VEC-LiSTFSI)) polymer electrolytes. Three different molar ratios of VEC to LiSTFSI are synthesized (5:1, 10:1, and 20:1), resulting in materials with consistency ranging from viscoelastic liquids to low-viscosity liquids, a 10000-fold difference in zero-shear viscosity. The ionic conductivity at 40 \u00b0C increases with decreasing LiSTFSI content, from 1.88 to 5.49 x 10-4 S/cm for the 5:1 and 20:1 ratios, respectively. However, this increase is accompanied by a significant drop in the Li+ transference number. Li symmetric cell cycling at 40 \u00b0C demonstrates that the polymer with the intermediate VEC to LiSTFSI ratio, 10:1, exhibits the best cyclability, rate capability, and dendrite resistance, lasting 411 hours at 0.2 mA/cm2. Conversely, the lowest viscosity polymer (20:1 ratio), shows immediate shorting. These results highlight a critical trade-off where a moderate increase in zero shear viscosity, despite slightly lower conductivity, is crucial for significantly enhancing dendrite resistance and overall cell performance in these non-crosslinked electrolytes.",
+   "units": [
+    "DPOLY"
+   ],
+   "topics": [
+    "Polymer Physics",
+    "Soft Matter",
+    "Transport",
+    "Ion-Containg Polymers",
+    "Polyelectrolytes",
+    "Energy Storage",
+    "Rheology",
+    "Materials Design"
+   ],
+   "type": "Oral-In-person",
+   "is_invited": false,
+   "is_withdrawn": false,
+   "start": "2026-03-17T15:48:00.000Z",
+   "end": "2026-03-17T16:00:00.000Z",
+   "sort_order": 8,
+   "presentation_location": null,
+   "author_ids": [
+    26336,
+    142182,
+    205784,
+    7654,
+    30259
+   ],
+   "presenter_ids": [
+    26336
+   ],
+   "publication_reference": null,
+   "funding_acknowledgement": "This research at Oak Ridge National Laboratory, managed by UT-Battelle, LLC, for the U.S. Department of Energy under contract DE-AC05-00OR22725, was primarily sponsored by the U.S. Department of Energy (DOE), Office of Energy Efficiency and Renewable Energy for the Vehicle Technologies Offices Advanced Battery Materials Research Program.",
+   "team_acknowledgement": null,
+   "session_id": 584,
+   "session_title": "Electrochemical Devices and Charge Transport",
+   "session_code": "MAR-F68",
+   "session_type": "FOCUS",
+   "session_topics": [
+    "Polymer Physics",
+    "Transport",
+    "Energy Storage",
+    "Ion-Containg Polymers",
+    "Materials Design",
+    "Soft Matter",
+    "Molecular Dynamics",
+    "Polyelectrolytes",
+    "Organic Materials"
+   ],
+   "building": "Convention Center",
+   "room": "Bluebird 3D"
+  },
+  {
+   "id": 5515,
+   "external_id": "SMT26-3811277",
+   "title": "Ionic liquid doped polymer electrolytes: Structure to conductivity",
+   "abstract": "Gel polymer electrolytes offer advantages over conventional liquid electrolytes, including enhanced safety and stability. This study investigates poly(ethylene oxide) (PEO)-based electrolytes doped with ionic liquids (ILs), focusing on the influence of various salts containing mono- and multivalent cations on key electrolyte properties, including ionic conductivity and thermal behavior. The high crystallinity of PEO poses a significant barrier to ion transport; therefore, incorporation of ILs serves as an effective strategy to disrupt crystalline domains and reduce crystallinity by about 50%, thereby enhancing segmental motion and increasing conductivity. Furthermore, the cationic charge density plays a critical role in modulating the thermal transitions of the electrolytes. Due to differences in coordination behavior, specifically, the number of oxygen atoms bound to each cation, the ionic conductivity varies depending on the nature of the salt. For Mg2+ with higher charge density, viscosity shows the highest value as well as the conductivity.",
+   "units": [
+    "DPOLY"
+   ],
+   "topics": [
+    "Polymer Physics",
+    "Soft Matter",
+    "Structure",
+    "Transport",
+    "Ion-Containg Polymers",
+    "Gels",
+    "Energy Storage",
+    "Rheology"
+   ],
+   "type": "Oral-In-person",
+   "is_invited": false,
+   "is_withdrawn": false,
+   "start": "2026-03-17T16:00:00.000Z",
+   "end": "2026-03-17T16:12:00.000Z",
+   "sort_order": 9,
+   "presentation_location": null,
+   "author_ids": [
+    136315,
+    57156
+   ],
+   "presenter_ids": [
+    136315
+   ],
+   "publication_reference": null,
+   "funding_acknowledgement": "This material is based upon work supported by the Air Force Office of Scientific Research.",
+   "team_acknowledgement": null,
+   "session_id": 584,
+   "session_title": "Electrochemical Devices and Charge Transport",
+   "session_code": "MAR-F68",
+   "session_type": "FOCUS",
+   "session_topics": [
+    "Polymer Physics",
+    "Transport",
+    "Energy Storage",
+    "Ion-Containg Polymers",
+    "Materials Design",
+    "Soft Matter",
+    "Molecular Dynamics",
+    "Polyelectrolytes",
+    "Organic Materials"
+   ],
+   "building": "Convention Center",
+   "room": "Bluebird 3D"
+  },
+  {
+   "id": 5518,
+   "external_id": "SMT26-3747449",
+   "title": "Superionic Bifunctional Polymer Electrolytes for Actuators",
+   "abstract": "The modulus and ion conductivity of polymers depend on the relaxation of polymer segments and ion transport, respectively. Enhancing conductivity often sacrifices modulus due to their coupled dynamics. Block copolymers with nanostructured hard and soft domains are believed to simultaneously improve both properties. However, current systems still use polymers as the soft segment, where ion mobility remains much lower than in small-molecule liquids, limiting significant improvement in conductivity. Extending the smartness of phase separation from polymer/polymer to polymer/small-molecule systems, where rapid ion transport occurs in the small-molecule domains, may resolve this issue. Yet, attractive Coulombic forces between counterions typically result in homogeneous solutions or gels rather than structured ion channels in blends. To avoid this, we propose using hydrogen bonding to modulate electrostatic interactions, as they exhibit similar magnitude of binding energy. Here, we introduced -OH and -SO\u2083H at adjacent sites in each repeating unit. The resulting intra-monomer hydrogen bond effectively weakens Coulombic interactions between acidic polymers and ionic liquids, facilitating the formation of liquid ion channels. A polymer electrolyte with a conductivity of ~10\u207b\u00b3 S/cm and a modulus of ~100 MPa was achieved and applied in soft actuators exhibiting millisecond response and megapascal output stress.",
+   "units": [
+    "DPOLY"
+   ],
+   "topics": [
+    "Polymer Physics",
+    "Soft Matter",
+    "Transport",
+    "Ion-Containg Polymers",
+    "Polyelectrolytes",
+    "Mechanical Properties",
+    "Nanostructures",
+    "Materials Design"
+   ],
+   "type": "Oral-In-person",
+   "is_invited": false,
+   "is_withdrawn": false,
+   "start": "2026-03-17T16:36:00.000Z",
+   "end": "2026-03-17T16:48:00.000Z",
+   "sort_order": 12,
+   "presentation_location": null,
+   "author_ids": [
+    205213
+   ],
+   "presenter_ids": [
+    205213
+   ],
+   "publication_reference": "Wang, R. Y.; Jeong, S.; Ham, H.; Kim, J.; Lee, H. J.; Son, C. Y.; * Park, M. J.*, Superionic Bifunctional Polymer Electrolytes for Solid-State Energy Storage and Conversion. Adv. Mater. 2023, 35, 2203413.",
+   "funding_acknowledgement": "The authors thank the National Natural Science Foundation of China (52403027) for financial support.",
+   "team_acknowledgement": "Pohang University of Science and Technology",
+   "session_id": 584,
+   "session_title": "Electrochemical Devices and Charge Transport",
+   "session_code": "MAR-F68",
+   "session_type": "FOCUS",
+   "session_topics": [
+    "Polymer Physics",
+    "Transport",
+    "Energy Storage",
+    "Ion-Containg Polymers",
+    "Materials Design",
+    "Soft Matter",
+    "Molecular Dynamics",
+    "Polyelectrolytes",
+    "Organic Materials"
+   ],
+   "building": "Convention Center",
+   "room": "Bluebird 3D"
+  },
+  {
+   "id": 5810,
+   "external_id": "SMT26-3697827",
+   "title": "Coacervate-based bioreactors for enzyme cascades",
+   "abstract": "Complex coacervates are phase-separated compartments formed by oppositely charged polyelectrolytes that provide biomimetic environments for enzymatic transformations. While numerous biochemical reactions have been carried out within coacervates, how these environments influence enzyme activity still remains poorly understood. Here, we develop a polyelectrolyte complex coacervate system stabilized by a comb polymer to host a two-step enzymatic cascade involving alcohol dehydrogenation followed by reductive amination in separate micro-compartments. Using high-throughput experimentation, we map a wide compositional phase space to reveal how coacervate structure directs enzyme localization and catalytic performance. Using electron microscopy and confocal imaging, we further investigate how internal condensate organization governs enzymatic reactivity. Finally, we demonstrate the generality of this platform by extending it to multiple enzymatic systems, establishing coacervates as versatile biomimetic reactors for coupled transformations.",
+   "units": [
+    "DPOLY",
+    "DSOFT",
+    "DBIO"
+   ],
+   "topics": [
+    "Polymer Physics",
+    "Soft Matter",
+    "Polyelectrolytes",
+    "Microscopy",
+    "Bio-Inspired Phase Separation",
+    "Biophysical Chemistry",
+    "Biomolecular Condensates",
+    "Catalysis",
+    "Biomaterials"
+   ],
+   "type": "Oral-In-person",
+   "is_invited": false,
+   "is_withdrawn": false,
+   "start": "2026-03-17T19:00:00.000Z",
+   "end": "2026-03-17T19:12:00.000Z",
+   "sort_order": 4,
+   "presentation_location": null,
+   "author_ids": [
+    162741,
+    120072,
+    195655,
+    184458
+   ],
+   "presenter_ids": [
+    162741
+   ],
+   "publication_reference": null,
+   "funding_acknowledgement": "This research was supported by the National Science Foundation under grant no. TIP 2452698",
+   "team_acknowledgement": null,
+   "session_id": 613,
+   "session_title": "Polyelectrolyte Complexes and Biomolecular Condensates II",
+   "session_code": "MAR-G68",
+   "session_type": "FOCUS",
+   "session_topics": [
+    "Polymer Physics",
+    "Polyelectrolytes",
+    "Biopolymers",
+    "Biomolecular Condensates",
+    "Phase Transitions",
+    "Charged Polymers",
+    "Soft Matter",
+    "Microscopy",
+    "Bio-Inspired Phase Separation",
+    "Self-Assembly",
+    "Materials Design"
+   ],
+   "building": "Convention Center",
+   "room": "Bluebird 3D"
+  },
+  {
+   "id": 5952,
+   "external_id": "SMT26-3729384",
+   "title": "On-demand parametric interaction between the dipole and plasma modes of a Josephson circuit \u2013 PART 2/2",
+   "abstract": "Qubits based on Josephson junctions are at the core of the most advanced superconducting quantum processors. Typically, the coupling between these qubits decreases as the detuning between their transition frequencies increases. Therefore, superconducting quantum circuits often suffer from frequency crowding, which can deteriorate the performances of driven operations. In this talk, we demonstrate a novel, hardware-efficient approach for performing on-demand photon swaps in as little as 5 ns between two transmon-like qubits with transition frequencies of 8.4 GHz and 23.8 GHz. The qubits are realized as the dipole and plasma modes, respectively, of a single flux-biased Josephson superconducting loop shunted by a capacitance, with a total footprint of approximately 0.01 mm\u00b2. Our work sets the stage for the development of superconducting devices akin to Rydberg atoms, with the lower-frequency qubit acting as the protected hyperfine-structure transition, and the higher-frequency qubit acting as the strongly interacting Rydberg transition. Part 2 will present experimental results of the device and discuss its applications.",
+   "units": [
+    "DQI"
+   ],
+   "topics": [
+    "Quantum Information",
+    "AMO Analogs",
+    "Josephson Effects",
+    "Superconducting Qubits",
+    "Quantum Control",
+    "Quantum Devices",
+    "Quantum Computing"
+   ],
+   "type": "Oral-In-person",
+   "is_invited": false,
+   "is_withdrawn": false,
+   "start": "2026-03-17T21:42:00.000Z",
+   "end": "2026-03-17T21:54:00.000Z",
+   "sort_order": 2,
+   "presentation_location": null,
+   "author_ids": [
+    129057,
+    65569,
+    198101,
+    89725,
+    45508,
+    13154,
+    58484,
+    44239
+   ],
+   "presenter_ids": [
+    129057
+   ],
+   "publication_reference": null,
+   "funding_acknowledgement": "Work supported by: ARO, AFOSR, NSF, DOE and YINQE",
+   "team_acknowledgement": null,
+   "session_id": 629,
+   "session_title": "Superconducting Systems At High Frequency",
+   "session_code": "MAR-J15",
+   "session_type": "FOCUS",
+   "session_topics": [
+    "Quantum Information",
+    "Superconducting Qubits",
+    "Quantum Devices",
+    "Quantum Computing",
+    "Qubits",
+    "Superconductivity",
+    "Amplifiers",
+    "Quantum Technology",
+    "Josephson Effects",
+    "Quantum Control",
+    "Simulations"
+   ],
+   "building": "Convention Center",
+   "room": "Mile High Ballroom 4C"
+  },
+  {
+   "id": 6343,
+   "external_id": "SMT26-3751194",
+   "title": "Logical Randomized Benchmarking a Qutrit Surface Code",
+   "abstract": "In recent years, engineers have worked towards creating qutrit computers in order to study problems in quantum simulation, error correction, and communication. We are interested in numerically characterizing a 5-qutrit chip protected by a [[5,1,2]]_3 error detection code against a single physical qutrit system. Such a system is typical of an early FTQC machine and is potentially rich in applications. We use Sdim, an open source qudit stabilizer simulator, to perform a modified Logical Randomized Benchmarking (LRB) protocol. Our modification, called LRB-D, only postselects shots for which the protocol detects the state is a valid codeword on a small subset of the steps. Prior literature has employed randomized benchmarking (RB) as an industry-standard error characterization tool, and more recent efforts have supported LRB as similarly useful for code characterization, but none have studied LRB-D, whose weaker detection property may be preferable in a setting with (surface) codes over only a few physical qudits. When performing LRB-D with just a single terminal detection event, we observe signatures of highly non-Markovian logical errors. However, by postselecting in frequent, regular intervals, we recover a Markovian noise process, up to certain error parameters in the noise model, allowing us to meaningfully characterize our logical Clifford gates. Furthermore, up to an error parameter or circuit depth, we display a greater fidelity for the encoded gate set compared to its physical counterpart. This work will be of great interest to groups developing small qudit systems who wish to benchmark their corresponding logical capabilities, as well as code designers studying how to fight error in settings more appropriate for detection.",
+   "units": [
+    "DQI"
+   ],
+   "topics": [
+    "Quantum Information",
+    "Error Correction",
+    "Quantum Characterization",
+    "Quantum Technology",
+    "Algorithms",
+    "Qubits",
+    "Simulations",
+    "Quantum Computing"
+   ],
+   "type": "Oral-In-person",
+   "is_invited": false,
+   "is_withdrawn": false,
+   "start": "2026-03-18T19:12:00.000Z",
+   "end": "2026-03-18T19:24:00.000Z",
+   "sort_order": 7,
+   "presentation_location": null,
+   "author_ids": [
+    63089,
+    90420
+   ],
+   "presenter_ids": [
+    63089
+   ],
+   "publication_reference": "Planned for submission to arxiv and PRX very soon",
+   "funding_acknowledgement": null,
+   "team_acknowledgement": null,
+   "session_id": 670,
+   "session_title": "Logical gates and benchmarking",
+   "session_code": "MAR-M09",
+   "session_type": "ORAL",
+   "session_topics": [
+    "Quantum Information",
+    "Error Correction",
+    "Quantum Computing",
+    "Algorithms",
+    "Simulations",
+    "Qubits",
+    "Noise",
+    "Quantum Technology",
+    "Quantum Devices",
+    "Quantum Characterization"
+   ],
+   "building": "Convention Center",
+   "room": "Mile High Ballroom 1E"
+  },
+  {
+   "id": 6476,
+   "external_id": "SMT26-3893346",
+   "title": "Concentration phenomenon in quantum generative learning and mitigation via truncated QuDDPM",
+   "abstract": "Quantum generative learning aims to generate quantum states from an ensemble with samples. The Quantum Denoising Diffusion Probabilistic Model (QuDDPM) employs parameterized quantum circuits and mid-circuit measurements to transport an initial random-state ensemble to the target ensemble, demonstrating promising capability in generative learning tasks; however, its mechanism and limitations are not well understood. In this work, we analytically show that for typical Haar random unitaries, the state ensemble conditioned on any fixed measurement trajectory concentrates toward a single state regardless of input states, and we confirm with numerical simulations. To avoid this concentration and leverage input randomness, we propose a truncated QuDDPM that terminates the forward diffusion at an intermediate step and generates new quantum data from partially scrambled states. The truncated QuDDPM reduces the number of steps and mitigates the trainability issue induced by random inputs. Our results provide a theoretical interpretation of ensemble transport in diffusion-based quantum models and a strategy to improve QuDDPM's performance.",
+   "units": [
+    "DQI"
+   ],
+   "topics": [
+    "Quantum Information",
+    "Transport",
+    "Entanglement",
+    "Quantum Computing",
+    "Nonequilibrium Quantum Physics",
+    "Quantum Dynamics",
+    "Quantum Control",
+    "AI/Machine Learning"
+   ],
+   "type": "Oral-In-person",
+   "is_invited": false,
+   "is_withdrawn": false,
+   "start": "2026-03-18T21:54:00.000Z",
+   "end": "2026-03-18T22:06:00.000Z",
+   "sort_order": 3,
+   "presentation_location": null,
+   "author_ids": [
+    131369,
+    220178,
+    223886
+   ],
+   "presenter_ids": [
+    131369
+   ],
+   "publication_reference": null,
+   "funding_acknowledgement": "NSF (CCF-2240641, 2350153, OMA-2326746), ONR (N00014-23-1-2296), DARPA (HR00112490453, HR0011-24-9-0362) and AFOSR MURI FA9550-24-1-0349",
+   "team_acknowledgement": null,
+   "session_id": 686,
+   "session_title": "Novel Quantum-Enhanced Learning",
+   "session_code": "MAR-P09",
+   "session_type": "ORAL",
+   "session_topics": [
+    "Quantum Information",
+    "AI/Machine Learning",
+    "Quantum Computing",
+    "Algorithms",
+    "Quantum Control",
+    "Computational Physics",
+    "Qubits",
+    "Computational Methods",
+    "Quantum Systems",
+    "Quantum Dynamics",
+    "Quantum Technology",
+    "Quantum Optics"
+   ],
+   "building": "Convention Center",
+   "room": "Mile High Ballroom 1E"
+  },
+  {
+   "id": 6585,
+   "external_id": "SMT26-3677676",
+   "title": "Active Protein\u2013RNA Polyelectrolyte Condensates: Structure, Rheology, and Non-Equilibrium States",
+   "abstract": "Biomolecular condensates formed by protein\u2013RNA assemblies behave as soft polyelectrolyte materials whose structure and dynamics emerge from interactions encoded in both folded domains and intrinsically disordered regions (IDRs). Yet the non-equilibrium remodeling that defines condensates in cells remains challenging to isolate, control, or engineer in vitro. To address this gap, we developed a minimal peptide\u2013RNA\u2013ubiquitin fusion system that disentangles the contributions of folded domains, charge topology, and enzymatic energy input. Using this platform, we show that mutations confined to the folded ubiquitin domain, while leaving the R/G-rich IDR sequence unchanged, can reprogram condensate phase behavior, viscoelasticity, and internal flow patterns. Electrostatic changes in the folded domain reorganize long-range interactions within the condensed network, demonstrating that condensate properties are not dictated solely by IDR sequence grammar\u2014folded-domain charge architecture can also modulate the emergent material state of protein\u2013RNA condensates. Introducing enzymatic activity within these condensates produces sustained non-equilibrium structures, directional flows, and spatiotemporal patterning, creating a synthetic active-matter system in which chemical fuel flux drives dynamic reorganization. Overall, our work establishes a quantitative, tunable model that bridges living, energy-dissipating condensates with reconstituted systems. These findings outline emerging design principles for active protein\u2013RNA polyelectrolyte materials, providing a framework for probing life-like phase transitions and engineering programmable condensate-based technologies.",
+   "units": [
+    "DPOLY"
+   ],
+   "topics": [
+    "Polymer Physics",
+    "Biological Physics",
+    "Biomolecular Condensates",
+    "Rheology",
+    "Phase Transitions",
+    "Polyelectrolytes",
+    "Nonequilibrium Systems",
+    "Pattern Formation",
+    "Active Matter"
+   ],
+   "type": "Invited-In-person",
+   "is_invited": true,
+   "is_withdrawn": false,
+   "start": "2026-03-18T23:18:00.000Z",
+   "end": "2026-03-18T23:54:00.000Z",
+   "sort_order": 4,
+   "presentation_location": null,
+   "author_ids": [
+    11512
+   ],
+   "presenter_ids": [
+    11512
+   ],
+   "publication_reference": null,
+   "funding_acknowledgement": "US National Institutes of Health (NIH) grant award R35GM138186",
+   "team_acknowledgement": null,
+   "session_id": 695,
+   "session_title": "Structure and Properties of Ionic Polymer Solutions and Electrolytes",
+   "session_code": "MAR-P55",
+   "session_type": "INVITED",
+   "session_topics": [
+    "Polymer Physics",
+    "Polyelectrolytes",
+    "Self-Assembly",
+    "Charged Polymers",
+    "Phase Transitions",
+    "Soft Matter",
+    "Rheology",
+    "Energy Storage",
+    "Ion-Containg Polymers",
+    "Computational Physics",
+    "Biological Physics",
+    "Proteins",
+    "Thermodynamics",
+    "Biomolecular Condensates",
+    "Nanostructures",
+    "Vesicles",
+    "Gels",
+    "Simulations",
+    "Nonequilibrium Systems",
+    "Glasses",
+    "Biopolymers",
+    "Mechanical Properties",
+    "Pattern Formation",
+    "Active Matter"
+   ],
+   "building": "Convention Center",
+   "room": "Bluebird 1B"
+  },
+  {
+   "id": 6586,
+   "external_id": "SMT26-3677681",
+   "title": "Effects of electrostatics on charged macromolecules: single-chain conformation, multi-chain aggregation and solution thermodynamics",
+   "abstract": "Charged macromolecules have ubiquitous applications in both commodity materials in our everyday life and advanced functional materials to solve emergent challenges. Many biomacromolecules, like proteins, DNA, and RNA, are essentially charged macromolecules. Their equilibrium structures as well as solution properties are determined by the interplay between the long-range electrostatic interaction and the short-range van der Waals interaction. We develop a theory that systematically includes electrostatics into polymer self-consistent field theory. The structure and free energy of a single chain or an aggregate is obtained by applying the theory to a subvolume. This information is then incorporated into the framework of dilute solution thermodynamics to reconstruct the entire solution. For a single charged macromolecule in dilute salt solutions, our theory fully captures the cascade globule-pearl necklace-coil transition. At intermediate salt concentrations, we predict the formation of a stable vesicle structure. For multi-chain aggregates, our theory predicts that the aggregation of charged macromolecules at low salt concentrations is via a two-step nucleated process involving a conformational transition from metastable spherical oligomer to elongated fibril. The scaling analysis elucidates the electrostatic origin of the conformational transition: the fibril enters the screening region much earlier than the spherical aggregate. The theoretical predictions of the kinetic pathway and the morphology of the aggregates are in good agreement with the experiments of protein aggregation. Furthermore, applying the theory to solution thermodynamics, our theory fully captures the long-standing puzzles of the non-monotonic salt concentration dependence and the specific ion effect of the protein solubility. The theoretical predictions are in quantitative agreement with experimental results for various proteins and salt ions without any fitting parameters.",
+   "units": [
+    "DPOLY"
+   ],
+   "topics": [
+    "Polymer Physics",
+    "Proteins",
+    "Thermodynamics",
+    "Vesicles",
+    "Charged Polymers",
+    "Polyelectrolytes",
+    "Biopolymers",
+    "Self-Assembly"
+   ],
+   "type": "Invited-In-person",
+   "is_invited": true,
+   "is_withdrawn": false,
+   "start": "2026-03-18T23:54:00.000Z",
+   "end": "2026-03-19T00:30:00.000Z",
+   "sort_order": 5,
+   "presentation_location": null,
+   "author_ids": [
+    205203
+   ],
+   "presenter_ids": [
+    205203
+   ],
+   "publication_reference": null,
+   "funding_acknowledgement": null,
+   "team_acknowledgement": null,
+   "session_id": 695,
+   "session_title": "Structure and Properties of Ionic Polymer Solutions and Electrolytes",
+   "session_code": "MAR-P55",
+   "session_type": "INVITED",
+   "session_topics": [
+    "Polymer Physics",
+    "Polyelectrolytes",
+    "Self-Assembly",
+    "Charged Polymers",
+    "Phase Transitions",
+    "Soft Matter",
+    "Rheology",
+    "Energy Storage",
+    "Ion-Containg Polymers",
+    "Computational Physics",
+    "Biological Physics",
+    "Proteins",
+    "Thermodynamics",
+    "Biomolecular Condensates",
+    "Nanostructures",
+    "Vesicles",
+    "Gels",
+    "Simulations",
+    "Nonequilibrium Systems",
+    "Glasses",
+    "Biopolymers",
+    "Mechanical Properties",
+    "Pattern Formation",
+    "Active Matter"
+   ],
+   "building": "Convention Center",
+   "room": "Bluebird 1B"
+  },
+  {
+   "id": 7167,
+   "external_id": "SMT26-3684929",
+   "title": "Environmental Drivers of Infectious Diseases in a Changing Climate",
+   "abstract": "Similar to other ecological systems, the dynamics of infectious diseases are driven by both intrinsic factors, such as system nonlinearity, and extrinsic factors, including vaccination, non-pharmaceutical interventions, and environmental drivers. Climate factors are key drivers of the seasonality of many infectious disease transmissions and influence interannual variability and long-term dynamics across different climate change scenarios. Pathogens sensitive to climate include those causing enteric diseases, vector-borne infections, and respiratory illnesses, among others. Nevertheless, understanding these impacts at a mechanistic level remains an active area of research. Here, I present recent findings on two climate-sensitive pathogens\u2014malaria and influenza. We analyzed long-term malaria transmission by fitting nonlinear mechanistic models to partially observed data using an iterated maximum-likelihood filtering approach. We found that a temporary slowdown in global warming and changes in climate variability are likely driving the decline in malaria incidence in the East African highlands. We also examined how current and projected climates influence influenza spatiotemporal dynamics by integrating a multivariate regression model with a mechanistic transmission model. We identified a bimodal association between specific humidity and influenza transmission, with cases peaking at both low and high levels in Bangladesh. Climate projections indicate that highly populated areas are more likely to experience sharp increases during the monsoon. These findings highlight the importance of climate drivers as external factors in nonlinear epidemiological systems, with implications for both pathogen ecology and public health under current and future climate scenarios.",
+   "units": [
+    "DBIO"
+   ],
+   "topics": [
+    "Physics of Climate",
+    "Biological Physics",
+    "Disease",
+    "Ecology",
+    "Complex Systems",
+    "Parameter Estimation",
+    "Nonlinear Dynamics",
+    "Modeling"
+   ],
+   "type": "Invited-In-person",
+   "is_invited": true,
+   "is_withdrawn": false,
+   "start": "2026-03-19T23:18:00.000Z",
+   "end": "2026-03-19T23:54:00.000Z",
+   "sort_order": 4,
+   "presentation_location": null,
+   "author_ids": [
+    123492,
+    120148,
+    10719,
+    163444,
+    180627,
+    148211
+   ],
+   "presenter_ids": [
+    123492
+   ],
+   "publication_reference": null,
+   "funding_acknowledgement": null,
+   "team_acknowledgement": null,
+   "session_id": 757,
+   "session_title": "Ecology in the Era of Climate Change",
+   "session_code": "MAR-W56",
+   "session_type": "INVITED",
+   "session_topics": [
+    "Biological Physics",
+    "Ecology",
+    "Complex Systems",
+    "Physics of Climate",
+    "Evolution",
+    "Modeling",
+    "Statistical Physics",
+    "Plasticity",
+    "Disease",
+    "Populations",
+    "Earth Science",
+    "Climate Science",
+    "Living Matter",
+    "Physiology",
+    "Collective Behavior",
+    "Parameter Estimation",
+    "Disordered Systems",
+    "Nonlinear Dynamics",
+    "Stochasticity",
+    "Cellular Biophysics"
+   ],
+   "building": "Convention Center",
+   "room": "Bluebird 1C"
+  },
+  {
+   "id": 7508,
+   "external_id": "SMT26-3692206",
+   "title": "Latest results from the BeEST Phase III",
+   "abstract": "The Beryllium Electron Capture in Superconducting Tunnel Junctions (BeEST) experiment probes the existence of sub-MeV heavy neutrino mass eigenstates through precision measurements of the electron-capture (EC) decay of 7Be. This is achieved by directly implanting high doses of 7Be into high-resolution superconducting tunnel junction (STJ) cryogenic sensors and precisely measuring the nuclear recoil energy of the 7Li daughters. If heavy neutrino states exist, transition to these states would reduce the recoil energy and produce additional low-energy peaks as a distinctive experimental signature.In Phase III, the BeEST collaboration has collected recoil spectra with 7Be activities ranging from 10 to 50 Bq per pixel in a 36-pixel array STJ sensors with unprecedented precision and statistical significance. This presentation will provide an overview of the latest BeEST Phase III updates, including the staged unblinding of the recoil spectrum and improved background modeling. Specifically, improved modeling of Auger electron escape spectrum and electron shake-up/shake-off components will be discussed. The results provide a foundation for setting new constraints on sterile neutrino mixing in the sub-MeV mass range.",
+   "units": [
+    "DNP"
+   ],
+   "topics": [
+    "Precision Measurement",
+    "Nuclear Physics",
+    "Instrumentation",
+    "Neutrino Mass",
+    "Sensors",
+    "Low Energy Neutrinos",
+    "Beyond the Standard Model",
+    "Superconductivity"
+   ],
+   "type": "Oral-In-person",
+   "is_invited": false,
+   "is_withdrawn": false,
+   "start": "2026-03-17T20:39:00.000Z",
+   "end": "2026-03-17T20:51:00.000Z",
+   "sort_order": 6,
+   "presentation_location": null,
+   "author_ids": [
+    96496
+   ],
+   "presenter_ids": [
+    96496
+   ],
+   "publication_reference": null,
+   "funding_acknowledgement": "The BeEST experiment is supported, in part, by the DOE-SC Office of Nuclear Physics, the Gordon and Betty Moore Foundation, and the European Metrology Programme for Innovation and Research (EMPIR). TRIUMF receives federal funding via a contribution agreement with the National Research Council of Canada. This work was performed under the auspices of the U.S. Department of Energy by Lawrence Livermore National Laboratory under Contract No. DE-AC52- 07NA27344",
+   "team_acknowledgement": "BeEST Collaboration",
+   "session_id": 795,
+   "session_title": "Mini-Symposium: Low-Energy Neutrino Science at the Intersection of Nuclear and Particle Physics I",
+   "session_code": "APR-J87",
+   "session_type": "FOCUS",
+   "session_topics": [
+    "Nuclear Physics",
+    "Neutrinos",
+    "Detectors",
+    "Beyond the Standard Model",
+    "Low Energy Neutrinos",
+    "Instrumentation",
+    "Precision Searches",
+    "Fundamental Symmetries",
+    "Sensors",
+    "Neutrino Physics",
+    "Superconductivity",
+    "Precision Measurement",
+    "Particles & Fields",
+    "Neutrino Astronomy",
+    "Neutrino Oscillations",
+    "Nuclear Excitations",
+    "Neutrino Mass",
+    "Novel Materials",
+    "Light Nuclei",
+    "Nuclear Astrophysics",
+    "Modeling",
+    "Dark Matter",
+    "Spectroscopy"
+   ],
+   "building": "Hyatt Regency",
+   "room": "Mineral A"
+  },
+  {
+   "id": 7700,
+   "external_id": "SMT26-3933301",
+   "title": "Enhancing a search for long-lived particles that decay to muons using machine learning at CMS",
+   "abstract": "Here we present the most recent expected limits of our long-lived particle (LLP) search using data collected by the Compact Muon Solenoid (CMS) from 2022 to 2024, equivalent to ~173 fb-1, which include limits for LLPs with masses below 10 GeV for the first time. Our search uses pairs of reconstructed muons to probe theories that predict the existence of long-lived particles (LLPs) that decay to at least one pair of muons. This new iteration of our analysis replaces various cut-based decisions with robust neural networks (NNs), considering all the available features at each stage. The first NN improves our ability to correctly associate muons reconstructed using only the muon detectors in the outermost parts of the CMS detector - used to detect muons from LLPs that decayed outside the tracker volume, and those reconstructed using the tracker and the outer muon detectors. The second NN helps us compare all the possible muon pairings by providing a score that indicates how consistent each muon pair is with an LLP decay. This second NN improves our ability to correctly pair muons when a signal contains four muons in the final state. Lastly, the third NN classifies the dimuon objects into three categories: signal-like, Drell-Yan-like, and QCD-like; the last two categories being the dominant backgrounds. These upgrades provide us with higher signal efficiency and reduced background yields compared to previous versions of this search using data from 2022, equivalent to 36.6 fb-1. Furthermore, the improved background rejection enables us to probe dimuons with masses below 10 GeV.",
+   "units": [
+    "DPF"
+   ],
+   "topics": [
+    "Particles & Fields",
+    "Detectors",
+    "Searches",
+    "Light Particle Searches",
+    "Colliders",
+    "Beyond the Standard Model",
+    "Data Analysis",
+    "AI/Machine Learning"
+   ],
+   "type": "Oral-In-person",
+   "is_invited": false,
+   "is_withdrawn": false,
+   "start": "2026-03-16T20:15:00.000Z",
+   "end": "2026-03-16T20:27:00.000Z",
+   "sort_order": 6,
+   "presentation_location": null,
+   "author_ids": [
+    129418,
+    1019,
+    217025
+   ],
+   "presenter_ids": [
+    129418
+   ],
+   "publication_reference": null,
+   "funding_acknowledgement": "Dept. of Energy Grant DE-SC0010103",
+   "team_acknowledgement": "CMS",
+   "session_id": 815,
+   "session_title": "Collider Physics I",
+   "session_code": "APR-C92",
+   "session_type": "ORAL",
+   "session_topics": [
+    "Particles & Fields",
+    "Beyond the Standard Model",
+    "Searches",
+    "Colliders",
+    "Dark Matter",
+    "Detectors",
+    "AI/Machine Learning",
+    "Data Analysis",
+    "Gravitational Physics",
+    "Higgs Boson",
+    "Exotics",
+    "Charged Leptons",
+    "Electroweak Interactions",
+    "Black Holes"
+   ],
+   "building": "Convention Center",
+   "room": "Meeting Room 102"
+  },
+  {
+   "id": 7761,
+   "external_id": "SMT26-3641972",
+   "title": "Modeling Systematic Uncertainty Propagation in Contrastive Learning for Anomaly Detection",
+   "abstract": "Despite the Standard Model\u2019s success, outstanding questions still motivate searches for physics beyond the Standard Model (BSM) at the Large Hadron Collider. However, the lack of a dominant direction makes it challenging to explore theory models with traditional, signal-driven analysis. Machine-learning-based anomaly detection (AD) offers a promising, model-agnostic alternative to search for many signals. Recent AI advances in representation learning motivate the use of neural embeddings to map detector data into low-dimensional latent spaces, preserving critical features. However, the propagation of systematic uncertainty in embedded spaces remains poorly understood, severely limiting BSM signal detection in AD.We address this gap with a machine learning strategy that uses a likelihood-based objective to structure the embedded space. Building on previous work using supervised contrastive learning for physics-aware embeddings, our approach further fine-tunes them with a downstream parameterized classification task that incorporates continuous uncertainties. This enables the latent space to covary predictably with systematic distortions.Using simulated CMS level-1 trigger data, we show that our method successfully models continuous uncertainties in a 4D latent space, improving both interpretability and robustness for AD. This framework offers a general way to study and control systematic uncertainties in latent spaces and can be applied to other scientific domains and problems.",
+   "units": [
+    "DPF"
+   ],
+   "topics": [
+    "Particles & Fields",
+    "Standard Model",
+    "Beyond the Standard Model",
+    "Modeling",
+    "Colliders",
+    "Detectors",
+    "Data Analysis",
+    "Simulations",
+    "AI/Machine Learning"
+   ],
+   "type": "Oral-In-person",
+   "is_invited": false,
+   "is_withdrawn": false,
+   "start": "2026-03-17T16:54:00.000Z",
+   "end": "2026-03-17T17:06:00.000Z",
+   "sort_order": 3,
+   "presentation_location": null,
+   "author_ids": [
+    195057,
+    68081,
+    73176
+   ],
+   "presenter_ids": [
+    195057
+   ],
+   "publication_reference": "[1] K. Metzger et al., \"Anomaly Preserving Contrastive Neural Embeddings for End-to-End Model-Independent Searches at the LHC,\" arXiv:2502.15926 (2025). https://arxiv.org/abs/2502.15926[2] P. Harris et al., \"Re-Simulation-based Self-Supervised Learning for Pre-Training Foundation Models,\" arXiv:2403.07066 (2024). https://arxiv.org/abs/2403.07066[3] B. M. Dillon et al., \"Physics-Inspired Data Augmentations for High-Energy Physics,\" arXiv:2301.04660 (2023). https://arxiv.org/abs/2301.04660[4] R. Dangovski et al., \"Equivariant Contrastive Learning,\" arXiv:2111.00899 (2021). https://arxiv.org/abs/2111.00899[5] R. T. d'Agnolo et al., \"Learning New Physics from an Imperfect Machine,\" arXiv:2111.13633 (2021). https://arxiv.org/abs/2111.13633[6] P. Khosla et al., \"Supervised Contrastive Learning,\" arXiv:2004.11362 (2020). https://arxiv.org/abs/2004.11362[7] K. Metzger et al., \"CL4AD: Contrastive Learning for Anomaly Detection,\" GitHub repository (2025). https://github.com/ksmetzger/cl4ad",
+   "funding_acknowledgement": null,
+   "team_acknowledgement": null,
+   "session_id": 821,
+   "session_title": "Machine Learning in High Energy Physics",
+   "session_code": "APR-H89",
+   "session_type": "ORAL",
+   "session_topics": [
+    "Particles & Fields",
+    "Colliders",
+    "AI/Machine Learning",
+    "Algorithms",
+    "Data Analysis",
+    "Simulations",
+    "Computational Physics",
+    "Detectors",
+    "Instrumentation",
+    "Beyond the Standard Model",
+    "Data Science",
+    "Searches",
+    "Signal Processing",
+    "Electronics"
+   ],
+   "building": "Hyatt Regency",
+   "room": "Mineral C"
+  },
+  {
+   "id": 8047,
+   "external_id": "SMT26-3703616",
+   "title": "Designing Activities for Applying Calculus Topics in Calculus-Based Intro Physics",
+   "abstract": "Prior Physics Education Research (PER) literature has focused primarily on improving conceptual understanding in the calculus-based sequence, and less so on the development of calculus skills. As part of a collaborative project to increase the coverage of calculus in calculus-based Intro Physics, we observed selected class periods to note how derivatives and integrals are present in one such course, and how students thought about these operations when working on problems. Field notes captured instances where students worked in small groups and when the class responded to ideas posed by the instructor. We also conducted semi-structured think-aloud interviews where we asked students questions that involved integrals or derivatives based on those observed in class. We are designing activities for students to apply calculus in a physics context based on student thinking from observations and interviews. We present some of these research-based instructional exercises and how instructors can guide students through the difficulties of applying mathematical ideas in physics contexts.",
+   "units": [
+    "GPER"
+   ],
+   "topics": [
+    "Physics Education Research",
+    "Education",
+    "Learning",
+    "General Physics"
+   ],
+   "type": "Oral-In-person",
+   "is_invited": false,
+   "is_withdrawn": false,
+   "start": "2026-03-18T16:54:00.000Z",
+   "end": "2026-03-18T17:06:00.000Z",
+   "sort_order": 3,
+   "presentation_location": null,
+   "author_ids": [
+    120890,
+    33949
+   ],
+   "presenter_ids": [
+    120890
+   ],
+   "publication_reference": null,
+   "funding_acknowledgement": "Material based on work supported by NSF DUE 2336911. Any opinions, findings, conclusions, or recommendations expressed in this material are those of the authors and do not necessarily reflect the views of NSF.",
+   "team_acknowledgement": null,
+   "session_id": 859,
+   "session_title": "Research on Student Learning of Mathematics in Physics",
+   "session_code": "APR-P93",
+   "session_type": "ORAL",
+   "session_topics": [
+    "Physics Education Research",
+    "Education",
+    "Learning",
+    "General Physics",
+    "Methods",
+    "Measurement",
+    "Data Analysis"
+   ],
+   "building": "Convention Center",
+   "room": "Meeting Room 103"
+  },
+  {
+   "id": 8280,
+   "external_id": "SMT26-3812061",
+   "title": "Cyclic Compression of Soft Particles",
+   "abstract": "We are experimentally investigating the response of soft granular materials to cyclic perturbations. From previous works we know that after several hundred cycles of cyclic compression, hard granular materials will converge to a steady state, where the particles will return to their original position at the end of a cycle of low amplitude compression. However, this picture will change if a strong coupling between the reversible displacement of particles and irreversible rotations is introduced, leading to an overall irreversible and memory-less state. We study how the softness of particles will affect that picture using a cyclic compression apparatus with optical index matched particles which allow us to extract the motion of each individual particle in three dimensions. The deformation of the particles could lead to a coupling between the displacement and the rotations leading to a possibly irreversible state.",
+   "units": [
+    "SPS"
+   ],
+   "topics": [
+    "Compression of Condensed Matter",
+    "Soft Matter",
+    "Granular Materials",
+    "Deformation",
+    "Nonequilibrium Systems",
+    "Imaging",
+    "Disordered Systems",
+    "Nonlinear Dynamics"
+   ],
+   "type": "Oral-In-person",
+   "is_invited": false,
+   "is_withdrawn": false,
+   "start": "2026-03-16T21:42:00.000Z",
+   "end": "2026-03-16T21:54:00.000Z",
+   "sort_order": 2,
+   "presentation_location": null,
+   "author_ids": [
+    189239,
+    151035
+   ],
+   "presenter_ids": [
+    189239
+   ],
+   "publication_reference": null,
+   "funding_acknowledgement": "California State University Fullerton Internal Grant RSCA 25-26",
+   "team_acknowledgement": null,
+   "session_id": 844,
+   "session_title": "Undergraduate Research VIII",
+   "session_code": "MAR-C49",
+   "session_type": "ORAL",
+   "session_topics": [
+    "Fluid Dynamics",
+    "Autonomous Systems",
+    "Formal Theory",
+    "Robophysics",
+    "Analytical Methods",
+    "Nonlinear Dynamics",
+    "Algorithms",
+    "Soft Matter",
+    "Industrial Physics",
+    "Computational Physics",
+    "Instrumentation",
+    "Quantum Field Theory",
+    "Flows",
+    "Imaging",
+    "Computational Methods",
+    "Numerical Methods",
+    "AI/Machine Learning"
+   ],
+   "building": "Convention Center",
+   "room": "Meeting Room 705"
+  },
+  {
+   "id": 8456,
+   "external_id": "SMT26-3785513",
+   "title": "How Do Biofilms Evolve to Endure Metal-rich Environments?",
+   "abstract": "While bacteria can adapt to harsh environments, understanding of which pathways are preferred for modification and how they evolve remains limited. Directed evolution provides an opportunity to understand bacterial response to toxic environmental contaminants such as heavy metals, as development of a metal-tolerant bacterial strain can be paired with sequence analysis to gain insight into which mechanisms drive metal stress response and survival. Because its biofilms are already known to bind metals, we will leverage UV mutagenesis and selection to evolve a strain of the biofilm-forming bacteria B. subtilis that can tolerate metal-rich environments. Metal identity dictates baseline tolerance in wild-type B. subtilis; while it can survive in 50 mM copper, no growth is observed in 10-fold lower concentrations of zinc. UV irradiation yields survivors at higher zinc concentrations, suggesting that iterative rounds of mutagenesis and selection can produce zinc-tolerant mutants. Genome sequencing of mutants in parallel will allow us to identify and follow the trajectory of evolving pathways. Combined with physical characterization and comparison to predicted mutations, we will build a comprehensive understanding of acquired zinc tolerance mechanisms and viable routes for evolution.",
+   "units": [
+    "DSOFT",
+    "DSNP",
+    "DPOLY",
+    "DBIO"
+   ],
+   "topics": [
+    "Biological Physics",
+    "Bacteria",
+    "Evolution",
+    "Genome",
+    "Biological Systems",
+    "Ecology",
+    "Living Matter",
+    "Biophysics"
+   ],
+   "type": "Oral-In-person",
+   "is_invited": false,
+   "is_withdrawn": false,
+   "start": "2026-03-18T19:48:00.000Z",
+   "end": "2026-03-18T20:00:00.000Z",
+   "sort_order": 8,
+   "presentation_location": null,
+   "author_ids": [
+    184817,
+    13760,
+    121794
+   ],
+   "presenter_ids": [
+    184817
+   ],
+   "publication_reference": null,
+   "funding_acknowledgement": "This work was funded in part by the Interdisciplinary Quantitative Biology (IQ Biology) program at the BioFrontiers Institute at the University of Colorado, Boulder, as well as CU Boulder Startup funds.",
+   "team_acknowledgement": null,
+   "session_id": 885,
+   "session_title": "Soft and Living Matter in Complex Environments III",
+   "session_code": "MAR-M70",
+   "session_type": "FOCUS",
+   "session_topics": [
+    "Soft Matter",
+    "Biological Physics",
+    "Biophysics",
+    "Bacteria",
+    "Hydrodynamics",
+    "Biological Active Matter",
+    "Fluid Dynamics",
+    "Transport",
+    "Living Matter",
+    "Pattern Formation",
+    "Rheology"
+   ],
+   "building": "Convention Center",
+   "room": "Bluebird 3F"
+  },
+  {
+   "id": 8500,
+   "external_id": "SMT26-3805992",
+   "title": "Helicity Dependent Photocurrent in Eshelby Twisted GeS Nanowires",
+   "abstract": "Helicity dependent photocurrent (HDPC) has been extensively studied for its potential applications in spintronics and quantum information sensing. The effect has been primarily observed, often at low temperatures, in materials such as topological insulators or Weyl semimetals, where surface symmetry breaking has resulted in a helical spin texture. HDPC may also arise from structural chirality in nanostructures. One such example is Eshelby twisted van der Waals GeS nanowires, where the in-plane crystal axes of each layer rotate along the nanowire axis forming a helical wire and representing a 3D moir\u00e9 structure. Here, we report these twisted GeS nanowires exhibit clear HDPC at ambient conditions. The left and right circularly polarized light produces a photocurrent difference of up to 10%, when the light is propagated with a large incident angle (around 70 degrees) such that the wavevector is nearly parallel to the nanowire axis. This highlights the potential for developing optoelectronic devices capable of selectively responding to light of a given handedness, without requiring costly cooling systems.",
+   "units": [
+    "DMP"
+   ],
+   "topics": [
+    "Condensed Matter",
+    "Nanostructures",
+    "Moir\u00e9 Structures",
+    "Light-to-Electrical Conversion",
+    "Semiconductor Devices",
+    "Photonics",
+    "Semiconductors",
+    "Low-Dimensional Systems",
+    "2D Materials"
+   ],
+   "type": "Oral-In-person",
+   "is_invited": false,
+   "is_withdrawn": false,
+   "start": "2026-03-18T22:54:00.000Z",
+   "end": "2026-03-18T23:06:00.000Z",
+   "sort_order": 4,
+   "presentation_location": null,
+   "author_ids": [
+    87096
+   ],
+   "presenter_ids": [
+    87096
+   ],
+   "publication_reference": null,
+   "funding_acknowledgement": "This work was supported by the U.S. National Science Foundation Grants No. DMR-2404957",
+   "team_acknowledgement": "Dong Yu; Yin Liu; Tony Song; Santiago Hernandez; Jay Huang; Rodrigo Becerra Silva; Yueyin Wang; Guanyue Chen; Hongwei Zhang",
+   "session_id": 888,
+   "session_title": "Chiral Hybrid Metamaterials: Nonlinear, Topological, and Multifunctional Architectures",
+   "session_code": "MAR-P22",
+   "session_type": "FOCUS",
+   "session_topics": [
+    "Condensed Matter",
+    "Metamaterials",
+    "Nanophotonics",
+    "Artificially Structured Materials",
+    "Nanostructures",
+    "Photonics",
+    "Crystals",
+    "Sensing",
+    "Plasmonics",
+    "Optics",
+    "Quantum Light-Matter Interactions",
+    "Semiconductors",
+    "Optical Spectroscopy",
+    "Phase Transitions",
+    "2D Materials",
+    "Electronic Structure"
+   ],
+   "building": "Convention Center",
+   "room": "Meeting Room 109/111"
+  },
+  {
+   "id": 8731,
+   "external_id": "SMT26-3719817",
+   "title": "Flexoelectric Effect from First-Principles and machine-learned interatomic potentials",
+   "abstract": "Flexoelectricity, the polarization response to a strain gradient, is a critical phenomenon in all insulators. Although intrinsic flexoelectric coupling can be calculated in bulk crystals using first-principles methods, it is often much smaller than experimentally observed values, likely due to the influence of defects and surface effects. Standard approaches such as long-wavelength DFPT are computationally demanding, limiting their applicability to large supercells with defects. In this work, we investigate whether fine-tuned machine-learned interatomic potentials can serve as accurate and efficient surrogate models for capturing flexoelectric responses in such systems.",
+   "units": [
+    "FIAP",
+    "DCOMP"
+   ],
+   "topics": [
+    "Industrial Physics",
+    "Condensed Matter",
+    "Computational Physics",
+    "Insulators",
+    "Defects",
+    "Dielectrics",
+    "Atomistic Simulations",
+    "Density Functional Theory",
+    "AI/Machine Learning"
+   ],
+   "type": "Oral-In-person",
+   "is_invited": false,
+   "is_withdrawn": false,
+   "start": "2026-03-20T15:36:00.000Z",
+   "end": "2026-03-20T15:48:00.000Z",
+   "sort_order": 9,
+   "presentation_location": null,
+   "author_ids": [
+    200215
+   ],
+   "presenter_ids": [
+    200215
+   ],
+   "publication_reference": null,
+   "funding_acknowledgement": "Office of Naval Research",
+   "team_acknowledgement": "Dominic Varghese; Dr. Turan Birol",
+   "session_id": 909,
+   "session_title": "Multiferroics, Magnetoelectrics, Spin-Electric Coupling, and Ferroelectrics II",
+   "session_code": "MAR-Y22",
+   "session_type": "ORAL",
+   "session_topics": [
+    "Industrial Physics",
+    "Ferroelectrics",
+    "Density Functional Theory",
+    "Phase Transitions",
+    "2D Materials",
+    "Computational Physics",
+    "Electronic Structure",
+    "Dielectrics",
+    "Lattice Properties",
+    "Magnetoelectrics",
+    "Semiconductors"
+   ],
+   "building": "Convention Center",
+   "room": "Meeting Room 109/111"
+  },
+  {
+   "id": 8967,
+   "external_id": "SMT26-3803047",
+   "title": "Magnetic Anisotropy and Berry-Phase Transport in Ferromagnetic NdGaGe Single Crystals",
+   "abstract": "I will present results on single-crystal X-ray diffraction, magnetization, magnetic susceptibility, heat capacity, magnetotransport, and Hall transport measurements of NdGaGe (Neodymium\u2013Gallium\u2013Germanium) single crystals grown using a high-temperature Ga flux method. X-ray diffraction confirms a tetragonal structure, with refinements suggesting competition between centrosymmetric (I4\u2081/amd) and non-centrosymmetric (I4\u2081md) space groups. The possible lack of inversion symmetry can enhance Berry-curvature-driven transport phenomena. Magnetic and thermodynamic measurements show that NdGaGe is a ferromagnet with a Curie temperature of about 8.2 K and a strong easy axis along the c-direction. Magnetoresistance and magnetization are highly anisotropic, and Hall-effect measurements reveal a large anomalous Hall effect (AHE) below TC. The dominance of the anomalous Hall term indicates a primarily intrinsic contribution from Berry curvature linked to spin\u2013orbit coupling.",
+   "units": [
+    "SPS"
+   ],
+   "topics": [
+    "Magnetism",
+    "Crystals",
+    "Structure",
+    "Thermodynamic Properties",
+    "Magnetic Materials",
+    "Spin-Orbit Coupling",
+    "Topological Materials",
+    "Electronic Transport"
+   ],
+   "type": "Oral-In-person",
+   "is_invited": false,
+   "is_withdrawn": false,
+   "start": "2026-03-16T14:36:00.000Z",
+   "end": "2026-03-16T14:48:00.000Z",
+   "sort_order": 4,
+   "presentation_location": null,
+   "author_ids": [
+    16493,
+    122964,
+    66654,
+    25947,
+    81358,
+    88087,
+    33990,
+    44596
+   ],
+   "presenter_ids": [
+    16493
+   ],
+   "publication_reference": null,
+   "funding_acknowledgement": "This work is supported by the U.S. Department of Energy, Office of Basic Energy Sciences (DOE-BES) under the project DE-SC0025735.",
+   "team_acknowledgement": null,
+   "session_id": 931,
+   "session_title": "Undergraduate Research I",
+   "session_code": "MAR-A47",
+   "session_type": "ORAL",
+   "session_topics": [
+    "Magnetism",
+    "Magnetic Materials",
+    "Electronic Transport",
+    "Skyrmions",
+    "Chiral Spin Textures",
+    "Topological Materials",
+    "Materials Synthesis",
+    "Structure",
+    "Semimetals",
+    "Simulations",
+    "Dopants",
+    "Spin-Orbit Coupling",
+    "Topological Systems",
+    "Strongly Correlated Systems"
+   ],
+   "building": "Convention Center",
+   "room": "Meeting Room 702"
+  },
+  {
+   "id": 9334,
+   "external_id": "SMT26-3685446",
+   "title": "Phase transformation in BN/diamond heterojunctions using machine-learned force fields",
+   "abstract": "Cubic boron nitride (cBN) is a promising ultrawide bandgap material for high power electronics due to its superior mechanical strength, thermal conductivity, and huge breakdown field (Eb > 5 MV/cm). However, its use is limited by poor crystallinity and phase purity due to challenging growth conditions. cBN is often grown on diamond due to its low lattice mismatch (1.4%) and similar properties, but competing phases, especially hexagonal BN (hBN), are commonly observed at the interface. These phases introduce long-range effects that can hamper device performance and are difficult to model. Thus there is still a lack of detailed understanding of the phase stability of BN in this system. To study the pressure- and temperature-dependent phase-stability of the BN/diamond system, we developed machine-learned force fields (MLFFs) which are trained on ab-initio molecular dynamics simulations. We utilize these MLFFs to study the pressure-, temperature-, and defect-mediated phase transitions of BN in the heterostructure. Using MLFFs, we find that the presence of both BN defects and high pressures can aid the hBN to cBN phase transition. Our findings represent a pivotal step toward identifying the ideal growth conditions for cBN, paving the way for its controlled and scalable synthesis.",
+   "units": [
+    "DMP"
+   ],
+   "topics": [
+    "Condensed Matter",
+    "High Pressure",
+    "Defects",
+    "Phase Transitions",
+    "Wide Bandgap Materials",
+    "Atomistic Simulations",
+    "Heterostructures",
+    "Interfaces",
+    "AI/Machine Learning"
+   ],
+   "type": "Oral-In-person",
+   "is_invited": false,
+   "is_withdrawn": false,
+   "start": "2026-03-20T19:48:00.000Z",
+   "end": "2026-03-20T20:00:00.000Z",
+   "sort_order": 8,
+   "presentation_location": null,
+   "author_ids": [
+    130061,
+    12584,
+    138780,
+    179944
+   ],
+   "presenter_ids": [
+    130061
+   ],
+   "publication_reference": "CL Milne, H Gomez, A Gupta, AG Birdwell, S Rudin, EJ Garratt, BB Pate, TG Ivanov, AK Singh, and MR Neupane. \"Interface Structure and Electronic Properties in Cubic Boron Nitride - Diamond Heterostructures.\" Under review in Materials Today Physics.CL Milne, MR Neupane, AK Singh. Phase transformation in BN/diamond heterojunctions using machine-learned force fields. (planned)",
+   "funding_acknowledgement": "This work was also supported by the AEOP Fellowship program with DEVCOM Army Research Laboratory, and computational grants for this work were provided by the DOD High Performance Computing Modernization Program at the U.S. Air Force Research Laboratory and Supercomputing Resource Centers. This work was also supported in part by ULTRA, an Energy Frontier Research Center funded by the U.S. Department of Energy (DOE), Office of Science, Basic Energy Sciences (BES), under Award No. DESC0021230. This research used computing resources from the San Diego Supercomputer Center under the NSF-XSEDE and NSF-ACCESS Award No.DMR150006, and the Research Computing facility at Arizona State University.",
+   "team_acknowledgement": null,
+   "session_id": 964,
+   "session_title": "Ultra Wide Band Gap II",
+   "session_code": "MAR-Z26",
+   "session_type": "FOCUS",
+   "session_topics": [
+    "Condensed Matter",
+    "Wide Bandgap Materials",
+    "Semiconductors",
+    "Electronic Structure",
+    "Heterostructures",
+    "Dopants",
+    "Density Functional Theory",
+    "Defects",
+    "Thin Films",
+    "Interfaces",
+    "Phase Transitions",
+    "Materials Design"
+   ],
+   "building": "Convention Center",
+   "room": "Meeting Room 205"
+  },
+  {
+   "id": 9437,
+   "external_id": "SMT26-3813860",
+   "title": "Ferroelectric Field Effect in ReS2 via Self-Assembled Epitaxial P(VDF-TrFE) Nanowires",
+   "abstract": "Two-dimensional (2D) materials coupled with ferroelectric polymers offer a promising pathway to explore nonvolatile modulation of charge transport and programmable functionalities. We investigate the self-assembly behavior of the ferroelectric copolymer P(VDF-TrFE) on few-layer ReS\u2082, a transition metal dichalcogenide known for its strong in-plane anisotropy and direction-dependent electronic/optical properties. Using Langmuir\u2013Blodgett deposition, we transfer P(VDF-TrFE) layer-by-layer onto exfoliated few-layer ReS\u2082 flakes and subsequently thermally anneal the films to promote crystallization and enhance molecular ordering. Atomic force microscopy reveals that the polymer forms closely packed, highly ordered nanowire arrays with average width of ~35 nm. The nanowires are aligned perpendicular to the b-axis of ReS\u2082, in sharp contrast to randomly oriented structures observed on SiO\u2082 substrates, suggesting strong structural synergy at the interface. Preliminary transport measurements on ReS\u2082/P(VDF-TrFE) heterostructures indicate nonvolatile electrostatic modulation of the underlying 2D channel. These results demonstrate the ability to achieve epitaxial coupling between the ferroelectric polymer and 2D materials, enabling novel flexible electronic and optoelectronic device concepts.",
+   "units": [
+    "DMP",
+    "DCMP"
+   ],
+   "topics": [
+    "Condensed Matter",
+    "Self-Assembly",
+    "Polymers",
+    "Heterostructures",
+    "2D Materials",
+    "Ferroelectrics",
+    "Nanostructures",
+    "Interfaces",
+    "Electronic Transport"
+   ],
+   "type": "Oral-In-person",
+   "is_invited": false,
+   "is_withdrawn": false,
+   "start": "2026-03-20T15:24:00.000Z",
+   "end": "2026-03-20T15:36:00.000Z",
+   "sort_order": 8,
+   "presentation_location": null,
+   "author_ids": [
+    152777,
+    111479,
+    188064,
+    48151,
+    79167
+   ],
+   "presenter_ids": [
+    152777
+   ],
+   "publication_reference": null,
+   "funding_acknowledgement": "This work is supported by NSF EPSCoR EQUATE award No. OIA-2044049 and NSF Grant No. DMR-2118828. AP acknowledges the support from UNL UCARE program.",
+   "team_acknowledgement": null,
+   "session_id": 972,
+   "session_title": "Ferroic Orders in Two Dimensions",
+   "session_code": "MAR-Y24",
+   "session_type": "FOCUS",
+   "session_topics": [
+    "Condensed Matter",
+    "2D Materials",
+    "Ferroelectrics",
+    "Electronic Transport",
+    "Electronic Properties",
+    "Chemical Physics",
+    "Deformation",
+    "Raman Spectroscopy",
+    "Devices",
+    "Lattice Properties",
+    "Heterostructures",
+    "Nanostructures",
+    "Low-Dimensional Systems",
+    "Electronic Structure",
+    "Materials Design",
+    "Semiconductors",
+    "Phase Transitions"
+   ],
+   "building": "Convention Center",
+   "room": "Meeting Room 201"
+  },
+  {
+   "id": 9856,
+   "external_id": "SMT26-3628867",
+   "title": "Raman spectroscopy, a definitive tool for eliminating Diamond simulants in jewellery supply chains",
+   "abstract": "Due to the high price of diamonds, often they are switched with similar looking, cheaper gemstones to make a quick profit. This malpractice hurts the interests of the end customer of the Jewellery industry. To stop this malpractice and to ensure customer confidence, an assurance tool is needed for eliminating simulant gemstones and authentication of Diamonds. We compare common simulants as Quartz, Moissanite and cubic Zirconia with single crystal Diamond. The diffuse reflection spectroscopy and spectroscopic ellipsometry measurements, suggest that the simulants and diamonds cannot be separated by mere visual inspection. We show that by measuring and comparing the gemstone Raman mode signatures, all the simulants can be conclusively separated from the diamonds.",
+   "units": [
+    "FIAP"
+   ],
+   "topics": [
+    "Industrial Physics",
+    "Applied Physics",
+    "Instrumentation",
+    "Raman Spectroscopy",
+    "Measurement tools",
+    "Materials Science",
+    "Crystals",
+    "Optical Spectroscopy"
+   ],
+   "type": "Oral-Virtual",
+   "is_invited": false,
+   "is_withdrawn": false,
+   "start": "2026-03-19T17:06:00.000Z",
+   "end": "2026-03-19T17:18:00.000Z",
+   "sort_order": 4,
+   "presentation_location": null,
+   "author_ids": [
+    91009,
+    201193,
+    194521
+   ],
+   "presenter_ids": [
+    91009
+   ],
+   "publication_reference": "Harshavardhan R. Kalluru, Akta Verma and Shivani Tiwari, \"Raman spectroscopy, a definitive tool for eliminating Diamond simulants in jewellery supply chains\", submitted (2025)",
+   "funding_acknowledgement": "The authors received no financial support for conducting the research, in this report.",
+   "team_acknowledgement": "none",
+   "session_id": 1008,
+   "session_title": "2D Materials, Semiconductor Electronics and Characterization",
+   "session_code": "VIR-L05",
+   "session_type": "ORAL",
+   "session_topics": [
+    "Industrial Physics",
+    "2D Materials",
+    "Semiconductors",
+    "Electronic Structure",
+    "Density Functional Theory",
+    "Materials Design",
+    "Condensed Matter",
+    "Computational Physics",
+    "Devices",
+    "Semiconductor Devices",
+    "Interfaces",
+    "Dopants",
+    "Quantum Materials",
+    "Raman Spectroscopy",
+    "Electromagnetism",
+    "Electronic Properties",
+    "Simulations",
+    "Algorithms"
+   ],
+   "building": null,
+   "room": null
+  },
+  {
+   "id": 10268,
+   "external_id": "SMT26-3819583",
+   "title": "Data coarse graining can improve model performance",
+   "abstract": "Lossy data transformations by definition lose information. Yet, in modern machine learning, methods like data pruning and lossy data augmentation can help improve generalization performance. We study this paradox using a solvable model of high-dimensional, ridge-regularized linear regression under data coarse graining. Inspired by the renormalization group in statistical physics, we analyze coarse-graining schemes that systematically discard features based on their relevance to the learning task. Our results reveal a nonmonotonic dependence of the prediction risk on the degree of coarse graining. A high-pass scheme\u2014which filters out less relevant, lower-signal features\u2014can help models generalize better. By contrast, a low-pass scheme that integrates out more relevant, higher-signal features is purely detrimental. Crucially, using optimal regularization, we demonstrate that this nonmonotonicity is a distinct effect of data coarse graining and not an artifact of double descent. Our framework offers a clear, analytical explanation for why careful data augmentation works: it strips away less relevant degrees of freedom and isolates more predictive signals. Our results highlight a complex, nonmonotonic risk landscape shaped by the structure of the data, and illustrate how ideas from statistical physics provide a principled lens for understanding modern machine learning phenomena.",
+   "units": [
+    "DSNP"
+   ],
+   "topics": [
+    "Statistical and Nonlinear Physics",
+    "Data Science",
+    "Statistical Physics",
+    "Signal Processing",
+    "Complex Systems",
+    "Statistical Mechanics",
+    "Analytical Methods",
+    "Modeling",
+    "AI/Machine Learning"
+   ],
+   "type": "Oral-In-person",
+   "is_invited": false,
+   "is_withdrawn": false,
+   "start": "2026-03-18T16:36:00.000Z",
+   "end": "2026-03-18T16:48:00.000Z",
+   "sort_order": 14,
+   "presentation_location": null,
+   "author_ids": [
+    139123,
+    173009,
+    139067
+   ],
+   "presenter_ids": [
+    139067
+   ],
+   "publication_reference": "A. Nguyen, D. J. Schwab, and V. Ngampruetikorn, arXiv:2509.14498 [cond-mat.stat-mech]",
+   "funding_acknowledgement": "Alex Nguyen is supported by NIH grant RF1MH125318. DJS was partially supported by a Simons Fellowship in the MMLS, a Sloan Fellowship, and the National Science Foundation, through the Center for the Physics of Biological Function (PHY-1734030). VN acknowledges research funds from the University of Sydney.",
+   "team_acknowledgement": null,
+   "session_id": 1039,
+   "session_title": "Statistical Physics Meets Machine Learning I",
+   "session_code": "MAR-L63",
+   "session_type": "ORAL",
+   "session_topics": [
+    "Statistical and Nonlinear Physics",
+    "AI/Machine Learning",
+    "Computational Physics",
+    "Data Science",
+    "Statistical Physics",
+    "Algorithms",
+    "Complex Systems",
+    "Learning",
+    "Statistical Mechanics",
+    "Nonlinear Dynamics",
+    "Analytical Methods",
+    "Computational Methods",
+    "Modeling",
+    "Stochasticity"
+   ],
+   "building": "Convention Center",
+   "room": "Bluebird 2G"
+  },
+  {
+   "id": 10745,
+   "external_id": "SMT26-3918220",
+   "title": "Guiding spin waves with hyperbolic magnets",
+   "abstract": "Conventional magnets that host spin-wave excitations offer a promising platform for charge-free coherent spin transport with low dissipation, but are constrained by limited wavevectors and a weak coupling to other magnetic components. Here, we discuss the realization of hyperbolic magnets which support highly directional spin waves at much higher momentum with an enhanced density of states enabling larger couplings. Based on anisotropic layered Heisenberg magnets, we propose a hyperbolic ferromagnet (HFM) as well as a hyperbolic antiferromagnet (HAFM), which show characteristic hyperbolic dispersions. The corresponding spin configurations are intrinsically unstable but can be dynamically stabilized by an externally applied spin torque and tuned to the operational frequency by magnetic fields. Furthermore, we demonstrate that hyperbolic magnets can naturally act as waveguides that efficiently transmit spin waves across narrow constrictions and facilitate strong focusing effects due to their inherent negative refraction. Hence, hyperbolic magnets provide a promising platform for future quantum magnonic applications.",
+   "units": [
+    "GMAG"
+   ],
+   "topics": [
+    "Magnetism",
+    "Transport",
+    "Metamaterials",
+    "Collective Excitations",
+    "Spin Dynamics",
+    "Quantum Materials",
+    "Materials Design",
+    "2D Materials"
+   ],
+   "type": "Oral-In-person",
+   "is_invited": false,
+   "is_withdrawn": false,
+   "start": "2026-03-18T16:12:00.000Z",
+   "end": "2026-03-18T16:24:00.000Z",
+   "sort_order": 12,
+   "presentation_location": null,
+   "author_ids": [
+    223779,
+    98476,
+    196783
+   ],
+   "presenter_ids": [
+    223779
+   ],
+   "publication_reference": null,
+   "funding_acknowledgement": null,
+   "team_acknowledgement": null,
+   "session_id": 1079,
+   "session_title": "Magnetization Dynamics and Spin Waves",
+   "session_code": "MAR-L39",
+   "session_type": "ORAL",
+   "session_topics": [
+    "Magnetism",
+    "Spin Dynamics",
+    "Magnetic Materials",
+    "Devices",
+    "Thin Films",
+    "Collective Excitations",
+    "Nanostructures",
+    "Spectroscopy"
+   ],
+   "building": "Convention Center",
+   "room": "Meeting Room 504"
+  },
+  {
+   "id": 11387,
+   "external_id": "SMT26-3822865",
+   "title": "Trotter Error Mitigation with Error Profiling Method",
+   "abstract": "Trotter\u2013Suzuki product formulas underpin digital quantum simulation, yet noncommuting terms introduce algorithmic bias. Higher-order and multi-product variants mitigate this bias only by increasing circuit depth. Building on the recently introduced error profiling paradigm, we conduct an experimental study on a NISQ processor for representative many-body Hamiltonians. At fixed depth, the procedure learns and compensates for Trotter bias from shallow calibration data with classical post-processing, yielding accuracy improvements across several observables within the tested regimes. These results provide hardware evidence that error profiling can relax the depth\u2013accuracy trade-off in digital quantum simulation and serve as a practical complement to higher-order product formulas on current devices.",
+   "units": [
+    "DQI"
+   ],
+   "topics": [
+    "Quantum Information",
+    "Quantum Characterization",
+    "Computational Methods",
+    "Many-Body Systems",
+    "Error Correction",
+    "Quantum Dynamics",
+    "Quantum Simulations",
+    "Algorithms",
+    "Quantum Computing"
+   ],
+   "type": "Poster-In-person",
+   "is_invited": false,
+   "is_withdrawn": false,
+   "start": "2026-03-19T16:00:00.000Z",
+   "end": "2026-03-19T16:00:00.000Z",
+   "sort_order": 38,
+   "presentation_location": "302",
+   "author_ids": [
+    12259,
+    108350,
+    108415,
+    147587,
+    97473
+   ],
+   "presenter_ids": [
+    12259
+   ],
+   "publication_reference": null,
+   "funding_acknowledgement": null,
+   "team_acknowledgement": null,
+   "session_id": 1137,
+   "session_title": "Poster Session III: Quantum Information, Concepts, and Computation (10:00AM-1:00PM MT)",
+   "session_code": "MAR-T00-05",
+   "session_type": "POSTER",
+   "session_topics": [
+    "Quantum Information",
+    "Quantum Computing",
+    "Qubits",
+    "Algorithms",
+    "Quantum Devices",
+    "Quantum Technology"
+   ],
+   "building": "Convention Center",
+   "room": "Exhibit Hall D, E & F, Level 2"
+  },
+  {
+   "id": 11524,
+   "external_id": "SMT26-3816999",
+   "title": "Anisotropic Negative Magnetoresistance in Strained \u03b1-Sn Films",
+   "abstract": "We present magnetoresistance measurements in strained, ~200 nm thick pure and Ge-doped \u03b1-Sn (gray Tin) films grown via MBE on CdTe substrates. \u03b1-Sn is a zero-gap semiconductor with an inversion-symmetric diamond lattice and an electronic structure that possesses the s-p band inversion property, closely related to that of binary compounds such as HgTe. Recently, \u03b1-Sn has been studied as a simple single-element compound with electronic properties tunable by strain. In strained \u03b1-Sn films, the zero-gap semiconductor phase is replaced with a Dirac semimetal phase, where the Weyl phase can be further induced by applying an external magnetic field. A growing number of studies have recently focused on the Weyl semimetal phase of \u03b1-Sn as a candidate for observing a solid state analog of the Adler-Bell-Jackiw chiral anomaly. The effect is predicted to produce a strong enhancement of conductance, i.e. a negative magnetoresistance MR, in the direction parallel to the magnetic field. However, there is not yet a consensus regarding the role of chiral effects in recent transport studies.We have measured MR in lithographically patterned 3000 x 600 microns Hall bars at T~ 5K, and varied the in-plane magnetic field B between 0 and 8.5 T. With B parallel to the current, MR decreases monotonically with B. Surprisingly, MR also decreases up to a large B applied perpendicularly to the current flow and only begins to increase in the upper range of B. We compare our observations to the findings of several other groups and discuss mechanisms competing with the chiral effects that may also lead to negative magnetoresistance in \u03b1-Sn..",
+   "units": [
+    "DMP"
+   ],
+   "topics": [
+    "Condensed Matter",
+    "Electronic Properties",
+    "Electronic Structure",
+    "Semimetals",
+    "Topological Materials",
+    "Quantum Materials",
+    "Thin Films",
+    "Semiconductors",
+    "Electronic Transport"
+   ],
+   "type": "Poster-In-person",
+   "is_invited": false,
+   "is_withdrawn": false,
+   "start": "2026-03-19T16:00:00.000Z",
+   "end": "2026-03-19T16:00:00.000Z",
+   "sort_order": 9,
+   "presentation_location": "170",
+   "author_ids": [
+    99523,
+    151792,
+    94824,
+    95713,
+    88908,
+    193541
+   ],
+   "presenter_ids": [
+    151792
+   ],
+   "publication_reference": null,
+   "funding_acknowledgement": "University of Cincinnati",
+   "team_acknowledgement": null,
+   "session_id": 1139,
+   "session_title": "Poster Session III: Material Physics (10:00AM-1:00PM MT)",
+   "session_code": "MAR-T00-03",
+   "session_type": "POSTER",
+   "session_topics": [
+    "Condensed Matter",
+    "2D Materials",
+    "Electronic Structure",
+    "Density Functional Theory",
+    "Electronic Transport",
+    "Semiconductors",
+    "Materials Synthesis",
+    "Topological Materials"
+   ],
+   "building": "Convention Center",
+   "room": "Exhibit Hall D, E & F, Level 2"
+  },
+  {
+   "id": 11620,
+   "external_id": "SMT26-3762726",
+   "title": "Superconducting phase diagram for Pd-doped SrPt2As2",
+   "abstract": "SrPt2As2 is a nonmagnetic analogue of iron-based superconductors, like those derived from BaFe2As2. SrPt2As2 is of particular interest as it is reported to show charge density wave formation well above room temperature. We investigate a variety of dopings through multiple rounds of single-crystal synthesis and report on resultant observed doping levels and observed Hc2(T) diagrams.",
+   "units": [
+    "DCMP"
+   ],
+   "topics": [
+    "Condensed Matter",
+    "Iron-based",
+    "Charged Density Waves",
+    "Dopants",
+    "Electronic Phases",
+    "Electronic Properties",
+    "Materials Synthesis",
+    "Phase Transitions",
+    "Superconductivity"
+   ],
+   "type": "Poster-In-person",
+   "is_invited": false,
+   "is_withdrawn": false,
+   "start": "2026-03-19T16:00:00.000Z",
+   "end": "2026-03-19T16:00:00.000Z",
+   "sort_order": 26,
+   "presentation_location": "75",
+   "author_ids": [
+    78738,
+    182081,
+    29418
+   ],
+   "presenter_ids": [
+    78738
+   ],
+   "publication_reference": null,
+   "funding_acknowledgement": "This work was supported by the U.S. Department of Energy, Office of Science, Basic Energy Sciences, Materials Sciences and Engineering Division.",
+   "team_acknowledgement": null,
+   "session_id": 1140,
+   "session_title": "Poster Session III: Topological Materials (10:00AM-1:00PM MT)",
+   "session_code": "MAR-T00-02",
+   "session_type": "POSTER",
+   "session_topics": [
+    "Condensed Matter",
+    "2D Materials",
+    "Thin Films",
+    "Electronic Structure",
+    "Superconductivity",
+    "Electronic Transport",
+    "Strongly Correlated Systems"
+   ],
+   "building": "Convention Center",
+   "room": "Exhibit Hall D, E & F, Level 2"
+  },
+  {
+   "id": 11810,
+   "external_id": "SMT26-3927552",
+   "title": "Direct observation of dynamic energy transport and high thermal conductance across solid\u2013molecule junctions",
+   "abstract": "Interfaces play a crucial role in energy transport at the nanoscale. However, direct experimental observations of interfacial thermal conductance across molecular junctions have remained challenging. Here, we report dynamic energy transport processes across a molecular junction observed at the atomic level by employing reflection ultrafast electron diffraction. A clear temporal sequence of energy transfer is revealed at early times following photoexcitation of Au(111) surfaces chemically bonded with self-assembled monolayers (SAMs) of alkanethiols: from the gold surface layer (SL) to the head groups of a SAM and then to the methylene lattice. Remarkably, the structural dynamics of the gold SL differ significantly from those of clean gold. Furthermore, the methylene lattice dynamics exhibit chain-length independence but with a length-dependent retention time. We find an ultrahigh thermal conductivity for the methylene lattice and a high interfacial thermal conductance at early times under the condition of impulsive heating. In contrast, these values become less significant to the thermalization and recovery of the whole assembly system at longer times. We anticipate that this time- and spatially-resolved experimental approach will enable future quantitative assessment of interfacial heat transport across solid\u2013molecule junctions.",
+   "units": [
+    "DCP"
+   ],
+   "topics": [
+    "Chemical Physics",
+    "Diffraction",
+    "Transport",
+    "Ultrafast",
+    "Surfaces",
+    "Self-Assembled Materials",
+    "Molecule-Metal Interfaces",
+    "Nanoscale Physics",
+    "Thermodynamic Properties"
+   ],
+   "type": "Poster-In-person",
+   "is_invited": false,
+   "is_withdrawn": false,
+   "start": "2026-03-18T18:00:00.000Z",
+   "end": "2026-03-18T18:00:00.000Z",
+   "sort_order": 13,
+   "presentation_location": "158",
+   "author_ids": [
+    178752,
+    215315
+   ],
+   "presenter_ids": [
+    178752
+   ],
+   "publication_reference": null,
+   "funding_acknowledgement": "The support by the National Science Foundation (CHE-2154363) and the Welch Foundation (E-2263) is acknowledged.",
+   "team_acknowledgement": null,
+   "session_id": 1144,
+   "session_title": "Poster Session II: Chemical Physics (12:00PM-3:00PM MT)",
+   "session_code": "MAR-N00-05",
+   "session_type": "POSTER",
+   "session_topics": [
+    "Chemical Physics",
+    "Computational Physics",
+    "Electronic Structure",
+    "Density Functional Theory",
+    "Chemical Dynamics"
+   ],
+   "building": "Convention Center",
+   "room": "SPLASHY District"
+  },
+  {
+   "id": 12292,
+   "external_id": "SMT26-3678414",
+   "title": "Femto-ampere Photocurrent Measurements for the LISA GRS",
+   "abstract": "The Laser Interferometer Space Antenna (LISA) will be the first gravitational-wave detector in space. LISA consists of three spacecraft, separated by 2.5 million km. Using interferometric measurements of the relative acceleration of test-mass (TM) free-falling inside spacecrafts, the mission will detect low frequency gravitational waves. The team at University of Trento is responsible for one major subsystem of the mission, the Gravitational Reference Sensor (GRS). The core of the GRS is a gold-platinum TM inside an electrode housing (EH) which contains pairs of electrodes, both gold coated, for sensing and actuation. The TM is expected to accumulate 10-100 e/s of positive charge from cosmic rays and solar radiation. The GRS will compensate for this charging via photoelectric emission of electrons from UV light injection. Characterizing the TM-EH photocurrent discharge system is the focus of several ground-testing campaigns. Torsion pendulums are used to measure the charge on a TM, providing indirect measurements of the photocurrent; however, this process is difficult. In this poster, we present measurements from a recently-developed facility designed to directly measure the photocurrent with resolution below 1 fA. By testing electrical configurations, this experiment can also explore effects of actuation/sensing potentials on the discharge process. Broadly, this facility serves as a test bed to develop measurement techniques for characterizing the 6 GRS copies before spacecraft integration.",
+   "units": [
+    "SPS"
+   ],
+   "topics": [
+    "Measurement Science",
+    "Precision Measurement",
+    "Instrumentation",
+    "Cosmic Rays",
+    "Gravitational Waves",
+    "Missions",
+    "Sensors",
+    "Detectors"
+   ],
+   "type": "Poster-In-person",
+   "is_invited": false,
+   "is_withdrawn": false,
+   "start": "2026-03-17T20:00:00.000Z",
+   "end": "2026-03-17T20:00:00.000Z",
+   "sort_order": 140,
+   "presentation_location": "140",
+   "author_ids": [
+    122728,
+    201050,
+    34513,
+    207215,
+    46357,
+    39922,
+    98320,
+    27823
+   ],
+   "presenter_ids": [
+    122728
+   ],
+   "publication_reference": null,
+   "funding_acknowledgement": "This research was funded through the NSF International Research Experience for Undergraduates in Gravitational Physics (NSF Award No. 1950830).",
+   "team_acknowledgement": null,
+   "session_id": 1152,
+   "session_title": "Poster Session I: Undergraduate Posters (2:00PM-5:00PM MT)",
+   "session_code": "MAR-H00-01",
+   "session_type": "POSTER",
+   "session_topics": [
+    "Instrumentation"
+   ],
+   "building": "Convention Center",
+   "room": "Exhibit Hall D, E & F, Level 2"
+  },
+  {
+   "id": 12342,
+   "external_id": "SMT26-3804592",
+   "title": "Spectroscopic Probing of Magnetoresistive Switching in Porphene, a 2D Porphyrin Based Polymer",
+   "abstract": "Porphene is a 2D material made by the oxidative polymerization of porphyrin based monomers. It can be doped with a number of different transition metals, dramatically changing the electronic and magnetic properties of these materials. In particular, iron doped porphene is predicted to exhibit conductance switching when applying a magnetic field. We present experimental evidence in support of these magnetoresistive effects.",
+   "units": [
+    "FIAP"
+   ],
+   "topics": [
+    "Industrial Physics",
+    "Magnetism",
+    "Iron-based",
+    "Organic Materials",
+    "Dopants",
+    "Polymers",
+    "Spectroscopy",
+    "Electronic Transport",
+    "2D Materials"
+   ],
+   "type": "Poster-In-person",
+   "is_invited": false,
+   "is_withdrawn": false,
+   "start": "2026-03-19T16:00:00.000Z",
+   "end": "2026-03-19T16:00:00.000Z",
+   "sort_order": 8,
+   "presentation_location": "492",
+   "author_ids": [
+    33484,
+    124204,
+    119828,
+    40170,
+    164433,
+    44035
+   ],
+   "presenter_ids": [
+    33484
+   ],
+   "publication_reference": null,
+   "funding_acknowledgement": null,
+   "team_acknowledgement": null,
+   "session_id": 1155,
+   "session_title": "Poster Session III: Semiconductors, Insulators, and Dielectrics",
+   "session_code": "MAR-T00-12",
+   "session_type": "POSTER",
+   "session_topics": [
+    "Industrial Physics",
+    "2D Materials",
+    "Semiconductors",
+    "Thin Films"
+   ],
+   "building": "Convention Center",
+   "room": "Exhibit Hall D, E & F, Level 2"
+  },
+  {
+   "id": 12772,
+   "external_id": "SMT26-3912496",
+   "title": "Ultrafast transient photocurrent in hybrid lead halide perovskites",
+   "abstract": "Organic-inorganic hybrid halide perovskites, including methylammonium lead iodide and bromide, have demonstrated promising applications in photovoltaics. We performed ultrafast transient photocurrent (TPC) measurements in single-crystalline perovskite microribbons at cryogenic temperatures, to investigate their charge dynamics and transport at ultrafast timescales. Our measurements reveal that the probe-induced photocurrent is substantially suppressed by a pump pulse. The recovery time of this suppression is significantly shortened by the applied electric field, which we attribute to the drift of the photogenerated carriers out of the laser-illuminated region. Interestingly, when the photoexcitation energy is slightly below the bandgap, we observe a much stronger photocurrent suppression, accompanied by a sharp peak at zero delay with a temporal width approximately 10 ps. I will discuss possible mechanisms and its implications on exciton dynamics and transport.",
+   "units": [
+    "DLS"
+   ],
+   "topics": [
+    "Laser Science",
+    "Materials Physics",
+    "Photovoltaics",
+    "Ultrafast",
+    "Perovskites",
+    "Excitons",
+    "Nanostructures",
+    "Semiconductors",
+    "Electronic Transport"
+   ],
+   "type": "Oral-In-person",
+   "is_invited": false,
+   "is_withdrawn": false,
+   "start": "2026-03-18T19:24:00.000Z",
+   "end": "2026-03-18T19:36:00.000Z",
+   "sort_order": 6,
+   "presentation_location": null,
+   "author_ids": [
+    183177
+   ],
+   "presenter_ids": [
+    183177
+   ],
+   "publication_reference": null,
+   "funding_acknowledgement": "This work was supported by the U.S. National Science Foundation Grant No. DMR-2209884.",
+   "team_acknowledgement": null,
+   "session_id": 204,
+   "session_title": "Ultrafast Materials Dynamics and Control II",
+   "session_code": "MAR-M51",
+   "session_type": "FOCUS",
+   "session_topics": [
+    "Laser Science",
+    "Ultrafast",
+    "Excitons",
+    "Semiconductors",
+    "Optical Spectroscopy",
+    "2D Materials",
+    "Photonics",
+    "Many-Body Physics",
+    "Low-Dimensional Systems"
+   ],
+   "building": "Convention Center",
+   "room": "Meeting Room 708/710"
+  },
+  {
+   "id": 12774,
+   "external_id": "SMT26-3974170",
+   "title": "The Retention of Light on a Glass Surface",
+   "abstract": "We suggest a novel technique to store a probe laser beam on a glass surface. The coherent superposition of two Gaussian cw-lasers beams of different brightnesses incident on the same surface can inhibit the surface\u2019s reflectivity to the weak probe laser beam at several angles of incidence near the Brewster Angle (BA). We use diode lasers with a long temporal coherence. The interaction between the probe laser and the surface dipoles is analyzed through the parallel component of the probe\u2019s reflectance, which has a parabolic variation near BA. The coherent superposition between probe and coupler modulates the parabola with a sinusoidal interference pattern, having minima and maxima of reflectivity evenly spaced. The superposition on the glass surface creates polarizable an array of aligned surface dipoles. Our results indicate that at certain angles of incidence the reflectivity of the glass surface to the weak probe can efficiently enhance (i.e. at 58.24 deg. for 0V), while at 0.3 and 1.3V, the reflectivity is strongly diminished, and the energy of the probe is retained on the surface. This study can help the microelectronics industry in developing silicon nanofabrication techniques to meet the urgent demand for computational power and storage of energy in microcircuits.",
+   "units": [
+    "DLS"
+   ],
+   "topics": [
+    "Laser Science",
+    "Applied Physics",
+    "Microelectronics",
+    "Energy Storage",
+    "Optics",
+    "Dielectrics",
+    "Photonics",
+    "Surfaces"
+   ],
+   "type": "Oral-In-person",
+   "is_invited": false,
+   "is_withdrawn": false,
+   "start": "2026-03-19T19:12:00.000Z",
+   "end": "2026-03-19T19:24:00.000Z",
+   "sort_order": 7,
+   "presentation_location": null,
+   "author_ids": [
+    10307,
+    16661
+   ],
+   "presenter_ids": [
+    10307
+   ],
+   "publication_reference": "[1] C. Bahrim, R. Bharadwaj, and A. Nurul \"Coherent Interference Between Two Linearly Polarized TEM00 cw-Lasers on a Crown Glass Surface\", in Frontiers in Optics + Laser Science 2022 (FiO, LS), Technical Digest Series (Optica Publishing Group, 2022), paper JTu4A.4.[2] C. Bahrim and R. Bharadwaj, \"Changing the Reflectivity of a Glass Surface Through Interference Between Two Linearly Polarized Laser Beams\", in Frontiers in Optics + Laser Science 2025 (FiO, LS), Technical Digest Series (Optica Publishing Group, 2025), paper JTu5A.28 (in press)",
+   "funding_acknowledgement": null,
+   "team_acknowledgement": null,
+   "session_id": 205,
+   "session_title": "Advanced Laser-based Imaging and Spectroscopy",
+   "session_code": "MAR-U51",
+   "session_type": "FOCUS",
+   "session_topics": [
+    "Laser Science",
+    "Ultrafast",
+    "Semiconductors",
+    "Instrumentation",
+    "Spectroscopy",
+    "Quantum Materials",
+    "Optics",
+    "Photonics"
+   ],
+   "building": "Convention Center",
+   "room": "Meeting Room 708/710"
+  },
+  {
+   "id": 12795,
+   "external_id": "SMT26-3852923",
+   "title": "Development of compact and modular neutron detector arrays using 6LiF+ZnS(Ag) and wavelength shifters",
+   "abstract": "Neutron detection is vital for a broad range of scientific and practical applications, including nuclear physics, space missions, national security, and industrial surveys. Due to the neutral charge of neutrons, their detection requires specialized materials and techniques. Compact neutron detectors have become increasingly important for field applications, particularly in nuclear security, where portability and sensitivity are essential. 6LiF mixed with silver(Ag)-activated zinc sulfide (ZnS) scintillators is known to offer a significant advantage for neutron detection in radiation fields high in gamma rays. To improve light collection and transmission in compact geometries, the use of wavelength shifters as a light guide for 6LiF+ZnS(Ag) enables efficient light transport and signal readout. These enhancements support the construction of rugged, efficient, and lightweight detectors for deployment in mobile or space-constrained environments. A compact and modular array of detectors utilizing 6LiF+ZnS(Ag) and wavelength shifters are being investigated to further expand detection coverage and scalability for nuclear physics applications.",
+   "units": [
+    "DNP"
+   ],
+   "topics": [
+    "Nuclear Physics",
+    "Applied Physics",
+    "Instrumentation",
+    "Materials",
+    "Radiation",
+    "Detectors",
+    "Neutrons",
+    "Photonics"
+   ],
+   "type": "Oral-In-person",
+   "is_invited": false,
+   "is_withdrawn": false,
+   "start": "2026-03-16T20:15:00.000Z",
+   "end": "2026-03-16T20:27:00.000Z",
+   "sort_order": 6,
+   "presentation_location": null,
+   "author_ids": [
+    86570,
+    112258,
+    56363
+   ],
+   "presenter_ids": [
+    86570
+   ],
+   "publication_reference": null,
+   "funding_acknowledgement": null,
+   "team_acknowledgement": null,
+   "session_id": 349,
+   "session_title": "Applications of Nuclear Physics",
+   "session_code": "APR-C84",
+   "session_type": "ORAL",
+   "session_topics": [
+    "Nuclear Physics",
+    "Detectors",
+    "Instrumentation",
+    "Precision Measurement",
+    "Crystals",
+    "Measurement",
+    "Nucleon Spin",
+    "Scattering",
+    "Radiation",
+    "Simulations",
+    "Spectroscopy"
+   ],
+   "building": "Hyatt Regency",
+   "room": "Capitol 5"
+  },
+  {
+   "id": 15020,
+   "external_id": "SMT26-3903500",
+   "title": "Kinematic Studies of a Beyond Standard Model Higgs Search in the di-lepton bbWW Channel",
+   "abstract": "Abstract:This project investigates the kinematic properties of a potential new Higgs boson predicted by Beyond Standard Model (BSM) Higgs sector extensions. Using simulated data from the ATLAS experiment at CERN, we study the final state consisting of 2 b-quarks, 2 charged leptons, and large missing transverse energy. The focus is on identifying variables that can effectively separate signal from dominant Standard Model backgrounds pair-produced top-quark processes. Kinematic variables including invariant masses, transverse momentum balances, and angular correlations are analyzed to inform future selection criteria and multivariate analyses.",
+   "units": [
+    "DPOLY"
+   ],
+   "topics": [],
+   "type": "Poster-In-person",
+   "is_invited": false,
+   "is_withdrawn": false,
+   "start": "2026-03-17T20:00:00.000Z",
+   "end": "2026-03-17T20:00:00.000Z",
+   "sort_order": 86,
+   "presentation_location": "499",
+   "author_ids": [
+    5529
+   ],
+   "presenter_ids": [
+    5529
+   ],
+   "publication_reference": null,
+   "funding_acknowledgement": "Abstract: This project investigates the kinematic properties of a potential new Higgs boson predicted by Beyond Standard Model (BSM) Higgs sector extensions. Using simulated data from the ATLAS experiment at CERN, we study the final state consisting of 2 b-quarks, 2 charged leptons, and large missing transverse energy. The focus is on identifying variables that can effectively separate signal from dominant Standard Model backgrounds pair-produced top-quark processes. Kinematic variables including invariant masses, transverse momentum balances, and angular correlations are analyzed to inform future selection criteria and multivariate analyses.",
+   "team_acknowledgement": null,
+   "session_id": 1148,
+   "session_title": "Poster Session I: Polymer Physics (2:00PM-5:00PM MT)",
+   "session_code": "MAR-H00-10",
+   "session_type": "POSTER",
+   "session_topics": [
+    "Polymer Physics",
+    "Soft Matter",
+    "Polymers",
+    "Phase Transitions",
+    "Materials Design",
+    "Polymer Networks",
+    "Rheology",
+    "Mechanical Properties",
+    "Morphology",
+    "Molecular Dynamics"
+   ],
+   "building": "Convention Center",
+   "room": "Exhibit Hall D, E & F, Level 2"
+  }
+ ],
+ "locations": [
+  {
+   "id": 1012029474,
+   "building": "Convention Center",
+   "room": "Meeting Room 404"
+  },
+  {
+   "id": 1032860181,
+   "building": "Convention Center",
+   "room": "Meeting Room 504"
+  },
+  {
+   "id": 1041557115,
+   "building": "Convention Center",
+   "room": "Meeting Room 704"
+  },
+  {
+   "id": 1066295471,
+   "building": "Convention Center",
+   "room": "Bluebird 2B"
+  },
+  {
+   "id": 1081693788,
+   "building": "Convention Center",
+   "room": "Meeting Room 401/402"
+  },
+  {
+   "id": 1119454079,
+   "building": "Convention Center",
+   "room": "Four Seasons Ballroom 1"
+  },
+  {
+   "id": 1135894014,
+   "building": "Hyatt Regency",
+   "room": "Capitol Foyer"
+  },
+  {
+   "id": 1216958521,
+   "building": "Convention Center",
+   "room": "Bluebird 2C"
+  },
+  {
+   "id": 1219874847,
+   "building": "Convention Center",
+   "room": "Meeting Room 201"
+  },
+  {
+   "id": 1221704922,
+   "building": "Convention Center",
+   "room": "Meeting Room 605"
+  },
+  {
+   "id": 1226036973,
+   "building": "Convention Center",
+   "room": "Meeting Room 705"
+  },
+  {
+   "id": 1232583208,
+   "building": "Convention Center",
+   "room": "Meeting Room 301"
+  },
+  {
+   "id": 1251410563,
+   "building": "Convention Center",
+   "room": "Meeting Room 505"
+  },
+  {
+   "id": 1263888564,
+   "building": "Convention Center",
+   "room": "Meeting Room 405"
+  },
+  {
+   "id": 1308280474,
+   "building": "Convention Center",
+   "room": "Meeting Room 501"
+  },
+  {
+   "id": 1316885236,
+   "building": "Convention Center",
+   "room": "Meeting Room 701"
+  },
+  {
+   "id": 1337751747,
+   "building": "Convention Center",
+   "room": "Meeting Room 601"
+  },
+  {
+   "id": 1339560966,
+   "building": "Convention Center",
+   "room": "Meeting Room 205"
+  },
+  {
+   "id": 1340380192,
+   "building": "Convention Center",
+   "room": "Bluebird 2G"
+  },
+  {
+   "id": 1364249783,
+   "building": "Hyatt Regency",
+   "room": "Capitol 4"
+  },
+  {
+   "id": 1368547704,
+   "building": "Convention Center",
+   "room": "Bluebird 3C"
+  },
+  {
+   "id": 1417840055,
+   "building": "Convention Center",
+   "room": "Mile High Ballroom 4C"
+  },
+  {
+   "id": 1459594593,
+   "building": "Convention Center",
+   "room": "Bluebird 3G"
+  },
+  {
+   "id": 1477926341,
+   "building": "Hyatt Regency",
+   "room": "Centennial C"
+  },
+  {
+   "id": 1503626621,
+   "building": "Convention Center",
+   "room": "Mile High Ballroom 1F"
+  },
+  {
+   "id": 1601870300,
+   "building": "Hyatt Regency",
+   "room": "Centennial G"
+  },
+  {
+   "id": 1671693306,
+   "building": "Convention Center",
+   "room": "Bluebird 1C"
+  },
+  {
+   "id": 1799741104,
+   "building": "Convention Center",
+   "room": "Meeting Room 707/709"
+  },
+  {
+   "id": 1831989834,
+   "building": "Convention Center",
+   "room": "SPLASHY District"
+  },
+  {
+   "id": 1953481098,
+   "building": "Convention Center",
+   "room": "Meeting Room 503/504"
+  },
+  {
+   "id": 1989631774,
+   "building": "Convention Center",
+   "room": "Bellco Theatre 6-7"
+  },
+  {
+   "id": 2060300104,
+   "building": "Hyatt Regency",
+   "room": "Denver Peaks Lounge, 27 Floor"
+  },
+  {
+   "id": 2127170704,
+   "building": "Hyatt Regency",
+   "room": "Mineral A"
+  },
+  {
+   "id": 217798094,
+   "building": "Convention Center",
+   "room": "Bellco Foyer"
+  },
+  {
+   "id": 2312290436,
+   "building": "Convention Center",
+   "room": "Meeting Room 708/710"
+  },
+  {
+   "id": 2376753878,
+   "building": "Convention Center",
+   "room": "Bluebird 1A"
+  },
+  {
+   "id": 2428792252,
+   "building": "Hyatt Regency",
+   "room": "Mineral C"
+  },
+  {
+   "id": 2443636671,
+   "building": "Hyatt Regency",
+   "room": "Agate"
+  },
+  {
+   "id": 2656238809,
+   "building": "Convention Center",
+   "room": "Bellco Theatre 3-5"
+  },
+  {
+   "id": 2683486652,
+   "building": "Convention Center",
+   "room": "Exhibit Hall D, E & F, Level 2"
+  },
+  {
+   "id": 2691724248,
+   "building": "Convention Center",
+   "room": "Meeting Room 703"
+  },
+  {
+   "id": 269675322,
+   "building": "Convention Center",
+   "room": "Mile High Ballroom 1AB"
+  },
+  {
+   "id": 2702205879,
+   "building": "Convention Center",
+   "room": "Mile High Ballroom 2A/3A"
+  },
+  {
+   "id": 2712803823,
+   "building": "Convention Center",
+   "room": "Meeting Room 603"
+  },
+  {
+   "id": 2715186474,
+   "building": "Convention Center",
+   "room": "Meeting Room 207"
+  },
+  {
+   "id": 2716529932,
+   "building": "Convention Center",
+   "room": "Bluebird 2E"
+  },
+  {
+   "id": 2721500545,
+   "building": "Convention Center",
+   "room": "Meeting Room 403"
+  },
+  {
+   "id": 2741347213,
+   "building": "Convention Center",
+   "room": "Meeting Room 601/603"
+  },
+  {
+   "id": 2744175475,
+   "building": "Convention Center",
+   "room": "Meeting Room 107"
+  },
+  {
+   "id": 2750719926,
+   "building": "Convention Center",
+   "room": "Meeting Room 503"
+  },
+  {
+   "id": 2761515951,
+   "building": "Convention Center",
+   "room": "Meeting Room 507"
+  },
+  {
+   "id": 2766704682,
+   "building": "Convention Center",
+   "room": "Meeting Room 109/111"
+  },
+  {
+   "id": 2768047978,
+   "building": "Convention Center",
+   "room": "Meeting Room 103"
+  },
+  {
+   "id": 2774206872,
+   "building": "Convention Center",
+   "room": "Meeting Room 407"
+  },
+  {
+   "id": 2793877781,
+   "building": "Convention Center",
+   "room": "Bluebird 2A"
+  },
+  {
+   "id": 2797318451,
+   "building": "Convention Center",
+   "room": "Meeting Room 203"
+  },
+  {
+   "id": 2799689206,
+   "building": "Convention Center",
+   "room": "Meeting Room 607"
+  },
+  {
+   "id": 2809780996,
+   "building": "Convention Center",
+   "room": "Meeting Room 303"
+  },
+  {
+   "id": 2909852476,
+   "building": "Offsite",
+   "room": "Denver Museum of Nature and Science"
+  },
+  {
+   "id": 2977233136,
+   "building": "Hyatt Regency",
+   "room": "Centennial E"
+  },
+  {
+   "id": 3055107305,
+   "building": "Hyatt Regency",
+   "room": "Centennial A"
+  },
+  {
+   "id": 3068159665,
+   "building": "Offsite",
+   "room": "Maybell Quantum Industries"
+  },
+  {
+   "id": 3079791697,
+   "building": "Convention Center",
+   "room": "Mile High Ballroom 1D"
+  },
+  {
+   "id": 3090377090,
+   "building": "Hyatt Regency",
+   "room": "Capitol 2"
+  },
+  {
+   "id": 3102852173,
+   "building": "Convention Center",
+   "room": "Bluebird 3E"
+  },
+  {
+   "id": 3125372149,
+   "building": "Convention Center",
+   "room": "Meeting Room 102/104"
+  },
+  {
+   "id": 3185647746,
+   "building": "Convention Center",
+   "room": "Mile High Ballroom 4E"
+  },
+  {
+   "id": 3210653083,
+   "building": "Hyatt Regency",
+   "room": "Capitol 6"
+  },
+  {
+   "id": 3214671956,
+   "building": "Convention Center",
+   "room": "Bluebird 3A"
+  },
+  {
+   "id": 3231110343,
+   "building": "Convention Center",
+   "room": "Mile High Ballroom 1E"
+  },
+  {
+   "id": 3326130416,
+   "building": "Convention Center",
+   "room": "Bluebird 3H"
+  },
+  {
+   "id": 3329476710,
+   "building": "Hyatt Regency",
+   "room": "Centennial D"
+  },
+  {
+   "id": 3355694208,
+   "building": "Convention Center",
+   "room": "Meeting Room 210/212"
+  },
+  {
+   "id": 3361316109,
+   "building": "Hyatt Regency",
+   "room": "Capitol 7"
+  },
+  {
+   "id": 3404075028,
+   "building": "Convention Center",
+   "room": "Mile High Ballroom 4D"
+  },
+  {
+   "id": 346239852,
+   "building": "Convention Center",
+   "room": "Bluebird 1B"
+  },
+  {
+   "id": 3463213583,
+   "building": "Convention Center",
+   "room": "Meeting Room 712"
+  },
+  {
+   "id": 3476314388,
+   "building": "Hyatt Regency",
+   "room": "Capitol 3"
+  },
+  {
+   "id": 3483177621,
+   "building": "Hyatt Regency",
+   "room": "Mineral F/G"
+  },
+  {
+   "id": 3485828173,
+   "building": "Hyatt Regency",
+   "room": "Centennial H"
+  },
+  {
+   "id": 3489068251,
+   "building": "Convention Center",
+   "room": "Bluebird 3D"
+  },
+  {
+   "id": 3491399511,
+   "building": "Convention Center",
+   "room": "Meeting Room 706"
+  },
+  {
+   "id": 3497978770,
+   "building": "Convention Center",
+   "room": "Meeting Room 302"
+  },
+  {
+   "id": 3529259278,
+   "building": "Convention Center",
+   "room": "Meeting Room 406"
+  },
+  {
+   "id": 354505990,
+   "building": "Convention Center",
+   "room": "Meeting Room 505/506"
+  },
+  {
+   "id": 3550368569,
+   "building": "Convention Center",
+   "room": "Meeting Room 506"
+  },
+  {
+   "id": 3556392956,
+   "building": "Convention Center",
+   "room": "Meeting Room 102"
+  },
+  {
+   "id": 3566730213,
+   "building": "Convention Center",
+   "room": "Meeting Room 106"
+  },
+  {
+   "id": 3572733728,
+   "building": "Convention Center",
+   "room": "Meeting Room 502"
+  },
+  {
+   "id": 3602196857,
+   "building": "Convention Center",
+   "room": "Meeting Room 602"
+  },
+  {
+   "id": 3605906842,
+   "building": "Convention Center",
+   "room": "Bluebird 2D"
+  },
+  {
+   "id": 3614917454,
+   "building": "Convention Center",
+   "room": "Meeting Room 702"
+  },
+  {
+   "id": 3747318193,
+   "building": "Convention Center",
+   "room": "Bluebird 2H"
+  },
+  {
+   "id": 383330769,
+   "building": "Convention Center",
+   "room": "Mile High Ballroom 4AB"
+  },
+  {
+   "id": 3843541520,
+   "building": "Convention Center",
+   "room": "Mile High Ballroom 2C/3C"
+  },
+  {
+   "id": 3875489755,
+   "building": "Hyatt Regency",
+   "room": "Quartz B"
+  },
+  {
+   "id": 3888340266,
+   "building": "Hyatt Regency",
+   "room": "Mineral B"
+  },
+  {
+   "id": 3888920543,
+   "building": "Convention Center",
+   "room": "Meeting Room 501/502"
+  },
+  {
+   "id": 4109684556,
+   "building": "Hyatt Regency",
+   "room": "Centennial BC"
+  },
+  {
+   "id": 557463608,
+   "building": "Hyatt Regency",
+   "room": "Capitol 1"
+  },
+  {
+   "id": 569939447,
+   "building": "Convention Center",
+   "room": "Bluebird 3F"
+  },
+  {
+   "id": 571975639,
+   "building": "Hyatt Regency",
+   "room": "Mineral D/E"
+  },
+  {
+   "id": 619213112,
+   "building": "Convention Center",
+   "room": "Mile High Ballroom 4F"
+  },
+  {
+   "id": 619671441,
+   "building": "Convention Center",
+   "room": "Meeting Room 110"
+  },
+  {
+   "id": 62045460,
+   "building": "Convention Center",
+   "room": "Bellco Theatre 1-2"
+  },
+  {
+   "id": 643300385,
+   "building": "Hyatt Regency",
+   "room": "Capitol 5"
+  },
+  {
+   "id": 647320046,
+   "building": "Convention Center",
+   "room": "Bluebird 3B"
+  },
+  {
+   "id": 679323978,
+   "building": "Hyatt Regency",
+   "room": "Centennial F"
+  },
+  {
+   "id": 703951346,
+   "building": "Convention Center",
+   "room": "Mile High Ballroom 1C"
+  },
+  {
+   "id": 715955683,
+   "building": "Convention Center",
+   "room": "Mile High Ballroom 2B/3B"
+  },
+  {
+   "id": 779284167,
+   "building": "Convention Center",
+   "room": "Exhibit Hall, Level 2, Booth 1028"
+  },
+  {
+   "id": 789605715,
+   "building": "Hyatt Regency",
+   "room": "Centennial B"
+  },
+  {
+   "id": 852719600,
+   "building": "Convention Center",
+   "room": "Four Seasons Ballroom 4"
+  },
+  {
+   "id": 858773218,
+   "building": "Convention Center",
+   "room": "Meeting Room 108"
+  },
+  {
+   "id": 954442934,
+   "building": "Convention Center",
+   "room": "Bluebird 2F"
+  },
+  {
+   "id": 958221991,
+   "building": "Convention Center",
+   "room": "Meeting Room 304"
+  },
+  {
+   "id": 983145161,
+   "building": "Convention Center",
+   "room": "Meeting Room 104"
+  },
+  {
+   "id": 994400335,
+   "building": "Convention Center",
+   "room": "Meeting Room 610/612"
+  }
+ ],
+ "recommendations": [
+  {
+   "for_talk_id": 0,
+   "candidate_id": 12772,
+   "score": 0.8666666666666667,
+   "rank": 1,
+   "match": true,
+   "cross_domain": true,
+   "why": "The shared method is transient photocurrent/photoconductivity readout. The researcher uses slow DC-like photocurrent turn-on/off and decay; the candidate uses ultrafast pump-probe transient photocurrent. Per the scoring rubric, DC and ultrafast photocurrent transients are variants of the same method (4). The method is specifically named as transient photocurrent (TPC) in the candidate and is used as a time-resolved readout. Both use the temporal photocurrent response to infer microscopic charge dynamics/transport, so the usage role and inference pattern align.",
+   "strongest_parallel": "Both works use time-resolved photocurrent/photoconductivity as the readout: they illuminate the material, measure the resulting current and its temporal response (slow turn-on/off and decay vs ultrafast pump-probe suppression/recovery) to infer microscopic charge transport/recombination dynamics.",
+   "shared_methods": [
+    "illumination with 488 nm light ~ ultrafast transient photocurrent measurements",
+    "photoconductivity measurement ~ ultrafast transient photocurrent measurements",
+    "short-circuit photocurrent measurement ~ ultrafast transient photocurrent measurements"
+   ],
+   "evidence": {
+    "same_method": 4,
+    "specificity": 4,
+    "usage_parallel": 5,
+    "rubric_sum": 13,
+    "match_min_score": 5
+   },
+   "engine_id": "graph_v1",
+   "run_id": "graph_v1-20260913T034546Z-741c00",
+   "contract_version": 1
+  },
+  {
+   "for_talk_id": 0,
+   "candidate_id": 12292,
+   "score": 0.7333333333333333,
+   "rank": 2,
+   "match": true,
+   "cross_domain": true,
+   "why": "The candidate directly measures photocurrent with sub-fA resolution; the researcher measures photoconductivity as a light-induced current in nanorods. These are variants of the same photocurrent measurement technique, differing in implementation/resolution. The shared method plays the same role: photocurrent is the central readout of light-driven charge behavior, with applied bias used to probe the response. Although the scientific systems and inference goals differ, that does not lower the method parallel.",
+   "strongest_parallel": "Both works directly measure a light-induced electrical current (photocurrent/photoconductivity) under applied bias or illumination to characterize charge transport/discharge.",
+   "shared_methods": [
+    "open-circuit photovoltage measurement ~ photocurrent measurement",
+    "photoconductivity measurement ~ photocurrent measurement",
+    "short-circuit photocurrent measurement ~ photocurrent measurement"
+   ],
+   "evidence": {
+    "same_method": 4,
+    "specificity": 3,
+    "usage_parallel": 4,
+    "rubric_sum": 11,
+    "match_min_score": 5
+   },
+   "engine_id": "graph_v1",
+   "run_id": "graph_v1-20260913T034546Z-741c00",
+   "contract_version": 1
+  },
+  {
+   "for_talk_id": 0,
+   "candidate_id": 2802,
+   "score": 0.6666666666666666,
+   "rank": 3,
+   "match": true,
+   "cross_domain": false,
+   "why": "Self-assembly is the shared named fabrication technique: the researcher self-assembles porphyrin nanorods as the active conduction medium, and the candidate self-assembles a Ni\u2013DNA monolayer on gold as the device's active layer \u2014 variants of one technique differing mainly in geometry/implementation (solution-aggregated nanorods vs. thiol-anchored SAM), so 4. The shared method is a real named method but on the generic side of 'self-assembly,' so specificity 3. Its role is the same workflow step in both: constructing the functional molecular structure that is then electrically interrogated, so usage_parallel 3. Differences in material, transported quantity, and phenomena (photoconductivity vs. memristive resistive switching) do not lower these scores.",
+   "strongest_parallel": "Both build the functional active layer of an electronic device by molecular self-assembly (porphyrin nanorods vs. a Ni\u2013DNA monolayer on gold) and then probe its electrically switchable conduction through current measurements under an applied bias/light.",
+   "shared_methods": [
+    "langmuir-blodgett deposition ~ gold thin-film device fabrication",
+    "langmuir-blodgett deposition ~ self-assembled monolayer"
+   ],
+   "evidence": {
+    "same_method": 4,
+    "specificity": 3,
+    "usage_parallel": 3,
+    "rubric_sum": 10,
+    "match_min_score": 5
+   },
+   "engine_id": "graph_v1",
+   "run_id": "graph_v1-20260913T034546Z-741c00",
+   "contract_version": 1
+  },
+  {
+   "for_talk_id": 0,
+   "candidate_id": 8500,
+   "score": 0.6666666666666666,
+   "rank": 4,
+   "match": true,
+   "cross_domain": true,
+   "why": "The shared method is photocurrent measurement under illumination; both use it as the central readout of light-induced charge transport, with only implementation differences (bias training/time response vs circular-polarization/angle contrast). The method is a real but generic photocurrent technique, so specificity is moderate. The role is the same: photocurrent as the primary observable to infer the nanostructure's optoelectronic behavior.",
+   "strongest_parallel": "Both works use photocurrent/photoconductivity measurement \u2014 illuminating a nanostructure and recording the resulting current \u2014 as the primary optoelectronic characterization of the material.",
+   "shared_methods": [
+    "open-circuit photovoltage measurement ~ photocurrent measurement",
+    "photoconductivity measurement ~ circularly polarized photocurrent",
+    "photoconductivity measurement ~ photocurrent measurement",
+    "short-circuit photocurrent measurement ~ circularly polarized photocurrent",
+    "short-circuit photocurrent measurement ~ photocurrent measurement"
+   ],
+   "evidence": {
+    "same_method": 4,
+    "specificity": 2,
+    "usage_parallel": 4,
+    "rubric_sum": 10,
+    "match_min_score": 5
+   },
+   "engine_id": "graph_v1",
+   "run_id": "graph_v1-20260913T034546Z-741c00",
+   "contract_version": 1
+  },
+  {
+   "for_talk_id": 0,
+   "candidate_id": 11810,
+   "score": 0.6666666666666666,
+   "rank": 5,
+   "match": true,
+   "cross_domain": true,
+   "why": "The shared method is self-assembly: the researcher self-assembles porphyrin nanorods, and the candidate self-assembles alkanethiol monolayers on gold. In both, self-assembly is the fabrication step that creates the ordered molecular structure whose properties are then measured. The role is the same\u2014fabricating the functional molecular assembly\u2014even though the subsequent measurement techniques differ (photoconductivity vs ultrafast electron diffraction).",
+   "strongest_parallel": "Both works use self-assembly as the fabrication step to build a molecular assembly (porphyrin nanorods vs alkanethiol SAM) that serves as the functional structure for subsequent probing.",
+   "shared_methods": [
+    "applied bias ~ illumination with 488 nm light",
+    "illumination with 488 nm light",
+    "langmuir-blodgett deposition ~ self-assembled monolayer"
+   ],
+   "evidence": {
+    "same_method": 4,
+    "specificity": 3,
+    "usage_parallel": 3,
+    "rubric_sum": 10,
+    "match_min_score": 5
+   },
+   "engine_id": "graph_v1",
+   "run_id": "graph_v1-20260913T034546Z-741c00",
+   "contract_version": 1
+  },
+  {
+   "for_talk_id": 0,
+   "candidate_id": 3100,
+   "score": 0.5333333333333333,
+   "rank": 6,
+   "match": true,
+   "cross_domain": true,
+   "why": "The shared method is self-assembly: the researcher self-assembles porphyrin nanorods, and the candidate deposits polypeptides as self-assembled monolayers. In both, self-assembly is the fabrication step that builds the functional structure later used for electrical transport measurements; the measurement techniques themselves differ (photoconductivity vs magnetoresistance with an EGaIn top electrode).",
+   "strongest_parallel": "Both works use molecular self-assembly as the fabrication step that creates the functional molecular architecture (porphyrin nanorods vs polypeptide SAMs) whose electrical transport properties are then interrogated.",
+   "shared_methods": [
+    "langmuir-blodgett deposition ~ self-assembled monolayer",
+    "langmuir-blodgett deposition ~ thin film deposition"
+   ],
+   "evidence": {
+    "same_method": 3,
+    "specificity": 2,
+    "usage_parallel": 3,
+    "rubric_sum": 8,
+    "match_min_score": 5
+   },
+   "engine_id": "graph_v1",
+   "run_id": "graph_v1-20260913T034546Z-741c00",
+   "contract_version": 1
+  },
+  {
+   "for_talk_id": 0,
+   "candidate_id": 5432,
+   "score": 0.5333333333333333,
+   "rank": 7,
+   "match": true,
+   "cross_domain": true,
+   "why": "The steelmanned shared usage is self-assembly as the fabrication step: each work organizes molecules into a conducting/transporting architecture, then probes charge transport through that assembly. This is a genuine shared method, but the self-assembly modality differs (solution-grown nanorods vs. substrate-bound monolayer) and the transport readouts (photoconductivity vs. EGaIn junction tunneling) are distinct. No other shared named measurement technique is supported, so scores are moderate but satisfy the match threshold.",
+   "strongest_parallel": "Both works use molecular self-assembly as the fabrication step that creates the functional molecular assembly whose charge transport is subsequently probed (self-assembled porphyrin nanorods vs. self-assembled CPP monolayers on gold).",
+   "shared_methods": [
+    "langmuir-blodgett deposition ~ self-assembled monolayer"
+   ],
+   "evidence": {
+    "same_method": 3,
+    "specificity": 2,
+    "usage_parallel": 3,
+    "rubric_sum": 8,
+    "match_min_score": 5
+   },
+   "engine_id": "graph_v1",
+   "run_id": "graph_v1-20260913T034546Z-741c00",
+   "contract_version": 1
+  },
+  {
+   "for_talk_id": 0,
+   "candidate_id": 9437,
+   "score": 0.5333333333333333,
+   "rank": 8,
+   "match": true,
+   "cross_domain": true,
+   "why": "The shared method is self-assembly used as the fabrication route to create ordered nanowires/nanorods. The specific implementations differ (solution self-assembly of porphyrins vs Langmuir-Blodgett deposition of a ferroelectric polymer), so this is best scored as different techniques effecting the same fabrication operation by the same self-assembly principle. The method plays the same workflow role in both: constructing the functional nanostructure that is subsequently characterized electrically. Differences in material system, scientific question, and measured transport quantity do not reduce the match.",
+   "strongest_parallel": "Both works use molecular self-assembly as the fabrication step to build ordered nanoscale wires (porphyrin nanorods vs P(VDF-TrFE) nanowires) that form the functional active structure.",
+   "shared_methods": [
+    "langmuir-blodgett deposition",
+    "langmuir-blodgett deposition ~ crystallization",
+    "langmuir-blodgett deposition ~ immersion annealing",
+    "langmuir-blodgett deposition ~ mechanical exfoliation"
+   ],
+   "evidence": {
+    "same_method": 3,
+    "specificity": 2,
+    "usage_parallel": 3,
+    "rubric_sum": 8,
+    "match_min_score": 5
+   },
+   "engine_id": "graph_v1",
+   "run_id": "graph_v1-20260913T034546Z-741c00",
+   "contract_version": 1
+  },
+  {
+   "for_talk_id": 0,
+   "candidate_id": 5810,
+   "score": 0.4,
+   "rank": 9,
+   "match": true,
+   "cross_domain": false,
+   "why": "The shared method is self-assembly, but the specific self-assembly processes differ: porphyrin nanorod formation (likely \u03c0-\u03c0 stacking/ionic aggregation) vs complex coacervation (liquid-liquid phase separation of oppositely charged polyelectrolytes). These belong to the same broad family but are not the same named technique or variants of one technique, so same_method = 2. Self-assembly is an umbrella fabrication term, giving specificity = 1. However, in both works self-assembly plays the same role in the workflow\u2014it is the fabrication step that builds the functional structure (nanorods for photoconductivity, coacervates for enzyme compartmentalization)\u2014so usage_parallel = 3. Since same_method < 3 and specificity < 2, match is false.",
+   "strongest_parallel": "Both works use self-assembly of molecular/ionic building blocks into nanoscale structures as the fabrication step that creates the functional material (porphyrin nanorods vs coacervate compartments) whose properties are then characterized.",
+   "shared_methods": [
+    "langmuir-blodgett deposition ~ reductive amination"
+   ],
+   "evidence": {
+    "same_method": 2,
+    "specificity": 1,
+    "usage_parallel": 3,
+    "rubric_sum": 6,
+    "match_min_score": 5
+   },
+   "engine_id": "graph_v1",
+   "run_id": "graph_v1-20260913T034546Z-741c00",
+   "contract_version": 1
+  },
+  {
+   "for_talk_id": 0,
+   "candidate_id": 6585,
+   "score": 0.4,
+   "rank": 10,
+   "match": true,
+   "cross_domain": false,
+   "why": "The only shared method is self-assembly as a fabrication step, but it operates as a broad umbrella with different physical mechanisms (\u03c0-stacking of porphyrins vs protein\u2013RNA phase separation) and no shared measurement or algorithmic technique is present; thus the match criteria are not met.",
+   "strongest_parallel": "Both works use molecular self-assembly of building blocks (porphyrin molecules vs protein\u2013RNA complexes) as the fabrication step that creates a functional supramolecular material whose emergent properties are then probed.",
+   "shared_methods": [
+    "qualitative modeling ~ quantitative modeling"
+   ],
+   "evidence": {
+    "same_method": 2,
+    "specificity": 1,
+    "usage_parallel": 3,
+    "rubric_sum": 6,
+    "match_min_score": 5
+   },
+   "engine_id": "graph_v1",
+   "run_id": "graph_v1-20260913T034546Z-741c00",
+   "contract_version": 1
+  },
+  {
+   "for_talk_id": 0,
+   "candidate_id": 12342,
+   "score": 0.4,
+   "rank": 11,
+   "match": true,
+   "cross_domain": true,
+   "why": "The only shared methodological element is a generic transport measurement of conductance change under an external stimulus; this is a broad family (same_method 2), the sharpest shared method is ubiquitous current readout (specificity 1), and the method plays a similar switching-readout role but with different stimuli and inference (usage_parallel 3). Because same_method < 3 and specificity < 2, there is no method match.",
+   "strongest_parallel": "Both works characterize switching of electrical conductance in a porphyrin-based material by measuring current under an external stimulus (light vs magnetic field).",
+   "shared_methods": [
+    "photoconductivity measurement ~ conductance measurements"
+   ],
+   "evidence": {
+    "same_method": 2,
+    "specificity": 1,
+    "usage_parallel": 3,
+    "rubric_sum": 6,
+    "match_min_score": 5
+   },
+   "engine_id": "graph_v1",
+   "run_id": "graph_v1-20260913T034546Z-741c00",
+   "contract_version": 1
+  },
+  {
+   "for_talk_id": 0,
+   "candidate_id": 2799,
+   "score": 0.3333333333333333,
+   "rank": 12,
+   "match": true,
+   "cross_domain": false,
+   "why": "The only shared element is the generic light-plus-bias photoresponse configuration. The actual readouts differ: the researcher measures photoconductivity/photovoltage and uses bias training, while the candidate measures emissive-layer photoluminescence quenching. No same named technique is shared, and the method plays a different role in each workflow (functional photoconduction vs optical probe of exciton-polaron quenching).",
+   "strongest_parallel": "Both works use an applied bias together with optical excitation of an organic semiconductor/device to probe charge/exciton dynamics, with light and bias as the controlling knobs.",
+   "shared_methods": [
+    "applied bias",
+    "applied bias ~ electron transport layer",
+    "applied bias ~ illumination with 488 nm light",
+    "applied bias ~ phosphor sensitized fluorescence",
+    "bias training ~ applied bias",
+    "illumination with 488 nm light",
+    "illumination with 488 nm light ~ applied bias",
+    "illumination with 488 nm light ~ phosphor sensitized fluorescence",
+    "photoconductivity measurement ~ circularly polarized photocurrent",
+    "short-circuit photocurrent measurement ~ circularly polarized photocurrent"
+   ],
+   "evidence": {
+    "same_method": 2,
+    "specificity": 1,
+    "usage_parallel": 2,
+    "rubric_sum": 5,
+    "match_min_score": 5
+   },
+   "engine_id": "graph_v1",
+   "run_id": "graph_v1-20260913T034546Z-741c00",
+   "contract_version": 1
+  },
+  {
+   "for_talk_id": 0,
+   "candidate_id": 5514,
+   "score": 0.3333333333333333,
+   "rank": 13,
+   "match": true,
+   "cross_domain": false,
+   "why": "The only shared method is a broad conductivity/current-measurement family: the researcher measures light-induced photoconductivity in porphyrin nanorods, while the candidate measures ionic conductivity and galvanostatic cycling in polymer electrolytes. This is not the same named technique, is an umbrella-level method, and it plays different roles\u2014photocurrent probing of conduction/training versus electrolyte transport/dendrite-resistance screening.",
+   "strongest_parallel": "Both works characterize charge transport in a soft material by measuring current under an applied electrical bias/illumination.",
+   "shared_methods": [
+    "bias training ~ bandpass filtering",
+    "photoconductivity measurement ~ bandpass filtering",
+    "short-circuit photocurrent measurement ~ bandpass filtering"
+   ],
+   "evidence": {
+    "same_method": 2,
+    "specificity": 1,
+    "usage_parallel": 2,
+    "rubric_sum": 5,
+    "match_min_score": 5
+   },
+   "engine_id": "graph_v1",
+   "run_id": "graph_v1-20260913T034546Z-741c00",
+   "contract_version": 1
+  },
+  {
+   "for_talk_id": 0,
+   "candidate_id": 8280,
+   "score": 0.26666666666666666,
+   "rank": 14,
+   "match": false,
+   "cross_domain": true,
+   "why": "The only shared feature is a generic stimulus-response/training paradigm. The actual methods differ: photoconductivity under 488 nm illumination with bias training and photocurrent/voltage readout versus a cyclic compression apparatus with index-matched particles and 3D particle tracking. No same named technique, apparatus, or operation is shared, and the parallel is too broad to count as method-related.",
+   "strongest_parallel": "Both works apply an external training/perturbation protocol (light plus bias in the photoconductivity study; cyclic compression in the granular study) to drive a history-dependent or memory-like response and then read out the sample's subsequent state (photocurrent/voltage versus 3D particle motion or steady state).",
+   "shared_methods": [
+    "applied bias ~ coherent superposition of gaussian cw-lasers",
+    "illumination with 488 nm light ~ coherent superposition of gaussian cw-lasers"
+   ],
+   "evidence": {
+    "same_method": 1,
+    "specificity": 1,
+    "usage_parallel": 2,
+    "rubric_sum": 4,
+    "match_min_score": 5
+   },
+   "engine_id": "graph_v1",
+   "run_id": "graph_v1-20260913T034546Z-741c00",
+   "contract_version": 1
+  },
+  {
+   "for_talk_id": 0,
+   "candidate_id": 1846,
+   "score": 0.2,
+   "rank": 15,
+   "match": false,
+   "cross_domain": true,
+   "why": "The only overlap is broad optical excitation/detection. The researcher measures photoconductivity and training transients in self-assembled porphyrin nanorods, while the candidate uses SPDC entangled photons and 3-way coincidence to detect stimulated emission for spectroscopy. No shared named technique or equivalent procedure plays the same role in both workflows.",
+   "strongest_parallel": "Both are optical experiments that excite a sample with light and detect a light-induced signal, but the detected quantity (photocurrent vs. coincidence-gated stimulated emission) and the method's role (optoelectronic transport readout vs. quantum-enhanced spectroscopic detection) are not the same.",
+   "shared_methods": [
+    "bias training ~ bandpass filtering",
+    "photoconductivity measurement ~ bandpass filtering",
+    "short-circuit photocurrent measurement ~ bandpass filtering"
+   ],
+   "evidence": {
+    "same_method": 1,
+    "specificity": 1,
+    "usage_parallel": 1,
+    "rubric_sum": 3,
+    "match_min_score": 5
+   },
+   "engine_id": "graph_v1",
+   "run_id": "graph_v1-20260913T034546Z-741c00",
+   "contract_version": 1
+  },
+  {
+   "for_talk_id": 0,
+   "candidate_id": 12774,
+   "score": 0.2,
+   "rank": 16,
+   "match": false,
+   "cross_domain": true,
+   "why": "The only overlap is the broad setup of laser illumination under applied bias. The researcher measures photoconductivity/current in self-assembled porphyrin nanorods, while the candidate measures Brewster-angle reflectivity and coherent laser interference on glass. No shared named technique or equivalent measurement is described, and the optical/electrical response plays different roles: light-induced conduction and bias training versus light retention via surface-dipole reflectivity modulation.",
+   "strongest_parallel": "Both works apply an external bias while illuminating a material with laser light and monitor a resulting optoelectronic/optical response (photocurrent in the researcher's nanorods vs. reflectivity change in the candidate's glass surface).",
+   "shared_methods": [
+    "applied bias ~ coherent superposition of gaussian cw-lasers",
+    "illumination with 488 nm light ~ coherent superposition of gaussian cw-lasers"
+   ],
+   "evidence": {
+    "same_method": 1,
+    "specificity": 1,
+    "usage_parallel": 1,
+    "rubric_sum": 3,
+    "match_min_score": 5
+   },
+   "engine_id": "graph_v1",
+   "run_id": "graph_v1-20260913T034546Z-741c00",
+   "contract_version": 1
+  },
+  {
+   "for_talk_id": 0,
+   "candidate_id": 2798,
+   "score": 0.0,
+   "rank": 17,
+   "match": false,
+   "cross_domain": false,
+   "why": "No shared technique is supported: the researcher fabricates porphyrin nanorods by self-assembly and measures photoconductivity/bias-training effects, while the candidate discusses OLED lifetime engineering using emitter design, polaritons, and optical cavities. The overlap is only the broad organic optoelectronics context, not a same method used in the same way.",
+   "strongest_parallel": "Both works examine excited-state/charge behavior in organic optoelectronic materials under applied bias or illumination, but the candidate abstract does not name a shared measurement or fabrication technique such as photoconductivity or self-assembly.",
+   "shared_methods": [
+    "applied bias ~ phosphor sensitized fluorescence",
+    "illumination with 488 nm light ~ phosphor sensitized fluorescence"
+   ],
+   "evidence": {
+    "same_method": 0,
+    "specificity": 0,
+    "usage_parallel": 0,
+    "rubric_sum": 0,
+    "match_min_score": 5
+   },
+   "engine_id": "graph_v1",
+   "run_id": "graph_v1-20260913T034546Z-741c00",
+   "contract_version": 1
+  },
+  {
+   "for_talk_id": 0,
+   "candidate_id": 5504,
+   "score": 0.0,
+   "rank": 18,
+   "match": false,
+   "cross_domain": false,
+   "why": "The candidate uses immersion annealing/swelling to drive co-crystallization and improve mechanical properties, whereas the researcher uses self-assembly of porphyrin nanorods followed by photoconductivity measurements. No shared named technique, apparatus, measurement, or algorithm is present; the only overlap is a generic fabrication/processing umbrella, which is insufficient for a method match.",
+   "strongest_parallel": "Both works use a processing step to reorganize molecular components into a more ordered functional structure: self-assembly of porphyrin molecules into nanorods versus immersion annealing that swells polyolefin blends to promote co-crystallization.",
+   "shared_methods": [
+    "langmuir-blodgett deposition ~ immersion annealing"
+   ],
+   "evidence": {
+    "same_method": 0,
+    "specificity": 0,
+    "usage_parallel": 0,
+    "rubric_sum": 0,
+    "match_min_score": 5
+   },
+   "engine_id": "graph_v1",
+   "run_id": "graph_v1-20260913T034546Z-741c00",
+   "contract_version": 1
+  },
+  {
+   "for_talk_id": 0,
+   "candidate_id": 5952,
+   "score": 0.0,
+   "rank": 19,
+   "match": false,
+   "cross_domain": true,
+   "why": "The candidate talk and the researcher's work share no named technique, measurement, fabrication method, or algorithm; an applied bias/electromagnetic drive is too generic and plays different roles (photocurrent training vs. parametric qubit-mode control), so no method-level parallel is supported.",
+   "strongest_parallel": "Both works use an applied bias as an external control knob: the porphyrin nanorods are trained by a bias to reverse their short-circuit photocurrent, while the Josephson circuit is flux-biased to tune the dipole\u2013plasma mode coupling for on-demand photon swaps.",
+   "shared_methods": [
+    "applied bias ~ flux biasing"
+   ],
+   "evidence": {
+    "same_method": 0,
+    "specificity": 0,
+    "usage_parallel": 0,
+    "rubric_sum": 0,
+    "match_min_score": 5
+   },
+   "engine_id": "graph_v1",
+   "run_id": "graph_v1-20260913T034546Z-741c00",
+   "contract_version": 1
+  }
+ ],
+ "runs": [
+  {
+   "run_id": "graph_v1-20260913T034546Z-741c00",
+   "engine_id": "graph_v1",
+   "kind": "recommend",
+   "engine_version": "aadf1d2",
+   "models": {
+    "extract": "deepseek-chat",
+    "pair_judge": "deepseek-chat",
+    "rubric": "deepseek-reasoner"
+   },
+   "corpus_hash": "d6ee0758281c86c0",
+   "anchor_ids": [
+    0
+   ],
+   "started_at": "2026-09-13T03:45:46Z",
+   "finished_at": "2026-09-13T03:45:56Z",
+   "index_path": "/Users/rupertlim/AI_Projects/ConferenceApp/pipeline/out/graph_v1/stage0-chat/index",
+   "contract_version": 1
+  }
+ ]
+}
