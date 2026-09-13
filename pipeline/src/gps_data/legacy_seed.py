@@ -1,16 +1,8 @@
 """Pure transforms that shape the archived GPS data + Stage-0 judgments into
 the single seed JSON consumed by the web app. Offline: no LLM, no network."""
-import html
-import re
+from gps_data.archive import clean_text
 
-_TAG = re.compile(r"<[^>]+>")
-
-
-def clean_text(s: str) -> str:
-    # Tags first, entities second: escaped angle brackets (&lt;) stay text.
-    s = _TAG.sub("", s)
-    s = html.unescape(s)
-    return " ".join(s.split())
+__all__ = ["clean_text", "build_talk_row", "build_seed", "legacy_seed"]
 
 
 def build_talk_row(presentation: dict, event: dict | None,
@@ -65,3 +57,22 @@ def build_seed(presentations: list[dict], events: list[dict],
                      for l in locations]
     return {"talks": talks, "locations": location_rows,
             "recommendations": recommendations}
+
+
+def legacy_seed(talks, rows, locations) -> dict:
+    """The pre-contract shape the current web app seeds from. Plan 2 deletes this."""
+    talk_rows = [{
+        "id": t.id, "title": t.title, "session_title": t.session_title,
+        "units": list(t.units), "start": t.start, "end": t.end,
+        "building": t.building, "room": t.room, "abstract": t.abstract,
+    } for t in sorted(talks, key=lambda t: t.id)]
+    rec_rows = [{
+        "for_talk_id": r.for_talk_id, "candidate_id": r.candidate_id,
+        "same_method": r.evidence.get("same_method", 0),
+        "specificity": r.evidence.get("specificity", 0),
+        "usage_parallel": r.evidence.get("usage_parallel", 0),
+        "score": r.evidence.get("rubric_sum", round(r.score * 15)),
+        "match": r.match, "cross_domain": r.cross_domain,
+        "why": r.why, "strongest_parallel": r.strongest_parallel,
+    } for r in sorted(rows, key=lambda r: r.candidate_id)]
+    return {"talks": talk_rows, "locations": locations, "recommendations": rec_rows}

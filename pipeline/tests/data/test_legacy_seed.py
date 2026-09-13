@@ -98,3 +98,20 @@ def test_match_derived_from_score_not_llm_boolean():
     seed = build_seed([], [], [], [j], ANCHOR)
     rec = seed["recommendations"][0]
     assert rec["score"] == 6 and rec["match"] is True
+
+
+from gps_core.records import Recommendation
+from gps_data.legacy_seed import legacy_seed
+from gps_data.talk import external_anchor
+
+
+def test_legacy_seed_recovers_rubric_scores_from_evidence():
+    r = Recommendation(for_talk_id=0, candidate_id=5, score=0.8, rank=1, match=True,
+                       cross_domain=True, why="w", strongest_parallel="p", shared_methods=(),
+                       evidence={"same_method": 4, "specificity": 3, "usage_parallel": 5, "rubric_sum": 12},
+                       engine_id="graph_v1", run_id="r")
+    seed = legacy_seed([external_anchor("t", "a", ["DPOLY"])], [r], [])
+    rec = seed["recommendations"][0]
+    assert rec["score"] == 12 and rec["same_method"] == 4 and rec["match"] is True
+    assert set(seed["talks"][0]) == {"id", "title", "session_title", "units", "start", "end",
+                                     "building", "room", "abstract"}
