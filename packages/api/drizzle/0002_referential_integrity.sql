@@ -1,0 +1,3 @@
+ALTER TABLE "recommendations" ADD CONSTRAINT "recommendations_for_talk_id_talks_id_fk" FOREIGN KEY ("for_talk_id") REFERENCES "public"."talks"("id") ON DELETE no action ON UPDATE no action;--> statement-breakpoint
+ALTER TABLE "recommendations" ADD CONSTRAINT "recommendations_candidate_id_talks_id_fk" FOREIGN KEY ("candidate_id") REFERENCES "public"."talks"("id") ON DELETE no action ON UPDATE no action;--> statement-breakpoint
+ALTER TABLE "recommendations" ADD CONSTRAINT "recommendations_run_id_runs_run_id_fk" FOREIGN KEY ("run_id") REFERENCES "public"."runs"("run_id") ON DELETE no action ON UPDATE no action;
