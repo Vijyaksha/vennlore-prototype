@@ -20,6 +20,10 @@ Co-Authored-By: Claude Fable 5.1 <noreply@anthropic.com>
 
 ---
 
+## Execution notes (2026-09-13)
+
+- **Task 1 done** (PR #4, merged). Foreign keys are `ON DELETE no action`, so Task 7's per-engine delete must precede any talk or run deletion. `toSeedFile` reports only the first issue; a `(+N more issues)` suffix is a cheap improvement for Task 7.
+
 ## File structure (end state)
 
 ```
@@ -49,7 +53,7 @@ docs/superpowers/specs/2026-09-12-pluggable-engine-architecture-design.md   # fo
 - Modify: `packages/api/src/db/schema.ts`, `packages/api/src/db/transform.ts`, `packages/api/test/transform.test.ts`
 - Generated: `packages/api/drizzle/0002_referential_integrity.sql` + `meta/`
 
-- [ ] **Step 1: Failing tests** (append to `test/transform.test.ts`, inside a new `describe("toSeedFile referential checks")`; `fixture` and the valid `base` seed object from the existing tests are reused):
+- [x] **Step 1: Failing tests** (append to `test/transform.test.ts`, inside a new `describe("toSeedFile referential checks")`; `fixture` and the valid `base` seed object from the existing tests are reused):
 
 ```ts
 const base = () => ({
@@ -85,7 +89,7 @@ test("accepts a seed whose references all resolve", () => {
 
 Also update the existing "accepts a contract-shaped seed" test: its single fixture talk (2802) does not contain the recommendation's anchor 0 or candidate 12772, so change it to `withTalks([0, 12772])` (or add those talks). Run `npm run test --workspace=@repo/api -- test/transform.test.ts` → the new tests FAIL (nothing throws).
 
-- [ ] **Step 2: Cross-checks in `transform.ts`**
+- [x] **Step 2: Cross-checks in `transform.ts`**
 
 Replace `const SeedFileSchema = z.strictObject({...})` with the same object followed by `.superRefine(checkReferences)`, and add above it:
 
@@ -119,7 +123,7 @@ function checkReferences(seed: SeedShape, ctx: z.RefinementCtx): void {
 
 `toSeedFile` already formats the first issue's path as `recommendations[0].candidate_id`. Run the transform tests → green. Run `toSeedFile` once over the committed e2e fixture (`node`/`tsx` one-liner reading `apps/web/e2e/fixtures/app_seed.v2.json`) → must pass; if it does not, the live data has an orphan and Task 9 must be re-planned: STOP and report.
 
-- [ ] **Step 3: Foreign keys in `schema.ts`**
+- [x] **Step 3: Foreign keys in `schema.ts`**
 
 Move the `runs` table definition above `recommendations` (it must be declared first to be referenced). Then:
 
@@ -132,7 +136,7 @@ Move the `runs` table definition above `recommendations` (it must be declared fi
 
 Run `cd packages/api && npx drizzle-kit generate --name referential_integrity` → `drizzle/0002_referential_integrity.sql` with three `ADD CONSTRAINT ... FOREIGN KEY` statements. Run it again → "No schema changes". Run `npm run test --workspace=@repo/api && npm run check-types --workspace=@repo/api && npm run lint --workspace=@repo/api` → green (schema.test still passes: column names unchanged).
 
-- [ ] **Step 4: PR**
+- [x] **Step 4: PR**
 
 ```bash
 git checkout -b plan4/task-1-referential-integrity main

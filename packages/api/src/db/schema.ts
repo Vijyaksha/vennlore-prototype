@@ -2,11 +2,11 @@ import { sql } from "drizzle-orm";
 import {
   bigint,
   boolean,
+  doublePrecision,
   integer,
   jsonb,
   pgTable,
   primaryKey,
-  real,
   text,
   timestamp,
 } from "drizzle-orm/pg-core";
@@ -16,11 +16,11 @@ const textArray = (name: string) =>
     .array()
     .notNull()
     .default(sql`'{}'::text[]`);
-const intArray = (name: string) =>
-  integer(name)
+const bigintArray = (name: string) =>
+  bigint(name, { mode: "number" })
     .array()
     .notNull()
-    .default(sql`'{}'::integer[]`);
+    .default(sql`'{}'::bigint[]`);
 
 /** One row per Talk contract field, same names. id 0 is the external anchor. */
 export const talks = pgTable("talks", {
@@ -37,8 +37,8 @@ export const talks = pgTable("talks", {
   end: timestamp("end", { withTimezone: true }),
   sortOrder: integer("sort_order"),
   presentationLocation: text("presentation_location"),
-  authorIds: intArray("author_ids"),
-  presenterIds: intArray("presenter_ids"),
+  authorIds: bigintArray("author_ids"),
+  presenterIds: bigintArray("presenter_ids"),
   publicationReference: text("publication_reference"),
   fundingAcknowledgement: text("funding_acknowledgement"),
   teamAcknowledgement: text("team_acknowledgement"),
@@ -59,7 +59,7 @@ export const runs = pgTable("runs", {
   engineVersion: text("engine_version").notNull(),
   models: jsonb("models").$type<Record<string, string>>().notNull().default({}),
   corpusHash: text("corpus_hash").notNull().default(""),
-  anchorIds: intArray("anchor_ids"),
+  anchorIds: bigintArray("anchor_ids"),
   startedAt: timestamp("started_at", { withTimezone: true }).notNull(),
   finishedAt: timestamp("finished_at", { withTimezone: true }).notNull(),
   indexPath: text("index_path"),
@@ -77,7 +77,7 @@ export const recommendations = pgTable(
     candidateId: integer("candidate_id")
       .notNull()
       .references(() => talks.id),
-    score: real("score").notNull(),
+    score: doublePrecision("score").notNull(),
     rank: integer("rank").notNull(),
     match: boolean("match").notNull(),
     crossDomain: boolean("cross_domain").notNull(),

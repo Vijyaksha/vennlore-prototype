@@ -23,3 +23,12 @@ describe("store schema is derived from the contract", () => {
     expect(sqlNames(runs)).toEqual(Object.keys(RunSchema.shape).sort());
   });
 });
+
+test("score is double precision and person ids are bigint, as the contract's number/int allow", () => {
+  expect(getTableColumns(recommendations).score.getSQLType()).toBe(
+    "double precision",
+  );
+  expect(getTableColumns(talks).authorIds.getSQLType()).toBe("bigint[]");
+  expect(getTableColumns(talks).presenterIds.getSQLType()).toBe("bigint[]");
+  expect(getTableColumns(runs).anchorIds.getSQLType()).toBe("bigint[]");
+});
