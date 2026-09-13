@@ -12,31 +12,51 @@ method only; it does not track progress.
 **A conference counts if it has ≥1,500 submitted abstracts.** That is the `VERIFIED` bar and it
 has not moved.
 
-**But the *retention* floor is ~700 abstracts, not 1,500** (Rupert: ~800 on 2026-09-09, lowered to
-~700 on 2026-09-10). A meeting between
-roughly 700 and 1,499 is kept as `BORDERLINE` on the census sheet — the model is generous by design
-and the product's value does not switch off at 1,499. Only positive evidence of *under ~700*
+**But the *retention* floor is ~900 abstracts, not 1,500** (Rupert: ~800 on 2026-09-09, lowered to
+~700 on 2026-09-10, raised to **~900 on 2026-09-12**). A meeting between
+roughly 900 and 1,499 is kept as `BORDERLINE` on the census sheet — the model is generous by design
+and the product's value does not switch off at 1,499. Only positive evidence of *under ~900*
 justifies moving a row to the deleted sheet.
 
-**When the floor moves, re-sweep the deleted sheet — do not just apply it going forward.** The
+**ONE floor, both kinds of figure** (Rupert, 2026-09-12). The ~900 floor applies identically to a
+*counted* figure from rungs 1–8 and to an *inferred* rung-9 figure. There is no longer a separate
+"inferred bar" — the old split (1,500 counted vs ~1,000 inferred) punished the better-evidenced row
+and is abolished. A row is `VERIFIED` only on a counted figure ≥1,500; a rung-9 row that clears
+~900 is `BORDERLINE` and stays on the census sheet, because nothing was counted for it. See
+*The bar for the approved list* under rung 9.
+
+**When the floor moves, re-sweep BOTH sheets — do not just apply it going forward.** The
 whole reason the deleted sheet keeps every counted number (rule 5) is that a floor change should be
 answerable by re-reading it, never by re-researching. Lowering 800 → 700 on 2026-09-10 released
 three rows (SciX 763, SPIE Medical Imaging 737, APS SCCM 716) at zero research cost.
 **Check for duplicates before moving any of them**: at that same sweep, M&M (1,035) and ECS (2,400)
 also cleared the floor but were already present on the census sheet, and restoring them would have
-listed both conferences twice. In practice:
+listed both conferences twice.
 
-| Counted abstracts | Tier | Sheet |
+A *rise* sweeps the other way and is the case to watch: raising 700 → 900 on 2026-09-12 sends the
+rows between those two numbers — the same SciX 763, SPIE Medical Imaging 737 and APS SCCM 716, plus
+EuroPCR's counted 743 — back to the deleted sheet, and releases EUROTOX / ISES (counted 1,075) from
+it. Nothing has been moved in the workbook yet; this is a pending sweep, listed under
+*Open, awaiting Rupert*. In practice:
+
+| Counted or inferred abstracts | Tier | Sheet |
 |---|---|---|
-| ≥1,500 | `VERIFIED` | census |
-| ~700–1,499 | `BORDERLINE` | census |
-| <~700, on positive evidence | `OUT` | deleted |
+| ≥1,500, counted | `VERIFIED` | census |
+| ~900–1,499 counted, or ≥~900 inferred (rung 9) | `BORDERLINE` | census |
+| **800–899, counted or inferred** — within 100 of the floor | `BORDERLINE` | census |
+| <800, on positive evidence | `OUT` | deleted |
 | no evidence either way | `BORDERLINE` | census — never `OUT` |
+
+**The within-100 leeway applies to COUNTED figures too** (Rupert, 2026-09-12). A counted 855 is at
+least as good evidence as an inferred 855, so it gets the same 800 cutoff — one floor, both kinds of
+figure. The first rows it decided, all from chemistry wave 1: EUROCORR 855 and MACRO 2024 801 stay as
+`BORDERLINE`; WATOC 2025 789 is `OUT`. Only the ratio-flex test (test 2) stays rung-9-only, because a
+counted figure has no judged ratio to flex.
 
 Abstracts, not attendance — the program is public even when attendance isn't, and abstract
 volume measures the navigation pain the product solves. Attendance is recorded alongside as
 context, never as the test. Two real examples of why: OFC has 16,700 attendees but 1,300 papers
-(a trade show by attendance, but 1,300 papers clears the 800 floor, so it stays); APS DPP has
+(a trade show by attendance, but 1,300 papers clears the 900 floor, so it stays); APS DPP has
 2,190 attendees and 2,131 presentations (a research congress — in).
 
 ## Seven rules
@@ -600,7 +620,7 @@ as a real scientist.
 Dental Society Midwinter Meeting is the worked example: 30,000+ attendees, briefly included on the
 "students count too" principle, then correctly left out — not because the presenters are students,
 but because the only contributed science is one poster session, so even a generous 2% gives ~600
-against a ~1,000 bar.
+against a ~900 bar.
 
 **2. Record disagreement; do not resolve it.** If the prospectus says 15,000 and the press release
 says 11,400, keep both — headline = the more accountable rung, the rest in `alt_figures`.
@@ -678,41 +698,57 @@ exercise), and forms a judgement: this looks *majority-abstract*, or *minority-a
 somewhere between. In Rupert's words: **"an imperfect science, a gut feel from the LLM."**
 
 That is acceptable *because* the output is labelled `NOT COUNTED` everywhere it appears, and
-because the bar it feeds (~1,000) only has to sort large from small. What is NOT acceptable is
+because the bar it feeds (~900) only has to sort large from small. What is NOT acceptable is
 dressing that judgement up as precision, or spending a row's whole search budget trying to make it
 precise. Read, judge, state the reasoning, move to the next row.
 
 ### The bar for the approved list
 
-**~1,000 implied abstracts** (Rupert, 2026-09-12) — deliberately below the ≥1,500 counted bar,
-because an inferred figure is coarse and the aim is to catch every conference that is plausibly
-large. Above it the row stays on `Census - <Field>`; below it the row belongs on
-`Deleted - <Field>`. A row straddling the bar between its band and the next one up is recorded as
-`BORDERLINE` in `Rupert's call` and left for him.
+**~900 implied abstracts — the same retention floor a counted figure faces** (Rupert, 2026-09-12;
+supersedes the ~1,000 inferred bar set earlier the same day). One floor governs both kinds of
+figure: the aim is to catch every conference that is plausibly large, and running a separate,
+higher bar for counted rows meant the better-evidenced row was treated more harshly. Above ~900 the
+row stays on `Census - <Field>`; below it the row belongs on `Deleted - <Field>`.
+
+**An inferred row that clears ~900 is `BORDERLINE`, never `VERIFIED`.** `VERIFIED` is reserved for
+a *counted* figure ≥1,500 seen on a page. Nothing was counted for a rung-9 row, so no rung-9 figure
+— however large — promotes a row to `VERIFIED`. A row straddling the bar between its band and the
+next one up is recorded as `BORDERLINE` in `Rupert's call` and left for him.
 
 **A row with no attendance figure at all is never moved to the removed list.** No evidence of size
 is not evidence of small size (rule 1); those rows stay put and go back in the queue.
 
 ### Resolving a row that lands near the bar (Rupert, 2026-09-12)
 
-A hard cutoff at 1,000 would be false precision on top of an estimate, so a row near the line gets a
+A hard cutoff at ~900 would be false precision on top of an estimate, so a row near the line gets a
 sensitivity test instead of a coin flip. `attlib.resolve_borderline()` applies it; **either test
 includes the row**:
 
-1. **Within 100 of the bar.** A figure of 900 or more counts as clearing 1,000.
-2. **Flex the ratio and see if it reaches.** Vary the judged ratio up and down, and if the top of
-   that band reaches 900, include the row. This measures the error in the judgement: if a small,
-   defensible change of mind about the conversion rate flips the answer, the row deserves the
-   benefit of the doubt.
+1. **Within 100 of the bar.** A figure of 800 or more counts as clearing 900.
+2. **Flex the ratio and see if it reaches the bar.** Vary the judged ratio up and down, and if the
+   top of that band reaches **900 — the bar itself, not 800** — include the row. This measures the
+   error in the judgement: if a small, defensible change of mind about the conversion rate flips the
+   answer, the row deserves the benefit of the doubt.
+
+**The two tests use DIFFERENT thresholds, deliberately** (Rupert, 2026-09-12). Test 1 forgives a
+figure that lands just short of the bar. Test 2 is a different claim — that the *ratio* is wrong —
+and a wrong ratio has to be wrong enough to carry the row all the way to the floor before it counts.
+Stacking both forgivenesses (a flexed band reaching only 800) would put the effective bar at 720 for
+any row with a judged ratio, which is not a floor at all. Worked example: 12,000 attendees judged at
+6% gives 720, flexing to 4.8–7.2% gives a band of 576–864, and 864 does not reach 900 — the row
+stays out. At 7% the band tops out at 1,008 and the row comes in.
 
 **The flex is RELATIVE (±20%), never percentage points.** 25% flexes to 20–30%. Adding *points*
 would rescue precisely the rows that should fail: a 2% CE-and-trade meeting flexed by +5 points
 becomes 7%, a 3.5x change that drags it over the bar on arithmetic alone. Chicago Dental Midwinter
-is the live example — ~600 at 2%, and 720 at the top of its relative band, so it stays out.
+is the live example — ~600 at 2%, and 720 at the top of its relative band, nowhere near 900, so it
+stays out under either reading.
 
 **A figure a source stated is not flexed.** There is no judged ratio behind it to vary, so it faces
-only test 1. WOC's reported 800 posters therefore fails, though the log notes that orals are not in
-that 800 — a real count could still overturn it.
+only test 1. WOC's reported 800 posters is the worked example, and the floor change flipped it: at
+the old ~1,000 bar it failed test 1, at the ~900 bar 800 is exactly within 100 and it passes — and
+the log already noted that orals are not in that 800, so the real figure is higher still. **Recheck
+every row decided by test 1 when the floor moves**; test 1 is the one that is sensitive to it.
 
 Record the band (`low`–`high`) and which test decided it in the Method column, so the call can be
 re-checked without redoing the reasoning.
@@ -725,7 +761,7 @@ re-checked without redoing the reasoning.
 - **Deleted because a counted figure came in under the bar** — leave it alone. A counted number
   outranks any rung-9 estimate; do not "rescue" it with arithmetic.
 - **Deleted because no abstract count could be found** — this is the upgrade candidate. Run rung 9
-  on it. If the resulting approximate figure reaches the ~1,000 bar, **move the row back onto
+  on it. If the resulting approximate figure reaches the ~900 bar, **move the row back onto
   `Census - <Field>` automatically**, without asking. That is the whole point of the sweep.
 
 `attlib.upgrade_rows()` performs the move and is the only sanctioned way to do it, because three
@@ -749,10 +785,11 @@ ratio and why, the resulting figure, and the old deletion reason — so Rupert c
 This step carries more error risk than anything upstream: it is the only place where an estimate
 changes which list a conference sits on. Never report an upgrade count without the table behind it.
 
-**A known inconsistency to watch.** The counted bar is ≥1,500 but the inferred bar is ~1,000, so a
-row with a *counted* 1,200 stays removed while a row with an *inferred* ~1,100 gets upgraded — the
-better-evidenced row treated more harshly. One row is currently affected: EUROTOX / ISES joint
-meetings, counted 1,075, on `Deleted - Medicine & Health`. Flag it; do not silently fix it.
+**The inconsistency this used to carry is RESOLVED** (Rupert, 2026-09-12). Counted and inferred
+figures now face the same ~900 floor, so a counted 1,200 and an inferred ~1,100 are treated alike —
+both stay on, or return to, the census sheet as `BORDERLINE`. The row that exposed the old split,
+EUROTOX / ISES joint meetings (counted 1,075, on `Deleted - Medicine & Health`), is a straight
+restoration under the new floor and is listed as a pending sweep under *Open, awaiting Rupert*.
 
 ### Programme character — the second signal
 
@@ -854,7 +891,7 @@ Rung 9 writes only these, on `Census - <Field>`:
 recs  = attlib.remap(records)              # ALWAYS first — re-anchors by conference name
 attlib.apply(recs)                         # attendance, source, basis, method, character (census sheet)
 attlib.apply_deleted(rows_that_stay_out)   # same, for rows on the Deleted sheet (rule 5)
-calls = [dict(r, attendance=r['attendance_numeric'], bar=1000) for r in recs if r['attendance_numeric']]
+calls = [dict(r, attendance=r['attendance_numeric'], bar=900) for r in recs if r['attendance_numeric']]
 attlib.write_inferred_abstracts(calls)     # the labelled NOT COUNTED figure, into the Abstracts column
 attlib.log_inclusion(calls)                # the audit log into Method + Rupert's call
 attlib.upgrade_rows(calls)                 # ONLY for removed-list rows that clear the bar
@@ -968,8 +1005,9 @@ unchanged afterwards by recomputing them from the cells, never by reading the sh
 - **Trade shows.** Huge attendance plus a small paper count means it fails the bar. That's
   the bar working, not a mistake. The sharpest case found so far is **EuroPCR: 12,177 attendees
   against 743 counted abstracts** — a large teaching and live-case course, not a contributed
-  congress. It sits on the ~700 floor while looking, by attendance, like a flagship. This single
-  row is the best argument for why the bar is abstracts and never attendance.
+  congress. It sat on the old ~700 floor while looking, by attendance, like a flagship. This single
+  row is the best argument for why the bar is abstracts and never attendance. Under the ~900 floor
+  its 743 no longer clears, so it is one of the pending moves to the deleted sheet.
 - **A cited source may not contain the figure it is cited for.** Three rows in one wave asserted
   numbers their own source URLs did not carry — ISSCR "1,300 posters", AAPS "over 2,200"
   (absent from five Wayback captures back to 2022), and AAIC "5,700". All three were flagged as
@@ -1017,7 +1055,7 @@ unchanged afterwards by recomputing them from the cells, never by reading the sh
 | Field | State |
 |---|---|
 | Physical sciences | **Complete and fully re-verified (2026-09-10).** 55 census rows (28 VERIFIED, 27 BORDERLINE); 101 deleted rows, every one carrying a `Method` entry and 81 carrying an actual counted number (was 16). No duplicates in either direction. 6 rows remain queued for rung 5, and 2 are genuinely unreachable (Belarus: dead network; Russia: a Phase-1 gap naming no conference) |
-| Medicine & health | **Phase 2 and rung 9 both COMPLETE (2026-09-12).** 252 census rows: 144 carry a counted abstract figure, 86 carry a rung-9 estimate labelled `NOT COUNTED`, 22 have no figure of any kind. Rung-9 calls: 42 INCLUDE, 44 BELOW BAR, 10 of them personally vetted by Rupert. 56 deleted rows, all now carrying attendance where one exists. The upgrade sweep produced **no upgrades**: of 5 candidates, 3 convert far below the bar (Yankee Dental ~95 on 19,084 attendees, Arab Health ~33, ACR ~24) and 2 yielded no figure |
+| Medicine & health | **Phase 2 and rung 9 both COMPLETE (2026-09-12).** 252 census rows: 144 carry a counted abstract figure, 86 carry a rung-9 estimate labelled `NOT COUNTED`, 22 have no figure of any kind. Rung-9 calls: 42 INCLUDE, 44 BELOW BAR, 10 of them personally vetted by Rupert — **all judged against the old ~1,000 inferred bar; the 44 BELOW BAR need rechecking against ~900.** 56 deleted rows, all now carrying attendance where one exists. The upgrade sweep produced **no upgrades**: of 5 candidates, 3 convert far below the bar (Yankee Dental ~95 on 19,084 attendees, Arab Health ~33, ACR ~24) and 2 yielded no figure |
 | CS / AI / engineering | Not started — the selective-paper world (NeurIPS: 21,575 submissions). **Needs a bar redefinition before a census**: papers-with-acceptance-rates do not map onto "1,500 abstracts" |
 | Life sciences | Not started. Partly pre-empted: SfN, ASM, ESHG and others already sit in the medicine census |
 | Chemistry | **Phase 1 running (2026-09-12).** The richest uncounted pool left: ACS Spring+Fall alone run ~12,000–16,000 abstracts each and sit as ONE physical-sciences row with abstracts UNKNOWN. Dedup against physical sciences (ACS, MRS, E-MRS, SciX) before trusting any total |
@@ -1032,9 +1070,12 @@ unchanged afterwards by recomputing them from the cells, never by reading the sh
   run 2–16% of abstracts at real research congresses, but 2–10x the abstracts at teaching and
   trade events — so counting them would admit exactly the meetings the bar exists to exclude.
   BIO International is the worked example: ~108 abstracts, 1,100 invited speakers, no call for
-  abstracts at all; counting invited would clear it over a 1,000 bar. Most sources also say
+  abstracts at all; counting invited would clear it over a 900 bar. Most sources also say
   "speakers" rather than "invited speakers", and that figure usually already contains the abstract
   presenters — adding it double-counts the same people.
+- **Each paper inside a panel session counts as one presentation** (Rupert, 2026-09-12). A panel
+  or organised session carrying five papers counts as five, not one. This matters most in the
+  social sciences, where programmes are built from panels rather than posters.
 - Consequence to accept knowingly: the bar measures *contributed science*, not *total matchable
   content*. Those come apart at teaching-heavy meetings. That is a product question, not a data
   fault.
@@ -1050,8 +1091,16 @@ was known.
    rungs 1–8 missed because they sit in exhibitor prospectuses, not supplements: AANS 3,778,
    IADR 2,949, ORS 2,353, EBMT 1,324, UICC 1,200 — the first three clear the 1,500 counted bar
    outright. Add that route as a rung and re-run it over the rows that came back empty.
-2. **Counted bar 1,500 vs inferred bar 1,000** punishes the better-evidenced row. One row affected:
-   EUROTOX / ISES, counted 1,075, still on the deleted sheet.
+2. **The floor rose 700 → 900 on 2026-09-12 and the workbook has NOT been swept for it.** The
+   method file is updated; no row has moved. Two directions, both cheap re-reads of numbers already
+   on the sheets (rule 5), neither yet done:
+   - **Out**: counted rows between 700 and 899 now fall below the floor — SciX 763, SPIE Medical
+     Imaging 737, APS SCCM 716, EuroPCR 743. Check each for duplicates before moving it.
+   - **In**: EUROTOX / ISES (counted 1,075) returns from `Deleted - Medicine & Health`, and every
+     rung-9 row decided by test 1 (within 100 of the bar) needs rechecking against the new
+     threshold of 800 — WOC's reported 800 flips from fail to pass.
+   The old counted-vs-inferred bar split that this item used to describe is abolished; one floor
+   now governs both.
 3. **Summary SAM formula does not implement Rupert's definition** — it reads `Include (1/0)` across
    the physical-science census AND deleted sheets, so it counts ~62 events/yr of removed
    conferences and no medicine at all.
