@@ -1,6 +1,13 @@
 {
   "extends": "@repo/typescript-config/base.json",
-  "compilerOptions": { "noEmit": true, "types": ["node"] },
+  "compilerOptions": {
+    // Bundler resolution, not NodeNext: apps/web (Turbopack) consumes this package as raw TS
+    // and cannot resolve ".js"-suffixed imports to .ts files. Keep relative imports extensionless.
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "noEmit": true,
+    "types": ["node"]
+  },
   "include": ["src/**/*.ts", "scripts/**/*.ts", "test/**/*.ts"],
   "exclude": ["node_modules"]
 }

@@ -1,7 +1,7 @@
 import { mkdirSync, realpathSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
-import { emitAll } from "../src/schemas.js";
+import { emitAll } from "../src/schemas";
 
 const isMain =
   process.argv[1] !== undefined && realpathSync(process.argv[1]) === realpathSync(import.meta.filename);

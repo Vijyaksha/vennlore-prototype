@@ -2,7 +2,7 @@ import { readdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import { describe, expect, test } from "vitest";
 
-import { RecommendationSchema, SCHEMAS, TalkSchema, emitAll } from "../src/index.js";
+import { RecommendationSchema, SCHEMAS, TalkSchema, emitAll } from "../src/index";
 
 const ROOT = join(import.meta.dirname, "..");
 const read = (p: string) => JSON.parse(readFileSync(join(ROOT, p), "utf8"));

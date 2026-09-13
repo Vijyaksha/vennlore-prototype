@@ -1,7 +1,7 @@
 import { z } from "zod";
-import { RecommendationSchema } from "./recommendation.js";
-import { RunSchema } from "./run.js";
-import { TalkSchema } from "./talk.js";
+import { RecommendationSchema } from "./recommendation";
+import { RunSchema } from "./run";
+import { TalkSchema } from "./talk";
 
 export const SCHEMAS = { talk: TalkSchema, recommendation: RecommendationSchema, run: RunSchema } as const;
 export type SchemaKind = keyof typeof SCHEMAS;

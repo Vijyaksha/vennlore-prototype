@@ -1,6 +1,6 @@
 import { z } from "zod";
 
-import { CONTRACT_VERSION } from "./recommendation.js";
+import { CONTRACT_VERSION } from "./recommendation";
 
 /** Provenance for one index build or one recommend batch. */
 export const RunSchema = z
