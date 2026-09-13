@@ -8,7 +8,6 @@ export const TIME_ZONE = "America/Denver";
 // Who the app shows picks for: exactly one of a presenter (every talk they
 // present is an anchor) or a single anchor talk. The server's Subject schema
 // is strict, so the object carries exactly one key.
-export type { Subject };
 
 // The claimed anchor talk (the porphyrin-nanorod photoconductivity paper),
 // seeded as talk id 0. Used when no subject is configured.

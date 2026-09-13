@@ -26,6 +26,7 @@ Co-Authored-By: Claude Fable 5.1 <noreply@anthropic.com>
 
 - **Task 1 review changes.** `Talk` carries `.meta({ id: "Talk" })`, so the emitted picks_response schema references one `$defs.Talk` instead of inlining it twice. `Recommendation` has the same id but still inlines inside `Pick`, because zod's `.extend()` builds a new object without the id; a test pins that. `AgendaDay` is titled and its `date` is `z.iso.date()`. Invalid fixtures exist for `subject` (both ids) and `picks_response` (missing candidate); the Python invalid-fixture test skips kinds outside its row `KINDS`, since Python validates rows only. Field-count guards: Pick 14, AgendaItem 10.
 - **Task 2 review changes.** The router groups the agenda on `TalkRow` directly (no `agendaEntry`); the in-process grouped type is `TimedItem`, so the contract's `AgendaItem` is the only type of that name. `talk.get` takes a strict input like the presenter procedures. A wire test pins that a row with `contract_version` other than 1 fails the contract; the cast in `wire.ts` stays because the column is a plain integer. Output validation costs about 1 ms per 70 strict Talk parses. Keep the contract schemas free of `transform`/`default`, because tRPC serves the parser's return value, not the procedure's.
+- **Task 3 review changes.** The web view models take ISO strings only (`Date |` unions removed), since output schemas make every timestamp a string at the source. `lib/conference.ts` no longer re-exports `Subject`; consumers import it from `@repo/contracts`. The subject one-key test was folded into one test covering all three branches, so the web suite is 62, not 63.
 
 ## File structure (end state)
 
@@ -537,7 +538,7 @@ git commit -m "feat(api): procedures take the contract Subject and serve validat
 **Files:**
 - Modify: `apps/web/package.json` (add `"@repo/contracts": "*"` to dependencies), `apps/web/lib/conference.ts`, `apps/web/app/page.tsx`, `apps/web/app/calendar/page.tsx`, `apps/web/test/lib/subject.test.ts`, `apps/web/e2e/kindred.e2e.ts`
 
-- [ ] **Step 1: Failing subject tests**
+- [x] **Step 1: Failing subject tests**
 
 In `apps/web/test/lib/subject.test.ts` replace every expected `{ talkId: N }` with `{ talk_id: N }` and every `{ presenterId: N }` with `{ presenter_id: N }`. Add one test:
 
@@ -550,7 +551,7 @@ In `apps/web/test/lib/subject.test.ts` replace every expected `{ talkId: N }` wi
 
 Run: `npm run test --workspace=web -- test/lib/subject.test.ts` → FAIL on key names.
 
-- [ ] **Step 2: Implement**
+- [x] **Step 2: Implement**
 
 `apps/web/lib/conference.ts`: replace the local `Subject` type with the contract's, and the two return shapes.
 
@@ -606,14 +607,14 @@ Run `npm install` after editing `apps/web/package.json` so the workspace link ex
 
 `apps/web/e2e/kindred.e2e.ts`: both `JSON.stringify({ talkId: 0 })` become `JSON.stringify({ talk_id: 0 })`; the picks cast becomes `{ candidate_id: number }[]` and `.map((r) => r.candidate_id)`.
 
-- [ ] **Step 3: Green, and the build**
+- [x] **Step 3: Green, and the build**
 
 Run: `npm run test --workspace=web && npm run check-types && npm run lint && env -u DATABASE_URL npm run build --workspace=web`
 Expected: web 62 tests pass (count unchanged plus the one new subject test = 63); root check-types and lint 5/5; build compiles, `/` and `/calendar` static.
 
 Run: `grep -rn "talkId\|presenterId\|candidateId\|crossDomain\|sharedMethods" apps/web/app apps/web/e2e` → only `presenterId`/`anchorTalkId` as `subjectFromEnv` parameter names in `lib/conference.ts`; nothing in `app/` or `e2e/` (the `Pick` view model keys live in `components/`, which is fine).
 
-- [ ] **Step 4: Commit**
+- [x] **Step 4: Commit**
 
 ```bash
 git add apps/web package-lock.json

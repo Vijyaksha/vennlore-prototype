@@ -9,7 +9,7 @@ import { cn } from "@repo/ui/lib/utils";
 
 import { denverDayKey, TIME_ZONE } from "@/lib/conference";
 
-// Dates cross the tRPC HTTP boundary as ISO strings, so props accept both.
+// Dates cross the tRPC HTTP boundary as ISO strings.
 export interface Pick {
   candidateId: number;
   /** The presenter's anchor talk this pick was recommended for. */
@@ -17,7 +17,7 @@ export interface Pick {
   title: string;
   sessionTitle: string | null;
   units: string[];
-  start: Date | string | null;
+  start: string | null;
   /** Engine score between 0 and 1. */
   score: number;
   crossDomain: boolean;
