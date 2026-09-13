@@ -19,7 +19,7 @@ test("picks rail shows real engine recommendations with scores", async ({
   await page.goto("/");
   // Core pick 2802 (Ni-DNA memristive nanowires) surfaced by the Stage-0 run.
   await expect(page.getByText(/Memristive/i).first()).toBeVisible();
-  await expect(page.getByText(/\/15/).first()).toBeVisible();
+  await expect(page.getByText(/%/).first()).toBeVisible();
 });
 
 test("bottom nav flips between the two screens", async ({ page }) => {
@@ -52,7 +52,7 @@ test("agenda API groups all matched picks into conference days", async ({
   baseURL,
 }) => {
   const res = await request.get(
-    `${baseURL}/api/trpc/agenda?input=${encodeURIComponent(
+    `${baseURL}/api/trpc/presenter.agenda?input=${encodeURIComponent(
       JSON.stringify({ talkId: 0 }),
     )}`,
   );

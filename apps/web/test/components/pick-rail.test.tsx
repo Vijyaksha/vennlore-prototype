@@ -12,22 +12,42 @@ const pick = (overrides: Partial<Pick> & { candidateId: number }): Pick => ({
   sessionTitle: "Some Session",
   units: ["DLS"],
   start: "2026-03-18T19:24:00.000Z",
-  score: 6,
+  score: 0.6,
   crossDomain: true,
   why: "shared measurement loop",
+  forTalkId: 0,
+  sharedMethods: [],
   ...overrides,
 });
 
-const core = (id: number, score = 6) =>
+const core = (id: number, score = 0.6) =>
   pick({ candidateId: id, score, crossDomain: false, units: ["DPOLY"] });
-const unexpected = (id: number, score = 6) => pick({ candidateId: id, score });
+const unexpected = (id: number, score = 0.6) => pick({ candidateId: id, score });
+
+const ONE_ANCHOR = [{ id: 0, title: "Porphyrin nanorods" }];
+const TWO_ANCHORS = [
+  { id: 0, title: "Porphyrin nanorods" },
+  { id: 1, title: "Ultrafast carrier dynamics in perovskite films" },
+];
+
+function Rail({
+  core: c = [],
+  unexpected: u = [],
+  anchors = ONE_ANCHOR,
+}: {
+  core?: Pick[];
+  unexpected?: Pick[];
+  anchors?: { id: number; title: string }[];
+}) {
+  return <PickRail anchors={anchors} recommendations={[...c, ...u]} />;
+}
 
 describe("PickRail", () => {
   test("renders every kept pick as a card with badge, score and why", () => {
     renderWithIntl(
-      <PickRail
-        core={[core(1, 11)]}
-        unexpected={[unexpected(2, 7), unexpected(3, 5)]}
+      <Rail
+        core={[core(1, 0.8)]}
+        unexpected={[unexpected(2, 0.7), unexpected(3, 0.5)]}
       />,
     );
 
@@ -36,12 +56,12 @@ describe("PickRail", () => {
     expect(screen.getByText("Pick 3")).toBeInTheDocument();
     expect(screen.getByText("DPOLY · core")).toBeInTheDocument();
     expect(screen.getAllByText("DLS · unexpected")).toHaveLength(2);
-    expect(screen.getByText("11/15")).toBeInTheDocument();
+    expect(screen.getByText("80%")).toBeInTheDocument();
   });
 
   test("caps unexpected picks at 3 and core picks at 2", () => {
     renderWithIntl(
-      <PickRail
+      <Rail
         core={[core(1), core(2), core(3)]}
         unexpected={[unexpected(4), unexpected(5), unexpected(6), unexpected(7)]}
       />,
@@ -54,7 +74,7 @@ describe("PickRail", () => {
 
   test("with 1 core and 3 unexpected shows the honest empty second-core slot", () => {
     renderWithIntl(
-      <PickRail
+      <Rail
         core={[core(1)]}
         unexpected={[unexpected(2), unexpected(3), unexpected(4)]}
       />,
@@ -67,14 +87,14 @@ describe("PickRail", () => {
 
   test("with zero core matches shows the no-core slot", () => {
     renderWithIntl(
-      <PickRail core={[]} unexpected={[unexpected(2), unexpected(3)]} />,
+      <Rail core={[]} unexpected={[unexpected(2), unexpected(3)]} />,
     );
 
     expect(screen.getByText("No core match cleared the bar.")).toBeInTheDocument();
   });
 
   test("with no matches at all shows the rail-level empty state", () => {
-    renderWithIntl(<PickRail core={[]} unexpected={[]} />);
+    renderWithIntl(<Rail />);
 
     expect(
       screen.getByText("No matches cleared the bar for this talk."),
@@ -84,7 +104,7 @@ describe("PickRail", () => {
 
   test("renders one position dot per rail item, including the empty slot", () => {
     const { container } = renderWithIntl(
-      <PickRail
+      <Rail
         core={[core(1)]}
         unexpected={[unexpected(2), unexpected(3), unexpected(4)]}
       />,
@@ -94,12 +114,102 @@ describe("PickRail", () => {
   });
 
   test("formats the card time in Denver local time and links to that calendar day", () => {
-    renderWithIntl(<PickRail core={[core(1)]} unexpected={[]} />);
+    renderWithIntl(<Rail core={[core(1)]} />);
 
     expect(screen.getByText("Wed 3/18 · 1:24 PM")).toBeInTheDocument();
     expect(screen.getByRole("link", { name: "Calendar" })).toHaveAttribute(
       "href",
       "/calendar?date=2026-03-18",
     );
+  });
+
+  test("caps keep the highest-scoring picks of each kind", () => {
+    renderWithIntl(
+      <Rail
+        core={[core(1, 0.3), core(2, 0.9), core(3, 0.7)]}
+        unexpected={[
+          unexpected(4, 0.2),
+          unexpected(5, 0.8),
+          unexpected(6, 0.6),
+          unexpected(7, 0.5),
+        ]}
+      />,
+    );
+
+    expect(screen.queryByText("Pick 1")).toBeNull();
+    expect(screen.queryByText("Pick 4")).toBeNull();
+    expect(screen.getAllByText(/^Pick \d+$/).map((el) => el.textContent)).toEqual(
+      ["Pick 2", "Pick 5", "Pick 3", "Pick 6", "Pick 7"],
+    );
+  });
+
+  test("renders each shared method as a chip", () => {
+    renderWithIntl(
+      <Rail
+        core={[
+          pick({
+            candidateId: 1,
+            crossDomain: false,
+            sharedMethods: ["transient photocurrent", "self-assembly"],
+          }),
+        ]}
+      />,
+    );
+
+    const group = screen.getByRole("group", { name: "Shared methods" });
+    expect(group).toHaveTextContent("transient photocurrent");
+    expect(screen.getByText("transient photocurrent")).toBeInTheDocument();
+    expect(screen.getByText("self-assembly")).toBeInTheDocument();
+  });
+
+  test("omits the shared-method group when there are none", () => {
+    renderWithIntl(<Rail core={[core(1)]} />);
+
+    expect(screen.queryByRole("group", { name: "Shared methods" })).toBeNull();
+  });
+
+  test("a single-anchor presenter sees no anchor chip", () => {
+    renderWithIntl(<Rail core={[core(1)]} unexpected={[unexpected(2)]} />);
+
+    expect(screen.queryByText(/for your talk on/)).toBeNull();
+  });
+
+  test("a multi-anchor presenter sees which of their talks each pick is for", () => {
+    renderWithIntl(
+      <Rail
+        anchors={TWO_ANCHORS}
+        core={[pick({ candidateId: 1, crossDomain: false, forTalkId: 0 })]}
+        unexpected={[pick({ candidateId: 2, forTalkId: 1 })]}
+      />,
+    );
+
+    const first = screen.getByText("for your talk on Porphyrin nanorods");
+    expect(first).toHaveClass("truncate");
+    expect(
+      screen.getByText(
+        "for your talk on Ultrafast carrier dynamics in perovskite films",
+      ),
+    ).toBeInTheDocument();
+  });
+
+  test("merges a candidate matched under two anchors, keeping its best score", () => {
+    renderWithIntl(
+      <Rail
+        anchors={TWO_ANCHORS}
+        unexpected={[
+          pick({ candidateId: 5, forTalkId: 0, score: 0.4 }),
+          pick({ candidateId: 5, forTalkId: 1, score: 0.9 }),
+        ]}
+      />,
+    );
+
+    expect(screen.getAllByText("Pick 5")).toHaveLength(1);
+    expect(screen.getByText("90%")).toBeInTheDocument();
+    expect(screen.queryByText("40%")).toBeNull();
+    expect(
+      screen.getByText(
+        "for your talk on Ultrafast carrier dynamics in perovskite films",
+      ),
+    ).toBeInTheDocument();
   });
 });

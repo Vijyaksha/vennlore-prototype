@@ -5,13 +5,14 @@ import { useTranslations } from "next-intl";
 import { Skeleton } from "@repo/ui/components/skeleton";
 
 import { ErrorState } from "@/components/error-state";
+import type { Pick } from "@/components/pick-card";
 import { PickRail } from "@/components/pick-rail";
-import { ANCHOR_TALK_ID } from "@/lib/conference";
+import { SUBJECT } from "@/lib/conference";
 import { trpc } from "@/lib/trpc";
 
 export default function PicksPage() {
   const t = useTranslations("common");
-  const picks = trpc.picks.useQuery({ talkId: ANCHOR_TALK_ID });
+  const picks = trpc.presenter.picks.useQuery(SUBJECT);
 
   if (picks.isError) {
     return <ErrorState onRetry={() => void picks.refetch()} />;
@@ -32,14 +33,31 @@ export default function PicksPage() {
     );
   }
 
+  const { anchors, recommendations } = picks.data;
+  const rail: Pick[] = recommendations.map((rec) => ({
+    candidateId: rec.candidateId,
+    forTalkId: rec.forTalkId,
+    title: rec.candidate.title,
+    sessionTitle: rec.candidate.sessionTitle,
+    units: rec.candidate.units,
+    start: rec.candidate.start,
+    score: rec.score,
+    crossDomain: rec.crossDomain,
+    why: rec.why,
+    sharedMethods: rec.sharedMethods,
+  }));
+
   return (
     <section>
       <div className="px-5 pt-5 pb-0.5">
         <h1 className="max-w-[34ch] font-serif text-[19px] leading-[1.3] font-normal text-balance">
-          {picks.data.talk.title}
+          {anchors.map((anchor) => anchor.title).join(" · ")}
         </h1>
       </div>
-      <PickRail core={picks.data.core} unexpected={picks.data.unexpected} />
+      <PickRail
+        anchors={anchors.map(({ id, title }) => ({ id, title }))}
+        recommendations={rail}
+      />
     </section>
   );
 }

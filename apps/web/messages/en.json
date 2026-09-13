@@ -7,7 +7,9 @@
   "picks": {
     "core": "core",
     "unexpected": "unexpected",
-    "score": "{score}/{max}",
+    "score": "{score, number, percent}",
+    "forTalk": "for your talk on {title}",
+    "sharedMethods": "Shared methods",
     "when": "{dow} {date} · {time}",
     "untimed": "Time TBD",
     "calendar": "Calendar",
