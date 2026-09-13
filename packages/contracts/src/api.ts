@@ -36,7 +36,9 @@ export type AgendaKind = z.infer<typeof AgendaKindSchema>;
 /** Walking connection from the previous item on the same day. */
 export const ConnectionSchema = z.strictObject({
   walk: z.int().min(0),
+  /** Minutes to spare after walking: negative when the two talks clash. */
   slack: z.number(),
+  /** slack is under the 15-minute threshold walk.ts's connection() calls tight. */
   tight: z.boolean(),
 });
 export type Connection = z.infer<typeof ConnectionSchema>;
@@ -58,11 +60,13 @@ export const AgendaItemSchema = z
   .meta({ title: "AgendaItem" });
 export type AgendaItem = z.infer<typeof AgendaItemSchema>;
 
-export const AgendaDaySchema = z.strictObject({
-  /** Conference-local (America/Denver) date, YYYY-MM-DD. */
-  date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
-  items: z.array(AgendaItemSchema),
-});
+export const AgendaDaySchema = z
+  .strictObject({
+    /** Conference-local (America/Denver) calendar date, YYYY-MM-DD. */
+    date: z.iso.date(),
+    items: z.array(AgendaItemSchema),
+  })
+  .meta({ title: "AgendaDay" });
 
 export const AgendaResponseSchema = z
   .strictObject({

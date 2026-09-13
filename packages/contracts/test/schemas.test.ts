@@ -126,5 +126,8 @@ describe("api schemas", () => {
     const bad = structuredClone(row);
     bad.days[0].items[0].kind = "later";
     expect(AgendaResponseSchema.safeParse(bad).success).toBe(false);
+    const impossible = structuredClone(row);
+    impossible.days[0].date = "2026-99-99";
+    expect(AgendaResponseSchema.safeParse(impossible).success).toBe(false);
   });
 });
