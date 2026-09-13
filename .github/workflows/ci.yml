@@ -5,6 +5,13 @@ on:
   pull_request:
   workflow_dispatch:
 
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
 env:
   TURBO_TELEMETRY_DISABLED: "1"
   DO_NOT_TRACK: "1"
@@ -13,6 +20,7 @@ jobs:
   web:
     name: web
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -31,6 +39,7 @@ jobs:
       - name: Contract schema drift
         run: |
           npm run emit --workspace=@repo/contracts
+          git add -N packages/contracts/schema
           git diff --exit-code -- packages/contracts/schema
       - name: Build web (no database needed)
         run: npm run build --workspace=web
@@ -38,6 +47,7 @@ jobs:
   pipeline:
     name: pipeline
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     defaults:
       run:
         working-directory: pipeline
@@ -51,12 +61,13 @@ jobs:
       - run: uv sync --locked
       - name: Layering
         run: uv run lint-imports
-      - name: Tests (offline; archive-dependent tests skip)
+      - name: Tests (offline)
         run: uv run pytest -q
 
   e2e:
     name: e2e
     runs-on: ubuntu-latest
+    timeout-minutes: 25
     services:
       postgres:
         image: postgres:16
