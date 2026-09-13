@@ -29,6 +29,8 @@ Claude-Session: https://claude.ai/code/session_01GyR4M6ie2tftRPoSLdJdxY
 - **Task 4 deviation.** The pure upsert helpers (`excluded`, `batches`, `updateSet`) live in `packages/api/src/db/upsert.ts` with a test, because the repo requires TDD and `seed.ts` runs on import.
 - **Seed follow-ups (review minors, not blocking).** The seed script does not run in a transaction. It exits without closing the postgres client. It never deletes an engine's stale recommendations on reseed, which does not matter for the first seed after migration 0001. `toSeedFile` does not reject duplicate keys, or a recommendation whose `run_id` has no matching run.
 
+- **Task 5 review changes.** The presenter and author lookups use Drizzle `arrayContains` (`@>`), not raw `= ANY(...)`. `getMatches` orders by for_talk_id, rank, then candidate_id in both repos. The repo test fixtures are deliberately unsorted, so ordering and match filtering are really tested. Later: add a GIN index on `presenter_ids` and `author_ids` if the store grows well past GPS scale.
+
 ## File structure (end state)
 
 ```
@@ -490,7 +492,7 @@ git commit -m "feat(api): seed talks, locations, runs and recommendations from a
 - Create: `packages/api/src/repo.ts`, `packages/api/test/repo.test.ts`
 - Rewrite: `packages/api/src/repo.db.ts`
 
-- [ ] **Step 1: Failing tests (against the fake; the Drizzle repo is type-checked only, per the no-live-DB rule)**
+- [x] **Step 1: Failing tests (against the fake; the Drizzle repo is type-checked only, per the no-live-DB rule)**
 
 `packages/api/test/repo.test.ts`:
 
@@ -552,7 +554,7 @@ describe("memoryRepo", () => {
 
 Run → FAIL (`memoryRepo` missing).
 
-- [ ] **Step 2: Implement `repo.ts`**
+- [x] **Step 2: Implement `repo.ts`**
 
 ```ts
 import type { recommendations, talks } from "./db/schema.js";
@@ -589,11 +591,11 @@ export function memoryRepo(talkRows: TalkRow[], recRows: RecRow[]): Repo {
 }
 ```
 
-- [ ] **Step 3: Rewrite `repo.db.ts`** with the same five methods over Drizzle: `getTalks` → `inArray(talks.id, ids)` ordered by id; `anchorsFor` → `sql\`${presenterId} = ANY(${talks.presenterIds})\`` ordered by id; `authoredBy` → same with `authorIds`, returns `new Set(rows.map(r => r.id))`; `getMatches` → `select().from(recommendations).innerJoin(talks, eq(recommendations.candidateId, talks.id)).where(and(eq(recommendations.engineId, engineId), eq(recommendations.match, true), inArray(recommendations.forTalkId, forTalkIds))).orderBy(asc(recommendations.forTalkId), asc(recommendations.rank))`, mapped to `{ ...row.recommendations, candidate: row.talks }`. Export `dbRepo: Repo`. Update `src/index.ts` to export `memoryRepo`, `type MatchRow` from `./repo.js` and `dbRepo` from `./repo.db.js`.
+- [x] **Step 3: Rewrite `repo.db.ts`** with the same five methods over Drizzle: `getTalks` → `inArray(talks.id, ids)` ordered by id; `anchorsFor` → `sql\`${presenterId} = ANY(${talks.presenterIds})\`` ordered by id; `authoredBy` → same with `authorIds`, returns `new Set(rows.map(r => r.id))`; `getMatches` → `select().from(recommendations).innerJoin(talks, eq(recommendations.candidateId, talks.id)).where(and(eq(recommendations.engineId, engineId), eq(recommendations.match, true), inArray(recommendations.forTalkId, forTalkIds))).orderBy(asc(recommendations.forTalkId), asc(recommendations.rank))`, mapped to `{ ...row.recommendations, candidate: row.talks }`. Export `dbRepo: Repo`. Update `src/index.ts` to export `memoryRepo`, `type MatchRow` from `./repo.js` and `dbRepo` from `./repo.db.js`.
 
 Run: `npm run test --workspace=@repo/api -- test/repo.test.ts` → 5 pass; `npm run check-types --workspace=@repo/api` still fails on the old router (next task).
 
-- [ ] **Step 4: Commit**
+- [x] **Step 4: Commit**
 
 ```bash
 git add packages/api/src/repo.ts packages/api/src/repo.db.ts packages/api/src/index.ts packages/api/test/repo.test.ts
