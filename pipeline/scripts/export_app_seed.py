@@ -1,6 +1,5 @@
-"""Export a run's rows for the web app. Writes TWO files:
+"""Export a run's rows for the web app. Writes one file:
   out/app_seed.v2.json  — the contract shape (talks×25, recommendations×13, runs)
-  out/app_seed.json     — LEGACY shape the current web app ingests; deleted in Plan 2.
 Offline: reads the archive and a run directory. Usage:
   uv run python scripts/export_app_seed.py --query out/graph_v1/stage0/query --ids datasets/micro-corpus.json"""
 import argparse
@@ -13,7 +12,6 @@ from gps_core.records import Recommendation, RunManifest  # noqa: E402
 from gps_core.store import write_seed  # noqa: E402
 from gps_data.archive import load_talks  # noqa: E402
 from gps_data.datasets import corpus_ids  # noqa: E402
-from gps_data.legacy_seed import legacy_seed  # noqa: E402
 from gps_data.talk import from_row  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -49,9 +47,7 @@ def main() -> None:
     loc_rows = [{"id": l["id"], "building": l["building"], "room": l["room"]} for l in locations]
     all_talks = [anchor] + list(talks.values())
     write_seed(OUT / "app_seed.v2.json", all_talks, rows, [manifest], loc_rows)
-    (OUT / "app_seed.json").write_text(json.dumps(legacy_seed(all_talks, rows, loc_rows), indent=1))
-    print(f"wrote app_seed.v2.json ({len(all_talks)} talks, {len(rows)} recommendations) "
-          f"and legacy app_seed.json")
+    print(f"wrote app_seed.v2.json ({len(all_talks)} talks, {len(rows)} recommendations)")
 
 
 if __name__ == "__main__":

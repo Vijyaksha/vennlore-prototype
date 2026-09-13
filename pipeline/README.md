@@ -12,6 +12,7 @@ and every row an engine emits is validated against it before it is written.
     ENGINE=graph_v1 uv run python scripts/run_engine.py index --ids datasets/sample-500.json --out out/graph_v1/sample500
     ENGINE=graph_v1 uv run python scripts/run_engine.py recommend --presenter 199897 --index out/graph_v1/sample500
     uv run python scripts/export_app_seed.py --query out/graph_v1/stage0/query --ids datasets/micro-corpus.json
+                                                                # writes out/app_seed.v2.json (contract shape)
 
 Progress: `<out>/status.json`. Reruns resume from content-keyed checkpoints under `<out>/<stage>/`;
 a prompt or model change produces new keys, so stale results are never reused.
