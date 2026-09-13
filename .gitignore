@@ -36,10 +36,15 @@ yarn-error.log*
 # Misc
 .DS_Store
 *.pem
-data/
+/data/
 
 # Playwright MCP scratch
 .playwright-mcp/
 
 # Excel lock files
 ~$*
+
+# Census source artefacts — large PDFs/zips downloaded for rung 3/4 counting.
+# Re-downloadable from the URLs recorded in each row's Method column; never committed.
+scratchpad/chem/artefacts/
+scratchpad/__pycache__/
