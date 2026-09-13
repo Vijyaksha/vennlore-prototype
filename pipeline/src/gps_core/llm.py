@@ -10,6 +10,12 @@ class LLMClient(Protocol):
     def complete_json(self, prompt: str, schema_hint: str) -> dict: ...
 
 
+class LLMUnusable(RuntimeError):
+    """The provider returned no usable JSON after all retries (empty content
+    or persistently malformed output). Transient in principle; callers
+    decide the fallback policy, as for LLMRefusal."""
+
+
 class LLMRefusal(RuntimeError):
     """The API's safety layer declined the request (stop_reason 'refusal').
     Deterministic for a given prompt — retrying is pointless; callers decide
@@ -87,7 +93,7 @@ class DeepSeekLLM:
                 last_kinds = [f"malformed-json({text[:80]!r})"]
             else:
                 last_kinds = ["empty-content"]
-        raise RuntimeError(
+        raise LLMUnusable(
             f"no usable JSON response after 3 attempts, got {last_kinds}")
 
 
@@ -133,5 +139,5 @@ class AnthropicLLM:
                 last_kinds = [f"malformed-json({block.text[:80]!r})"]
                 continue
             last_kinds = [type(b).__name__ for b in msg.content]
-        raise RuntimeError(
+        raise LLMUnusable(
             f"no usable JSON response after 3 attempts, got {last_kinds}")

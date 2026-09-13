@@ -165,7 +165,8 @@ def test_deepseek_llm_empty_content_exhausts_retries(monkeypatch):
     monkeypatch.setattr(llm_mod.time, "sleep", lambda s: None)
     llm = _ds(monkeypatch)
     llm._client.chat.completions.create = lambda **kwargs: _Resp(None)
-    with pytest.raises(RuntimeError, match="no usable JSON response"):
+    from gps_core.llm import LLMUnusable
+    with pytest.raises(LLMUnusable, match="no usable JSON response"):
         llm.complete_json("p", schema_hint="x")
 
 

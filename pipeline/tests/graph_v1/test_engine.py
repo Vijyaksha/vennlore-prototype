@@ -151,3 +151,29 @@ def test_query_status_dirs_do_not_collide_between_external_anchors(tmp_path):
                   art, tmp_path / "q2")
     # both anchors are id 0; their engine-side status dirs must still differ
     assert len(list((art.path / "queries").iterdir())) == 2
+
+
+def test_checkpoint_keys_depend_only_on_the_stage_model(tmp_path):
+    e1, _ = make_engine()
+    e2, _ = make_engine()
+    e2.models = {**e2.models, "pair_judge": "other"}
+    assert e1._ck(tmp_path, "methods", 1) == e2._ck(tmp_path, "methods", 1)
+    assert e1._ck(tmp_path, "verdicts", "a", "b", "") != e2._ck(tmp_path, "verdicts", "a", "b", "")
+    e3, _ = make_engine()
+    e3.models = {**e3.models, "extract": "other"}
+    assert e1._ck(tmp_path, "methods", 1) != e3._ck(tmp_path, "methods", 1)
+
+
+def test_unusable_llm_response_defaults_to_no_match_and_says_so(tmp_path, capsys):
+    llm = RoutingFakeLLM(
+        methods_by_title={ANCHOR_T: ["photocurrent measurement"], PEROV_T: ["transient photocurrent"],
+                          GEMS_T: ["raman spectroscopy"]},
+        rubric_by_title={}, raise_unusable_for={PEROV_T})
+    e = GraphV1Engine(extract_llm=llm, pair_llm=llm, rubric_llm=llm, embed=keyword_embedder,
+                      physh=tiny_physh(), workers=1,
+                      models={"extract": "fake", "pair_judge": "fake", "rubric": "fake"})
+    art, _ = run_index(e, corpus(), tmp_path / "idx")
+    rows, _ = run_recommend(e, external_anchor(ANCHOR_T, "x", ["DPOLY"]), art, tmp_path / "q")
+    r = rows[0]
+    assert r.match is False and r.score == 0.0 and "API UNUSABLE" in r.why
+    assert "UNUSABLE" in capsys.readouterr().out

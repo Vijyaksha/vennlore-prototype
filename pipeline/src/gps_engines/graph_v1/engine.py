@@ -9,7 +9,7 @@ from typing import Callable
 
 from gps_core.checkpoint import checkpointed, content_key
 from gps_core.filters import default_cross_domain
-from gps_core.llm import AnthropicLLM, DeepSeekLLM, LLMClient, LLMRefusal
+from gps_core.llm import AnthropicLLM, DeepSeekLLM, LLMClient, LLMRefusal, LLMUnusable
 from gps_core.progress import Status, parallel
 from gps_core.protocol import IndexArtifact
 from gps_core.records import Recommendation
@@ -60,8 +60,14 @@ class GraphV1Engine:
             self._targets = embed_targets(self.physh, self.embed)
         return self._targets
 
+    # Each stage's checkpoint is keyed by the model that PRODUCES it, so
+    # changing the pair judge never invalidates extraction, and vice versa.
+    _STAGE_MODEL = {"methods": "extract", "enrich": "extract", "claims": "extract",
+                    "filings": "extract", "verdicts": "pair_judge", "judgments": "rubric"}
+
     def _ck(self, out: Path, stage: str, *inputs) -> Path:
-        return out / stage / f"{content_key(self.id, stage, self.models, *inputs)}.json"
+        model = self.models[self._STAGE_MODEL[stage]]
+        return out / stage / f"{content_key(self.id, stage, model, *inputs)}.json"
 
     def _extract(self, out: Path, t: Talk) -> tuple[list[str], dict, list]:
         key = (t.id, t.title, t.abstract)
@@ -87,17 +93,19 @@ class GraphV1Engine:
                                   context_a=name_context.get(_norm(d.a), ""),
                                   context_b=name_context.get(_norm(d.b), ""),
                                   evidence=d.evidence)
-            except LLMRefusal:
-                status.set(f"REFUSAL (pair, defaulting to no-edge): {d.a!r} vs {d.b!r}")
+            except (LLMRefusal, LLMUnusable) as err:
+                kind = "REFUSAL" if isinstance(err, LLMRefusal) else "UNUSABLE RESPONSE"
+                status.set(f"{kind} (pair, defaulting to no-edge): {d.a!r} vs {d.b!r}")
                 return {"verdict": "unrelated",
-                        "why": "API REFUSAL; defaulted to no-edge, not a real judgment"}
+                        "why": f"API {kind}; defaulted to no-edge, not a real judgment"}
         return checkpointed(self._ck(out, "verdicts", d.a, d.b, d.evidence), judge)
 
     @staticmethod
     def _n_refused(results) -> int:
         """Refusals counted from the results themselves, so a resumed run
         reports the same number as the run that first hit them."""
-        return sum(1 for r in results if "API REFUSAL" in (r.get("why") or ""))
+        return sum(1 for r in results
+                   if any(m in (r.get("why") or "") for m in ("API REFUSAL", "API UNUSABLE")))
 
     @staticmethod
     def _verdicts(decisions: list[Decision], judged: dict) -> list[tuple[str, str, dict]]:
@@ -216,11 +224,12 @@ class GraphV1Engine:
                     return {"same_method": j.same_method, "specificity": j.specificity,
                             "usage_parallel": j.usage_parallel, "why": j.why,
                             "strongest_parallel": j.strongest_parallel}
-                except LLMRefusal:
-                    status.set(f"REFUSAL (rubric, defaulting to no-match): talk {cid}")
+                except (LLMRefusal, LLMUnusable) as err:
+                    kind = "REFUSAL" if isinstance(err, LLMRefusal) else "UNUSABLE RESPONSE"
+                    status.set(f"{kind} (rubric, defaulting to no-match): talk {cid}")
                     return {"same_method": 0, "specificity": 0, "usage_parallel": 0,
                             "strongest_parallel": "",
-                            "why": "API REFUSAL; defaulted to no-match, not a real judgment"}
+                            "why": f"API {kind}; defaulted to no-match, not a real judgment"}
             return checkpointed(self._ck(idx, "judgments", anchor.id, anchor.abstract, cid,
                                          cand.abstract), judge)
 
