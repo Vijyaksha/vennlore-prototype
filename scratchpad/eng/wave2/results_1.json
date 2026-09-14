@@ -1,0 +1,1426 @@
+[
+ {
+  "row": 72,
+  "conference": "ASME International Design Engineering Technical Conferences and Computers and Information in Engineering Conference (IDETC-CIE)",
+  "outcome": "COUNTED",
+  "abstracts_numeric": 534,
+  "abstracts": "534 published papers (2023) — FLOOR; presentation-only and poster submissions are not deposited",
+  "year": 2023,
+  "rung": 4,
+  "source_url": "https://api.crossref.org/works?filter=type:proceedings-article,prefix:10.1115,from-pub-date:2023-01-01,until-pub-date:2023-12-31&rows=1000&select=DOI,container-title,event&cursor=*",
+  "spot_checks": [
+   "Per-year DOI-slug counts detc2023=534, detc2024=440, detc2025=524 — three independent years, same method",
+   "detc2024 re-derived by container: 13 \"Volume N:\" containers (PTG 19, VIB 23, AVT 25, CIE 2A 60 + 2B 49, DAC 3A 44 + 3B 61, DEC 11, DFMLC 21, DTM 36, MR 49, MNS 11, MSNDC 31) summing to exactly 440, matching the slug count",
+   "event.name on the 2024 items reads \"ASME 2024 International Design Engineering Technical Conferences and Computers and Information in Engineering Conference\" — correct meeting, CIE included in the same slug"
+  ],
+  "searches_used": 0,
+  "events_per_yr": 1,
+  "cadence_evidence": "https://event.asme.org/IDETC-CIE — \"IDETC/CIE 2026 ... August 23-26, 2026\"; annual editions deposited every year 2023, 2024, 2025",
+  "attendance_numeric": null,
+  "attendance_year": null,
+  "attendance_basis": null,
+  "attendance_rung": null,
+  "attendance_source_url": null,
+  "alt_figures": [
+   {
+    "value": 440,
+    "year": 2024,
+    "basis": "published papers deposited to Crossref",
+    "rung": 4
+   },
+   {
+    "value": 524,
+    "year": 2025,
+    "basis": "published papers deposited to Crossref",
+    "rung": 4
+   },
+   {
+    "value": 173,
+    "year": 2026,
+    "basis": "topic/sessions in the IDETC-CIE 2026 session gallery (sessions, NOT presentations)",
+    "rung": 4
+   }
+  ],
+  "character": "CONTRIBUTED",
+  "character_evidence": "Open call for papers with named tracks; 440-534 contributed papers deposited per edition across 13 divisional tracks (DAC, DTM, MR, CIE, VIB, MSNDC, PTG, AVT, DEC, DFMLC, MNS)",
+  "programme_type": "CONTRIBUTED",
+  "programme_evidence": "https://idetc.secure-platform.com/a/page/author_resources/paper_publication_requirements — \"One author registration fee can cover up to a maximum of two (2) technical papers or presentation only submissions plus two (2) additional poster presentations\", i.e. three contributed submission types, only one of which is deposited",
+  "direct_abstracts": null,
+  "ratio": null,
+  "ratio_rationale": null,
+  "duplicate_of": null,
+  "method": "Rung 4, zero searches. Crossref deposit index, ASME prefix 10.1115, per the field notes' ASME route. Cursor-paged type:proceedings-article for each of 2023, 2024, 2025 (rows=1000, select=DOI,container-title,event) and grouped the DOI suffix on ^([a-z0-9-]+?)(\\d{4})- : detc2023=534, detc2024=440, detc2025=524. Cross-checked detc2024 by summing the 13 \"Volume N: ...\" containers, which reproduced 440 exactly. Largest recent edition = 534 (2023) and that is what is recorded. EXCLUDED: every other slug sharing the prefix (gt, imece, omae, pvp, ipc, msec, fedsm, ht, es, hvis, ipack, icef, mnhmt, dmd, smasis, ssdm, isfa, power, jrc, fpmc, qnde, vvuq, icone31) and the separate imece-india2025 edition. THIS IS A FLOOR, not the meeting: ASME's own presentation-requirements page for IDETC names \"technical papers OR presentation only submissions PLUS poster presentations\", and only published papers get DOIs — the same structure that made IMECE 723 deposited against ~2,400 stated in wave 1. Sought a countable programme artefact for the presentation-only and poster tracks and failed: the IDETC session gallery (https://idetc.secure-platform.com/a/solicitations/280/sessiongallery) is server-rendered and states \"Items 1 - 60 of 173\" topic/sessions for the 2026 edition, but neither the session detail pages (/a/solicitations/280/sessiongallery/24097) nor the schedule item pages (/a/solicitations/280/sessiongallery/schedule/items/24097) render any per-session paper list to curl, and the asme-extender-production.secure-platform.com/api/280 endpoint the page's JS names 404s on sessions, sessions/<id>, sessions/<id>/items and session/<id>. Language: English (US society). NEXT ACTION if this row must be sharpened: open the 173 session pages in a browser, or find an ASME final-programme PDF via Wayback CDX on event.asme.org.",
+  "verdict": "BORDERLINE",
+  "confidence": "floor"
+ },
+ {
+  "row": 73,
+  "conference": "ASME International Conference on Ocean, Offshore and Arctic Engineering (OMAE)",
+  "outcome": "COUNTED",
+  "abstracts_numeric": 746,
+  "abstracts": "746 published papers (2024) — FLOOR; presentation-only and poster submissions are not deposited",
+  "year": 2024,
+  "rung": 4,
+  "source_url": "https://api.crossref.org/works?filter=type:proceedings-article,prefix:10.1115,from-pub-date:2024-01-01,until-pub-date:2024-12-31&rows=1000&select=DOI,container-title,event&cursor=*",
+  "spot_checks": [
+   "Ten \"Volume N:\" containers for OMAE 2024 sum to exactly 746: V1 Offshore Technology 54, V2 Structures/Safety/Reliability 99, V3 Materials/Subsea 76, V4 Ocean Space Utilization 30, V5A Ocean Engineering 94, V5B Ocean Engineering 83, V6 Polar and Arctic/CFD-FSI-AI 76, V7 Ocean Renewable Energy 105, V8 Offshore Geotechnics/Petroleum 93, V9 Philip Liu Honoring Symposium/Blue Economy 36 — the volume sum and the DOI-slug count agree",
+   "event.name on the 2024 items = \"ASME 2024 43rd International Conference on Ocean, Offshore and Arctic Engineering\" — correct meeting and correct edition number",
+   "Adjacent editions by the same method: omae2023=558, omae2025=529"
+  ],
+  "searches_used": 0,
+  "events_per_yr": 1,
+  "cadence_evidence": "Deposited every year 2023 (42nd), 2024 (43rd), 2025 (44th); https://event.asme.org/OMAE shows the next edition as an annual June conference",
+  "attendance_numeric": null,
+  "attendance_year": null,
+  "attendance_basis": null,
+  "attendance_rung": null,
+  "attendance_source_url": null,
+  "alt_figures": [
+   {
+    "value": 558,
+    "year": 2023,
+    "basis": "published papers deposited to Crossref",
+    "rung": 4
+   },
+   {
+    "value": 529,
+    "year": 2025,
+    "basis": "published papers deposited to Crossref",
+    "rung": 4
+   }
+  ],
+  "character": "CONTRIBUTED",
+  "character_evidence": "746 contributed papers across ten topical volumes from an open call; no invited-faculty framing anywhere on the event site",
+  "programme_type": "CONTRIBUTED",
+  "programme_evidence": "https://event.asme.org/OMAE — call for papers/abstracts driven event; ASME presentation-requirements policy (shared across ASME conferences) names technical papers, presentation-only submissions and poster presentations as three contributed submission types",
+  "direct_abstracts": null,
+  "ratio": null,
+  "ratio_rationale": null,
+  "duplicate_of": null,
+  "method": "Rung 4, zero searches. Crossref deposit index, ASME prefix 10.1115 (field-notes ASME route). Cursor-paged type:proceedings-article for 2023/2024/2025 and grouped the DOI suffix on ^([a-z0-9-]+?)(\\d{4})- : omae2023=558, omae2024=746, omae2025=529. Re-derived 2024 independently by summing the ten \"Volume N: ...\" container facets, which reproduced 746 exactly (listed in spot_checks) — two independent extractions agreeing is the validation. Largest recent edition = 746 (2024). EXCLUDED: all other ASME slugs sharing the prefix. Treated as a FLOOR because ASME runs a presentation-only and a poster track that receive no DOI (same structure as IMECE 723 deposited vs ~2,400 stated in wave 1); no artefact listing those tracks could be reached — event.asme.org/OMAE now advertises the 2027 edition only and links no session gallery, and omae.secure-platform.com/a exposes no solicitation id. Language: English (international ASME conference, English-only proceedings). NEXT ACTION to sharpen: Wayback CDX on event.asme.org/OMAE-2024 for a final-programme PDF, or the OMAE 2024 session gallery in a browser.",
+  "verdict": "BORDERLINE",
+  "confidence": "floor"
+ },
+ {
+  "row": 77,
+  "conference": "ASCE EWRI World Environmental and Water Resources Congress",
+  "outcome": "NEEDS_RUNG_5",
+  "abstracts_numeric": 147,
+  "abstracts": "147 published papers (2024) — FLOOR ONLY, not the meeting: ASCE states \"Paper submission is not mandatory\" and the congress runs 10 concurrent technical tracks over three days",
+  "year": 2024,
+  "rung": 4,
+  "source_url": "https://api.crossref.org/works?filter=type:proceedings-article,prefix:10.1061,from-pub-date:2024-01-01,until-pub-date:2024-12-31&rows=0&facet=container-title:300",
+  "spot_checks": [
+   "Container facet run for six separate years, same call shape: World Environmental and Water Resources Congress 2021=105, 2022=120, 2023=119, 2024=147, 2025=121, 2026=82 — a stable 105-147 band, so 147 is not an outlier",
+   "Checked the facet against the whole-prefix total (2,572 proceedings articles in 2024 across ~14 ASCE congresses) to confirm the container name isolates this congress and does not leak Geo-Congress (375), CRC (394) or CICTP (376)"
+  ],
+  "searches_used": 0,
+  "events_per_yr": 1,
+  "cadence_evidence": "https://www.ewricongress.org/about — \"The 2026 World Environmental & Water Resources Congress will feature 10 concurrent technical tracks over three days\"; an ASCE Library proceedings volume exists for every year 2021-2026",
+  "attendance_numeric": 1100,
+  "attendance_year": 2020,
+  "attendance_basis": "UNSPECIFIED",
+  "attendance_rung": "A1",
+  "attendance_source_url": "https://web.archive.org/web/20190710144844id_/https://www.ewricongress.org/sites/ewricongress.org/2020/files/inline-files/2020-EWRI-Congress-and-Watershed-Management-Sponsorship-Prospectus.pdf",
+  "alt_figures": [
+   {
+    "value": 750,
+    "year": 2026,
+    "basis": "UNSPECIFIED — \"Approximately 750 leading engineers and scientists ... attend the EWRI Congress each year\", organiser about page https://www.ewricongress.org/about",
+    "rung": "A3"
+   },
+   {
+    "value": 105,
+    "year": 2021,
+    "basis": "published papers deposited to Crossref (floor)",
+    "rung": 4
+   },
+   {
+    "value": 121,
+    "year": 2025,
+    "basis": "published papers deposited to Crossref (floor)",
+    "rung": 4
+   }
+  ],
+  "character": "CONTRIBUTED",
+  "character_evidence": "https://www.ewricongress.org/call-abstracts — an open, paid call for abstracts ($50 non-refundable submission fee covering two abstracts, waived for student members), mandatory in-person presenter registration, and papers explicitly optional. Ten concurrent technical tracks over three days.",
+  "programme_type": "CONTRIBUTED",
+  "programme_evidence": "The abstract, not the paper, is the unit of acceptance: \"Authors wishing to publish a final paper in the conference proceedings will need to submit the paper by Wednesday, November 19, 2025. Paper submission is not mandatory.\" (https://www.ewricongress.org/call-abstracts). The programme page lists only concurrent technical sessions plus a handful of keynotes and workshops.",
+  "direct_abstracts": null,
+  "ratio": 0.7,
+  "ratio_rationale": "Judged 70% for THIS congress, not borrowed. Three things about EWRI put it high: (1) the congress is built on a paid open call for abstracts with a mandatory presenter-registration rule, so almost everyone in the room is there to present or co-present; (2) the programme page shows nothing but concurrent technical sessions, two keynote slots and ticketed tours — there is no CE-course or live-demo spine and no trade-show visitor stream (the exhibit hall is a handful of firms, 15 countries represented); (3) the deposit index shows only 105-147 of the presentations also produce a paper, which tells us papers are a minority option, not that the programme is small. Set against the wave-1 engineering anchors, this is the same shape as CFM (judged 90% on 850 delegates) but with a larger non-presenting professional-practice audience, which is why it sits below CFM rather than at it. At 1,100 that implies ~770; at the organiser's current ~750 it implies ~525. The spread between the two attendance figures matters more here than the ratio does.",
+  "duplicate_of": null,
+  "method": "Abstract ladder: rung 4 (Crossref ASCE deposit) produced 147 for 2024 and a 105-147 band across 2021-2026 — recorded as a FLOOR, never as the meeting, because ASCE's own call-for-abstracts page says paper submission is not mandatory. Zero searches. ROUTE THAT IS BLOCKED AND IS THE REASON THIS ROW IS NEEDS_RUNG_5: the full technical programme lives on eventscribe at https://ewricongress2026.eventscribe.net/ (linked as \"Detailed Agenda\" from https://www.ewricongress.org/program), and every path on that host returns HTTP 403 with a Cloudflare \"Attention Required! ... You are unable to access eventscribe.net\" interstitial — tested on /, /agenda.asp, /searchbyposter.asp, /searchbybrowsetopic.asp and /ajaxcalls/GetPresentations.asp with a desktop Chrome user-agent. That is a bot wall on a JS programme platform, i.e. genuine rung 5, not a credential wall. Workarounds tried and failed: the 2019 final-programme PDF recovered through Wayback CDX (https://web.archive.org/web/20190710144711id_/https://www.ewricongress.org/sites/ewricongress.org/2020/files/inline-files/ewri-2019-final-program.pdf, HTTP 200, application/pdf, 7,827,946 bytes, 20 pages) is RASTERISED — pdftotext yields 0 characters in both -layout and -raw, so there is nothing to count; www.asce.org/education-and-events/events/ewri-congress 404s. Rung 9 run in full: attendance 1,100 from the sponsorship prospectus (A1) with a DISAGREEMENT against the organiser's current \"approximately 750 ... each year\" on the about page (A3) — recorded, not averaged. Language: English (US society, English-only congress).",
+  "verdict": "NEEDS_RUNG_5",
+  "confidence": "floor"
+ },
+ {
+  "row": 89,
+  "conference": "POMS Annual Conference",
+  "outcome": "COUNTED",
+  "abstracts_numeric": 1560,
+  "abstracts": "1,560 accepted presentations (2026, 36th Annual POMS Conference, Reno)",
+  "year": 2026,
+  "rung": 3,
+  "source_url": "https://drive.google.com/file/d/165pf73Pbzsy0-G9OF53lV-DOAYpsaSr-/view?usp=sharing",
+  "spot_checks": [
+   "Both extraction modes agree EXACTLY: pdftotext -layout and pdftotext -raw each give 1,560 unique IDs matching \\b148-[0-9]{4}\\b (1,582 occurrences, i.e. 22 IDs printed twice) — per the field notes, agreement between the two modes is the validation",
+   "IDs are confined to the Presentation Schedule: the first match is on text line 3,832 and the last on 19,672 of 24,982, i.e. inside the section the table of contents puts at page 111 of 400 — none appears in the welcome messages, awards or sponsor pages",
+   "The two plenary sessions (Prof. David Simchi-Levi, page 88; Prof. Dipak Jain, page 91) carry NO 148- ID and are therefore excluded automatically, which is the invited-speaker exclusion working mechanically",
+   "Assigning every ID to its enclosing session-type header splits 1,560 as 1,348 in \"Invited Session\" blocks and 212 in \"Contributed Session\" blocks — see the disagreement note in method"
+  ],
+  "searches_used": 0,
+  "events_per_yr": 1,
+  "cadence_evidence": "https://www.poms.org/conferences — annual, unbroken: 2019 Washington DC, 2021 online, 2022 online, 2023 Orlando, 2024 Minneapolis, 2025 Atlanta, 2026 Reno (36th), 2027 Orlando (37th), 2028 Dallas (38th), 2030 Denver (40th)",
+  "attendance_numeric": 1433,
+  "attendance_year": 2026,
+  "attendance_basis": "DELEGATES",
+  "attendance_rung": "A5",
+  "attendance_source_url": "https://pomsmeetings.org/EventsNet/EventRegistration/RegisteredParticipants.aspx?ev=148",
+  "alt_figures": [
+   {
+    "value": 212,
+    "year": 2026,
+    "basis": "STRICT reading — presentations inside sessions labelled \"Contributed Session\" only",
+    "rung": 3
+   },
+   {
+    "value": 1500,
+    "year": 2016,
+    "basis": "\"Over 1500 presentations\", organiser banner on the legacy conference site http://www.pomsmeetings.org/ — stated, not counted",
+    "rung": 2
+   }
+  ],
+  "character": "CONTRIBUTED",
+  "character_evidence": "A single open abstract-submission system runs the whole programme (\"Submit Abstract\", \"My Abstracts\", \"Browse Accepted Abstracts\", all pointing at pomsmeetings.org/EventsNet/AbstractSubmission/Default.aspx?pr=1&ev=148), 1,560 accepted abstracts appear in the programme book with their own IDs, and only two plenary lectures sit outside it",
+  "programme_type": "CONTRIBUTED",
+  "programme_evidence": "POMS 2026 Program Book, Presentation Schedule (pages 111-360 of 400): every entry is an ID-numbered submitted abstract with authors and a 3-4 sentence summary, grouped into 90-minute parallel sessions across tracks",
+  "direct_abstracts": null,
+  "ratio": null,
+  "ratio_rationale": null,
+  "duplicate_of": null,
+  "method": "Rung 3, zero searches. Route (new, not in the field notes): POMS publishes its full CONFERENCE PROGRAM BOOK as a public Google Drive PDF linked from the edition site. https://www.poms.org/conferences lists every edition and links https://pomsmeetings.org/conf-2026/; on that page the link labelled \"Program Book\" is https://drive.google.com/file/d/165pf73Pbzsy0-G9OF53lV-DOAYpsaSr-/view, downloadable without a browser as https://drive.google.com/uc?export=download&id=165pf73Pbzsy0-G9OF53lV-DOAYpsaSr- (HTTP 200, application/octet-stream, 50,183,301 bytes, PDF 1.7, 400 pages, created 6 May 2026). COUNT: every accepted presentation carries an abstract ID of the form <event-id>-<4 digits>, here 148-NNNN, matching the EventsNet event id in the site's own URLs. grep -oE \"\\b148-[0-9]{4}\\b\" | sort -u | wc -l = 1,560 under BOTH pdftotext -layout and pdftotext -raw. EXCLUDED: the two plenary lectures, which carry no ID; nothing else was removed. DISAGREEMENT, flagged not decided (field-notes counting rule 6, the INFORMS case): 1,348 of the 1,560 sit in blocks headed \"Invited Session\" and 212 in blocks headed \"Contributed Session\". At POMS, as at INFORMS, \"invited\" describes a track chair recruiting a session rather than a plenary lecture — the presenter still submits the abstract through the same public call, and the programme book gives invited and contributed entries an identical form. I therefore counted all 1,560 and recorded 212 as the strict-reading alternative so the orchestrator can apply a harsher rule; note that under the strict reading this row would fall from VERIFIED to OUT, so it is a consequential call. Attendance came free from the same site: https://pomsmeetings.org/EventsNet/EventRegistration/RegisteredParticipants.aspx?ev=148 serves the complete registered-participant directory as static HTML (1,394,857 bytes) — 1,433 rows, each with a unique e-mail address, counted as 1,433 distinct registrants (38 countries listed in its filter). That is an A5-class counted artefact obtained WITHOUT a browser. Language: English (US society, English-language conference).",
+  "verdict": "VERIFIED",
+  "confidence": "exact"
+ },
+ {
+  "row": 98,
+  "conference": "ISOPE International Ocean and Polar Engineering Conference",
+  "outcome": "COUNTED",
+  "abstracts_numeric": 794,
+  "abstracts": "794 refereed papers in the technical programme (2025, Seoul), of which 71 are marked \"[Proceedings only]\" — 723 actually presented",
+  "year": 2025,
+  "rung": 3,
+  "source_url": "https://www.isope.org/wp-content/uploads/2025/06/2025-Updated-Program-0602.pdf",
+  "spot_checks": [
+   "Two further editions counted by the identical parse: 2024 Rhodes = 791 papers (19 proceedings-only) and 2026 Orlando = 476 papers (117 proceedings-only). 791 and 794 in consecutive years is a stable series; the 2026 Orlando edition is genuinely smaller, as ISOPE editions in Asia and Europe run larger than US ones",
+   "Cross-check against the programme's own stated structure: the 2025 cover says \"Refereed papers from 40+ countries in 147 technical sessions\" and the parse finds 153 \"Chair:\" lines, i.e. 794/147 = 5.4 papers per session; 2024 says 141 sessions and the parse finds 142 Chair lines at 791/141 = 5.6; 2026 says 96 sessions, parse finds 100, at 476/96 = 5.0. All three land at ~5 papers per session, which is what the printed session blocks actually show",
+   "Non-paper blocks reconcile: 2026 has 597 blank-line-separated blocks of which 476 are papers and 100 are session headers, leaving ~21 of front and back matter"
+  ],
+  "searches_used": 0,
+  "events_per_yr": 1,
+  "cadence_evidence": "https://www.isope.org/conferences/ links a separate Updated Program with Paper List for 2024 (Rhodes), 2025 (Seoul) and 2026 (Orlando); the 2026 cover reads \"The Thirty-sixth (2026) International Ocean and Polar Engineering Conference ... May 31-June 5\" and the call for ISOPE-2027 Osaka is already posted — annual without a break",
+  "attendance_numeric": null,
+  "attendance_year": null,
+  "attendance_basis": null,
+  "attendance_rung": null,
+  "attendance_source_url": null,
+  "alt_figures": [
+   {
+    "value": 791,
+    "year": 2024,
+    "basis": "refereed papers in the technical programme (19 proceedings-only)",
+    "rung": 3
+   },
+   {
+    "value": 476,
+    "year": 2026,
+    "basis": "refereed papers in the technical programme (117 proceedings-only)",
+    "rung": 3
+   },
+   {
+    "value": 723,
+    "year": 2025,
+    "basis": "strictly PRESENTED papers = 794 less the 71 marked \"[Proceedings only]\"",
+    "rung": 3
+   }
+  ],
+  "character": "CONTRIBUTED",
+  "character_evidence": "The programme is nothing but refereed contributed papers in parallel technical sessions: \"Refereed papers from 40+ countries in 147 technical sessions, Plenary, Keynote and Focus sessions, Workshops\". The plenary and keynote items are printed separately, outside the numbered sessions, and are excluded.",
+  "programme_type": "CONTRIBUTED",
+  "programme_evidence": "ISOPE-2025 Updated Program with Paper List, cover page and the numbered session blocks that follow",
+  "direct_abstracts": null,
+  "ratio": null,
+  "ratio_rationale": null,
+  "duplicate_of": null,
+  "method": "Rung 3, zero searches. Route (new, not in the field notes): ISOPE's own proceedings host publications.isope.org returns HTTP 403 on the directory and onepetro.org/ISOPE is behind a Cloudflare \"Just a moment...\" challenge, BUT https://www.isope.org/conferences/ links a free per-edition \"Full Updated Program with Paper List\" PDF for each recent year. Downloaded https://www.isope.org/wp-content/uploads/2025/06/2025-Updated-Program-0602.pdf (HTTP 200, application/pdf, 14,312,680 bytes, 94 pages) into a private directory. COUNT: pdftotext -layout, then cut the text at the start of the paper list (the first numbered session block, \"2. ...\"), drop standalone page-number lines, split on blank lines, and count blocks whose LAST line ends in a country name — because ISOPE prints each paper as one block of title lines followed by author/affiliation lines terminating in the country. That gives 794 for 2025, 791 for 2024 and 476 for 2026. EXCLUDED: plenary, keynote and focus items (printed outside the numbered sessions, no author-country block of this shape), session-header blocks (\"N. TRACK ... / Day / Chair:\"), workshops, committee meetings and all front matter. SEPARATELY IDENTIFIED, not excluded from the headline: the 71 papers carrying \"[Proceedings only]\" in 2025 (117 in 2026, 19 in 2024) are published but not presented; the strictly-presented figure for 2025 is therefore 723, recorded in alt_figures. This is NOT a deposit floor — ISOPE requires a refereed full paper for every slot, so the programme is the complete meeting. The pdftotext -raw mode is NOT a usable second extraction here (it collapses the blank lines the block rule depends on and returns a single block); the cross-check used instead is the programme's own stated session count, three editions agreeing at ~5 papers per session (see spot_checks). FLAG FOR RUPERT: at 794 this row misses the 800 line by six papers on a block-parsing count, so it is the closest call in this wave; if the parse is off by even 1% the row is BORDERLINE rather than OUT. Language: English (ISOPE publishes only in English).",
+  "verdict": "OUT",
+  "confidence": "derived"
+ },
+ {
+  "row": 100,
+  "conference": "IEEE International Microwave Symposium (IMS) / Microwave Week",
+  "outcome": "COUNTED",
+  "abstracts_numeric": 411,
+  "abstracts": "411 papers across Microwave Week 2025 (IMS 286 + RFIC 125), plus ARFTG at roughly 25-50 — about 440-460 for the whole week",
+  "year": 2025,
+  "rung": 4,
+  "source_url": "https://api.crossref.org/works?filter=type:proceedings-article,prefix:10.1109,from-pub-date:2025-01-01,until-pub-date:2025-12-31&rows=0&facet=container-title:2000",
+  "spot_checks": [
+   "Three years by the same facet call: IMS 2023 = 314, IMS 2024 = 277, IMS 2025 = 286; RFIC 2023 = 88, 2024 = 101, 2025 = 125. Stable, no series break",
+   "ARFTG sized from the 2026 facet, where two editions are separately named: \"2026 106th ARFTG Microwave Measurement Conference (ARFTG)\" = 27 and \"2026 107th ...\" = 22. ARFTG therefore adds only tens, not hundreds",
+   "Exact-container discipline applied per the field notes: \"2025 IEEE Wireless Antenna and Microwave Symposium (WAMS)\" = 409 sits right beside IMS in the facet and is a DIFFERENT conference (a China-based symposium, not part of Microwave Week) — it is excluded. Substring matching on \"Microwave\" would have added it and nearly doubled the row"
+  ],
+  "searches_used": 0,
+  "events_per_yr": 1,
+  "cadence_evidence": "IEEE deposits a distinctly-named IMS container every year — \"2023 IEEE/MTT-S International Microwave Symposium - IMS 2023\", \"... IMS 2024\", \"... IMS 2025\" — and an RFIC container alongside it in each of those years plus 2026",
+  "attendance_numeric": null,
+  "attendance_year": null,
+  "attendance_basis": null,
+  "attendance_rung": null,
+  "attendance_source_url": null,
+  "alt_figures": [
+   {
+    "value": 402,
+    "year": 2023,
+    "basis": "IMS 314 + RFIC 88, papers deposited to Crossref",
+    "rung": 4
+   },
+   {
+    "value": 378,
+    "year": 2024,
+    "basis": "IMS 277 + RFIC 101, papers deposited to Crossref",
+    "rung": 4
+   }
+  ],
+  "character": "CONTRIBUTED",
+  "character_evidence": "IMS and RFIC are full-paper conferences with an open call and published proceedings; every accepted paper is deposited, which is why the deposit is the count rather than a floor",
+  "programme_type": "CONTRIBUTED",
+  "programme_evidence": "IEEE Xplore proceedings volumes for IMS and RFIC, reflected one-to-one in the Crossref container facet",
+  "direct_abstracts": null,
+  "ratio": null,
+  "ratio_rationale": null,
+  "duplicate_of": null,
+  "method": "Rung 4, zero searches, field-notes IEEE route. Called https://api.crossref.org/works?filter=type:proceedings-article,prefix:10.1109,from-pub-date:<Y>-01-01,until-pub-date:<Y>-12-31&rows=0&facet=container-title:2000 for 2023, 2024, 2025 and 2026, double-HTML-unescaped every facet key, and read the EXACT container titles. Never used query.container-title, which does not filter (the 2025 prefix total is 332,175). INCLUDED as Microwave Week: \"2025 IEEE/MTT-S International Microwave Symposium - IMS 2025\" = 286 and \"2025 IEEE Radio Frequency Integrated Circuits Symposium (RFIC)\" = 125, total 411; ARFTG adds a further ~25-50 on the 2026 evidence (facet depth 3,000 does not reach ARFTG in 2023-2025, so its exact 2025 figure is not asserted). EXCLUDED: \"2025 IEEE Wireless Antenna and Microwave Symposium (WAMS)\" = 409, which is a separate conference and not part of Microwave Week — this is the acronym-collision trap in the field notes, and including it would have taken the row from ~440 to ~850 and flipped the verdict. Also excluded: everything else on the IEEE prefix. The deposit is treated as the COUNT, not a floor, because IMS and RFIC publish a full paper for every accepted slot. Even the most generous reading of the whole week (IMS + RFIC + ARFTG + the interactive-forum posters that are themselves IMS papers) stays under 500, i.e. positive evidence well below the 800 line. Language: English. NOTE: this row is about contributed technical papers only; Microwave Week's ~9,000-strong attendance is dominated by the co-located industry exhibition, which under the settled unit says nothing about the paper count.",
+  "verdict": "OUT",
+  "confidence": "exact"
+ },
+ {
+  "row": 110,
+  "conference": "JSAE Annual Congress (Spring and Autumn)",
+  "outcome": "COUNTED",
+  "abstracts_numeric": 416,
+  "abstracts": "416 contributed lectures (2026 Autumn Congress, the larger of the two 2026 editions); Spring 2026 = 400. PER EDITION, not summed — events_per_yr = 2",
+  "year": 2026,
+  "rung": 4,
+  "source_url": "https://gakkai-web.net/jsae/a/2026/program/data/jp/program.html",
+  "spot_checks": [
+   "TWO INDEPENDENT ARTEFACTS AGREE EXACTLY for Spring 2026. (a) The programme page https://gakkai-web.net/jsae/s/2026/program/data/jp/program.html contains 400 <p class=\"article-title\"> entries, each in a table row whose <th> carries a unique 3-digit 講演番号, 400 distinct numbers running 001-396. (b) JSAE separately publishes the Summarized Papers as three daily ZIPs — /files_publish/news/2744/0527jsae2026s_sp.zip (70,247,446 bytes, 161 PDFs), 2745/0528jsae2026s_sp.zip (50,214,526 bytes, 108 PDFs) and 2746/0529jsae20262_sp.zip (56,148,983 bytes, 131 PDFs) — 161+108+131 = 400, matching the programme count exactly",
+   "Session structure cross-check: Spring 2026 = 400 lectures in 90 sessions (4.4 per session), Autumn 2026 = 416 in 85 sessions (4.9 per session) — consistent with the printed rule on the page that \"6講演以上のセッションでは，3講演後に10分間の休憩があります\" (sessions of six or more lectures get a break after the third)",
+   "Numbering is essentially contiguous (001-396 for 400 Spring entries), so there is no block-allocation inflation of the kind the field notes warn about"
+  ],
+  "searches_used": 0,
+  "events_per_yr": 2,
+  "cadence_evidence": "https://www.jsae.or.jp/assoc/event/gakkai/congress/ is titled 春季・秋季大会（学術講演会） — spring and autumn congresses. Both 2026 editions exist with their own programme sites: https://www.jsae.or.jp/taikai/2026haru/ (spring, Pacifico Yokohama, 27-29 May) and https://www.jsae.or.jp/taikai/2026aki/ (autumn). Reported as the larger EDITION with events_per_yr = 2, never as the annual sum of 816.",
+  "attendance_numeric": null,
+  "attendance_year": null,
+  "attendance_basis": null,
+  "attendance_rung": null,
+  "attendance_source_url": null,
+  "alt_figures": [
+   {
+    "value": 400,
+    "year": 2026,
+    "basis": "contributed lectures, 2026 Spring Congress (90 sessions)",
+    "rung": 4
+   },
+   {
+    "value": 816,
+    "year": 2026,
+    "basis": "spring + autumn SUMMED — recorded only to show it is NOT the figure used, per the two-meetings-a-year rule",
+    "rung": 4
+   }
+  ],
+  "character": "CONTRIBUTED",
+  "character_evidence": "Every programme entry is an author-submitted 講演 with title, underlined presenting author, affiliation and a Japanese abstract; sessions are 部門委員会-organised OS with named organisers, and the lectures inside them are submitted through the open 講演申し込み (call closed 29 May for the autumn congress)",
+  "programme_type": "CONTRIBUTED",
+  "programme_evidence": "https://gakkai-web.net/jsae/s/2026/program/data/jp/program.html — セッション一覧 with a per-session table headed No. / 配信 / タイトル・著者（所属）",
+  "direct_abstracts": null,
+  "ratio": null,
+  "ratio_rationale": null,
+  "duplicate_of": null,
+  "method": "Rung 4, zero searches. LANGUAGE: Japanese throughout — the whole route is Japanese-only and returns nothing in English. Route (extends the field notes' gakkai-web.net entry, which recorded that host for IEEJ only): JSAE also publishes its 学術講演会 programme on gakkai-web.net, at https://gakkai-web.net/jsae/{s|a}/<year>/program/data/jp/program.html — s = 春季 (spring), a = 秋季 (autumn) — reached from https://www.jsae.or.jp/taikai/<year>{haru|aki}/outline/ via the link labelled タイムテーブル・セッション・講演一覧. Unlike IEEJ's range-printing 分野別一覧, JSAE prints ONE TABLE ROW PER LECTURE, so no range expansion is needed. COUNT: fetched program.html (HTTP 200, 560,519 bytes for autumn 2026; 535,894 for spring 2026), then counted <tr> blocks containing <p class=\"article-title\"> and read the 3-digit 講演番号 out of each row's <th>: autumn 2026 = 416 titles in 85 sessions, spring 2026 = 400 titles in 90 sessions, every number distinct. WARNING for reuse: the naive regex <tr>\\s*<th>(\\d{3})</th> silently returns only 314 of the 400 because of intervening whitespace — parse the row first, then the <th>. EXCLUDED: nothing was subtracted; the 学術講演会 programme contains only contributed lectures, and the congress's invited/特別講演 and forums sit in the separate 大会 programme PDF. Corroborated independently by the Summarized Paper ZIPs (see spot_checks), which is a genuinely separate artefact from the programme HTML. Series check: both 2026 editions land at 400-416, so this is the current scale, not a one-off. Older gakkai-web paths for 2025 return HTTP 404, so only the 2026 editions were countable. Language: Japanese (大会 / 学術講演会 / 講演件数).",
+  "verdict": "OUT",
+  "confidence": "exact"
+ },
+ {
+  "row": 111,
+  "conference": "Japan Concrete Institute Annual Convention",
+  "outcome": "COUNTED",
+  "abstracts_numeric": 539,
+  "abstracts": "539 contributed papers in コンクリート工学年次論文集 vol 47 (2025) — 543 records less 4 研究委員会 committee reports",
+  "year": 2025,
+  "rung": 4,
+  "source_url": "https://data.jci-net.or.jp/data_html/47/2025.html",
+  "spot_checks": [
+   "Three volumes counted by the identical parse of the 年度別目次 tables: vol 47 (2025) = 543 records, vol 46 (2024) = 537, vol 45 (2023) = 463. A steady 460-545 band",
+   "Column structure verified from the table header, 年度 / 巻 / 号 / 主題 / 筆頭著者 — one row per paper, so a row count IS a paper count; the 号 column splits vol 47 as issue 1 = 354 and issue 2 = 189, summing to 543",
+   "Committee reports isolated by searching 主題 for 研究委員会: exactly 4 in vol 47 (e.g. コンクリートにおける石灰石微粉末の実用性に関する研究委員会), removed to give 539. The remaining entries are ordinary research papers (last three: 遮音壁の効果 / 全国道路橋データベース / 鉄道コンクリート構造物の維持管理)",
+   "Encoding: the TOC pages are Shift-JIS (cp932) and read as mojibake in UTF-8, per the field-notes encoding warning"
+  ],
+  "searches_used": 0,
+  "events_per_yr": 1,
+  "cadence_evidence": "https://www.jci-net.or.jp/j/events/conv/index.html lists コンクリート工学年次大会 for every year from 2001 to 2026 without a gap (2026 Nara, 2025 Morioka, 2024 Matsuyama, 2023 Kyushu, ...); the proceedings volume number increments by one each year, 第1巻 = 1979 through 第47巻 = 2025",
+  "attendance_numeric": null,
+  "attendance_year": null,
+  "attendance_basis": null,
+  "attendance_rung": null,
+  "attendance_source_url": null,
+  "alt_figures": [
+   {
+    "value": 537,
+    "year": 2024,
+    "basis": "records in 年次論文集 vol 46 (committee reports not separated)",
+    "rung": 4
+   },
+   {
+    "value": 463,
+    "year": 2023,
+    "basis": "records in 年次論文集 vol 45 (committee reports not separated)",
+    "rung": 4
+   }
+  ],
+  "character": "CONTRIBUTED",
+  "character_evidence": "The convention is built on the peer-reviewed コンクリート工学年次論文集: an open call (submission now runs through https://pub.confit.atlas.jp/ja/event/jci2026/content/submissions) producing 460-545 papers a year, each presented at the convention",
+  "programme_type": "CONTRIBUTED",
+  "programme_evidence": "JCI 論文検索 database, 年度別目次 for 第47巻 (2025)",
+  "direct_abstracts": null,
+  "ratio": null,
+  "ratio_rationale": null,
+  "duplicate_of": null,
+  "method": "Rung 4, zero searches. LANGUAGE: Japanese (年次大会 / 年次論文集 / 講演) — the entire route is Japanese and nothing equivalent exists in English. Route (new, not in the field notes): JCI runs its own proceedings database at https://data.jci-net.or.jp/search.shtml, whose 年度別目次 block links one static per-volume table of contents per year, https://data.jci-net.or.jp/data_html/<volume>/<year>.html, covering 第1巻 1979 through 第47巻 2025. The host 403s on the directory (data_pdf/) but serves these TOC pages fine (HTTP 200, text/html, 152,616 bytes for 2025). COUNT: decoded as cp932, extracted every <TR> and its <TD> cells, kept rows with the five-column shape 年度/巻/号/主題/筆頭著者 = 543 records, then removed the 4 whose 主題 contains 研究委員会 = 539 contributed papers. EXCLUDED: the table header row and the four committee reports; nothing else. THE ROUTE THAT IS BLOCKED, and why this is not queued for rung 5: the convention programme itself is on Confit (https://pub.confit.atlas.jp/ja/event/jci2026 for 2026, https://confit.atlas.jp/guide/event/jci<year>/top for 2015-2025), which returns HTTP 202 with a zero-byte body exactly as the field notes record — but the 論文集 database already gives a complete count of the paper track, so a browser would only add whatever non-paper 一般講演 the convention may run. RESIDUAL RISK, stated plainly: if JCI schedules presentations that produce no 年次論文, they are not in this count; the gap would have to exceed 260 to lift this row over 800, which nothing in the convention description suggests. J-STAGE is NOT a route here — service=3 with issn 1348-2149 and 0913-4913 both return ERR_001.",
+  "verdict": "OUT",
+  "confidence": "exact"
+ },
+ {
+  "row": 123,
+  "conference": "KSCE Convention (Korean Society of Civil Engineers Annual Conference)",
+  "outcome": "COUNTED",
+  "abstracts_numeric": 1053,
+  "abstracts": "1,053 papers (KSCE 2024 Convention) — the largest of the four editions countable; 2025 fell to 719, see the flag in Method",
+  "year": 2024,
+  "rung": 4,
+  "source_url": "https://www.dbpia.co.kr/journal/voisNodeList?voisId=VOIS00762739&publicationId=PLCT00001494&currPage=1&pageSize=3000",
+  "spot_checks": [
+   "Four consecutive editions counted by the identical parse: KSCE 2022 = 888 papers + 101 session headers (totCnt 989), 2023 = 928 + 105 (1,033), 2024 = 1,053 + 109 (1,162), 2025 = 719 + 93 (812). Papers + headers reproduces the API's own totCnt exactly in all four years, which is the internal cross-check",
+   "Papers are separated from session headers on a structural field, not a guess: a paper row carries autr_nm (semicolon-separated author names with DBpia author ids) plus frst_page and end_page; a session header row carries none of those and instead has nodeId / iprd_NM. Verified by eye on the 2025 list, where 도로공학 and 교통 & 도로 & 철도공학 are headers and the rows between them are papers",
+   "Edition identity confirmed from the issue index: voisTitleKr 대한토목학회 2024 컨벤션 / voisTitleEn KSCE 2024 CONVENTION, published 2024-10-16"
+  ],
+  "searches_used": 1,
+  "events_per_yr": 1,
+  "cadence_evidence": "The DBpia issue index for publication PLCT00001494 (대한토목학회 학술대회) lists 23 issues, one per year, each titled 대한토목학회 <year> 컨벤션, with publication dates every October or November: 2025-11-12, 2024-10-16, 2023-10-20, 2022-10-19, 2021-10-20, 2020-10-21 — annual without a gap",
+  "attendance_numeric": null,
+  "attendance_year": null,
+  "attendance_basis": null,
+  "attendance_rung": null,
+  "attendance_source_url": null,
+  "alt_figures": [
+   {
+    "value": 719,
+    "year": 2025,
+    "basis": "papers in the KSCE 2025 Convention proceedings (DBpia)",
+    "rung": 4
+   },
+   {
+    "value": 928,
+    "year": 2023,
+    "basis": "papers in the KSCE 2023 Convention proceedings (DBpia)",
+    "rung": 4
+   },
+   {
+    "value": 888,
+    "year": 2022,
+    "basis": "papers in the KSCE 2022 Convention proceedings (DBpia)",
+    "rung": 4
+   }
+  ],
+  "character": "CONTRIBUTED",
+  "character_evidence": "The proceedings are ~900-1,050 short Korean-language conference papers a year, grouped under ~100 subject-session headers (도로공학, 교통 & 도로 & 철도공학, ...), each with named authors and page ranges — the standard Korean society 학술대회 shape the field notes describe for KIEE and KSME",
+  "programme_type": "CONTRIBUTED",
+  "programme_evidence": "DBpia publication 대한토목학회 학술대회 (PLCT00001494), issue 대한토목학회 2024 컨벤션",
+  "direct_abstracts": null,
+  "ratio": null,
+  "ratio_rationale": null,
+  "duplicate_of": null,
+  "method": "Rung 4, ONE search (Korean). LANGUAGE: Korean — the search was 대한토목학회 정기학술대회 논문집 발표 논문 편수, and it produced no figure directly; what it produced was the DBpia publication id, which is what made the count possible. THE SOCIETY HOST IS DEAD, NOT WALLED: https://www.ksce.or.kr/ times out after 45s on BOTH http and https, and convention.ksce.or.kr times out identically, while conf.ksce.or.kr does not resolve. A browser fails the same way, so per the field notes this is NOT a rung-5 queue entry. ROUTE THAT WORKED (new, and it should generalise to every Korean society whose own site is unreachable): DBpia serves its conference-proceedings contents through two JSON endpoints that need no login and no browser. (1) POST https://www.dbpia.co.kr/journal/selectIssueIndexList with publicationId=PLCT00001494 returns the 23 yearly issues with their voisId. (2) GET https://www.dbpia.co.kr/journal/voisNodeList?voisId=<VOIS id>&publicationId=PLCT00001494&currPage=1&pageSize=3000 returns the COMPLETE contents in one call (pageSize is honoured up to at least 3,000; totCnt tells you when you have it all). PAGINATION TRAP: currPage behaves as a row OFFSET, not a page number, so currPage=2 returns rows 2..100 and a naive page loop silently re-reads the same rows — pass pageSize larger than totCnt instead. COUNT: rows with a non-empty autr_nm = papers; rows without = session headers. 2024 = 1,053 papers. EXCLUDED: the 109 session headers; nothing else needed excluding, as the proceedings carry no keynote entries. FLAG FOR RUPERT: the 2025 edition drops to 719 from 1,053, a 32% fall after three years at 888-1,053. I have recorded 2024 as the figure and 2025 as an alternative rather than letting one low year decide the tier, the same call the pilot made for JSME; if 719 is real and not a thin deposit, this row is OUT rather than BORDERLINE. Nothing distinguishes the two possibilities from outside DBpia, and the society site cannot be reached to check.",
+  "verdict": "BORDERLINE",
+  "confidence": "exact"
+ },
+ {
+  "row": 126,
+  "conference": "KSAS Fall Conference",
+  "outcome": "COUNTED",
+  "abstracts_numeric": 1008,
+  "abstracts": "1,008 presentations (2026 춘계학술대회, the larger edition); the Fall Conference itself ran 823 in 2025. PER EDITION, events_per_yr = 2",
+  "year": 2026,
+  "rung": 4,
+  "source_url": "https://ksas.or.kr/proceedings/2026a/TrackList.asp?ST_TYPE=0&ST_DATE=20260401",
+  "spot_checks": [
+   "Four editions crawled identically: 2026 spring 1,008 ids in 125 sessions, 2025 fall 823 in 110, 2025 spring 799 in 105, 2024 fall 709 in 96. The per-session sum equals the unique-id count in every one of the four, i.e. no id appears in two sessions and none is lost",
+   "THE POSTER TRACK WAS NEARLY MISSED, and this is the reusable lesson: oral paper ids are Latin (WA4-1, WB2-3) but POSTER ids are Hangul-prefixed (P공기-1, P추진-2). A first pass with [A-Za-z]{1,3}\\d{1,3}-\\d{1,3} returned 522 for KSCE 2025 fall with all 16 poster sessions reporting ZERO papers; widening the class to [A-Za-z\\uac00-\\ud7a3] took the same edition to 823. A zero-session report is the tell",
+   "Session enumeration is complete because it comes from the society's own day tabs: TrackList.asp?ST_TYPE=1 (posters) plus TrackList.asp?ST_TYPE=0&ST_DATE=<YYYYMMDD> for each conference day, exactly the KSME shape in the field notes"
+  ],
+  "searches_used": 0,
+  "events_per_yr": 2,
+  "cadence_evidence": "https://ksas.or.kr/ links a proceedings site per edition with the suffix a = 춘계 (spring, early April), b = 추계 (autumn, mid-November) and c = 우주학술대회 (a separate Space conference in June). Both a and b exist for 2024, 2025 and 2026, so the society runs two general conferences a year; the June space meeting is a distinct series and is NOT added here",
+  "attendance_numeric": null,
+  "attendance_year": null,
+  "attendance_basis": null,
+  "attendance_rung": null,
+  "attendance_source_url": null,
+  "alt_figures": [
+   {
+    "value": 823,
+    "year": 2025,
+    "basis": "presentations at the 2025 FALL conference (2025b), the edition this row is named after",
+    "rung": 4
+   },
+   {
+    "value": 799,
+    "year": 2025,
+    "basis": "presentations at the 2025 spring conference (2025a)",
+    "rung": 4
+   },
+   {
+    "value": 709,
+    "year": 2024,
+    "basis": "presentations at the 2024 fall conference (2024b)",
+    "rung": 4
+   }
+  ],
+  "character": "CONTRIBUTED",
+  "character_evidence": "The proceedings site separates 특별강연 and 초청강연 (special and invited lectures) onto their own pages, away from the 논문목록; everything counted here sits inside numbered oral or poster sessions with a 좌장 (chair) and per-paper 초록보기 / 논문보기 links",
+  "programme_type": "CONTRIBUTED",
+  "programme_evidence": "https://ksas.or.kr/proceedings/2025b/ — 논문목록 with 구두발표 tabs per day and a 포스터발표 tab",
+  "direct_abstracts": null,
+  "ratio": null,
+  "ratio_rationale": null,
+  "duplicate_of": null,
+  "method": "Rung 4, zero searches. LANGUAGE: Korean (학술대회 / 논문 / 발표). Route: KSAS runs the SAME classic ASP proceedings platform the field notes record for KSME, at https://ksas.or.kr/proceedings/<edition>/ where edition = <year>a (춘계/spring), <year>b (추계/autumn) or <year>c (우주/space). The index page is a frameset whose frame src is TrackList.asp; post.asp lists the day tabs. Crawl: (1) GET TrackList.asp?ST_TYPE=1 and TrackList.asp?ST_TYPE=0&ST_DATE=<YYYYMMDD> for each day named in post.asp, collecting SessionPaperList.asp?code=<n> links; (2) GET each session page and take the set of presentation ids. Pages are cp949 (EUC-KR) and must be decoded as such. 2026 spring = 125 sessions, 1,008 unique ids. EXCLUDED: 특별강연 and 초청강연, which live on separate pages and carry no session code, plus the tutorials, policy forums and the undergraduate paper competition listed under 기타행사. THE TRAP WORTH CARRYING FORWARD: poster ids are Hangul-prefixed (P공기-1), so an ASCII-only id regex silently drops the entire poster track — 522 instead of 823 on the 2025 autumn edition, with all 16 poster sessions reporting zero. Always check for sessions returning zero papers. TWO-MEETINGS RULE APPLIED: reported the larger EDITION (1,008) with events_per_yr = 2, never the 1,831 annual sum. NOTE FOR RUPERT: the sheet row is named for the Fall conference; if the sheet wants the autumn series specifically the figure is 823 (2025), which also clears 800.",
+  "verdict": "BORDERLINE",
+  "confidence": "exact"
+ },
+ {
+  "row": 127,
+  "conference": "KICS Winter/Summer Conference",
+  "outcome": "COUNTED",
+  "abstracts_numeric": 614,
+  "abstracts": "614 papers (2025 하계종합학술발표회, the largest of the seven editions counted). PER EDITION — KICS runs THREE conferences a year, not two",
+  "year": 2025,
+  "rung": 4,
+  "source_url": "https://conf.kics.or.kr/2025s/program",
+  "spot_checks": [
+   "Seven consecutive editions counted by the identical parse of the 발표논문 table: 2024 summer 512 papers / 77 sessions, 2024 fall 287 / 37, 2025 winter 423 / 59, 2025 summer 614 / 91, 2025 fall 271 / 38, 2026 winter 450 / 59, 2026 summer 444 / 64. The summer editions are consistently the largest and the autumn ones roughly half the size",
+   "Paper-id format checked for leakage: every id cell in the 2025 summer page matches the single shape <session><letter>-<n> (138 xA-n, 115 xD-n, 103 xB-n, 88 xE-n, 87 xC-n, 83 xF-n = 614), so there is no second numbering series (no separate poster or student prefix) hiding presentations from the count",
+   "Session labels run 1A through 32C over three days (6월 17일, 18일, 19일 for the 2026 summer edition), which matches the printed 세션 시간표 and confirms the page carries the whole programme rather than one day"
+  ],
+  "searches_used": 0,
+  "events_per_yr": 3,
+  "cadence_evidence": "https://conf.kics.or.kr/2026f/history lists THREE editions every year — 동계 (winter, early February), 하계 (summer, mid-June) and 추계 (autumn, November) — unbroken from 2019 to 2026, each with its own programme book and proceedings. The queue note \"twice yearly\" is wrong; events_per_yr is 3.",
+  "attendance_numeric": null,
+  "attendance_year": null,
+  "attendance_basis": null,
+  "attendance_rung": null,
+  "attendance_source_url": null,
+  "alt_figures": [
+   {
+    "value": 512,
+    "year": 2024,
+    "basis": "papers, 2024 summer edition",
+    "rung": 4
+   },
+   {
+    "value": 450,
+    "year": 2026,
+    "basis": "papers, 2026 winter edition",
+    "rung": 4
+   },
+   {
+    "value": 1311,
+    "year": 2025,
+    "basis": "winter 423 + summer 614 + autumn 271 SUMMED across the year — recorded only to show it is NOT the figure used",
+    "rung": 4
+   }
+  ],
+  "character": "CONTRIBUTED",
+  "character_evidence": "Every edition runs an open 논문모집 with separate 일반/특별세션논문, 영어논문 and 학부논문 (undergraduate) tracks, and the programme is 37-91 parallel sessions of short numbered Korean-language papers with named authors and affiliations",
+  "programme_type": "CONTRIBUTED",
+  "programme_evidence": "https://conf.kics.or.kr/2025s/program — 발표논문 table, columns 논문번호 / 논문제목·저자(소속) / 다운로드 / 뷰어",
+  "direct_abstracts": null,
+  "ratio": null,
+  "ratio_rationale": null,
+  "duplicate_of": null,
+  "method": "Rung 4, zero searches. LANGUAGE: Korean (학술대회 / 논문 / 발표논문) — the whole route is Korean-language. Route (new, not in the field notes): KICS serves its complete programme as STATIC HTML at https://conf.kics.or.kr/<edition>/program, where <edition> is <year>{w|s|f} for 동계/하계/추계. The past-editions index at https://conf.kics.or.kr/<current>/history links every edition back to 2019, each with 국문/영문 programme books and a proceedings download. No login, no JS, no wall — the paper table is in the served HTML (0.6-2.1 MB per edition). COUNT: regex >\\s*(\\d{1,3}[A-Z]{1,2}-\\d{1,3})\\s*< over the served HTML, taking the set — this matches the 논문번호 cell exactly and nothing else on the page. 2025 summer = 614. EXCLUDED: nothing needed excluding; invited items (초대의 글, OT 및 튜토리얼, 특별강연, 아이디어 경진대회) sit on separate pages and carry no 논문번호. NOTE ON THE ROW TITLE: the sheet calls this \"Winter/Summer\" but KICS holds three general conferences a year; I have set events_per_yr = 3 and reported the LARGEST edition, never the 1,311 annual sum. The society site www.kics.or.kr points its 논문검색 at DBpia, which would be a second route, but the conference host already serves the complete programme so it was not needed.",
+  "verdict": "OUT",
+  "confidence": "exact"
+ },
+ {
+  "row": 128,
+  "conference": "GAMM Annual Meeting (Jahrestagung der Gesellschaft fuer Angewandte Mathematik und Mechanik)",
+  "outcome": "COUNTED",
+  "abstracts_numeric": 734,
+  "abstracts": "734 abstracts in the Book of Abstracts of the 95th Annual Meeting (2025, Poznan); 719 in the 96th (2026, Stuttgart)",
+  "year": 2025,
+  "rung": 3,
+  "source_url": "https://jahrestagung.gamm.org/wp-content/uploads/2026/07/GAMM2025-BoA.pdf",
+  "spot_checks": [
+   "TWO extraction modes agree exactly on every anchor for 2025: pdftotext -layout and pdftotext -raw both give 734 numbered-first-affiliation lines (^ *1: [A-Z]) and both give 700 ^ *Keywords: lines. The 34-abstract gap is abstracts that carry no Keywords line",
+   "TWO EDITIONS, two different anchors, same answer: the 2025 book (475 pages) counts 734 on the affiliation anchor; the 2026 book (456 pages, https://jahrestagung.gamm.org/wp-content/uploads/2026/08/BookOfAbstracts_v18_03_2026_JL2.pdf) uses an unnumbered affiliation line so that anchor fails there, but its author lines carry a right-aligned start time and 719 lines match \\s{2,}\\d{1,2}:\\d{2}$. 734 and 719 in consecutive years is a consistent scale",
+   "Programme parts counted separately in the 2025 book (affiliation anchor / Keywords anchor): Prandtl Memorial + 8 Plenary Lectures 1/6 (they use a different byline form and are invited, so they are effectively absent from the 734), Minisymposia + Young Researchers Minisymposia 58/51, DFG Priority Programs 28/26, Technical Sessions 5/0, Contributed Sessions 642/617",
+   "The Crossref deposit is NOT usable as the count and would have been badly wrong: PAMM (ISSN 1617-7061), the GAMM proceedings journal, deposits 600 items for 2021 and 594 for 2023 but only 198 for 2024, 62 for 2025 and 156 for 2026 — publication became optional, so PAMM is a collapsing floor, not the meeting"
+  ],
+  "searches_used": 0,
+  "events_per_yr": 1,
+  "cadence_evidence": "https://jahrestagung.gamm.org/ carries one edition per year, 2013 through 2027, with the 95th in 2025 (Poznan, 7-11 April) and the 96th in 2026 (Stuttgart); the 2027 edition is billed as a Joint Annual Meeting",
+  "attendance_numeric": null,
+  "attendance_year": null,
+  "attendance_basis": null,
+  "attendance_rung": null,
+  "attendance_source_url": null,
+  "alt_figures": [
+   {
+    "value": 719,
+    "year": 2026,
+    "basis": "time-stamped talks in the 96th Annual Meeting Book of Abstracts",
+    "rung": 3
+   },
+   {
+    "value": 642,
+    "year": 2025,
+    "basis": "STRICT reading — abstracts in the \"Contributed Sessions\" part only, excluding minisymposia, DFG priority programmes and technical sessions",
+    "rung": 3
+   },
+   {
+    "value": 600,
+    "year": 2021,
+    "basis": "PAMM deposits (proceedings papers, now optional — a floor, not the meeting)",
+    "rung": 4
+   }
+  ],
+  "character": "CONTRIBUTED",
+  "character_evidence": "The meeting is built on an open call for abstracts (https://jahrestagung.gamm.org/annual-meeting-2026-2/registration-abstract-submission-2/) feeding ~24 numbered GAMM Sections (S01 Multi-Body Dynamics and Robotics, S02 Biomechanics, S03 Damage and fracture mechanics, ...), each running many sub-sessions; only 9 items in the whole 475-page book are invited lectures (1 Prandtl Memorial + 8 Plenary)",
+  "programme_type": "CONTRIBUTED",
+  "programme_evidence": "GAMM 2025 Book of Abstracts, ISBN 978-83-7775-791-8, contents pages i-ii and the Contributed Sessions part from page 63",
+  "direct_abstracts": null,
+  "ratio": null,
+  "ratio_rationale": null,
+  "duplicate_of": null,
+  "method": "Rung 3, zero searches. Route: the society domain www.gamm-ev.de now has an EXPIRED TLS CERTIFICATE and curl refuses it, but https://jahrestagung.gamm-ev.de/ redirects cleanly to https://jahrestagung.gamm.org/, which lists every edition 2013-2027 and links a free Book of Abstracts PDF per edition from <edition>/program-2/. Downloaded https://jahrestagung.gamm.org/wp-content/uploads/2026/07/GAMM2025-BoA.pdf (HTTP 200, application/pdf, 1,939,555 bytes, 475 pages) into a private directory. COUNT: extracted with BOTH pdftotext -layout and -raw and counted the per-abstract byline anchor ^ *1: [A-Z] (the numbered first affiliation printed under every abstract's author line) = 734 in both modes; the independent ^ *Keywords: anchor gives 700 in both modes, the 34 difference being abstracts without a Keywords line. Recorded 734, the fuller anchor. EXCLUDED: the Prandtl Memorial Lecture and the 8 Plenary Lectures, which are invited and print their affiliation inline rather than as a numbered line, so they contribute at most 1 to the 734. INCLUDED, and flagged rather than decided (the same judgement as POMS/INFORMS in the field notes): 58 minisymposium and young-researchers-minisymposium talks and 28 DFG Priority Programme talks, which are recruited by session organisers but are ordinary submitted research talks; the strict Contributed-Sessions-only reading is 642 and is recorded in alt_figures. FLAG FOR RUPERT: at 734 (2025) and 719 (2026) this row sits 66-81 short of the 800 line, so it is OUT on the current rule but it is close, and a reading that counted the ~90 pre-2025-style poster or late entries differently could move it. LANGUAGE: the society is German and the German route was worked first (Jahrestagung, gamm-ev.de), but GAMM publishes its meeting entirely in English and the Book of Abstracts is English-only, so no German-language figure exists to find.",
+  "verdict": "OUT",
+  "confidence": "exact"
+ },
+ {
+  "row": 134,
+  "conference": "European Conference on Earthquake Engineering (ECEE)",
+  "outcome": "COUNTED",
+  "abstracts_numeric": 1071,
+  "abstracts": "1,071 contributed presentations (18th ECEE, Berlin, 14-18 September 2026) — 1,099 programme entries less 28 Invited Lectures",
+  "year": 2026,
+  "rung": 4,
+  "source_url": "https://www.conftool.com/ecee2026/index.php?page=browseSessions&presentations=show",
+  "spot_checks": [
+   "Counted day by day and summed, so the figure can be re-derived one day at a time: Mon 14 Sept 212, Tue 15 Sept 270, Wed 16 Sept 230, Thu 17 Sept 286, Fri 18 Sept 101 = 1,099. Sunday 13 Sept returns 0 (registration and welcome drinks only)",
+   "The invited exclusion is done with the programme's OWN filter, not by judgement: ConfTool exposes a \"Filter by Track or Type of Session\" select with exactly two options, all tracks and \"Invited Lecture\" (form_tracks=10). Re-running each day with that filter gives 6/5/6/6/5 = 28 invited lectures, which are subtracted",
+   "Posters ARE inside the 1,099: the Tuesday page contains \"Poster Session 02 ... Location: Peter-Behrens-Hall\" with its presentations listed under the same paper_title markup, so the count is orals plus posters as the settled unit requires",
+   "The organiser's own overview PDF corroborates the shape: ten to eleven parallel division sessions per slot (S01-S010) across five days, which at 1,099 entries is ~20 presentations per parallel stream per day"
+  ],
+  "searches_used": 0,
+  "events_per_yr": 0.25,
+  "cadence_evidence": "Quadrennial, and the society says so: https://eaee.org/18th-european-conference-on-earthquake-engineering-ecee2026/ states \"European conferences take place every four years in different regions\". The edition list on https://eaee.org/conferences/ bears it out — 14th Ohrid 2010, 15th Istanbul 2014, 16th Thessaloniki 2018, 17th Bucharest 2022 (as 3ECEES), 18th Berlin 2026",
+  "attendance_numeric": 1000,
+  "attendance_year": 2026,
+  "attendance_basis": "UNSPECIFIED",
+  "attendance_rung": "A3",
+  "attendance_source_url": "https://ecee2026.eu/",
+  "alt_figures": [
+   {
+    "value": 1099,
+    "year": 2026,
+    "basis": "ALL programme entries including the 28 Invited Lectures",
+    "rung": 4
+   }
+  ],
+  "character": "CONTRIBUTED",
+  "character_evidence": "The programme is built from 18 numbered divisions (01 Seismic Hazard and Seismology through 18 Resilience of Communities and Infrastructure) plus special sessions, running ten to eleven parallel streams for five days, with only 28 items flagged as Invited Lecture and one Ambraseys Distinguished Lecture on top",
+  "programme_type": "CONTRIBUTED",
+  "programme_evidence": "ConfTool conference agenda for ECEE2026, https://www.conftool.com/ecee2026/index.php?page=browseSessions&presentations=show",
+  "direct_abstracts": null,
+  "ratio": null,
+  "ratio_rationale": null,
+  "duplicate_of": null,
+  "method": "Rung 4, zero searches. ROUTE WORTH ADDING TO THE FIELD NOTES: ConfTool Pro serves its whole conference agenda as PLAIN SERVER-RENDERED HTML and needs no browser, despite printing a \"Your browser's JavaScript functionality is disabled\" banner — that banner is cosmetic and the programme is fully in the markup. Shape: https://www.conftool.com/<event>/index.php?page=browseSessions&presentations=show, with &form_date=YYYY-MM-DD to take one day at a time and &form_tracks=<id> to filter by submission type. Each presentation is wrapped in <span class=\"paper_title\">, so grep -o 'class=\"paper_title\"' | wc -l counts them exactly. Found it from https://ecee2026.eu/programme/, which links both a 6-page ConfTool \"Pro Printout\" PDF (daily overview ONLY, no individual papers — do not count it) and the live ConfTool agenda. COUNT: five conference days, 1,099 presentations; minus 28 Invited Lectures isolated with the programme's own track filter = 1,071. EXCLUDED: the 28 invited lectures, the Opening Ceremony, the 8th Nicholas Ambraseys Distinguished Lecture, the keynote lecture, coffee breaks and the panel discussion. Attendance came free from the conference home page (\"With over 1,000 participants expected\") and is recorded as an A3 expectation, not a measured figure. Language: English (ECEE is English-language; the EAEE central office is Greek and the 2026 host German, neither of which publishes a local-language figure).",
+  "verdict": "BORDERLINE",
+  "confidence": "exact"
+ },
+ {
+  "row": 137,
+  "conference": "US National Congress on Computational Mechanics (USNCCM)",
+  "outcome": "COUNTED",
+  "abstracts_numeric": 1054,
+  "abstracts": "1,054 contributed abstracts (USNCCM18, Chicago, 20-24 July 2025) — plenary and semi-plenary abstracts are explicitly NOT in the book",
+  "year": 2025,
+  "rung": 3,
+  "source_url": "https://drive.google.com/file/d/1-foGTC76t9eK8ViyBiKPSpDWngjNW6U3/view?usp=share_link",
+  "spot_checks": [
+   "THREE independent anchors and TWO extraction modes all give 1,054. In both pdftotext -layout and pdftotext -raw the book yields 1,054 lines matching ^ *ABSTRACT *$, 1,054 occurrences of the running head \"18th U.S. National Congress on Computational Mechanics\", and 1,054 of the dateline \"July 20-24, 2025, Chicago Marriott Downtown Magnificent Mile\"",
+   "1,054 abstracts against 1,082 PDF pages — one page per abstract plus ~28 pages of cover and front matter, which is exactly the right shape",
+   "The invited exclusion is made by the organiser, in print: the book's own front page says \"Abstracts for Plenary and Semi-Plenary Speakers may be found on the website at https://usnccm18.usacm.org/plenary-and-semi-plenary-speakers\", i.e. the 1,054 are contributed only"
+  ],
+  "searches_used": 0,
+  "events_per_yr": 0.5,
+  "cadence_evidence": "https://www.usacm.org/site_page.cfm?pk_association_webpage_menu=11216&pk_association_webpage=23536 lists every congress on a strict two-year cycle: USNCCM18 July 2025 Chicago, USNCCM17 July 2023 Albuquerque, USNCCM16 July 2021 (virtual), USNCCM15 July 2019 Austin, USNCCM14 2017 Montreal, USNCCM13 2015 San Diego",
+  "attendance_numeric": null,
+  "attendance_year": null,
+  "attendance_basis": null,
+  "attendance_rung": null,
+  "attendance_source_url": null,
+  "alt_figures": [],
+  "character": "CONTRIBUTED",
+  "character_evidence": "The whole congress is an open call feeding minisymposia; the book of abstracts is \"Arranged alphabetically by last name of the presenting author\" and carries 1,054 one-page contributed abstracts, with the invited plenary and semi-plenary abstracts deliberately published elsewhere",
+  "programme_type": "CONTRIBUTED",
+  "programme_evidence": "USNCCM18 Book of Abstracts (1,082 pages) linked from https://usnccm18.usacm.org/program",
+  "direct_abstracts": null,
+  "ratio": null,
+  "ratio_rationale": null,
+  "duplicate_of": null,
+  "method": "Rung 3, zero searches. Route: this extends the field-notes observation that USACM mirrors its congress material on Google infrastructure (recorded there for WCCM 2024). Each USNCCM edition has its own site under usacm.org — https://www.usacm.org/ links \"Previous National Congresses\", which lists https://usnccm18.usacm.org and https://usnccm17.usacm.org. The 18th congress's /program page is a Google Sites page whose three Google Drive file links are NOT exposed as normal hrefs; they appear only inside the page's inline JSON as https://drive.google.com/file/d/<id>/view. Pulled each one with https://drive.google.com/uc?export=download&id=<id>, which needs no browser: 1TFO2Hd4ohRzoYWDOcIneDBo_HkECnptu = a 3-page minisymposium list, 1cYSw-9wJ9gvb4ciFkZhfv8x2NFCO_QHq = the 131-page Program PDF, and 1-foGTC76t9eK8ViyBiKPSpDWngjNW6U3 = the BOOK OF ABSTRACTS (HTTP 200, 5,118,780 bytes, 1,082 pages). COUNT: each abstract occupies one page carrying a running head, a dateline and a centred ABSTRACT heading; all three anchors independently give 1,054 in both extraction modes. EXCLUDED: plenary and semi-plenary abstracts, which the book itself says are published separately on the congress website. This is a full count, not a floor — USACM publishes no proceedings papers, the abstract IS the unit. Language: English (US congress).",
+  "verdict": "BORDERLINE",
+  "confidence": "exact"
+ },
+ {
+  "row": 140,
+  "conference": "World Conference on Transport Research (WCTR)",
+  "outcome": "COUNTED",
+  "abstracts_numeric": 1234,
+  "abstracts": "1,234 contributed presentations (17th WCTR, Toulouse, 6-10 July 2026) — 886 lectern + 278 poster + 54 special-session + 16 topic-session; 13 plenary and industrial-roundtable items excluded",
+  "year": 2026,
+  "rung": 4,
+  "source_url": "https://interactive-programme.europa-organisation.com/wctrs2026/programme.php",
+  "spot_checks": [
+   "Counted by walking the 380 session blocks and attributing each presentation to its session type, so the total decomposes and can be re-checked type by type: Lectern sessions 886, Poster sessions 278, Special sessions 54, Topic sessions 16, Plenary sessions 7, Industrial insights 6 = 1,247 interventions in total",
+   "Session-type tallies are independently consistent with the session counts on the same page: 286 Lectern sessions carrying 886 presentations (3.1 each), 10 Poster sessions carrying 278 (27.8 each) — the right shape for both formats",
+   "The non-scientific blocks correctly contribute ZERO presentations: Registration (2 blocks), Breaks (12), Social events (3), SIG Meetings (29) and the WCTRS Assembly (1) all return 0 interventionTitle elements, which is the check that the parser is keying on presentations and not on rows",
+   "A naive document-wide count of class=\"interventionTitle\" gives the same 1,247, so no presentation is lost or duplicated by the block split"
+  ],
+  "searches_used": 0,
+  "events_per_yr": 0.33,
+  "cadence_evidence": "Triennial. https://wctrs-society.com/ lists WCTR Mumbai 2019, WCTR Montreal 2023 and WCTR Toulouse 2026 as the world conferences; the Toulouse edition is the 17th and the society marked its 50th anniversary there",
+  "attendance_numeric": 1500,
+  "attendance_year": 2026,
+  "attendance_basis": "UNSPECIFIED",
+  "attendance_rung": "A2",
+  "attendance_source_url": "https://wctrs-society.com/a-look-back-at-wctr-2026/",
+  "alt_figures": [
+   {
+    "value": 1247,
+    "year": 2026,
+    "basis": "ALL programme interventions including 7 plenary and 6 industrial-insight items",
+    "rung": 4
+   },
+   {
+    "value": 886,
+    "year": 2026,
+    "basis": "lectern (oral) presentations only",
+    "rung": 4
+   }
+  ],
+  "character": "CONTRIBUTED",
+  "character_evidence": "A single open call across nine topic areas (A Transport Modes General through I Infrastructure Design and Maintenance) with a published timetable — submission opened 1 April 2025, closed 30 September 2025, acceptance notified 2 February 2026, final papers due 1 June 2026 — and a one-presentation-per-participant rule: \"Each participant to the WCTR can present one and only one accepted paper\". 286 lectern sessions and 10 poster sessions against 5 plenaries.",
+  "programme_type": "CONTRIBUTED",
+  "programme_evidence": "WCTRS 2026 interactive programme, https://interactive-programme.europa-organisation.com/wctrs2026/programme.php",
+  "direct_abstracts": null,
+  "ratio": null,
+  "ratio_rationale": null,
+  "duplicate_of": null,
+  "method": "Rung 4, zero searches. ROUTE, and the last hop is the reusable bit: https://www.wctr2026.fr/scientific-program/detailed-program renders only \"Please wait while we load the Programme\" to curl, but the page's own markup names the iframe it loads — https://interactive-programme.europa-organisation.com/wctrs2026/programme.php — and THAT is plain server-rendered HTML, 3,349,958 bytes carrying the entire five-day programme with no JS and no login. (Europa Organisation runs this interactive-programme host for the congresses it organises, so the pattern should recur.) COUNT: split the document on <div class=\"schedule-item\"> (380 blocks), read each block's <div class=\"sessionType\">, and count <div class=\"interventionTitle\"> inside it. 1,247 interventions. EXCLUDED: the 7 Plenary-session items (Jean Tirole, Moshe Ben-Akiva and the international policy plenary) and the 6 Industrial insights roundtable items with Air France-KLM, Transdev, VINCI and EIT Urban Mobility — 13 invited items in all. INCLUDED: lectern, poster, special-session and topic-session presentations. Not a floor: WCTR requires a full paper for every accepted presentation (final papers due 1 June 2026) and each participant may present exactly one, so the programme is the meeting. The WCTR 2023 Montreal booklet at http://wctr2023.ca/pdfs/BOOKLET_WCTR2023.pdf was tried as a cross-check and returns HTTP 503 (host down), so only the current edition is counted. Language: English (WCTR is English-language; the 2026 host site is French-organised but the programme is in English).",
+  "verdict": "BORDERLINE",
+  "confidence": "exact"
+ },
+ {
+  "row": 141,
+  "conference": "IAHR World Congress",
+  "outcome": "COUNTED",
+  "abstracts_numeric": 976,
+  "abstracts": "976 extended abstracts (41st IAHR World Congress, Singapore, 22-27 June 2025) — the complete accepted programme; the opt-in full-paper proceedings hold only 311 of them",
+  "year": 2025,
+  "rung": 4,
+  "source_url": "https://www.iahr.org/library/world?pid=579",
+  "spot_checks": [
+   "Crawled to exhaustion and verified the end, rather than trusting a page-link window: the listing serves 10 items per page, pages 1-97 return 10 each, page 98 returns 6 and page 99 onward return 0 — 97x10 + 6 = 976, matching the 976 distinct /library/info?pid= ids collected",
+   "The same crawl run against the FULL-PAPER proceedings of the same congress (pid 578) ends at page 32 with 1 item, giving 311 — so only 32% of presentations produced a paper. Counting the proceedings instead of the abstract book would have understated this row threefold",
+   "Previous edition by the identical crawl: Proceedings of the 40th IAHR World Congress (Vienna 2023, pid 525) = 456 full papers over 47 pages. No separate abstract book is published for 2023, so 456 is a floor for that edition, not a count of it",
+   "Edition identity confirmed on the collection page: \"Book of Extended Abstracts of the 41st IAHR World Congress (Singapore, 2025) ... ISBN 978-90-835589-5-0 ... This book contains the Extended Abstracts submitted and accepted for presentation at the 41st IAHR World Congress held in Singapore from 22 to 27 June 2025\""
+  ],
+  "searches_used": 0,
+  "events_per_yr": 0.5,
+  "cadence_evidence": "Biennial. The IAHR Document Library lists 41st Singapore 2025, 40th Vienna 2023, 39th Granada 2022, 38th Panama 2019, 37th Kuala Lumpur 2017, 36th Hague 2015, 35th Chengdu 2013 — two-yearly apart from the pandemic shuffle of 2022/2023 — and the society site already advertises the 42nd",
+  "attendance_numeric": null,
+  "attendance_year": null,
+  "attendance_basis": null,
+  "attendance_rung": null,
+  "attendance_source_url": null,
+  "alt_figures": [
+   {
+    "value": 311,
+    "year": 2025,
+    "basis": "full papers in the opt-in Proceedings of the 41st IAHR World Congress (pid 578)",
+    "rung": 4
+   },
+   {
+    "value": 456,
+    "year": 2023,
+    "basis": "full papers in the Proceedings of the 40th IAHR World Congress, Vienna (pid 525) — a floor for that edition",
+    "rung": 4
+   }
+  ],
+  "character": "CONTRIBUTED",
+  "character_evidence": "The congress accepts extended abstracts through an open call and publishes all 976 of them with ISBN; full-paper publication in the ISSN-bearing Proceedings series (2521-716X online / 2521-7119 print) is a separate, optional step taken by about a third of presenters",
+  "programme_type": "CONTRIBUTED",
+  "programme_evidence": "IAHR Document Library, \"Book of Extended Abstracts of the 41st IAHR World Congress (Singapore, 2025)\"",
+  "direct_abstracts": null,
+  "ratio": null,
+  "ratio_rationale": null,
+  "duplicate_of": null,
+  "method": "Rung 4, zero searches. Route (new, and the shape of it is the transferable part): https://www.iahr.org/library/index is a plain server-rendered document library that lists one collection per congress edition at /library/world?pid=<n>, each paginating 10 records a page with a /library/info?pid=<id> link per record. The crucial discrimination is that IAHR publishes TWO collections for the same congress — a \"Proceedings of the Nth IAHR World Congress\" (opt-in full papers) and a \"Book of Extended Abstracts of the Nth IAHR World Congress\" (every accepted presentation). The abstract book is the meeting; the proceedings are a 32% subset. COUNT: walked pid=579 page by page collecting the set of record ids until two consecutive empty pages, then verified the boundary by fetching pages 90, 95, 97, 98 and 99 directly — 976 records. THE PAGINATION TRAP: the page-link block in the markup shows only ten page numbers at a time, so reading the last visible link as the last page would have stopped the crawl at page 10 and returned ~100. Also ran pid=578 (311) and pid=525 (456) the same way. EXCLUDED: nothing — the abstract book contains only accepted contributed presentations; keynote and plenary material is not in it. Language: English (IAHR publishes in English).",
+  "verdict": "BORDERLINE",
+  "confidence": "exact"
+ },
+ {
+  "row": 142,
+  "conference": "International Conference on Composite Materials (ICCM)",
+  "outcome": "COUNTED",
+  "abstracts_numeric": 517,
+  "abstracts": "517 papers (ICCM-24, Baltimore 2025 — the current edition). The series has fallen steadily from 1,355 in 2015; ICCM-23 (2023) was 920",
+  "year": 2025,
+  "rung": 4,
+  "source_url": "https://zenodo.org/api/records?communities=iccm-24&size=1",
+  "spot_checks": [
+   "TWO INDEPENDENT SOURCES AGREE EXACTLY on all three recent editions. (a) The ICCM archive table at https://iccm-central.org/conferences/conference-archive/ prints a Papers column: ICCM-24 517, ICCM-23 920, ICCM-22 1,124. (b) Counting the official Zenodo proceedings communities gives hits.total = 517, 920 and 1,124 respectively. A stated total matched by an independent count of the artefact is the strongest evidence shape in this method",
+   "The archive header states 24 conferences, 15,224 papers published, 1975-2025 — consistent with the per-edition figures summing across the series",
+   "Series read off the same table: ICCM-20 (2015) 1,355, ICCM-21 (2017) 1,258, ICCM-22 (2019) 1,124, ICCM-23 (2023) 920, ICCM-24 (2025) 517 — a monotonic decline, not a one-off dip and not a deposit artefact"
+  ],
+  "searches_used": 0,
+  "events_per_yr": 0.5,
+  "cadence_evidence": "https://iccm-central.org/conferences/conference-archive/ — ICCM-22 Melbourne 2019, ICCM-23 Belfast 2023 (the 2021 edition was lost to the pandemic), ICCM-24 Baltimore 2025, ICCM-25 Singapore 2027: biennial on the current cycle",
+  "attendance_numeric": null,
+  "attendance_year": null,
+  "attendance_basis": null,
+  "attendance_rung": null,
+  "attendance_source_url": null,
+  "alt_figures": [
+   {
+    "value": 920,
+    "year": 2023,
+    "basis": "papers, ICCM-23 Belfast — counted in the iccm-23 Zenodo community and matching the archive table",
+    "rung": 4
+   },
+   {
+    "value": 1124,
+    "year": 2019,
+    "basis": "papers, ICCM-22 Melbourne",
+    "rung": 4
+   },
+   {
+    "value": 1355,
+    "year": 2015,
+    "basis": "papers, ICCM-20 Copenhagen",
+    "rung": 4
+   }
+  ],
+  "character": "CONTRIBUTED",
+  "character_evidence": "Every edition publishes a complete open-access full-paper proceedings under its own ISSN (3107-3166), 517-1,355 contributed papers per edition, with a peer-review process and publication-ethics policy published by the central body",
+  "programme_type": "CONTRIBUTED",
+  "programme_evidence": "https://iccm-central.org/conferences/conference-archive/ and the per-edition Zenodo proceedings communities",
+  "direct_abstracts": null,
+  "ratio": null,
+  "ratio_rationale": null,
+  "duplicate_of": null,
+  "method": "Rung 4, zero searches. IMPORTANT EXCEPTION TO A FIELD-NOTES RULE: the notes say never to count a Zenodo collection as a congress, because HAL/Zenodo/Scipedia collections are voluntary author deposits covering 5-13% of a programme. ICCM IS DIFFERENT and the difference is checkable: Zenodo is ICCM's OFFICIAL PUBLISHER of record — the archive page says \"All proceedings are freely available on Zenodo under Creative Commons CC BY-SA 4.0. ISSN: 3107-3166\" — and the community counts match the organiser's own printed Papers column exactly for three consecutive editions (517/517, 920/920, 1,124/1,124). A voluntary-deposit collection never matches the organiser's figure; that agreement is what licenses the exception. Route: https://iccm-central.org/conferences/conference-archive/ for the table, then https://zenodo.org/api/records?communities=iccm-<NN>&size=1 and read hits.total. EXCLUDED: nothing; the proceedings contain contributed papers only. VERDICT NOTE, per the methodology rule that a counted figure below 800 is OUT even when the series used to be larger: the current edition is 517, so this row is OUT, and the series (1,355 -> 1,258 -> 1,124 -> 920 -> 517) is recorded here for Rupert. If the sheet prefers the last edition above the floor, that is ICCM-23 at 920. Language: English (ICCM publishes in English only).",
+  "verdict": "OUT",
+  "confidence": "exact"
+ },
+ {
+  "row": 143,
+  "conference": "European Conference on Composite Materials (ECCM)",
+  "outcome": "COUNTED",
+  "abstracts_numeric": 911,
+  "abstracts": "911 oral presentations (ECCM22, Oslo, 21-25 June 2026) — full and short orals; the poster track is additional and not itemised in the programme, so this is a floor",
+  "year": 2026,
+  "rung": 3,
+  "source_url": "https://www.ntnu.edu/documents/1361387916/1369111624/ECCM22_Programme_v5_FULL.pdf/e80f7540-f86c-4f47-1f31-a2a0a7244fbd?t=1782197211364",
+  "spot_checks": [
+   "Both extraction modes agree EXACTLY: pdftotext -layout and pdftotext -raw each find 911 unique #NNNN submission ids, with 911 occurrences in each — every id appears once, so no presentation is double-counted across rooms",
+   "Ids are genuine submission numbers, not sequence numbers: they run sparsely from #191 to #1531, which is consistent with an accept-rate on a larger submission pool and rules out the block-allocation trap",
+   "Invited items carry NO id and are therefore excluded automatically: 4 plenaries (PLENARY 1-4, each with a named speaker and chair) and the keynote slots in rooms A and B",
+   "15 numbered SESSION blocks across five days over 11 parallel rooms (A, B, C, D, Forum, M1, M2, M4, M5, Balder, Odin), and the programme legend states \"italic = Short oral (7 min), plain = Full oral (15 min)\" with 152 short-oral markers"
+  ],
+  "searches_used": 0,
+  "events_per_yr": 0.5,
+  "cadence_evidence": "Biennial. ECCM21 ran in 2024 (Nantes) and ECCM22 on 21-25 June 2026 (Oslo Kongressenter), per the programme header",
+  "attendance_numeric": null,
+  "attendance_year": null,
+  "attendance_basis": null,
+  "attendance_rung": null,
+  "attendance_source_url": null,
+  "alt_figures": [],
+  "character": "CONTRIBUTED",
+  "character_evidence": "The site runs a Call for Abstracts & Papers and the programme is 15 numbered technical sessions of submitted work across ~11 parallel rooms, organised into special sessions (SS07, SS10, SS14, SS18, SS21, SS26 ...) and numbered topic areas; only four plenaries and a handful of keynotes are invited",
+  "programme_type": "CONTRIBUTED",
+  "programme_evidence": "ECCM22 Programme v5 FULL, the detailed technical programme per day and room",
+  "direct_abstracts": null,
+  "ratio": null,
+  "ratio_rationale": null,
+  "duplicate_of": null,
+  "method": "Rung 3, zero searches. FINDING A LIVE HOST WAS THE WHOLE PROBLEM AND IS THE REUSABLE PART: escm.eu.org (the society) times out on https, and eccm21.org — the 2024 edition's own domain — HAS BEEN LOST AND NOW REDIRECTS TO AN UNRELATED SITE (scarboroughbusinessassociation.com, HTTP 403). The live route is the CURRENT edition's university host: https://www.eccm22.org/ redirects to https://www.ntnu.edu/eccm22, whose \"Detailed Programme (pdf)\" link resolves to the full technical programme on NTNU's document server. Downloaded it (HTTP 200, application/pdf, 1,027,153 bytes, 8 pages of very wide landscape tables) into a private directory. COUNT: every presentation is printed as \"#<id> · <presenter> (<affiliation>)\" followed by title and co-authors; grep -oE \"#[0-9]{1,5}\" | sort -u | wc -l gives 911 under BOTH pdftotext -layout and pdftotext -raw. EXCLUDED: the 4 plenaries and the room-A/room-B keynotes, which are printed by name with no id; the ESCM General Assembly, awards and social items. WHY THIS IS A FLOOR: Monday and Tuesday each carry a \"POSTER DISCUSSION (+ COFFEE BREAK)\" slot but the PDF lists no individual posters, so the poster track is entirely outside the 911. The true figure is higher, and 911 already clears the floor. Zenodo is NOT a route for ECCM (unlike ICCM, row 142) — no eccm21/eccm22 community exists; querying one returns the whole repository count, which is the trap of reading a bad community name as a figure. Language: English (ECCM publishes in English).",
+  "verdict": "BORDERLINE",
+  "confidence": "floor"
+ },
+ {
+  "row": 144,
+  "conference": "INTER-NOISE International Congress and Exposition on Noise Control Engineering",
+  "outcome": "COUNTED",
+  "abstracts_numeric": 1125,
+  "abstracts": "1,125 papers (INTER-NOISE 2024, Nantes) — deposited papers in the proceedings volume, the largest of four editions countable",
+  "year": 2024,
+  "rung": 4,
+  "source_url": "https://api.crossref.org/works?filter=issn:0736-2935,from-pub-date:2024-01-01,until-pub-date:2024-12-31&rows=1000&select=DOI,volume,issue,page,title,container-title&cursor=*",
+  "spot_checks": [
+   "Four editions separated cleanly by the DOI infix: in_2022 = 774, in_2023 = 857, in_2024 = 1,125, in_2025 = 393. The same journal carries NOISE-CON (nc_2023 143, nc_2024 140, nc_2025 121, nc_2026 144) and one further series (no_2023 69), all of which are EXCLUDED",
+   "Volume check confirms the split: 2024 deposits fall in volume 269 (NOISE-CON, 140 items) and volume 270 (INTER-NOISE, 1,125 items across issues 1-11), so the volume and the DOI infix agree",
+   "Publication-date lag checked, not assumed: in_2022 papers carry 2023 publication dates, so the 2026 journal-year was queried too — it holds 144 items and every one is nc_2026, i.e. no further INTER-NOISE 2025 papers arrived late"
+  ],
+  "searches_used": 0,
+  "events_per_yr": 1,
+  "cadence_evidence": "Annual, with a separate edition site per year: https://2024.internoise.org/ (Nantes), https://2025.internoise.org/ (Sao Paulo) and https://internoise2026.org/, and a deposited proceedings volume for every year 2022-2025",
+  "attendance_numeric": null,
+  "attendance_year": null,
+  "attendance_basis": null,
+  "attendance_rung": null,
+  "attendance_source_url": null,
+  "alt_figures": [
+   {
+    "value": 857,
+    "year": 2023,
+    "basis": "papers deposited for INTER-NOISE 2023",
+    "rung": 4
+   },
+   {
+    "value": 774,
+    "year": 2022,
+    "basis": "papers deposited for INTER-NOISE 2022",
+    "rung": 4
+   },
+   {
+    "value": 393,
+    "year": 2025,
+    "basis": "papers deposited for INTER-NOISE 2025 (Sao Paulo) — probably an INCOMPLETE deposit, see Method",
+    "rung": 4
+   }
+  ],
+  "character": "CONTRIBUTED",
+  "character_evidence": "The congress publishes a full paper for every accepted presentation in INTER-NOISE and NOISE-CON Congress and Conference Proceedings; the 2025 site lists seven contributed topic areas (Vibration & Acoustical Engineering Science, Physical Acoustics & Elastic Waves, Measurement Methods, Modeling & Simulation Techniques, Vibro-Acoustics, Aero- & Thermo-Acoustics, Active Systems for Noise & Vibration Control) with named topic organisers, and prints plenary and keynote lectures on a separate page",
+  "programme_type": "CONTRIBUTED",
+  "programme_evidence": "https://2025.internoise.org/technical-program/ and the deposited proceedings volumes",
+  "direct_abstracts": null,
+  "ratio": null,
+  "ratio_rationale": null,
+  "duplicate_of": null,
+  "method": "Rung 4, zero searches. THE OBVIOUS ROUTE IS WALLED AND THE DEPOSIT ROUTE REPLACES IT. INCE hosts the full proceedings on ingentaconnect, and every path there (https://www.ingentaconnect.com/content/ince/incecp, the contentone issue URLs, with and without a jsessionid) returns HTTP 403 carrying a Cloudflare \"Just a moment...\" interstitial under three different user-agents including Googlebot — a genuine rung-5 wall. It did not need one: INCE is Crossref member 1973 (prefix 10.3397) and the proceedings have their own ISSN, 0736-2935, with 4,510 DOIs. Cursor-paged filter=issn:0736-2935,from-pub-date:<Y>-01-01,until-pub-date:<Y>-12-31 for 2023-2026 with select=DOI,volume,issue,page,title,container-title. THE DISCRIMINATOR IS THE DOI INFIX, not the container title, which is identical for every series on this ISSN: 10.3397/in_<year>_<n> = INTER-NOISE, nc_ = NOISE-CON, no_ = a third series. Grouping on ^10\\.3397/([a-z]+)_(\\d{4})_ gives the per-edition counts. EXCLUDED: all nc_ and no_ items. FLAG, and it is the reason 2024 rather than 2025 is recorded: in_2025 has only 393 items in volume 272 issues 1-4, against 1,125 in volume 270 issues 1-11 for 2024, and no late arrivals in the 2026 journal-year. Either the Sao Paulo edition was a third the size of Nantes, or INCE has not finished depositing it. I cannot tell from outside because the proceedings host is Cloudflare-blocked, so I have recorded the largest recent edition and named the uncertainty rather than letting a possibly-partial deposit decide the tier. Language: English (INTER-NOISE publishes in English).",
+  "verdict": "BORDERLINE",
+  "confidence": "exact"
+ },
+ {
+  "row": 145,
+  "conference": "International Congress on Acoustics (ICA)",
+  "outcome": "COUNTED",
+  "abstracts_numeric": 1154,
+  "abstracts": "1,154 abstracts (25th ICA, New Orleans, 18-23 May 2025 — held jointly as the 188th Meeting of the Acoustical Society of America)",
+  "year": 2025,
+  "rung": 4,
+  "source_url": "https://api.crossref.org/works?filter=prefix:10.1121,from-pub-date:2025-01-01,until-pub-date:2025-12-31&rows=1000&select=DOI,container-title,volume,issue,page,title&cursor=*",
+  "spot_checks": [
+   "The supplement is identified positively, not guessed: JASA volume 157 issue \"4_Supplement\" holds 1,154 A-paged items running A14 to A370, and https://api.crossref.org/works/10.1121/10.0037238 gives its published date as 2025-04-01 — the programme supplement issued just before the 18-23 May congress",
+   "The OTHER 2025 supplement was separated and excluded: JASA volume 158 issue 4_Supplement holds 1,610 A-paged items running A15 to A477, which is the 189th ASA meeting later in 2025. Taking the JASA journal-year whole (3,557 items) would have merged both meetings plus ~800 regular research articles",
+   "Page-prefix grouping confirms the separation is clean: within volumes 157-158 the ONLY A-paged issues are the two 4_Supplement issues; every regular issue has purely numeric pages",
+   "POMA is NOT the artefact and would have understated the row threefold: the congress proceedings volume \"188th Meeting of the Acoustical Society of America joint with 25th International Congress on Acoustics\" holds just 47 items, and the ICA proceedings page says plainly \"Submission is optional\""
+  ],
+  "searches_used": 0,
+  "events_per_yr": 0.33,
+  "cadence_evidence": "Triennial. ICA 2019 Aachen, ICA 2022 Gyeongju (https://ica2022korea.org/ still resolves), ICA 2025 New Orleans. The congress is run by the International Commission for Acoustics, https://www.icacommission.org/",
+  "attendance_numeric": null,
+  "attendance_year": null,
+  "attendance_basis": null,
+  "attendance_rung": null,
+  "attendance_source_url": null,
+  "alt_figures": [
+   {
+    "value": 47,
+    "year": 2025,
+    "basis": "papers in the optional POMA proceedings volume for this congress",
+    "rung": 4
+   },
+   {
+    "value": 283,
+    "year": 2025,
+    "basis": "all Proceedings of Meetings on Acoustics items deposited in 2025, across every ASA meeting",
+    "rung": 4
+   }
+  ],
+  "character": "CONTRIBUTED",
+  "character_evidence": "https://ica2025neworleans.org/sessions.html — \"Submissions of abstracts are welcome from all fields of acoustics. Invited papers will appear in one of the Special Sessions listed below ... Contributed papers will appear in sessions associated with one or more of the Technical Committees.\" Both kinds are author-submitted abstracts; the genuinely invited content is the separate Plenary Lecturers page.",
+  "programme_type": "CONTRIBUTED",
+  "programme_evidence": "JASA vol 157 issue 4_Supplement, the congress abstract supplement (pages A14-A370)",
+  "direct_abstracts": null,
+  "ratio": null,
+  "ratio_rationale": null,
+  "duplicate_of": "PARTIAL OVERLAP, flagged not resolved: the 25th ICA (2025) WAS the 188th Meeting of the Acoustical Society of America — both titles appear on the congress masthead at https://ica2025neworleans.org/ and on the joint POMA volume. ASA sits on Census - Physical Sciences per the engineering field notes. The 1,154 abstracts counted here are the JOINT meeting, so in a joint year this row and the ASA row are the same meeting and must be counted once. They are NOT always the same: ICA 2022 (Gyeongju) and ICA 2019 (Aachen) were standalone, and ASA meets twice a year regardless. Orchestrator to decide which sheet carries the joint year.",
+  "method": "Rung 4, zero searches. Route: the congress publishes no countable programme of its own (ica2025neworleans.org has only a session-title list, and acousticalsociety.org returns HTTP 403 behind Cloudflare), but ASA deposits EVERY meeting abstract individually to Crossref inside a JASA supplement issue — the medicine-style publisher-deposit pattern, applied here to an engineering congress. Cursor-paged filter=prefix:10.1121,from-pub-date:2025-01-01,until-pub-date:2025-12-31 with select=DOI,container-title,volume,issue,page,title (4,021 items on the prefix, 3,557 of them JASA), then grouped on (volume, issue, page-alpha-prefix). THE DISCRIMINATOR IS THE SUPPLEMENT ISSUE PLUS THE A-PAGE PREFIX: vol 157 4_Supplement A-pages = 1,154 = this congress. EXCLUDED: vol 158 4_Supplement (1,610, the 189th ASA meeting), every numerically-paged JASA issue (regular research articles), JASA Express Letters (161), POMA (283), Acoustics Today, and the symposium volumes on the same prefix. NOT a floor — the supplement is the complete programme, one deposited record per presentation. CAVEAT recorded rather than decided: the supplement contains both Special-Session (invited-by-organiser) and Technical-Committee (contributed) papers, which is the same invited/contributed judgement flagged for INFORMS and POMS; both are author-submitted abstracts and both are counted. Language: English.",
+  "verdict": "BORDERLINE",
+  "confidence": "exact"
+ },
+ {
+  "row": 146,
+  "conference": "EU PVSEC - European Photovoltaic Solar Energy Conference and Exhibition",
+  "outcome": "COUNTED",
+  "abstracts_numeric": 802,
+  "abstracts": "802 contributed presentations (EU PVSEC 2026) — 327 orals + 475 visual/poster presentations; 19 plenary and panel items excluded",
+  "year": 2026,
+  "rung": 3,
+  "source_url": "https://www.eupvsec.org/images/2026/conference/EUPVSEC2026_ConferenceProgramme_v5_web.pdf",
+  "spot_checks": [
+   "Both extraction modes agree EXACTLY: pdftotext -layout and pdftotext -raw each yield 821 unique presentation ids of the form <day><track><type>.<session>.<slot>, with an identical shape histogram (132 xDV.#.##, 94 xBV.#.##, 75 xAV.#.##, 59 xCV.#.##, 58 xDO.##.#, 51 xBO.#.#, ...)",
+   "The id grammar itself performs the invited exclusion: ids beginning with a DAY DIGIT are contributed (O = oral, V = visual/poster), while the 19 ids with no leading digit are the P-series (AP.1.x, CP.1.x, CP.2.x, EP.1.x) — the plenaries and panel discussions, which the site lists separately under /programme/conf-programme/plenaries-programme and /pd-programme. 821 - 19 = 802",
+   "Cross-checked against the deposit index and the two DISAGREE in the expected direction: EU PVSEC proceedings papers are registered with DataCite under prefix 10.4229 (client tib.wip) and number only 299 (2025), 307 (2024), 326 (2023), 354 (2022), 364 (2021). Publishing a paper is optional at this conference, so the deposit is a ~40% floor and the programme is the count"
+  ],
+  "searches_used": 0,
+  "events_per_yr": 1,
+  "cadence_evidence": "Annual. The DataCite proceedings series has an entry for every year (2021-2025 counted above) and the 2026 conference programme is dated \"Status as of 09 September 2026\"",
+  "attendance_numeric": null,
+  "attendance_year": null,
+  "attendance_basis": null,
+  "attendance_rung": null,
+  "attendance_source_url": null,
+  "alt_figures": [
+   {
+    "value": 327,
+    "year": 2026,
+    "basis": "ORAL presentations only",
+    "rung": 3
+   },
+   {
+    "value": 475,
+    "year": 2026,
+    "basis": "VISUAL (poster) presentations only",
+    "rung": 3
+   },
+   {
+    "value": 299,
+    "year": 2025,
+    "basis": "proceedings papers registered with DataCite (optional publication — a floor, not the meeting)",
+    "rung": 4
+   }
+  ],
+  "character": "CONTRIBUTED",
+  "character_evidence": "An open call across five numbered topics (Silicon Materials and Cells; Perovskites and Other Thin-Films, Tandems, New Concepts; Photovoltaic Modules; Systems Design and Operation; Photovoltaics in the Energy Transition) produces 802 contributed slots; the invited content is four plenary sessions and four panel discussions, printed separately",
+  "programme_type": "CONTRIBUTED",
+  "programme_evidence": "EU PVSEC 2026 Conference Programme PDF (66 pages) linked from https://www.eupvsec.org/index.php/programme/conf-programme",
+  "direct_abstracts": null,
+  "ratio": null,
+  "ratio_rationale": null,
+  "duplicate_of": null,
+  "method": "Rung 3, zero searches. Route: https://www.photovoltaic-conference.com/ redirects to https://www.eupvsec.org/, whose Conference Programme page links a free full programme PDF at /images/<year>/conference/EUPVSEC<year>_ConferenceProgramme_v<n>_web.pdf. Downloaded (HTTP 200, application/pdf, 1,562,992 bytes, 66 pages) into a private directory. COUNT: regex \\b\\d?[A-Z]{2}\\.\\d+\\.\\d+\\b over the extracted text, taking the set: 821 ids, then split on whether the id starts with a day digit. 327 orals + 475 visual presentations = 802 contributed; the 19 P-series ids are plenaries and panels and are excluded. EXCLUDED beyond that: the Industry Summit, Parallel Events, PV Academy, technical tours and the exhibition, none of which carry a presentation id. NOTE ON THE OTHER ROUTE, worth recording because it looks like a dead end and is not: EU PVSEC proceedings papers get DOIs under prefix 10.4229, which is NOT in Crossref (api.crossref.org/works?filter=prefix:10.4229 returns 0 and api.crossref.org/prefixes/10.4229 404s) — the prefix is registered with DATACITE, to client tib.wip. https://api.datacite.org/dois?client-id=tib.wip&query=publicationYear:<Y>&page[size]=0 gives the yearly paper counts (299-364), which are a floor because paper publication is optional here. FLAG FOR RUPERT: 802 clears the 800 line by two presentations, so this row is decided by the plenary exclusion — counting the 19 P-series items would give 821 and counting orals alone would give 327. Language: English (EU PVSEC is English-language).",
+  "verdict": "BORDERLINE",
+  "confidence": "exact"
+ },
+ {
+  "row": 148,
+  "conference": "IFAC World Congress",
+  "outcome": "COUNTED",
+  "abstracts_numeric": 1908,
+  "abstracts": "1,908 papers (22nd IFAC World Congress, Yokohama 2023) — 1,909 deposited items in IFAC-PapersOnLine vol 56 issue 2 less one \"Contents\" front-matter record",
+  "year": 2023,
+  "rung": 4,
+  "source_url": "https://api.crossref.org/works?filter=issn:2405-8963,from-pub-date:2023-01-01,until-pub-date:2023-12-31&rows=1000&select=DOI,volume,issue,page,title&cursor=*",
+  "spot_checks": [
+   "The congress issue is isolated, not the journal year: cursor-paging the 2023 journal-year returns 2,083 items, which group as (vol 56, issue 2) = 1,909, (56,3) = 108 and (56,1) = 66. Only issue 2 is the World Congress; taking the journal-year would have overstated the row by 174",
+   "Front matter removed by title scan: exactly one record in issue 2 is titled \"Contents\"; no Preface, Editorial, Foreword or Index record exists, and no title matches Plenary/Keynote/Semi-plenary",
+   "Sampled DOIs and pages confirm a single very large proceedings: 10.1016/j.ifacol.2023.10.010 pp. 5146-5151, ...10.020 pp. 7858-7864, ...10.029 pp. 8574-8579 — continuous pagination into five figures across one issue",
+   "The previous edition by the same method: IFAC-PapersOnLine vol 53 issue 2 = 2,805 items (21st World Congress, Berlin 2020), out of a 3,220-item journal year"
+  ],
+  "searches_used": 0,
+  "events_per_yr": 0.33,
+  "cadence_evidence": "Triennial. The deposit index shows a single huge congress issue exactly every three years — vol 53 issue 2 in 2020 (21st, Berlin) and vol 56 issue 2 in 2023 (22nd, Yokohama) — with nothing of that size in the intervening years, and no 2026 congress issue deposited yet at the time of this run",
+  "attendance_numeric": null,
+  "attendance_year": null,
+  "attendance_basis": null,
+  "attendance_rung": null,
+  "attendance_source_url": null,
+  "alt_figures": [
+   {
+    "value": 2805,
+    "year": 2020,
+    "basis": "items in IFAC-PapersOnLine vol 53 issue 2, the 21st World Congress (held online)",
+    "rung": 4
+   }
+  ],
+  "character": "CONTRIBUTED",
+  "character_evidence": "1,908 contributed papers in one proceedings issue with continuous pagination over ~11,000 pages; the handful of plenary lectures the congress runs are not deposited as papers at all",
+  "programme_type": "CONTRIBUTED",
+  "programme_evidence": "IFAC-PapersOnLine (ISSN 2405-8963) vol 56 issue 2",
+  "direct_abstracts": null,
+  "ratio": null,
+  "ratio_rationale": null,
+  "duplicate_of": null,
+  "method": "Rung 4, zero searches. The phase-1 note that IFAC publishes \"in IFAC-PapersOnLine, a journal container rather than a proceedings container\" is correct and is exactly why the deposit works: Elsevier deposits every IFAC paper INDIVIDUALLY as a journal article, so the count is exact. Found the ISSN with https://api.crossref.org/journals?query=IFAC-PapersOnLine (2405-8963, 29,257 DOIs), then cursor-paged filter=issn:2405-8963,from-pub-date:<Y>-01-01,until-pub-date:<Y>-12-31 with rows=1000 and select=DOI,volume,issue,page,title, and GROUPED ON (volume, issue) — the discriminator here is the ISSUE, because IFAC-PapersOnLine carries every IFAC symposium and workshop of the year in its own issue and only one issue per congress year is the World Congress. 2023: (56,2) = 1,909, minus the single \"Contents\" record = 1,908. EXCLUDED: issues (56,1) and (56,3), which are other IFAC events, and the Contents record. This is NOT a floor — IFAC requires a full paper for every accepted presentation and Elsevier deposits all of them. Language: English (IFAC publishes in English only).",
+  "verdict": "VERIFIED",
+  "confidence": "exact"
+ },
+ {
+  "row": 190,
+  "conference": "JIM Spring and Autumn Meetings (Japan Institute of Metals and Materials)",
+  "outcome": "NEEDS_RUNG_5",
+  "abstracts_numeric": null,
+  "abstracts": "NO COUNT — the programme is on Confit, which serves HTTP 202 with a zero-byte body. Rung 9 packet supplied: ~960 INFERRED FROM ATTENDANCE, NOT COUNTED (1,200+ participants x 0.80 for an open-call 講演大会) — see Method",
+  "year": null,
+  "rung": 9,
+  "source_url": "https://pub.confit.atlas.jp/ja/event/jimm2026fall",
+  "spot_checks": [
+   "Confirmed the wall rather than assuming it: pub.confit.atlas.jp/ja/event/jimm2026fall, the same path with /session, and confit.atlas.jp/guide/event/jimm2026fall/top and /jim2025fall/top all return HTTP 202 with Content-Length 0; pub.confit.atlas.jp/api/event/jimm2026fall returns 403",
+   "Read the attendance off two separate report pages, not one: https://jimm.jp/event/lecture/2023spr/report.html says 第172回春期講演大会 ... 1200名以上の方にご参加いただきました and https://jimm.jp/event/lecture/2024spr/report.html says 第174回 ... 1,200名以上の方にご参加いただました — two consecutive spring meetings at the same level",
+   "Programme shape read off the same report: 8日の午後からは口頭講演が13の会場に分かれて行われ (oral lectures in 13 parallel rooms) plus a full-day poster session on day 1 and 4 symposium themes"
+  ],
+  "searches_used": 1,
+  "events_per_yr": 2,
+  "cadence_evidence": "https://jimm.jp/event/lecture/past.html lists a numbered meeting every spring and every autumn without a gap: 2026年春期(第178回) 11-13 March 2026, 2025年秋期(第177回) 17-19 September 2025, 2025年春期(第176回) 8-10 March 2025, 2024年春期(第174回), 2023年春期(第172回). Two meetings a year, consecutive numbering",
+  "attendance_numeric": 1200,
+  "attendance_year": 2024,
+  "attendance_basis": "UNSPECIFIED",
+  "attendance_rung": "A2",
+  "attendance_source_url": "https://jimm.jp/event/lecture/2024spr/report.html",
+  "alt_figures": [
+   {
+    "value": 1200,
+    "year": 2023,
+    "basis": "UNSPECIFIED — 1200名以上, post-meeting report for the 172nd spring meeting, https://jimm.jp/event/lecture/2023spr/report.html",
+    "rung": "A2"
+   }
+  ],
+  "character": "CONTRIBUTED",
+  "character_evidence": "The meeting is an open-call 講演大会: 一般講演 sessions plus 公募シンポジウム (themes proposed and filled by open call), a large poster session including a 高校生・高専学生ポスター発表 track, and only a handful of invited items (本多記念講演, 学会賞受賞記念講演, 外国人特別講演・招待講演, which the society advertises as a separate small call). Oral lectures ran in 13 parallel rooms over three days.",
+  "programme_type": "CONTRIBUTED",
+  "programme_evidence": "https://jimm.jp/event/lecture/2024spr/report.html and the recurring 講演募集 notices on https://jimm.jp/event/lecture/past.html",
+  "direct_abstracts": null,
+  "ratio": 0.8,
+  "ratio_rationale": "Judged 80% for THIS meeting. A Japanese society 講演大会 is very close to a pure presenting meeting: the headline number is 参加者 (registrants), registration is essentially by and for the people giving the 講演, and the programme is nothing but 一般講演, open-call symposia and posters, with only three or four invited lectures in the whole four days. That argues for a very high share. I have set it below the 90% the pilot judged for CFM rather than at it, for two reasons specific to JIM: the report describes a co-located company exhibition, company-run luncheon seminars and a student career-support seminar, all of which bring in attendees who present nothing, and a high-school/technical-college poster track whose participants are counted among the presenters but not necessarily among the 1,200 registrants. At 1,200 that implies ~960; the relative +-20% flex band is 64-96%, i.e. ~770-1,150, which straddles the 900 bar and passes test 2 comfortably. Note the attendance itself is a floor (\"1,200名以上\"), so the implied figure is a floor too.",
+  "duplicate_of": null,
+  "method": "Abstract ladder exhausted without a countable artefact; rung 9 packet supplied and the row queued for rung 5. LANGUAGE: Japanese throughout (講演大会 / 講演件数 / 参加者); ONE search, 日本金属学会 春期講演大会 講演件数 発表件数 プログラム, which returned no figure but found the society's report pages. THE WALL: every recent edition's programme lives on Confit — https://pub.confit.atlas.jp/ja/event/jimm2026fall (2026 autumn), https://pub.confit.atlas.jp/ja/event/jimm2025autumn (2025 autumn), https://confit.atlas.jp/guide/event/jim2023autumn/top (2023 autumn) — and Confit returns HTTP 202 with a ZERO-BYTE body to curl, exactly as the field notes record for JSCE 2024 and JSME 2025. WORKAROUNDS TRIED AND FAILED: (1) the society's own domain jim.or.jp has an EXPIRED TLS certificate and redirects to the new site jimm.jp, which carries no programme or 概要集 at all — /event/ lists only event categories; (2) J-STAGE is not a route, service=3 needs a cdjournal or issn and neither the 日本金属学会講演概要 nor any JIM proceedings title could be resolved to one (service=2 returns ERR_011 without a material/issn/cdjournal parameter); (3) the Wayback Machine could not be used at all during this run — every CDX and /web/ request returned the \"Internet Archive services are temporarily offline\" page, so the archived-Confit workaround is UNTESTED rather than ruled out. NEXT ACTION FOR THE ORCHESTRATOR, exact page: open https://pub.confit.atlas.jp/ja/event/jimm2025autumn (or jimm2026fall) in a browser and count the 一般講演 and ポスター entries in the session list, excluding 本多記念講演, 学会賞受賞記念講演 and 外国人特別講演・招待講演. Retry the Wayback route first if the Archive is back up.",
+  "verdict": "NEEDS_RUNG_5",
+  "confidence": "derived"
+ },
+ {
+  "row": 191,
+  "conference": "IEIE Annual Conference (Institute of Electronics and Information Engineers)",
+  "outcome": "COUNTED",
+  "abstracts_numeric": 1326,
+  "abstracts": "1,326 papers (2025 하계학술대회, the larger edition). PER EDITION, events_per_yr = 2 — the autumn edition ran 458",
+  "year": 2025,
+  "rung": 4,
+  "source_url": "https://www.dbpia.co.kr/journal/voisNodeList?voisId=VOIS00779192&publicationId=PLCT00000552&currPage=1&pageSize=5000",
+  "spot_checks": [
+   "Four editions counted by the identical parse: 2025 summer 1,326 papers + 49 session headers (totCnt 1,375), 2025 autumn 458 + 25 (483), 2024 summer 986 + 39 (1,025), 2023 summer 856 + 25 (881). Papers + headers reproduces the API's own totCnt in all four",
+   "Summer editions are consistently 2-3x the autumn ones (1,326 vs 458 in 2025), which matches the society's own framing — the summer meeting is the 하계종합학술대회, the autumn one a smaller 추계학술대회",
+   "Paper rows are separated from session headers on the same structural field as the KSCE row: a paper carries autr_nm plus frst_page/end_page, a header carries neither",
+   "The edition is the right one: voisTitleKr reads 2025년도 대한전자공학회 하계학술대회 논문집, published 2025-06-24, matching the conference dates on conf.theieie.org"
+  ],
+  "searches_used": 1,
+  "events_per_yr": 2,
+  "cadence_evidence": "The DBpia issue index for publication PLCT00000552 holds 358 issues and shows a regular pair each year — 하계학술대회 in late June and 추계학술대회 in late November (2025-06-24 and 2025-11-28; 2024-06-26 and 2024-11-22; 2023-06-30 and 2023-11-25). The society site conf.theieie.org serves both as 2026s and 2026f. Separate smaller symposia (IICC, ICS) are distinct series and are NOT counted here",
+  "attendance_numeric": null,
+  "attendance_year": null,
+  "attendance_basis": null,
+  "attendance_rung": null,
+  "attendance_source_url": null,
+  "alt_figures": [
+   {
+    "value": 986,
+    "year": 2024,
+    "basis": "papers, 2024 summer edition",
+    "rung": 4
+   },
+   {
+    "value": 856,
+    "year": 2023,
+    "basis": "papers, 2023 summer edition",
+    "rung": 4
+   },
+   {
+    "value": 458,
+    "year": 2025,
+    "basis": "papers, 2025 AUTUMN edition",
+    "rung": 4
+   },
+   {
+    "value": 1784,
+    "year": 2025,
+    "basis": "summer 1,326 + autumn 458 SUMMED — recorded only to show it is NOT the figure used",
+    "rung": 4
+   }
+  ],
+  "character": "CONTRIBUTED",
+  "character_evidence": "Open calls for 일반세션 논문, 특별세션 논문, 최우수논문상 and a 학부생 논문경진대회 (undergraduate competition) run every edition; the proceedings are 850-1,330 short Korean-language papers under ~25-50 subject-session headers. Keynotes (기조강연) and tutorials sit outside the proceedings",
+  "programme_type": "CONTRIBUTED",
+  "programme_evidence": "DBpia publication 대한전자공학회 학술대회 (PLCT00000552), issue 2025년도 대한전자공학회 하계학술대회 논문집; call pages at https://conf.theieie.org/2026s/pages/programs.vm",
+  "direct_abstracts": null,
+  "ratio": null,
+  "ratio_rationale": null,
+  "duplicate_of": null,
+  "method": "Rung 4, ONE search (Korean: 대한전자공학회 학술대회 DBpia publicationDetail 하계종합학술대회 논문집). The search was used ONLY to find the DBpia publication id, PLCT00000552 — every number here was counted from the API, not read off a snippet (the snippet asserted 1,326 / 986 / 856 and my independent counts came to the same figures, which is a coincidence of a correct snippet, not a source). Route: the same two DBpia JSON endpoints as the KSCE row (123) — POST /journal/selectIssueIndexList with publicationId to get the 358 issues and their voisId, then GET /journal/voisNodeList?voisId=<id>&publicationId=PLCT00000552&currPage=1&pageSize=5000 to pull the complete contents in one call; count rows with a non-empty autr_nm. WHY DBpia AND NOT THE SOCIETY SITE: conf.theieie.org serves only a schedule GRID PDF per edition (https://conf.theieie.org/2026s/download/schedule/program_schedule_20260619.pdf, 251,780 bytes) whose Korean text extracts as pure mojibake because it uses an embedded custom-encoded font, and the 논문집 다운로드 link goes to /users/paper_download.vm behind a member login (a credential wall, NOT rung 5). TWO-MEETINGS RULE APPLIED: reported the larger EDITION, never the 1,784 annual sum. EXCLUDED: session-header rows, and the separate IICC and ICS symposia that share the DBpia publication.",
+  "verdict": "BORDERLINE",
+  "confidence": "exact"
+ },
+ {
+  "row": 74,
+  "conference": "ASME Pressure Vessels and Piping Conference (PVP)",
+  "outcome": "COUNTED",
+  "abstracts_numeric": 507,
+  "abstracts": "507 published papers (2025) — FLOOR; presentation-only and poster submissions are not deposited",
+  "year": 2025,
+  "rung": 4,
+  "source_url": "https://api.crossref.org/works?filter=type:proceedings-article,prefix:10.1115,from-pub-date:2025-01-01,until-pub-date:2025-12-31&rows=1000&select=DOI,container-title,event&cursor=*",
+  "spot_checks": [
+   "pvp2024 re-derived by container: 5 volumes (Codes & Standards/Computer Technology & Bolted Joints 101, Design & Analysis 112, Fluid-Structure Interaction/High Pressure Technology 44, Materials & Fabrication 97, Operations Applications & Components/Seismic/NDE 80) sum to exactly 434, matching the DOI-slug count",
+   "event.name on the 2024 items = \"ASME 2024 Pressure Vessels & Piping Conference\"",
+   "Three-year series by the same method: pvp2023=404, pvp2024=434, pvp2025=507 — steady, no series break"
+  ],
+  "searches_used": 0,
+  "events_per_yr": 1,
+  "cadence_evidence": "Deposited annually 2023, 2024, 2025; https://event.asme.org/PVP advertises PVP 2027, Paris, July 25-30 2027 with a call for abstracts closing 19 October 2026 — an annual July conference",
+  "attendance_numeric": null,
+  "attendance_year": null,
+  "attendance_basis": null,
+  "attendance_rung": null,
+  "attendance_source_url": null,
+  "alt_figures": [
+   {
+    "value": 404,
+    "year": 2023,
+    "basis": "published papers deposited to Crossref",
+    "rung": 4
+   },
+   {
+    "value": 434,
+    "year": 2024,
+    "basis": "published papers deposited to Crossref",
+    "rung": 4
+   }
+  ],
+  "character": "CONTRIBUTED",
+  "character_evidence": "Open call for abstracts on the event site; 404-507 contributed papers per edition across five technical volumes",
+  "programme_type": "CONTRIBUTED",
+  "programme_evidence": "https://event.asme.org/PVP — \"Call for Abstracts. Submit your research for PVP 2027 by October 19, 2026\"; ASME presentation-requirements policy names papers, presentation-only submissions and posters",
+  "direct_abstracts": null,
+  "ratio": null,
+  "ratio_rationale": null,
+  "duplicate_of": null,
+  "method": "Rung 4, zero searches. Crossref deposit index, ASME prefix 10.1115. Same cursor-paged call as rows 72/73, grouping the DOI suffix on ^([a-z0-9-]+?)(\\d{4})- : pvp2023=404, pvp2024=434, pvp2025=507. Cross-checked 2024 by summing its five \"Volume N:\" containers = 434 exactly. Largest recent edition = 507 (2025). EXCLUDED: every other ASME slug on the prefix. Recorded as a FLOOR, not as positive evidence of a meeting under 800, because ASME deposits only published papers and runs presentation-only and poster tracks besides; but note the gap here would have to be very large (>290) to reach the floor, which is a different situation from IMECE. This is the row on which the deposit-vs-programme gap most needs settling. Language: English. NEXT ACTION: the PVP session gallery on pvp.secure-platform.com in a browser (the /a landing page exposes no solicitation id to curl), or a Wayback copy of the PVP 2025 technical programme.",
+  "verdict": "BORDERLINE",
+  "confidence": "floor"
+ },
+ {
+  "row": 76,
+  "conference": "ASCE Structures Congress",
+  "outcome": "INFERRED",
+  "abstracts_numeric": null,
+  "abstracts": "~390 INFERRED FROM ATTENDANCE, NOT COUNTED (rung 9 — 1,300 registrants x 0.30 for a practitioner congress whose sessions are largely committee-curated) — see Method. Counted floor: 42 published papers (2025).",
+  "year": 2012,
+  "rung": 9,
+  "source_url": "https://www.isasce.org/wp-content/uploads/2018/09/MayJune_2012.pdf",
+  "spot_checks": [
+   "ASCE Crossref container facet re-run for five years: Structures Congress 2022=39, 2023=38, 2025=42, 2026=26 (no 2024 volume deposited) — a stable 26-42 band, so the deposit is structurally tiny, not a bad year",
+   "Re-read the ISASCE article twice: \"Over 1,300 people registered for the Congress including over 180 students and 30 registered young professionals\" and separately \"there were over 100 technical sessions each with multiple presentations\" — the second is a session count, NOT a presentation count, and is not used as a figure"
+  ],
+  "searches_used": 2,
+  "events_per_yr": 1,
+  "cadence_evidence": "https://www.structurescongress.org/program — Structures Congress 2026, Boston, April 29 - May 1 2026; ASCE Library deposits a Structures Congress volume in 2022, 2023, 2025 and 2026, and the 2012 article calls it \"the annual Structures Congress\"",
+  "attendance_numeric": 1300,
+  "attendance_year": 2012,
+  "attendance_basis": "DELEGATES",
+  "attendance_rung": "A3",
+  "attendance_source_url": "https://www.isasce.org/wp-content/uploads/2018/09/MayJune_2012.pdf",
+  "alt_figures": [
+   {
+    "value": 42,
+    "year": 2025,
+    "basis": "published papers deposited to Crossref (floor; papers are optional)",
+    "rung": 4
+   },
+   {
+    "value": 39,
+    "year": 2022,
+    "basis": "published papers deposited to Crossref (floor)",
+    "rung": 4
+   }
+  ],
+  "character": "HYBRID",
+  "character_evidence": "Both an open call and a curated spine. The 2012 account says the National Technical Program Committee \"sorts through hundreds of abstracts submitted from across the globe\" and that rejected abstracts were offered poster slots — an open call. But ASCE also runs a Call for PROPOSALS for whole sessions (call opened 19 Mar 2025, closed 11 Jun 2025) and published a guide titled \"How to upload a session proposal that will have no papers\", and the 2026 schedule is built around plenaries, panels, an exhibit hall, tours and a signatory summit.",
+  "programme_type": "HYBRID",
+  "programme_evidence": "https://www.structurescongress.org/program (2026 schedule-at-a-glance: concurrent technical sessions interleaved with Opening/Afternoon/Special/Closing plenaries, exhibit-hall lunches, \"Flash Sessions\", boat and bridge tours) plus https://www.structurescongress.org/program/presenters — \"Submissions of a final paper are optional\".",
+  "direct_abstracts": null,
+  "ratio": 0.3,
+  "ratio_rationale": "Judged 30% for THIS congress. Structures Congress is a practitioner meeting of a 30,000-member institute of structural engineers, and the things that push a ratio up at a research congress are all weaker here: the unit ASCE solicits is a SESSION PROPOSAL as much as an abstract (it publishes an instruction sheet called \"How to upload a session proposal that will have no papers\"), the schedule is punctuated by four plenaries, an exhibit hall with 50+ exhibitors, tours and a student/young-professional track, and the 2012 registration of 1,300 explicitly included 180 students and 30 young professionals attending a networking programme rather than presenting. Against that, it is not a teaching course either: there is a genuine global open call and rejected abstracts were given poster slots, so the contributed share is real, just a minority. That reading is corroborated by the shape of the programme — \"over 100 technical sessions each with multiple presentations\" is context, not a figure, and is consistent with a few hundred presentations against 1,300 registrants. I deliberately did NOT borrow the 70% I judged for EWRI (row 77): EWRI sells a paid abstract submission and its programme is nothing but technical tracks, whereas this congress has a large non-presenting practitioner and student audience. At 30% the implied figure is ~390; the relative +-20% flex band is 24-36%, i.e. ~310-470, which does not approach 900 under either test.",
+  "duplicate_of": null,
+  "method": "Abstract ladder exhausted without a countable programme artefact, so rung 9 decided this row. Rung 4 (zero searches): Crossref ASCE prefix 10.1061, container facet by year (https://api.crossref.org/works?filter=type:proceedings-article,prefix:10.1061,from-pub-date:2025-01-01,until-pub-date:2025-12-31&rows=0&facet=container-title:300) gives \"Structures Congress 2025\" = 42, 2023 = 38, 2022 = 39, 2026 = 26. That is a FLOOR and a weak one, because ASCE states final papers are optional. Rungs 3/5/6 have nothing to work on: structurescongress.org publishes only a schedule-at-a-glance (no per-session paper list, no platform link at all - unlike row 77 there is no eventscribe site), /program/presenters is an author-instructions page, and Wayback CDX over structurescongress.org (https://web.archive.org/cdx/search/cdx?url=structurescongress.org*&output=text&collapse=urlkey&limit=500&filter=statuscode:200&filter=mimetype:application/pdf) surfaces final programmes only for 2014, 2015, 2017 and 2018, of which the 2018 copy fetched through the Wayback id_ route returned a truncated 1,048,576-byte file that pdfinfo could not open - so no full programme was countable. This is NOT a rung-5 row: nothing is behind a bot wall, the artefact does not exist publicly. RUNG 9 (2 searches, both on the attendance ladder): search 1 \"ASCE SEI Structures Congress attendees number\" and search 2 \"'Structures Congress' SEI exhibitor prospectus 'attendees' filetype:pdf\" returned no loadable organiser figure - www.aisc.org 403s, and the current about page carries only SEI's 30,000 membership. The one page that actually loaded with a number is the ASCE Illinois Section newsletter, ASCE NEWS Vol 53 No 5, May/June 2012, p.11: \"Over 1,300 people registered for the Congress including over 180 students and 30 registered young professionals\". Recorded as A3, DELEGATES, and DATED 2012. No figure asserted from any snippet: a search summary offered \"between 1,000 and 2,000 attendees\" and it is NOT used. Language: English (US society). NEXT ACTION if this row is revisited: an SEI post-congress report or an exhibitor prospectus for a recent edition would replace a 2012 figure.",
+  "verdict": "OUT",
+  "confidence": "derived"
+ },
+ {
+  "row": 90,
+  "conference": "SME MineXchange Annual Conference and Expo",
+  "outcome": "INFERRED",
+  "abstracts_numeric": null,
+  "abstracts": "~520 INFERRED FROM ATTENDANCE, NOT COUNTED (rung 9 — 7,438 attendees x 0.07 for an industry conference-and-expo whose technical programme is 113 sessions) — see Method",
+  "year": 2026,
+  "rung": 9,
+  "source_url": "https://smeannualconference.org/who-attends-minexchange/",
+  "spot_checks": [
+   "Every figure used is read off one organiser page that loaded, and that page states its own basis: \"Data is based on MINEXCHANGE 2026 SME Annual Conference & Expo\"",
+   "Re-read the same page for the numbers that constrain the ratio rather than only the headline: 113 Technical sessions, 11 Short Courses, 632 Student attendees, 895 International Attendees, 600 Exhibiting companies, 85,400 sqft of exhibit space, and \"22.7% Attendees register just for the Expo\"",
+   "The job-title breakdown on the same page is the decisive evidence and was checked digit by digit: Sales & Marketing 27.8%, Engineer 17.9%, Consultant 8.2%, C-Suite Executive 7.7%, Student 7.4%, Director 7%, General/Plant Manager 3.8%, Geologist 2.7%, Scientist/Researcher 2.5%, Educator 2%",
+   "The 113 technical sessions are recorded as CONTEXT, not converted into a figure — the engineering field notes reject session-count arithmetic outright (counting rule 7)"
+  ],
+  "searches_used": 0,
+  "events_per_yr": 1,
+  "cadence_evidence": "Annual. The conference site advertises MINEXCHANGE 2027 while publishing 2026 statistics, and the 2026 edition ran Sunday 22 to Wednesday 25 February 2026 in Salt Lake City",
+  "attendance_numeric": 7438,
+  "attendance_year": 2026,
+  "attendance_basis": "TOTAL_ONSITE",
+  "attendance_rung": "A2",
+  "attendance_source_url": "https://smeannualconference.org/who-attends-minexchange/",
+  "alt_figures": [
+   {
+    "value": 632,
+    "year": 2026,
+    "basis": "DELEGATES — student attendees, a subset of the 7,438",
+    "rung": "A2"
+   },
+   {
+    "value": 895,
+    "year": 2026,
+    "basis": "DELEGATES — international attendees, a subset of the 7,438",
+    "rung": "A2"
+   }
+  ],
+  "character": "HYBRID",
+  "character_evidence": "There is a real open call — the site runs an Authors section with Abstract Submission and Manuscript Submission, and SME publishes a conference preprint per accepted paper — but it sits inside an industry expo: 600 exhibiting companies, 85,400 sqft of exhibit space, 11 ticketed short courses, two IdeaXchange stages, student design competitions and a podcast studio, with 22.7% of attendees registering for the Expo alone.",
+  "programme_type": "HYBRID",
+  "programme_evidence": "https://smeannualconference.org/who-attends-minexchange/ (113 technical sessions against 600 exhibitors) and https://smeannualconference.org/schedule/ (a schedule-at-a-glance interleaving technical sessions with expo hours, ticketed short courses, award lunches and division functions)",
+  "direct_abstracts": null,
+  "ratio": 0.07,
+  "ratio_rationale": "Judged 7% for THIS meeting, and the organiser's own demographics are what set it. MINEXCHANGE publishes its attendee mix: 27.8% Sales & Marketing, 8.2% Consultant, 7.7% C-Suite Executive, 3.8% General/Plant Manager — against Scientist/Researcher 2.5%, Educator 2% and an Academia sector share of 2.4%. Nearly a quarter (22.7%) register for the Expo only, and there are 600 exhibiting companies filling 85,400 sqft. This is a commercial mining industry event with a technical programme attached, not a research congress, so the share of the room that submitted an abstract is small. I did NOT reach for the field median or copy a comparable: the nearest engineering precedents in the census (TRB at 11,000 with a heavily agency-staff audience, WEFTEC at 23,000) are the same SHAPE but I have set SME slightly above a pure trade show because it does run an author call with published preprints and 113 technical sessions, which is a substantial programme by mining standards. At 7,438 attendees this implies ~520; the relative +-20% flex band is 5.6-8.4%, i.e. ~417-625, which does not reach 900 under test 2, and ~520 is not within 100 of 800 under test 1. Both tests fail, which is why the verdict is OUT rather than BORDERLINE.",
+  "duplicate_of": null,
+  "method": "BOUNDARY ROW, judged on contributed science as the queue asked. Abstract ladder exhausted without a countable artefact, so rung 9 decided it. WHAT WAS TRIED: smenet.org and smeannualconference.org both serve fine (no wall), but neither publishes a per-paper programme — /technical-program/ carries no paper list, /schedule/ (1,885,176 bytes) is a schedule-at-a-glance of sessions, rooms and social events with no individual talks, /past-conference-programs/ 404s, and the per-presentation SME PREPRINTS are sold through the SME store rather than listed publicly. The detailed programme is in the conference mobile app, which is not a web artefact. This is NOT a rung-5 row: nothing is behind a bot wall or a JS shell, the paper list simply is not published on the open web. RUNG 9, zero searches: the organiser's own \"Who Attends MINEXCHANGE\" infographic page gives 7,438 attendees for the 2026 edition together with a full demographic breakdown, which is an A2-class post-meeting statistic (retrospective, published for exhibitors to buy against). Language: English (US society). NEXT ACTION if this row is revisited: the SME store listing for MINEXCHANGE 2026 preprints would give an exact paper count if it exposes a result total, and the conference app would give the programme.",
+  "verdict": "OUT",
+  "confidence": "derived"
+ },
+ {
+  "row": 97,
+  "conference": "Human Factors and Ergonomics Society Annual Meeting",
+  "outcome": "COUNTED",
+  "abstracts_numeric": 536,
+  "abstracts": "536 proceedings papers (2019, the largest edition in the eight years checked); 439 in 2025",
+  "year": 2019,
+  "rung": 4,
+  "source_url": "https://api.crossref.org/works?filter=issn:2169-5067,from-pub-date:2019-01-01,until-pub-date:2019-12-31&rows=0",
+  "spot_checks": [
+   "Eight years by the same call: 2018 = 475, 2019 = 536, 2022 = 525, 2023 = 481, 2024 = 375, 2025 = 439. A stable 375-536 band across pre- and post-pandemic years, so no edition approaches the bar",
+   "Single-volume check: the 2018 and 2019 items all sit in one volume each (vol 62 and vol 63, issue 1) with page numbers running past 2,000, i.e. one annual proceedings per year and no second series hiding elsewhere",
+   "The right ISSN was picked from two candidates with the same title: 2169-5067 / 1071-1813 is the ANNUAL MEETING proceedings (16,302 DOIs), while 1541-9312 is the separate Symposium on Human Factors and Ergonomics in Health Care (168 DOIs, 39 of them from 2012) and is excluded",
+   "The society's own Crossref member record (member 370, prefix 10.1518) holds only 40 DOIs, all from that Health Care symposium — the annual meeting is deposited by Sage, not by HFES"
+  ],
+  "searches_used": 0,
+  "events_per_yr": 1,
+  "cadence_evidence": "The proceedings volume increments by one every year with an unbroken deposit series 2018-2025 (vol 62 in 2018, vol 63 in 2019), i.e. one annual meeting a year",
+  "attendance_numeric": null,
+  "attendance_year": null,
+  "attendance_basis": null,
+  "attendance_rung": null,
+  "attendance_source_url": null,
+  "alt_figures": [
+   {
+    "value": 439,
+    "year": 2025,
+    "basis": "papers deposited to Crossref for the 2025 annual meeting",
+    "rung": 4
+   },
+   {
+    "value": 525,
+    "year": 2022,
+    "basis": "papers deposited to Crossref for the 2022 annual meeting",
+    "rung": 4
+   }
+  ],
+  "character": "CONTRIBUTED",
+  "character_evidence": "Every accepted lecture and poster produces a proceedings paper in the annual volume, which is why the deposit is the count; 375-536 contributed papers per edition",
+  "programme_type": "CONTRIBUTED",
+  "programme_evidence": "Proceedings of the Human Factors and Ergonomics Society Annual Meeting (ISSN 2169-5067), one volume per year",
+  "direct_abstracts": null,
+  "ratio": null,
+  "ratio_rationale": null,
+  "duplicate_of": null,
+  "method": "Rung 4, zero searches. BOUNDARY ROW judged on contributed science, as the queue asked. Route: https://api.crossref.org/members?query=Human+Factors returns HFES as member 370 with only 40 DOIs, which would read as \"does not deposit\" — the field-notes trap. The annual meeting is published by Sage, so the usable handle is the JOURNAL, found with https://api.crossref.org/journals?query=Proceedings+of+the+Human+Factors+and+Ergonomics+Society+Annual+Meeting: ISSN 2169-5067 (also 1071-1813), 16,302 DOIs. Counted per year with filter=issn:2169-5067,from-pub-date:<Y>-01-01,until-pub-date:<Y>-12-31&rows=0 and read total-results: 2018 475, 2019 536, 2022 525, 2023 481, 2024 375, 2025 439. Largest = 536 (2019). EXCLUDED: the identically-titled ISSN 1541-9312, which is the Health Care symposium, not the annual meeting. This is a COUNT, not a floor: HFES requires a proceedings manuscript for every accepted lecture and poster, so there is no undeposited presentation track of the kind that makes ASME and ASCE floors. The figure is under 800 in every one of the eight years checked, which is positive evidence rather than absence of it. Language: English (US society).",
+  "verdict": "OUT",
+  "confidence": "exact"
+ },
+ {
+  "row": 138,
+  "conference": "International Conference on Soil Mechanics and Geotechnical Engineering (ICSMGE)",
+  "outcome": "COUNTED",
+  "abstracts_numeric": 1230,
+  "abstracts": "1,230 contributed papers (21st ICSMGE, Vienna 2026) — 1,257 proceedings items less 27 invited Plenary items",
+  "year": 2026,
+  "rung": 4,
+  "source_url": "https://eposter.at/ICSMGE2026/proceedings/overview.html",
+  "spot_checks": [
+   "Every item is counted from its own markup, not from a stated total: the ALL PAPERS page carries 1,257 data-poster-id attributes, all distinct, each paired with a <span class=\"poster-category\"> label and a PDF path",
+   "Category breakdown sums exactly to the total: Technical Committees 1,104 across 36 TCs (TC203 97, TC211 93, TC103 87, TC101 70, TC212 68, TC202 57, TC209 52 ...), plus Young Engineers 112, Eurocode 7 14 and Plenary 27 = 1,257",
+   "The invited exclusion is structural, not a judgement: the 27 invited items are the ONLY ones whose id is prefixed \"Plenary-\" (Plenary-02 Karl Terzaghi's Notes on construction, Plenary-03 The Vienna Terzaghi Archive, ...); the other 1,230 ids are bare paper numbers"
+  ],
+  "searches_used": 0,
+  "events_per_yr": 0.25,
+  "cadence_evidence": "Quadrennial. The 21st ICSMGE is the 2026 Vienna congress (https://www.icsmge2026.org/en/), following the 20th in Sydney in 2022",
+  "attendance_numeric": null,
+  "attendance_year": null,
+  "attendance_basis": null,
+  "attendance_rung": null,
+  "attendance_source_url": null,
+  "alt_figures": [
+   {
+    "value": 1104,
+    "year": 2026,
+    "basis": "Technical-Committee papers only, excluding Young Engineers and Eurocode 7",
+    "rung": 4
+   }
+  ],
+  "character": "CONTRIBUTED",
+  "character_evidence": "The proceedings are 1,230 contributed full papers spread over 36 Technical Committees plus a Young Engineers track, against 27 plenary lectures; the congress site lists poster sessions, a detailed programme and a complete proceedings download",
+  "programme_type": "CONTRIBUTED",
+  "programme_evidence": "https://eposter.at/ICSMGE2026/proceedings/ — ALL PAPERS / Categories / Sessions views of the individual-paper proceedings",
+  "direct_abstracts": null,
+  "ratio": null,
+  "ratio_rationale": null,
+  "duplicate_of": null,
+  "method": "Rung 4, zero searches. BOUNDARY ROW judged on contributed science, as the queue asked, and it is clearly a contributed congress. Route (new): the ISSMGE Online Library at https://www.issmge.org/publications/online-library has a conference filter (conference=1 is the ICSMGE series) but paginates through a POST form that does not yield a total to curl — so I went to the current edition instead. https://www.icsmge2026.org/en/ links \"Proceedings individual papers\" to https://eposter.at/ICSMGE2026/proceedings/, a STATIC ePoster site: index.html lists 42 category pages, and overview.html (640,434 bytes) carries the COMPLETE paper list in one server-rendered page, one <div class=\"poster-item\" data-poster-id=\"...\" data-pdf=\"...\"> per paper. COUNT: regex data-poster-id=\"([^\"]+)\" over overview.html, taking the set = 1,257; then split on the poster-category span. EXCLUDED: the 27 Plenary items. INCLUDED: Young Engineers (112) and Eurocode 7 (14), both contributed tracks. This is a full count, not a floor — ICSMGE requires a paper for every slot and the site publishes a PDF for each. Language: English (ICSMGE is English-language; the ePoster host is Austrian and its nav labels are German, which does not affect the count).",
+  "verdict": "BORDERLINE",
+  "confidence": "exact"
+ }
+]

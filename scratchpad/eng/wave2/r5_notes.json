@@ -1,0 +1,22 @@
+{
+ "190": {
+  "abstracts_numeric": 1161,
+  "abstracts": "≤1,161 presentations (2025 autumn, 177th 講演大会, Confit 講演検索 whole-programme total incl. 基調講演 keynotes — a few dozen — so contributed is roughly 1,100–1,140; the spring meeting is the same size class)",
+  "year": 2025,
+  "rung": 5,
+  "source_url": "https://pub.confit.atlas.jp/ja/event/jimm2025autumn/search?lang=ja&p=1&sp=1&t=presentation",
+  "confidence": "derived",
+  "tier": "BORDERLINE",
+  "orchestrator_note": "RUNG 5 BY THE ORCHESTRATOR (2026-09-14, Playwright; 0 searches): pub.confit.atlas.jp/ja/event/jimm2025autumn/search, searched with no keyword, states 講演(1,161) セッション(125). Presentations carry plain numeric IDs ([33], [34] …) with a session tag ([G]熱電材料). The filter UI exposes a 基調講演 (keynote) toggle inside a Next.js widget that could not be driven reliably, so the keynote subset was not separated; JIM keynotes run a few dozen per meeting, so contributed ≈ 1,100–1,140 and the tier is BORDERLINE either way (below 1,500 even before exclusion, above 800 after). Two meetings a year (spring 春期 / autumn 秋期), events_per_yr 2, per-edition figure recorded."
+ },
+ "77": {
+  "abstracts_numeric": 516,
+  "abstracts": "516 presentations (2026, the complete eventscribe 'Browse by Title' index of the EWRI Congress programme, panels included; no poster index exists on the site) — OUT on positive evidence",
+  "year": 2026,
+  "rung": 5,
+  "source_url": "https://ewricongress2026.eventscribe.net/SearchByPresentation.asp?pfp=BrowsebyTitle",
+  "confidence": "derived",
+  "tier": "OUT",
+  "orchestrator_note": "RUNG 5 BY THE ORCHESTRATOR (2026-09-14, Playwright; 0 searches): ewricongress2026.eventscribe.net returns Cloudflare 403 to curl but opens in a browser. Its 'Browse by Title' page states '516 results found' and carries exactly 516 unique PresentationID links (panel discussions included in the 516); /searchbyposter.asp is 404, so there is no separate poster listing to add. Even a poster session of a few hundred would leave the programme under 800. Consistent with the researcher's Crossref deposit floor (105–147 papers/yr; papers are optional at EWRI) and the 1,100 attendance. Language: English. VERDICT OUT (counted 516 < 800)."
+ }
+}
