@@ -1,0 +1,227 @@
+[
+ {
+  "row": 81,
+  "conference": "SAE COMVEC (Commercial Vehicle Engineering Congress)",
+  "society": "SAE International",
+  "country": "US",
+  "subfield": "automotive / commercial vehicles",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | annual | SAE technical papers; likely a few hundred, boundary | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 85,
+  "conference": "Unconventional Resources Technology Conference (URTeC)",
+  "society": "SPE / AAPG / SEG",
+  "country": "US",
+  "subfield": "petroleum",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | annual (June) | OnePetro technical papers; boundary | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 94,
+  "conference": "AISTech - The Iron and Steel Technology Conference and Exposition",
+  "society": "Association for Iron and Steel Technology (AIST)",
+  "country": "US",
+  "subfield": "metallurgy / materials processing",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | annual (May) | several hundred technical papers in AIST conference proceedings; boundary | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 101,
+  "conference": "IEEE PES Transmission and Distribution Conference and Exposition",
+  "society": "IEEE Power and Energy Society",
+  "country": "US",
+  "subfield": "power",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | biennial | paper programme likely a few hundred; boundary | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 112,
+  "conference": "JSPE Annual Meeting (Japan Society for Precision Engineering)",
+  "society": "Japan Society for Precision Engineering (JSPE)",
+  "country": "Japan",
+  "subfield": "precision / manufacturing",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | twice yearly | ~800-1,000 short presentations per meeting; boundary | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 115,
+  "conference": "Annual Conference of the Chinese Society for Electrical Engineering (CSEE)",
+  "society": "Chinese Society for Electrical Engineering (CSEE)",
+  "country": "China",
+  "subfield": "power / electrical",
+  "events_per_yr": null,
+  "notes": "IMPLIED NAME — the society or group is confirmed but this meeting title was never verified. Phase 2 must resolve it to a real name or drop the row. | annual | national society annual meeting with a large Chinese-language paper programme; not in Crossref or DBLP | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 118,
+  "conference": "China Civil Engineering Society Annual Conference",
+  "society": "China Civil Engineering Society (CCES)",
+  "country": "China",
+  "subfield": "civil",
+  "events_per_yr": null,
+  "notes": "IMPLIED NAME — the society or group is confirmed but this meeting title was never verified. Phase 2 must resolve it to a real name or drop the row. | annual | national civil engineering society congress, Chinese-language programme | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 121,
+  "conference": "Chinese Society of Agricultural Engineering Annual Conference",
+  "society": "Chinese Society of Agricultural Engineering (CSAE)",
+  "country": "China",
+  "subfield": "agricultural engineering",
+  "events_per_yr": null,
+  "notes": "IMPLIED NAME — the society or group is confirmed but this meeting title was never verified. Phase 2 must resolve it to a real name or drop the row. | annual | national agricultural engineering society congress, Chinese-language programme | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 130,
+  "conference": "CBA - Congresso Brasileiro de Automatica",
+  "society": "Sociedade Brasileira de Automatica (SBA)",
+  "country": "Brazil",
+  "subfield": "control / automation",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | biennial | ~600-900 Portuguese and English papers; boundary | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 147,
+  "conference": "International Mineral Processing Congress (IMPC)",
+  "society": "International Mineral Processing Council",
+  "country": "International",
+  "subfield": "mining / minerals",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | biennial | ~700-900 papers; boundary | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 151,
+  "conference": "International Congress on Advances in Nuclear Power Plants (ICAPP) and ICONE",
+  "society": "ANS / ASME / JSME / SFEN",
+  "country": "International",
+  "subfield": "nuclear",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | annual | ~500-800 papers each; boundary | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 157,
+  "conference": "SEFI Annual Conference",
+  "society": "European Society for Engineering Education (SEFI)",
+  "country": "Europe",
+  "subfield": "engineering education",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | annual | ~300-500 papers; boundary | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 160,
+  "conference": "International Conference on Applications of Statistics and Probability in Civil Engineering (ICASP) / ICOSSAR",
+  "society": "IASSAR",
+  "country": "International",
+  "subfield": "structural reliability",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | every four years | ~500-700 papers; boundary | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 163,
+  "conference": "MS&T - Materials Science and Technology Technical Meeting and Exhibition",
+  "society": "ACerS / AIST / ASM International / TMS",
+  "country": "US",
+  "subfield": "materials / metallurgy",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | annual (autumn) | four-society joint meeting with ~1,000 presentations; society-press proceedings | Phase 1 source: https://www.abet.org/member-societies/ | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 168,
+  "conference": "Society of Engineering Science (SES) Annual Technical Meeting",
+  "society": "Society of Engineering Science (SES)",
+  "country": "US",
+  "subfield": "engineering mechanics / materials",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | annual | abstract-only symposium-based meeting of several hundred presentations; boundary against the bar | Phase 1 source: https://socengsci.org/ | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 171,
+  "conference": "International Heat Transfer Conference (IHTC)",
+  "society": "Assembly for International Heat Transfer Conferences",
+  "country": "International",
+  "subfield": "thermal / mechanical",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | every four years | ~800-1,000 papers; organiser-hosted proceedings | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 175,
+  "conference": "IIW Annual Assembly and International Conference",
+  "society": "International Institute of Welding (IIW)",
+  "country": "International",
+  "subfield": "welding / joining",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | annual | commission documents plus conference papers; contributed count uncertain, boundary | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 178,
+  "conference": "ICOLD Congress and Annual Meeting",
+  "society": "International Commission on Large Dams (ICOLD)",
+  "country": "International",
+  "subfield": "dams / hydraulic",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | annual with quadrennial congress | congress question papers plus symposium papers; boundary | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 183,
+  "conference": "ABM Week",
+  "society": "Associacao Brasileira de Metalurgia, Materiais e Mineracao (ABM)",
+  "country": "Brazil",
+  "subfield": "metallurgy / mining",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | annual | multi-seminar week with several hundred Portuguese-language technical papers; boundary | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 186,
+  "conference": "CSCE Annual Conference",
+  "society": "Canadian Society for Civil Engineering (CSCE)",
+  "country": "Canada",
+  "subfield": "civil",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | annual | ~500-700 papers; boundary | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 189,
+  "conference": "ISIJ Spring and Autumn Meetings (Iron and Steel Institute of Japan)",
+  "society": "Iron and Steel Institute of Japan (ISIJ)",
+  "country": "Japan",
+  "subfield": "metallurgy / materials processing",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | twice yearly | ~700-1,000 Japanese-language presentations per meeting, held jointly with the Japan Institute of Metals; ISIJ-only proceedings | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 194,
+  "conference": "SHASE Annual Conference (Society of Heating, Air-Conditioning and Sanitary Engineers of Japan)",
+  "society": "SHASE",
+  "country": "Japan",
+  "subfield": "HVAC / building services",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | annual | ~600-900 Japanese-language presentations; society-only proceedings | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 197,
+  "conference": "APIEMS Conference (Asia Pacific Industrial Engineering and Management Systems)",
+  "society": "Asia Pacific Industrial Engineering and Management Systems Society",
+  "country": "Asia-Pacific",
+  "subfield": "industrial engineering",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | annual | regional industrial engineering conference; likely a few hundred papers, boundary | Phase 1 source: http://apiems.asia/ | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 201,
+  "conference": "ICCE - International Conference on Coastal Engineering",
+  "society": "ASCE COPRI Coastal Engineering Research Council",
+  "country": "International",
+  "subfield": "coastal / ocean",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | biennial | ~900 participants from 57 countries in 2024; contributed-paper count likely below the bar, flagged boundary | Phase 1 source: https://www.asce.org/coasts-oceans-ports-and-rivers-engineering/international-conference-on-coastal-engineering/ | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 204,
+  "conference": "Waste Management Symposia (WM)",
+  "society": "WM Symposia",
+  "country": "US",
+  "subfield": "nuclear waste / environmental",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | annual (March, Phoenix) | ~500-700 papers; WM-hosted proceedings outside the main indexes | Phase 1 second pass, loaded 2026-09-14"
+ }
+]

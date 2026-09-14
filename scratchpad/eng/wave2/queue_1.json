@@ -1,0 +1,272 @@
+[
+ {
+  "row": 72,
+  "conference": "ASME International Design Engineering Technical Conferences and Computers and Information in Engineering Conference (IDETC-CIE)",
+  "society": "American Society of Mechanical Engineers (ASME)",
+  "country": "US",
+  "subfield": "mechanical / design",
+  "events_per_yr": null,
+  "notes": "annual (August) | ~1,000+ technical papers across the design, mechanisms, robotics and CIE tracks | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 73,
+  "conference": "ASME International Conference on Ocean, Offshore and Arctic Engineering (OMAE)",
+  "society": "American Society of Mechanical Engineers (ASME)",
+  "country": "International",
+  "subfield": "offshore / marine",
+  "events_per_yr": null,
+  "notes": "annual (June) | ~800-1,000 technical papers; ASME-press proceedings, not in DBLP | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 77,
+  "conference": "ASCE EWRI World Environmental and Water Resources Congress",
+  "society": "American Society of Civil Engineers (ASCE) / EWRI",
+  "country": "US",
+  "subfield": "water / environmental",
+  "events_per_yr": null,
+  "notes": "annual (May) | ~700-900 papers and presentations in ASCE Library proceedings | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 89,
+  "conference": "POMS Annual Conference",
+  "society": "Production and Operations Management Society (POMS)",
+  "country": "US",
+  "subfield": "industrial / operations",
+  "events_per_yr": null,
+  "notes": "annual (spring) | ~1,500 presentations; abstract-only programme | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 98,
+  "conference": "ISOPE International Ocean and Polar Engineering Conference",
+  "society": "International Society of Offshore and Polar Engineers (ISOPE)",
+  "country": "International",
+  "subfield": "offshore / marine",
+  "events_per_yr": null,
+  "notes": "annual (June) | ~800-1,000 papers per conference in ISOPE-press proceedings | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 100,
+  "conference": "IEEE International Microwave Symposium (IMS) / Microwave Week",
+  "society": "IEEE Microwave Theory and Technology Society",
+  "country": "US",
+  "subfield": "microwave / RF",
+  "events_per_yr": null,
+  "notes": "annual (June) | IMS week with RFIC and ARFTG together carries roughly a thousand contributions | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 109,
+  "conference": "IEICE Society Conference",
+  "society": "Institute of Electronics, Information and Communication Engineers (IEICE)",
+  "country": "Japan",
+  "subfield": "electronics / communications",
+  "events_per_yr": null,
+  "notes": "annual (September) | ~1,500-2,000 presentations; IEICE-only Japanese proceedings | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 110,
+  "conference": "JSAE Annual Congress (Spring and Autumn)",
+  "society": "Society of Automotive Engineers of Japan (JSAE)",
+  "country": "Japan",
+  "subfield": "automotive",
+  "events_per_yr": null,
+  "notes": "twice yearly | ~800-1,000 technical papers per congress; JSAE-only proceedings | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 111,
+  "conference": "Japan Concrete Institute Annual Convention",
+  "society": "Japan Concrete Institute (JCI)",
+  "country": "Japan",
+  "subfield": "civil / materials",
+  "events_per_yr": null,
+  "notes": "annual (July) | ~1,000 papers in the JCI annual proceedings, Japanese-language | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 123,
+  "conference": "KSCE Convention (Korean Society of Civil Engineers Annual Conference)",
+  "society": "Korean Society of Civil Engineers (KSCE)",
+  "country": "South Korea",
+  "subfield": "civil",
+  "events_per_yr": null,
+  "notes": "annual (October) | ~1,000-2,000 Korean-language presentations; society-only proceedings | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 126,
+  "conference": "KSAS Fall Conference",
+  "society": "Korean Society for Aeronautical and Space Sciences (KSAS)",
+  "country": "South Korea",
+  "subfield": "aerospace",
+  "events_per_yr": null,
+  "notes": "twice yearly | ~800-1,200 Korean-language presentations per meeting | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 127,
+  "conference": "KICS Winter/Summer Conference",
+  "society": "Korean Institute of Communications and Information Sciences (KICS)",
+  "country": "South Korea",
+  "subfield": "communications",
+  "events_per_yr": null,
+  "notes": "twice yearly | ~800-1,200 short Korean-language papers per meeting | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 128,
+  "conference": "GAMM Annual Meeting (Jahrestagung der Gesellschaft fuer Angewandte Mathematik und Mechanik)",
+  "society": "GAMM",
+  "country": "Germany",
+  "subfield": "applied mechanics",
+  "events_per_yr": null,
+  "notes": "annual | ~1,000 contributed talks in the GAMM sections; abstracts only | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 134,
+  "conference": "European Conference on Earthquake Engineering (ECEE)",
+  "society": "European Association for Earthquake Engineering (EAEE)",
+  "country": "Europe",
+  "subfield": "earthquake engineering",
+  "events_per_yr": null,
+  "notes": "every four years | ~1,000-1,500 papers; organiser-hosted proceedings | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 137,
+  "conference": "US National Congress on Computational Mechanics (USNCCM)",
+  "society": "US Association for Computational Mechanics (USACM)",
+  "country": "US",
+  "subfield": "computational mechanics",
+  "events_per_yr": null,
+  "notes": "biennial | ~1,200-1,800 presentations; abstract-only | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 140,
+  "conference": "World Conference on Transport Research (WCTR)",
+  "society": "World Conference on Transport Research Society (WCTRS)",
+  "country": "International",
+  "subfield": "transportation",
+  "events_per_yr": null,
+  "notes": "every three years | ~1,000-1,500 papers; society-hosted proceedings | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 141,
+  "conference": "IAHR World Congress",
+  "society": "International Association for Hydro-Environment Engineering and Research (IAHR)",
+  "country": "International",
+  "subfield": "hydraulics / water",
+  "events_per_yr": null,
+  "notes": "biennial | ~1,000 papers; IAHR-hosted proceedings | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 142,
+  "conference": "International Conference on Composite Materials (ICCM)",
+  "society": "International Committee on Composite Materials",
+  "country": "International",
+  "subfield": "composites",
+  "events_per_yr": null,
+  "notes": "biennial | ~1,200-1,800 papers; organiser-hosted proceedings | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 143,
+  "conference": "European Conference on Composite Materials (ECCM)",
+  "society": "European Society for Composite Materials (ESCM)",
+  "country": "Europe",
+  "subfield": "composites",
+  "events_per_yr": null,
+  "notes": "biennial | ~900-1,200 papers; organiser-hosted proceedings | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 144,
+  "conference": "INTER-NOISE International Congress and Exposition on Noise Control Engineering",
+  "society": "International Institute of Noise Control Engineering (I-INCE)",
+  "country": "International",
+  "subfield": "acoustics / noise",
+  "events_per_yr": null,
+  "notes": "annual | ~1,000-1,300 papers; I-INCE proceedings not in the main indexes | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 145,
+  "conference": "International Congress on Acoustics (ICA)",
+  "society": "International Commission for Acoustics",
+  "country": "International",
+  "subfield": "acoustics",
+  "events_per_yr": null,
+  "notes": "every three years | ~1,000 papers; organiser-hosted proceedings | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 146,
+  "conference": "EU PVSEC - European Photovoltaic Solar Energy Conference and Exhibition",
+  "society": "EU PVSEC / WIP",
+  "country": "Europe",
+  "subfield": "photovoltaics / energy",
+  "events_per_yr": null,
+  "notes": "annual | ~1,000-1,300 accepted contributions; WIP-published proceedings outside the main indexes | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 148,
+  "conference": "IFAC World Congress",
+  "society": "International Federation of Automatic Control (IFAC)",
+  "country": "International",
+  "subfield": "control",
+  "events_per_yr": null,
+  "notes": "every three years | ~2,500-3,000 papers; published in IFAC-PapersOnLine, a journal container rather than a proceedings container | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 190,
+  "conference": "JIM Spring and Autumn Meetings (Japan Institute of Metals and Materials)",
+  "society": "Japan Institute of Metals and Materials (JIM)",
+  "country": "Japan",
+  "subfield": "metallurgy / materials",
+  "events_per_yr": null,
+  "notes": "twice yearly | ~1,000-1,500 Japanese-language presentations per meeting; society-only abstracts | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 191,
+  "conference": "IEIE Annual Conference (Institute of Electronics and Information Engineers)",
+  "society": "Institute of Electronics and Information Engineers (IEIE), Korea",
+  "country": "South Korea",
+  "subfield": "electronics",
+  "events_per_yr": null,
+  "notes": "twice yearly | ~1,000-1,500 short Korean-language papers per conference; society-only proceedings | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 74,
+  "conference": "ASME Pressure Vessels and Piping Conference (PVP)",
+  "society": "American Society of Mechanical Engineers (ASME)",
+  "country": "US",
+  "subfield": "mechanical / nuclear",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | annual (July) | several hundred to ~900 technical papers; society-press proceedings invisible to indexes | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 76,
+  "conference": "ASCE Structures Congress",
+  "society": "American Society of Civil Engineers (ASCE)",
+  "country": "US",
+  "subfield": "civil / structural",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | annual (spring) | ASCE flagship structural meeting; several hundred papers in ASCE Library proceedings, uncertain against the bar | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 90,
+  "conference": "SME MineXchange Annual Conference and Expo",
+  "society": "Society for Mining, Metallurgy and Exploration (SME)",
+  "country": "US",
+  "subfield": "mining",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | annual (February) | SME preprints number in the high hundreds; society-press, boundary | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 97,
+  "conference": "Human Factors and Ergonomics Society Annual Meeting",
+  "society": "Human Factors and Ergonomics Society (HFES)",
+  "country": "US",
+  "subfield": "human factors",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | annual | ~600-800 papers and posters in the HFES Proceedings; boundary | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 138,
+  "conference": "International Conference on Soil Mechanics and Geotechnical Engineering (ICSMGE)",
+  "society": "International Society for Soil Mechanics and Geotechnical Engineering (ISSMGE)",
+  "country": "International",
+  "subfield": "geotechnical",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | every four years | ~700-1,000 papers in organiser-published proceedings | Phase 1 second pass, loaded 2026-09-14"
+ }
+]
