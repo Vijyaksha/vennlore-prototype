@@ -61,14 +61,24 @@ English-language, no target count ("return what you can stand behind"), clean in
     floor — `scratchpad/restore.py`), JIM ≤1,161, EWRI 516 (OUT). Biggest finds: AIJ 6,645, INFORMS
     5,122 (2018), JSCE 4,188, IAC 4,008, WCEE 3,163, WCCM 2,800, ASEE 2,466, ECCOMAS 2,368, ISPRS
     2,306, IFAC 1,908, POMS 1,560, CIGRE 1,552.
-  - **Wave 3 (the 5 am job)**: queues pre-built `scratchpad/eng/wave3/queue_{1,2,3}.json` (26/25/25
-    rows — the boundary/implied/Chinese tail); brief = copy `eng/wave2/BRIEF.md` with the paths
-    changed. Writeback: `python3 apply_wave.py --dir eng/wave3 --sheet "Census - Engineering"
-    --deleted "Deleted - Engineering" --tag "[eng wave 3, 2026-09-14]" --today 2026-09-14
-    --results results_1.json --queue queue_1.json --results results_2.json --queue queue_2.json
-    --results results_3.json --queue queue_3.json --dry`.
-  - **Rows for Rupert's eye** (all recorded in Method): FCRC as one meeting; ANLP 797 and ISOPE 794
-    OUT by a handful of papers; EU PVSEC 802 in by two; INFORMS counting rule 6 (sponsored sessions
+  - **Wave 3 — DONE by the 5 am job** (`scratchpad/eng/wave3/`, 76 rows, three agents, 40 searches,
+    nothing interrupted — the 4:30 am usage-limit reset held). 0 VERIFIED, 19 BORDERLINE, 57 OUT.
+    Rung 5 by the orchestrator: ICTD 711 ceiling (OUT), CAST ruled OUT on programme character (990
+    invited forum talks, the CNCC shape); WEFTEC left BORDERLINE (Swapcard planner needs a long
+    browser session). **ENGINEERING PHASE 2 IS COMPLETE at the English + local-page level: 18
+    VERIFIED (14.33 ev/yr) + 77 BORDERLINE (66.99 ev/yr) = 95 passing, 81.3 ev/yr; `Deleted -
+    Engineering` 75 rows. Two kept rows rest on rung-9 inference (CFM, WM Symposia); every other
+    pass is a counted figure.** The implied Chinese societies all resolved and all fell under the
+    bar — the Chinese layer runs through technical-committee meetings and invited forums, so the
+    deferred local-language pass is expected to add BORDERLINE rows only.
+  - **Both fields together: 32 VERIFIED + 102 BORDERLINE = 134 passing, 116.6 ev/yr.** Rupert's
+    prior of ~200 for engineering alone was not reached (95); the tail ran one pass in four.
+  - **Searches used for the whole CS/engineering effort**: 95 (phase 1) + 59 (phase 2) ≈ 154 of 1,000.
+  - **Rows for Rupert's eye** (all recorded in Method): FCRC as one meeting; ANLP 797, ISOPE 794,
+    CBA 797, SHASE 775 (rising), SOFT 757 and IPTC 713 OUT by a handful of papers on exact counts;
+    EU PVSEC 802 in by two; CAST ruled OUT on character (~990/yr if invited forum talks were ever
+    admitted); ICTD ceiling; WEFTEC, ICASP/ICOSSAR, Indian Engineering Congress and CSI India kept
+    BORDERLINE with no figure; INFORMS counting rule 6 (sponsored sessions
     counted; strict reading ~580 + posters); TRB 981 posters-only from 2017 (lectern track uncounted
     — AMOnline needs a browser login); IMECE deposit floor 723 vs ~2,400 stated; ICA 2025 was the
     joint ASA/ICA meeting (ASA is on physical sciences — count a joint year once); WCCM and ECCOMAS
