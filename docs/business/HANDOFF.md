@@ -21,6 +21,31 @@ deleted — with tested code (`scratchpad/dblplib.py`, `scratchpad/cs/build_cs_s
 there are now **367 conferences at or above 800 abstracts (197 at or above 1,500)** across five
 fields; medicine is just under half. All of it is UNCOMMITTED.
 
+**UPDATE 2026-09-14 — steps A and B below are DONE; the sheet was split; phase 2 is next.**
+Committed (9ee4309). Rupert then split the field: `Census - CS & Engineering` became
+`Census - CS & AI` (31 rows: 13 VERIFIED, 18 BORDERLINE; 1 deleted) and `Census - Engineering`
+(31 rows: 5 VERIFIED, 26 BORDERLINE; 3 deleted) via `scratchpad/split_field.py` (rows blanked in
+place, totals ranges untouched, totals reconcile). Two Opus phase-1 agents ran in parallel,
+English-language, no target count ("return what you can stand behind"), clean input dirs:
+- **CS & AI** — `scratchpad/cs/p1_csai/` (BRIEF, `names.json` 31 names, REPORT). 46 searches, all
+  sweeps saturated. DBLP exhausts the field; the journal-first vein is empty. Strongest: JSAI
+  (1,186 presentations 2025), IPSJ National Convention (~1,200), SIAM CSE, IC2S2. Weakest: CSI
+  India (implied), CNCC/CCIG (forums mostly invited), FCRC/WCCI (sum of tracks already counted —
+  drop). INFORMS and Sunbelt fell between fields — Rupert to assign (suggest INFORMS → Engineering).
+- **Engineering** — `scratchpad/eng/p1/` (BRIEF, `names.json` 136 names, 81 boundary, 9 implied,
+  REPORT). 49 searches, saturated in English. Most confident: TRB, AIJ, JSCE (3,000+ papers), IEEJ,
+  IEICE, ASME IMECE (~2,400), IAC (~6,400 abstracts), INFORMS, WCEE, CCTAM, WCCM, ECCOMAS, ISPRS
+  (1,500+), KSME (1,400+), KIEE, ASEE, CIGRE, CIRED, JIM, EUROMAT. Take last: NASCC, ACI, ISARC,
+  ASCE ICTD, SAE COMVEC, FEDSM, PCIM, OTC, URTeC, IPTC, PES GM (~800 papers), WEFTEC. China is the
+  big local-language gap (societies run technical-committee meetings, not one congress; CAST's 118
+  forums is the door); Confit (JP), DBpia and AURIC (KR) index society volumes and would give exact
+  counts. Rupert's prior: engineering ends near 200 at the bar; orchestrator's: 100–150.
+- **Next**: load both lists as `NOT YET CENSUSED` inside each sheet's totals range (rows 5–469;
+  31 live rows + 31 blanked rows occupy 5–66, append from the first free row), then phase 2 —
+  cheapest rung first (DBLP SPARQL / Crossref exact title at zero searches, then society
+  proceedings, programme PDFs, Confex, Confit/DBpia), rung 5 to the orchestrator, rung 9 last.
+  Phase 2 needs Rupert's go.
+
 **CURRENT PLAN — Rupert's last instruction, supersedes the numbered order below where they differ:**
 
 - **Step A. Commit** (step 0 below, unchanged).

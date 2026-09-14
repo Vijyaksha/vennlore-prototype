@@ -1,0 +1,598 @@
+[
+ {
+  "dblp_stream_title": "Conference on Neural Information Processing Systems (NeurIPS)",
+  "papers": 5824
+ },
+ {
+  "dblp_stream_title": "International Conference on Learning Representations (ICLR)",
+  "papers": 3705
+ },
+ {
+  "dblp_stream_title": "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+  "papers": 3548
+ },
+ {
+  "dblp_stream_title": "AAAI Conference on Artificial Intelligence (AAAI)",
+  "papers": 3511
+ },
+ {
+  "dblp_stream_title": "Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+  "papers": 3499
+ },
+ {
+  "dblp_stream_title": "IEEE/CVF International Conference on Computer Vision (ICCV)",
+  "papers": 3498
+ },
+ {
+  "dblp_stream_title": "IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP)",
+  "papers": 3373
+ },
+ {
+  "dblp_stream_title": "Annual Meeting of the Association for Computational Linguistics (ACL)",
+  "papers": 3367
+ },
+ {
+  "dblp_stream_title": "International Conference on Machine Learning (ICML)",
+  "papers": 3343
+ },
+ {
+  "dblp_stream_title": "European Conference on Computer Vision (ECCV)",
+  "papers": 3044
+ },
+ {
+  "dblp_stream_title": "IEEE International Geoscience and Remote Sensing Symposium (IGARSS)",
+  "papers": 2590
+ },
+ {
+  "dblp_stream_title": "International Conference on Computing Communication and Networking Technologies (ICCCNT)",
+  "papers": 2464
+ },
+ {
+  "dblp_stream_title": "ACM Conference on Human Factors in Computing Systems (CHI)",
+  "papers": 2171
+ },
+ {
+  "dblp_stream_title": "IEEE International Joint Conference on Neural Network (IJCNN)",
+  "papers": 2139
+ },
+ {
+  "dblp_stream_title": "HCI International Conference (HCII)",
+  "papers": 2063
+ },
+ {
+  "dblp_stream_title": "International Conference on Human-Computer Interaction (HCI International)",
+  "papers": 2063
+ },
+ {
+  "dblp_stream_title": "IEEE/RJS International Conference on Intelligent RObots and Systems (IROS)",
+  "papers": 1986
+ },
+ {
+  "dblp_stream_title": "IEEE International Conference on Robotics and Automation (ICRA)",
+  "papers": 1761
+ },
+ {
+  "dblp_stream_title": "ACM International Conference on Multimedia (MM)",
+  "papers": 1658
+ },
+ {
+  "dblp_stream_title": "International Conference on Computational Linguistics (COLING)",
+  "papers": 1609
+ },
+ {
+  "dblp_stream_title": "International Conference on Language Resources and Evaluation (LREC)",
+  "papers": 1556
+ },
+ {
+  "dblp_stream_title": "IEEE International Conference on Communications (ICC)",
+  "papers": 1481
+ },
+ {
+  "dblp_stream_title": "Global Communications Conference (GLOBECOM)",
+  "papers": 1471
+ },
+ {
+  "dblp_stream_title": "Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC)",
+  "papers": 1387
+ },
+ {
+  "dblp_stream_title": "North American Chapter of the Association for Computational Linguistics (NAACL)",
+  "papers": 1376
+ },
+ {
+  "dblp_stream_title": "Annual Meeting of the Cognitive Science Society (CogSci)",
+  "papers": 1369
+ },
+ {
+  "dblp_stream_title": "IEEE Vehicular Technology Conference (VTC)",
+  "papers": 1318
+ },
+ {
+  "dblp_stream_title": "International Joint Conference on Artificial Intelligence (IJCAI)",
+  "papers": 1289
+ },
+ {
+  "dblp_stream_title": "IEEE International Conference on Bioinformatics and Biomedicine (BIBM)",
+  "papers": 1234
+ },
+ {
+  "dblp_stream_title": "International Conference on Intelligent Computing (ICIC)",
+  "papers": 1234
+ },
+ {
+  "dblp_stream_title": "IEEE International Conference on Systems, Man and Cybernetics (SMC)",
+  "papers": 1205
+ },
+ {
+  "dblp_stream_title": "Conference of the International Speech Communication Association (INTERSPEECH)",
+  "papers": 1181
+ },
+ {
+  "dblp_stream_title": "International Conference on Pattern Recognition (ICPR)",
+  "papers": 1181
+ },
+ {
+  "dblp_stream_title": "IEEE International Symposium on Circuits and Systems (ISCAS)",
+  "papers": 1159
+ },
+ {
+  "dblp_stream_title": "IEEE International Conference on Big Data (BigData)",
+  "papers": 1148
+ },
+ {
+  "dblp_stream_title": "IEEE Conference on Decision and Control (CDC)",
+  "papers": 1108
+ },
+ {
+  "dblp_stream_title": "IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)",
+  "papers": 1097
+ },
+ {
+  "dblp_stream_title": "IEEE International Conference on Multimedia and Expo (ICME)",
+  "papers": 1082
+ },
+ {
+  "dblp_stream_title": "Annual Conference of the IEEE Industrial Electronics Society (IECON)",
+  "papers": 1001
+ },
+ {
+  "dblp_stream_title": "The Web Conference (WWW)",
+  "papers": 980
+ },
+ {
+  "dblp_stream_title": "Hawaii International Conference on System Sciences (HICSS)",
+  "papers": 941
+ },
+ {
+  "dblp_stream_title": "International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI)",
+  "papers": 930
+ },
+ {
+  "dblp_stream_title": "International Conference on Information and Knowledge Management (CIKM)",
+  "papers": 853
+ },
+ {
+  "dblp_stream_title": "ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD)",
+  "papers": 846
+ },
+ {
+  "dblp_stream_title": "IEEE Wireless Communications and Networking Conference (WCNC)",
+  "papers": 839
+ },
+ {
+  "dblp_stream_title": "Asia-Pacific Signal and Information Processing Association Annual Summit and Conference (APSIPA)",
+  "papers": 815
+ },
+ {
+  "dblp_stream_title": "IEEE International Symposium on Biomedical Imaging (ISBI)",
+  "papers": 801
+ },
+ {
+  "dblp_stream_title": "American Control Conference (ACC)",
+  "papers": 748
+ },
+ {
+  "dblp_stream_title": "Optical Fiber Communications Conference and Exhibition (OFC)",
+  "papers": 725
+ },
+ {
+  "dblp_stream_title": "International Conference on Electrical, Computer and Energy Technologies (ICECET)",
+  "papers": 718
+ },
+ {
+  "dblp_stream_title": "European Conference on Artificial Intelligence (ECAI)",
+  "papers": 697
+ },
+ {
+  "dblp_stream_title": "IEEE Conference on Virtual Reality and 3D User Interfaces (VR)",
+  "papers": 693
+ },
+ {
+  "dblp_stream_title": "International Conference on Intelligent Transportation Systems (ITSC)",
+  "papers": 677
+ },
+ {
+  "dblp_stream_title": "International Conference on Neural Information Processing (ICONIP)",
+  "papers": 665
+ },
+ {
+  "dblp_stream_title": "International Symposium on Information Theory (ISIT)",
+  "papers": 648
+ },
+ {
+  "dblp_stream_title": "International Conference on Knowledge-Based Intelligent Information & Engineering Systems (KES)",
+  "papers": 644
+ },
+ {
+  "dblp_stream_title": "Frontiers in Education Conference (FIE)",
+  "papers": 635
+ },
+ {
+  "dblp_stream_title": "Americas Conference on Information Systems (AMCIS)",
+  "papers": 634
+ },
+ {
+  "dblp_stream_title": "Conference on Computer-Supported Cooperative Work and Social Computing (CSCW)",
+  "papers": 631
+ },
+ {
+  "dblp_stream_title": "IEEE International Conference on Image Processing (ICIP)",
+  "papers": 616
+ },
+ {
+  "dblp_stream_title": "IEEE International Conference on Data Mining (ICDM)",
+  "papers": 614
+ },
+ {
+  "dblp_stream_title": "Information and Communication Technology Convergence (ICTC)",
+  "papers": 605
+ },
+ {
+  "dblp_stream_title": "Annual Conference on Genetic and Evolutionary Computation (GECCO)",
+  "papers": 599
+ },
+ {
+  "dblp_stream_title": "Chinese Conference on Pattern Recognition and Computer Vision (PRCV)",
+  "papers": 594
+ },
+ {
+  "dblp_stream_title": "International Conference on Artificial Intelligence and Statistics (AISTATS)",
+  "papers": 584
+ },
+ {
+  "dblp_stream_title": "Very Large Data Bases Conference (VLDB)",
+  "papers": 579
+ },
+ {
+  "dblp_stream_title": "World Congress on Medical and Health Informatics (MedInfo)",
+  "papers": 579
+ },
+ {
+  "dblp_stream_title": "ACM SIGGRAPH Conference and Exhibition on Computer Graphics and Interactive Techniques in Asia (SIGGRAPH Asia)",
+  "papers": 576
+ },
+ {
+  "dblp_stream_title": "IEEE International Conference on Data Engineering (ICDE)",
+  "papers": 564
+ },
+ {
+  "dblp_stream_title": "European Control Conference (ECC)",
+  "papers": 562
+ },
+ {
+  "dblp_stream_title": "IEEE SENSORS",
+  "papers": 559
+ },
+ {
+  "dblp_stream_title": "European Signal Processing Conference (EUSIPCO)",
+  "papers": 553
+ },
+ {
+  "dblp_stream_title": "Annual International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR)",
+  "papers": 541
+ },
+ {
+  "dblp_stream_title": "IEEE Conference on Automation Science and Engineering (CASE)",
+  "papers": 538
+ },
+ {
+  "dblp_stream_title": "International Conference on Computer Supported Cooperative Work in Design (CSCWD)",
+  "papers": 536
+ },
+ {
+  "dblp_stream_title": "European Conference on Optical Communication (ECOC)",
+  "papers": 534
+ },
+ {
+  "dblp_stream_title": "ACM SIGMOD Conference (SIGMOD)",
+  "papers": 531
+ },
+ {
+  "dblp_stream_title": "International Conference on Management of Data (SIGMOD)",
+  "papers": 531
+ },
+ {
+  "dblp_stream_title": "Technical Symposium on Computer Science Education (SIGCSE)",
+  "papers": 526
+ },
+ {
+  "dblp_stream_title": "International Conference on Control, Decision and Information Technologies (CoDIT)",
+  "papers": 526
+ },
+ {
+  "dblp_stream_title": "International Conference on Quantum Computing and Engineering (QCE)",
+  "papers": 525
+ },
+ {
+  "dblp_stream_title": "IEEE Conference on Computer Communications (INFOCOM)",
+  "papers": 517
+ },
+ {
+  "dblp_stream_title": "IEEE Intelligent Vehicles Symposium (IV)",
+  "papers": 504
+ },
+ {
+  "dblp_stream_title": "Global Conference on Consumer Electronics (GCCE)",
+  "papers": 495
+ },
+ {
+  "dblp_stream_title": "USENIX Security Symposium",
+  "papers": 490
+ },
+ {
+  "dblp_stream_title": "Medical Informatics Europe (MIE)",
+  "papers": 484
+ },
+ {
+  "dblp_stream_title": "International Conference on Information Systems (ICIS)",
+  "papers": 484
+ },
+ {
+  "dblp_stream_title": "International Conference on Autonomous Agents and Multiagent Systems (AAMAS)",
+  "papers": 480
+ },
+ {
+  "dblp_stream_title": "International Conference on Computer Graphics and Interactive Techniques (SIGGRAPH)",
+  "papers": 472
+ },
+ {
+  "dblp_stream_title": "IEEE Region 10 Conference (TENCON)",
+  "papers": 471
+ },
+ {
+  "dblp_stream_title": "International Symposium on Mixed and Augmented Reality (ISMAR)",
+  "papers": 459
+ },
+ {
+  "dblp_stream_title": "Design Automation Conference (DAC)",
+  "papers": 457
+ },
+ {
+  "dblp_stream_title": "International Conference on Transparent Optical Networks (ICTON)",
+  "papers": 453
+ },
+ {
+  "dblp_stream_title": "International Conference on Automated Software Engineering (ASE)",
+  "papers": 451
+ },
+ {
+  "dblp_stream_title": "IEEE International Symposium on Personal, Indoor and Mobile Radio Communications (PIMRC)",
+  "papers": 444
+ },
+ {
+  "dblp_stream_title": "Conference of the European Chapter of the Association for Computational Linguistics (EACL)",
+  "papers": 439
+ },
+ {
+  "dblp_stream_title": "International Conference on Software Engineering (ICSE)",
+  "papers": 437
+ },
+ {
+  "dblp_stream_title": "International Conference for High Performance Computing, Networking, Storage and Analysis (SC)",
+  "papers": 435
+ },
+ {
+  "dblp_stream_title": "Asian Control Conference (ASCC)",
+  "papers": 430
+ },
+ {
+  "dblp_stream_title": "IEEE International Conference on Consumer Electronics (ICCE)",
+  "papers": 428
+ },
+ {
+  "dblp_stream_title": "Design, Automation, and Test in Europe (DATE)",
+  "papers": 426
+ },
+ {
+  "dblp_stream_title": "IEEE PES Innovative Smart Grid Technologies - Europe (ISGT Europe)",
+  "papers": 423
+ },
+ {
+  "dblp_stream_title": "Annual ACM Conference on Computer and Communications Security (CCS)",
+  "papers": 419
+ },
+ {
+  "dblp_stream_title": "IEEE/ACM International Conference on Human-Robot Interaction (HRI)",
+  "papers": 415
+ },
+ {
+  "dblp_stream_title": "International Conference on Artificial Intelligence in Education (AIED)",
+  "papers": 407
+ },
+ {
+  "dblp_stream_title": "IAS Annual Meeting",
+  "papers": 407
+ },
+ {
+  "dblp_stream_title": "International Conference on Agents and Artificial Intelligence (ICAART)",
+  "papers": 402
+ },
+ {
+  "dblp_stream_title": "International Conference on Trust, Security and Privacy in Computing and Communications (TrustCom)",
+  "papers": 397
+ },
+ {
+  "dblp_stream_title": "International Conference of the CLEF Association",
+  "papers": 393
+ },
+ {
+  "dblp_stream_title": "Conference and Labs of the Evaluation Forum (CLEF)",
+  "papers": 393
+ },
+ {
+  "dblp_stream_title": "IEEE International Conference on Robotics and Biomimetics (ROBIO)",
+  "papers": 392
+ },
+ {
+  "dblp_stream_title": "ACM SIGSOFT Conference on the Foundations of Software Engineering (FSE)",
+  "papers": 392
+ },
+ {
+  "dblp_stream_title": "ACM Symposium on User Interface Software and Technology (UIST)",
+  "papers": 392
+ },
+ {
+  "dblp_stream_title": "Annual International Computer Software and Applications Conference (COMPSAC)",
+  "papers": 389
+ },
+ {
+  "dblp_stream_title": "International Conference on Consumer Electronics-Taiwan (ICCE-TW)",
+  "papers": 385
+ },
+ {
+  "dblp_stream_title": "International Joint Conference on Natural Language Processing (IJCNLP)",
+  "papers": 385
+ },
+ {
+  "dblp_stream_title": "IEEE Global Engineering Education Conference (EDUCON)",
+  "papers": 379
+ },
+ {
+  "dblp_stream_title": "International Conference on Computational Science and Its Applications (ICCSA)",
+  "papers": 375
+ },
+ {
+  "dblp_stream_title": "International Instrumentation and Measurement Technology Conference",
+  "papers": 373
+ },
+ {
+  "dblp_stream_title": "International Conference on Electronics, Information and Communications (ICEIC)",
+  "papers": 372
+ },
+ {
+  "dblp_stream_title": "International Convention on Information and Communication Technology, Electronics and Microelectronics (MIPRO)",
+  "papers": 368
+ },
+ {
+  "dblp_stream_title": "International Conference on Communication Technology (ICCT)",
+  "papers": 361
+ },
+ {
+  "dblp_stream_title": "IEEE International Symposium on Robot and Human Interactive Communication (RO-MAN)",
+  "papers": 358
+ },
+ {
+  "dblp_stream_title": "Asilomar Conference on Signals, Systems and Computers (ACSCC)",
+  "papers": 353
+ },
+ {
+  "dblp_stream_title": "European Conference on Information Systems (ECIS)",
+  "papers": 350
+ },
+ {
+  "dblp_stream_title": "International Conference on Parallel and Distributed Systems (ICPADS)",
+  "papers": 348
+ },
+ {
+  "dblp_stream_title": "Signal Processing and Communications Applications Conference (SIU)",
+  "papers": 346
+ },
+ {
+  "dblp_stream_title": "International Joint Conference on Computer Vision, Imaging and Computer Graphics Theory and Applications (VISIGRAPP)",
+  "papers": 340
+ },
+ {
+  "dblp_stream_title": "IEEE Congress on Evolutionary Computation (CEC)",
+  "papers": 339
+ },
+ {
+  "dblp_stream_title": "Conference on Designing Interactive Systems (DIS)",
+  "papers": 334
+ },
+ {
+  "dblp_stream_title": "International Conference on Industry of the Future and Smart Manufacturing (ISM)",
+  "papers": 331
+ },
+ {
+  "dblp_stream_title": "International Conference on Intelligent Robotics and Applications (ICIRA)",
+  "papers": 331
+ },
+ {
+  "dblp_stream_title": "International Workshop on Semantic Evaluation (SemEval)",
+  "papers": 330
+ },
+ {
+  "dblp_stream_title": "International Conference on Machine Learning and Data Engineering (ICMLDE)",
+  "papers": 327
+ },
+ {
+  "dblp_stream_title": "Asian Conference on Computer Vision (ACCV)",
+  "papers": 327
+ },
+ {
+  "dblp_stream_title": "Asia-Pacific Web Conference (APWeb)",
+  "papers": 325
+ },
+ {
+  "dblp_stream_title": "International Joint Conference on Web and Big Data (WAIM)",
+  "papers": 325
+ },
+ {
+  "dblp_stream_title": "ACM International Joint Conference on Pervasive and Ubiquitous Computing (UbiComp)",
+  "papers": 324
+ },
+ {
+  "dblp_stream_title": "International Conference on Advanced Information Networking and Applications (AINA)",
+  "papers": 322
+ },
+ {
+  "dblp_stream_title": "International Symposium on Parallel and Distributed Processing with Applications (ISPA)",
+  "papers": 318
+ },
+ {
+  "dblp_stream_title": "IEEE International Conference on Industrial Informatics (INDIN)",
+  "papers": 314
+ },
+ {
+  "dblp_stream_title": "International Conference on Computer Aided Design (ICCAD)",
+  "papers": 312
+ },
+ {
+  "dblp_stream_title": "IEEE International Conference on Emerging Technologies and Factory Automation (ETFA)",
+  "papers": 311
+ },
+ {
+  "dblp_stream_title": "IEEE Symposium on Security and Privacy (SP)",
+  "papers": 308
+ },
+ {
+  "dblp_stream_title": "AAAI/ACM Conference on AI, Ethics, and Society (AIES)",
+  "papers": 304
+ },
+ {
+  "dblp_stream_title": "International Conference on Wireless Communications and Mobile Computing (IWCMC)",
+  "papers": 303
+ },
+ {
+  "dblp_stream_title": "Winter Simulation Conference (WSC)",
+  "papers": 303
+ },
+ {
+  "dblp_stream_title": "International Conference on Artificial Neural Networks and Machine Learning (ICANN)",
+  "papers": 302
+ },
+ {
+  "dblp_stream_title": "British Machine Vision Conference (BMVC)",
+  "papers": 300
+ }
+]
