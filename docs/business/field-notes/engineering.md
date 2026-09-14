@@ -594,7 +594,14 @@ above it counts invited/planned SESSIONS and is excluded.
 The orchestrator first ruled OUT on the 2025 J-STAGE count (741; 528 / 612 / 741 for 2023–2025) and
 then reversed it on the pilot's evidence that the series broke discontinuously in 2021 (1,089 → 644)
 while the predecessor title `jsmemecjo` ran ~1,470/yr for 2000–2010 — a deposit-policy change, not
-a halved congress. Settling it needs the Confit programme in a browser (rung 5).
+a halved congress. **Settled by rung 5 (Playwright, 2026-09-14):** Confit's 講演検索 for
+`pub.confit.atlas.jp/ja/event/jsme2025` returns 講演(1,449) / セッション(293) for the whole programme
+and **講演(1,252) / セッション(177)** filtered to the two contributed categories 部門横断セッション +
+部門単独セッション (特別講演, 特別行事, 一般公開イベント, 展示, 会議 excluded). JSME 2025 = **1,252
+contributed → BORDERLINE**, restored to the census sheet. The J-STAGE deposit (741) covers ~60% of
+the programme. **Confit route for any Japanese society**: open `…/event/<code>/search`, click
+検索する with no keyword for the total, tick the contributed 行事種別 categories and search again; the
+result header states 講演(N).
 
 ### Rows for Rupert's eye
 
