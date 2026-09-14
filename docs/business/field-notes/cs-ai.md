@@ -47,9 +47,11 @@ INFORMS goes on Engineering (operations research); Sunbelt waits for a social-sc
    the catch for series DBLP lacks. `api.crossref.org/works?filter=type:proceedings-article,from-pub-date:2025-01-01,until-pub-date:2025-12-31&facet=container-title:*&rows=0`
    gives the top 1,000 containers; a per-conference query filters on the exact container title.
    Where both sources hold a meeting they agree within a few papers (CVPR 2,871 vs 2,881).
-3. **The venue's own accepted-papers page / OpenReview.** ICLR, NeurIPS, ICML, COLM, RLC, MLSys,
-   CoRL publish on OpenReview: `api2.openreview.net/notes?content.venueid=<venue>/2025/Conference`
-   with `count` in the response; the venue's "accepted papers" page is the citable artefact.
+3. **The venue's own accepted-papers page.** ICLR, NeurIPS, ICML, COLM, RLC, MLSys, CoRL review on
+   OpenReview, but **the OpenReview API is now behind a challenge** (`api2.openreview.net` returns
+   HTTP 403 `ChallengeRequiredError` even with a browser user-agent — rung 5, 2026-09-14). Use the
+   venue's own accepted-papers table instead: COLM moved to `colm.cc/Conferences/<year>/AcceptedPapers`
+   (static HTML, one `<tr>` per paper; 856 in 2026, workshops separate).
 4. **ACL Anthology** for the NLP family: one volume page per event, one row per paper
    (`aclanthology.org/events/<acronym>-2025/`), Findings volumes listed separately.
 5. **National society proceedings platforms** (the second-pass rows live here):
@@ -82,3 +84,47 @@ INFORMS goes on Engineering (operations research); Sunbelt waits for a social-sc
   programming-languages family (PLDI 89, POPL 81, OOPSLA 214 in 2025) is far below the bar.
 - **Anubis on dblp.org.** The HTML site and search API challenge bots; a Playwright session clears
   it in ~8 s. Prefer SPARQL; only fall to the browser for the stream page as the citable URL.
+
+## Wave 1 (2026-09-14, the 30 second-pass rows): 4 searches, 26 rows at zero searches
+
+Verdicts: 1 VERIFIED (IPSJ National Convention 1,608), 7 BORDERLINE kept (JSAI 1,174, SIAM CSE 1,433,
+FOSDEM 989, COLM 856, KCC 854, FCRC 856 as one federated week — Rupert's call, CSI India unresolved),
+21 OUT on positive evidence, 2 parked as duplicates (WCCI = IJCNN + CEC + FUZZ-IEEE; INFORMS is on
+Engineering). **The index pass had already caught everything large: the second pass added one
+VERIFIED row.** CS & AI is now effectively closed at the English + JP/CN/KR level.
+
+### Zero-search routes found in wave 1 — try these before searching
+
+| Route | How | Settled |
+|---|---|---|
+| **CCF's JSONP content API** — unlocks every CCF-hosted meeting (CNCC, HPC China, ChinaSoft …) | The sites are Vue SPAs with empty HTML, but `POST https://ccf.org.cn/api/getMeetingIdByMeetingShort.action` with `meetingShort=<CODE><year>` (e.g. `CNCC2025`, `HPCChina2025`) returns the meeting id, then `GET https://ccf.org.cn/api/indexPageChannelData.action?meetingId=<id>&jsoncallback=cb` returns the whole site as JSONP: news, invited speakers, programme, the post-meeting report | CNCC (CURATED), HPC China 100+ |
+| **`loadPage`-style SPAs: read the router** | `chinasoft.ccf.org.cn/2026/js/route.js` shows `./pages/${page}.html` — every section is a static file (`/2026/pages/callforpaper.html`, `/agenda/…/index.html`). Read the router JS before calling any SPA browser-only | ChinaSoft |
+| **gakkai-web.net** — Japanese society programme host | `https://www.gakkai-web.net/<society>/<edition>/program<edition>.html` is one static page for the whole convention; count session codes `[0-9][A-Z]{1,3}-[0-9]{2}`. Contains only 一般/学生 sessions, so invited talks are already outside it | IPSJ 1,608 |
+| **J-STAGE volume listing** | `jstage.jst.go.jp/browse/pjsai/<vol>/0/_contents/-char/ja`, 50 per page. **`?from=` is ZERO-BASED**: the bare URL is page 0 and `?from=1` is records 51–100; treating `?from=1` as the first page drops 50 records | JSAI 1,174 |
+| **KIISE programme book** (Korea) — NOT rung 5 | `kiise.or.kr/conference/kcc/<year>/` is a frameset; the programme menu links `https://www.kiise.or.kr/conference02/data/<conf><year>/PB.pdf` (49MB). Count paper codes `[0-9][AP]-[OP][0-9.]+-[0-9]+` (oral `…-O…`, poster `…-P…`) | KCC 854 (188 oral + 666 poster) |
+| **ManuscriptLink programme books** (KIPS and other Korean societies) | `https://manuscriptlink.com/society/kips/conference/<conf><year>/programBook` — server-rendered, no token; paper ids `KIPS_C2025B0255` | KIPS ACK 329 |
+| **meetings.siam.org** | `www.siam.org` is Cloudflare-blocked, but the legacy host is plain HTML: `meetings.siam.org/speakdex.cfm?CONFCODE=<code>` (one page, every presentation with its role) and `program.cfm?CONFCODE=<code>` | SIAM CSE 1,433 |
+| **Conferia.js widgets** | The programme widget is configured in the page source with a plain CSV `src:` — fetch the CSV, no browser | IC2S2 622 |
+| **Google Sheets / Docs programmes** | `docs.google.com/spreadsheets/d/<id>/export?format=xlsx` exports a linked programme sheet as a workbook | CCS 359 |
+| **ANLP proceedings page** (言語処理学会) | `anlp.jp/proceedings/annual_meeting/<year>/` lists one PDF per paper under `/pdf_dir/`; prefixes B/C/P/Q/TS are contributed, invited items deposit no PDF | ANLP 797 (OUT by 3) |
+| **nvidia.com `<page>.json`** | `https://www.nvidia.com/gtc/session-catalog.json` returns the session catalog as JSON (Adobe CMS convention; works on some pages, not all) | GTC (CURATED, 952 industry sessions) |
+| **RainFocus catalogs** (GHC and many industry events) | The page embeds `apiToken` and `widgetId`; `POST https://events.rainfocus.com/api/search` with headers `rfapiprofileid`/`rfwidgetid` and body `type=session&size=10&from=0` returns `totalSearchItems`. Per-event tokens. RSA's `path.rsaconference.com` flow portal is the authenticated variant and does NOT open this way | GHC (ceiling 425 sessions) |
+| **Wayback for Cloudflare-blocked sites** | `fcrc.acm.org` 403s; the CDX listing + a 2023 capture gave the constituent conferences and cadence | FCRC |
+
+### Traps found in wave 1
+
+- **Forum congresses are CURATED, however big the headcount.** CNCC (12,000+ registrations, 130
+  invited forums, 700+ invited speakers), CCAI (23 invited sessions), CCIG (45 forums) have no call
+  for papers. The Chinese terms to test for a contributions call: 征文 / 征稿 / 投稿 / 论文 / 海报 / 墙报.
+- **Umbrella weeks are sums of tracks.** WCCI = IJCNN + CEC + FUZZ-IEEE (IJCNN already on the sheet);
+  FCRC's 14 tracks are each under 300 papers so none is on any sheet — FCRC was kept as ONE meeting
+  (856, quadrennial) pending Rupert's call; FLoC's 10 tracks sum to 490.
+- **Industry events settle on a session ceiling, no ratio needed.** When the organiser states the
+  TOTAL number of sessions (RSA 570+, GHC 425+) and it is below the bar, contributed presentations
+  are a subset and the row is OUT without a conversion.
+- **Satellite workshops hold the bulk at complexity meetings.** CCS 359 and NetSci 534 on the main
+  programme; most of their volume is in excluded satellites. They move together if the unit changes.
+- **Cadence quirks**: SIAM CSE biennial (0.5); FCRC and FLoC quadrennial (0.25); GTC three editions a
+  year; KIPS twice a year (ACK autumn, ASK spring); CEDI every three years.
+- **DBLP absence is not a size signal.** IPSJ (1,608) and JSAI (1,174) are the two largest CS meetings
+  in Japan and neither is in DBLP.
