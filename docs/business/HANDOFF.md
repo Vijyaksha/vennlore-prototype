@@ -86,6 +86,29 @@ English-language, no target count ("return what you can stand behind"), clean in
     stated (1,635 if highlight talks count).
   - **Searches used tonight**: ~19 across four agents (phase 2) + 95 (phase 1) — of 1,000.
 
+**2026-09-14 afternoon — two new fields discovered, NOT loaded, phase 2 awaits Rupert's go.**
+Rupert chose the next two high-yield fields; one Opus phase-1 agent each, English-language, clean
+input dirs with the 1,688-name exclusion list:
+- **Social sciences & education** — `scratchpad/soc/p1/` (BRIEF, `names.json` **200 names**, 40
+  searches, all sweeps saturated; 16 boundary, 5 implied). Confirmed giants from Crossref: AERA
+  4,676, ICERI 1,756, EDULEARN 1,739, INTED 1,312, CONIC 1,125. The US flagships (AAG, APSA, ASA,
+  AAA, ASC, ICA, NCA, PAA, SRCD, SPSP, ASSA …) and European mirrors are the expected VERIFIED rows;
+  practitioner conventions (NCTM, NCTE, NAEYC, ISTE, ALA, NSTA) and the mid-size European societies
+  are the doubtful tail. Business & management deliberately left for its own field. APA and APS
+  (life sheet, boundary) should move here at load time. Japan/China/Korea seen only through English
+  (Chinese Sociological Association: 100 forums, 3,700 participants; Chinese education bodies meet
+  per branch).
+- **Earth, environmental & agricultural sciences** — `scratchpad/earth/p1/` (BRIEF, `names.json`
+  **127 names**, 58 searches, saturated; 105 boundary, 10 implied). Strongest: JpGU (4,600+
+  presentations stated), AOGS (~4,000 participants), Chinese Geoscience Union, ESA Living Planet
+  Symposium (6,500+ participants), ICUC (1,000+ abstracts), ESC General Assembly (~1,000), Congreso
+  Geológico Chileno (900+). Trade/policy events (World Water Week, Esri UC, INTERGEO, PDAC) flagged
+  for a contributed-share check; four checked near-misses kept as records (DBG 508, SBAgro 678, SGEM
+  532, SBGf 712); a list of searched negatives is in the agent's report.
+- **Next**: build the two sheet pairs with `chemlib.build_field` (400 spare rows), move APA/APS
+  across, load names as NOT YET CENSUSED, then phase 2 in waves of ~30 with the field-notes pattern
+  (a pilot wave first, notes written from it). Phase 2 needs Rupert's go.
+
 **CURRENT PLAN — Rupert's last instruction, supersedes the numbered order below where they differ:**
 
 - **Step A. Commit** (step 0 below, unchanged).
