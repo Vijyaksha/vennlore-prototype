@@ -1,0 +1,1180 @@
+[
+ {
+  "row": 81,
+  "conference": "SAE COMVEC (Commercial Vehicle Engineering Congress)",
+  "outcome": "INFERRED",
+  "abstracts_numeric": null,
+  "abstracts": "~30 INFERRED FROM ATTENDANCE, NOT COUNTED (rung 9 — 600 attendees x 5% for a CURATED keynote-and-panel programme that publishes no proceedings)",
+  "year": 2025,
+  "rung": 9,
+  "source_url": "https://dieselnet.com/news/2025/09comvec.php",
+  "spot_checks": [
+   "Crossref prefix 10.4271 cursor-paged for 2018/2019/2022/2023/2024/2025 and grouped on event.name: COMVEC appears with 1 (2018), 3 (2019: 'Commercial Vehicle Engineering Congress' 2 + 'COMVEC(tm)' 1), 3 (2022), 0 (2023), 0 (2024), 0 (2025) deposited papers, against WCX 776 in the same 2024 pull — so SAE's own deposit index carries essentially no COMVEC technical papers",
+   "DieselNet's independent trade-press report states outright that no proceedings are published and that the only manuscript-based track is four Journal Sessions"
+  ],
+  "searches_used": 1,
+  "events_per_yr": 1,
+  "cadence_evidence": "Annual. DieselNet report (https://dieselnet.com/news/2025/09comvec.php) covers the 16-19 September edition and closes 'The next COMVEC conference will be held again in Schaumburg, Illinois - the event is scheduled for 29 September - 1 October 2026.'",
+  "attendance_numeric": 600,
+  "attendance_year": 2025,
+  "attendance_basis": "UNSPECIFIED",
+  "attendance_rung": "A3",
+  "attendance_source_url": "https://dieselnet.com/news/2025/09comvec.php",
+  "alt_figures": [],
+  "character": "CURATED",
+  "character_evidence": "DieselNet: 'The COMVEC formula includes keynote speeches and discussion panels. While no proceedings are published from the conference, this year program also included four Journal Sessions with presentations based on manuscripts accepted for publication in the SAE International Journal of Commercial Vehicles.' No open call for abstracts and no proceedings; the exhibition is a core part of the event.",
+  "programme_type": "CURATED",
+  "programme_evidence": "Keynotes plus discussion panels, an exhibition, and exactly four manuscript-based Journal Sessions; SAE deposits 0-3 COMVEC papers a year to Crossref while depositing 776 for WCX 2024.",
+  "direct_abstracts": null,
+  "ratio": 0.05,
+  "ratio_rationale": "COMVEC is a three-day executive/industry forum of keynotes and panels, not an open-call congress: its own trade-press report says no proceedings are published at all, and the only contributed manuscript track is four Journal Sessions. Against SAE's own WCX (776 deposited papers on ~4,800 registrations, ~16%), COMVEC has no paper call whatsoever, so the share of the room presenting contributed work is a small fraction of WCX's. 5% of 600 gives ~30, consistent with four Journal Sessions of a handful of talks each. Even flexing the ratio by an order of magnitude leaves the row far below the 800 floor.",
+  "duplicate_of": null,
+  "method": "Rung 1-2 skipped in favour of the field-notes SAE route. ZERO-SEARCH RUNG 1 (Crossref deposit index, field notes 2.1): cursor-paged https://api.crossref.org/works?filter=prefix:10.4271,from-pub-date:<Y>-01-01,until-pub-date:<Y>-12-31&rows=1000&select=DOI,event,container-title,published,type for Y in 2018,2019,2022,2023,2024,2025 and grouped on the populated event.name field (the field-notes grouping key for SAE). 2024 pull: 2,625 items, of which WCX SAE World Congress Experience 776, Symposium on International Automotive Technology 322, SIIMC 145 - and ZERO COMVEC. COMVEC across all years pulled: 2018 'COMVEC(tm)' 1; 2019 'Commercial Vehicle Engineering Congress' 2 + 'COMVEC(tm)' 1; 2022 'COMVEC(tm)' 3; 2023/2024/2025 none. RUNG 3-5 blocked: www.sae.org, comvec.sae.org and www.sae.org/events/comvec/technical-sessions all return the same 15,274-byte AWS WAF shell (64 characters of text; the only external script is fe1c0ce8de97.us-east-1.captcha-sdk.awswaf.com/jsapi.js) - a NEW finding, the field notes recorded sae.org only as a JS shell, not as WAF. Wayback bypass UNAVAILABLE this run: web.archive.org and its CDX API both returned the 'Internet Archive services are temporarily offline' page for every query. ONE search (rung 8, third-party congress report, English) located DieselNet's independent conference report, which was opened and read in full: it states ~600 participants, that no proceedings are published, and that the format is keynotes plus discussion panels with four Journal Sessions. RUNG 9: 600 x 0.05. Excluded: keynote and Buckendale Lecture (invited), discussion panels (not contributed presentations), exhibition. Language: English only - SAE is an anglophone society and COMVEC is a US meeting, so no local-language pass applies. NOT a duplicate of SAE WCX (row 80, separate meeting, separate Crossref event string).",
+  "verdict": "OUT",
+  "confidence": "derived"
+ },
+ {
+  "row": 85,
+  "conference": "Unconventional Resources Technology Conference (URTeC)",
+  "outcome": "COUNTED",
+  "abstracts_numeric": 220,
+  "abstracts": "220 (2025)",
+  "year": 2025,
+  "rung": 4,
+  "source_url": "https://api.crossref.org/works?filter=prefix:10.15530,from-pub-date:2025-01-01,until-pub-date:2025-12-31&rows=1000&select=DOI,event,container-title,published,type&cursor=*",
+  "spot_checks": [
+   "Grouped on BOTH event.name and container-title independently; the two agree exactly (220 items under event '2025 Unconventional Resources Technology Conference' and 220 under container 'Proceedings of the 2025 Unconventional Resources Technology Conference')",
+   "Series re-derived for three editions: 2023 232, 2024 230, 2025 220 - stable, no deposit break",
+   "Separated the co-located series that share the prefix: the 2025 Carbon Capture, Utilization and Storage Conference (48) and the 2023 Latin America URTeC (79) are DIFFERENT meetings and were excluded"
+  ],
+  "searches_used": 0,
+  "events_per_yr": 1,
+  "cadence_evidence": "Annual (June). Crossref carries one URTeC proceedings container per calendar year with no gaps: 'Proceedings of the 11th Unconventional Resources Technology Conference' (2023), 'The Unconventional Resources Technology Conference' (2024), 'Proceedings of the 2025 Unconventional Resources Technology Conference' (2025).",
+  "attendance_numeric": null,
+  "attendance_year": null,
+  "attendance_basis": null,
+  "attendance_rung": null,
+  "attendance_source_url": null,
+  "alt_figures": [
+   {
+    "value": 232,
+    "year": 2023,
+    "basis": "COUNTED_DEPOSIT",
+    "rung": 4
+   },
+   {
+    "value": 230,
+    "year": 2024,
+    "basis": "COUNTED_DEPOSIT",
+    "rung": 4
+   }
+  ],
+  "character": "CONTRIBUTED",
+  "character_evidence": "URTeC runs an open call and publishes a complete numbered proceedings volume per edition; every accepted presentation carries a manuscript, which is why the deposit count and the container count agree exactly.",
+  "programme_type": "CONTRIBUTED",
+  "programme_evidence": "One proceedings container per edition holding every accepted paper.",
+  "direct_abstracts": null,
+  "ratio": null,
+  "ratio_rationale": null,
+  "duplicate_of": null,
+  "method": "RUNG 4 (Crossref publisher deposit index), ZERO searches. URTeC deposits under its own prefix 10.15530, not under SPE's 10.2118 - a route not previously in the field notes. Cursor-paged https://api.crossref.org/works?filter=prefix:10.15530,from-pub-date:<Y>-01-01,until-pub-date:<Y>-12-31&rows=1000&select=DOI,event,container-title,published,type&cursor=* for Y=2023,2024,2025 and grouped on event.name (the field-notes key for SPE-family publishers) and independently on container-title. 2025: 268 items total, of which 220 are the URTeC proceedings and 48 are the separately-run 2025 Carbon Capture, Utilization, and Storage Conference (EXCLUDED - a different meeting). 2024: 262 total, 230 URTeC + 32 CCUS. 2023: 311 total, 232 URTeC + 79 Latin America URTeC (EXCLUDED - a separate regional edition). The deposit is NEAR-COMPLETE rather than a floor: URTeC, like SPE (field notes counting rule 2), requires a manuscript for every accepted presentation, and the container is literally the edition's proceedings volume, so a low figure here is real evidence of a small technical programme, not a deposit gap. OnePetro (Cloudflare-walled per the brief) was therefore never needed. Excluded: the Latin America and CCUS co-series. Language: English only - URTeC is a US meeting of SPE/AAPG/SEG. 220 is far below the 800 floor, so OUT on positive evidence.",
+  "verdict": "OUT",
+  "confidence": "exact"
+ },
+ {
+  "row": 94,
+  "conference": "AISTech - The Iron and Steel Technology Conference and Exposition",
+  "outcome": "COUNTED",
+  "abstracts_numeric": 294,
+  "abstracts": "294 (2025)",
+  "year": 2025,
+  "rung": 4,
+  "source_url": "https://api.crossref.org/works?filter=prefix:10.33313,from-pub-date:2025-01-01,until-pub-date:2025-12-31&rows=1000&select=DOI,container-title,event,published,type&cursor=*",
+  "spot_checks": [
+   "Series re-derived across three editions from the same call: 2023 256, 2024 244, 2025 294",
+   "Separated AIST's other conferences sharing the prefix - AIST International Rolling Conference 29, AIST International Symposium on Microalloying 20, AIST Automotive Steel International Conference 18, AIST Steel Properties & Applications Conference 11, AIST CHS2 67, AHSS symposium 32 - and the journal Iron & Steel Technology (11 journal-articles), all EXCLUDED",
+   "Cross-checked against AIST's own wording on the AISTech page: 'With hundreds of technical presentations spanning the full steelmaking process' - consistent with 294, not with a four-figure programme"
+  ],
+  "searches_used": 0,
+  "events_per_yr": 1,
+  "cadence_evidence": "Annual (May). One AISTech Conference container per calendar year in Crossref for 2023, 2024 and 2025; https://www.aist.org/conferences-expositions/aistech/home currently promotes AISTech 2027 in Nashville following the 2026 edition.",
+  "attendance_numeric": null,
+  "attendance_year": null,
+  "attendance_basis": null,
+  "attendance_rung": null,
+  "attendance_source_url": null,
+  "alt_figures": [
+   {
+    "value": 256,
+    "year": 2023,
+    "basis": "COUNTED_DEPOSIT",
+    "rung": 4
+   },
+   {
+    "value": 244,
+    "year": 2024,
+    "basis": "COUNTED_DEPOSIT",
+    "rung": 4
+   }
+  ],
+  "character": "CONTRIBUTED",
+  "character_evidence": "https://www.aist.org/conferences-expositions/aistech/home carries an open 'Call for Papers' and a 'SUBMIT AN ABSTRACT NOW!' call to action; every accepted presentation is published as a paper in the AISTech Conference Proceedings, which is the container counted here.",
+  "programme_type": "CONTRIBUTED",
+  "programme_evidence": "Open call for papers plus a complete per-edition proceedings volume, alongside a large exhibition.",
+  "direct_abstracts": null,
+  "ratio": null,
+  "ratio_rationale": null,
+  "duplicate_of": null,
+  "method": "RUNG 4 (Crossref publisher deposit index), ZERO searches. Prefix found via the member registry, not guessed: https://api.crossref.org/members?query=Association+for+Iron&rows=6 returns member 18524 'Association for Iron and Steel Technology', prefix 10.33313. Then cursor-paged https://api.crossref.org/works?filter=prefix:10.33313,from-pub-date:<Y>-01-01,until-pub-date:<Y>-12-31&rows=1000&select=DOI,container-title,event,published,type&cursor=* for Y=2023,2024,2025 and grouped on container-title (AIST's grouping key - the event field is not populated; a NEW publisher row for the field-notes table). 2025: 387 items = 372 proceedings-articles + 11 journal-articles + 3 proceedings records, of which the container 'AISTech Conference' holds 294. 2024: 244. 2023: 256. AIST runs six other conferences off the same prefix, all separated out by container and excluded. Rungs 3/5 not needed. NOTE the aist.org path trap: /conference-expositions/aistech (singular 'conference') 404s to /errorpage/404.html with HTTP 200; the live path is /Conferences-Expositions/AISTech, which redirects to /conferences-expositions/aistech/home. Excluded: invited/keynote content is not separately labelled in the deposit, but AISTech's programme is a papers programme and the proceedings volume is the unit. Language: English only - AIST is a US society. 294 is far below the 800 floor, so OUT on positive evidence; the meeting's scale is in its exhibition, not its technical programme.",
+  "verdict": "OUT",
+  "confidence": "exact"
+ },
+ {
+  "row": 101,
+  "conference": "IEEE PES Transmission and Distribution Conference and Exposition",
+  "outcome": "COUNTED",
+  "abstracts_numeric": 137,
+  "abstracts": "137 (2026, floor - Transactions-paper presentations are not deposited)",
+  "year": 2026,
+  "rung": 4,
+  "source_url": "https://api.crossref.org/works?filter=type:proceedings-article,prefix:10.1109,from-pub-date:2026-01-01,until-pub-date:2026-12-31&rows=0&facet=container-title:2000",
+  "spot_checks": [
+   "Double-unescaped the facet keys per field-notes trap 2; the 2026 edition appears under TWO distinct raw keys that both unescape to '2026 IEEE/PES Transmission and Distribution Conference and Exposition (T&D)', carrying 136 + 1 = 137",
+   "Re-derived the whole series from the same facet call per year: 2018 216, 2020 159, 2022 88, 2026 137 - every edition far below the floor",
+   "Separated the acronym-adjacent decoys the facet returns: '2018/2020 IEEE PES T&D Latin America (T&D-LA)' 114/138 and 'International Conference on Power, Energy, Control and Transmission Systems (ICPECTS)' 102/257/407, all EXCLUDED"
+  ],
+  "searches_used": 0,
+  "events_per_yr": 0.5,
+  "cadence_evidence": "Biennial, even years. https://ieeet-d.org/ carries '24-27 April 2028 - Atlanta, GA' as the next edition immediately after the 2026 Chicago edition (4-7 May 2026), and the same page compares against '2024 T&D'. Crossref containers exist for 2018, 2020, 2022 and 2026.",
+  "attendance_numeric": 18000,
+  "attendance_year": 2026,
+  "attendance_basis": "TOTAL_ONSITE",
+  "attendance_rung": "A2",
+  "attendance_source_url": "https://ieeet-d.org/",
+  "alt_figures": [
+   {
+    "value": 216,
+    "year": 2018,
+    "basis": "COUNTED_DEPOSIT",
+    "rung": 4
+   },
+   {
+    "value": 159,
+    "year": 2020,
+    "basis": "COUNTED_DEPOSIT",
+    "rung": 4
+   },
+   {
+    "value": 88,
+    "year": 2022,
+    "basis": "COUNTED_DEPOSIT",
+    "rung": 4
+   }
+  ],
+  "character": "HYBRID",
+  "character_evidence": "https://ieeet-d.org/2026-chicago/program-special-events/technical-program/ lists the programme as an opening keynote, Super Sessions, Technical Panel Sessions, Tutorials, Technical Tours and 'Plain Talk' courses - all curated - beside a genuine open Call for Papers (https://ieeet-d.org/2026-chicago/call-for-papers/, 'Papers will undergo a rigorous review process via the IEEE PES Technical Committees and specific quotas and acceptance rates will be established and applied'). A small contributed paper track bolted onto a large curated-and-exhibition event.",
+  "programme_type": "HYBRID",
+  "programme_evidence": "Open call for 5-page papers with a quota-based acceptance rate; all accepted conference papers presented at one Wednesday evening poster session; plus a curated panel/tutorial programme and a 933-exhibitor hall.",
+  "direct_abstracts": null,
+  "ratio": null,
+  "ratio_rationale": null,
+  "duplicate_of": null,
+  "method": "RUNG 4 (Crossref IEEE container facet, field notes 2.1), ZERO searches. Called https://api.crossref.org/works?filter=type:proceedings-article,prefix:10.1109,from-pub-date:<Y>-01-01,until-pub-date:<Y>-12-31&rows=0&facet=container-title:2000 per year and matched the double-unescaped facet keys against /Transmission|T&D/i. The facet IS the figure (trap 1: query.container-title does not filter). Series: 2018 216, 2020 159, 2022 88, 2026 137. FLOOR, not a complete count, because the call (https://ieeet-d.org/2026-chicago/call-for-papers/) adds a 'Transactions Paper Presentations at the Poster Session' track whose full papers are explicitly NOT published in the conference proceedings ('The full paper will not be published in the Conference Proceedings ... will have their abstracts published in the Conference Proceedings') - the same structure the field notes record for IEEE PES General Meeting. The same call also settles that there is NO separate poster track to add: 'Conference papers will be scheduled for presentation at the Wednesday evening poster session', so the posters ARE the accepted papers and adding them would double-count. NEW TRAP: the 2024 Anaheim edition has NO container in the 2024 or 2025 IEEE facet at all (checked both years against /PES|Power and Energy Society/), although the society's own site references it - an IEEE deposit gap for one edition, so absence of a container year is not absence of an edition. Rung 5 was NOT needed and is not queued: ieeet-d.org is plain server-rendered WordPress. Language: English only - a US IEEE meeting. Even the largest edition in the series (216) is under a third of the 800 floor while the event draws 18,000+ professionals and 933 exhibitors, so this is the trade-show case the bar exists to catch: OUT on positive evidence.",
+  "verdict": "OUT",
+  "confidence": "floor"
+ },
+ {
+  "row": 112,
+  "conference": "JSPE Annual Meeting (Japan Society for Precision Engineering)",
+  "outcome": "COUNTED",
+  "abstracts_numeric": 438,
+  "abstracts": "438 (2026 spring meeting; larger of the two editions)",
+  "year": 2026,
+  "rung": 4,
+  "source_url": "https://www.jstage.jst.go.jp/browse/pscjspe/2026S/0/_contents/-char/ja",
+  "spot_checks": [
+   "Both 2025 editions re-derived independently: spring 427, autumn 364 - the autumn meeting is consistently the smaller, so the spring edition is the one reported",
+   "Series pulled back fifteen years to test for a JSME-style deposit break: 2010S 572, 2015S 551, 2019S 481 / 2019A 377, 2023S 441 / 2023A 438, 2024S 452 / 2024A 367, 2025S 427 / 2025A 364, 2026S 438. A smooth gentle decline with NO discontinuity, which is the evidence that this is the whole meeting and not a partial deposit",
+   "The J-STAGE volume selector lists an unbroken 春季 + 秋季 pair for every year from 2003 to 2026 (plus 2002 autumn), confirming both the cadence and the absence of missing editions"
+  ],
+  "searches_used": 0,
+  "events_per_yr": 2,
+  "cadence_evidence": "Twice yearly (春季大会 spring + 秋季大会 autumn). The J-STAGE volume list https://www.jstage.jst.go.jp/browse/pscjspe/list/-char/ja names a '<YEAR>年度精密工学会春季大会' and a '<YEAR>年度精密工学会秋季大会' volume for every year 2003-2025, with 2026春季 already published. Per the two-meetings-a-year rule the figure is the larger single edition, never a sum.",
+  "attendance_numeric": null,
+  "attendance_year": null,
+  "attendance_basis": null,
+  "attendance_rung": null,
+  "attendance_source_url": null,
+  "alt_figures": [
+   {
+    "value": 452,
+    "year": 2024,
+    "basis": "COUNTED_SPRING_EDITION",
+    "rung": 4
+   },
+   {
+    "value": 427,
+    "year": 2025,
+    "basis": "COUNTED_SPRING_EDITION",
+    "rung": 4
+   },
+   {
+    "value": 364,
+    "year": 2025,
+    "basis": "COUNTED_AUTUMN_EDITION",
+    "rung": 4
+   }
+  ],
+  "character": "CONTRIBUTED",
+  "character_evidence": "The society publishes a complete 講演論文集 (proceedings of contributed lectures) per edition on J-STAGE, every item an author-submitted short paper - the Japanese short-paper convention the field notes record for AIJ and KIEE.",
+  "programme_type": "CONTRIBUTED",
+  "programme_evidence": "Per-edition 精密工学会学術講演会講演論文集 volumes with 360-570 author papers each.",
+  "direct_abstracts": null,
+  "ratio": null,
+  "ratio_rationale": null,
+  "duplicate_of": null,
+  "method": "RUNG 4 (national platform: J-STAGE), ZERO searches, JAPANESE-language route. Crossref is a DEAD END for this society and that is a new finding: the member registry (https://api.crossref.org/members?query=Japan+Society+for+Precision+Engineering) returns member 1346 with prefix 10.2493, but cursor-paging that prefix for 2024 (277 items) and 2025 (258) returns ONLY the journal 'Journal of the Japan Society for Precision Engineering' (DOI slug jjspe) - JSPE deposits no 大会 proceedings, exactly as the field notes record for IEEJ (10.1541) and ASEE (10.18260). The 大会 proceedings live on J-STAGE under journal code pscjspe = 精密工学会学術講演会講演論文集. Route: https://www.jstage.jst.go.jp/browse/pscjspe/list/-char/ja gives the volume codes, which are NOT numeric - they are '<YEAR>S' (春季) and '<YEAR>A' (秋季), read out of the option values in the volume selector. Then https://www.jstage.jst.go.jp/browse/pscjspe/<VOL>/0/_contents/-char/ja states its own count in the header line 選択された号の論文のN件中1~50を表示しています, extracted with the regex 選択された号の論文の(\\d+)件中. 2026S = 438. Located via a JAPANESE-language J-STAGE global search for 精密工学会大会学術講演会講演論文集, which returned the 精密工学会学術講演会講演論文集 title facet. Excluded: nothing is separately labelled 特別講演 in the volume; the proceedings volume is the contributed programme. 438 against an 800 floor, and the largest edition anywhere in the last fifteen years is 572 (2010), so OUT on positive evidence - the phase-1 hint of 800-1,000 per meeting is not supported by the society's own proceedings.",
+  "verdict": "OUT",
+  "confidence": "exact"
+ },
+ {
+  "row": 115,
+  "conference": "Annual Conference of the Chinese Society for Electrical Engineering (CSEE)",
+  "outcome": "COUNTED",
+  "abstracts_numeric": 398,
+  "abstracts": "398 accepted papers (2025, Changsha) - society-stated in its own acceptance notice",
+  "year": 2025,
+  "rung": 2,
+  "source_url": "https://www.csee.org.cn/portal/xfptzgg/20251023/35755.html",
+  "spot_checks": [
+   "Opened the acceptance notice and read the figure in the original Chinese rather than from a snippet: '经专家评审，本次年会共录取论文398篇，名单见附件' - after expert review, 398 papers accepted for this annual meeting, with the名单 (list) as an attachment",
+   "Confirmed the 398 are PRESENTATIONS in our unit, not just publications: the same notice says '交流方式可选择宣讲或张贴' - authors choose oral (宣讲, 10 minutes) or poster (张贴) - which is exactly orals + posters",
+   "Cross-checked against the call for papers of the same edition (https://www.csee.org.cn/portal/xfptzgg/20250509/35053.html): an open call across ten categories and 61 sub-directions, full-paper deadline 15 August 2025, review completed 10 October, acceptance notified 20 October - consistent dates, and '第一作者每人限投两篇' caps each first author at two submissions"
+  ],
+  "searches_used": 2,
+  "events_per_yr": 1,
+  "cadence_evidence": "Annual. The society's own call states the meeting series was established in 2002 ('学会年会自2002年设立以来'), and consecutive call-for-papers notices exist for 2024 (https://www.csee.org.cn/portal/xfptzgg/20240507/33450.html) and 2025 (.../20250509/35053.html). The 2025 edition ran 24-27 November 2025 in Changsha.",
+  "attendance_numeric": null,
+  "attendance_year": null,
+  "attendance_basis": null,
+  "attendance_rung": null,
+  "attendance_source_url": null,
+  "alt_figures": [],
+  "character": "HYBRID",
+  "character_evidence": "There is a genuine open call with peer review and an oral-or-poster choice (398 accepted), but the meeting itself is built around a plenary main forum, and the society spreads the rest of its research across a '1+N' activity month of 36 separate academic events rather than one large congress.",
+  "programme_type": "HYBRID",
+  "programme_evidence": "Open reviewed paper call producing 398 accepted oral/poster presentations, inside a four-day meeting whose first two days are registration and a main forum.",
+  "direct_abstracts": 398,
+  "ratio": null,
+  "ratio_rationale": null,
+  "duplicate_of": null,
+  "method": "IMPLIED NAME RESOLVED. The real meeting is 中国电机工程学会年会 (CSEE Annual Meeting), 2025 edition 24-27 November 2025 in Changsha, theme 科技创新与机制变革共筑新型能源体系, hosted by CSEE with State Grid Hunan, Huaneng Clean Energy Research Institute, Huawei and CRRC Zhuzhou. RUNG 2 (organiser-stated figure, page opened), TWO searches, CHINESE-language throughout (年会 + 论文 + 录用 + 篇). Zero-search attempt first: www.csee.org.cn is a JS portal whose front page carries no programme, but its /portal/ news articles are plain server-rendered HTML and fully open - that is the route. Searched in Chinese for the 征文 (call) and then the 录取 (acceptance) notice, and opened both. PUBLICATION ROUTE recorded for a future session: accepted papers are published as a digital proceedings (年会数字论文集, USB) in the CSEE digital library, the best of them in the 增刊 (supplement) of 中国电机工程学报, and others in High Voltage, 高电压技术, Energy Conversion and Economics, 电力建设 and 中文电力 - so there is no single countable open proceedings, which is why this row rests on the society's own acceptance count. WHAT THE BRIEF PREDICTED IS TRUE HERE: CSEE runs most of its research through technical-committee 学术年会 rather than the one congress - the 2025 annual meeting was organised as a month-long '1+N' programme of 36 separate academic events (e.g. the 直流输电与电力电子专委会 and 能源互联网专委会 each run their own 学术年会 with their own 征文). This row counts ONLY the society-level 年会. Excluded: the main-forum keynote reports. 398 against the 800 floor, so OUT on positive evidence.",
+  "verdict": "OUT",
+  "confidence": "exact"
+ },
+ {
+  "row": 118,
+  "conference": "China Civil Engineering Society Annual Conference",
+  "outcome": "UNKNOWN",
+  "abstracts_numeric": null,
+  "abstracts": "UNKNOWN - no contributed-presentation count is published; the programme is an invited forum programme (see Method)",
+  "year": 2026,
+  "rung": null,
+  "source_url": "http://cces.net.cn/html/tm/19/22/content/8062.html",
+  "spot_checks": [
+   "Opened the society's own second-circular for TWO editions and read the complete programme structure in Chinese. 2026 (Chengdu, 22-23 September): day one is the opening, the 21st Zhan Tianyou Award ceremony and 院士专家主题报告 (academician and expert keynote reports); day two is 14 named 分论坛 (parallel forums). That is the entire two-day programme - there is no contributed-paper session block at all",
+   "2024 (Suzhou, 22-23 October) has the identical shape, and the society states the format explicitly: '邀请我国土木工程领域院士、知名专家学者，以特邀报告、主旨论坛、专题研讨等方式，分享最新研究成果' - it INVITES academicians and well-known experts to present by way of 特邀报告 (invited reports), 主旨论坛 (keynote forums) and 专题研讨 (thematic discussions)",
+   "A 年会论文投稿 (annual-meeting paper submission) contact person is listed in the 2026 circular, so papers are solicited - but no paper count, no accepted-paper list and no proceedings are published anywhere on the society site, and the printed programme allocates no session to them"
+  ],
+  "searches_used": 2,
+  "events_per_yr": 1,
+  "cadence_evidence": "Annual. http://cces.net.cn/html/tm lists a 学术年会 second-circular for 2023, 2024, 2025 and 2026 in consecutive years, each paired with that year's Zhan Tianyou Award ceremony; the society also publishes an annual 学术会议活动计划表 (2025 and 2026 both present).",
+  "attendance_numeric": null,
+  "attendance_year": null,
+  "attendance_basis": null,
+  "attendance_rung": "A-LADDER EXHAUSTED WITHOUT A LOADABLE PAGE",
+  "attendance_source_url": null,
+  "alt_figures": [],
+  "character": "CURATED",
+  "character_evidence": "The society's own 2024 circular describes the whole programme as invited: '邀请我国土木工程领域院士、知名专家学者，以特邀报告、主旨论坛、专题研讨等方式'. The 2026 programme is one day of academician keynote reports plus 14 parallel forums over a single day, with an award ceremony and a book launch - the AAAS shape, not an abstract congress.",
+  "programme_type": "CURATED",
+  "programme_evidence": "Two days; one main forum of invited academician reports plus 14 themed parallel forums; no contributed-abstract session block, no proceedings.",
+  "direct_abstracts": null,
+  "ratio": null,
+  "ratio_rationale": null,
+  "duplicate_of": null,
+  "method": "IMPLIED NAME RESOLVED. The real meeting is 中国土木工程学会学术年会 (CCES Academic Annual Conference), held with the 中国土木工程詹天佑奖 award ceremony; 2026 edition 22-23 September 2026 in Chengdu, 2025 in Tianjin, 2024 in Suzhou, 2023 in Beijing (with the society's 110th anniversary). TWO searches, CHINESE-language (学术年会 + 论文 + 篇 + 参会代表 + 分论坛). ROUTE AND ITS TRAP: www.cces.net.cn does not resolve over HTTPS at all (connection fails, curl exit 000); over HTTP it returns a 684-byte JavaScript redirect stub to //cces.net.cn/html/tm. Behind that the site is plain static HTML and fully readable. Notice URLs are of the form http://cces.net.cn/html/tm/19/22/content/<id>.html (2026 = 8062, 2024 = 7528, 2023 = 7161). REFUSED FIGURE, deliberately: a Chinese press report of the 2025 edition appeared in search results asserting '1个主论坛、14个分论坛，共邀请10余位院士、100多位知名专家学者作报告 ... 1000余名代表参加会议', but www.rmzxw.com.cn returns HTTP 404 for that article and the Sina mirror serves a 1,313-byte JS shell, so NO page carrying those numbers actually loaded and they are recorded nowhere as figures - including the 1,000+ attendance, which is why attendance_numeric is null. WHY THIS IS OUT AND NOT MERELY UNRESOLVED: the verdict does not rest on an empty search. It rests on the society's own printed programme for two separate editions, which shows a two-day invited-forum meeting - the methodology's explicit second ground for OUT, 'the programme isn't a contributed-abstract programme at all (AAAS: ~120 curated sessions)'. Fourteen parallel forums in one day cannot hold a four-figure contributed programme under any reading. NEXT ACTION if Rupert wants this reopened: open http://cces.net.cn/html/tm/19/22/content/8062.html's attachment 中国土木工程学会2026年学术年会二号通知.pdf for the per-forum speaker lists, and look for a 2025 post-meeting news item on the society's 学术动态 channel.",
+  "verdict": "OUT",
+  "confidence": "derived"
+ },
+ {
+  "row": 121,
+  "conference": "Chinese Society of Agricultural Engineering Annual Conference",
+  "outcome": "COUNTED",
+  "abstracts_numeric": 600,
+  "abstracts": "~600-799 (2025, 10th CSAE Academic Annual Conference, Guangzhou): 500余场专题报告 + 百余个论文墙报, society-stated; 600 taken as the floor of that range",
+  "year": 2025,
+  "rung": 2,
+  "source_url": "http://csae.org.cn/rdxw/202512/t20251222_468796.html",
+  "spot_checks": [
+   "Opened the society's own post-meeting review and read the programme breakdown in the original Chinese: '会议邀请了20余位领导、院士、知名专家作大会主旨报告，设置了23个分会场，500余场专题报告，百余个论文墙报展示，20余家企业、高校、科研院所的科技成果展示及20多种期刊风采展，近2000名代表现场出席和参会' - 20-odd invited plenary keynotes, 23 parallel sessions, 500-odd thematic reports, 100-odd paper posters, ~2,000 on-site delegates",
+   "Applied the Chinese numeral convention from the field notes, which BOUNDS this row rather than leaving it open: 余 rounds DOWN, so 500余 is at least 500 and strictly under 600, and 百余 is at least 100 and strictly under 200. The contributed total is therefore bounded 600-799 and CANNOT reach 800 - that bound, not a point estimate, is what settles the row",
+   "The 20余位 plenary keynote reports are itemised separately in the same paragraph and by name later in the article (Luo Xiwen, Chen Xuegeng, Chen Yong, Zhao Chunjiang, Wu Pute and 14 named international speakers), so they are cleanly EXCLUDED and are not inside the 500余",
+   "Attendance cross-checked against a second edition from the same source family: the 2019 edition's report (http://www.csae.org.cn/rdxw/201912/t20191218_344118.html) states 千余位专家代表 - 1,000-odd delegates - against ~2,000 in 2025"
+  ],
+  "searches_used": 1,
+  "events_per_yr": 0.5,
+  "cadence_evidence": "BIENNIAL, odd years - a correction to the queue's 'annual'. The society's own 学术年会 topic page http://csae.org.cn/zthd/zgnygcxhxsnh/ lists notices for exactly four editions - 2019, 2021, 2023 and 2025 - with no 2020, 2022, 2024 or 2026 entry, and the 2019 closing session elected the host of the NEXT annual conference for 2021 ('西华大学当选为中国农业工程学会2021年学术年会承办单位'). The 2025 edition is numbered 第十届.",
+  "attendance_numeric": 2000,
+  "attendance_year": 2025,
+  "attendance_basis": "TOTAL_ONSITE",
+  "attendance_rung": "A2",
+  "attendance_source_url": "http://csae.org.cn/rdxw/202512/t20251222_468796.html",
+  "alt_figures": [
+   {
+    "value": 1000,
+    "year": 2019,
+    "basis": "DELEGATES",
+    "rung": "A2"
+   },
+   {
+    "value": 300000,
+    "year": 2025,
+    "basis": "ONLINE_VIEWS_NOT_ATTENDANCE",
+    "rung": "A2"
+   }
+  ],
+  "character": "CONTRIBUTED",
+  "character_evidence": "The CSAE 2025 first circular (http://www.tcsae.org/news/1475) runs an open abstract call whose accepted authors take part in 分会场 oral presentations, poster exhibition and a doctoral-student forum; the meeting then ran 23 parallel sessions with 500-odd thematic reports and 100-odd posters against only ~20 invited plenaries.",
+  "programme_type": "CONTRIBUTED",
+  "programme_evidence": "Open abstract call, 23 parallel sessions, 500+ thematic reports and 100+ posters, ~2,000 on-site delegates.",
+  "direct_abstracts": 600,
+  "ratio": null,
+  "ratio_rationale": null,
+  "duplicate_of": null,
+  "method": "IMPLIED NAME RESOLVED. The real meeting is 中国农业工程学会学术年会 (CSAE Academic Annual Conference); the 2025 edition is the 第十届学术年会, 28-29 November 2025 in Guangzhou, theme 'AI赋能农业工程新质生产力，推动农业强国建设', held with the society's 12th national congress. RUNG 2 (organiser-stated breakdown, page opened), ONE search, CHINESE-language (学术年会 + 分会场 + 报告 + 篇 + 参会代表). ROUTE: www.csae.org.cn does not resolve over HTTPS (curl exit 000) but serves fine over HTTP - the same trap as CCES, and worth generalising to Chinese society sites. Its 学术年会 topic page http://csae.org.cn/zthd/zgnygcxhxsnh/ is a plain static index of every edition's circulars and post-meeting reports, and the post-meeting 精彩回顾 article is the artefact that carries the programme breakdown. Article URLs are ./  or ../../<channel>/<YYYYMM>/t<YYYYMMDD>_<id>.html. The journal 农业工程学报 (tcsae.org) hosts the call circulars separately. STATED, NOT COUNTED, and bounded rather than pinned: no per-presentation artefact is published, so the figure is the society's own 500余 + 百余, converted to the range 600-799 by the 余 convention and recorded at its floor of 600. EXCLUDED: the 20余 invited plenary keynote reports, the corporate and journal exhibitions, the 3 campus-visit lectures, and the 300,000 online viewers (views, not attendance). Even the TOP of the stated range (799) falls below the 800 floor, so OUT on positive evidence - but this row sits within one percent of the cutoff and should be decided knowingly. FLAGGED FOR RUPERT alongside CBA (797) and SHASE (775).",
+  "verdict": "OUT",
+  "confidence": "floor"
+ },
+ {
+  "row": 130,
+  "conference": "CBA - Congresso Brasileiro de Automatica",
+  "outcome": "COUNTED",
+  "abstracts_numeric": 797,
+  "abstracts": "797 (2024, XXV CBA)",
+  "year": 2024,
+  "rung": 4,
+  "source_url": "https://ojs.sba.org.br/index.php/cba/issue/view/24",
+  "spot_checks": [
+   "Independently re-derived by enumerating all 11 pages of the issue and collecting unique /index.php/cba/article/view/<id> values into a set: 797 unique ids, reproducing the page's own printed 'Mostrando artigos 1 - 75 de 797 total' EXACTLY - the M&M-style agreement that validates the count",
+   "Scanned all 797 extracted <h3 class=\"title\"> strings for front matter (indice / apresentacao / prefacio / sumario / expediente / editorial / capa): every apparent hit was a substring inside a genuine Portuguese paper title (capacidade, indices), so there is NO front matter or index record inflating the 797",
+   "DISAGREEMENT re-derived: the Crossref deposit for the same edition (prefix 10.20906, DOI stem 10.20906/cba2024/) holds only 720 proceedings-articles + 1 proceedings record - 77 fewer than the proceedings itself. The SBA repository is the artefact and the deposit is the partial copy, so 797 stands",
+   "Series cross-checked in BOTH artefacts: OJS gives CBA2018 840, CBA2020 780, CBA2022 596, CBA2024 797; Crossref independently gives 844/843 for the XXII (2018) congress and 596 for the XXIV (2022) - the 2022 figure agrees to the unit"
+  ],
+  "searches_used": 0,
+  "events_per_yr": 0.5,
+  "cadence_evidence": "Biennial, even years. The SBA proceedings archive https://ojs.sba.org.br/index.php/cba/issue/archive holds exactly four volumes - CBA2018 (XXII), CBA2020 (XXIII), CBA2022 (XXIV) and CBA2024 (XXV) - one per even year with consecutive Roman edition numbers and no odd-year gap.",
+  "attendance_numeric": null,
+  "attendance_year": null,
+  "attendance_basis": null,
+  "attendance_rung": null,
+  "attendance_source_url": null,
+  "alt_figures": [
+   {
+    "value": 840,
+    "year": 2018,
+    "basis": "COUNTED_PROCEEDINGS",
+    "rung": 4
+   },
+   {
+    "value": 780,
+    "year": 2020,
+    "basis": "COUNTED_PROCEEDINGS",
+    "rung": 4
+   },
+   {
+    "value": 596,
+    "year": 2022,
+    "basis": "COUNTED_PROCEEDINGS",
+    "rung": 4
+   },
+   {
+    "value": 720,
+    "year": 2024,
+    "basis": "COUNTED_CROSSREF_DEPOSIT_PARTIAL",
+    "rung": 4
+   }
+  ],
+  "character": "CONTRIBUTED",
+  "character_evidence": "Every item in the volume is an author-submitted Portuguese- or English-language technical paper with named authors and a full text; the congress publishes its complete Anais as an open OJS volume.",
+  "programme_type": "CONTRIBUTED",
+  "programme_evidence": "A complete open-access Anais volume of 797 author papers per edition.",
+  "direct_abstracts": null,
+  "ratio": null,
+  "ratio_rationale": null,
+  "duplicate_of": null,
+  "method": "RUNG 4 (proceedings archive), ZERO searches, PORTUGUESE-language route. NEW ROUTE for the field notes: SBA publishes the complete CBA Anais as an Open Journal Systems volume at https://ojs.sba.org.br/index.php/cba (the older www.sba.org.br/open_journal_systems/index.php/cba path 301s there). Archive at /issue/archive gives four issue ids (1, 13, 21, 24); the issue page /issue/view/<id> lists 75 entries per page and prints its own total in the Portuguese pagination line 'Mostrando artigos 1 - 75 de N total'. Counted by paging ?page=1..11 and collecting unique /index.php/cba/article/view/(\\d+) into a Python set: 797, equal to the printed total. NEW TRAP: the SBA Crossref prefix found via the member registry (https://api.crossref.org/members?query=Sociedade+Brasileira+de+Automatica -> member 28026, prefix 10.48011) holds ONLY the 2020 edition (777 items) and returns ZERO for 2023-2025 - the society changed DOI prefix, and the 2024 edition is deposited under the shared Brazilian congress-hosting prefix 10.20906 (which also carries ABCM COBEM, CILAMCE, CONEM and COBRAMSEG). A member-registry prefix that goes empty is a PREFIX CHANGE, not a stopped deposit. Excluded: nothing - there is no invited/plenary material in the Anais volume, and plenary lectures are not published there. Language: Portuguese (searched the archive in Portuguese; 'Anais do Congresso Brasileiro de Automatica', 'Mostrando artigos ... de N total'). DECISIVE AND MARGINAL: 797 is THREE below the 800 cutoff, so the row is OUT on the letter of the rule, but the 2018 edition counted 840 - inside the 800-899 leeway band - and this row should be decided knowingly rather than read off the arithmetic. Series recorded above for Rupert.",
+  "verdict": "OUT",
+  "confidence": "exact"
+ },
+ {
+  "row": 147,
+  "conference": "International Mineral Processing Congress (IMPC)",
+  "outcome": "COUNTED",
+  "abstracts_numeric": 346,
+  "abstracts": "346 (2024, XXXI IMPC Washington DC - contributed papers, plenary and keynote excluded)",
+  "year": 2024,
+  "rung": 3,
+  "source_url": "https://www.proceedings.com/content/081/081393webtoc.pdf",
+  "spot_checks": [
+   "Confirmed the TOC covers ALL FIVE volumes before counting, not just the volume it is headed with: the highest page reference in it is 3,967 against the publisher's stated extent of 3,978 pages (5 vols)",
+   "Extracted with BOTH pdftotext modes: -layout 346 contributed entries, -raw 330. Resolved on STRUCTURE not by averaging - -layout wins because the TOC is a right-aligned dotted-leader table and -raw loses the leader on the 16 titles that wrap to a second line (field-notes counting rule 9)",
+   "Plenary and keynote separated exactly rather than estimated: the 16 entries before the first technical section heading 'Innovation and R&D' are the 2 Plenary Program and 14 Keynote Presentations, and all 16 were EXCLUDED",
+   "Two earlier editions counted independently off the council's own free TOC PDFs as controls: IMPC 2008 Beijing = 497 (numbering contiguous 1-497 with a single gap, identical in both extraction modes) and IMPC 2012 New Delhi = 551 distinct Paper Nos"
+  ],
+  "searches_used": 1,
+  "events_per_yr": 0.5,
+  "cadence_evidence": "Biennial. The congress ran XXVI (2012 New Delhi) through XXXI (2024 Washington DC) - five edition numbers in twelve years, i.e. two-yearly with one pandemic-stretched gap after XXX (2020 Cape Town). Note the council's own proceedings page states 'ICOLD-style' three-yearly wording nowhere; the edition numbering is the evidence. Recorded 0.5.",
+  "attendance_numeric": null,
+  "attendance_year": null,
+  "attendance_basis": null,
+  "attendance_rung": null,
+  "attendance_source_url": null,
+  "alt_figures": [
+   {
+    "value": 420,
+    "year": 2024,
+    "basis": "ORGANISER_STATED_DISAGREES_WITH_COUNT",
+    "rung": 8
+   },
+   {
+    "value": 551,
+    "year": 2012,
+    "basis": "COUNTED_TOC",
+    "rung": 3
+   },
+   {
+    "value": 497,
+    "year": 2008,
+    "basis": "COUNTED_TOC",
+    "rung": 3
+   }
+  ],
+  "character": "CONTRIBUTED",
+  "character_evidence": "Every edition publishes a complete multi-volume refereed proceedings; the IMPC council's own pages state 'all papers presented ... will be fully refereed' and that paper copyright rests with the authors, i.e. an open submitted-paper congress.",
+  "programme_type": "CONTRIBUTED",
+  "programme_evidence": "A 3,978-page five-volume refereed proceedings for the 2024 edition.",
+  "direct_abstracts": 420,
+  "ratio": null,
+  "ratio_rationale": null,
+  "duplicate_of": null,
+  "method": "RUNG 3 (proceedings table of contents), ONE search. Zero-search attempts first: impc-council.com is a stale 2014 WordPress site whose newest free TOC PDFs stop at IMPC 2012, and the congress proceedings themselves are sold, so rungs 3-6 on the council site give only DATED figures. Those were counted anyway and are recorded as alt_figures (2008 497, 2012 551) - both from https://impc-council.com/congress-proceedings/table-of-contents-of-previous-congress-proceedings/, ID regexes (?m)^\\s{0,6}(\\d{1,4})\\s+[A-Z] for the contiguous 2008 numbering and (?m)^\\s{0,10}(\\d{1,4})\\s{2,}[A-Za-z] for the 2012 'Paper No.' column. ONE search (rung 8) located the current edition; smeimpc.org itself returns HTTP 403, but NEW ROUTE that settled it: the print-on-demand publisher Curran Associates lists every such proceedings at proceedings.com with a FREE full table-of-contents PDF - https://www.proceedings.com/81393.html carries the metadata (ISBN 979-8-3313-2440-7, 3,978 pages, 5 vols) and links https://www.proceedings.com/content/081/081393webtoc.pdf, which is the complete multi-volume TOC. This is a general engineering route worth adding: Curran republishes SME, IEEE, ASME and society proceedings and its webtoc PDFs are open. Counted with regex (?:\\.\\s*){4,}\\s*(\\d{1,4})\\s*$ (the leader is SPACED dots '. . . .', so a \\.{3,} pattern matches nothing and reads as an empty TOC - a real trap). 362 entries total, minus the 16 plenary/keynote = 346. DISAGREEMENT: the organiser states '420 peer-reviewed technical papers' for the same edition; the countable artefact is 346 and 420 is recorded here, never used as the figure. Language: English - IMPC publishes in English. 346 against the 800 floor, so OUT on positive evidence, and the two dated editions (497, 551) point the same way.",
+  "verdict": "OUT",
+  "confidence": "exact"
+ },
+ {
+  "row": 151,
+  "conference": "International Congress on Advances in Nuclear Power Plants (ICAPP) and ICONE",
+  "outcome": "COUNTED",
+  "abstracts_numeric": 600,
+  "abstracts": "600 (ICONE 31, 2024 - floor; ICAPP 2024 separately 97)",
+  "year": 2024,
+  "rung": 4,
+  "source_url": "https://api.crossref.org/works?filter=prefix:10.1115,from-pub-date:2024-01-01,until-pub-date:2024-12-31&rows=1000&select=DOI,container-title,published&cursor=*",
+  "spot_checks": [
+   "Whole ICONE series re-derived year by year from the ASME prefix: icone26 (2018) 655, icone2020 341, icone28 (2021) 322, icone29 (2022) 861, icone31 (2024) 600. ICONE 30 (2023, Kyoto) has NO deposit at all - a real gap in the ASME index, not a missing edition",
+   "ICAPP counted independently off the ANS prefix (member 5391, prefix 10.13182): container '2024 International Congress on Advances in Nuclear Power Plants (ICAPP)' = 97 items in 2024, with no ICAPP container at all in 2023 or 2025",
+   "Separated the eight other ANS conferences sharing the prefix in 2024-2025 (Transactions of the ANS 624/657, PHYSOR 252, NETS 163/139, PBNC 132, M&C 424, NPIC&HMIT 201, PSA 111, ARS 57) - none is this row"
+  ],
+  "searches_used": 0,
+  "events_per_yr": 1,
+  "cadence_evidence": "ICONE is annual (editions 26/2018, 2020, 28/2021, 29/2022, 30/2023, 31/2024 all present as distinct editions); ICAPP is annual. Recorded 1 for the row. Note the two named meetings are SEPARATE annual congresses run by different bodies, not one meeting - ICONE by ASME/JSME/CNS, ICAPP by ANS/SFEN/AESJ.",
+  "attendance_numeric": null,
+  "attendance_year": null,
+  "attendance_basis": null,
+  "attendance_rung": null,
+  "attendance_source_url": null,
+  "alt_figures": [
+   {
+    "value": 861,
+    "year": 2022,
+    "basis": "COUNTED_DEPOSIT_ICONE29",
+    "rung": 4
+   },
+   {
+    "value": 655,
+    "year": 2018,
+    "basis": "COUNTED_DEPOSIT_ICONE26",
+    "rung": 4
+   },
+   {
+    "value": 97,
+    "year": 2024,
+    "basis": "COUNTED_DEPOSIT_ICAPP",
+    "rung": 4
+   }
+  ],
+  "character": "CONTRIBUTED",
+  "character_evidence": "Both series run open calls for full technical papers and publish complete numbered proceedings volumes (ASME 'Volume N: ...' containers for ICONE, an ANS congress container for ICAPP).",
+  "programme_type": "CONTRIBUTED",
+  "programme_evidence": "Full-paper proceedings volumes per edition for both meetings.",
+  "direct_abstracts": null,
+  "ratio": null,
+  "ratio_rationale": null,
+  "duplicate_of": null,
+  "method": "RUNG 4 (Crossref deposit index), ZERO searches. NEW TRAP for the field notes: ICONE's ASME DOI slug carries the EDITION NUMBER, not the year - 'icone31', 'icone29', 'icone26' - so the field-notes ASME slug regex ^([a-z\\-]+\\d{4})- (which assumes a four-digit year, as in imece2024/gt2024) MISSES ICONE entirely and reads as 'ASME does not deposit ICONE'. The 2020 edition is the one exception, slugged 'icone2020'. Correct grouping regex for ICONE: 10\\.1115/(icone\\d+)-. Cursor-paged prefix 10.1115 for every year 2018-2026 and grouped on that. ICONE 31 (2024) = 600 - note that filtering the same year on containers merely CONTAINING 'Nuclear' returns only 227, because ICONE spreads across ASME 'Volume N: ...' containers whose titles do not all say Nuclear; the DOI slug is the reliable key, the container facet is not. ICAPP counted off the ANS prefix 10.13182 (found via https://api.crossref.org/members?query=American+Nuclear+Society) = 97 for 2024. FLOOR, not an exact count: the field notes record ASME's own statement that papers are optional for presentation, so every ASME meeting's deposit is a floor. Language: English - both congresses publish in English. VERDICT: the current ICONE edition's floor is 600, but ICONE 29 (2022) counted 861 - inside the 800-899 leeway band - and the 2023 edition is entirely absent from the index, so there is NO positive evidence this meeting is under 800. BORDERLINE under the 'no evidence either way is never OUT' rule, not OUT.",
+  "verdict": "BORDERLINE",
+  "confidence": "floor"
+ },
+ {
+  "row": 157,
+  "conference": "SEFI Annual Conference",
+  "outcome": "COUNTED",
+  "abstracts_numeric": 235,
+  "abstracts": "235 (2025 Tampere: 97 research papers + 91 practice papers + 47 workshops)",
+  "year": 2025,
+  "rung": 3,
+  "source_url": "https://www.sefi.be/wp-content/uploads/2025/12/SEFI2025-Book-of-Proceedings.pdf",
+  "spot_checks": [
+   "Extracted the detailed tables of contents with BOTH pdftotext -layout and -raw: 235 entries in each, and all 235 start-page values are UNIQUE, so no entry is double-counted and no section is missed",
+   "Internal consistency check on the page arithmetic: research papers occupy printed pages 39-1062 (1,024 pages) for 97 entries = 10.6 pages each, practice papers 1063-1955 (893 pages) for 91 entries = 9.8 pages each - exactly SEFI's ten-page paper format, which confirms the TOC is complete rather than truncated",
+   "Corroborated against SEFI's own per-paper proceedings database for the years where it holds individual records: 2012 Thessaloniki 115, 2013 Leuven 185, 2014 Birmingham 132, 2015 Orleans 160, 2016 Tampere 156 - the same order of magnitude as 2025's 188 papers"
+  ],
+  "searches_used": 0,
+  "events_per_yr": 1,
+  "cadence_evidence": "Annual. The SEFI proceedings taxonomy https://www.sefi.be/wp-json/wp/v2/conference?per_page=100 lists one conference term per year with no gaps: 2012 Thessaloniki, 2013 Leuven, 2014 Birmingham, 2015 Orleans, 2016 Tampere, 2017 Azores, 2018 Copenhagen, 2019 Budapest, 2020 Twente, 2021 Berlin, 2022 Barcelona, 2023 Dublin, 2024 Lausanne, 2025 Tampere, each with its own ISBN.",
+  "attendance_numeric": null,
+  "attendance_year": null,
+  "attendance_basis": null,
+  "attendance_rung": null,
+  "attendance_source_url": null,
+  "alt_figures": [
+   {
+    "value": 185,
+    "year": 2013,
+    "basis": "COUNTED_PER_PAPER_RECORDS",
+    "rung": 4
+   },
+   {
+    "value": 160,
+    "year": 2015,
+    "basis": "COUNTED_PER_PAPER_RECORDS",
+    "rung": 4
+   }
+  ],
+  "character": "CONTRIBUTED",
+  "character_evidence": "The Book of Proceedings is built from an open call in three submission categories (Research Papers, Practice Papers, Workshops), each with its own reviewed detailed table of contents; keynotes are listed separately in the front matter (page 17) and are NOT in those tables.",
+  "programme_type": "CONTRIBUTED",
+  "programme_evidence": "A 2,268-page open-access Book of Proceedings of 235 reviewed contributed items.",
+  "direct_abstracts": null,
+  "ratio": null,
+  "ratio_rationale": null,
+  "duplicate_of": null,
+  "method": "RUNG 3 (proceedings PDF), ZERO searches. Crossref is nearly empty for SEFI and would mislead: the member registry (https://api.crossref.org/members?query=SEFI) gives member 49048 prefix 10.62492, but that prefix holds only 34 DOIs, ALL of them the SEFI Journal of Engineering Education Advancement - no conference papers at all. NEW ROUTE (a WordPress variant not in the field notes): sefi.be exposes a 'proceedings' custom post type that is NOT registered in the REST API (/wp-json/wp/v2/proceedings 404s), but its TAXONOMY is - https://www.sefi.be/wp-json/wp/v2/conference?per_page=100&_fields=id,slug,name,count returns one term per edition WITH a per-edition record count. That count is the paper count for 2012-2016 (115/185/132/160/156) and drops to exactly 2 from 2017 onward, which is NOT a shrinking conference: SEFI changed publication practice to one whole-volume PDF plus a DOI index page. Read the count, then follow the front-end archive https://www.sefi.be/?post_type=proceedings&conference=<term-slug> to the volume PDF. Downloaded https://www.sefi.be/wp-content/uploads/2025/12/SEFI2025-Book-of-Proceedings.pdf (HTTP 200, application/pdf, 89,241,717 bytes - checked before counting) and counted the three detailed tables of contents on pages 25-38 with regex (?m)[\\s.]([0-9]{2,4})[ \\t]*$ restricted to targets in the body page range 39-2267. Excluded: keynotes (front matter, page 17), awards, industry insights and the reviewer list (page 2268). Language: English - SEFI's working language. 235 against the 800 floor, so OUT on positive evidence.",
+  "verdict": "OUT",
+  "confidence": "exact"
+ },
+ {
+  "row": 160,
+  "conference": "International Conference on Applications of Statistics and Probability in Civil Engineering (ICASP) / ICOSSAR",
+  "outcome": "UNKNOWN",
+  "abstracts_numeric": null,
+  "abstracts": "UNKNOWN - the only reachable artefact is a declared full-papers-only subset (131). NO RUNG YIELDED A FIGURE - highest rung reached: 4",
+  "year": 2025,
+  "rung": null,
+  "source_url": "https://www.scipedia.com/sj/icossar25",
+  "spot_checks": [
+   "Scipedia's ICOSSAR'25 collection (ISSN 3081-6076) shows DOCUMENTS 131 - but this is NOT the congress size and is deliberately not recorded as the figure: the organisers state that 'Conference Proceedings (full papers only) will be published on Scipedia', and the field notes independently measure Scipedia as a 5-13% opt-in subset (ECCOMAS 307 vs 2,368; WCCM 133 vs 2,800)",
+   "The programme is demonstrably larger than 131: AAWE's public session announcement (https://aawe.org/news/icossar-2025-sessions/) names 'Session 41' and 'Session 44' as two of the mini-symposia, so the meeting ran at least 44 organised sessions, and a ResearchGate record cites 'ICOSSAR 2025 Session 37'",
+   "Scipedia also carries the complete authoritative edition list, used for cadence: Washington 1969, Munich 1977, Trondheim 1981, Kobe 1985, San Francisco 1989, Innsbruck 1993, Kyoto 1997, Newport Beach 2001, Rome 2005, Osaka 2009, New York 2013, Vienna 2017, Shanghai 2022, Los Angeles 2025"
+  ],
+  "searches_used": 3,
+  "events_per_yr": 0.5,
+  "cadence_evidence": "The ROW covers two alternating quadrennial series of the same association, so the combined cadence is ~0.5, not 0.25. ICOSSAR runs at 'approximately four-year intervals' (IASSAR's own wording) - 2013, 2017, 2022, 2025 most recently - and ICASP runs on its own four-year cycle offset from it, ICASP14 having been held 9-13 July 2023 at Trinity College Dublin. Two congresses per four years = 0.5.",
+  "attendance_numeric": null,
+  "attendance_year": null,
+  "attendance_basis": null,
+  "attendance_rung": "A-LADDER EXHAUSTED: A1-A4 and A6-A7 all failed; no page carrying an attendance figure loaded",
+  "attendance_source_url": null,
+  "alt_figures": [
+   {
+    "value": 131,
+    "year": 2025,
+    "basis": "SCIPEDIA_FULL_PAPERS_ONLY_SUBSET_NOT_A_CONGRESS_SIZE",
+    "rung": 4
+   }
+  ],
+  "character": "CONTRIBUTED",
+  "character_evidence": "The conference is built from organiser-proposed mini-symposia fed by an open abstract call with a stated abstract deadline of 31 December 2024 and a public 'abstract submission system' link, plus an extended-abstracts volume and a full-paper proceedings - the shape of a contributed congress, not a curated one.",
+  "programme_type": "CONTRIBUTED",
+  "programme_evidence": "Open abstract call into 44+ numbered mini-symposia; both an extended-abstracts volume and a Scipedia full-paper proceedings.",
+  "direct_abstracts": null,
+  "ratio": null,
+  "ratio_rationale": null,
+  "duplicate_of": null,
+  "method": "UNRESOLVED, and deliberately NOT marked OUT - absence of evidence is not evidence of size. THREE searches on the abstract ladder plus one on the attendance ladder, English (both congresses publish in English; the organising body is international-anglophone, so no local-language pass applies). FOUR SEPARATE WALLS, every one of them documented so the next session does not repeat them: (1) the conference site https://www.icossar2025.org/ and its extended-abstracts page https://sites.google.com/icossar2025.org/icossar2025/extended-abstracts are a Google Workspace site that redirects EVERY request to accounts.google.com sign-in - a CREDENTIAL wall, which per the brief is not a rung-5 job; (2) iassar.org is a LOST DOMAIN now serving the Iowa Society of the Sons of the American Revolution, an acronym collision plus a domain loss in one - never cite it; (3) the association's real page https://www.columbia.edu/cu/civileng/iassar/ returns Cloudflare HTTP 403 'Just a moment...'; (4) icasp14.com is a LOST DOMAIN now serving an Indonesian gambling site. The usual Wayback bypass for (3) was unavailable because the Internet Archive was offline for this entire run. Crossref has no IASSAR member record and no ICOSSAR/ICASP proceedings container; Curran/proceedings.com carries neither series; arrow.tudublin.ie/icasp14/ 404s. EXACT NEXT ACTION: retry https://www.columbia.edu/cu/civileng/iassar/ through Wayback once the Internet Archive is back up, and try https://sites.google.com/icossar2025.org/icossar2025/extended-abstracts in a signed-in browser - it is the complete accepted-presentation list and would settle the row in one page. Failing that, ask whether Rupert will accept the Scipedia subset as a floor. BORDERLINE, never OUT.",
+  "verdict": "BORDERLINE",
+  "confidence": "floor"
+ },
+ {
+  "row": 163,
+  "conference": "MS&T - Materials Science and Technology Technical Meeting and Exhibition",
+  "outcome": "COUNTED",
+  "abstracts_numeric": 904,
+  "abstracts": "904 (2025 Columbus: 717 contributed oral presentations + 187 posters)",
+  "year": 2025,
+  "rung": 3,
+  "source_url": "https://www.matscitech.org/mst25/downloads/MST25-FinalProgram.pdf",
+  "spot_checks": [
+   "THE EXTRACTION DISAGREEMENT WAS RESOLVED ON STRUCTURE, NOT BY AVERAGING, AND THE TEST IS DECISIVE: pdftotext -raw yields poster board numbering that is perfectly contiguous and gap-free in every series (SPU 1-41, SPG 1-34, D 1-22, A 1-16), while -layout yields the SAME maxima with holes (SPU missing 1,2,4,25,26,40; SPG missing 9 of 34; D missing 5 of 22). The programme is a two-column book and -layout merges the columns, dropping about a quarter of all entries - the INFORMS case from the field notes, reproduced exactly. -raw wins",
+   "Invited/contributed split taken from the programme's OWN labels rather than judged: of 1,316 time slots, 599 are excluded as 390 'Invited', 144 'Break', 21 'Introductory Comments', 19 'Keynote', 9 'Concluding Comments', 8 'Question and Answer', 3 'Plenary', 2 'Award Presentation', 1 'Panel Discussion' - leaving 717 contributed orals. Zero slots had an empty remainder, so no talk was silently dropped by the regex",
+   "Posters counted independently of the orals, by board id across the whole document (187 unique), and the two handles do not overlap because poster entries carry no time slot",
+   "Cross-checked against the proceedings deposit as a lower bound: the MS&T'19 Curran proceedings TOC counts 208 papers against a programme of this size, confirming that MS&T's published proceedings is a ~20-25% floor and must NOT be used as the figure"
+  ],
+  "searches_used": 1,
+  "events_per_yr": 1,
+  "cadence_evidence": "Annual (autumn). ProgramMaster lists 'MS&T26: Materials Science & Technology, October 4-7, 2026, Pittsburgh' immediately following MS&T25 (28 September - 1 October 2025, Columbus), and Curran carries a separate proceedings volume for 2005, 2006, 2008, 2009, 2010, 2011, 2013, 2014, 2016, 2017, 2018 and 2019.",
+  "attendance_numeric": null,
+  "attendance_year": null,
+  "attendance_basis": null,
+  "attendance_rung": null,
+  "attendance_source_url": null,
+  "alt_figures": [
+   {
+    "value": 741,
+    "year": 2025,
+    "basis": "SAME_PROGRAMME_VIA_THE_REJECTED_LAYOUT_EXTRACTION",
+    "rung": 3
+   },
+   {
+    "value": 208,
+    "year": 2019,
+    "basis": "COUNTED_PROCEEDINGS_FLOOR_ONLY",
+    "rung": 3
+   }
+  ],
+  "character": "CONTRIBUTED",
+  "character_evidence": "MS&T runs an open abstract call through TMS ProgramMaster (https://www.programmaster.org/MST25 offers 'Submit An Abstract' and 'Propose A Symposium'), and 717 of its 1,316 programme slots are unlabelled contributed talks against 390 explicitly marked Invited, plus 187 open poster boards including two student poster contests.",
+  "programme_type": "CONTRIBUTED",
+  "programme_evidence": "Open abstract call plus a 135-page final technical programme of 904 contributed presentations alongside an exhibition.",
+  "direct_abstracts": null,
+  "ratio": null,
+  "ratio_rationale": null,
+  "duplicate_of": null,
+  "method": "RUNG 3 (final programme PDF), ONE search. NEW WALL AND THE WORKAROUND THAT BEATS IT - this is the most portable finding of my slice: matscitech.org, ceramics.org and tms.org ALL return Cloudflare HTTP 403 ('Attention Required! | Cloudflare') to every user-agent tried, and the field-notes bypass (Wayback) was UNAVAILABLE for this entire run because web.archive.org and its CDX API served 'Internet Archive services are temporarily offline' on every request. The workaround: the /downloads/ ASSET PATH on the same walled host is NOT behind the wall - https://www.matscitech.org/mst25/downloads/MST25-FinalProgram.pdf returns HTTP 200, application/pdf, 4,120,438 bytes (status, type and size all checked before counting). ALWAYS TRY THE ASSET PATH BEFORE QUEUEING A CLOUDFLARE HOST FOR RUNG 5. Second new route: TMS's ProgramMaster (https://www.programmaster.org/MST25, which 302s to /PM/PM.nsf/Home?OpenForm&ParentUNID=DF46DC7CBF5E5DC185258A890049C920) is NOT Cloudflare-protected and carries the meeting's dates, scope and organising societies for free - useful for cadence and character even though its abstract views need a login. Counting: orals from pages 8-100 with regex \\b\\d{1,2}:\\d{2}\\s*(?:AM|PM)\\s*([^\\n]*) minus the programme's own labels; posters from board ids (?m)^\\s*([A-Z]{1,3}-\\d{1,3}): across the whole document. 717 + 187 = 904. Excluded: 390 Invited, 19 Keynote, 3 Plenary, 2 Award lectures, plus breaks and comments. Language: English - a US meeting. FLAG, not a duplicate_of: MS&T is a joint meeting of ACerS, AIST and TMS and the TMS Fall Meeting is held inside it, so if a 'TMS Fall Meeting' row ever appears it is this row. It does NOT overlap AISTech (row 94, AIST's own separate May congress) or the TMS Annual Meeting (counted on Physical Sciences). 904 clears the 900 bar, so BORDERLINE.",
+  "verdict": "BORDERLINE",
+  "confidence": "exact"
+ },
+ {
+  "row": 168,
+  "conference": "Society of Engineering Science (SES) Annual Technical Meeting",
+  "outcome": "COUNTED",
+  "abstracts_numeric": 943,
+  "abstracts": "943 (2025 Atlanta; 1,037 programme talks less the 93 invited medalist/honorary talks and 1 stray)",
+  "year": 2025,
+  "rung": 3,
+  "source_url": "https://sites.gatech.edu/2025ses/files/2025/10/complete-agenda-v1.pdf",
+  "spot_checks": [
+   "BOTH EXTRACTION MODES AGREE EXACTLY: pdftotext -layout and -raw each find 1,037 'Speaker:' lines and an identical distribution of session headers across the ten tracks (1:21, 2:21, 3:18, 4:13, 5:23, 6:29, 7:4, 8:19, 9:29, 10:6). Per the field notes, that agreement IS the validation",
+   "Invited talks separated STRUCTURALLY, not judged: each talk was assigned to the session header immediately preceding it by byte offset (bisect over header positions), giving speakers per track 1:93, 2:88, 3:82, 4:59, 5:105, 6:139, 7:17, 8:89, 9:339, 10:25. Track 1 is titled 'Medalist and Special Symposia' on the conference's own tracks page (1.1 Prager Medalist, 1.2 Y. Huang Medalist, 1.3 Eringen Medalist, 1.4 G. I. Taylor Medalist, 1.5 SES Honorary, 1.6 a 65th-birthday honorary symposium, 1.7 Future Faculty Symposium) - all invited, and all 93 EXCLUDED",
+   "Cross-checked against the programme overview's own room count: it schedules Technical Sessions 1-3 in '23 breakout rooms' each on Monday alone, which at ~5 talks a session is ~345 talks in one day - consistent with 1,037 over three days and incompatible with the phase-1 hint of 'several hundred'"
+  ],
+  "searches_used": 0,
+  "events_per_yr": 1,
+  "cadence_evidence": "Annual (October). https://socengsci.org/ lists '2026: SES Annual Technical Meeting, October 11-14, 2026' and '2025: SES Annual Technical Meeting, October 12-15, 2025', with SES2024 at Westlake University, Hangzhou, 20-23 August 2024 - one meeting per year.",
+  "attendance_numeric": null,
+  "attendance_year": null,
+  "attendance_basis": null,
+  "attendance_rung": null,
+  "attendance_source_url": null,
+  "alt_figures": [
+   {
+    "value": 1037,
+    "year": 2025,
+    "basis": "ALL_PROGRAMME_TALKS_INCLUDING_INVITED",
+    "rung": 3
+   }
+  ],
+  "character": "CONTRIBUTED",
+  "character_evidence": "SES runs an open call - https://sites.gatech.edu/2025ses/abstract-submission/ and the society front page's 'View abstract submission due dates' - into 183 mini-symposia across ten topical tracks; only track 1 (7 medalist and honorary symposia) is invited, and the three medal plenary lectures sit outside the session programme entirely.",
+  "programme_type": "CONTRIBUTED",
+  "programme_evidence": "An 86-page agenda of 1,037 scheduled talks in 23 parallel breakout rooms over three days, built from an open abstract call.",
+  "direct_abstracts": null,
+  "ratio": null,
+  "ratio_rationale": null,
+  "duplicate_of": null,
+  "method": "RUNG 3 (agenda PDF), ZERO searches. The society site socengsci.org carries no programme; the edition site is a WordPress instance at https://sites.gatech.edu/2025ses/ whose menu links only tracks, submission and registration pages - no agenda link anywhere in the navigation. NEW ROUTE, and the one that found it: the WordPress MEDIA API surfaced the agenda that the site never links - https://sites.gatech.edu/2025ses/wp-json/wp/v2/media?per_page=50&_fields=id,source_url,title returns 41 media items including 'complete agenda v1' at https://sites.gatech.edu/2025ses/files/2025/10/complete-agenda-v1.pdf (which 302s to a c14750.wpmucdn.com CDN copy; HTTP 200, application/pdf, 6,600,818 bytes, 86 pages - status, type and size checked before counting). The field notes already list the WP media API for INFORMS/AIJ/FEMS; this row shows it also finds UNLINKED artefacts on university-hosted conference sites, which is worth trying on every gatech.edu / university-hosted edition site. COUNTING HANDLE: SES prints one 'Speaker: <name>' line per talk, so the count is simply the number of those lines; sessions are headed '<track>.<sym>: <title>' which gives the invited/contributed split by structure. 1,037 - 93 (track 1) - 1 (a stray before the first header) = 943. Excluded: the three medal plenary lectures (prose pages, no Speaker: line), the Future Faculty Symposium panel discussion, breaks and receptions. NOTE for Rupert, flagged not decided: SES is a mini-symposium meeting, so tracks 2-10 mix open-call submissions with speakers a symposium organiser solicited - the same judgement the field notes record for INFORMS (counting rule 6). All open-call submissions are counted here; a strict reading that also stripped organiser-solicited talks would be lower, but the programme labels no such talk. Language: English - a US society. 943 clears the 900 bar, so BORDERLINE - and materially larger than phase 1's 'several hundred' hint.",
+  "verdict": "BORDERLINE",
+  "confidence": "exact"
+ },
+ {
+  "row": 171,
+  "conference": "International Heat Transfer Conference (IHTC)",
+  "outcome": "COUNTED",
+  "abstracts_numeric": 514,
+  "abstracts": "514 papers presented (IHTC-17, 2023 Cape Town) - from the conference's own statistics table",
+  "year": 2023,
+  "rung": 3,
+  "source_url": "https://ihtc17.org/wp-content/uploads/2023/08/IHTC-17-Programme-07.08.2023.pdf",
+  "spot_checks": [
+   "The programme's own Statistics page (page 143) prints the whole funnel by country with a Total row: abstracts submitted 950, full papers submitted 749, finally accepted 714, PAPERS PRESENTED 514. That is the organiser's own audit of its own programme, inside the artefact",
+   "INDEPENDENTLY COUNTED before reading the statistics page, and the two agree: the programme marks presenting authors with an asterisk (its own legend says '*PRESENTING AUTHOR'), and regex [A-Za-zA-ÿ.\\-']{2,}\\* returns 501 in BOTH pdftotext -layout and -raw - within 2.5% of the printed 514, the difference being single-author entries with no asterisk",
+   "STRUCTURAL FINDING that changes how this row must be read: ALL 501 asterisks fall inside the poster section and ZERO in the oral section. The programme's own table of contents lists the technical programme as Plenary Lectures (17), Panel Discussions (24), Keynote Lectures (32), Poster Sessions (61) and Awards (117) - there is NO contributed oral block at all. Every contributed presentation at IHTC is a poster; the entire oral programme is invited",
+   "Poster session structure cross-checked: 27 numbered poster sessions with per-poster board numbers and 2-minute slots, 342 id/board row pairs recoverable in the -layout extraction"
+  ],
+  "searches_used": 0,
+  "events_per_yr": 0.25,
+  "cadence_evidence": "Quadrennial, currently stretched. IHTC-16 Beijing 2018, IHTC-17 Cape Town 14-18 August 2023 (pandemic-delayed), IHTC-18 Rio de Janeiro 2-7 August 2026 (https://ihtc18.org/). Recorded 0.25 on the nominal four-year cycle; note the last interval was three years, the same drift the field notes record for CFM - if it persists the true figure is 0.33.",
+  "attendance_numeric": null,
+  "attendance_year": null,
+  "attendance_basis": null,
+  "attendance_rung": null,
+  "attendance_source_url": null,
+  "alt_figures": [
+   {
+    "value": 714,
+    "year": 2023,
+    "basis": "FINALLY_ACCEPTED_BEFORE_NO_SHOWS",
+    "rung": 3
+   },
+   {
+    "value": 749,
+    "year": 2023,
+    "basis": "FULL_PAPERS_SUBMITTED",
+    "rung": 3
+   },
+   {
+    "value": 950,
+    "year": 2023,
+    "basis": "ABSTRACTS_SUBMITTED",
+    "rung": 3
+   },
+   {
+    "value": 501,
+    "year": 2023,
+    "basis": "MY_INDEPENDENT_PRESENTING_AUTHOR_COUNT",
+    "rung": 3
+   }
+  ],
+  "character": "HYBRID",
+  "character_evidence": "An open abstract call produced 950 submissions reduced to 514 presented papers, all presented as posters; the entire oral programme (plenary lectures, panel discussions and keynote lectures) is invited.",
+  "programme_type": "HYBRID",
+  "programme_evidence": "950 submitted abstracts, 514 presented papers in 27 poster sessions, against a wholly invited oral programme.",
+  "direct_abstracts": 514,
+  "ratio": null,
+  "ratio_rationale": null,
+  "duplicate_of": null,
+  "method": "RUNG 3 (programme PDF), ZERO searches. NEW WALL: Begell House - www.begellhouse.com and ihtcdigitallibrary.com, the official IHTC Digital Library - is behind ANUBIS, a JavaScript proof-of-work anti-scraping challenge that returns HTTP 200 with a 7,445-byte challenge page. This is a wall type not previously in the field notes and it is a genuine rung-5 case (a browser solves it), but it was NOT needed here. The workaround that beat it: the EDITION site https://ihtc17.org/ is plain open WordPress and links the complete 143-page conference programme at /wp-content/uploads/2023/08/IHTC-17-Programme-07.08.2023.pdf (HTTP 200, application/pdf, 4,533,432 bytes - checked before counting). GENERAL LESSON worth adding to the field notes: when a congress programme PDF has a 'Statistics' entry in its table of contents, go there FIRST - it prints submitted / accepted / presented in one table and settles the submitted-vs-accepted-vs-presented question that this census otherwise has to infer. Excluded: plenary lectures, panel discussions and keynote lectures (all invited, all listed as separate programme blocks), and the 200 abstracts rejected or withdrawn between 714 accepted and 514 presented. Language: English. 514 against the 800 floor, so OUT on positive evidence - and even the submitted figure (950) would not make this a VERIFIED row, since the unit is accepted presentations.",
+  "verdict": "OUT",
+  "confidence": "exact"
+ },
+ {
+  "row": 175,
+  "conference": "IIW Annual Assembly and International Conference",
+  "outcome": "COUNTED",
+  "abstracts_numeric": 565,
+  "abstracts": "565 (2026, 79th Annual Assembly: ~534 commission documents + 31 contributed symposium talks)",
+  "year": 2026,
+  "rung": 3,
+  "source_url": "https://iiw2026.com/technical-program/",
+  "spot_checks": [
+   "BOTH EXTRACTION MODES AGREE TO THE EXACT SET: pdftotext -layout and -raw each return the SAME 553 unique 2026-dated IIW document ids across the 21 commission agendas, and the set intersection is 553 - not merely the same count but the same identifiers",
+   "Per-commission distribution re-derived and sanity-checked against commission size: II 68, I 59, XII 55, XIII 54, IV 50, IX 49, XI 40, XIX 37, XV 28, X 28, VII 26, VIII 23, XVI 13, XVIII 8, V 7, VI 4, III 2, XVII 1, XIV 1",
+   "Symposium on Intelligent Manufacturing counted separately from its own programme PDF: 34 numbered items in both modes, of which 3 are explicitly labelled '(Invited Talk)' - 31 contributed",
+   "Year filter applied deliberately: the agendas also cite 33 older documents dated 2014-2025 (2014 2, 2015 2, 2017 1, 2018 2, 2019 5, 2020 1, 2022 2, 2023 2, 2024 7, 2025 9) which are back-references, NOT presentations at this edition, and all were excluded"
+  ],
+  "searches_used": 0,
+  "events_per_yr": 1,
+  "cadence_evidence": "Annual. https://iiwelding.org/iiw-events/ lists the 77th (2024), 78th (2025) and 79th (2026) Annual Assemblies in consecutive years, each with its own site (iiw2024.com, iiw2025.com, iiw2026.com), plus separate winter Intermediate Meetings of the same commissions which are NOT a second congress.",
+  "attendance_numeric": null,
+  "attendance_year": null,
+  "attendance_basis": null,
+  "attendance_rung": null,
+  "attendance_source_url": null,
+  "alt_figures": [
+   {
+    "value": 553,
+    "year": 2026,
+    "basis": "ALL_2026_DOC_IDS_INCLUDING_THE_COMMISSIONS_OWN_AGENDA_DOCUMENTS",
+    "rung": 3
+   }
+  ],
+  "character": "HYBRID",
+  "character_evidence": "The bulk of the programme is member-submitted technical documents presented in 19 commission meetings (an open submission route for IIW members, each document given a numbered slot with a named presenter and a 10+5 minute model), but the accompanying two-day International Conference is explicitly invited: IIW's own events page says 'The most known experts present the result of their work on the theme of the conference.'",
+  "programme_type": "HYBRID",
+  "programme_evidence": "19 commission agendas of numbered member documents plus one invited thematic International Conference and one symposium.",
+  "direct_abstracts": null,
+  "ratio": null,
+  "ratio_rationale": null,
+  "duplicate_of": null,
+  "method": "RUNG 3 (commission agenda PDFs), ZERO searches. Crossref has no IIW member record. NEW ROUTE: the edition site https://iiw2026.com/technical-program/ offers a 'DOWNLOAD AGENDA' link per commission (C-I through C-XIX plus IAB and ASME IWG-G), and the WordPress media API https://iiw2026.com/wp-json/wp/v2/media?per_page=60&_fields=source_url,title lists all of them in one call - 22 agenda PDFs plus the symposium programme, each downloaded into my own directory and each verified as a real PDF (%PDF magic bytes, 121KB-1.6MB) before counting. COUNTING HANDLE: every presentation slot is keyed by an IIW document number. NEW TRAP: IIW commissions use TWO year formats in the same assembly - most write 'XIII-3236-2026' but C-XVI writes 'XVI-1102-26', so a regex demanding 20\\d\\d silently returns ZERO for C-VII, C-XVI and C-XVII and reads as 'those commissions published no agenda'. The pattern that works across all of them is \\b[IVX]{1,6}(?:-[A-Z])?-\\d{3,4}-(?:26|2026)\\b. 553 unique 2026 ids. SUBTRACTION AND ITS UNCERTAINTY, stated rather than hidden: each commission's own agenda is itself an IIW document and is inside that 553 (e.g. XIII-3201-2026-R3), so up to 19 of the 553 are agendas rather than presentations - but at least one (XVI-1115-26) is BOTH the agenda number and a presentation in its own table, so a blind subtraction of 19 would undercount. The presented-document count is therefore 534-553; 534 is used. Plus 31 contributed symposium talks. EXCLUDED: the 2-day International Conference on Welding and Joining (invited by IIW's own description, and no programme artefact was published), the IAB administrative meetings, and the 33 back-referenced older documents. Language: English - IIW's working language. 565 against the 800 floor, so OUT on positive evidence. FOR RUPERT: this row's answer depends on a judgement the sheet should record - IIW commission documents are member working documents presented in closed technical meetings rather than open-call conference papers. Counting them gives 565 (still OUT); refusing them gives ~31 plus an invited conference, far smaller. Either reading fails the bar, which is why the row is settled despite the ambiguity.",
+  "verdict": "OUT",
+  "confidence": "derived"
+ },
+ {
+  "row": 178,
+  "conference": "ICOLD Congress and Annual Meeting",
+  "outcome": "COUNTED",
+  "abstracts_numeric": 166,
+  "abstracts": "166 (28th Congress, 2025 Chengdu)",
+  "year": 2025,
+  "rung": 4,
+  "source_url": "https://api.crossref.org/works?filter=type:book-chapter,prefix:10.1201,from-pub-date:2025-01-01,until-pub-date:2026-12-31&rows=0&facet=container-title:1000",
+  "spot_checks": [
+   "Two independent handles on the same volume agree: the Crossref container facet for 'Twenty-Eighth International Congress on Large Dams/Vingt-Huitieme Congres International des Grands Barrages' returns 170 book-chapter records, and a binary search over the chapter DOI suffixes 10.1201/9781003642428-<n> finds the numbering runs 1 to 166 with -167 and above absent. The 4-record gap is the volume's non-numbered records (the general reports for the four Questions)",
+   "Chapter records spot-checked at four points across the volume to confirm they are genuine papers with real page ranges, not stubs: -1 'Sand Dams...' pages 9-24, -3 'Wildfire Impact on Dam and Reservoir Landslide Safety Risks' 45-60, -50 'Rosswiese Reservoir' 1147-1159, -166 'Nessie: An Innovative Solution for Sustainable Sediment Management in Reservoirs' 3350-3368. The last chapter ending at page 3,368 confirms the whole 3,000+ page volume is covered",
+   "Titles scanned for front matter: the only entry matching a front-matter pattern is a genuine paper beginning 'Introduction to the World's First 100-Meter-Deep Floating Photovoltaic Project...', so no index or foreword record is inflating the count"
+  ],
+  "searches_used": 1,
+  "events_per_yr": 0.33,
+  "cadence_evidence": "The CONGRESS (the part with papers) is triennial-to-quadrennial; the ANNUAL MEETING has no paper programme. ICOLD states the cycle itself on https://www.icold-cigb.org/GB/publications/congresses_proceedings.asp: 'ICOLD Congresses (held every 3 years). 3/4 technical questions are selected and debated. The Proceedings include the academic communications and the ensuing discussions.' Editions: 26th Vienna 2018, 27th Marseille 2022, 28th Chengdu 16-23 May 2025 (held with the 93rd Annual Meeting). Recorded 0.33 on the society's own stated interval.",
+  "attendance_numeric": null,
+  "attendance_year": null,
+  "attendance_basis": null,
+  "attendance_rung": null,
+  "attendance_source_url": null,
+  "alt_figures": [
+   {
+    "value": 170,
+    "year": 2025,
+    "basis": "ALL_CHAPTER_RECORDS_INCLUDING_THE_FOUR_GENERAL_REPORTS",
+    "rung": 4
+   }
+  ],
+  "character": "CONTRIBUTED",
+  "character_evidence": "The congress runs an open call for papers against four announced technical Questions (Q108-Q111 for the 28th Congress) and publishes every accepted paper in a single refereed proceedings volume; ICOLD's own description is that the Questions 'are selected and debated' and the proceedings hold 'the academic communications and the ensuing discussions'.",
+  "programme_type": "CONTRIBUTED",
+  "programme_evidence": "A 3,368-page open-access proceedings of 166 numbered papers answering four technical Questions.",
+  "direct_abstracts": null,
+  "ratio": null,
+  "ratio_rationale": null,
+  "duplicate_of": null,
+  "method": "RUNG 4 (Crossref deposit index), ONE search. Zero-search attempts first, all dead ends worth recording: www.icold-cigb.org is open and static but its congress pages are useless for counting - /GB/congresses/congresses.asp returns an 'Erreur' page, /GB/publications/congresses_proceedings.asp is a sales page whose search form is not server-rendered, and the proceedings themselves are sold to members. ONE search found the route that settles it. NEW AND HIGHLY PORTABLE ROUTE: the 28th Congress proceedings are OPEN ACCESS with Taylor & Francis under book DOI 10.1201/9781003642428, and CRC/T&F deposits every chapter to Crossref individually as type book-chapter under prefix 10.1201. So the count is a container facet: https://api.crossref.org/works?filter=type:book-chapter,prefix:10.1201,from-pub-date:<Y1>-01-01,until-pub-date:<Y2>-12-31&rows=0&facet=container-title:1000, with the keys double-unescaped as for IEEE. This should be tried for ANY engineering congress whose proceedings CRC Press or Taylor & Francis publishes - a large class in civil and geotechnical engineering. NOTE the OAPEN mirror (https://library.oapen.org/handle/20.500.12657/101619) is behind ANUBIS proof-of-work and returns HTTP 403; Crossref makes it unnecessary. Excluded: the 4 general reports for the Questions (invited synthesis), and the entire Annual Meeting, which is technical-committee business with no paper programme. Language: the congress publishes bilingually in English and French; both are in the one volume and counted once. 166 against the 800 floor, so OUT on positive evidence.",
+  "verdict": "OUT",
+  "confidence": "exact"
+ },
+ {
+  "row": 183,
+  "conference": "ABM Week",
+  "outcome": "COUNTED",
+  "abstracts_numeric": 894,
+  "abstracts": "894 (2025, ABM Week 9th edition)",
+  "year": 2025,
+  "rung": 4,
+  "source_url": "https://abmproceedings.com.br/en/events/abm-week-9th-edition-2025",
+  "spot_checks": [
+   "Counted each of the 13 constituent seminar volumes separately by collecting unique /en/article/<slug> links, and every one of the 13 reproduced that volume's own printed article count EXACTLY: 251, 53, 102, 62, 69, 31, 24, 35, 75, 6, 61, 37, 88. Sum 894",
+   "DISAGREEMENT with the publisher's own headline: the ABM Proceedings home page advertises 'ABM WEEK 9th edition, 2025 - 955 articles', 61 more than the thirteen volumes contain. The countable artefact wins; 955 is recorded here as the disagreement and is NOT the figure",
+   "Two further editions counted the same way as controls: 2024 (8th) 1,006 counted against a per-volume stated sum of 999, and 2023 (7th) 693 counted against a per-volume stated sum of 693 - exact agreement on 2023"
+  ],
+  "searches_used": 0,
+  "events_per_yr": 1,
+  "cadence_evidence": "Annual (September). https://abmproceedings.com.br/en/ lists consecutive numbered editions with one per year: ABM Week 2015, 2016, 2017, 2018, 2019, 6th edition 2022, 7th edition 2023, 8th edition 2024, 9th edition 2025.",
+  "attendance_numeric": null,
+  "attendance_year": null,
+  "attendance_basis": null,
+  "attendance_rung": null,
+  "attendance_source_url": null,
+  "alt_figures": [
+   {
+    "value": 1006,
+    "year": 2024,
+    "basis": "COUNTED_PROCEEDINGS",
+    "rung": 4
+   },
+   {
+    "value": 693,
+    "year": 2023,
+    "basis": "COUNTED_PROCEEDINGS",
+    "rung": 4
+   },
+   {
+    "value": 955,
+    "year": 2025,
+    "basis": "ORGANISER_STATED_DISAGREES_WITH_COUNT",
+    "rung": 4
+   }
+  ],
+  "character": "CONTRIBUTED",
+  "character_evidence": "Every constituent seminar publishes a complete ISSN-bearing proceedings volume of author papers; the 78th ABM Annual Congress alone carries 251.",
+  "programme_type": "CONTRIBUTED",
+  "programme_evidence": "Thirteen ISSN-bearing open proceedings volumes of Portuguese- and English-language technical papers.",
+  "direct_abstracts": null,
+  "ratio": null,
+  "ratio_rationale": null,
+  "duplicate_of": null,
+  "method": "RUNG 4 (proceedings archive), ZERO searches, PORTUGUESE-language route. NEW ROUTE: ABM publishes every ABM Week edition in full and open at https://abmproceedings.com.br/. Crossref does not help - the member registry returns nothing for 'Associacao Brasileira de Metalurgia'. COUNTING RULE this row needs: ABM Week is an UMBRELLA of parallel seminars, each with its OWN ISSN and its own volume, so the edition page lists 13 separate volumes and reading any one of them understates the meeting by 4-150x. Route: https://abmproceedings.com.br/en/events/abm-week-<N>th-edition-<YEAR> lists the constituent seminars as /en/event/<slug>/articles links; fetch each and count unique /en/article/(<slug>) values; sum. 2025 = 894 across 13 seminars (53rd Ore Reduction 62, 54th Steelmaking 102, 60th Rolling 53, 78th ABM Annual Congress 251, 24th Mining 69, 27th Automation 75, 23rd ENEMET 88, 41st Logistics 35, 44th Energy 24, 11th Ore Agglomeration 31, 21st Molds 6, Circular Economy 37, Maintenance 61). NOT a duplicate_of: these thirteen seminars are ABM's own internal tracks, not separately-censused conferences on the sheet, so the umbrella IS the meeting and is counted once. Excluded: nothing - the volumes hold only author papers. Language: Portuguese (the site's Portuguese and English mirrors carry the same volumes; article titles are Portuguese). 894 sits inside the 800-899 within-100 leeway band, so BORDERLINE; the previous edition counted 1,006, comfortably inside the 900-1,499 band.",
+  "verdict": "BORDERLINE",
+  "confidence": "exact"
+ },
+ {
+  "row": 186,
+  "conference": "CSCE Annual Conference",
+  "outcome": "COUNTED",
+  "abstracts_numeric": 482,
+  "abstracts": "482 (2021 edition, the largest of the three counted editions; 2019 443, 2022 ~269-322)",
+  "year": 2021,
+  "rung": 4,
+  "source_url": "https://api.crossref.org/works?filter=type:book-chapter,from-pub-date:2022-01-01,until-pub-date:2022-12-31&rows=0&facet=container-title:1000",
+  "spot_checks": [
+   "TWO INDEPENDENT PUBLISHERS, same answer scale. Springer (Lecture Notes in Civil Engineering) deposits every paper as a book-chapter: 'Proceedings of the Canadian Society of Civil Engineering Annual Conference 2021' = 482. Curran/proceedings.com independently carries the 2019 edition's complete five-volume table of contents, counted at 443 entries in BOTH pdftotext -layout and -raw, with a maximum page reference of 3,915 against the publisher's stated 3,920-page extent - so the TOC covers all five volumes and is not truncated",
+   "MULTI-YEAR PUBLICATION TRAP caught and corrected: the CSCE 2022 volume is deposited across THREE calendar years - 131 records dated 2023 and 138 dated 2024 on top of its 2022 tranche - so reading any single publication year understates that edition by more than half. Totals must be summed by CONTAINER across years, never read off one year",
+   "Confirmed there is no newer Springer volume: the same facet query for 2025 and 2026 returns no Canadian Society of Civil Engineering container at all, so 2022 is the last edition Springer carries"
+  ],
+  "searches_used": 0,
+  "events_per_yr": 1,
+  "cadence_evidence": "Annual. Curran carries separate CSCE Annual Conference proceedings for 2001 (29th), 2003 (31st), 2008, 2009, 2010, 2011, 2014, 2016 and 2019; Springer carries 2021 and 2022; and https://www.csce.ca/ currently links the forthcoming edition site https://www.csce2027calgary.ca/ - one conference per year throughout.",
+  "attendance_numeric": null,
+  "attendance_year": null,
+  "attendance_basis": null,
+  "attendance_rung": null,
+  "attendance_source_url": null,
+  "alt_figures": [
+   {
+    "value": 443,
+    "year": 2019,
+    "basis": "COUNTED_TOC_CURRAN",
+    "rung": 3
+   },
+   {
+    "value": 269,
+    "year": 2022,
+    "basis": "COUNTED_SPRINGER_CHAPTERS_SUMMED_ACROSS_2023_AND_2024",
+    "rung": 4
+   }
+  ],
+  "character": "CONTRIBUTED",
+  "character_evidence": "Every edition publishes a complete multi-volume refereed proceedings of author papers - five volumes and 3,920 pages in 2019, a Springer Lecture Notes in Civil Engineering volume from 2021 - which only an open call produces.",
+  "programme_type": "CONTRIBUTED",
+  "programme_evidence": "Complete multi-volume proceedings per edition, 443-482 papers.",
+  "direct_abstracts": null,
+  "ratio": null,
+  "ratio_rationale": null,
+  "duplicate_of": null,
+  "method": "RUNG 4 + RUNG 3, ZERO searches. Society-site routes failed first and the failures are worth recording: www.csce.ca is an iMIS/Telerik member portal whose conference pages 404 (/conference/ returns a 404 body with HTTP 200 styling), the 2025 edition domain csce2025.ca does not resolve at all, and Crossref's member registry returns NOTHING for 'Canadian Society for Civil Engineering' - which reads as 'does not deposit' and is wrong. TWO ROUTES SETTLED IT, both generalisable. (a) SPRINGER LECTURE NOTES IN CIVIL ENGINEERING: recent CSCE proceedings are LNCE volumes, so the papers are Crossref book-chapters under Springer's prefix, found NOT by prefix but by scanning the book-chapter container facet per year and matching /Canadian Society.*Civil/i on the double-unescaped keys: https://api.crossref.org/works?filter=type:book-chapter,from-pub-date:<Y>-01-01,until-pub-date:<Y>-12-31&rows=0&facet=container-title:1000. A whole class of engineering congresses (civil, geotechnical, structural) publishes through LNCE and is countable this way. (b) CURRAN webtoc: https://www.proceedings.com/52418.html gives the 2019 edition's metadata (12-15 June 2019, Montreal, 3,920 pages, 5 vols) and a free complete TOC PDF at /content/052/052418webtoc.pdf, counted with the spaced-dot-leader regex (?:\\.\\s*){4,}\\s*(\\d{1,4})\\s*$. Excluded: keynote and plenary lectures are not in the proceedings volumes. Language: English and French (a bilingual Canadian congress); both are in the one proceedings and counted once. 482 at the series high against the 800 floor, so OUT on positive evidence.",
+  "verdict": "OUT",
+  "confidence": "exact"
+ },
+ {
+  "row": 189,
+  "conference": "ISIJ Spring and Autumn Meetings (Iron and Steel Institute of Japan)",
+  "outcome": "COUNTED",
+  "abstracts_numeric": 464,
+  "abstracts": "464 (2026 autumn, 192nd meeting - the larger of the two editions: 356 lectures + 108 student posters)",
+  "year": 2026,
+  "rung": 3,
+  "source_url": "https://www.isij.or.jp/meeting/2026autumn/data/192program.pdf",
+  "spot_checks": [
+   "Extracted with BOTH pdftotext -layout and -raw: the total count of per-presentation page references in the body is 455 in BOTH modes, and the student-poster list gives 108 PS-ids and 108 page references in BOTH modes. That agreement is the validation",
+   "All 455 page references are UNIQUE values (no presentation counted twice), running 10-711, which is exactly the pagination of 材料とプロセス Vol.39 (2026) No.2, the meeting's proceedings volume",
+   "The spring edition was counted the same way as a control: 191st (2026 spring) = 219 contributed + 70 symposium + 79 student posters, and -layout's 219+70 reproduces -raw's undifferentiated 289 exactly",
+   "Independently cross-checked the 討論会 and 共同セッション blocks against the gakkai-web.net HTML programme https://www.gakkai-web.net/isij/webpro/program192.html, which prints the same talk ids: D1-D75 (75) and J1-J40 (40)"
+  ],
+  "searches_used": 0,
+  "events_per_yr": 2,
+  "cadence_evidence": "Twice yearly (春季 spring + 秋季 autumn 講演大会). https://www.isij.or.jp/ links a separate programme page per edition - meeting/2026spring/ (191st) and meeting/2026autumn/ (192nd) - and the meeting numbers increment by one per half-year. Per the two-meetings-a-year rule the figure is the larger single edition, never a sum.",
+  "attendance_numeric": null,
+  "attendance_year": null,
+  "attendance_basis": null,
+  "attendance_rung": null,
+  "attendance_source_url": null,
+  "alt_figures": [
+   {
+    "value": 298,
+    "year": 2026,
+    "basis": "COUNTED_SPRING_EDITION_191st",
+    "rung": 3
+   },
+   {
+    "value": 563,
+    "year": 2026,
+    "basis": "COUNTED_AUTUMN_INCLUDING_THE_99_INVITED_SYMPOSIUM_TALKS",
+    "rung": 3
+   }
+  ],
+  "character": "CONTRIBUTED",
+  "character_evidence": "https://www.isij.or.jp/ announces '第192回秋季講演大会講演申込み（一般講演、予告セッション、討論会、共同セッション、学生ポスターセッション）を開始しました' - an open call naming five contributed categories. シンポジウム is NOT among them, which is what makes the invited/contributed cut exact rather than judged.",
+  "programme_type": "CONTRIBUTED",
+  "programme_evidence": "Open call in five named categories; every accepted presentation gets a page in 材料とプロセス.",
+  "direct_abstracts": null,
+  "ratio": null,
+  "ratio_rationale": null,
+  "duplicate_of": null,
+  "method": "RUNG 3 (programme PDF), ZERO searches, JAPANESE-language route. Crossref is a dead end here: prefix 10.2355 (member 1253) holds only ISIJ International (247/241) and Tetsu-to-Hagane (135/117) - the 講演大会 proceedings 材料とプロセス are not deposited. J-STAGE is also a dead end: /browse/isijcamp and /browse/camp both 302, and a Japanese global search for 材料とプロセス returns no matching title. NEW ROUTE: www.isij.or.jp is fully open (no WAF, unlike aij.or.jp and ieice.org) and publishes the COMPLETE programme as a free PDF per edition at https://www.isij.or.jp/meeting/<YEAR>{spring|autumn}/data/<NNN>program.pdf, with the student posters in a companion <NNN>program-ps.pdf. SECOND NEW ROUTE: gakkai-web.net hosts ISIJ as well as IEEJ and JSAE - https://www.gakkai-web.net/isij/webpro/program<NNN>.html - but that page carries ONLY the 討論会 and 共同セッション blocks, not the 一般講演, so it undercounts badly; use the PDF. It is UTF-8, not the cp932 the field notes record for the IEEJ pages on the same host. COUNTING HANDLE: the 一般講演 talks carry no printed id, but EVERY presentation in the programme prints its page in 材料とプロセス as a dot-leader reference; regex ・{2,}\\s*(\\d{2,4}) over the body (sliced from the first occurrence of 'D1') yields 455 unique page numbers. The table of contents uses a DIFFERENT dot character and contributes zero false hits. Split at the シンポジウム heading (regex \\n\\s*シ\\s*ン\\s*ポ\\s*ジ\\s*ウ\\s*ム\\s*\\n): 356 before, 99 after. EXCLUDED the 99 シンポジウム talks as invited/organised, because シンポジウム is the one programme block absent from the society's own list of open-call categories. INCLUDED the 108 学生ポスターセッション posters (field-notes rule 5: a presenter is a presenter; KIEE's undergraduate posters set the precedent). 356 + 108 = 464. DUPLICATE FLAG, not a duplicate_of: the 40 J-prefixed talks are 日本鉄鋼協会・日本金属学会共同セッション, run jointly with the Japan Institute of Metals, whose meeting was counted separately in wave 2 - those 40 presentations appear in BOTH meetings' programmes and must not be added twice across the two rows. 464 against the 800 floor, and the largest edition anywhere in the year is 464, so OUT on positive evidence; the phase-1 hint of 700-1,000 per meeting is not supported by the society's own programme.",
+  "verdict": "OUT",
+  "confidence": "exact"
+ },
+ {
+  "row": 194,
+  "conference": "SHASE Annual Conference (Society of Heating, Air-Conditioning and Sanitary Engineers of Japan)",
+  "outcome": "COUNTED",
+  "abstracts_numeric": 775,
+  "abstracts": "775 (2024, 令和6年度大会 Saga)",
+  "year": 2024,
+  "rung": 4,
+  "source_url": "https://www.jstage.jst.go.jp/browse/shasetaikai/list/-char/ja",
+  "spot_checks": [
+   "Summed the ten subject volumes of the 2024 edition individually rather than trusting any single figure: 35 + 60 + 83 + 49 + 39 + 128 + 39 + 146 + 44 + 152 = 775",
+   "Re-derived the two prior editions the same way as a control - 2023 (Fukui) 689 from [26,38,84,62,41,83,49,102,45,159] and 2022 (Kobe) 611 from [28,38,90,52,32,71,40,92,42,126] - a smooth rising series with the same ten-volume structure every year",
+   "Confirmed 2024 is the newest year published: the volume selector's highest code is 2024.10, with no 2025 or 2026 volume yet"
+  ],
+  "searches_used": 0,
+  "events_per_yr": 1,
+  "cadence_evidence": "Annual. The J-STAGE volume list https://www.jstage.jst.go.jp/browse/shasetaikai/list/-char/ja carries exactly one 令和N年度大会 set of ten volumes per Japanese fiscal year, each naming a different host city (2022 Kobe, 2023 Fukui, 2024 Saga), running back to 1973.",
+  "attendance_numeric": null,
+  "attendance_year": null,
+  "attendance_basis": null,
+  "attendance_rung": null,
+  "attendance_source_url": null,
+  "alt_figures": [
+   {
+    "value": 689,
+    "year": 2023,
+    "basis": "COUNTED_PROCEEDINGS",
+    "rung": 4
+   },
+   {
+    "value": 611,
+    "year": 2022,
+    "basis": "COUNTED_PROCEEDINGS",
+    "rung": 4
+   }
+  ],
+  "character": "CONTRIBUTED",
+  "character_evidence": "The society publishes the complete 学術講演論文集 (academic lecture papers) for every edition as ten open subject volumes on J-STAGE, each item an author-submitted paper.",
+  "programme_type": "CONTRIBUTED",
+  "programme_evidence": "Ten-volume open proceedings of author papers per edition.",
+  "direct_abstracts": null,
+  "ratio": null,
+  "ratio_rationale": null,
+  "duplicate_of": null,
+  "method": "RUNG 4 (J-STAGE national platform), ZERO searches, JAPANESE-language route. Found by a Japanese J-STAGE probe of the journal code shasetaikai = 空気調和・衛生工学会大会 学術講演論文集 (publisher 公益社団法人 空気調和・衛生工学会). NEW ROUTE SHAPE, and the counting rule that goes with it: unlike JSPE's pscjspe, this title is split into TEN SUBJECT VOLUMES PER EDITION (第1巻 給排水・衛生 through 第10巻 都市・環境), so the figure is an ASME-style SUM OVER VOLUMES, not a single issue count - reading any one volume understates the meeting by roughly 5-20x. The volume codes are NOT plain years: they are '<YEAR>.<NN>' zero-padded from 2023 onward (2024.01 ... 2024.10) but '<YEAR>.<N>' unpadded for 2022 (2022.1 ... 2022.10), so a fixed format string silently 404s half the volumes. Per volume: https://www.jstage.jst.go.jp/browse/shasetaikai/<CODE>/0/_contents/-char/ja, with the count read from the header line 選択された号の論文のN件中 via regex 選択された号の論文の(\\d+)件中. Excluded: nothing is separately labelled 特別講演 in these volumes. 775 for the newest published edition, against an 800 floor, so OUT on positive evidence - BUT this is a marginal and rising row: 611 -> 689 -> 775 over three years, and one more year of the same growth would put it inside the 800-899 leeway band. Flagged for Rupert.",
+  "verdict": "OUT",
+  "confidence": "exact"
+ },
+ {
+  "row": 197,
+  "conference": "APIEMS Conference (Asia Pacific Industrial Engineering and Management Systems)",
+  "outcome": "COUNTED",
+  "abstracts_numeric": 228,
+  "abstracts": "228 presented (2025, 25th APIEMS, Hangzhou) - organiser-reported in the society's own board minutes",
+  "year": 2025,
+  "rung": 2,
+  "source_url": "https://www.jimanet.jp/activities/international-conference/apiems",
+  "spot_checks": [
+   "Opened the page and read the figure in the original Japanese rather than taking it from a search snippet: '4. APIEMS2025の報告 / 228編が発表し，参加者が266人以上であることが示された' - 228 papers presented, 266+ participants, reported to the APIEMS board at its second 2025 meeting held during the conference itself",
+   "Corroborated by the SAME source's earlier minute from the first 2025 board meeting, which gives the submission side independently: '提出論文は268本で、登録者数は164人' (268 papers submitted, 164 registered at that date) with a country breakdown summing correctly to 268 (Japan 93, Taiwan 59, mainland China 44, Korea 26, Indonesia 15, Thailand 12, other 19). 268 submitted against 228 presented is a plausible acceptance/withdrawal gap and the two figures corroborate each other",
+   "Invited content is itemised separately in the same minutes and is NOT part of the 228: '11/8に基調講演5件、招待パネルディスカッション1件を予定' (5 keynotes and 1 invited panel) and '11/9に招待講演4件' (4 invited talks)"
+  ],
+  "searches_used": 1,
+  "events_per_yr": 1,
+  "cadence_evidence": "Annual, with two pandemic irregularities. http://apiems.asia/ prints the complete edition list: 1st 1998 ... 20th 2019 Kanazawa, 21st 2021 webinar (no 2020 edition), 22nd 2022 Taichung, 23rd 2023 Kuala Lumpur, 24th 2024 Chiang Mai, 25th 2025 Hangzhou, and APIEMS 2026 is announced for 29 November - 2 December 2026 in Busan, Korea.",
+  "attendance_numeric": 266,
+  "attendance_year": 2025,
+  "attendance_basis": "DELEGATES",
+  "attendance_rung": "A2",
+  "attendance_source_url": "https://www.jimanet.jp/activities/international-conference/apiems",
+  "alt_figures": [
+   {
+    "value": 268,
+    "year": 2025,
+    "basis": "SUBMITTED_NOT_PRESENTED",
+    "rung": 2
+   }
+  ],
+  "character": "CONTRIBUTED",
+  "character_evidence": "APIEMS runs an open call - https://www.apiems2026.org/ states 'APIEMS 2026 invites original research papers' with an abstract-or-full-paper submission deadline - and the 2025 proceedings were published on the conference web page immediately after the meeting and by Springer 3-4 months later.",
+  "programme_type": "CONTRIBUTED",
+  "programme_evidence": "Open paper call, parallel sessions, and a Springer-published proceedings volume; 228 papers presented against 266 participants is a near-one-paper-per-delegate research conference.",
+  "direct_abstracts": 228,
+  "ratio": null,
+  "ratio_rationale": null,
+  "duplicate_of": null,
+  "method": "RUNG 2 (organiser-stated figure, opened not snippet-read), ONE search, JAPANESE-language route. Zero-search routes were worked first and all failed: apiems.asia carries only an edition list; the 2024 edition domain apiems2024.org has been LOST TO A SQUATTER and now serves a Russian-language page (the field-notes 'lost domains redirect to squatters' trap, a second live instance); apiems2026.org serves the SAME 44,689-byte page for /, /program.html and /conference_program.html - a single-page site with no programme yet, since the 2026 conference is still future (submission deadline 30 September 2026). ONE search located the Japan Institute of Industrial Engineering's APIEMS page, which publishes the APIEMS BOARD MINUTES in Japanese - a route worth remembering: a national member society's board reports often carry the figures an international conference never publishes. Opened https://www.jimanet.jp/activities/international-conference/apiems and read the minute directly. STATED, NOT COUNTED: no proceedings artefact was reachable (the Springer volume for 2025 is not yet indexed), so this is an organiser figure and is labelled as such; it is recorded in direct_abstracts as well as in the abstracts field. It counts PRESENTED papers and, per the same minutes, EXCLUDES the 5 keynotes, 1 invited panel and 4 invited talks. 228 against the 800 floor, so OUT on positive evidence - and the 266-participant figure from the same source independently rules out any possibility of a four-figure programme.",
+  "verdict": "OUT",
+  "confidence": "dated"
+ },
+ {
+  "row": 201,
+  "conference": "ICCE - International Conference on Coastal Engineering",
+  "outcome": "COUNTED",
+  "abstracts_numeric": 703,
+  "abstracts": "703 (2024, 38th Conference, Rome)",
+  "year": 2024,
+  "rung": 4,
+  "source_url": "https://icce-ojs-tamu.tdl.org/icce/index.php/icce/issue/view/390",
+  "spot_checks": [
+   "TWO INDEPENDENT EXTRACTIONS AGREE: the OJS issue page yields 703 unique /icce/article/view/<id> links, and the Crossref deposit for the same edition (prefix 10.9753, DOI stem 10.9753/icce.v38) yields 702 - a one-record difference that is the issue-level/front-matter record, confirming neither source is truncated",
+   "Checked the issue page for pagination before counting: zero occurrences of 'pagination' or 'page=2', so the 703 links are the whole volume, not a first page",
+   "Series re-derived in both artefacts: OJS 556 (No.36, 2018) / 312 (No.36v, 2020 virtual) / 510 (No.37, 2022) / 703 (No.38, 2024); Crossref v36 560 / v36v 312 / v37 509 / v38 702. The two agree to within one or four records on every edition"
+  ],
+  "searches_used": 0,
+  "events_per_yr": 0.5,
+  "cadence_evidence": "Biennial, even years. The proceedings archive https://icce-ojs-tamu.tdl.org/icce/index.php/icce/issue/archive lists one volume per even year with consecutive edition numbers: No.36 (2018, Baltimore), No.36v (2020, virtual), No.37 (2022, Sydney), No.38 (2024, Rome).",
+  "attendance_numeric": null,
+  "attendance_year": null,
+  "attendance_basis": null,
+  "attendance_rung": null,
+  "attendance_source_url": null,
+  "alt_figures": [
+   {
+    "value": 510,
+    "year": 2022,
+    "basis": "COUNTED_PROCEEDINGS",
+    "rung": 4
+   },
+   {
+    "value": 556,
+    "year": 2018,
+    "basis": "COUNTED_PROCEEDINGS",
+    "rung": 4
+   }
+  ],
+  "character": "CONTRIBUTED",
+  "character_evidence": "Every edition is published in full as an open-access numbered proceedings volume of author papers, each with its own DOI - an open-call paper congress.",
+  "programme_type": "CONTRIBUTED",
+  "programme_evidence": "Complete open proceedings volume per edition, 703 papers in 2024.",
+  "direct_abstracts": null,
+  "ratio": null,
+  "ratio_rationale": null,
+  "duplicate_of": null,
+  "method": "RUNG 4 (proceedings archive), ZERO searches. NEW ROUTE: ICCE's complete proceedings are open on the Texas Digital Library OJS instance. The old journals.tdl.org/icce path 301s to https://icce-ojs-tamu.tdl.org/icce/ - cite the new host. Archive at /icce/index.php/icce/issue/archive maps edition -> issue id (No.38 2024 = 390, No.37 2022 = 388, No.36v 2020 = 379, No.36 2018 = 364); the issue page lists every paper on ONE page with no pagination, counted as unique /icce/article/view/(\\d+). Cross-checked against Crossref prefix 10.9753 grouped on the DOI version segment 10\\.9753/icce\\.(v[0-9a-z]+) - note the 2020 virtual edition has its own key 'v36v', distinct from 'v36', so a numeric-only regex merges two editions. Excluded: none - keynote lectures are not published in the proceedings volume. Language: English - ICCE is an international English-language congress. 703 against the 800 floor, so OUT on positive evidence. This confirms phase 1's own flag: ~900 participants but the contributed-paper count sits below the bar.",
+  "verdict": "OUT",
+  "confidence": "exact"
+ },
+ {
+  "row": 204,
+  "conference": "Waste Management Symposia (WM)",
+  "outcome": "INFERRED",
+  "abstracts_numeric": null,
+  "abstracts": "~1,050 INFERRED FROM ATTENDANCE, NOT COUNTED (rung 9 - 3,000 attendees x 35% for a CONTRIBUTED open-abstract-call programme) - see Method",
+  "year": 2024,
+  "rung": 9,
+  "source_url": "https://www.xcdsystem.com/wmsym/2024/index.cfm",
+  "spot_checks": [
+   "The attendance and the programme scale come from the SAME loaded page - the WM2024 online-proceedings home page, carrying the WM Symposia president's own post-meeting letter: 'WM2024 featured multiple venues for more than 3000 attendees from over 20 countries to experience - a technical program with 235 sessions addressing major aspects of our global industry, 189 exhibitors'",
+   "Programme character verified independently on a second loaded page, the call for participation (https://www.wmsym.org/technical-program/call-for-abstracts/): an open abstract call across 12 numbered tracks, 'ACCEPTING ABSTRACTS FOR CONSIDERATION IN ORAL OR POSTER SESSIONS', and 'After being presented at the conference, your paper will be available in our on-line proceedings' - orals plus posters plus published papers, exactly the census unit",
+   "DELIBERATELY NOT DONE: 235 sessions was NOT multiplied by a guessed talks-per-session. The field notes record that session-count arithmetic was attempted at TRB and DAGA and REJECTED both times, so the 235 is reported as programme context only and the conversion runs off attendance"
+  ],
+  "searches_used": 1,
+  "events_per_yr": 1,
+  "cadence_evidence": "Annual (March, Phoenix). WM2024 ran 10-14 March 2024, WM2025 9-13 March 2025, and https://www.wmsym.org/ currently promotes WM2027 for 7-11 March - one symposium per year, and the 2024 edition was its 50th.",
+  "attendance_numeric": 3000,
+  "attendance_year": 2024,
+  "attendance_basis": "TOTAL_ONSITE",
+  "attendance_rung": "A2",
+  "attendance_source_url": "https://www.xcdsystem.com/wmsym/2024/index.cfm",
+  "alt_figures": [],
+  "character": "CONTRIBUTED",
+  "character_evidence": "An open abstract call in 12 tracks feeding oral and poster sessions, with every presented paper published in an online proceedings that carries its own ISBN (978-0-9836186-7-6 for WM2024). The exhibition (189 exhibitors) and the STEM/job-fair programme sit alongside the technical programme rather than replacing it.",
+  "programme_type": "CONTRIBUTED",
+  "programme_evidence": "12-track open abstract call, 235 technical sessions, oral and poster formats, ISBN-bearing online proceedings.",
+  "direct_abstracts": null,
+  "ratio": 0.35,
+  "ratio_rationale": "WM is a paper-driven technical symposium, not a trade show with a programme attached: its own call makes the abstract the route in ('we will begin accepting abstracts for consideration in oral or poster sessions'), every presented paper is published in an ISBN-bearing proceedings, and the 235 sessions across 12 tracks are the spine of the week. That argues for a high share of the room presenting. Against that, the 3,000 headcount explicitly includes staff from 189 exhibitors, a student/STEM contingent with its own destination in the exhibit hall, a job fair, and the large DOE-complex and contractor attendance that comes to this meeting for programme business rather than to present. Judged at 35%, reasoning from the counted engineering rows with both numbers: INFORMS sits near 79% (5,122 on ~6,500) as a pure academic congress with a one-presentation-per-person rule; SAE WCX at ~16% (776 on 4,800 registered) as an industry congress with an exhibition; TRB at ~9% (981 on 11,000, and that figure is posters only, with 31% of the headcount public-sector staff at committee meetings). WM is much more paper-driven than TRB or WCX because its proceedings is the point, but far less so than INFORMS because a third of the room is industry and agency staff rather than authors - 35% places it between WCX and INFORMS and nearer the middle. 3,000 x 0.35 = ~1,050. The relative +/-20% flex band is 28-42%, giving 840-1,260, whose top comfortably clears the 900 bar.",
+  "duplicate_of": null,
+  "method": "RUNG 9 (attendance pass), ONE search - the abstract ladder is genuinely exhausted and the reason is a CREDENTIAL wall, not a bot wall. Rungs 3-6 were worked in full. The society site wmsym.org has no programme; its 'Archives' link redirects to https://archivedproceedings.econference.io/wmsym/, which returns HTTP 500 with a raw Lucee stack trace ('MissingIncludeException: Page /wmsym/templates/default---old-non-bootstrap/website_jheader.cfm not found') - the host root serves the default Lucee welcome page, so this is a BROKEN SERVER, not a wall: a browser fails identically and it must NOT be queued for rung 5. https://www.xcdsystem.com/wmsym/ 302s to /member/ and the programme endpoint /wmsym/program/C3Ythxg/ returns 149 bytes reading 'conference timezone not set.'. ONE search located the live archive https://www.xcdsystem.com/wmsym/2024/index.cfm, which IS open and carries the president's post-meeting letter with the figures - but every one of its proceedings pages (sessions.cfm, FinalProgram.cfm, authors.cfm, attendees.cfm) returns 'NOTE: You must login to access the proceedings.' That is a credential wall, which the brief excludes from rung 5, and older editions are behind the broken Lucee archive, so no open artefact exists for any edition. Hence rung 9. Curran/proceedings.com was checked for a print proceedings and carries none. Excluded from the conversion basis: nothing was subtracted from the 3,000 headcount, because the source gives no breakdown - the exhibitor and student contingents are instead handled inside the judged ratio, and that is stated rather than hidden. Language: English - a US symposium. NON-NEGOTIABLE: the abstracts figure above is an approximation, marked NOT COUNTED, and must never be quoted as a counted figure. The orchestrator computes the final inferred number and the inclusion call; on a ~900 bar this row is BORDERLINE.",
+  "verdict": "BORDERLINE",
+  "confidence": "derived"
+ }
+]
