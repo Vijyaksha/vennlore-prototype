@@ -40,11 +40,41 @@ English-language, no target count ("return what you can stand behind"), clean in
   big local-language gap (societies run technical-committee meetings, not one congress; CAST's 118
   forums is the door); Confit (JP), DBpia and AURIC (KR) index society volumes and would give exact
   counts. Rupert's prior: engineering ends near 200 at the bar; orchestrator's: 100–150.
-- **Next**: load both lists as `NOT YET CENSUSED` inside each sheet's totals range (rows 5–469;
-  31 live rows + 31 blanked rows occupy 5–66, append from the first free row), then phase 2 —
-  cheapest rung first (DBLP SPARQL / Crossref exact title at zero searches, then society
-  proceedings, programme PDFs, Confex, Confit/DBpia), rung 5 to the orchestrator, rung 9 last.
-  Phase 2 needs Rupert's go.
+- **OVERNIGHT 2026-09-14 (Rupert asleep; his instruction: CS phase 2 + engineering waves 1–2 now,
+  a 5 am Eastern wakeup finishes the remaining engineering rows across three agents).** Both lists
+  were loaded as `NOT YET CENSUSED` (CS & AI rows 68–97, 30 rows — Sunbelt not loaded; Engineering
+  rows 70–205, 136 rows) with `scratchpad/append_names.py`. Writeback for every wave runs through
+  `scratchpad/apply_wave.py` over `wavelib.plan` (tested) + the tested writers; per-wave override
+  files `r5_notes.json` / `dupes.json` / `events_override.json` sit in each wave dir.
+  - **CS & AI phase 2 — DONE** (`scratchpad/cs/wave1/`, 30 rows, 4 searches). Sheet now 14 VERIFIED
+    (12.5 ev/yr) + 25 BORDERLINE (22.74); deleted 22 OUT + INFORMS parked (it is on Engineering).
+    New: IPSJ National Convention 1,608 VERIFIED; JSAI 1,174, SIAM CSE 1,433, FOSDEM 989, COLM 856,
+    KCC 854, FCRC 856 (one federated week, 0.25/yr — Rupert's call) BORDERLINE; CSI India UNRESOLVED.
+    ANLP Japan OUT by 3 (797) — restorable. WCCI parked as a sum of IJCNN + CEC + FUZZ. Field notes
+    `field-notes/cs-ai.md` carry a dozen new zero-search routes. **CS & AI is closed** at the
+    English + JP/CN/KR level.
+  - **Engineering wave 1 — DONE** (`scratchpad/eng/wave1/`, 30 rows, 10 searches; pilot report in
+    `REPORT.md`, now the body of `field-notes/engineering.md`). Wave 2 — DONE (`eng/wave2/`, 29
+    rows, 5 searches). Sheet now **18 VERIFIED (14.33 ev/yr) + 58 BORDERLINE (50.99 ev/yr) + 76
+    NOT YET CENSUSED**; `Deleted - Engineering` 18 rows. Rung 5 by the orchestrator (Playwright):
+    IEICE General 1,784 / Society 1,111, JSME 1,252 (Confit; restored after an OUT on the J-STAGE
+    floor — `scratchpad/restore.py`), JIM ≤1,161, EWRI 516 (OUT). Biggest finds: AIJ 6,645, INFORMS
+    5,122 (2018), JSCE 4,188, IAC 4,008, WCEE 3,163, WCCM 2,800, ASEE 2,466, ECCOMAS 2,368, ISPRS
+    2,306, IFAC 1,908, POMS 1,560, CIGRE 1,552.
+  - **Wave 3 (the 5 am job)**: queues pre-built `scratchpad/eng/wave3/queue_{1,2,3}.json` (26/25/25
+    rows — the boundary/implied/Chinese tail); brief = copy `eng/wave2/BRIEF.md` with the paths
+    changed. Writeback: `python3 apply_wave.py --dir eng/wave3 --sheet "Census - Engineering"
+    --deleted "Deleted - Engineering" --tag "[eng wave 3, 2026-09-14]" --today 2026-09-14
+    --results results_1.json --queue queue_1.json --results results_2.json --queue queue_2.json
+    --results results_3.json --queue queue_3.json --dry`.
+  - **Rows for Rupert's eye** (all recorded in Method): FCRC as one meeting; ANLP 797 and ISOPE 794
+    OUT by a handful of papers; EU PVSEC 802 in by two; INFORMS counting rule 6 (sponsored sessions
+    counted; strict reading ~580 + posters); TRB 981 posters-only from 2017 (lectern track uncounted
+    — AMOnline needs a browser login); IMECE deposit floor 723 vs ~2,400 stated; ICA 2025 was the
+    joint ASA/ICA meeting (ASA is on physical sciences — count a joint year once); WCCM and ECCOMAS
+    merge in alternate cycles (2026 joint); KSCE 1,053 (2024) vs 719 (2025); FEMS EUROMAT 1,446
+    stated (1,635 if highlight talks count).
+  - **Searches used tonight**: ~19 across four agents (phase 2) + 95 (phase 1) — of 1,000.
 
 **CURRENT PLAN — Rupert's last instruction, supersedes the numbered order below where they differ:**
 
