@@ -1,0 +1,272 @@
+[
+ {
+  "row": 70,
+  "conference": "ASME International Mechanical Engineering Congress and Exposition (IMECE)",
+  "society": "American Society of Mechanical Engineers (ASME)",
+  "country": "US",
+  "subfield": "mechanical",
+  "events_per_yr": null,
+  "notes": "annual (November) | ASME's flagship congress; ~2,000 technical papers across 20+ tracks, published by ASME Press rather than deposited as indexed proceedings | Phase-1 size hint (page opened, not a figure): roughly 2,400 papers, presentations, and posters are presented at IMECE in 17 core tracks — https://imece.asme-india.org/2025/program-overview | Phase 1 source: https://www.asme.org/conferences-events/asme-conferences | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 71,
+  "conference": "ASME Turbo Expo: Turbomachinery Technical Conference and Exposition",
+  "society": "American Society of Mechanical Engineers (ASME)",
+  "country": "International",
+  "subfield": "mechanical / energy",
+  "events_per_yr": null,
+  "notes": "annual (June) | ~1,000-1,200 peer-reviewed technical papers per edition in the ASME Digital Collection | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 79,
+  "conference": "TRB Annual Meeting",
+  "society": "Transportation Research Board, US National Academies",
+  "country": "US",
+  "subfield": "transportation",
+  "events_per_yr": null,
+  "notes": "annual (January, Washington DC) | 13,000+ attendees with thousands of lectern and poster presentations; papers are TRB-internal and never deposited as proceedings | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 80,
+  "conference": "SAE WCX World Congress Experience",
+  "society": "SAE International",
+  "country": "US",
+  "subfield": "automotive",
+  "events_per_yr": null,
+  "notes": "annual (April, Detroit) | ~1,000+ SAE technical papers per congress; SAE MOBILUS is not a DBLP/Crossref proceedings index | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 82,
+  "conference": "SPE Annual Technical Conference and Exhibition (ATCE)",
+  "society": "Society of Petroleum Engineers (SPE)",
+  "country": "US",
+  "subfield": "petroleum",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | annual (autumn) | SPE OnePetro papers; several hundred technical papers plus posters, boundary against 900 | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 86,
+  "conference": "ASHRAE Annual Conference and Winter Conference",
+  "society": "ASHRAE",
+  "country": "US",
+  "subfield": "HVAC / energy",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | twice yearly | ASHRAE papers and conference papers plus seminar presentations; combined programme may approach the bar, uncertain | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 87,
+  "conference": "IISE Annual Conference and Expo",
+  "society": "Institute of Industrial and Systems Engineers (IISE)",
+  "country": "US",
+  "subfield": "industrial / systems",
+  "events_per_yr": null,
+  "notes": "annual (May) | ~1,000 presentations across tracks; proceedings are society-hosted | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 88,
+  "conference": "INFORMS Annual Meeting",
+  "society": "Institute for Operations Research and the Management Sciences (INFORMS)",
+  "country": "US",
+  "subfield": "operations research / industrial",
+  "events_per_yr": null,
+  "notes": "annual (October) | 5,000+ presentations and ~6,000 attendees; abstracts only, no proceedings deposit | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 93,
+  "conference": "ASEE Annual Conference and Exposition",
+  "society": "American Society for Engineering Education (ASEE)",
+  "country": "US",
+  "subfield": "engineering education",
+  "events_per_yr": null,
+  "notes": "annual (June) | ~1,600-1,800 peer-reviewed papers per year, hosted on the ASEE PEER repository outside the main indexes | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 99,
+  "conference": "IEEE Power and Energy Society General Meeting (PES GM)",
+  "society": "IEEE Power and Energy Society",
+  "country": "US",
+  "subfield": "power / energy",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | annual (July) | ~800 accepted conference papers plus a large panel and poster programme; only part reaches DBLP, so the contributed total sits right on the bar | Phase-1 size hint (page opened, not a figure): Up to approximately 800 out of the total number of conference papers submitted by the deadline will be accepted for presentation at the General Meeting. — https://pes-gm.org/2025-austin/call-for-papers/ | Phase 1 source: https://pes-gm.org/2025-austin/call-for-papers/ | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 104,
+  "conference": "Architectural Institute of Japan Annual Meeting (AIJ Taikai) academic lecture meeting",
+  "society": "Architectural Institute of Japan (AIJ)",
+  "country": "Japan",
+  "subfield": "architecture / building engineering",
+  "events_per_yr": null,
+  "notes": "annual (September) | one of the largest engineering meetings anywhere: several thousand short academic lecture papers, published only in AIJ's own Japanese-language digest | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 105,
+  "conference": "JSCE Annual Meeting Annual Conference of Civil Engineering (Nenji Gakujutsu Koenkai)",
+  "society": "Japan Society of Civil Engineers (JSCE)",
+  "country": "Japan",
+  "subfield": "civil",
+  "events_per_yr": null,
+  "notes": "annual (September) | several thousand presentations; JSCE-published Japanese-language proceedings, invisible to Crossref and DBLP | Phase-1 size hint (page opened, not a figure): over 5,000 attendees ... over 3,000 research papers and poster are presented — https://www.jsce-int.org/event/annual | Phase 1 source: https://www.jsce-int.org/event/annual | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 106,
+  "conference": "JSME Annual Meeting (Nenji Taikai)",
+  "society": "Japan Society of Mechanical Engineers (JSME)",
+  "country": "Japan",
+  "subfield": "mechanical",
+  "events_per_yr": null,
+  "notes": "annual (September) | ~1,500-2,500 presentations across all divisions, Japanese-language society proceedings | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 107,
+  "conference": "IEEJ Annual Meeting (Zenkoku Taikai)",
+  "society": "Institute of Electrical Engineers of Japan (IEEJ)",
+  "country": "Japan",
+  "subfield": "electrical / power",
+  "events_per_yr": null,
+  "notes": "annual (March) | ~2,000-3,000 short presentations; IEEJ-only Japanese proceedings | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 108,
+  "conference": "IEICE General Conference",
+  "society": "Institute of Electronics, Information and Communication Engineers (IEICE)",
+  "country": "Japan",
+  "subfield": "electronics / communications",
+  "events_per_yr": null,
+  "notes": "annual (March) | ~2,000-2,500 presentations; IEICE-only Japanese proceedings | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 122,
+  "conference": "KSME Annual Meeting",
+  "society": "Korean Society of Mechanical Engineers (KSME)",
+  "country": "South Korea",
+  "subfield": "mechanical",
+  "events_per_yr": null,
+  "notes": "annual (November) | ~1,500-2,500 Korean-language presentations; society-only proceedings | Phase-1 size hint (page opened, not a figure): more than 1,400 lectures and papers are presented with 3,000 attendees every year — https://intl.ksme.or.kr/?page_id=467 | Phase 1 source: https://intl.ksme.or.kr/?page_id=467 | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 124,
+  "conference": "KIEE Summer Annual Conference",
+  "society": "Korean Institute of Electrical Engineers (KIEE)",
+  "country": "South Korea",
+  "subfield": "electrical / power",
+  "events_per_yr": null,
+  "notes": "annual (July) | ~1,500-2,500 short Korean-language papers; society-only proceedings | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 199,
+  "conference": "CCTAM - Chinese Congress of Theoretical and Applied Mechanics (中国力学大会)",
+  "society": "Chinese Society of Theoretical and Applied Mechanics (CSTAM)",
+  "country": "China",
+  "subfield": "mechanics / mechanical",
+  "events_per_yr": null,
+  "notes": "biennial | ~5,000 attendees across 27 parallel sessions and 56 thematic symposia; Chinese-language abstract programme with no indexed proceedings | Phase-1 size hint (page opened, not a figure): 本届大会吸引近5000名力学及相关领域的专家学者、高校师生、产业人员 ... 会议设1个主会场，27个分会场、56个专题研讨会 — https://www.cstam.org.cn/193/202507/21449.html | Phase 1 source: https://cctam2025.cstam.org.cn/ | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 139,
+  "conference": "International Astronautical Congress (IAC)",
+  "society": "International Astronautical Federation (IAF)",
+  "country": "International",
+  "subfield": "aerospace / space",
+  "events_per_yr": null,
+  "notes": "annual | ~3,000 accepted technical papers and presentations; IAF-hosted archive outside the main indexes | Phase-1 size hint (page opened, not a figure): nearly 6,400 abstracts from 103 countries — https://www.iafastro.org/news/iac-2025-call-for-abstracts-results.html | Phase 1 source: https://www.iafastro.org/events/iac/ | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 133,
+  "conference": "World Conference on Earthquake Engineering (WCEE)",
+  "society": "International Association for Earthquake Engineering (IAEE)",
+  "country": "International",
+  "subfield": "earthquake engineering",
+  "events_per_yr": null,
+  "notes": "every four years | ~3,000-4,500 papers per congress; proceedings hosted by the local organiser and never indexed | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 135,
+  "conference": "World Congress on Computational Mechanics (WCCM)",
+  "society": "International Association for Computational Mechanics (IACM)",
+  "country": "International",
+  "subfield": "computational mechanics",
+  "events_per_yr": null,
+  "notes": "biennial | ~3,000 presentations; abstract-only congress | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 136,
+  "conference": "ECCOMAS Congress",
+  "society": "European Community on Computational Methods in Applied Sciences (ECCOMAS)",
+  "country": "Europe",
+  "subfield": "computational mechanics",
+  "events_per_yr": null,
+  "notes": "biennial | ~2,500 presentations; abstract-only congress | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 165,
+  "conference": "ISPRS Congress",
+  "society": "International Society for Photogrammetry and Remote Sensing (ISPRS)",
+  "country": "International",
+  "subfield": "geomatics / photogrammetry",
+  "events_per_yr": null,
+  "notes": "every four years | over 1,500 papers presented at the 2022 congress; proceedings appear as Copernicus Archives/Annals volumes rather than a standard proceedings container | Phase-1 size hint (page opened, not a figure): More than 1500 papers were presented in the various scientific tracks and sessions during the congress (XXIV ISPRS Congress 2022 preface) — https://isprs-archives.copernicus.org/articles/XLIII-B5-2022/1/2022/isprs-archives-XLIII-B5-2022-1-2022.pdf | Phase 1 source: https://www.isprs.org/society/congress.aspx | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 154,
+  "conference": "CIGRE Session (Paris)",
+  "society": "International Council on Large Electric Systems (CIGRE)",
+  "country": "International",
+  "subfield": "power systems",
+  "events_per_yr": null,
+  "notes": "biennial (August, Paris) | ~800-900 peer-reviewed papers plus preferential-subject contributions; CIGRE e-cigre archive is outside the main indexes | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 166,
+  "conference": "FEMS EUROMAT - European Congress and Exhibition on Advanced Materials and Processes",
+  "society": "Federation of European Materials Societies (FEMS)",
+  "country": "Europe",
+  "subfield": "materials engineering",
+  "events_per_yr": null,
+  "notes": "biennial | 1,800+ scientists at the 2025 congress across eight thematic areas; abstract-only programme with no indexed proceedings | Phase-1 size hint (page opened, not a figure): brought together over 1,800 scientists at the Granada Conference Center (FEMS EUROMAT 2025 highlights) — https://sociemat.es/fems-euromat-2025-highlights/ | Phase 1 source: https://fems.org/fems-euromat-2025/ | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 155,
+  "conference": "CIRED - International Conference on Electricity Distribution",
+  "society": "CIRED (AIM / IET)",
+  "country": "Europe",
+  "subfield": "power distribution",
+  "events_per_yr": null,
+  "notes": "biennial with intermediate workshops | ~1,200-1,500 accepted papers per session; CIRED-hosted proceedings | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 182,
+  "conference": "DAGA - Jahrestagung fuer Akustik",
+  "society": "Deutsche Gesellschaft fuer Akustik (DEGA)",
+  "country": "Germany",
+  "subfield": "acoustics",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | annual | ~700-900 German-language contributions; DEGA-hosted proceedings | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 181,
+  "conference": "Congres Francais de Mecanique (CFM)",
+  "society": "Association Francaise de Mecanique (AFM)",
+  "country": "France",
+  "subfield": "mechanical",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | biennial | ~700-900 French-language papers; AFM-hosted proceedings | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 156,
+  "conference": "EPE ECCE Europe - European Conference on Power Electronics and Applications",
+  "society": "European Power Electronics and Drives Association (EPE)",
+  "country": "Europe",
+  "subfield": "power electronics",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | annual | ~500-700 papers; boundary | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 174,
+  "conference": "Transport Research Arena (TRA)",
+  "society": "European Commission / ECTRI / EARPA / ERTRAC and partners",
+  "country": "Europe",
+  "subfield": "transportation",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | biennial | ~600-900 papers and posters; organiser-hosted proceedings | Phase 1 second pass, loaded 2026-09-14"
+ }
+]
