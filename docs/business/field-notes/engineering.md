@@ -610,3 +610,56 @@ browser); IMECE (deposit floor 723 vs ~2,400 stated); INFORMS (5,122 from 2018, 
 the strict "Contributed"-only reading is ~580 talks + posters); IISE (2013); CIRED (2019); CFM (on
 the line at 918 with the flexed band); FEMS EUROMAT (1,446 stated, 1,635 if the 189 highlight talks
 are contributed); WCCM and ECCOMAS merge in alternate cycles (2026 joint) — count a joint year once.
+
+---
+
+## 8. Wave 2 (2026-09-14, 29 rows, 5 searches, 24 rows at zero searches) — new routes and results
+
+Verdicts: 2 VERIFIED (IFAC World Congress 1,908 triennial; POMS 1,560), 16 BORDERLINE (IEIE 1,326,
+WCTR 1,234, ICSMGE 1,230, ICA 1,154, INTER-NOISE 1,125, ECEE 1,071, USNCCM 1,054, KSCE 1,053, KSAS
+1,008, IAHR 976, ECCM 911 floor, EU PVSEC 802, OMAE 746 floor, IDETC 534 floor, PVP 507 floor, JIM
+≤1,161 by rung 5), 11 OUT (ISOPE 794, GAMM 734, KICS 614, JCI 539, HFES 536, ICCM 517, JSAE 416,
+IMS 411, EWRI 516 by rung 5, Structures Congress ~390 and MineXchange ~520 inferred).
+
+### Routes new in wave 2 — try these before searching
+
+| Route | How | Settled |
+|---|---|---|
+| **DBpia JSON endpoints (every Korean society whose own site is dead)** | `POST https://www.dbpia.co.kr/journal/selectIssueIndexList` with `publicationId=<PLCT id>` lists the yearly issues with their `voisId`; then `GET https://www.dbpia.co.kr/journal/voisNodeList?voisId=<id>&publicationId=<PLCT id>&currPage=1&pageSize=5000` returns the complete contents in one call; count rows with a non-empty `autr_nm`. No login, no browser. KSCE = PLCT00001494, IEIE = PLCT00000552 | KSCE 1,053 (2024), IEIE 1,326 |
+| **ConfTool Pro agendas are server-rendered** | `https://www.conftool.com/<event>/index.php?page=browseSessions&presentations=show` (+`&form_date=YYYY-MM-DD` per day, `&form_tracks=<id>` by submission type); the "JavaScript disabled" banner is cosmetic | ECEE 2026 = 1,071 |
+| **Europa Organisation interactive programme** | The congress page loads an iframe `https://interactive-programme.europa-organisation.com/<event>/programme.php` — plain HTML with the whole programme | WCTR 2026 = 1,234 |
+| **gakkai-web.net also hosts JSAE** | `https://gakkai-web.net/jsae/{s|a}/<year>/program/data/jp/program.html` (s = 春季, a = 秋季) | JSAE autumn 2026 = 416 |
+| **JCI proceedings database** | `https://data.jci-net.or.jp/data_html/<volume>/<year>.html` — one static TOC per year (第1巻 1979 → 第47巻 2025), cp932; count five-column rows | JCI 2025 = 539 |
+| **KSAS runs the KSME ASP platform** | `https://ksas.or.kr/proceedings/<year>{a|b|c}/` (a 춘계, b 추계, c 우주) — `TrackList.asp` → `SessionPaperList.asp?code=` as for KSME | KSAS spring 2026 = 1,008 |
+| **KICS static programmes** | `https://conf.kics.or.kr/<year>{w|s|f}/program` (동계/하계/추계), past editions at `…/history`; paper IDs `\d{1,3}[A-Z]{1,2}-\d{1,3}` | KICS summer 2025 = 614 |
+| **GAMM book of abstracts** | `www.gamm-ev.de` has an expired certificate; `https://jahrestagung.gamm.org/` lists every edition and links a BoA PDF per edition | GAMM 2025 = 734 |
+| **Google Drive programme books** | POMS links its program book from `pomsmeetings.org/conf-<year>/`; fetch `https://drive.google.com/uc?export=download&id=<id>`. USNCCM's Google Sites `/program` page hides its Drive links inside the page's inline JSON — grep the HTML for `drive.google.com/file/d/` | POMS 2026 = 1,560; USNCCM 2025 = 1,054 |
+| **ISOPE programme PDF** | `publications.isope.org` 403s and OnePetro is Cloudflare, but `https://www.isope.org/conferences/` links a free "Full Updated Program with Paper List" PDF per edition | ISOPE 2025 = 794 |
+| **IAHR document library** | `https://www.iahr.org/library/world?pid=<n>` — TWO collections per congress: "Proceedings" (opt-in full papers) and "Book of Extended Abstracts" (everything). Count the abstracts book | IAHR 2025 = 976 |
+| **Zenodo communities (ICCM)** | `https://zenodo.org/api/records?communities=iccm-<NN>&size=1`, read `hits.total`; agrees with the organiser's figure. Series 1,355 → 1,258 → 1,124 → 920 → 517 | ICCM 2025 = 517 |
+| **Current-edition university host (ECCM)** | `escm.eu.org` times out and `eccm21.org` was lost to a squatter; `eccm22.org` redirects to an NTNU-hosted site with the programme | ECCM 2026 = 911 (floor) |
+| **INCE proceedings by ISSN** | ingentaconnect is Cloudflare-walled; INCE is Crossref member 1973, prefix `10.3397`, proceedings ISSN `0736-2935` — `filter=issn:0736-2935,from-pub-date:<Y>…` | INTER-NOISE 2024 = 1,125 (2025 São Paulo only 393 deposited) |
+| **ASA / ICA via JASA supplement deposits** | ASA deposits every meeting abstract under prefix `10.1121`; group on (volume, issue, A-page prefix) to isolate the meeting supplement — the medicine-style route on an engineering congress | ICA 2025 (= ASA 188th) = 1,154 |
+| **EU PVSEC: DOIs live in DataCite, not Crossref** | prefix `10.4229` is DataCite client `tib.wip`: `https://api.datacite.org/dois?client-id=tib.wip&query=publicationYear:<Y>&page[size]=0` (299–364/yr, a floor — papers optional); the programme PDF `eupvsec.org/images/<year>/conference/EUPVSEC<year>_ConferenceProgramme_v<n>_web.pdf` is the count (IDs `\d?[A-Z]{2}\.\d+\.\d+`) | EU PVSEC 2026 = 802 |
+| **IFAC-PapersOnLine ISSN** | `api.crossref.org/journals?query=IFAC-PapersOnLine` → ISSN `2405-8963`; Elsevier deposits every World Congress paper individually | IFAC 2023 = 1,908 |
+| **HFES via the Sage journal, not the society member record** | member 370 shows 40 DOIs (reads as "does not deposit"); the meeting is the journal ISSN `2169-5067` (16,302 DOIs) | HFES 2019 = 536 |
+| **eposter.at static proceedings** | `https://eposter.at/ICSMGE2026/proceedings/overview.html` carries the complete paper list in one page | ICSMGE 2026 = 1,230 |
+| **eventscribe opens in a browser** (rung 5) | Cloudflare 403 to curl; in Playwright `SearchByPresentation.asp?pfp=BrowsebyTitle` states "N results found" and carries N unique `PresentationID` links; `/searchbyposter.asp` may 404 | EWRI 2026 = 516 |
+| **Confit, again** | `pub.confit.atlas.jp/ja/event/<code>/search`, click 検索する: JIM autumn 2025 = 講演(1,161) | JIM ≤1,161 |
+
+### Traps and rules added in wave 2
+
+- **A member record with few DOIs does not mean "does not deposit"** — the meeting may sit under a
+  journal ISSN (HFES), a different registry (EU PVSEC in DataCite), or a journal container (IFAC).
+- **Two collections for one congress** (IAHR proceedings vs extended abstracts): count the one that
+  holds every presentation, and say which.
+- **KICS meets three times a year** (events/yr 3); KSAS, JSAE, JIM and IEIE twice — per-edition
+  figure of the larger edition, never a sum.
+- **Series in decline decide on the current edition** (ICCM 517 after 1,355; KSCE 1,053 in 2024 vs
+  719 in 2025 — recorded 2024, needs a check); INTER-NOISE's 2025 deposit (393) looks like a thin
+  deposit rather than a small meeting.
+- **Lost domains redirect to squatters** (eccm21.org → an unrelated business site, 403): never cite one.
+- **ICA and ASA merge in some years** (2025 New Orleans = ASA's 188th meeting); WCCM and ECCOMAS
+  merge in alternate cycles. A joint year is counted once — Rupert chooses the sheet.
+- **ASCE deposits are optional at its congresses** (EWRI 105–147/yr, Structures 38–42/yr): the
+  deposit is a floor and the eventscribe programme is the count.
