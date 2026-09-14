@@ -1,0 +1,92 @@
+[
+ {
+  "conference": "Cosyne (Computational and Systems Neuroscience)",
+  "society": "Cosyne",
+  "country_or_region": "US",
+  "subfield": "computational neuroscience",
+  "frequency_note": "",
+  "why_listed": "sweep 3 (gaps)",
+  "source_url": "https://www.cosyne.org/about-cosyne",
+  "_src": "sweep3"
+ },
+ {
+  "conference": "ARO MidWinter Meeting",
+  "society": "Association for Research in Otolaryngology",
+  "country_or_region": "US",
+  "subfield": "auditory neuroscience",
+  "frequency_note": "",
+  "why_listed": "sweep 3 (gaps)",
+  "source_url": "https://aro.org/meetings/past-midwinter-meetings/",
+  "_src": "sweep3"
+ },
+ {
+  "conference": "American Society for Neurochemistry Annual Meeting",
+  "society": "ASN (neurochemistry)",
+  "country_or_region": "US",
+  "subfield": "neurochemistry",
+  "frequency_note": "",
+  "why_listed": "sweep 3 (gaps)",
+  "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9466556/",
+  "_src": "sweep3"
+ },
+ {
+  "conference": "SAF National Convention",
+  "society": "Society of American Foresters",
+  "country_or_region": "US",
+  "subfield": "forestry",
+  "frequency_note": "",
+  "why_listed": "sweep 3 (gaps)",
+  "source_url": "https://www.eforester.org/Main/Library/JOF/Convention_Proceedings.aspx",
+  "_src": "sweep3"
+ },
+ {
+  "conference": "Association for Fire Ecology Fire Congress",
+  "society": "Association for Fire Ecology",
+  "country_or_region": "US",
+  "subfield": "fire ecology",
+  "frequency_note": "",
+  "why_listed": "sweep 3 (gaps)",
+  "source_url": "https://fireecology.org/past-conference-resources",
+  "_src": "sweep3"
+ },
+ {
+  "conference": "North American Forest Ecology Workshop (NAFEW)",
+  "society": "NAFEW",
+  "country_or_region": "US",
+  "subfield": "forest ecology",
+  "frequency_note": "",
+  "why_listed": "sweep 3 (gaps)",
+  "source_url": "https://fireecology.org/calendar-entries/nafew2026",
+  "_src": "sweep3"
+ },
+ {
+  "conference": "SBUR Annual Meeting",
+  "society": "Society for Basic Urologic Research",
+  "country_or_region": "US",
+  "subfield": "urologic biology",
+  "frequency_note": "",
+  "why_listed": "sweep 3 (gaps)",
+  "source_url": "https://en.wikipedia.org/wiki/The_Society_for_Basic_Urologic_Research",
+  "_src": "sweep3"
+ },
+ {
+  "conference": "ASBMR Annual Meeting",
+  "society": "American Society for Bone and Mineral Research",
+  "country_or_region": "US",
+  "subfield": "bone biology — BOUNDARY (health)",
+  "frequency_note": "",
+  "why_listed": "sweep 3 (gaps)",
+  "source_url": "knowledge",
+  "_src": "sweep3"
+ },
+ {
+  "conference": "GSA Annual Scientific Meeting (Gerontological Society of America)",
+  "society": "Gerontological Society of America",
+  "country_or_region": "US",
+  "subfield": "aging — BOUNDARY (health/social)",
+  "frequency_note": "",
+  "why_listed": "sweep 3 (gaps)",
+  "source_url": "knowledge",
+  "_src": "sweep3"
+ }
+]

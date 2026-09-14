@@ -1,0 +1,32 @@
+[
+ {
+  "conference": "SABER Annual Meeting",
+  "society": "Society for the Advancement of Biology Education Research",
+  "country_or_region": "US",
+  "subfield": "biology education",
+  "frequency_note": "",
+  "why_listed": "sweep 4 (second pass)",
+  "source_url": "https://www.saberbio.org/Annual-Meeting",
+  "_src": "sweep4"
+ },
+ {
+  "conference": "DIA Global Annual Meeting",
+  "society": "DIA",
+  "country_or_region": "US",
+  "subfield": "drug development \u2014 BOUNDARY (industry/regulatory)",
+  "frequency_note": "",
+  "why_listed": "sweep 4 (second pass)",
+  "source_url": "https://www.qualio.com/blog/top-life-sciences-conferences",
+  "_src": "sweep4"
+ },
+ {
+  "conference": "Bioprocessing Summit",
+  "society": "Cambridge Healthtech Institute",
+  "country_or_region": "US",
+  "subfield": "bioprocessing (industry)",
+  "frequency_note": "",
+  "why_listed": "sweep 4 (second pass)",
+  "source_url": "https://www.qualio.com/blog/top-life-sciences-conferences",
+  "_src": "sweep4"
+ }
+]

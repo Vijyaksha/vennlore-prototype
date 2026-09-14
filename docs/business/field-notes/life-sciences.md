@@ -143,3 +143,50 @@ exhibitors inflate the headcount.
 PAG workshop invited/contributed split (same); the Plant Health supplement PDF S2.1–S2.209 (rung 5);
 the AFS and TWS 2025 programme platforms; ABRCMS and SACNAS programme books for real counts; and the
 2025 ASCB oral split, which would move its 2,084 floor up.
+
+## Wave 1 results — 90 rows, 3 agents, 59 searches (2026-09-13)
+
+All 90 remaining US rows, written to the workbook the same day (`scratchpad/life/wave1/`).
+
+| Outcome | Rows |
+|---|---|
+| `VERIFIED` (counted ≥1,500) | 3 — NCUR **3,316**, APA Convention **2,976** (BOUNDARY), OHBM **2,095** |
+| `BORDERLINE`, counted ≥800 | ISMB 1,445 (817 posters + 628 talks), APS Convention 1,350 (floor, BOUNDARY), ASABE 1,121, SCB/ICCB 1,106, Marine Mammalogy 1,097 (floor), ATBC 1,030 (stated), C. elegans 974, ADSA ~949 (derived), ASHS 910, ASLO 829, SVP 806, Evolution 800 (floor) |
+| `BORDERLINE`, rung-9 inferred | TAGC ~1,980 (0.25/yr), CERF ~1,290 (0.5/yr), IUMS ~770 (flex test) |
+| `BORDERLINE`, floor/dated/no figure — rule 1 | ICAR 434 (2014), ABS 279 talks, RNA Society 156 orals, Shock Society 52 orals; SFS, SEBM, NSA, Chlamydomonas, SABER, Radiation Research Society with no figure |
+| `OUT` on positive evidence | 62, incl. AMP 583, SAF 446 (all-types ceiling), SRM 500 (2018), WDA 264, Cosyne 447, AABA 669, SDB 445, SSR 446, SLAS ~536 (rung 9), the CSHL series (~150/meeting, GRC precedent) |
+
+Observed conversion pairs added to the anchor pool (`attlib.ratio_rows` generates the live list):
+CSHL ~150 attendees per meeting; SLAS 6,700 attendees vs a poster hall only; ISMB ~1,445 contributed
+against a stated ~2,000 attendees. Rung 9 was needed on 6 of 90 rows — as in the pilot, life sciences
+resolves off artefacts, not attendance.
+
+**Scope findings for the global pass.** Six US-society rows have no recent US edition (IUMS, ATBC,
+ICCB, SON 2025 in Victoria, WSSA 2025 in Vancouver, WDA 2025 in Victoria); the ICCB's US sibling NACCB
+is a separate uncounted meeting. The Crustacean Society meets inside SICB; the Histochemical Society
+inside EB and from 2026 TERMIS-AM; NSA 2025 sat inside the four-society AQUACULTURE Triennial; ASN
+2025 was joint with ISN; SEBM 2025 was held at SOT (chemistry sheet). Count joint years once.
+
+## Zero-search routes found in wave 1 (2026-09-13)
+
+| Route | How | Settled |
+|---|---|---|
+| **YourMembership CDN mirror** | A society site behind Cloudflare usually serves the same files openly from `cdn.ymaws.com/<domain>/resource/resmgr/...` | EMGS, Radiation Research Society archive |
+| **OpenWater session gallery** (`*.secure-platform.com`) | Each day's `sessiongallery/schedule?dayId=N` embeds the session list as JSON in the HTML (`"scheduleDayId":N,...,"id":ID,"name":`); each `schedule/items/<id>` page lists its presentations as `/sessiongallery/<n>/application/<id>` links, with `Primary Presenter:` lines and `(NNNN)` abstract numbers as independent markers | ASLO 2025 = 829 |
+| **eventScribe Browse-by-Title** | `/SearchByPresentation.asp?pfp=BrowsebyTitle` states "N results found" and carries one `PresentationID` link per item (all types mixed — a ceiling, not a contributed count). Decommissioned sites keep only logistics; next year's site may sit behind `login.asp` | SAF 2025 = 446 ceiling; SLAS 2025/2026 gone |
+| **ISCB poster iframe** | `iscb.org/<meeting>/scientific-programme/posters` loads `transition.iscb.org/cms_addon/conferences/<meeting>/posters.php`, plain HTML to curl; per-track pages `?track=<code>&session=<A-F>` list `X-NNN: title` after a `Results` marker | ISMB 2026 = 817 posters |
+| **Rangelands Gateway** (UA library) | Mirrors the SRM abstracts 2013–2018 as a searchable collection; `search?...&sort_by=field_dlio_publication_yea&page=N` is plain HTML, 50 per page, `Publication Date YYYY` per record | SRM = 500 (2018) |
+| **Zenodo abstract books** | `zenodo.org/api/records/<id>` gives the file size to verify a 600 MB download against | OHBM 2025 = 2,095 |
+| **Confex org slug** | Must come from the society's own app link, never guessed: `sebiologists.confex.com/sebiologists/2025` works, `asb.confex.com` does not resolve | ASB |
+| **XCD-platform congresses** | Server-rendered, and expose a public Google Sheet of the whole programme — append `/export?format=csv` | Evolution, ICCB |
+| **Sched** | Plain server-rendered HTML, whole conference on one page with per-item type counts | ASHS 2025 = 910 |
+| **Flat asset paths no index exposes** | Squarespace `/s/<name>.pdf`, Wix `/_files/ugd/`, SWCS `/static/media/cms/<name>_<hex>.pdf`, SLB `/assets/docs/SLB<year>/`, Cvent planner file drops; a separate WordPress instance may hold the meeting archive (`aspmeetings.pharmacognosy.us`) | SWCS, SLB, ASP |
+| **Public Google Docs / Drive** | `/export?format=txt` on a Doc; `documents.<domain>` open directory listings where the main hosts 403 | AOS, Maize Genetics (27 years) |
+| **Society committee / annual reports** | Carry abstract counts where no book exists | Mammalogists, Ornithologists |
+| **WordPress media index** | `/wp-json/wp/v2/media` again paid for itself | AABA, MSA, SMM, HAPS, SBUR, IBE, ASLO, RNA Society |
+| **Journal supplement fetched same-origin in a browser** | Cloudflare-walled publisher PDFs (jmdjournal.org) download when `fetch()` runs from the article page in Playwright; return base64 and decode outside | AMP 2025 = 583 |
+
+Traps added this wave: two search snippets attributed figures to pages that do not carry them (an ABS
+newsletter, an EBMC report) — both opened, neither written; a URL that looks like an HTML page can
+serve a PDF (SfRBM's prospectus), and parsing it as HTML yields PDF object numbers that read like
+data; credential walls (SABER, SBN) are not bot walls — a browser gains nothing, do not queue them.

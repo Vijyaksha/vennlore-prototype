@@ -1,0 +1,272 @@
+[
+ {
+  "row": 53,
+  "level": 2,
+  "conference": "Indian Chemical Congress",
+  "society": "Indian Chemical Society / CSIR",
+  "country": "India",
+  "events_per_yr": null,
+  "notes": "annual | large Indian national chemistry congress | Phase 1 source: https://facs.website/facs-member-societies/"
+ },
+ {
+  "row": 56,
+  "level": 2,
+  "conference": "European Symposium on Thermal Analysis and Calorimetry (ESTAC)",
+  "society": "European federation of thermal analysis societies",
+  "country": "Europe",
+  "events_per_yr": null,
+  "notes": "every 4 years | recurring European congress | Phase 1 source: https://www.societachimica.it/en/congressi-ed-eventi"
+ },
+ {
+  "row": 59,
+  "level": 2,
+  "conference": "International Conference on Chemistry and the Environment (ICCE)",
+  "society": "EuChemS Division of Chemistry and the Environment",
+  "country": "Europe",
+  "events_per_yr": null,
+  "notes": "biennial | European divisional congress | Phase 1 source: https://www.euchems.eu/events-overview/euchems-events-calendar/"
+ },
+ {
+  "row": 62,
+  "level": 2,
+  "conference": "APME - International Conference on Advanced Polymers via Macromolecular Engineering",
+  "society": "independent polymer community",
+  "country": "international",
+  "events_per_yr": null,
+  "notes": "biennial | recurring polymer engineering series | Phase 1 source: https://www.imc.cas.cz/en/conferences/upcoming-conferences"
+ },
+ {
+  "row": 65,
+  "level": 2,
+  "conference": "Migration - International Conference on the Chemistry and Migration Behaviour of Actinides and Fission Products in the Geosphere",
+  "society": "independent actinide geochemistry community",
+  "country": "international",
+  "events_per_yr": null,
+  "notes": "biennial | specialised actinide migration series | Phase 1 source: https://www.euchems.eu/divisions/nuclear-and-radiochemistry-2/conferences/"
+ },
+ {
+  "row": 68,
+  "level": 2,
+  "conference": "ICPOC - IUPAC International Conference on Physical Organic Chemistry",
+  "society": "IUPAC",
+  "country": "international",
+  "events_per_yr": null,
+  "notes": "biennial; 27th edition | world physical organic chemistry conference | Phase 1 source: https://iupac.org/event/icpoc-27/"
+ },
+ {
+  "row": 71,
+  "level": 2,
+  "conference": "EFMC-ISCB - EFMC Short Course on Chemical Biology / ISCB symposium",
+  "society": "EFMC",
+  "country": "Europe",
+  "events_per_yr": null,
+  "notes": "recurring; 2025 Basel | EFMC chemical biology strand | Phase 1 source: https://www.efmc-iscb.org/"
+ },
+ {
+  "row": 74,
+  "level": 2,
+  "conference": "IBA Meeting - International Battery Association Meeting",
+  "society": "International Battery Association",
+  "country": "international",
+  "events_per_yr": null,
+  "notes": "annual | international battery materials chemistry meeting | Phase 1 source: https://imlb.org/"
+ },
+ {
+  "row": 77,
+  "level": 2,
+  "conference": "ICCT - International Conference on Chemical Thermodynamics",
+  "society": "IUPAC Physical and Biophysical Chemistry Division",
+  "country": "international",
+  "events_per_yr": null,
+  "notes": "biennial | world chemical thermodynamics conference | Phase 1 source: https://iupac.org/events/"
+ },
+ {
+  "row": 80,
+  "level": 2,
+  "conference": "ESAT — European Symposium on Applied Thermodynamics",
+  "society": "EFCE",
+  "country": "Europe",
+  "events_per_yr": null,
+  "notes": "biennial; 35th in 2027 | EFCE working party symposium, 35 editions | Phase 1 source: https://efce.info/events_overview.html"
+ },
+ {
+  "row": 83,
+  "level": 2,
+  "conference": "ESBES — European Symposium on Biochemical Engineering Sciences",
+  "society": "ESBES",
+  "country": "Europe",
+  "events_per_yr": null,
+  "notes": "biennial; 15th 2026 Delft | biochemistry boundary, co-located with ECCE/ECAB | Phase 1 source: https://efce.info/events_overview.html"
+ },
+ {
+  "row": 86,
+  "level": 2,
+  "conference": "CORESTA Congress",
+  "society": "CORESTA (Cooperation Centre for Scientific Research Relative to Tobacco)",
+  "country": "international",
+  "events_per_yr": null,
+  "notes": "biennial; 2026 edition | leading tobacco-science conference, 165 member orgs | Phase 1 source: https://congress2026.coresta.org/"
+ },
+ {
+  "row": 89,
+  "level": 2,
+  "conference": "FEBS3+ Meeting",
+  "society": "FEBS constituent societies",
+  "country": "Europe",
+  "events_per_yr": null,
+  "notes": "recurring joint meetings of 3+ national societies | FEBS regional series distinct from the main congress | Phase 1 source: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12871556/"
+ },
+ {
+  "row": 92,
+  "level": 2,
+  "conference": "TAPPI PEERS Conference (Pulping, Engineering, Environmental, Recycling, Sustainability)",
+  "society": "TAPPI",
+  "country": "US/international",
+  "events_per_yr": null,
+  "notes": "annual, often with IBBC | pulp and paper gap — foremost technical event in the sector | Phase 1 source: https://www.tappi.org/event/calendar/all-events/"
+ },
+ {
+  "row": 95,
+  "level": 2,
+  "conference": "Canadian Materials Science Conference (CMSC)",
+  "society": "MetSoc of CIM",
+  "country": "Canada",
+  "events_per_yr": null,
+  "notes": "annual | materials boundary, Canadian national series | Phase 1 source: https://www.metsoc.org/conferences-events/"
+ },
+ {
+  "row": 98,
+  "level": 2,
+  "conference": "ISMC — International Symposium on Materials Chemistry (BARC Mumbai)",
+  "society": "Society for Materials Chemistry (SMC), BARC — 4,000+ life members",
+  "country": "India",
+  "events_per_yr": null,
+  "notes": "biennial, 11th edition (Dec 2026) | recurring national symposium of an Indian learned society | Phase 1 source: https://www.smcindia.org/ismc-2026/"
+ },
+ {
+  "row": 101,
+  "level": 1,
+  "conference": "RSC Faraday Discussions",
+  "society": "Royal Society of Chemistry",
+  "country": "UK",
+  "events_per_yr": null,
+  "notes": "series, several per year | long-running series; small per meeting"
+ },
+ {
+  "row": 104,
+  "level": 1,
+  "conference": "Institute of Chemistry of Ireland Annual Congress",
+  "society": "Institute of Chemistry of Ireland",
+  "country": "Ireland",
+  "events_per_yr": null,
+  "notes": "annual | EuChemS member society meeting | Phase 1 source: https://www.euchems.eu/members-3/member-societies/"
+ },
+ {
+  "row": 107,
+  "level": 1,
+  "conference": "analytica Anacon India",
+  "society": "Messe München India",
+  "country": "India",
+  "events_per_yr": null,
+  "notes": "annual | Indian node of the analytica network with conference programme | Phase 1 source: https://analytica.de/en/trade-fair-network/"
+ },
+ {
+  "row": 110,
+  "level": 1,
+  "conference": "JNOST (J-NOST Conference for Research Scholars in Organic Chemistry)",
+  "society": "Indian organic chemistry community / NOST",
+  "country": "India",
+  "events_per_yr": null,
+  "notes": "annual | recurring Indian national organic chemistry conference | Phase 1 source: https://crsi-india.org/"
+ },
+ {
+  "row": 113,
+  "level": 1,
+  "conference": "Reaction Mechanisms Conference",
+  "society": "independent (North America)",
+  "country": "US",
+  "events_per_yr": null,
+  "notes": "biennial | long-running mechanistic organic chemistry conference | Phase 1 source: https://www.organicdivision.org/meetings/"
+ },
+ {
+  "row": 116,
+  "level": 1,
+  "conference": "ISoFT - International Symposium on Fluorous Technologies",
+  "society": "international steering committee",
+  "country": "international",
+  "events_per_yr": null,
+  "notes": "every three years, alongside ISFC | companion fluorous technologies symposium | Phase 1 source: https://isfc2027.com/welcome"
+ },
+ {
+  "row": 119,
+  "level": 1,
+  "conference": "Gordon Research Conference on Solid State Chemistry",
+  "society": "Gordon Research Conferences",
+  "country": "US",
+  "events_per_yr": null,
+  "notes": "biennial; 2026 edition | invite-led solid state chemistry conference | Phase 1 source: https://www.grc.org/solid-state-chemistry-conference/"
+ },
+ {
+  "row": 122,
+  "level": 1,
+  "conference": "Western Coatings Symposium",
+  "society": "Western Coatings Societies",
+  "country": "US",
+  "events_per_yr": null,
+  "notes": "biennial | long-running regional coatings technical symposium | Phase 1 source: https://en.wikipedia.org/wiki/Western_Coatings_Symposium"
+ },
+ {
+  "row": 125,
+  "level": 1,
+  "conference": "yCAM — young Ceramists Additive Manufacturing Forum",
+  "society": "European Ceramic Society (ECerS)",
+  "country": "Europe",
+  "events_per_yr": null,
+  "notes": "annual; May 2026 Ljubljana | ECerS satellite series | Phase 1 source: https://ecers.org/en/ec/conferences-calendar"
+ },
+ {
+  "row": 128,
+  "level": 1,
+  "conference": "TAPPI IBBC — International Bioenergy and Bioproducts Conference",
+  "society": "TAPPI",
+  "country": "US",
+  "events_per_yr": null,
+  "notes": "annual, co-located with PEERS | applied chemistry conference series | Phase 1 source: https://ondemand.tappi.org/tag/peers-conference/"
+ },
+ {
+  "row": 131,
+  "level": 1,
+  "conference": "ISEO — International Symposium on Essential Oils",
+  "society": "essential oils research community (Olf'Active and partners)",
+  "country": "Europe",
+  "events_per_yr": null,
+  "notes": "annual; ISEO 2026 | academic counterpart to IFEAT | Phase 1 source: https://www.olfactiveassociation.org/en/iseo-2026"
+ },
+ {
+  "row": 134,
+  "level": 1,
+  "conference": "SUR/FIN Manufacturing & Technology Trade Show and Conference",
+  "society": "NASF (National Association for Surface Finishing)",
+  "country": "US",
+  "events_per_yr": null,
+  "notes": "annual | applied chemistry gap — plating and surface finishing | Phase 1 source: https://nasf.org/sur-fin-certifications/"
+ },
+ {
+  "row": 137,
+  "level": 1,
+  "conference": "RSC–CRSI Joint Symposium in Chemical Sciences",
+  "society": "Chemical Research Society of India + Royal Society of Chemistry",
+  "country": "India",
+  "events_per_yr": null,
+  "notes": "annual | recurring national symposium of an Indian learned society | Phase 1 source: https://www.rsc.org/events/asia/india"
+ },
+ {
+  "row": 140,
+  "level": 1,
+  "conference": "National Symposium on Thermal Analysis (India)",
+  "society": "Indian Thermal Analysis Society (ITAS) / BARC",
+  "country": "India",
+  "events_per_yr": null,
+  "notes": "biennial | recurring national symposium of an Indian learned society | Phase 1 source: https://inis.iaea.org/records/vthac-rnj11"
+ }
+]

@@ -1,0 +1,110 @@
+[
+ {
+  "source": "pilot1",
+  "conference": "Annual Meeting of the Chemical Society of Japan (CSJ)",
+  "society": null,
+  "country": null,
+  "row": null
+ },
+ {
+  "source": "pilot1",
+  "conference": "Pittcon (Conference on Analytical Chemistry and Applied Spectroscopy)",
+  "society": null,
+  "country": null,
+  "row": null
+ },
+ {
+  "source": "pilot1",
+  "conference": "EuChemS Chemistry Congress (ECC)",
+  "society": null,
+  "country": null,
+  "row": null
+ },
+ {
+  "source": "pilot1",
+  "conference": "JSAC Annual Meeting (日本分析化学会年会)",
+  "society": null,
+  "country": null,
+  "row": null
+ },
+ {
+  "source": "pilot2",
+  "conference": "AIChE Annual Meeting",
+  "society": null,
+  "country": null,
+  "row": 19,
+  "category": "aiche"
+ },
+ {
+  "source": "pilot2",
+  "conference": "Gordon Research Conferences (GRC series)",
+  "society": null,
+  "country": null,
+  "row": 229,
+  "category": "invite-led"
+ },
+ {
+  "source": "pilot2",
+  "conference": "SPSJ Symposium on Macromolecules (高分子討論会)",
+  "society": null,
+  "country": null,
+  "row": 250,
+  "category": "japan-confit"
+ },
+ {
+  "source": "pilot2",
+  "conference": "CIESC Annual Meeting (中国化工学会年会)",
+  "society": null,
+  "country": null,
+  "row": 256,
+  "category": "chinese"
+ },
+ {
+  "source": "pilot2",
+  "conference": "Mendeleev Conference for Young Scientists (MENDELEEV, St Petersburg)",
+  "society": null,
+  "country": null,
+  "row": 292,
+  "category": "russian"
+ },
+ {
+  "source": "pilot2",
+  "conference": "中国化学会学术年会 (CCS National Congress)",
+  "society": null,
+  "country": null,
+  "row": 443,
+  "category": "chinese"
+ },
+ {
+  "source": "pilot2",
+  "conference": "全国理论与计算化学会议",
+  "society": null,
+  "country": null,
+  "row": 446,
+  "category": "chinese"
+ },
+ {
+  "source": "pilot2",
+  "conference": "Менделеевский съезд по общей и прикладной химии (Mendeleev Congress)",
+  "society": null,
+  "country": null,
+  "row": 478,
+  "category": "russian"
+ },
+ {
+  "source": "pilot2",
+  "conference": "РОСКАТАЛИЗ — Российский конгресс по катализу",
+  "society": null,
+  "country": null,
+  "row": 560,
+  "category": "russian"
+ },
+ {
+  "source": "pilot2",
+  "conference": "Reunión del Grupo Especializado de Ciencias y Tecnologías (Bio)analíticas (GCTbA) — RSEQ",
+  "society": null,
+  "country": null,
+  "row": 577,
+  "category": "implied"
+ }
+]

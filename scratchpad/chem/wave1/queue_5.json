@@ -1,0 +1,222 @@
+[
+ {
+  "row": 45,
+  "conference": "ACS Northeast Regional Meeting (NERM)",
+  "society": "American Chemical Society",
+  "country": "US",
+  "notes": "annual | ACS regional meeting | Phase 1 source: https://web.cvent.com/event/d2645e5c-9aca-4467-918a-5b4af40f6a33/summary",
+  "done": false,
+  "tier": "NOT YET CENSUSED",
+  "prio": null,
+  "score": 6
+ },
+ {
+  "row": 77,
+  "conference": "IUPAC International Conference on Chemistry Education (ICCE)",
+  "society": "IUPAC Committee on Chemistry Education",
+  "country": "international",
+  "notes": "biennial since 1969; 28th in Erzurum 2026 | global chemistry education conference | Phase 1 source: https://iccecrice2026.org/",
+  "done": false,
+  "tier": "NOT YET CENSUSED",
+  "prio": null,
+  "score": 6
+ },
+ {
+  "row": 125,
+  "conference": "EFMC-ACSMEDI Medicinal Chemistry Frontiers",
+  "society": "EFMC + ACS Division of Medicinal Chemistry",
+  "country": "international",
+  "notes": "annual; 2026 Dublin | transatlantic medicinal chemistry meeting | Phase 1 source: https://www.medchemfrontiers.org/",
+  "done": false,
+  "tier": "NOT YET CENSUSED",
+  "prio": null,
+  "score": 6
+ },
+ {
+  "row": 146,
+  "conference": "National Organic Chemistry Symposium (NOS)",
+  "society": "ACS Division of Organic Chemistry",
+  "country": "US",
+  "notes": "biennial | premier US organic chemistry symposium | Phase 1 source: https://www.organicdivision.org/meetings/",
+  "done": false,
+  "tier": "NOT YET CENSUSED",
+  "prio": null,
+  "score": 6
+ },
+ {
+  "row": 182,
+  "conference": "POLYSOLVAT - International Symposium on Polymer-Solvent Complexes and Intercalates",
+  "society": "IUPAC-endorsed",
+  "country": "international",
+  "notes": "biennial; 16th 2026 Tutzing | specialised polymer symposium series | Phase 1 source: https://iupac.org/events/category/international-conference/",
+  "done": false,
+  "tier": "NOT YET CENSUSED",
+  "prio": null,
+  "score": 6
+ },
+ {
+  "row": 79,
+  "conference": "EUROANALYSIS",
+  "society": "EuChemS Division of Analytical Chemistry",
+  "country": "Europe",
+  "notes": "biennial; XXIII in Dubrovnik 2027 | the European analytical chemistry congress | Phase 1 source: https://www.euchems.eu/divisions/analytical-chemistry/conferences/",
+  "done": false,
+  "tier": "NOT YET CENSUSED",
+  "prio": null,
+  "score": 5
+ },
+ {
+  "row": 180,
+  "conference": "ECSSC - European Conference on Solid State Chemistry",
+  "society": "EuChemS Division of Solid State and Materials Chemistry",
+  "country": "Europe",
+  "notes": "biennial; 19th 2025 Malaga | European solid state chemistry congress | Phase 1 source: https://www.euchems.eu/divisions/solid-state-and-materials-chemistry/conferences/",
+  "done": false,
+  "tier": "NOT YET CENSUSED",
+  "prio": null,
+  "score": 5
+ },
+ {
+  "row": 51,
+  "conference": "RSC Chemistry Means Business",
+  "society": "Royal Society of Chemistry",
+  "country": "UK",
+  "notes": "annual/biennial | RSC flagship industry meeting | Phase 1 source: https://www.rsc.org/events/find-an-event/events-by-topic/chemical-industry-events",
+  "done": false,
+  "tier": "NOT YET CENSUSED",
+  "prio": null,
+  "score": 4
+ },
+ {
+  "row": 65,
+  "conference": "SACI National Convention (South African Chemical Institute)",
+  "society": "South African Chemical Institute (SACI)",
+  "country": "South Africa",
+  "notes": "every ~3 years, plus annual divisional meetings | largest national chemistry meeting in Africa | Phase 1 source: https://faschem.co.za/societies-in-africa/",
+  "done": false,
+  "tier": "NOT YET CENSUSED",
+  "prio": null,
+  "score": 4
+ },
+ {
+  "row": 109,
+  "conference": "CAC - Chemometrics in Analytical Chemistry",
+  "society": "independent chemometrics community",
+  "country": "international",
+  "notes": "biennial; CAC-2026 Tarragona, Spain | principal chemometrics conference series | Phase 1 source: https://www.spectroscopyonline.com/view/previewing-the-chemometrics-in-analytical-chemistry-cac-2026-international-conference",
+  "done": false,
+  "tier": "NOT YET CENSUSED",
+  "prio": null,
+  "score": 4
+ },
+ {
+  "row": 122,
+  "conference": "WATOC Congress",
+  "society": "World Association of Theoretical and Computational Chemists",
+  "country": "international",
+  "notes": "triennial; 13th 2025 Oslo | largest theoretical/computational chemistry congress | Phase 1 source: https://watoc.net/watoc.past.html",
+  "done": false,
+  "tier": "NOT YET CENSUSED",
+  "prio": null,
+  "score": 4
+ },
+ {
+  "row": 131,
+  "conference": "MARC - International Conference on Methods and Applications of Radioanalytical Chemistry",
+  "society": "American Nuclear Society / radioanalytical community",
+  "country": "US (Hawaii)",
+  "notes": "roughly every three years since 1987 | major international radioanalytical forum | Phase 1 source: https://www.ans.org/meetings/view-433/",
+  "done": false,
+  "tier": "NOT YET CENSUSED",
+  "prio": null,
+  "score": 4
+ },
+ {
+  "row": 153,
+  "conference": "AAFS Annual Scientific Conference",
+  "society": "American Academy of Forensic Sciences",
+  "country": "US",
+  "notes": "annual since 1948; 79th edition | largest forensic science meeting, strong forensic chemistry track | Phase 1 source: https://www.aafs.org/annual-conference",
+  "done": false,
+  "tier": "NOT YET CENSUSED",
+  "prio": null,
+  "score": 4
+ },
+ {
+  "row": 162,
+  "conference": "ECBS - European Chemical Biology Symposium",
+  "society": "EU-OPENSCREEN ERIC",
+  "country": "Europe",
+  "notes": "biennial since 2008 | European chemical biology symposium | Phase 1 source: https://www.euchems.eu/events/international-chemical-biology-society-european-chemical-biology-symposium-joint-meeting-icbs-ecbs-joint-meeting/",
+  "done": false,
+  "tier": "NOT YET CENSUSED",
+  "prio": null,
+  "score": 4
+ },
+ {
+  "row": 173,
+  "conference": "ICTAC - International Congress on Thermal Analysis and Calorimetry",
+  "society": "International Confederation for Thermal Analysis and Calorimetry",
+  "country": "international",
+  "notes": "quadrennial; 18th 2024 India; 24 affiliated societies | world thermal analysis congress | Phase 1 source: http://www.ictac.org/",
+  "done": false,
+  "tier": "NOT YET CENSUSED",
+  "prio": null,
+  "score": 4
+ },
+ {
+  "row": 184,
+  "conference": "EWCPS - European Winter Conference on Plasma Spectrochemistry",
+  "society": "European plasma spectrochemistry community",
+  "country": "Europe",
+  "notes": "biennial (odd years) since 1985; 21st 2027 Athens | principal European plasma spectrochemistry conference | Phase 1 source: https://www.ewcps.eu/",
+  "done": false,
+  "tier": "NOT YET CENSUSED",
+  "prio": null,
+  "score": 4
+ },
+ {
+  "row": 196,
+  "conference": "IMLB - International Meeting on Lithium Batteries",
+  "society": "IMLB / electrochemical energy community",
+  "country": "international",
+  "notes": "biennial; 23rd 2026 Montreal | world lithium battery science conference | Phase 1 source: https://imlb.org/",
+  "done": false,
+  "tier": "NOT YET CENSUSED",
+  "prio": null,
+  "score": 4
+ },
+ {
+  "row": 207,
+  "conference": "ESCAPE — European Symposium on Computer Aided Process Engineering",
+  "society": "EFCE",
+  "country": "Europe",
+  "notes": "annual; ESCAPE 37 in 2027 | long-running EFCE symposium series | Phase 1 source: https://efce.info/events_overview.html",
+  "done": false,
+  "tier": "NOT YET CENSUSED",
+  "prio": null,
+  "score": 4
+ },
+ {
+  "row": 228,
+  "conference": "Biophysical Society Annual Meeting",
+  "society": "Biophysical Society",
+  "country": "US",
+  "notes": "annual; 70th Feb 2026 San Francisco | biochemistry/physical chemistry boundary, very large meeting | Phase 1 source: https://www.biophysics.org/2026meeting",
+  "done": false,
+  "tier": "NOT YET CENSUSED",
+  "prio": null,
+  "score": 4
+ },
+ {
+  "row": 241,
+  "conference": "AFPM Annual Meeting",
+  "society": "American Fuel & Petrochemical Manufacturers",
+  "country": "US",
+  "notes": "annual; 2026 edition | world's premier refining meeting — petroleum gap | Phase 1 source: https://www.afpm.org/events/AnnualMeeting2026",
+  "done": false,
+  "tier": "NOT YET CENSUSED",
+  "prio": null,
+  "score": 4
+ }
+]

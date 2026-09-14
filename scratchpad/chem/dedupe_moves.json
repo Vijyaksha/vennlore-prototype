@@ -1,0 +1,187 @@
+[
+ {
+  "row": 61,
+  "expected_name": "CRSI National Symposium in Chemistry (NSC)",
+  "why": "DUPLICATE of row 10 (CSI — Chemical Research Society of India / ICS Annual Convention) — same meeting (CRSI National Symposium in Chemistry). Survivor keeps the best-evidenced figure (297); this copy's own figure was 297."
+ },
+ {
+  "row": 101,
+  "expected_name": "CRSI National Symposium in Chemistry (CRSI-NSC)",
+  "why": "DUPLICATE of row 10 (CSI — Chemical Research Society of India / ICS Annual Convention) — same meeting (CRSI National Symposium in Chemistry). Survivor keeps the best-evidenced figure (297); this copy's own figure was 449."
+ },
+ {
+  "row": 258,
+  "expected_name": "Indian Chemical Society Annual Convention",
+  "why": "DUPLICATE of row 60 (Indian Chemical Society Annual Convention / National Convention of Chemists) — same meeting (Indian Chemical Society Annual Convention). Survivor keeps the best-evidenced figure (222); this copy's own figure was None."
+ },
+ {
+  "row": 123,
+  "expected_name": "EFMC Medicinal Chemistry / EFMC-ISMC International Symposium on Medicinal Chemistry",
+  "why": "DUPLICATE of row 32 (EFMC-ISMC — International Symposium on Medicinal Chemistry) — same meeting (EFMC-ISMC). Survivor keeps the best-evidenced figure (645); this copy's own figure was 488."
+ },
+ {
+  "row": 22,
+  "expected_name": "EUCHEM / ESOC — European Symposium on Organic Chemistry",
+  "why": "DUPLICATE of row 80 (European Symposium on Organic Chemistry (ESOC)) — same meeting (ESOC). Survivor keeps the best-evidenced figure (371); this copy's own figure was None."
+ },
+ {
+  "row": 138,
+  "expected_name": "ESOR - European Symposium on Organic Reactivity",
+  "why": "DUPLICATE of row 84 (European Symposium on Organic Reactivity (ESOR)) — same meeting (ESOR). Survivor keeps the best-evidenced figure (34); this copy's own figure was None."
+ },
+ {
+  "row": 105,
+  "expected_name": "European Conference on Research in Chemical Education (ECRICE)",
+  "why": "DUPLICATE of row 78 (EuChemS European Conference on Research in Chemical Education (ECRICE)) — same meeting (ECRICE). Survivor keeps the best-evidenced figure (204); this copy's own figure was 204."
+ },
+ {
+  "row": 106,
+  "expected_name": "International Conference on Chemistry Education (ICCE)",
+  "why": "DUPLICATE of row 77 (IUPAC International Conference on Chemistry Education (ICCE)) — same meeting (IUPAC ICCE (chemistry education)). Survivor keeps the best-evidenced figure (204); this copy's own figure was 204."
+ },
+ {
+  "row": 231,
+  "expected_name": "EUROCORR — European Corrosion Congress",
+  "why": "DUPLICATE of row 175 (EUROCORR - The European Corrosion Congress) — same meeting (EUROCORR). Survivor keeps the best-evidenced figure (855); this copy's own figure was 855."
+ },
+ {
+  "row": 81,
+  "expected_name": "EuropaCat (European Congress on Catalysis)",
+  "why": "DUPLICATE of row 27 (EuropaCat) — same meeting (EuropaCat). Survivor keeps the best-evidenced figure (1570); this copy's own figure was 1506."
+ },
+ {
+  "row": 55,
+  "expected_name": "European Congress of Chemical Engineering (ECCE)",
+  "why": "DUPLICATE of row 16 (ECCE — European Congress of Chemical Engineering) — same meeting (ECCE). Survivor keeps the best-evidenced figure (None); this copy's own figure was None."
+ },
+ {
+  "row": 21,
+  "expected_name": "ISC — International Symposium on Chromatography",
+  "why": "DUPLICATE of row 107 (International Symposium on Chromatography (ISC)) — same meeting (International Symposium on Chromatography). Survivor keeps the best-evidenced figure (324); this copy's own figure was None."
+ },
+ {
+  "row": 50,
+  "expected_name": "Faraday Discussions (RSC conference series)",
+  "why": "DUPLICATE of row 13 (RSC Faraday Discussions) — same meeting (Faraday Discussions). Survivor keeps the best-evidenced figure (None); this copy's own figure was None."
+ },
+ {
+  "row": 151,
+  "expected_name": "Faraday Discussions",
+  "why": "DUPLICATE of row 13 (RSC Faraday Discussions) — same meeting (Faraday Discussions). Survivor keeps the best-evidenced figure (None); this copy's own figure was None."
+ },
+ {
+  "row": 89,
+  "expected_name": "IChemE Annual Conference / Hazards conference series",
+  "why": "DUPLICATE of row 206 (Hazards (IChemE Process Safety Conference)) — same meeting (IChemE Hazards). Survivor keeps the best-evidenced figure (81); this copy's own figure was None."
+ },
+ {
+  "row": 30,
+  "expected_name": "Gordon Research Conferences (series)",
+  "why": "DUPLICATE of row 74 (Gordon Research Conferences (GRC series)) — same meeting (Gordon Research Conferences (series)). Survivor keeps the best-evidenced figure (200); this copy's own figure was None."
+ },
+ {
+  "row": 108,
+  "expected_name": "HPLC - International Symposium on High Performance Liquid Phase Separations and Related Techniques",
+  "why": "DUPLICATE of row 20 (HPLC Symposium (International Symposium on High Performance Liquid Phase Separations)) — same meeting (HPLC Symposium). Survivor keeps the best-evidenced figure (657); this copy's own figure was 653."
+ },
+ {
+  "row": 35,
+  "expected_name": "IFT FIRST (Institute of Food Technologists)",
+  "why": "DUPLICATE of row 157 (IFT FIRST / IFT Annual Event & Food Expo) — same meeting (IFT FIRST). Survivor keeps the best-evidenced figure (~450 REPORTED BY SOURCE, NOT COUNTED — see Method column); this copy's own figure was None."
+ },
+ {
+  "row": 146,
+  "expected_name": "National Organic Chemistry Symposium (NOS)",
+  "why": "DUPLICATE of row 91 (ACS National Organic Chemistry Symposium (NOS)) — same meeting (NOS). Survivor keeps the best-evidenced figure (268); this copy's own figure was 268."
+ },
+ {
+  "row": 66,
+  "expected_name": "Pittcon (Pittsburgh Conference on Analytical Chemistry and Applied Spectroscopy)",
+  "why": "DUPLICATE of row 18 (Pittcon (Conference on Analytical Chemistry and Applied Spectroscopy)) — same meeting (Pittcon). Survivor keeps the best-evidenced figure (1500); this copy's own figure was '~1,500 REPORTED BY SOURCE, NOT COUNTED — see Method column'."
+ },
+ {
+  "row": 11,
+  "expected_name": "RACI National Convention",
+  "why": "DUPLICATE of row 58 (RACI National Congress) — same meeting (RACI National Congress). Survivor keeps the best-evidenced figure (484); this copy's own figure was None."
+ },
+ {
+  "row": 191,
+  "expected_name": "Telluride Science Workshops (series)",
+  "why": "DUPLICATE of row 76 (Telluride Science Research Center workshops) — same meeting (Telluride workshops). Survivor keeps the best-evidenced figure (None); this copy's own figure was None."
+ },
+ {
+  "row": 140,
+  "expected_name": "ACS Colloid and Surface Science Symposium",
+  "why": "DUPLICATE of row 92 (ACS Colloid and Surface Science Symposium (CSSS)) — same meeting (ACS CSSS). Survivor keeps the best-evidenced figure (313); this copy's own figure was None."
+ },
+ {
+  "row": 33,
+  "expected_name": "ACS Green Chemistry & Engineering Conference",
+  "why": "DUPLICATE of row 127 (ACS Green Chemistry & Engineering Conference (GC&E)) — same meeting (ACS GC&E). Survivor keeps the best-evidenced figure (~400 REPORTED BY SOURCE, NOT COUNTED — see Method column); this copy's own figure was None."
+ },
+ {
+  "row": 67,
+  "expected_name": "AIChE Spring Meeting and Global Congress on Process Safety",
+  "why": "DUPLICATE of row 15 (AIChE Spring Meeting & Global Congress on Process Safety) — same meeting (AIChE Spring Meeting). Survivor keeps the best-evidenced figure (None); this copy's own figure was None."
+ },
+ {
+  "row": 68,
+  "expected_name": "AOCS Annual Meeting & Expo",
+  "why": "DUPLICATE of row 36 (AOCS Annual Meeting (American Oil Chemists Society)) — same meeting (AOCS Annual Meeting). Survivor keeps the best-evidenced figure (None); this copy's own figure was None."
+ },
+ {
+  "row": 70,
+  "expected_name": "ASBMB Annual Meeting (Discover BMB)",
+  "why": "DUPLICATE of row 226 (ASBMB Annual Meeting) — same meeting (ASBMB Annual Meeting). Survivor keeps the best-evidenced figure (1516); this copy's own figure was None."
+ },
+ {
+  "row": 69,
+  "expected_name": "AACC Annual Meeting (Cereals & Grains Association)",
+  "why": "DUPLICATE of row 37 (AACC/ADPI cereal chemistry (Cereals & Grains Annual Meeting)) — same meeting (Cereals & Grains (AACC)). Survivor keeps the best-evidenced figure (None); this copy's own figure was None."
+ },
+ {
+  "row": 82,
+  "expected_name": "International Congress on Catalysis (ICC)",
+  "why": "DUPLICATE of row 26 (ICC — International Congress on Catalysis) — same meeting (ICC International Congress on Catalysis). Survivor keeps the best-evidenced figure (1878); this copy's own figure was None."
+ },
+ {
+  "row": 88,
+  "expected_name": "International Conference on Coordination Chemistry (ICCC)",
+  "why": "DUPLICATE of row 23 (ICCC — International Conference on Coordination Chemistry) — same meeting (ICCC Coordination Chemistry). Survivor keeps the best-evidenced figure (None); this copy's own figure was None."
+ },
+ {
+  "row": 115,
+  "expected_name": "ISE Annual Meeting",
+  "why": "DUPLICATE of row 25 (ISE Annual Meeting (International Society of Electrochemistry)) — same meeting (ISE Annual Meeting). Survivor keeps the best-evidenced figure (None); this copy's own figure was None."
+ },
+ {
+  "row": 17,
+  "expected_name": "WCCE — World Congress of Chemical Engineering",
+  "why": "DUPLICATE of row 57 (World Congress of Chemical Engineering (WCCE)) — same meeting (WCCE). Survivor keeps the best-evidenced figure (1312); this copy's own figure was None."
+ },
+ {
+  "row": 6,
+  "expected_name": "ACS Regional Meetings (MARM, NERM, SERMACS, MWRM, SWRM, NORM, WRM, CERM)",
+  "why": "Aggregate row covering the eight ACS regional meetings already listed individually (rows 40-48); its 1,450 is SERMACS's figure. Double-counts every regional meeting."
+ },
+ {
+  "row": 34,
+  "expected_name": "SETAC Annual Meeting (Europe + North America)",
+  "why": "Aggregate row 'SETAC Europe + North America' — both meetings already have their own rows (72, 73). Double-counts both."
+ },
+ {
+  "row": 71,
+  "expected_name": "SOT Annual Meeting and ToxExpo",
+  "why": "Already counted on Census - Medicine & Health (SOT Annual Meeting, 2,276 abstracts) — parked so it is not double counted. Bookkeeping exclusion, NOT a size judgement."
+ },
+ {
+  "row": 129,
+  "expected_name": "ACA Annual Meeting",
+  "why": "Already on Deleted - Physical Sciences row 21 (ACA Annual Meeting, counted 390). Bookkeeping exclusion; count once."
+ },
+ {
+  "row": 31,
+  "expected_name": "ACA Annual Meeting (American Crystallographic Association)",
+  "why": "Already on Deleted - Physical Sciences row 21 (ACA Annual Meeting, counted 390). Bookkeeping exclusion; count once."
+ }
+]

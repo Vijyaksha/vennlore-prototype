@@ -1,0 +1,162 @@
+[
+  {
+    "row": 5,
+    "conference": "ASCB|EMBO Cell Bio Annual Meeting",
+    "society": "American Society for Cell Biology",
+    "country": "US",
+    "subfield": "cell biology",
+    "notes": "annual | knowledge-first list"
+  },
+  {
+    "row": 6,
+    "conference": "American Physiology Summit",
+    "society": "American Physiological Society",
+    "country": "US",
+    "subfield": "physiology",
+    "notes": "annual (successor to Experimental Biology) | knowledge-first list"
+  },
+  {
+    "row": 7,
+    "conference": "ASPET Annual Meeting",
+    "society": "American Society for Pharmacology and Experimental Therapeutics",
+    "country": "US",
+    "subfield": "pharmacology",
+    "notes": "annual | knowledge-first list | NOTE: standalone successor to 'ASPET at EB' (Deleted - Medicine, deleted because Experimental Biology ended) — not a duplicate"
+  },
+  {
+    "row": 8,
+    "conference": "AAA Annual Meeting (Anatomy Connected)",
+    "society": "American Association for Anatomy",
+    "country": "US",
+    "subfield": "anatomy",
+    "notes": "annual | knowledge-first list"
+  },
+  {
+    "row": 10,
+    "conference": "Annual Drosophila Research Conference",
+    "society": "Genetics Society of America",
+    "country": "US",
+    "subfield": "genetics",
+    "notes": "annual | knowledge-first list"
+  },
+  {
+    "row": 13,
+    "conference": "Plant and Animal Genome Conference (PAG)",
+    "society": "PAG / Scherago",
+    "country": "US",
+    "subfield": "genomics",
+    "notes": "annual | knowledge-first list"
+  },
+  {
+    "row": 21,
+    "conference": "Cognitive Neuroscience Society Annual Meeting",
+    "society": "CNS",
+    "country": "US",
+    "subfield": "neuroscience",
+    "notes": "annual | knowledge-first list"
+  },
+  {
+    "row": 22,
+    "conference": "Vision Sciences Society Annual Meeting (VSS)",
+    "society": "VSS",
+    "country": "US",
+    "subfield": "neuroscience",
+    "notes": "annual | knowledge-first list"
+  },
+  {
+    "row": 27,
+    "conference": "Entomology (ESA Annual Meeting)",
+    "society": "Entomological Society of America",
+    "country": "US",
+    "subfield": "entomology",
+    "notes": "annual | knowledge-first list | NOTE: Entomological Society of America — NOT the Ecological Society of America row on Census - Physical Sciences"
+  },
+  {
+    "row": 28,
+    "conference": "SICB Annual Meeting",
+    "society": "Society for Integrative and Comparative Biology",
+    "country": "US",
+    "subfield": "organismal biology",
+    "notes": "annual | knowledge-first list"
+  },
+  {
+    "row": 31,
+    "conference": "The Wildlife Society Annual Conference",
+    "society": "TWS",
+    "country": "US",
+    "subfield": "wildlife biology",
+    "notes": "annual | knowledge-first list"
+  },
+  {
+    "row": 32,
+    "conference": "American Fisheries Society Annual Meeting",
+    "society": "AFS",
+    "country": "US",
+    "subfield": "fisheries",
+    "notes": "annual | knowledge-first list"
+  },
+  {
+    "row": 36,
+    "conference": "Ocean Sciences Meeting",
+    "society": "AGU / ASLO / TOS",
+    "country": "US",
+    "subfield": "ocean sciences",
+    "notes": "biennial | knowledge-first list"
+  },
+  {
+    "row": 39,
+    "conference": "Botany Conference",
+    "society": "Botanical Society of America (+ ASPT etc.)",
+    "country": "US",
+    "subfield": "botany",
+    "notes": "annual | knowledge-first list"
+  },
+  {
+    "row": 40,
+    "conference": "Plant Biology (ASPB Annual Meeting)",
+    "society": "American Society of Plant Biologists",
+    "country": "US",
+    "subfield": "plant biology",
+    "notes": "annual | knowledge-first list"
+  },
+  {
+    "row": 41,
+    "conference": "Plant Health (APS Annual Meeting)",
+    "society": "American Phytopathological Society",
+    "country": "US",
+    "subfield": "plant pathology",
+    "notes": "annual | knowledge-first list"
+  },
+  {
+    "row": 42,
+    "conference": "ASA-CSSA-SSSA International Annual Meeting (CANVAS)",
+    "society": "Agronomy / Crop / Soil Science Societies",
+    "country": "US",
+    "subfield": "agronomy",
+    "notes": "annual | knowledge-first list"
+  },
+  {
+    "row": 46,
+    "conference": "ASAS Annual Meeting (American Society of Animal Science)",
+    "society": "American Society of Animal Science",
+    "country": "US",
+    "subfield": "animal science",
+    "notes": "annual | knowledge-first list; renamed from 'ASAS-ADSA Joint Annual Meeting' — ADSA now holds its own annual meeting (separate row); verify the split in Phase 2"
+  },
+  {
+    "row": 57,
+    "conference": "ABRCMS (Annual Biomedical Research Conference for Minoritized Scientists)",
+    "society": "ASM",
+    "country": "US",
+    "subfield": "student research",
+    "notes": "annual | knowledge-first list"
+  },
+  {
+    "row": 58,
+    "conference": "SACNAS National Diversity in STEM Conference (NDiSTEM)",
+    "society": "SACNAS",
+    "country": "US",
+    "subfield": "student research",
+    "notes": "annual | knowledge-first list"
+  }
+]

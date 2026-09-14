@@ -1,0 +1,13 @@
+{
+ "sweeps_done": [
+  "knowledge",
+  "federations",
+  "countries",
+  "subfields",
+  "gaps",
+  "second_pass"
+ ],
+ "names": 732,
+ "searches_used": 78,
+ "in_flight": "none"
+}

@@ -1,0 +1,22 @@
+{
+ "Census - Chemistry": {
+  "rows": 785,
+  "include_x_events": 0.0,
+  "tiers": {
+   "VERIFIED": 16,
+   "BORDERLINE": 39,
+   "OUT": 211,
+   "NOT YET CENSUSED": 519
+  }
+ },
+ "Deleted - Chemistry": {
+  "rows": 60,
+  "include_x_events": 0.0,
+  "tiers": {
+   "OUT": 27,
+   "NOT YET CENSUSED": 26,
+   "BORDERLINE": 5,
+   "VERIFIED": 2
+  }
+ }
+}

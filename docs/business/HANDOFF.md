@@ -3,7 +3,206 @@
 State of play for the next session. The method lives in `census-methodology.md` (general, all
 fields) and `field-notes/<field>.md` (field-specific). This file is only where we stopped.
 
-## Where we stopped — 2026-09-12 (second session)
+## Where we stopped — 2026-09-13 (life sciences)
+
+**Rupert's direction this session: "We're going to the life sciences now."** Chemistry phase 2 is
+parked mid-way (see the 2026-09-12 section below, which is still accurate for chemistry, medicine and
+physical sciences except where this section says otherwise).
+
+### THE NEXT SESSION DOES THESE, IN ORDER (Rupert, end of 2026-09-13)
+
+**What this session did, in one paragraph.** Finished the US life-sciences census (90 rows, three
+agents, rung 5 by the orchestrator; 7 VERIFIED / 38 BORDERLINE / 101 deleted). Ran a global
+English-language life-sciences phase 1 (732 names, not loaded; a 74-row shortlist is on disk).
+Compared the 900 floor against a 500 floor across the whole workbook; Rupert kept the bar
+(VERIFIED ≥1,500, floor ~900 with the 800 leeway). Built `Census - CS & Engineering` from DBLP's
+SPARQL endpoint plus Crossref's proceedings index — 62 live rows (18 VERIFIED, 44 BORDERLINE) and 4
+deleted — with tested code (`scratchpad/dblplib.py`, `scratchpad/cs/build_cs_sheet.py`). Workbook-wide
+there are now **367 conferences at or above 800 abstracts (197 at or above 1,500)** across five
+fields; medicine is just under half. All of it is UNCOMMITTED.
+
+**CURRENT PLAN — Rupert's last instruction, supersedes the numbered order below where they differ:**
+
+- **Step A. Commit** (step 0 below, unchanged).
+- **Step B. CS & Engineering phase 1, second pass — Rupert suspects the 62 are not all of it.**
+  DBLP and Crossref only see conferences whose proceedings are indexed; large engineering meetings
+  that publish through society presses or not at all are invisible to both (ASME IMECE and
+  Turbo Expo, ASCE, SAE WCX, TRB Annual Meeting, SPE ATCE/OTC, ASHRAE, IEEE PES General Meeting,
+  ISSCC/IMS/IEDM if under-indexed, the national CS/engineering societies IEICE, IPSJ, JSAI, CCF,
+  KIISE, VDI/VDE, IET, Engineers Australia, plus the big Chinese/Indian IEEE-section conferences).
+  Run ONE Opus phase-1 agent (discovery is a saturation judgement — do not split it), **English-
+  language searching**, target **60–70 new candidate names** that plausibly clear ~900 accepted
+  presentations. Inputs it gets: the field-agnostic phase-1 rules in `census-methodology.md`, the
+  chemistry phase-1 brief as a template (`scratchpad/chem/p1-BRIEF.md`), and an exclusion list of
+  everything already known — the 66 rows on the two CS & Engineering sheets, every name on the
+  other sheets (regenerate `existing_names.json` from the workbook), and the Crossref ≥300
+  container list in `scratchpad/cs/dblp_probe/crossref_proc_2025.json` (already checked). Names only,
+  over-include, `implied` allowed, ~60 searches. Output `scratchpad/cs/p1/names.json` + `STATUS.json`,
+  written after every sweep.
+- **Step C. Phase 2 on those 60–70 names**, cheapest rung first: for each name try DBLP SPARQL and
+  the Crossref facet by exact title FIRST (zero searches; `dblplib` has the row builders), then the
+  ordinary ladder for the rest (society proceedings, programme PDFs, Confex/eventScribe), rung 5 to
+  the orchestrator, rung 9 last. Append the names to `Census - CS & Engineering` as
+  `NOT YET CENSUSED` inside the totals range before writing figures; OUT rows to the deleted sheet.
+- **Step D (later).** The 74-row life-sciences shortlist (step 1 below) and the engineering-society
+  local-language sweep; Rupert has not scheduled these.
+
+0. **Commit first.** This session's census work — the workbook, this file, `census-methodology.md`,
+   `field-notes/life-sciences.md` — is in the working tree UNCOMMITTED. The "revert a bad write with
+   `git checkout`" safety net does not exist until it is committed. Run the 75+ tests
+   (`cd scratchpad && python3 -m pytest test_attlib.py test_chemlib.py test_pilotlib.py test_ccslib.py test_writeback.py test_dedupe.py -q`,
+   99 green on 2026-09-13), then commit as `feat(census): life sciences US phase 2 wave 1 + global phase 1 list`.
+   Also confirm `echo $CLAUDE_CODE_MAX_WEB_SEARCHES_PER_SESSION` is ~1000 and spend one throwaway search.
+
+1. **Close life sciences with a cheap positives-only pass, NOT a full census of the 732 names.**
+   Rupert's read (agreed): the field's big meetings were already caught by medicine, the hit rate has
+   fallen to ~5% of names, and the 434 implied placeholders will resolve small like RSEQ did. So:
+   - Queue: `scratchpad/life/p1_global/shortlist.json` — **74 named meetings** picked by the
+     orchestrator as the only plausible ≥900s (federation flagships such as FENS, FEBS/EMBO, ISME,
+     ESEB, ICN, ESHG, HUPO, ICP; large national societies — MBSJ, JBS, Japan Neuroscience, JSI,
+     JSPP, ESJ, CSCB, CSBMB, KSBMB, KSMCB, SBPC, SBBq, BES, VAAM, Microbiology Society UK …). Each
+     record carries `shortlist_reason`. The other 658 names stay in `names.json`, unloaded.
+   - Run: **one or two Opus `census-researcher` agents**, wave-1 brief pattern
+     (`scratchpad/life/wave1/BRIEF.md`) with three changes: scope is GLOBAL and the local-language
+     rule APPLIES (JP/CN/KR/PT rows — terms are in `p1_global/REPORT.md`); rule 1 is in force
+     (positives only, `UNRESOLVED` after 2 searches is fine, never `OUT` on an empty search); return
+     `events_per_yr` as before. Expect ~1 search/row, ~80 searches.
+   - Writeback: first append the shortlist rows to `Census - Life Sciences` as `NOT YET CENSUSED`
+     inside the totals range (rows 5–514 are the range; 45 live rows occupy 5–114 plus gaps — append
+     from the first free row and make sure it is <514, or widen the six totals formulas at rows
+     516–521), change the header note from US-only to global, then reuse `apply_wave1.py` logic
+     (copy it as `apply_shortlist.py`; the tested writers `writeback`, `attlib`, `dedupe` are
+     field-agnostic). Anything not clearing the floor goes to `Deleted - Life Sciences` as usual.
+   - Then declare life sciences CLOSED in the methodology status table and here.
+
+2. **CS & AI + IEEE engineering — DONE 2026-09-13 as `Census - CS & Engineering` / `Deleted - CS & Engineering`.**
+   Rupert's call: one new sheet for CS + AI + IEEE engineering, bar unchanged (VERIFIED ≥1,500; floor
+   ~900 with the 800 leeway). Built by `scratchpad/cs/build_cs_sheet.py` over `scratchpad/dblplib.py`
+   (15 tests): DBLP SPARQL stream counts (main-track volumes only; workshop/companion volumes split
+   out and recorded) + Crossref proceedings-article facets as the independent second source and as
+   the catch for series DBLP lacks (CCC, CAC, CCDC, IEOM, ENEGEP, COBEM, AHFE, LACCEI, AP-S/URSI,
+   ECCE, EuCAP, EAGE, ADIPEC, PIERS, ICOPS, IPEMC, ICMMT, Forum Acusticum, ICCIT, COBRAMSEG).
+   **Result: 62 live rows = 18 VERIFIED (16.5 events/yr) + 44 BORDERLINE (39.82 events/yr); 4 on the
+   deleted sheet (EMBC = already on medicine; ISBI 638, WCNC 721, WWW 447 OUT).** Where both sources
+   have the meeting they agree within a few papers (CVPR 2,871 vs 2,881; ICRA 1,604 vs 1,610).
+   Comprehensiveness check answered: DBLP alone missed ~20 large engineering series that Crossref
+   holds, so the sheet uses both; what NEITHER covers is national-society mass meetings without
+   indexed proceedings (IEICE/IPSJ general conferences, JSAI, CCF congresses, KIISE) — a short
+   local-language phase 1 for those is the only remaining CS/engineering work. Review notes on the
+   sheet: IEOM held at BORDERLINE (its Crossref container aggregates several meetings); ECCV/ICCV
+   biennial; boundary rows flagged in the Umbrella column (CogSci, HICSS, BIBM, MICCAI, EAGE, ADIPEC,
+   PIERS, ICOPS, Forum Acusticum); ICCCNT (2,463) is an IEEE-published Indian mega-conference of low
+   selectivity — real by count, worth Rupert's eye.
+   **Leads handed to other fields by the Crossref pass** (`scratchpad/cs/dblp_probe/plan.json` →
+   `handed_over`): AERA ~4,700 papers/yr (social sciences — the largest social-science meeting seen);
+   IATED's EDULEARN/ICERI/INTED 1,250–1,700 each (education); ESGE Days 1,619, SEMG 974, and four
+   journal-supplement containers (medicine); ICRC 1,041 (physics); CONIC 1,125 (undergraduate research).
+   Full detail on the run: `scratchpad/cs/dblp_probe/` (SPARQL pulls, Crossref facets, plan.json).
+
+   The original phase-1 plan for this field follows for the record; only the national-society sweep remains.
+   **Start the next field: computer science & AI, as its OWN field (not merged with engineering),
+   global scope from the start, phase 1 only this session.** Rupert chose engineering/CS/AI as the
+   next adjacent field; the orchestrator recommended and Rupert accepted running CS/AI first and
+   engineering afterwards as a separate field. Reasons on record: phase 1 saturation judgement
+   breaks above ~800 names (engineering alone is >1,000 IEEE meetings); CS/AI is the best-indexed
+   field there is (DBLP per-paper listings, OpenReview submission/acceptance counts, ACL Anthology,
+   published acceptance statistics) so most rows will count at zero searches; CS/AI conferences
+   rotate globally and belong to no national society, so there is no US-only phase.
+   - **Unit is settled**: accepted contributed presentations = accepted papers (main track + posters;
+     workshops separate). The old note that CS "needs a bar redefinition" is void.
+   - **Boundary, decide once and write into new `field-notes/cs-ai.md`** (orchestrator's proposal,
+     confirm with Rupert): CS/AI sheet = ACM SIGs, AAAI, the ML/NLP/vision/HCI/data/systems/theory
+     communities, IEEE Computer Society meetings; engineering sheet (later) = robotics (ICRA/IROS),
+     signal processing, communications, power and the rest of IEEE, ASME, ASCE, SAE, TRB.
+   - **PHASE 1 AND MOST OF PHASE 2 COLLAPSE INTO ONE QUERY — proven 2026-09-13.** DBLP's public
+     SPARQL endpoint `https://sparql.dblp.org/sparql` is OPEN to plain requests (dblp.org's HTML,
+     search API and XML dump now sit behind an Anubis anti-bot challenge, which a Playwright session
+     clears in ~8 s; the SPARQL host does not challenge). One aggregate query returns every
+     conference stream with its paper count for a year, in ~100 ms:
+     ```
+     PREFIX dblp: <https://dblp.org/rdf/schema#> PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+     SELECT ?stream ?title (COUNT(?p) AS ?n) WHERE {
+       ?p dblp:publishedInStream ?stream ; dblp:yearOfPublication "2024"^^xsd:gYear .
+       ?stream a dblp:Conference ; dblp:streamTitle ?title . }
+     GROUP BY ?stream ?title HAVING (COUNT(?p) >= 800) ORDER BY DESC(?n)
+     ```
+     Results for 2023–2025 at the 800 floor are saved in `scratchpad/cs/dblp_probe/streams_<year>_ge800.json`
+     (2024: 33 streams ≥900, led by NeurIPS 4,495, CVPR 3,520, ICASSP 2,898, AAAI 2,870, ICML 2,611,
+     IGARSS 2,590, EMNLP 2,460, ICLR 2,456). Cross-check: the search API inside a browser session
+     gives `venue:CVPR: year:2024` = 2,716, i.e. the stream figure includes workshop volumes — split
+     them with `dblp:publishedAsPartOf ?vol` and exclude volumes titled "Workshops" (Rupert's unit:
+     main-track accepted papers, workshops separate). The list is field-agnostic: it already contains
+     the big IEEE engineering meetings (ICASSP, IGARSS, ICC, GLOBECOM, VTC, CDC, IECON, EMBC), so the
+     same query seeds the engineering census too — apply the boundary when writing rows to sheets.
+   - **What DBLP does NOT cover, and still needs the ordinary method**: national-society mass
+     meetings without indexed proceedings (IEICE and IPSJ general conferences, JSAI, CCF congresses,
+     KIISE), venues that publish journal-first (PVLDB), and anything not in DBLP's scope. Run a short
+     local-language phase 1 for those only.
+   - **Writing rows**: each row's figure is the DBLP count for the year, source URL the stream page
+     `https://dblp.org/streams/<key>` (state that it was read via SPARQL, query text in Method),
+     rung 4 (archive count), tier by the bar; keep TDD for the query/parse code (`scratchpad/cs/`).
+   - Rupert asked whether it would be easier for him to do this by hand: no — it is one script.
+   - **Dedupe against existing sheets**: AIAA, SPIE, IEEE NSS/MIC, Optica meetings (physical
+     sciences); BMES and biomedical engineering rows (medicine); ISMB/RECOMB/ECCB (life sciences).
+   - Build the sheet pair with `scratchpad/chemlib.py::build_field(names, duplicates, "CS & AI")`
+     (field-agnostic despite the name; give the totals block 400 spare rows).
+
+3. **Engineering** follows as its own field (US-first, IEEE counted once as a global body). Not
+   started; nothing prepared.
+
+### Life sciences (US) phase 2 wave 1 — DONE and written to the workbook
+
+Three Opus census-researcher agents, 30 rows each, covered all 90 `NOT YET CENSUSED` rows in
+`scratchpad/life/wave1/` (brief, queues, results, `r5_notes.json` for the orchestrator's rung-5 work,
+`apply_wave1.py` for the writeback, `status.py` to probe). 59 searches for 90 rows; 21 of agent 2's
+30 rows needed none. The session usage limit interrupted agents 1 and 2 mid-queue; per-row
+checkpointing meant nothing was lost and both resumed on the same files.
+
+| Outcome | Rows |
+|---|---|
+| VERIFIED (counted ≥1,500) | 3 — NCUR 3,316; APA Convention 2,976 (BOUNDARY, psychology); OHBM 2,095 |
+| BORDERLINE, stays on the sheet | 25 |
+| OUT on positive evidence, moved to `Deleted - Life Sciences` | 62 (incl. the CSHL series, treated like GRC) |
+
+Rung 5 was run by the orchestrator (Playwright + society CDNs, Chrome extension was not connected):
+ASLO 829 (OpenWater gallery, 199 session pages), ISMB 817 posters + 628 talks = 1,445, AMP 583
+(JMD supplement, 11 withdrawn removed), Glycobiology 150 posters, SAF 446 all-types ceiling, SRM 500
+in 2018 (Rangelands Gateway archive, six years counted), WDA 264, SLAS fell to rung 9 (536, OUT),
+Radiation Research Society stays BORDERLINE with no evidence. Methods are in each row's Method cell.
+
+**Sheet state after the write:** `Census - Life Sciences` 45 live rows = 7 VERIFIED (7.0 events/yr)
++ 38 BORDERLINE (33.25 events/yr); `Deleted - Life Sciences` 101 rows. Two pilot leftovers were
+fixed in the same pass: the pilot's 3 OUT rows (ASPET, AAA, ASPB) were moved to the deleted sheet,
+and the 20 pilot rows got Events/yr from their phase-1 cadence hint (marked unverified in Method).
+Recompute from cells, not formulas: `SUMPRODUCT` over `N5:N514` on that sheet.
+
+**Rows Rupert should look at** (all BORDERLINE by rule 1, none on a large count): RNA Society 156
+orals (floor), Animal Behavior Society 279 talks (floor), ICAR 434 posters (2014), Shock Society 52
+orals (floor); the two psychology BOUNDARY rows (APA VERIFIED, APS 1,350 BORDERLINE); IUMS "when
+US-hosted" kept on a rung-9 ~774 though its recent editions were Florence and Lisbon; six rows with
+no figure (SFS, SEBM, NSA, Chlamydomonas, SABER, RRS).
+
+### Life sciences GLOBAL phase 1 — DONE, NOT loaded onto the sheet (awaiting Rupert)
+
+`scratchpad/life/p1_global/`: **732 new names** (none already in the workbook), 131 countries, 78
+web calls, English-language searching only by Rupert's scope. `names.json`, `STATUS.json`,
+`REPORT.md` (federation pages that enumerated best; the four lists that resisted — IUIS 403, FAOBMB,
+FIMSA, FEBS page 2; the country-by-country local-language terms for the deferred pass). 434 of the
+732 are `implied` society placeholders (federation proved the society, meeting name unconfirmed —
+the RSEQ pattern, expect most to resolve small), 35 `boundary`. Two overlaps to drop at load: WSAVA
+(already on Deleted - Medicine) and the IUMS congress (US-hosted row on the life sheet).
+**Rupert's decision (end of session): do NOT load or census the full 732.** Only the 74-row
+`shortlist.json` is worked (step 1 above); the rest stays on disk as a record of what was found.
+
+### Still open from earlier sessions (unchanged)
+
+The ~900 floor sweep (SciX, SPIE MI, SCCM, EuroPCR out; EUROTOX in; medicine's 44 BELOW BAR recheck),
+the Summary SAM formula, Method C reading medicine's US-only subtotal (F260) instead of the total
+(F259), Events/yr blank on all chemistry rows, chemistry duplicates (Mendeleev rows 299/540,
+Biophysical Society on both physical sciences and chemistry), ACS 12,723 still unwritten, and the
+Notes & methodology sheet still describing the ~700 floor and "SAM physical sciences only".
+
+## Previous stop — 2026-09-12 (second session)
 
 **Medicine is finished. Chemistry phase 1 is finished. BOTH chemistry phase-2 pilots are now done.**
 Nothing has been written to the workbook — the pilots are research only, in

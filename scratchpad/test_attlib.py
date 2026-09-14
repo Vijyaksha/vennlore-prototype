@@ -391,3 +391,34 @@ def test_log_can_record_a_borderline_row_without_including_it(sheet):
     ws = openpyxl.load_workbook(sheet)['Census - Medicine & Health']
     assert ws.cell(6,25).value.startswith('BORDERLINE')
     assert 'INCLUDE' not in ws.cell(6,25).value
+
+
+# --- Rupert, 2026-09-12 (second change): the two tests use DIFFERENT thresholds ---
+# Test 1 (within-100) passes at bar-100. Test 2 (ratio flex) must reach the bar itself.
+
+def test_the_within_100_test_still_passes_at_one_hundred_below_the_bar():
+    v = attlib.resolve_borderline({'implied': 820, 'ratio': 0.25, 'bar': 900})
+
+    assert v['decision'] == 'INCLUDE'
+
+
+def test_the_flex_test_must_reach_the_bar_itself_not_one_hundred_below_it():
+    """12,000 attendees judged at 6% -> 720; flexed band tops out at 864, under 900."""
+    v = attlib.resolve_borderline({'implied': 720, 'ratio': 0.06, 'attendance': 12000, 'bar': 900})
+
+    assert v['high'] == 864
+    assert v['decision'] == 'BELOW BAR'
+
+
+def test_a_flexed_band_that_does_reach_the_bar_includes_the_row():
+    """12,000 attendees judged at 7% -> 840; flexed band tops out at 1,008, over 900."""
+    v = attlib.resolve_borderline({'implied': 840, 'ratio': 0.07, 'attendance': 12000, 'bar': 900})
+
+    assert v['high'] == 1008
+    assert v['decision'] == 'INCLUDE'
+
+
+def test_the_default_bar_is_now_900():
+    v = attlib.resolve_borderline({'implied': 810, 'ratio': 0.25})
+
+    assert v['decision'] == 'INCLUDE'

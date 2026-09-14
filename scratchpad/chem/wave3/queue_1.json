@@ -1,0 +1,281 @@
+[
+ {
+  "row": 51,
+  "level": 2,
+  "conference": "AACC/ADPI cereal chemistry (Cereals & Grains Annual Meeting)",
+  "society": "Cereals & Grains Association",
+  "country": "US",
+  "events_per_yr": null,
+  "notes": "annual | applied chemistry"
+ },
+ {
+  "row": 54,
+  "level": 2,
+  "conference": "New Zealand Institute of Chemistry Conference (NZIC)",
+  "society": "New Zealand Institute of Chemistry",
+  "country": "New Zealand",
+  "events_per_yr": null,
+  "notes": "annual | national conference, FACS member | Phase 1 source: https://facs.website/facs-member-societies/"
+ },
+ {
+  "row": 57,
+  "level": 2,
+  "conference": "European Conference on Physical Chemistry (ECPC)",
+  "society": "EuChemS Division of Physical Chemistry",
+  "country": "Europe",
+  "events_per_yr": null,
+  "notes": "biennial | European divisional congress | Phase 1 source: https://www.euchems.eu/divisions/physical-chemistry-2/conferences/"
+ },
+ {
+  "row": 60,
+  "level": 2,
+  "conference": "European Conference on Organometallic Chemistry (EuCOMC)",
+  "society": "EuChemS Division of Organometallic Chemistry",
+  "country": "Europe",
+  "events_per_yr": null,
+  "notes": "biennial since 1976 (formerly FECHEM) | European organometallic series | Phase 1 source: https://www.euchems.eu/divisions/organometallic-chemistry-2/conferences/"
+ },
+ {
+  "row": 63,
+  "level": 2,
+  "conference": "POLYCHAR World Forum on Advanced Materials",
+  "society": "POLYCHAR",
+  "country": "international",
+  "events_per_yr": null,
+  "notes": "annual | long-running polymer characterisation forum | Phase 1 source: https://www.imc.cas.cz/en/conferences/upcoming-conferences"
+ },
+ {
+  "row": 66,
+  "level": 2,
+  "conference": "Actinides Conference",
+  "society": "international actinide science community",
+  "country": "international",
+  "events_per_yr": null,
+  "notes": "roughly every four years | international actinide chemistry conference | Phase 1 source: https://www.euchems.eu/divisions/nuclear-and-radiochemistry-2/conferences/"
+ },
+ {
+  "row": 69,
+  "level": 2,
+  "conference": "SIS - International Symposium on Surfactants in Solution",
+  "society": "independent surfactant science community",
+  "country": "international",
+  "events_per_yr": null,
+  "notes": "biennial | long-running surfactant science series | Phase 1 source: https://blogs.rsc.org/ra/?p=1997"
+ },
+ {
+  "row": 72,
+  "level": 2,
+  "conference": "ICSSC - International Conference on Solid State Chemistry",
+  "society": "IUPAC-endorsed / Czech hosts",
+  "country": "international",
+  "events_per_yr": null,
+  "notes": "biennial; 15th edition | world solid state chemistry conference | Phase 1 source: https://iupac.org/event/14th-international-conference-on-solid-state-chemistry-2/"
+ },
+ {
+  "row": 75,
+  "level": 2,
+  "conference": "ICPC - International Conference on Phosphorus Chemistry",
+  "society": "IUPAC-endorsed",
+  "country": "international",
+  "events_per_yr": null,
+  "notes": "biennial; 25th in Montpellier | world phosphorus chemistry conference | Phase 1 source: https://icpc25.sciencesconf.org/?lang=en"
+ },
+ {
+  "row": 78,
+  "level": 2,
+  "conference": "ISNA - International Symposium on Novel Aromatic Compounds",
+  "society": "international aromatic chemistry community",
+  "country": "international",
+  "events_per_yr": null,
+  "notes": "biennial | world novel aromatics symposium | Phase 1 source: https://iupac.org/events/"
+ },
+ {
+  "row": 81,
+  "level": 2,
+  "conference": "EuroDrying — European Drying Symposium",
+  "society": "EFCE",
+  "country": "Europe",
+  "events_per_yr": null,
+  "notes": "biennial; 10th in 2027 | EFCE working party symposium | Phase 1 source: https://efce.info/events_overview.html"
+ },
+ {
+  "row": 84,
+  "level": 2,
+  "conference": "American Coatings Conference & Show",
+  "society": "American Coatings Association",
+  "country": "US",
+  "events_per_yr": null,
+  "notes": "biennial; 2026 edition | leading North American coatings technical event | Phase 1 source: https://www.paint.org/event/european-coatings-show-2027/"
+ },
+ {
+  "row": 87,
+  "level": 2,
+  "conference": "TSRC — Tobacco Science Research Conference",
+  "society": "CORESTA / TSRC",
+  "country": "US",
+  "events_per_yr": null,
+  "notes": "annual; 78th edition | 78-edition applied chemistry conference series | Phase 1 source: https://www.coresta.org/events/78th-tsrc-tobacco-science-research-conference-39071.html"
+ },
+ {
+  "row": 90,
+  "level": 2,
+  "conference": "ISSPIC — International Symposium on Small Particles and Inorganic Clusters",
+  "society": "international cluster science community",
+  "country": "international",
+  "events_per_yr": null,
+  "notes": "biennial since 1976 | nanochemistry gap — long-running series with published proceedings | Phase 1 source: https://en.wikipedia.org/wiki/ISSPIC"
+ },
+ {
+  "row": 93,
+  "level": 2,
+  "conference": "IULTCS Congress (World Leather Congress)",
+  "society": "International Union of Leather Technologists and Chemists Societies",
+  "country": "international",
+  "events_per_yr": null,
+  "notes": "biennial; 39th Oct 2027 León, Mexico | leather chemistry gap — society founded 1897, 38 congresses held | Phase 1 source: https://iultcs.org/"
+ },
+ {
+  "row": 96,
+  "level": 2,
+  "conference": "International Symposium on Special Topics in Chemical Propulsion and Energetic Materials (ISICP)",
+  "society": "international chemical propulsion community / Penn State",
+  "country": "international",
+  "events_per_yr": null,
+  "notes": "every ~2-3 years; 13th edition | 13-edition applied chemistry series | Phase 1 source: https://pure.psu.edu/en/projects/thirteenth-international-symposium-on-special-topics-in-chemical-/"
+ },
+ {
+  "row": 99,
+  "level": 2,
+  "conference": "ISMAS Symposium / Workshop on Mass Spectrometry",
+  "society": "Indian Society for Mass Spectrometry (ISMAS)",
+  "country": "India",
+  "events_per_yr": null,
+  "notes": "recurring (biennial symposium + triennial workshop) | recurring national symposium of an Indian learned society | Phase 1 source: https://ismas.in/"
+ },
+ {
+  "row": 102,
+  "level": 1,
+  "conference": "World Chemistry Leadership Meeting (IUPAC)",
+  "society": "IUPAC",
+  "country": "international",
+  "events_per_yr": null,
+  "notes": "biennial, alongside World Chemistry Congress | IUPAC-run recurring meeting | Phase 1 source: https://iupac.org/"
+ },
+ {
+  "row": 105,
+  "level": 1,
+  "conference": "Singapore National Institute of Chemistry conference (SNIC)",
+  "society": "Singapore National Institute of Chemistry",
+  "country": "Singapore",
+  "events_per_yr": null,
+  "notes": "annual/biennial | national society meeting, FACS member | Phase 1 source: https://facs.website/facs-member-societies/"
+ },
+ {
+  "row": 108,
+  "level": 1,
+  "conference": "Lab Innovations (Birmingham)",
+  "society": "Easyfairs / UK lab community",
+  "country": "UK",
+  "events_per_yr": null,
+  "notes": "annual | UK lab trade fair with conference programme | Phase 1 source: https://lab-instrument-index.com/events/"
+ },
+ {
+  "row": 111,
+  "level": 1,
+  "conference": "SMASH NMR Conference (Small Molecule NMR Conference)",
+  "society": "SMASH",
+  "country": "international (US/Europe alternating)",
+  "events_per_yr": null,
+  "notes": "annual | industrial and small-molecule NMR series | Phase 1 source: https://www.smashnmr.org/"
+ },
+ {
+  "row": 114,
+  "level": 1,
+  "conference": "Empowering Women in Organic Chemistry (EWOC) Conference",
+  "society": "EWOC",
+  "country": "US",
+  "events_per_yr": null,
+  "notes": "annual | recurring organic chemistry community conference | Phase 1 source: https://www.organicdivision.org/meetings/"
+ },
+ {
+  "row": 117,
+  "level": 1,
+  "conference": "Flow Chemistry and Continuous Processing Conference",
+  "society": "Scientific Update / RSC",
+  "country": "UK/international",
+  "events_per_yr": null,
+  "notes": "annual; 7th edition | industrial process chemistry conference | Phase 1 source: https://www.scientificupdate.com/conference_events/flow-chemistry-and-continuous-processing-conference/"
+ },
+ {
+  "row": 120,
+  "level": 1,
+  "conference": "Thermodynamics Conference",
+  "society": "EFCE / UK organisers",
+  "country": "UK",
+  "events_per_yr": null,
+  "notes": "biennial; 29th 2026 London | long-running thermodynamics series | Phase 1 source: https://efce.info/events_overview.html"
+ },
+ {
+  "row": 123,
+  "level": 1,
+  "conference": "Frontiers in Wood Coatings",
+  "society": "European Coatings",
+  "country": "Europe",
+  "events_per_yr": null,
+  "notes": "recurring; 2026 edition | niche applied coatings conference | Phase 1 source: https://www.european-coatings.com/events/conference/"
+ },
+ {
+  "row": 126,
+  "level": 1,
+  "conference": "AFPM Summit (formerly Q&A and Technology Forum)",
+  "society": "American Fuel & Petrochemical Manufacturers",
+  "country": "US",
+  "events_per_yr": null,
+  "notes": "annual; Aug-Sept 2026 | technical refining/petrochemical conference | Phase 1 source: https://summit.afpm.org/"
+ },
+ {
+  "row": 129,
+  "level": 1,
+  "conference": "AATCC Textile Discovery Summit (formerly AATCC International Conference)",
+  "society": "American Association of Textile Chemists and Colorists",
+  "country": "US",
+  "events_per_yr": null,
+  "notes": "annual | textile chemistry gap — world's largest textile technical conference | Phase 1 source: https://www.aatcc.org/annual-conference/"
+ },
+ {
+  "row": 132,
+  "level": 1,
+  "conference": "Chemspec Europe",
+  "society": "RX Global",
+  "country": "Europe",
+  "events_per_yr": null,
+  "notes": "annual; 40th edition, Basel 2027 | trade-fair layer — fine chemicals, with technical conference programme | Phase 1 source: https://www.chemspeceurope.com/en-gb/about.html"
+ },
+ {
+  "row": 135,
+  "level": 1,
+  "conference": "ICG Annual Conference",
+  "society": "International Commission on Glass",
+  "country": "international",
+  "events_per_yr": null,
+  "notes": "annual in the years between congresses, often with national society meetings | second ICG series | Phase 1 source: https://icglass.org/upcoming-events-and-conferences/"
+ },
+ {
+  "row": 138,
+  "level": 1,
+  "conference": "ChemSci Leaders in the Field Symposium (India, IISER)",
+  "society": "Royal Society of Chemistry with IISER Pune / IISER Bhopal",
+  "country": "India",
+  "events_per_yr": null,
+  "notes": "annual | recurring national symposium of an Indian learned society | Phase 1 source: https://www.rsc.org/events/find-an-event/chemsci-2026-leaders-in-the-field-symposium,-iiser-bhopal"
+ },
+ {
+  "row": 141,
+  "level": 1,
+  "conference": "Guha Research Conference",
+  "society": "Indian biochemistry/chemical-biology community (Guha Research Conference series)",
+  "country": "India",
+  "events_per_yr": null,
+  "notes": "annual | recurring national symposium of an Indian learned society | Phase 1 source: https://en.wikipedia.org/wiki/Guha_Research_Conference"
+ }
+]

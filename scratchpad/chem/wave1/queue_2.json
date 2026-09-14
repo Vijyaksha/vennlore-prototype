@@ -1,0 +1,222 @@
+[
+ {
+  "row": 42,
+  "conference": "ACS Central Regional Meeting (CERM)",
+  "society": "American Chemical Society",
+  "country": "US",
+  "notes": "annual | ACS regional meeting | Phase 1 source: https://web.cvent.com/event/d2645e5c-9aca-4467-918a-5b4af40f6a33/summary",
+  "done": false,
+  "tier": "NOT YET CENSUSED",
+  "prio": null,
+  "score": 6
+ },
+ {
+  "row": 47,
+  "conference": "ACS Great Lakes Regional Meeting (GLRM)",
+  "society": "American Chemical Society",
+  "country": "US",
+  "notes": "annual | ACS regional meeting | Phase 1 source: https://web.cvent.com/event/d2645e5c-9aca-4467-918a-5b4af40f6a33/summary",
+  "done": false,
+  "tier": "NOT YET CENSUSED",
+  "prio": null,
+  "score": 6
+ },
+ {
+  "row": 92,
+  "conference": "ACS Colloid and Surface Science Symposium (CSSS)",
+  "society": "ACS Division of Colloid and Surface Chemistry",
+  "country": "US",
+  "notes": "annual since 1923; 100th in 2026; 500-700 attendees | ACS divisional standalone symposium, century-old series | Phase 1 source: https://cen.acs.org/acs-news/acs-colloid-surface-science-symposium-turns-100/104/web/2026/04",
+  "done": false,
+  "tier": "NOT YET CENSUSED",
+  "prio": null,
+  "score": 6
+ },
+ {
+  "row": 135,
+  "conference": "IUPAC Symposium on Photochemistry (PhotoIUPAC)",
+  "society": "IUPAC / European Photochemistry Association",
+  "country": "international",
+  "notes": "biennial (even years) since 1964; 30th 2026 Zagreb | principal international photochemistry symposium | Phase 1 source: https://photochemistry.eu/abstract-28th-photoiupac/",
+  "done": false,
+  "tier": "NOT YET CENSUSED",
+  "prio": null,
+  "score": 6
+ },
+ {
+  "row": 172,
+  "conference": "IUPAC International Congress of Crop Protection Chemistry (formerly Pesticide Chemistry)",
+  "society": "IUPAC Division of Chemistry and the Environment",
+  "country": "international",
+  "notes": "every four years since 1967; 15th 2023 New Delhi; 1500+ attendees | world congress of agrochemical chemistry | Phase 1 source: https://iupac.org/event/15th-iupac-international-congress-of-crop-protection-chemistry/",
+  "done": false,
+  "tier": "NOT YET CENSUSED",
+  "prio": null,
+  "score": 6
+ },
+ {
+  "row": 275,
+  "conference": "NMRS Annual National Symposium (National Magnetic Resonance Society of India)",
+  "society": "National Magnetic Resonance Society of India (est. 1995)",
+  "country": "India",
+  "notes": "annual, 31st edition (2026, IISER Bhopal) | recurring national symposium of an Indian learned society | Phase 1 source: https://sites.google.com/iiserb.ac.in/nmrs2026",
+  "done": false,
+  "tier": "NOT YET CENSUSED",
+  "prio": null,
+  "score": 6
+ },
+ {
+  "row": 84,
+  "conference": "European Symposium on Organic Reactivity (ESOR)",
+  "society": "EuChemS Division of Organic Chemistry",
+  "country": "Europe",
+  "notes": "biennial; XX in 2025 | recurring European congress | Phase 1 source: https://www.societachimica.it/en/congressi-ed-eventi",
+  "done": false,
+  "tier": "NOT YET CENSUSED",
+  "prio": null,
+  "score": 5
+ },
+ {
+  "row": 20,
+  "conference": "HPLC Symposium (International Symposium on High Performance Liquid Phase Separations)",
+  "society": "—",
+  "country": "international",
+  "notes": "annual, rotating | major separations series",
+  "done": false,
+  "tier": "NOT YET CENSUSED",
+  "prio": null,
+  "score": 4
+ },
+ {
+  "row": 57,
+  "conference": "World Congress of Chemical Engineering (WCCE)",
+  "society": "world chemical engineering federations",
+  "country": "international",
+  "notes": "every 4 years | global chemical engineering congress | Phase 1 source: https://efce.info/",
+  "done": false,
+  "tier": "NOT YET CENSUSED",
+  "prio": null,
+  "score": 4
+ },
+ {
+  "row": 99,
+  "conference": "RSC Anglo-Nordic Medicinal Chemistry Symposium",
+  "society": "RSC Biological and Medicinal Chemistry Sector + Nordic affiliates",
+  "country": "UK / Nordics",
+  "notes": "biennial since 2017 | recurring cross-national society symposium | Phase 1 source: https://www.rscbmcs.org/events/anmc-4/",
+  "done": false,
+  "tier": "NOT YET CENSUSED",
+  "prio": null,
+  "score": 4
+ },
+ {
+  "row": 113,
+  "conference": "ICMRBS - International Conference on Magnetic Resonance in Biological Systems",
+  "society": "International Council on Magnetic Resonance in Biological Systems",
+  "country": "international",
+  "notes": "biennial; 2026 Davos | world biomolecular NMR meeting | Phase 1 source: https://www.icmrbs.org/",
+  "done": false,
+  "tier": "NOT YET CENSUSED",
+  "prio": null,
+  "score": 4
+ },
+ {
+  "row": 124,
+  "conference": "EFMC-ASMC - International Symposium on Advances in Synthetic and Medicinal Chemistry",
+  "society": "EFMC",
+  "country": "Europe",
+  "notes": "biennial (alternating with ISMC) | second EFMC flagship series | Phase 1 source: https://www.efmc-asmc.org/",
+  "done": false,
+  "tier": "NOT YET CENSUSED",
+  "prio": null,
+  "score": 4
+ },
+ {
+  "row": 144,
+  "conference": "ISHC Congress - International Society of Heterocyclic Chemistry Congress",
+  "society": "International Society of Heterocyclic Chemistry",
+  "country": "international",
+  "notes": "biennial; 2026 Brazil | world heterocyclic chemistry congress | Phase 1 source: https://www.organicdivision.org/meetings/",
+  "done": false,
+  "tier": "NOT YET CENSUSED",
+  "prio": null,
+  "score": 4
+ },
+ {
+  "row": 157,
+  "conference": "IFT FIRST / IFT Annual Event & Food Expo",
+  "society": "Institute of Food Technologists",
+  "country": "US",
+  "notes": "annual | largest food science meeting in North America | Phase 1 source: https://www.ift.org/",
+  "done": false,
+  "tier": "NOT YET CENSUSED",
+  "prio": null,
+  "score": 4
+ },
+ {
+  "row": 165,
+  "conference": "Goldschmidt Conference",
+  "society": "Geochemical Society + European Association of Geochemistry",
+  "country": "international",
+  "notes": "annual; 2026 Montreal; 3500+ researchers | world geochemistry conference, strong environmental chemistry content | Phase 1 source: https://geochemsoc.org/events/goldschmidt-conference",
+  "done": false,
+  "tier": "NOT YET CENSUSED",
+  "prio": null,
+  "score": 4
+ },
+ {
+  "row": 176,
+  "conference": "ICC - International Corrosion Congress",
+  "society": "International Corrosion Council",
+  "country": "international",
+  "notes": "triennial; joint with EUROCORR 2027 | world corrosion congress | Phase 1 source: https://www.eurocorr-icc2027.org/",
+  "done": false,
+  "tier": "NOT YET CENSUSED",
+  "prio": null,
+  "score": 4
+ },
+ {
+  "row": 189,
+  "conference": "Gordon Research Conference on Atmospheric Chemistry",
+  "society": "Gordon Research Conferences",
+  "country": "US",
+  "notes": "biennial; 2025 Newry, Maine | leading invite-led atmospheric chemistry conference | Phase 1 source: https://www.grc.org/atmospheric-chemistry-conference/",
+  "done": false,
+  "tier": "NOT YET CENSUSED",
+  "prio": null,
+  "score": 4
+ },
+ {
+  "row": 201,
+  "conference": "ISOM - International Symposium on Olefin Metathesis and Related Chemistry",
+  "society": "international metathesis community",
+  "country": "international",
+  "notes": "biennial | world olefin metathesis symposium | Phase 1 source: https://www.rsc.org/events/detail/2990/isom-xviii-18th-international-symposium-on-olefin-metathesis-and-related-chemistry",
+  "done": false,
+  "tier": "NOT YET CENSUSED",
+  "prio": null,
+  "score": 4
+ },
+ {
+  "row": 224,
+  "conference": "IUBMB Congress (Biochemistry Global Summit)",
+  "society": "International Union of Biochemistry and Molecular Biology",
+  "country": "international",
+  "notes": "every 3 years; often joint with FEBS | biochemistry boundary — IUBMB world congress | Phase 1 source: https://www.febs.org/events/congress/",
+  "done": false,
+  "tier": "NOT YET CENSUSED",
+  "prio": null,
+  "score": 4
+ },
+ {
+  "row": 232,
+  "conference": "AMPP Annual Conference + Expo (formerly NACE CORROSION)",
+  "society": "AMPP (Association for Materials Protection and Performance)",
+  "country": "US",
+  "notes": "annual; 2027 Columbus OH | world's largest corrosion and coatings conference | Phase 1 source: https://ace.ampp.org/about",
+  "done": false,
+  "tier": "NOT YET CENSUSED",
+  "prio": null,
+  "score": 4
+ }
+]

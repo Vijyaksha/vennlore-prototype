@@ -1,0 +1,272 @@
+[
+ {
+  "row": 52,
+  "level": 2,
+  "conference": "ACS Middle Atlantic Regional Meeting (MARM)",
+  "society": "American Chemical Society",
+  "country": "US",
+  "events_per_yr": null,
+  "notes": "annual | ACS regional meeting | Phase 1 source: https://marmacs.org/"
+ },
+ {
+  "row": 55,
+  "level": 2,
+  "conference": "ISE Topical Meeting",
+  "society": "International Society of Electrochemistry",
+  "country": "international",
+  "events_per_yr": null,
+  "notes": "annual | second ISE recurring meeting | Phase 1 source: https://www.ise-online.org/sponsored/sponsored-meetings/"
+ },
+ {
+  "row": 58,
+  "level": 2,
+  "conference": "European Conference on Bio-Inorganic Chemistry (EuroBIC)",
+  "society": "EuChemS bioinorganic community",
+  "country": "Europe",
+  "events_per_yr": null,
+  "notes": "biennial | recurring European congress | Phase 1 source: https://www.euchems.eu/divisions/"
+ },
+ {
+  "row": 61,
+  "level": 2,
+  "conference": "European Conference on Computational and Theoretical Chemistry (EuCO-CC)",
+  "society": "EuChemS Division of Computational and Theoretical Chemistry",
+  "country": "Europe",
+  "events_per_yr": null,
+  "notes": "series since 1994 (Nancy) | European computational chemistry series | Phase 1 source: https://www.euchems.eu/divisions/computational-chemistry-2/"
+ },
+ {
+  "row": 64,
+  "level": 2,
+  "conference": "EuroChemBio",
+  "society": "EFMC",
+  "country": "Europe",
+  "events_per_yr": null,
+  "notes": "biennial; 2027 Milan | European chemical biology conference | Phase 1 source: https://www.efmc.info/"
+ },
+ {
+  "row": 67,
+  "level": 2,
+  "conference": "NRC - International Conference on Nuclear and Radiochemistry",
+  "society": "EuChemS Division of Nuclear and Radiochemistry",
+  "country": "Europe",
+  "events_per_yr": null,
+  "notes": "every four years | European nuclear and radiochemistry congress | Phase 1 source: https://www.euchems.eu/divisions/nuclear-and-radiochemistry-2/conferences/"
+ },
+ {
+  "row": 70,
+  "level": 2,
+  "conference": "ICAVS - International Conference on Advanced Vibrational Spectroscopy",
+  "society": "independent vibrational spectroscopy community",
+  "country": "international",
+  "events_per_yr": null,
+  "notes": "biennial | world vibrational spectroscopy conference | Phase 1 source: https://www.icavs.info/"
+ },
+ {
+  "row": 73,
+  "level": 2,
+  "conference": "Gulf Coast Conference",
+  "society": "Gulf Coast Conference (non-profit)",
+  "country": "US",
+  "events_per_yr": null,
+  "notes": "annual, Texas | petrochemical analytical chemistry conference and exposition | Phase 1 source: https://www.gulfcoastconference.com/"
+ },
+ {
+  "row": 76,
+  "level": 2,
+  "conference": "IMEBORON - International Conference on Boron Chemistry",
+  "society": "international boron chemistry community",
+  "country": "international",
+  "events_per_yr": null,
+  "notes": "every three years | world boron chemistry conference | Phase 1 source: https://iupac.org/events/"
+ },
+ {
+  "row": 79,
+  "level": 2,
+  "conference": "ESCRE — European Symposium on Chemical Reaction Engineering",
+  "society": "EFCE / AIDIC",
+  "country": "Europe",
+  "events_per_yr": null,
+  "notes": "biennial; 2027 Milan | EFCE working party symposium | Phase 1 source: https://efce.info/events_overview.html"
+ },
+ {
+  "row": 82,
+  "level": 2,
+  "conference": "EPIC — European Process Intensification Conference",
+  "society": "EFCE / AIDIC",
+  "country": "Europe",
+  "events_per_yr": null,
+  "notes": "biennial; 10th 2027 Bologna | EFCE conference series | Phase 1 source: https://efce.info/events_overview.html"
+ },
+ {
+  "row": 85,
+  "level": 2,
+  "conference": "CESIO World Surfactant Congress",
+  "society": "CESIO (European Committee of Surfactants and their Organic Intermediates)",
+  "country": "Europe",
+  "events_per_yr": null,
+  "notes": "every 4 years; 13th 2027 Dublin | world congress of the surfactant industry | Phase 1 source: https://cesio-congress.eu/"
+ },
+ {
+  "row": 88,
+  "level": 2,
+  "conference": "EBC Congress (European Brewery Convention)",
+  "society": "European Brewery Convention",
+  "country": "Europe",
+  "events_per_yr": null,
+  "notes": "biennial | global brewing and malting science congress | Phase 1 source: https://en.wikipedia.org/wiki/European_Brewery_Convention"
+ },
+ {
+  "row": 91,
+  "level": 2,
+  "conference": "ICSNN — International Conference on Superlattices, Nanostructures and Nanodevices",
+  "society": "international nanostructures community",
+  "country": "international",
+  "events_per_yr": null,
+  "notes": "biennial | nanoscience series with journal proceedings | Phase 1 source: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3212231/"
+ },
+ {
+  "row": 94,
+  "level": 2,
+  "conference": "MetSoc Hydrometallurgy Conference",
+  "society": "MetSoc of CIM",
+  "country": "Canada",
+  "events_per_yr": null,
+  "notes": "recurring, organised annually by MetSoc | hydrometallurgy gap named explicitly in the brief | Phase 1 source: https://www.metsoc.org/conferences-events/"
+ },
+ {
+  "row": 97,
+  "level": 2,
+  "conference": "CATSYMP — National Symposium on Catalysis",
+  "society": "Catalysis Society of India (founded 1973)",
+  "country": "India",
+  "events_per_yr": null,
+  "notes": "biennial, 24th edition | recurring national symposium of an Indian learned society | Phase 1 source: https://catalysissocietyofindia.in/"
+ },
+ {
+  "row": 100,
+  "level": 2,
+  "conference": "Annual meeting of the Electrochemical Society of India (Bengaluru)",
+  "society": "Electrochemical Society of India (IISc Bangalore)",
+  "country": "India",
+  "events_per_yr": null,
+  "notes": "IMPLIED NAME — the society or group is confirmed but this meeting title was never verified. Phase 2 must resolve it to a real name or drop the row. | recurring | recurring national symposium of an Indian learned society | Phase 1 source: https://crsi-india.org/"
+ },
+ {
+  "row": 103,
+  "level": 1,
+  "conference": "RSC Organic Chemistry Community Regional Meetings (incl. Scottish Regional Meeting)",
+  "society": "Royal Society of Chemistry",
+  "country": "UK",
+  "events_per_yr": null,
+  "notes": "annual regional series | RSC recurring regional meeting series | Phase 1 source: https://www.rsc.org/events/find-an-event"
+ },
+ {
+  "row": 106,
+  "level": 1,
+  "conference": "Telluride Science Research Center workshops",
+  "society": "Telluride Science",
+  "country": "US",
+  "events_per_yr": null,
+  "notes": "annual summer workshop series | recurring invite-led chemistry workshop series | Phase 1 source: https://telluridescience.org/"
+ },
+ {
+  "row": 109,
+  "level": 1,
+  "conference": "American Chemistry Council conferences and events",
+  "society": "American Chemistry Council",
+  "country": "US",
+  "events_per_yr": null,
+  "notes": "annual series | US chemical industry trade association meeting series | Phase 1 source: https://www.americanchemistry.com/about-acc/conferences-events"
+ },
+ {
+  "row": 112,
+  "level": 1,
+  "conference": "ICCOC-GTL - International Conference on the Coordination and Organometallic Chemistry of Germanium, Tin and Lead",
+  "society": "independent",
+  "country": "international",
+  "events_per_yr": null,
+  "notes": "roughly triennial | specialised main-group organometallic series | Phase 1 source: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2365066/"
+ },
+ {
+  "row": 115,
+  "level": 1,
+  "conference": "Weurman Flavour Research Symposium",
+  "society": "independent flavour science community",
+  "country": "Europe/international",
+  "events_per_yr": null,
+  "notes": "every three years | principal flavour chemistry symposium series | Phase 1 source: https://www.euchems.eu/divisions/food-chemistry/conferences/"
+ },
+ {
+  "row": 118,
+  "level": 1,
+  "conference": "CECAM Workshops and Schools (series)",
+  "society": "Centre Europeen de Calcul Atomique et Moleculaire",
+  "country": "Europe/international",
+  "events_per_yr": null,
+  "notes": "many workshops per year | European computational chemistry workshop network; list as one series | Phase 1 source: https://www.cecam.org/"
+ },
+ {
+  "row": 121,
+  "level": 1,
+  "conference": "ESCC — European Symposium on Comminution & Classification",
+  "society": "EFCE / AIDIC",
+  "country": "Europe",
+  "events_per_yr": null,
+  "notes": "biennial; XIX in 2026 Naples | EFCE particle technology symposium | Phase 1 source: https://efce.info/events_overview.html"
+ },
+ {
+  "row": 124,
+  "level": 1,
+  "conference": "CBM — Carbohydrate Bioengineering Meeting",
+  "society": "carbohydrate bioengineering community",
+  "country": "Europe",
+  "events_per_yr": null,
+  "notes": "biennial; CBM16 May 2026 Denmark | 16-edition glycoscience series | Phase 1 source: https://willisglycobiologylab.com/upcoming-glyco-conferences/"
+ },
+ {
+  "row": 127,
+  "level": 1,
+  "conference": "AFPM International Petrochemical Conference (IPC)",
+  "society": "American Fuel & Petrochemical Manufacturers",
+  "country": "US",
+  "events_per_yr": null,
+  "notes": "annual | major petrochemical industry conference | Phase 1 source: https://www2.afpm.org/forms/meeting/Microsite/IPC23,1"
+ },
+ {
+  "row": 130,
+  "level": 1,
+  "conference": "IFEAT International Conference",
+  "society": "International Federation of Essential Oils and Aroma Trades",
+  "country": "international",
+  "events_per_yr": null,
+  "notes": "annual; 2025 Göteborg | flavour and fragrance gap | Phase 1 source: https://conference.ifeat.org/"
+ },
+ {
+  "row": 133,
+  "level": 1,
+  "conference": "SOCMA Show / SOCMA Week",
+  "society": "Society of Chemical Manufacturers & Affiliates",
+  "country": "US",
+  "events_per_yr": null,
+  "notes": "annual | industrial chemistry trade meeting | Phase 1 source: https://www.socma.org/events-meetings/chemspec-europe/"
+ },
+ {
+  "row": 136,
+  "level": 1,
+  "conference": "International Pyrotechnics Seminar",
+  "society": "International Pyrotechnics Society",
+  "country": "international",
+  "events_per_yr": null,
+  "notes": "recurring | niche applied chemistry society series | Phase 1 source: https://www.intpyrosoc.org/other-upcoming-events/"
+ },
+ {
+  "row": 139,
+  "level": 1,
+  "conference": "ISCBC — ISCB International Conference",
+  "society": "Indian Society of Chemists and Biologists (ISCB, est. 1995)",
+  "country": "India",
+  "events_per_yr": null,
+  "notes": "annual, 33rd edition (2027) | recurring national symposium of an Indian learned society | Phase 1 source: https://www.iscbconference.com/"
+ }
+]

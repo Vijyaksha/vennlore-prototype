@@ -1,0 +1,1452 @@
+{
+ "rows": [
+  {
+   "conference": "AAAI Conference on Artificial Intelligence (AAAI)",
+   "abstracts_numeric": 3509,
+   "year": 2025,
+   "source_url": "https://dblp.org/streams/conf/aaai",
+   "rung": 4,
+   "tier": "VERIFIED",
+   "events_per_yr": 1,
+   "method": "RUNG 4 PRODUCED THIS FIGURE — archive count via DBLP SPARQL (https://sparql.dblp.org/sparql): COUNT of ?p dblp:publishedInStream <https://dblp.org/streams/conf/aaai> with dblp:yearOfPublication \"2025\"^^xsd:gYear, grouped by dblp:publishedAsPartOf volume; volumes whose title contains workshop/companion/adjunct/tutorial/demo/extended-abstracts terms are EXCLUDED as workshop content: main track 3,509, workshop volumes 0. Unit = accepted papers in the proceedings (invited keynote abstracts, if any, are a handful and not separable). Cadence 1/yr from the share of 2018-2025 with records. No Crossref container-title with >=800 papers matched this series (DBLP is the only source). Language: n/a (bibliographic index). [dblp wave, 2026-09-13]",
+   "workshop": 0,
+   "abstracts": "3,509 accepted papers in the 2025 proceedings (DBLP main-track volumes; 0 further papers in workshop/companion volumes not counted)",
+   "stream": "conf/aaai",
+   "subfield": "CS / AI"
+  },
+  {
+   "conference": "Annual Meeting of the Association for Computational Linguistics (ACL)",
+   "abstracts_numeric": 3199,
+   "year": 2025,
+   "source_url": "https://dblp.org/streams/conf/acl",
+   "rung": 4,
+   "tier": "VERIFIED",
+   "events_per_yr": 1,
+   "method": "RUNG 4 PRODUCED THIS FIGURE — archive count via DBLP SPARQL (https://sparql.dblp.org/sparql): COUNT of ?p dblp:publishedInStream <https://dblp.org/streams/conf/acl> with dblp:yearOfPublication \"2025\"^^xsd:gYear, grouped by dblp:publishedAsPartOf volume; volumes whose title contains workshop/companion/adjunct/tutorial/demo/extended-abstracts terms are EXCLUDED as workshop content: main track 3,199, workshop volumes 161. Unit = accepted papers in the proceedings (invited keynote abstracts, if any, are a handful and not separable). Cadence 1/yr from the share of 2018-2025 with records. Crossref proceedings-article facet for 2025 gives 1,388 under 'Findings of the Association for Computational Linguistics: ACL 2025' (independent second source; agreement within 1811 papers). Language: n/a (bibliographic index). [dblp wave, 2026-09-13]",
+   "workshop": 161,
+   "abstracts": "3,199 accepted papers in the 2025 proceedings (DBLP main-track volumes; 161 further papers in workshop/companion volumes not counted)",
+   "stream": "conf/acl",
+   "subfield": "CS / AI"
+  },
+  {
+   "conference": "Asia-Pacific Signal and Information Processing Association Annual Summit and Conference (APSIPA)",
+   "abstracts_numeric": 813,
+   "year": 2025,
+   "source_url": "https://dblp.org/streams/conf/apsipa",
+   "rung": 4,
+   "tier": "BORDERLINE",
+   "events_per_yr": 0.75,
+   "method": "RUNG 4 PRODUCED THIS FIGURE — archive count via DBLP SPARQL (https://sparql.dblp.org/sparql): COUNT of ?p dblp:publishedInStream <https://dblp.org/streams/conf/apsipa> with dblp:yearOfPublication \"2025\"^^xsd:gYear, grouped by dblp:publishedAsPartOf volume; volumes whose title contains workshop/companion/adjunct/tutorial/demo/extended-abstracts terms are EXCLUDED as workshop content: main track 813, workshop volumes 0. Unit = accepted papers in the proceedings (invited keynote abstracts, if any, are a handful and not separable). Cadence 0.75/yr from the share of 2018-2025 with records. Crossref proceedings-article facet for 2025 gives 450 under '2025 Asia Pacific Signal and Information Processing Association Annual Summit and Conference (APSIPA ASC)' (independent second source; agreement within 363 papers). Language: n/a (bibliographic index). [dblp wave, 2026-09-13]",
+   "workshop": 0,
+   "abstracts": "813 accepted papers in the 2025 proceedings (DBLP main-track volumes; 0 further papers in workshop/companion volumes not counted)",
+   "stream": "conf/apsipa",
+   "subfield": "engineering (IEEE society meeting)"
+  },
+  {
+   "conference": "IEEE International Conference on Bioinformatics and Biomedicine (BIBM)",
+   "abstracts_numeric": 1233,
+   "year": 2025,
+   "source_url": "https://dblp.org/streams/conf/bibm",
+   "rung": 4,
+   "tier": "BORDERLINE",
+   "events_per_yr": 1,
+   "method": "RUNG 4 PRODUCED THIS FIGURE — archive count via DBLP SPARQL (https://sparql.dblp.org/sparql): COUNT of ?p dblp:publishedInStream <https://dblp.org/streams/conf/bibm> with dblp:yearOfPublication \"2025\"^^xsd:gYear, grouped by dblp:publishedAsPartOf volume; volumes whose title contains workshop/companion/adjunct/tutorial/demo/extended-abstracts terms are EXCLUDED as workshop content: main track 1,233, workshop volumes 0. Unit = accepted papers in the proceedings (invited keynote abstracts, if any, are a handful and not separable). Cadence 1/yr from the share of 2018-2025 with records. Crossref proceedings-article facet for 2025 gives 1,244 under '2025 IEEE International Conference on Bioinformatics and Biomedicine (BIBM)' (independent second source; agreement within 11 papers). Language: n/a (bibliographic index). [dblp wave, 2026-09-13]",
+   "workshop": 0,
+   "abstracts": "1,233 accepted papers in the 2025 proceedings (DBLP main-track volumes; 0 further papers in workshop/companion volumes not counted)",
+   "stream": "conf/bibm",
+   "subfield": "CS / AI — BOUNDARY: bioinformatics (IEEE) — ISMB sits on the life-sciences sheet"
+  },
+  {
+   "conference": "IEEE International Conference on Big Data (BigData)",
+   "abstracts_numeric": 1015,
+   "year": 2025,
+   "source_url": "https://dblp.org/streams/conf/bigdataconf",
+   "rung": 4,
+   "tier": "BORDERLINE",
+   "events_per_yr": 1,
+   "method": "RUNG 4 PRODUCED THIS FIGURE — archive count via DBLP SPARQL (https://sparql.dblp.org/sparql): COUNT of ?p dblp:publishedInStream <https://dblp.org/streams/conf/bigdataconf> with dblp:yearOfPublication \"2025\"^^xsd:gYear, grouped by dblp:publishedAsPartOf volume; volumes whose title contains workshop/companion/adjunct/tutorial/demo/extended-abstracts terms are EXCLUDED as workshop content: main track 1,015, workshop volumes 0. Unit = accepted papers in the proceedings (invited keynote abstracts, if any, are a handful and not separable). Cadence 1/yr from the share of 2018-2025 with records. Crossref proceedings-article facet for 2025 gives 1,023 under '2025 IEEE International Conference on Big Data (BigData)' (independent second source; agreement within 8 papers). Language: n/a (bibliographic index). [dblp wave, 2026-09-13]",
+   "workshop": 0,
+   "abstracts": "1,015 accepted papers in the 2025 proceedings (DBLP main-track volumes; 0 further papers in workshop/companion volumes not counted)",
+   "stream": "conf/bigdataconf",
+   "subfield": "CS / AI"
+  },
+  {
+   "conference": "IEEE Conference on Decision and Control (CDC)",
+   "abstracts_numeric": 1014,
+   "year": 2025,
+   "source_url": "https://dblp.org/streams/conf/cdc",
+   "rung": 4,
+   "tier": "BORDERLINE",
+   "events_per_yr": 1,
+   "method": "RUNG 4 PRODUCED THIS FIGURE — archive count via DBLP SPARQL (https://sparql.dblp.org/sparql): COUNT of ?p dblp:publishedInStream <https://dblp.org/streams/conf/cdc> with dblp:yearOfPublication \"2025\"^^xsd:gYear, grouped by dblp:publishedAsPartOf volume; volumes whose title contains workshop/companion/adjunct/tutorial/demo/extended-abstracts terms are EXCLUDED as workshop content: main track 1,014, workshop volumes 0. Unit = accepted papers in the proceedings (invited keynote abstracts, if any, are a handful and not separable). Cadence 1/yr from the share of 2018-2025 with records. Crossref proceedings-article facet for 2025 gives 1,015 under '2025 IEEE 64th Conference on Decision and Control (CDC)' (independent second source; agreement within 1 papers). Language: n/a (bibliographic index). [dblp wave, 2026-09-13]",
+   "workshop": 0,
+   "abstracts": "1,014 accepted papers in the 2025 proceedings (DBLP main-track volumes; 0 further papers in workshop/companion volumes not counted)",
+   "stream": "conf/cdc",
+   "subfield": "engineering (IEEE society meeting)"
+  },
+  {
+   "conference": "ACM Conference on Human Factors in Computing Systems (CHI)",
+   "abstracts_numeric": 1249,
+   "year": 2025,
+   "source_url": "https://dblp.org/streams/conf/chi",
+   "rung": 4,
+   "tier": "BORDERLINE",
+   "events_per_yr": 1,
+   "method": "RUNG 4 PRODUCED THIS FIGURE — archive count via DBLP SPARQL (https://sparql.dblp.org/sparql): COUNT of ?p dblp:publishedInStream <https://dblp.org/streams/conf/chi> with dblp:yearOfPublication \"2025\"^^xsd:gYear, grouped by dblp:publishedAsPartOf volume; volumes whose title contains workshop/companion/adjunct/tutorial/demo/extended-abstracts terms are EXCLUDED as workshop content: main track 1,249, workshop volumes 920. Unit = accepted papers in the proceedings (invited keynote abstracts, if any, are a handful and not separable). Cadence 1/yr from the share of 2018-2025 with records. Crossref proceedings-article facet for 2025 gives 1,249 under 'Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems' (independent second source; agreement within 0 papers). Language: n/a (bibliographic index). [dblp wave, 2026-09-13]",
+   "workshop": 920,
+   "abstracts": "1,249 accepted papers in the 2025 proceedings (DBLP main-track volumes; 920 further papers in workshop/companion volumes not counted)",
+   "stream": "conf/chi",
+   "subfield": "CS / AI"
+  },
+  {
+   "conference": "International Conference on Information and Knowledge Management (CIKM)",
+   "abstracts_numeric": 852,
+   "year": 2025,
+   "source_url": "https://dblp.org/streams/conf/cikm",
+   "rung": 4,
+   "tier": "BORDERLINE",
+   "events_per_yr": 1,
+   "method": "RUNG 4 PRODUCED THIS FIGURE — archive count via DBLP SPARQL (https://sparql.dblp.org/sparql): COUNT of ?p dblp:publishedInStream <https://dblp.org/streams/conf/cikm> with dblp:yearOfPublication \"2025\"^^xsd:gYear, grouped by dblp:publishedAsPartOf volume; volumes whose title contains workshop/companion/adjunct/tutorial/demo/extended-abstracts terms are EXCLUDED as workshop content: main track 852, workshop volumes 0. Unit = accepted papers in the proceedings (invited keynote abstracts, if any, are a handful and not separable). Cadence 1/yr from the share of 2018-2025 with records. Crossref proceedings-article facet for 2025 gives 852 under 'Proceedings of the 34th ACM International Conference on Information and Knowledge Management' (independent second source; agreement within 0 papers). Language: n/a (bibliographic index). [dblp wave, 2026-09-13]",
+   "workshop": 0,
+   "abstracts": "852 accepted papers in the 2025 proceedings (DBLP main-track volumes; 0 further papers in workshop/companion volumes not counted)",
+   "stream": "conf/cikm",
+   "subfield": "CS / AI"
+  },
+  {
+   "conference": "Annual Meeting of the Cognitive Science Society (CogSci)",
+   "abstracts_numeric": 1368,
+   "year": 2025,
+   "source_url": "https://dblp.org/streams/conf/cogsci",
+   "rung": 4,
+   "tier": "BORDERLINE",
+   "events_per_yr": 1,
+   "method": "RUNG 4 PRODUCED THIS FIGURE — archive count via DBLP SPARQL (https://sparql.dblp.org/sparql): COUNT of ?p dblp:publishedInStream <https://dblp.org/streams/conf/cogsci> with dblp:yearOfPublication \"2025\"^^xsd:gYear, grouped by dblp:publishedAsPartOf volume; volumes whose title contains workshop/companion/adjunct/tutorial/demo/extended-abstracts terms are EXCLUDED as workshop content: main track 1,368, workshop volumes 0. Unit = accepted papers in the proceedings (invited keynote abstracts, if any, are a handful and not separable). Cadence 1/yr from the share of 2018-2025 with records. No Crossref container-title with >=800 papers matched this series (DBLP is the only source). Language: n/a (bibliographic index). [dblp wave, 2026-09-13]",
+   "workshop": 0,
+   "abstracts": "1,368 accepted papers in the 2025 proceedings (DBLP main-track volumes; 0 further papers in workshop/companion volumes not counted)",
+   "stream": "conf/cogsci",
+   "subfield": "CS / AI — BOUNDARY: cognitive science society (psychology / CS)"
+  },
+  {
+   "conference": "International Conference on Computational Linguistics (COLING)",
+   "abstracts_numeric": 827,
+   "year": 2025,
+   "source_url": "https://dblp.org/streams/conf/coling",
+   "rung": 4,
+   "tier": "BORDERLINE",
+   "events_per_yr": 0.62,
+   "method": "RUNG 4 PRODUCED THIS FIGURE — archive count via DBLP SPARQL (https://sparql.dblp.org/sparql): COUNT of ?p dblp:publishedInStream <https://dblp.org/streams/conf/coling> with dblp:yearOfPublication \"2025\"^^xsd:gYear, grouped by dblp:publishedAsPartOf volume; volumes whose title contains workshop/companion/adjunct/tutorial/demo/extended-abstracts terms are EXCLUDED as workshop content: main track 827, workshop volumes 422. Unit = accepted papers in the proceedings (invited keynote abstracts, if any, are a handful and not separable). Cadence 0.62/yr from the share of 2018-2025 with records. No Crossref container-title with >=800 papers matched this series (DBLP is the only source). Language: n/a (bibliographic index). [dblp wave, 2026-09-13]",
+   "workshop": 422,
+   "abstracts": "827 accepted papers in the 2025 proceedings (DBLP main-track volumes; 422 further papers in workshop/companion volumes not counted)",
+   "stream": "conf/coling",
+   "subfield": "CS / AI"
+  },
+  {
+   "conference": "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+   "abstracts_numeric": 2871,
+   "year": 2025,
+   "source_url": "https://dblp.org/streams/conf/cvpr",
+   "rung": 4,
+   "tier": "VERIFIED",
+   "events_per_yr": 1,
+   "method": "RUNG 4 PRODUCED THIS FIGURE — archive count via DBLP SPARQL (https://sparql.dblp.org/sparql): COUNT of ?p dblp:publishedInStream <https://dblp.org/streams/conf/cvpr> with dblp:yearOfPublication \"2025\"^^xsd:gYear, grouped by dblp:publishedAsPartOf volume; volumes whose title contains workshop/companion/adjunct/tutorial/demo/extended-abstracts terms are EXCLUDED as workshop content: main track 2,871, workshop volumes 675. Unit = accepted papers in the proceedings (invited keynote abstracts, if any, are a handful and not separable). Cadence 1/yr from the share of 2018-2025 with records. Crossref proceedings-article facet for 2025 gives 2,881 under '2025 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)' (independent second source; agreement within 10 papers). Language: n/a (bibliographic index). [dblp wave, 2026-09-13]",
+   "workshop": 675,
+   "abstracts": "2,871 accepted papers in the 2025 proceedings (DBLP main-track volumes; 675 further papers in workshop/companion volumes not counted)",
+   "stream": "conf/cvpr",
+   "subfield": "CS / AI"
+  },
+  {
+   "conference": "European Conference on Computer Vision (ECCV)",
+   "abstracts_numeric": 2359,
+   "year": 2025,
+   "source_url": "https://dblp.org/streams/conf/eccv",
+   "rung": 4,
+   "tier": "VERIFIED",
+   "events_per_yr": 0.5,
+   "method": "RUNG 4 PRODUCED THIS FIGURE — archive count via DBLP SPARQL (https://sparql.dblp.org/sparql): COUNT of ?p dblp:publishedInStream <https://dblp.org/streams/conf/eccv> with dblp:yearOfPublication \"2025\"^^xsd:gYear, grouped by dblp:publishedAsPartOf volume; volumes whose title contains workshop/companion/adjunct/tutorial/demo/extended-abstracts terms are EXCLUDED as workshop content: main track 2,359, workshop volumes 573. Unit = accepted papers in the proceedings (invited keynote abstracts, if any, are a handful and not separable). Cadence 0.5/yr from the share of 2018-2025 with records. No Crossref container-title with >=800 papers matched this series (DBLP is the only source). Language: n/a (bibliographic index). [dblp wave, 2026-09-13]  ||  CADENCE OVERRIDE: ECCV is biennial (even years); DBLP dates the ECCV 2024 LNCS volumes 2025, so the 2025 count IS the 2024 edition",
+   "workshop": 573,
+   "abstracts": "2,359 accepted papers in the 2025 proceedings (DBLP main-track volumes; 573 further papers in workshop/companion volumes not counted)",
+   "stream": "conf/eccv",
+   "subfield": "CS / AI"
+  },
+  {
+   "conference": "Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+   "abstracts_numeric": 3408,
+   "year": 2025,
+   "source_url": "https://dblp.org/streams/conf/emnlp",
+   "rung": 4,
+   "tier": "VERIFIED",
+   "events_per_yr": 1,
+   "method": "RUNG 4 PRODUCED THIS FIGURE — archive count via DBLP SPARQL (https://sparql.dblp.org/sparql): COUNT of ?p dblp:publishedInStream <https://dblp.org/streams/conf/emnlp> with dblp:yearOfPublication \"2025\"^^xsd:gYear, grouped by dblp:publishedAsPartOf volume; volumes whose title contains workshop/companion/adjunct/tutorial/demo/extended-abstracts terms are EXCLUDED as workshop content: main track 3,408, workshop volumes 86. Unit = accepted papers in the proceedings (invited keynote abstracts, if any, are a handful and not separable). Cadence 1/yr from the share of 2018-2025 with records. Crossref proceedings-article facet for 2025 gives 1,406 under 'Findings of the Association for Computational Linguistics: EMNLP 2025' (independent second source; agreement within 2002 papers). Language: n/a (bibliographic index). [dblp wave, 2026-09-13]",
+   "workshop": 86,
+   "abstracts": "3,408 accepted papers in the 2025 proceedings (DBLP main-track volumes; 86 further papers in workshop/companion volumes not counted)",
+   "stream": "conf/emnlp",
+   "subfield": "CS / AI"
+  },
+  {
+   "conference": "Global Communications Conference (GLOBECOM)",
+   "abstracts_numeric": 1074,
+   "year": 2025,
+   "source_url": "https://dblp.org/streams/conf/globecom",
+   "rung": 4,
+   "tier": "BORDERLINE",
+   "events_per_yr": 1,
+   "method": "RUNG 4 PRODUCED THIS FIGURE — archive count via DBLP SPARQL (https://sparql.dblp.org/sparql): COUNT of ?p dblp:publishedInStream <https://dblp.org/streams/conf/globecom> with dblp:yearOfPublication \"2025\"^^xsd:gYear, grouped by dblp:publishedAsPartOf volume; volumes whose title contains workshop/companion/adjunct/tutorial/demo/extended-abstracts terms are EXCLUDED as workshop content: main track 1,074, workshop volumes 395. Unit = accepted papers in the proceedings (invited keynote abstracts, if any, are a handful and not separable). Cadence 1/yr from the share of 2018-2025 with records. Crossref proceedings-article facet for 2025 gives 1,079 under 'GLOBECOM 2025 - 2025 IEEE Global Communications Conference' (independent second source; agreement within 5 papers). Language: n/a (bibliographic index). [dblp wave, 2026-09-13]",
+   "workshop": 395,
+   "abstracts": "1,074 accepted papers in the 2025 proceedings (DBLP main-track volumes; 395 further papers in workshop/companion volumes not counted)",
+   "stream": "conf/globecom",
+   "subfield": "engineering (IEEE society meeting)"
+  },
+  {
+   "conference": "HCI International Conference (HCII)",
+   "abstracts_numeric": 1429,
+   "year": 2025,
+   "source_url": "https://dblp.org/streams/conf/hci",
+   "rung": 4,
+   "tier": "BORDERLINE",
+   "events_per_yr": 1,
+   "method": "RUNG 4 PRODUCED THIS FIGURE — archive count via DBLP SPARQL (https://sparql.dblp.org/sparql): COUNT of ?p dblp:publishedInStream <https://dblp.org/streams/conf/hci> with dblp:yearOfPublication \"2025\"^^xsd:gYear, grouped by dblp:publishedAsPartOf volume; volumes whose title contains workshop/companion/adjunct/tutorial/demo/extended-abstracts terms are EXCLUDED as workshop content: main track 1,429, workshop volumes 559. Unit = accepted papers in the proceedings (invited keynote abstracts, if any, are a handful and not separable). Cadence 1/yr from the share of 2018-2025 with records. No Crossref container-title with >=800 papers matched this series (DBLP is the only source). Language: n/a (bibliographic index). [dblp wave, 2026-09-13]",
+   "workshop": 559,
+   "abstracts": "1,429 accepted papers in the 2025 proceedings (DBLP main-track volumes; 559 further papers in workshop/companion volumes not counted)",
+   "stream": "conf/hci",
+   "subfield": "CS / AI"
+  },
+  {
+   "conference": "Hawaii International Conference on System Sciences (HICSS)",
+   "abstracts_numeric": 891,
+   "year": 2025,
+   "source_url": "https://dblp.org/streams/conf/hicss",
+   "rung": 4,
+   "tier": "BORDERLINE",
+   "events_per_yr": 1,
+   "method": "RUNG 4 PRODUCED THIS FIGURE — archive count via DBLP SPARQL (https://sparql.dblp.org/sparql): COUNT of ?p dblp:publishedInStream <https://dblp.org/streams/conf/hicss> with dblp:yearOfPublication \"2025\"^^xsd:gYear, grouped by dblp:publishedAsPartOf volume; volumes whose title contains workshop/companion/adjunct/tutorial/demo/extended-abstracts terms are EXCLUDED as workshop content: main track 891, workshop volumes 0. Unit = accepted papers in the proceedings (invited keynote abstracts, if any, are a handful and not separable). Cadence 1/yr from the share of 2018-2025 with records. Crossref proceedings-article facet for 2025 gives 903 under 'Proceedings of the Annual Hawaii International Conference on System Sciences' (independent second source; agreement within 12 papers). Language: n/a (bibliographic index). [dblp wave, 2026-09-13]",
+   "workshop": 0,
+   "abstracts": "891 accepted papers in the 2025 proceedings (DBLP main-track volumes; 0 further papers in workshop/companion volumes not counted)",
+   "stream": "conf/hicss",
+   "subfield": "CS / AI — BOUNDARY: information systems / management"
+  },
+  {
+   "conference": "IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP)",
+   "abstracts_numeric": 3307,
+   "year": 2025,
+   "source_url": "https://dblp.org/streams/conf/icassp",
+   "rung": 4,
+   "tier": "VERIFIED",
+   "events_per_yr": 1,
+   "method": "RUNG 4 PRODUCED THIS FIGURE — archive count via DBLP SPARQL (https://sparql.dblp.org/sparql): COUNT of ?p dblp:publishedInStream <https://dblp.org/streams/conf/icassp> with dblp:yearOfPublication \"2025\"^^xsd:gYear, grouped by dblp:publishedAsPartOf volume; volumes whose title contains workshop/companion/adjunct/tutorial/demo/extended-abstracts terms are EXCLUDED as workshop content: main track 3,307, workshop volumes 64. Unit = accepted papers in the proceedings (invited keynote abstracts, if any, are a handful and not separable). Cadence 1/yr from the share of 2018-2025 with records. Crossref proceedings-article facet for 2025 gives 3,312 under 'ICASSP 2025 - 2025 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)' (independent second source; agreement within 5 papers). Language: n/a (bibliographic index). [dblp wave, 2026-09-13]",
+   "workshop": 64,
+   "abstracts": "3,307 accepted papers in the 2025 proceedings (DBLP main-track volumes; 64 further papers in workshop/companion volumes not counted)",
+   "stream": "conf/icassp",
+   "subfield": "engineering (IEEE society meeting)"
+  },
+  {
+   "conference": "IEEE International Conference on Communications (ICC)",
+   "abstracts_numeric": 1122,
+   "year": 2025,
+   "source_url": "https://dblp.org/streams/conf/icc",
+   "rung": 4,
+   "tier": "BORDERLINE",
+   "events_per_yr": 1,
+   "method": "RUNG 4 PRODUCED THIS FIGURE — archive count via DBLP SPARQL (https://sparql.dblp.org/sparql): COUNT of ?p dblp:publishedInStream <https://dblp.org/streams/conf/icc> with dblp:yearOfPublication \"2025\"^^xsd:gYear, grouped by dblp:publishedAsPartOf volume; volumes whose title contains workshop/companion/adjunct/tutorial/demo/extended-abstracts terms are EXCLUDED as workshop content: main track 1,122, workshop volumes 357. Unit = accepted papers in the proceedings (invited keynote abstracts, if any, are a handful and not separable). Cadence 1/yr from the share of 2018-2025 with records. Crossref proceedings-article facet for 2025 gives 1,128 under 'ICC 2025 - IEEE International Conference on Communications' (independent second source; agreement within 6 papers). Language: n/a (bibliographic index). [dblp wave, 2026-09-13]",
+   "workshop": 357,
+   "abstracts": "1,122 accepted papers in the 2025 proceedings (DBLP main-track volumes; 357 further papers in workshop/companion volumes not counted)",
+   "stream": "conf/icc",
+   "subfield": "engineering (IEEE society meeting)"
+  },
+  {
+   "conference": "International Conference on Computing Communication and Networking Technologies (ICCCNT)",
+   "abstracts_numeric": 2463,
+   "year": 2024,
+   "source_url": "https://dblp.org/streams/conf/icccnt",
+   "rung": 4,
+   "tier": "VERIFIED",
+   "events_per_yr": 1,
+   "method": "RUNG 4 PRODUCED THIS FIGURE — archive count via DBLP SPARQL (https://sparql.dblp.org/sparql): COUNT of ?p dblp:publishedInStream <https://dblp.org/streams/conf/icccnt> with dblp:yearOfPublication \"2024\"^^xsd:gYear, grouped by dblp:publishedAsPartOf volume; volumes whose title contains workshop/companion/adjunct/tutorial/demo/extended-abstracts terms are EXCLUDED as workshop content: main track 2,463, workshop volumes 0. Unit = accepted papers in the proceedings (invited keynote abstracts, if any, are a handful and not separable). Cadence 1/yr from the share of 2018-2025 with records. Crossref proceedings-article facet for 2024 gives 2,807 under '2024 15th International Conference on Computing Communication and Networking Technologies (ICCCNT)' (independent second source; agreement within 344 papers). Language: n/a (bibliographic index). [dblp wave, 2026-09-13]",
+   "workshop": 0,
+   "abstracts": "2,463 accepted papers in the 2024 proceedings (DBLP main-track volumes; 0 further papers in workshop/companion volumes not counted)",
+   "stream": "conf/icccnt",
+   "subfield": "CS / AI"
+  },
+  {
+   "conference": "IEEE/CVF International Conference on Computer Vision (ICCV)",
+   "abstracts_numeric": 2701,
+   "year": 2025,
+   "source_url": "https://dblp.org/streams/conf/iccv",
+   "rung": 4,
+   "tier": "VERIFIED",
+   "events_per_yr": 0.5,
+   "method": "RUNG 4 PRODUCED THIS FIGURE — archive count via DBLP SPARQL (https://sparql.dblp.org/sparql): COUNT of ?p dblp:publishedInStream <https://dblp.org/streams/conf/iccv> with dblp:yearOfPublication \"2025\"^^xsd:gYear, grouped by dblp:publishedAsPartOf volume; volumes whose title contains workshop/companion/adjunct/tutorial/demo/extended-abstracts terms are EXCLUDED as workshop content: main track 2,701, workshop volumes 795. Unit = accepted papers in the proceedings (invited keynote abstracts, if any, are a handful and not separable). Cadence 0.5/yr from the share of 2018-2025 with records. Crossref proceedings-article facet for 2025 gives 2,709 under '2025 IEEE/CVF International Conference on Computer Vision (ICCV)' (independent second source; agreement within 8 papers). Language: n/a (bibliographic index). [dblp wave, 2026-09-13]  ||  CADENCE OVERRIDE: ICCV is biennial (odd years)",
+   "workshop": 795,
+   "abstracts": "2,701 accepted papers in the 2025 proceedings (DBLP main-track volumes; 795 further papers in workshop/companion volumes not counted)",
+   "stream": "conf/iccv",
+   "subfield": "CS / AI"
+  },
+  {
+   "conference": "International Conference on Intelligent Computing (ICIC)",
+   "abstracts_numeric": 1206,
+   "year": 2025,
+   "source_url": "https://dblp.org/streams/conf/icic",
+   "rung": 4,
+   "tier": "BORDERLINE",
+   "events_per_yr": 1,
+   "method": "RUNG 4 PRODUCED THIS FIGURE — archive count via DBLP SPARQL (https://sparql.dblp.org/sparql): COUNT of ?p dblp:publishedInStream <https://dblp.org/streams/conf/icic> with dblp:yearOfPublication \"2025\"^^xsd:gYear, grouped by dblp:publishedAsPartOf volume; volumes whose title contains workshop/companion/adjunct/tutorial/demo/extended-abstracts terms are EXCLUDED as workshop content: main track 1,206, workshop volumes 0. Unit = accepted papers in the proceedings (invited keynote abstracts, if any, are a handful and not separable). Cadence 1/yr from the share of 2018-2025 with records. No Crossref container-title with >=800 papers matched this series (DBLP is the only source). Language: n/a (bibliographic index). [dblp wave, 2026-09-13]",
+   "workshop": 0,
+   "abstracts": "1,206 accepted papers in the 2025 proceedings (DBLP main-track volumes; 0 further papers in workshop/companion volumes not counted)",
+   "stream": "conf/icic",
+   "subfield": "CS / AI"
+  },
+  {
+   "conference": "International Conference on Learning Representations (ICLR)",
+   "abstracts_numeric": 3704,
+   "year": 2025,
+   "source_url": "https://dblp.org/streams/conf/iclr",
+   "rung": 4,
+   "tier": "VERIFIED",
+   "events_per_yr": 1,
+   "method": "RUNG 4 PRODUCED THIS FIGURE — archive count via DBLP SPARQL (https://sparql.dblp.org/sparql): COUNT of ?p dblp:publishedInStream <https://dblp.org/streams/conf/iclr> with dblp:yearOfPublication \"2025\"^^xsd:gYear, grouped by dblp:publishedAsPartOf volume; volumes whose title contains workshop/companion/adjunct/tutorial/demo/extended-abstracts terms are EXCLUDED as workshop content: main track 3,704, workshop volumes 0. Unit = accepted papers in the proceedings (invited keynote abstracts, if any, are a handful and not separable). Cadence 1/yr from the share of 2018-2025 with records. No Crossref container-title with >=800 papers matched this series (DBLP is the only source). Language: n/a (bibliographic index). [dblp wave, 2026-09-13]",
+   "workshop": 0,
+   "abstracts": "3,704 accepted papers in the 2025 proceedings (DBLP main-track volumes; 0 further papers in workshop/companion volumes not counted)",
+   "stream": "conf/iclr",
+   "subfield": "CS / AI"
+  },
+  {
+   "conference": "IEEE International Conference on Multimedia and Expo (ICME)",
+   "abstracts_numeric": 994,
+   "year": 2025,
+   "source_url": "https://dblp.org/streams/conf/icmcs",
+   "rung": 4,
+   "tier": "BORDERLINE",
+   "events_per_yr": 1,
+   "method": "RUNG 4 PRODUCED THIS FIGURE — archive count via DBLP SPARQL (https://sparql.dblp.org/sparql): COUNT of ?p dblp:publishedInStream <https://dblp.org/streams/conf/icmcs> with dblp:yearOfPublication \"2025\"^^xsd:gYear, grouped by dblp:publishedAsPartOf volume; volumes whose title contains workshop/companion/adjunct/tutorial/demo/extended-abstracts terms are EXCLUDED as workshop content: main track 994, workshop volumes 86. Unit = accepted papers in the proceedings (invited keynote abstracts, if any, are a handful and not separable). Cadence 1/yr from the share of 2018-2025 with records. Crossref proceedings-article facet for 2025 gives 1,004 under '2025 IEEE International Conference on Multimedia and Expo (ICME)' (independent second source; agreement within 10 papers). Language: n/a (bibliographic index). [dblp wave, 2026-09-13]",
+   "workshop": 86,
+   "abstracts": "994 accepted papers in the 2025 proceedings (DBLP main-track volumes; 86 further papers in workshop/companion volumes not counted)",
+   "stream": "conf/icmcs",
+   "subfield": "CS / AI"
+  },
+  {
+   "conference": "International Conference on Machine Learning (ICML)",
+   "abstracts_numeric": 3330,
+   "year": 2025,
+   "source_url": "https://dblp.org/streams/conf/icml",
+   "rung": 4,
+   "tier": "VERIFIED",
+   "events_per_yr": 1,
+   "method": "RUNG 4 PRODUCED THIS FIGURE — archive count via DBLP SPARQL (https://sparql.dblp.org/sparql): COUNT of ?p dblp:publishedInStream <https://dblp.org/streams/conf/icml> with dblp:yearOfPublication \"2025\"^^xsd:gYear, grouped by dblp:publishedAsPartOf volume; volumes whose title contains workshop/companion/adjunct/tutorial/demo/extended-abstracts terms are EXCLUDED as workshop content: main track 3,330, workshop volumes 11. Unit = accepted papers in the proceedings (invited keynote abstracts, if any, are a handful and not separable). Cadence 1/yr from the share of 2018-2025 with records. No Crossref container-title with >=800 papers matched this series (DBLP is the only source). Language: n/a (bibliographic index). [dblp wave, 2026-09-13]",
+   "workshop": 11,
+   "abstracts": "3,330 accepted papers in the 2025 proceedings (DBLP main-track volumes; 11 further papers in workshop/companion volumes not counted)",
+   "stream": "conf/icml",
+   "subfield": "CS / AI"
+  },
+  {
+   "conference": "International Conference on Pattern Recognition (ICPR)",
+   "abstracts_numeric": 958,
+   "year": 2025,
+   "source_url": "https://dblp.org/streams/conf/icpr",
+   "rung": 4,
+   "tier": "BORDERLINE",
+   "events_per_yr": 0.62,
+   "method": "RUNG 4 PRODUCED THIS FIGURE — archive count via DBLP SPARQL (https://sparql.dblp.org/sparql): COUNT of ?p dblp:publishedInStream <https://dblp.org/streams/conf/icpr> with dblp:yearOfPublication \"2025\"^^xsd:gYear, grouped by dblp:publishedAsPartOf volume; volumes whose title contains workshop/companion/adjunct/tutorial/demo/extended-abstracts terms are EXCLUDED as workshop content: main track 958, workshop volumes 183. Unit = accepted papers in the proceedings (invited keynote abstracts, if any, are a handful and not separable). Cadence 0.62/yr from the share of 2018-2025 with records. No Crossref container-title with >=800 papers matched this series (DBLP is the only source). Language: n/a (bibliographic index). [dblp wave, 2026-09-13]",
+   "workshop": 183,
+   "abstracts": "958 accepted papers in the 2025 proceedings (DBLP main-track volumes; 183 further papers in workshop/companion volumes not counted)",
+   "stream": "conf/icpr",
+   "subfield": "CS / AI"
+  },
+  {
+   "conference": "IEEE International Conference on Robotics and Automation (ICRA)",
+   "abstracts_numeric": 1604,
+   "year": 2025,
+   "source_url": "https://dblp.org/streams/conf/icra",
+   "rung": 4,
+   "tier": "VERIFIED",
+   "events_per_yr": 1,
+   "method": "RUNG 4 PRODUCED THIS FIGURE — archive count via DBLP SPARQL (https://sparql.dblp.org/sparql): COUNT of ?p dblp:publishedInStream <https://dblp.org/streams/conf/icra> with dblp:yearOfPublication \"2025\"^^xsd:gYear, grouped by dblp:publishedAsPartOf volume; volumes whose title contains workshop/companion/adjunct/tutorial/demo/extended-abstracts terms are EXCLUDED as workshop content: main track 1,604, workshop volumes 0. Unit = accepted papers in the proceedings (invited keynote abstracts, if any, are a handful and not separable). Cadence 1/yr from the share of 2018-2025 with records. Crossref proceedings-article facet for 2025 gives 1,610 under '2025 IEEE International Conference on Robotics and Automation (ICRA)' (independent second source; agreement within 6 papers). Language: n/a (bibliographic index). [dblp wave, 2026-09-13]",
+   "workshop": 0,
+   "abstracts": "1,604 accepted papers in the 2025 proceedings (DBLP main-track volumes; 0 further papers in workshop/companion volumes not counted)",
+   "stream": "conf/icra",
+   "subfield": "engineering (IEEE society meeting)"
+  },
+  {
+   "conference": "Annual Conference of the IEEE Industrial Electronics Society (IECON)",
+   "abstracts_numeric": 962,
+   "year": 2025,
+   "source_url": "https://dblp.org/streams/conf/iecon",
+   "rung": 4,
+   "tier": "BORDERLINE",
+   "events_per_yr": 1,
+   "method": "RUNG 4 PRODUCED THIS FIGURE — archive count via DBLP SPARQL (https://sparql.dblp.org/sparql): COUNT of ?p dblp:publishedInStream <https://dblp.org/streams/conf/iecon> with dblp:yearOfPublication \"2025\"^^xsd:gYear, grouped by dblp:publishedAsPartOf volume; volumes whose title contains workshop/companion/adjunct/tutorial/demo/extended-abstracts terms are EXCLUDED as workshop content: main track 962, workshop volumes 0. Unit = accepted papers in the proceedings (invited keynote abstracts, if any, are a handful and not separable). Cadence 1/yr from the share of 2018-2025 with records. Crossref proceedings-article facet for 2025 gives 963 under 'IECON 2025 – 51st Annual Conference of the IEEE Industrial Electronics Society' (independent second source; agreement within 1 papers). Language: n/a (bibliographic index). [dblp wave, 2026-09-13]",
+   "workshop": 0,
+   "abstracts": "962 accepted papers in the 2025 proceedings (DBLP main-track volumes; 0 further papers in workshop/companion volumes not counted)",
+   "stream": "conf/iecon",
+   "subfield": "engineering (IEEE society meeting)"
+  },
+  {
+   "conference": "IEEE International Geoscience and Remote Sensing Symposium (IGARSS)",
+   "abstracts_numeric": 2589,
+   "year": 2024,
+   "source_url": "https://dblp.org/streams/conf/igarss",
+   "rung": 4,
+   "tier": "VERIFIED",
+   "events_per_yr": 1,
+   "method": "RUNG 4 PRODUCED THIS FIGURE — archive count via DBLP SPARQL (https://sparql.dblp.org/sparql): COUNT of ?p dblp:publishedInStream <https://dblp.org/streams/conf/igarss> with dblp:yearOfPublication \"2024\"^^xsd:gYear, grouped by dblp:publishedAsPartOf volume; volumes whose title contains workshop/companion/adjunct/tutorial/demo/extended-abstracts terms are EXCLUDED as workshop content: main track 2,589, workshop volumes 0. Unit = accepted papers in the proceedings (invited keynote abstracts, if any, are a handful and not separable). Cadence 1/yr from the share of 2018-2025 with records. Crossref proceedings-article facet for 2024 gives 2,600 under 'IGARSS 2024 - 2024 IEEE International Geoscience and Remote Sensing Symposium' (independent second source; agreement within 11 papers). Language: n/a (bibliographic index). [dblp wave, 2026-09-13]",
+   "workshop": 0,
+   "abstracts": "2,589 accepted papers in the 2024 proceedings (DBLP main-track volumes; 0 further papers in workshop/companion volumes not counted)",
+   "stream": "conf/igarss",
+   "subfield": "engineering (IEEE society meeting)"
+  },
+  {
+   "conference": "International Joint Conference on Artificial Intelligence (IJCAI)",
+   "abstracts_numeric": 1280,
+   "year": 2025,
+   "source_url": "https://dblp.org/streams/conf/ijcai",
+   "rung": 4,
+   "tier": "BORDERLINE",
+   "events_per_yr": 1,
+   "method": "RUNG 4 PRODUCED THIS FIGURE — archive count via DBLP SPARQL (https://sparql.dblp.org/sparql): COUNT of ?p dblp:publishedInStream <https://dblp.org/streams/conf/ijcai> with dblp:yearOfPublication \"2025\"^^xsd:gYear, grouped by dblp:publishedAsPartOf volume; volumes whose title contains workshop/companion/adjunct/tutorial/demo/extended-abstracts terms are EXCLUDED as workshop content: main track 1,280, workshop volumes 8. Unit = accepted papers in the proceedings (invited keynote abstracts, if any, are a handful and not separable). Cadence 1/yr from the share of 2018-2025 with records. Crossref proceedings-article facet for 2025 gives 1,281 under 'Proceedings of the Thirty-Fourth International Joint Conference on Artificial Intelligence' (independent second source; agreement within 1 papers). Language: n/a (bibliographic index). [dblp wave, 2026-09-13]",
+   "workshop": 8,
+   "abstracts": "1,280 accepted papers in the 2025 proceedings (DBLP main-track volumes; 8 further papers in workshop/companion volumes not counted)",
+   "stream": "conf/ijcai",
+   "subfield": "CS / AI"
+  },
+  {
+   "conference": "IEEE International Joint Conference on Neural Network (IJCNN)",
+   "abstracts_numeric": 2138,
+   "year": 2025,
+   "source_url": "https://dblp.org/streams/conf/ijcnn",
+   "rung": 4,
+   "tier": "VERIFIED",
+   "events_per_yr": 1,
+   "method": "RUNG 4 PRODUCED THIS FIGURE — archive count via DBLP SPARQL (https://sparql.dblp.org/sparql): COUNT of ?p dblp:publishedInStream <https://dblp.org/streams/conf/ijcnn> with dblp:yearOfPublication \"2025\"^^xsd:gYear, grouped by dblp:publishedAsPartOf volume; volumes whose title contains workshop/companion/adjunct/tutorial/demo/extended-abstracts terms are EXCLUDED as workshop content: main track 2,138, workshop volumes 0. Unit = accepted papers in the proceedings (invited keynote abstracts, if any, are a handful and not separable). Cadence 1/yr from the share of 2018-2025 with records. Crossref proceedings-article facet for 2025 gives 2,149 under '2025 International Joint Conference on Neural Networks (IJCNN)' (independent second source; agreement within 11 papers). Language: n/a (bibliographic index). [dblp wave, 2026-09-13]",
+   "workshop": 0,
+   "abstracts": "2,138 accepted papers in the 2025 proceedings (DBLP main-track volumes; 0 further papers in workshop/companion volumes not counted)",
+   "stream": "conf/ijcnn",
+   "subfield": "CS / AI"
+  },
+  {
+   "conference": "Conference of the International Speech Communication Association (INTERSPEECH)",
+   "abstracts_numeric": 1180,
+   "year": 2025,
+   "source_url": "https://dblp.org/streams/conf/interspeech",
+   "rung": 4,
+   "tier": "BORDERLINE",
+   "events_per_yr": 1,
+   "method": "RUNG 4 PRODUCED THIS FIGURE — archive count via DBLP SPARQL (https://sparql.dblp.org/sparql): COUNT of ?p dblp:publishedInStream <https://dblp.org/streams/conf/interspeech> with dblp:yearOfPublication \"2025\"^^xsd:gYear, grouped by dblp:publishedAsPartOf volume; volumes whose title contains workshop/companion/adjunct/tutorial/demo/extended-abstracts terms are EXCLUDED as workshop content: main track 1,180, workshop volumes 0. Unit = accepted papers in the proceedings (invited keynote abstracts, if any, are a handful and not separable). Cadence 1/yr from the share of 2018-2025 with records. Crossref proceedings-article facet for 2025 gives 1,151 under 'Interspeech 2025' (independent second source; agreement within 29 papers). Language: n/a (bibliographic index). [dblp wave, 2026-09-13]",
+   "workshop": 0,
+   "abstracts": "1,180 accepted papers in the 2025 proceedings (DBLP main-track volumes; 0 further papers in workshop/companion volumes not counted)",
+   "stream": "conf/interspeech",
+   "subfield": "CS / AI"
+  },
+  {
+   "conference": "IEEE/RJS International Conference on Intelligent RObots and Systems (IROS)",
+   "abstracts_numeric": 1985,
+   "year": 2025,
+   "source_url": "https://dblp.org/streams/conf/iros",
+   "rung": 4,
+   "tier": "VERIFIED",
+   "events_per_yr": 1,
+   "method": "RUNG 4 PRODUCED THIS FIGURE — archive count via DBLP SPARQL (https://sparql.dblp.org/sparql): COUNT of ?p dblp:publishedInStream <https://dblp.org/streams/conf/iros> with dblp:yearOfPublication \"2025\"^^xsd:gYear, grouped by dblp:publishedAsPartOf volume; volumes whose title contains workshop/companion/adjunct/tutorial/demo/extended-abstracts terms are EXCLUDED as workshop content: main track 1,985, workshop volumes 0. Unit = accepted papers in the proceedings (invited keynote abstracts, if any, are a handful and not separable). Cadence 1/yr from the share of 2018-2025 with records. Crossref proceedings-article facet for 2025 gives 1,988 under '2025 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)' (independent second source; agreement within 3 papers). Language: n/a (bibliographic index). [dblp wave, 2026-09-13]",
+   "workshop": 0,
+   "abstracts": "1,985 accepted papers in the 2025 proceedings (DBLP main-track volumes; 0 further papers in workshop/companion volumes not counted)",
+   "stream": "conf/iros",
+   "subfield": "engineering (IEEE society meeting)"
+  },
+  {
+   "conference": "IEEE International Symposium on Biomedical Imaging (ISBI)",
+   "abstracts_numeric": 638,
+   "year": 2025,
+   "source_url": "https://dblp.org/streams/conf/isbi",
+   "rung": 4,
+   "tier": "OUT",
+   "events_per_yr": 1,
+   "method": "RUNG 4 PRODUCED THIS FIGURE — archive count via DBLP SPARQL (https://sparql.dblp.org/sparql): COUNT of ?p dblp:publishedInStream <https://dblp.org/streams/conf/isbi> with dblp:yearOfPublication \"2025\"^^xsd:gYear, grouped by dblp:publishedAsPartOf volume; volumes whose title contains workshop/companion/adjunct/tutorial/demo/extended-abstracts terms are EXCLUDED as workshop content: main track 638, workshop volumes 0. Unit = accepted papers in the proceedings (invited keynote abstracts, if any, are a handful and not separable). Cadence 1/yr from the share of 2018-2025 with records. Crossref proceedings-article facet for 2025 gives 643 under '2025 IEEE 22nd International Symposium on Biomedical Imaging (ISBI)' (independent second source; agreement within 5 papers). Language: n/a (bibliographic index). [dblp wave, 2026-09-13]",
+   "workshop": 0,
+   "abstracts": "638 accepted papers in the 2025 proceedings (DBLP main-track volumes; 0 further papers in workshop/companion volumes not counted)",
+   "stream": "conf/isbi",
+   "subfield": "engineering (IEEE society meeting) — BOUNDARY: biomedical imaging"
+  },
+  {
+   "conference": "IEEE International Symposium on Circuits and Systems (ISCAS)",
+   "abstracts_numeric": 1158,
+   "year": 2025,
+   "source_url": "https://dblp.org/streams/conf/iscas",
+   "rung": 4,
+   "tier": "BORDERLINE",
+   "events_per_yr": 1,
+   "method": "RUNG 4 PRODUCED THIS FIGURE — archive count via DBLP SPARQL (https://sparql.dblp.org/sparql): COUNT of ?p dblp:publishedInStream <https://dblp.org/streams/conf/iscas> with dblp:yearOfPublication \"2025\"^^xsd:gYear, grouped by dblp:publishedAsPartOf volume; volumes whose title contains workshop/companion/adjunct/tutorial/demo/extended-abstracts terms are EXCLUDED as workshop content: main track 1,158, workshop volumes 0. Unit = accepted papers in the proceedings (invited keynote abstracts, if any, are a handful and not separable). Cadence 1/yr from the share of 2018-2025 with records. Crossref proceedings-article facet for 2025 gives 1,163 under '2025 IEEE International Symposium on Circuits and Systems (ISCAS)' (independent second source; agreement within 5 papers). Language: n/a (bibliographic index). [dblp wave, 2026-09-13]",
+   "workshop": 0,
+   "abstracts": "1,158 accepted papers in the 2025 proceedings (DBLP main-track volumes; 0 further papers in workshop/companion volumes not counted)",
+   "stream": "conf/iscas",
+   "subfield": "engineering (IEEE society meeting)"
+  },
+  {
+   "conference": "ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD)",
+   "abstracts_numeric": 844,
+   "year": 2025,
+   "source_url": "https://dblp.org/streams/conf/kdd",
+   "rung": 4,
+   "tier": "BORDERLINE",
+   "events_per_yr": 1,
+   "method": "RUNG 4 PRODUCED THIS FIGURE — archive count via DBLP SPARQL (https://sparql.dblp.org/sparql): COUNT of ?p dblp:publishedInStream <https://dblp.org/streams/conf/kdd> with dblp:yearOfPublication \"2025\"^^xsd:gYear, grouped by dblp:publishedAsPartOf volume; volumes whose title contains workshop/companion/adjunct/tutorial/demo/extended-abstracts terms are EXCLUDED as workshop content: main track 844, workshop volumes 0. Unit = accepted papers in the proceedings (invited keynote abstracts, if any, are a handful and not separable). Cadence 1/yr from the share of 2018-2025 with records. Crossref proceedings-article facet for 2025 gives 594 under 'Proceedings of the 31st ACM SIGKDD Conference on Knowledge Discovery and Data Mining V.2' (independent second source; agreement within 250 papers). Language: n/a (bibliographic index). [dblp wave, 2026-09-13]",
+   "workshop": 0,
+   "abstracts": "844 accepted papers in the 2025 proceedings (DBLP main-track volumes; 0 further papers in workshop/companion volumes not counted)",
+   "stream": "conf/kdd",
+   "subfield": "CS / AI"
+  },
+  {
+   "conference": "International Conference on Language Resources and Evaluation (LREC)",
+   "abstracts_numeric": 1555,
+   "year": 2024,
+   "source_url": "https://dblp.org/streams/conf/lrec",
+   "rung": 4,
+   "tier": "VERIFIED",
+   "events_per_yr": 0.5,
+   "method": "RUNG 4 PRODUCED THIS FIGURE — archive count via DBLP SPARQL (https://sparql.dblp.org/sparql): COUNT of ?p dblp:publishedInStream <https://dblp.org/streams/conf/lrec> with dblp:yearOfPublication \"2024\"^^xsd:gYear, grouped by dblp:publishedAsPartOf volume; volumes whose title contains workshop/companion/adjunct/tutorial/demo/extended-abstracts terms are EXCLUDED as workshop content: main track 1,555, workshop volumes 0. Unit = accepted papers in the proceedings (invited keynote abstracts, if any, are a handful and not separable). Cadence 0.5/yr from the share of 2018-2025 with records. Crossref proceedings-article facet for 2024 gives 1,554 under 'Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING 2024)' (independent second source; agreement within 1 papers). Language: n/a (bibliographic index). [dblp wave, 2026-09-13]",
+   "workshop": 0,
+   "abstracts": "1,555 accepted papers in the 2024 proceedings (DBLP main-track volumes; 0 further papers in workshop/companion volumes not counted)",
+   "stream": "conf/lrec",
+   "subfield": "CS / AI"
+  },
+  {
+   "conference": "International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI)",
+   "abstracts_numeric": 856,
+   "year": 2024,
+   "source_url": "https://dblp.org/streams/conf/miccai",
+   "rung": 4,
+   "tier": "BORDERLINE",
+   "events_per_yr": 1,
+   "method": "RUNG 4 PRODUCED THIS FIGURE — archive count via DBLP SPARQL (https://sparql.dblp.org/sparql): COUNT of ?p dblp:publishedInStream <https://dblp.org/streams/conf/miccai> with dblp:yearOfPublication \"2024\"^^xsd:gYear, grouped by dblp:publishedAsPartOf volume; volumes whose title contains workshop/companion/adjunct/tutorial/demo/extended-abstracts terms are EXCLUDED as workshop content: main track 856, workshop volumes 62. Unit = accepted papers in the proceedings (invited keynote abstracts, if any, are a handful and not separable). Cadence 1/yr from the share of 2018-2025 with records. No Crossref container-title with >=800 papers matched this series (DBLP is the only source). Language: n/a (bibliographic index). [dblp wave, 2026-09-13]",
+   "workshop": 62,
+   "abstracts": "856 accepted papers in the 2024 proceedings (DBLP main-track volumes; 62 further papers in workshop/companion volumes not counted)",
+   "stream": "conf/miccai",
+   "subfield": "CS / AI — BOUNDARY: medical imaging (CS side; MICCAI society)"
+  },
+  {
+   "conference": "ACM International Conference on Multimedia (MM)",
+   "abstracts_numeric": 1620,
+   "year": 2025,
+   "source_url": "https://dblp.org/streams/conf/mm",
+   "rung": 4,
+   "tier": "VERIFIED",
+   "events_per_yr": 1,
+   "method": "RUNG 4 PRODUCED THIS FIGURE — archive count via DBLP SPARQL (https://sparql.dblp.org/sparql): COUNT of ?p dblp:publishedInStream <https://dblp.org/streams/conf/mm> with dblp:yearOfPublication \"2025\"^^xsd:gYear, grouped by dblp:publishedAsPartOf volume; volumes whose title contains workshop/companion/adjunct/tutorial/demo/extended-abstracts terms are EXCLUDED as workshop content: main track 1,620, workshop volumes 35. Unit = accepted papers in the proceedings (invited keynote abstracts, if any, are a handful and not separable). Cadence 1/yr from the share of 2018-2025 with records. Crossref proceedings-article facet for 2025 gives 1,620 under 'Proceedings of the 33rd ACM International Conference on Multimedia' (independent second source; agreement within 0 papers). Language: n/a (bibliographic index). [dblp wave, 2026-09-13]",
+   "workshop": 35,
+   "abstracts": "1,620 accepted papers in the 2025 proceedings (DBLP main-track volumes; 35 further papers in workshop/companion volumes not counted)",
+   "stream": "conf/mm",
+   "subfield": "CS / AI"
+  },
+  {
+   "conference": "North American Chapter of the Association for Computational Linguistics (NAACL)",
+   "abstracts_numeric": 1272,
+   "year": 2025,
+   "source_url": "https://dblp.org/streams/conf/naacl",
+   "rung": 4,
+   "tier": "BORDERLINE",
+   "events_per_yr": 0.75,
+   "method": "RUNG 4 PRODUCED THIS FIGURE — archive count via DBLP SPARQL (https://sparql.dblp.org/sparql): COUNT of ?p dblp:publishedInStream <https://dblp.org/streams/conf/naacl> with dblp:yearOfPublication \"2025\"^^xsd:gYear, grouped by dblp:publishedAsPartOf volume; volumes whose title contains workshop/companion/adjunct/tutorial/demo/extended-abstracts terms are EXCLUDED as workshop content: main track 1,272, workshop volumes 98. Unit = accepted papers in the proceedings (invited keynote abstracts, if any, are a handful and not separable). Cadence 0.75/yr from the share of 2018-2025 with records. Crossref proceedings-article facet for 2025 gives 475 under 'Findings of the Association for Computational Linguistics: NAACL 2025' (independent second source; agreement within 797 papers). Language: n/a (bibliographic index). [dblp wave, 2026-09-13]",
+   "workshop": 98,
+   "abstracts": "1,272 accepted papers in the 2025 proceedings (DBLP main-track volumes; 98 further papers in workshop/companion volumes not counted)",
+   "stream": "conf/naacl",
+   "subfield": "CS / AI"
+  },
+  {
+   "conference": "Conference on Neural Information Processing Systems (NeurIPS)",
+   "abstracts_numeric": 5823,
+   "year": 2025,
+   "source_url": "https://dblp.org/streams/conf/nips",
+   "rung": 4,
+   "tier": "VERIFIED",
+   "events_per_yr": 1,
+   "method": "RUNG 4 PRODUCED THIS FIGURE — archive count via DBLP SPARQL (https://sparql.dblp.org/sparql): COUNT of ?p dblp:publishedInStream <https://dblp.org/streams/conf/nips> with dblp:yearOfPublication \"2025\"^^xsd:gYear, grouped by dblp:publishedAsPartOf volume; volumes whose title contains workshop/companion/adjunct/tutorial/demo/extended-abstracts terms are EXCLUDED as workshop content: main track 5,823, workshop volumes 0. Unit = accepted papers in the proceedings (invited keynote abstracts, if any, are a handful and not separable). Cadence 1/yr from the share of 2018-2025 with records. Crossref proceedings-article facet for 2025 gives 5,823 under 'Advances in Neural Information Processing Systems 38' (independent second source; agreement within 0 papers). Language: n/a (bibliographic index). [dblp wave, 2026-09-13]",
+   "workshop": 0,
+   "abstracts": "5,823 accepted papers in the 2025 proceedings (DBLP main-track volumes; 0 further papers in workshop/companion volumes not counted)",
+   "stream": "conf/nips",
+   "subfield": "CS / AI"
+  },
+  {
+   "conference": "IEEE International Conference on Systems, Man and Cybernetics (SMC)",
+   "abstracts_numeric": 1204,
+   "year": 2025,
+   "source_url": "https://dblp.org/streams/conf/smc",
+   "rung": 4,
+   "tier": "BORDERLINE",
+   "events_per_yr": 1,
+   "method": "RUNG 4 PRODUCED THIS FIGURE — archive count via DBLP SPARQL (https://sparql.dblp.org/sparql): COUNT of ?p dblp:publishedInStream <https://dblp.org/streams/conf/smc> with dblp:yearOfPublication \"2025\"^^xsd:gYear, grouped by dblp:publishedAsPartOf volume; volumes whose title contains workshop/companion/adjunct/tutorial/demo/extended-abstracts terms are EXCLUDED as workshop content: main track 1,204, workshop volumes 0. Unit = accepted papers in the proceedings (invited keynote abstracts, if any, are a handful and not separable). Cadence 1/yr from the share of 2018-2025 with records. Crossref proceedings-article facet for 2025 gives 1,206 under '2025 IEEE International Conference on Systems, Man, and Cybernetics (SMC)' (independent second source; agreement within 2 papers). Language: n/a (bibliographic index). [dblp wave, 2026-09-13]",
+   "workshop": 0,
+   "abstracts": "1,204 accepted papers in the 2025 proceedings (DBLP main-track volumes; 0 further papers in workshop/companion volumes not counted)",
+   "stream": "conf/smc",
+   "subfield": "engineering (IEEE society meeting)"
+  },
+  {
+   "conference": "IEEE Vehicular Technology Conference (VTC)",
+   "abstracts_numeric": 1316,
+   "year": 2025,
+   "source_url": "https://dblp.org/streams/conf/vtc",
+   "rung": 4,
+   "tier": "BORDERLINE",
+   "events_per_yr": 1,
+   "method": "RUNG 4 PRODUCED THIS FIGURE — archive count via DBLP SPARQL (https://sparql.dblp.org/sparql): COUNT of ?p dblp:publishedInStream <https://dblp.org/streams/conf/vtc> with dblp:yearOfPublication \"2025\"^^xsd:gYear, grouped by dblp:publishedAsPartOf volume; volumes whose title contains workshop/companion/adjunct/tutorial/demo/extended-abstracts terms are EXCLUDED as workshop content: main track 1,316, workshop volumes 0. Unit = accepted papers in the proceedings (invited keynote abstracts, if any, are a handful and not separable). Cadence 1/yr from the share of 2018-2025 with records. No Crossref container-title with >=800 papers matched this series (DBLP is the only source). Language: n/a (bibliographic index). [dblp wave, 2026-09-13]",
+   "workshop": 0,
+   "abstracts": "1,316 accepted papers in the 2025 proceedings (DBLP main-track volumes; 0 further papers in workshop/companion volumes not counted)",
+   "stream": "conf/vtc",
+   "subfield": "engineering (IEEE society meeting)"
+  },
+  {
+   "conference": "IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)",
+   "abstracts_numeric": 929,
+   "year": 2025,
+   "source_url": "https://dblp.org/streams/conf/wacv",
+   "rung": 4,
+   "tier": "BORDERLINE",
+   "events_per_yr": 1,
+   "method": "RUNG 4 PRODUCED THIS FIGURE — archive count via DBLP SPARQL (https://sparql.dblp.org/sparql): COUNT of ?p dblp:publishedInStream <https://dblp.org/streams/conf/wacv> with dblp:yearOfPublication \"2025\"^^xsd:gYear, grouped by dblp:publishedAsPartOf volume; volumes whose title contains workshop/companion/adjunct/tutorial/demo/extended-abstracts terms are EXCLUDED as workshop content: main track 929, workshop volumes 166. Unit = accepted papers in the proceedings (invited keynote abstracts, if any, are a handful and not separable). Cadence 1/yr from the share of 2018-2025 with records. Crossref proceedings-article facet for 2025 gives 940 under '2025 IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)' (independent second source; agreement within 11 papers). Language: n/a (bibliographic index). [dblp wave, 2026-09-13]",
+   "workshop": 166,
+   "abstracts": "929 accepted papers in the 2025 proceedings (DBLP main-track volumes; 166 further papers in workshop/companion volumes not counted)",
+   "stream": "conf/wacv",
+   "subfield": "CS / AI"
+  },
+  {
+   "conference": "IEEE Wireless Communications and Networking Conference (WCNC)",
+   "abstracts_numeric": 721,
+   "year": 2025,
+   "source_url": "https://dblp.org/streams/conf/wcnc",
+   "rung": 4,
+   "tier": "OUT",
+   "events_per_yr": 1,
+   "method": "RUNG 4 PRODUCED THIS FIGURE — archive count via DBLP SPARQL (https://sparql.dblp.org/sparql): COUNT of ?p dblp:publishedInStream <https://dblp.org/streams/conf/wcnc> with dblp:yearOfPublication \"2025\"^^xsd:gYear, grouped by dblp:publishedAsPartOf volume; volumes whose title contains workshop/companion/adjunct/tutorial/demo/extended-abstracts terms are EXCLUDED as workshop content: main track 721, workshop volumes 0. Unit = accepted papers in the proceedings (invited keynote abstracts, if any, are a handful and not separable). Cadence 1/yr from the share of 2018-2025 with records. Crossref proceedings-article facet for 2025 gives 725 under '2025 IEEE Wireless Communications and Networking Conference (WCNC)' (independent second source; agreement within 4 papers). Language: n/a (bibliographic index). [dblp wave, 2026-09-13]",
+   "workshop": 0,
+   "abstracts": "721 accepted papers in the 2025 proceedings (DBLP main-track volumes; 0 further papers in workshop/companion volumes not counted)",
+   "stream": "conf/wcnc",
+   "subfield": "engineering (IEEE society meeting)"
+  },
+  {
+   "conference": "The Web Conference (WWW)",
+   "abstracts_numeric": 447,
+   "year": 2025,
+   "source_url": "https://dblp.org/streams/conf/www",
+   "rung": 4,
+   "tier": "OUT",
+   "events_per_yr": 1,
+   "method": "RUNG 4 PRODUCED THIS FIGURE — archive count via DBLP SPARQL (https://sparql.dblp.org/sparql): COUNT of ?p dblp:publishedInStream <https://dblp.org/streams/conf/www> with dblp:yearOfPublication \"2025\"^^xsd:gYear, grouped by dblp:publishedAsPartOf volume; volumes whose title contains workshop/companion/adjunct/tutorial/demo/extended-abstracts terms are EXCLUDED as workshop content: main track 447, workshop volumes 531. Unit = accepted papers in the proceedings (invited keynote abstracts, if any, are a handful and not separable). Cadence 1/yr from the share of 2018-2025 with records. No Crossref container-title with >=800 papers matched this series (DBLP is the only source). Language: n/a (bibliographic index). [dblp wave, 2026-09-13]",
+   "workshop": 531,
+   "abstracts": "447 accepted papers in the 2025 proceedings (DBLP main-track volumes; 531 further papers in workshop/companion volumes not counted)",
+   "stream": "conf/www",
+   "subfield": "CS / AI"
+  },
+  {
+   "conference": "Chinese Control Conference (CCC)",
+   "abstracts_numeric": 1556,
+   "year": 2025,
+   "source_url": "https://api.crossref.org/works?filter=type:proceedings-article,from-pub-date:2025-01-01,until-pub-date:2025-12-31&facet=container-title:*&rows=0",
+   "rung": 4,
+   "tier": "VERIFIED",
+   "events_per_yr": 1,
+   "method": "RUNG 4 PRODUCED THIS FIGURE — publisher deposit index (Crossref): container-title facet over all proceedings-article DOIs published in 2025 returns 1,556 items under the exact title '2025 44th Chinese Control Conference (CCC)' (query: https://api.crossref.org/works?filter=type:proceedings-article,from-pub-date:2025-01-01,until-pub-date:2025-12-31&facet=container-title:*&rows=0). Unit = deposited proceedings papers = accepted papers; the deposit is by the publisher (IEEE Xplore, ACM DL, society press), so this is an archive count not a stated total. Not in the DBLP candidate set (DBLP does not index this series, or indexes it under a different stream). Cadence 1/yr. Language: n/a. [crossref wave, 2026-09-13]",
+   "workshop": 0,
+   "abstracts": "1,556 proceedings papers deposited to Crossref for 2025 (container title '2025 44th Chinese Control Conference (CCC)')",
+   "subfield": "engineering — control (TCCT / CAA, China)",
+   "stream": null
+  },
+  {
+   "conference": "IEOM International Conference on Industrial Engineering and Operations Management",
+   "abstracts_numeric": 1525,
+   "year": 2025,
+   "source_url": "https://api.crossref.org/works?filter=type:proceedings-article,from-pub-date:2025-01-01,until-pub-date:2025-12-31&facet=container-title:*&rows=0",
+   "rung": 4,
+   "tier": "BORDERLINE",
+   "events_per_yr": 1,
+   "method": "RUNG 4 PRODUCED THIS FIGURE — publisher deposit index (Crossref): container-title facet over all proceedings-article DOIs published in 2025 returns 1,525 items under the exact title 'Proceedings of the International Conference on Industrial Engineering and Operations Management' (query: https://api.crossref.org/works?filter=type:proceedings-article,from-pub-date:2025-01-01,until-pub-date:2025-12-31&facet=container-title:*&rows=0). Unit = deposited proceedings papers = accepted papers; the deposit is by the publisher (IEEE Xplore, ACM DL, society press), so this is an archive count not a stated total. Not in the DBLP candidate set (DBLP does not index this series, or indexes it under a different stream). Cadence 1/yr. Language: n/a. [crossref wave, 2026-09-13]  ||  TIER OVERRIDE: the Crossref container aggregates several IEOM conferences a year, so 1,525 is an upper bound on any single meeting — BORDERLINE, not VERIFIED",
+   "workshop": 0,
+   "abstracts": "1,525 proceedings papers deposited to Crossref for 2025 (container title 'Proceedings of the International Conference on Industrial Engineering and Operations Management')",
+   "subfield": "engineering — industrial; NOTE the Crossref container aggregates several IEOM conferences per year, so this is an upper bound on any one meeting",
+   "stream": null
+  },
+  {
+   "conference": "IEEE International Symposium on Antennas and Propagation and USNC-URSI Radio Science Meeting (AP-S/URSI)",
+   "abstracts_numeric": 1382,
+   "year": 2024,
+   "source_url": "https://api.crossref.org/works?filter=type:proceedings-article,from-pub-date:2024-01-01,until-pub-date:2024-12-31&facet=container-title:*&rows=0",
+   "rung": 4,
+   "tier": "BORDERLINE",
+   "events_per_yr": 1,
+   "method": "RUNG 4 PRODUCED THIS FIGURE — publisher deposit index (Crossref): container-title facet over all proceedings-article DOIs published in 2024 returns 1,382 items under the exact title '2024 IEEE International Symposium on Antennas and Propagation and INC/USNC‐URSI Radio Science Meeting (AP-S/INC-USNC-URSI)' (query: https://api.crossref.org/works?filter=type:proceedings-article,from-pub-date:2024-01-01,until-pub-date:2024-12-31&facet=container-title:*&rows=0). Unit = deposited proceedings papers = accepted papers; the deposit is by the publisher (IEEE Xplore, ACM DL, society press), so this is an archive count not a stated total. Not in the DBLP candidate set (DBLP does not index this series, or indexes it under a different stream). Cadence 1/yr. Language: n/a. [crossref wave, 2026-09-13]",
+   "workshop": 0,
+   "abstracts": "1,382 proceedings papers deposited to Crossref for 2024 (container title '2024 IEEE International Symposium on Antennas and Propagation and INC/USNC‐URSI Radio Science Meeting (AP-S/INC-USNC-URSI)')",
+   "subfield": "engineering — antennas (IEEE APS)",
+   "stream": null
+  },
+  {
+   "conference": "AHFE International Conference (Applied Human Factors and Ergonomics)",
+   "abstracts_numeric": 1238,
+   "year": 2025,
+   "source_url": "https://api.crossref.org/works?filter=type:proceedings-article,from-pub-date:2025-01-01,until-pub-date:2025-12-31&facet=container-title:*&rows=0",
+   "rung": 4,
+   "tier": "BORDERLINE",
+   "events_per_yr": 1,
+   "method": "RUNG 4 PRODUCED THIS FIGURE — publisher deposit index (Crossref): container-title facet over all proceedings-article DOIs published in 2025 returns 1,238 items under the exact title 'AHFE International' (query: https://api.crossref.org/works?filter=type:proceedings-article,from-pub-date:2025-01-01,until-pub-date:2025-12-31&facet=container-title:*&rows=0). Unit = deposited proceedings papers = accepted papers; the deposit is by the publisher (IEEE Xplore, ACM DL, society press), so this is an archive count not a stated total. Not in the DBLP candidate set (DBLP does not index this series, or indexes it under a different stream). Cadence 1/yr. Language: n/a. [crossref wave, 2026-09-13]",
+   "workshop": 0,
+   "abstracts": "1,238 proceedings papers deposited to Crossref for 2025 (container title 'AHFE International')",
+   "subfield": "engineering — human factors",
+   "stream": null
+  },
+  {
+   "conference": "China Automation Congress (CAC)",
+   "abstracts_numeric": 1343,
+   "year": 2025,
+   "source_url": "https://api.crossref.org/works?filter=type:proceedings-article,from-pub-date:2025-01-01,until-pub-date:2025-12-31&facet=container-title:*&rows=0",
+   "rung": 4,
+   "tier": "BORDERLINE",
+   "events_per_yr": 1,
+   "method": "RUNG 4 PRODUCED THIS FIGURE — publisher deposit index (Crossref): container-title facet over all proceedings-article DOIs published in 2025 returns 1,343 items under the exact title '2025 China Automation Congress (CAC)' (query: https://api.crossref.org/works?filter=type:proceedings-article,from-pub-date:2025-01-01,until-pub-date:2025-12-31&facet=container-title:*&rows=0). Unit = deposited proceedings papers = accepted papers; the deposit is by the publisher (IEEE Xplore, ACM DL, society press), so this is an archive count not a stated total. Not in the DBLP candidate set (DBLP does not index this series, or indexes it under a different stream). Cadence 1/yr. Language: n/a. [crossref wave, 2026-09-13]",
+   "workshop": 0,
+   "abstracts": "1,343 proceedings papers deposited to Crossref for 2025 (container title '2025 China Automation Congress (CAC)')",
+   "subfield": "engineering — automation (CAA, China)",
+   "stream": null
+  },
+  {
+   "conference": "IEEE Energy Conversion Congress and Exposition (ECCE)",
+   "abstracts_numeric": 933,
+   "year": 2025,
+   "source_url": "https://api.crossref.org/works?filter=type:proceedings-article,from-pub-date:2025-01-01,until-pub-date:2025-12-31&facet=container-title:*&rows=0",
+   "rung": 4,
+   "tier": "BORDERLINE",
+   "events_per_yr": 1,
+   "method": "RUNG 4 PRODUCED THIS FIGURE — publisher deposit index (Crossref): container-title facet over all proceedings-article DOIs published in 2025 returns 933 items under the exact title '2025 IEEE Energy Conversion Conference Congress and Exposition (ECCE)' (query: https://api.crossref.org/works?filter=type:proceedings-article,from-pub-date:2025-01-01,until-pub-date:2025-12-31&facet=container-title:*&rows=0). Unit = deposited proceedings papers = accepted papers; the deposit is by the publisher (IEEE Xplore, ACM DL, society press), so this is an archive count not a stated total. Not in the DBLP candidate set (DBLP does not index this series, or indexes it under a different stream). Cadence 1/yr. Language: n/a. [crossref wave, 2026-09-13]",
+   "workshop": 0,
+   "abstracts": "933 proceedings papers deposited to Crossref for 2025 (container title '2025 IEEE Energy Conversion Conference Congress and Exposition (ECCE)')",
+   "subfield": "engineering — power electronics (IEEE PELS/IAS)",
+   "stream": null
+  },
+  {
+   "conference": "Chinese Control and Decision Conference (CCDC)",
+   "abstracts_numeric": 1106,
+   "year": 2025,
+   "source_url": "https://api.crossref.org/works?filter=type:proceedings-article,from-pub-date:2025-01-01,until-pub-date:2025-12-31&facet=container-title:*&rows=0",
+   "rung": 4,
+   "tier": "BORDERLINE",
+   "events_per_yr": 1,
+   "method": "RUNG 4 PRODUCED THIS FIGURE — publisher deposit index (Crossref): container-title facet over all proceedings-article DOIs published in 2025 returns 1,106 items under the exact title '2025 37th Chinese Control and Decision Conference (CCDC)' (query: https://api.crossref.org/works?filter=type:proceedings-article,from-pub-date:2025-01-01,until-pub-date:2025-12-31&facet=container-title:*&rows=0). Unit = deposited proceedings papers = accepted papers; the deposit is by the publisher (IEEE Xplore, ACM DL, society press), so this is an archive count not a stated total. Not in the DBLP candidate set (DBLP does not index this series, or indexes it under a different stream). Cadence 1/yr. Language: n/a. [crossref wave, 2026-09-13]",
+   "workshop": 0,
+   "abstracts": "1,106 proceedings papers deposited to Crossref for 2025 (container title '2025 37th Chinese Control and Decision Conference (CCDC)')",
+   "subfield": "engineering — control (China)",
+   "stream": null
+  },
+  {
+   "conference": "EAGE Annual Conference & Exhibition",
+   "abstracts_numeric": 910,
+   "year": 2025,
+   "source_url": "https://api.crossref.org/works?filter=type:proceedings-article,from-pub-date:2025-01-01,until-pub-date:2025-12-31&facet=container-title:*&rows=0",
+   "rung": 4,
+   "tier": "BORDERLINE",
+   "events_per_yr": 1,
+   "method": "RUNG 4 PRODUCED THIS FIGURE — publisher deposit index (Crossref): container-title facet over all proceedings-article DOIs published in 2025 returns 910 items under the exact title '86th EAGE Annual Conference &amp; Exhibition' (query: https://api.crossref.org/works?filter=type:proceedings-article,from-pub-date:2025-01-01,until-pub-date:2025-12-31&facet=container-title:*&rows=0). Unit = deposited proceedings papers = accepted papers; the deposit is by the publisher (IEEE Xplore, ACM DL, society press), so this is an archive count not a stated total. Not in the DBLP candidate set (DBLP does not index this series, or indexes it under a different stream). Cadence 1/yr. Language: n/a. [crossref wave, 2026-09-13]",
+   "workshop": 0,
+   "abstracts": "910 proceedings papers deposited to Crossref for 2025 (container title '86th EAGE Annual Conference &amp; Exhibition')",
+   "subfield": "engineering/geoscience — geophysics (EAGE); BOUNDARY with earth sciences",
+   "stream": null
+  },
+  {
+   "conference": "ENEGEP — Encontro Nacional de Engenharia de Produção (ABEPRO, Brazil)",
+   "abstracts_numeric": 1468,
+   "year": 2025,
+   "source_url": "https://api.crossref.org/works?filter=type:proceedings-article,from-pub-date:2025-01-01,until-pub-date:2025-12-31&facet=container-title:*&rows=0",
+   "rung": 4,
+   "tier": "BORDERLINE",
+   "events_per_yr": 1,
+   "method": "RUNG 4 PRODUCED THIS FIGURE — publisher deposit index (Crossref): container-title facet over all proceedings-article DOIs published in 2025 returns 1,468 items under the exact title 'Anais do Encontro Nacional de Engenharia de Produção' (query: https://api.crossref.org/works?filter=type:proceedings-article,from-pub-date:2025-01-01,until-pub-date:2025-12-31&facet=container-title:*&rows=0). Unit = deposited proceedings papers = accepted papers; the deposit is by the publisher (IEEE Xplore, ACM DL, society press), so this is an archive count not a stated total. Not in the DBLP candidate set (DBLP does not index this series, or indexes it under a different stream). Cadence 1/yr. Language: n/a. [crossref wave, 2026-09-13]",
+   "workshop": 0,
+   "abstracts": "1,468 proceedings papers deposited to Crossref for 2025 (container title 'Anais do Encontro Nacional de Engenharia de Produção')",
+   "subfield": "engineering — industrial (Brazil)",
+   "stream": null
+  },
+  {
+   "conference": "PIERS — Photonics & Electromagnetics Research Symposium",
+   "abstracts_numeric": 987,
+   "year": 2024,
+   "source_url": "https://api.crossref.org/works?filter=type:proceedings-article,from-pub-date:2024-01-01,until-pub-date:2024-12-31&facet=container-title:*&rows=0",
+   "rung": 4,
+   "tier": "BORDERLINE",
+   "events_per_yr": 1,
+   "method": "RUNG 4 PRODUCED THIS FIGURE — publisher deposit index (Crossref): container-title facet over all proceedings-article DOIs published in 2024 returns 987 items under the exact title '2024 Photonics &amp; Electromagnetics Research Symposium (PIERS)' (query: https://api.crossref.org/works?filter=type:proceedings-article,from-pub-date:2024-01-01,until-pub-date:2024-12-31&facet=container-title:*&rows=0). Unit = deposited proceedings papers = accepted papers; the deposit is by the publisher (IEEE Xplore, ACM DL, society press), so this is an archive count not a stated total. Not in the DBLP candidate set (DBLP does not index this series, or indexes it under a different stream). Cadence 1/yr. Language: n/a. [crossref wave, 2026-09-13]",
+   "workshop": 0,
+   "abstracts": "987 proceedings papers deposited to Crossref for 2024 (container title '2024 Photonics &amp; Electromagnetics Research Symposium (PIERS)')",
+   "subfield": "engineering — electromagnetics; BOUNDARY with physics",
+   "stream": null
+  },
+  {
+   "conference": "ADIPEC (Abu Dhabi International Petroleum Exhibition and Conference) technical conference",
+   "abstracts_numeric": 1054,
+   "year": 2025,
+   "source_url": "https://api.crossref.org/works?filter=type:proceedings-article,from-pub-date:2025-01-01,until-pub-date:2025-12-31&facet=container-title:*&rows=0",
+   "rung": 4,
+   "tier": "BORDERLINE",
+   "events_per_yr": 1,
+   "method": "RUNG 4 PRODUCED THIS FIGURE — publisher deposit index (Crossref): container-title facet over all proceedings-article DOIs published in 2025 returns 1,054 items under the exact title 'ADIPEC' (query: https://api.crossref.org/works?filter=type:proceedings-article,from-pub-date:2025-01-01,until-pub-date:2025-12-31&facet=container-title:*&rows=0). Unit = deposited proceedings papers = accepted papers; the deposit is by the publisher (IEEE Xplore, ACM DL, society press), so this is an archive count not a stated total. Not in the DBLP candidate set (DBLP does not index this series, or indexes it under a different stream). Cadence 1/yr. Language: n/a. [crossref wave, 2026-09-13]",
+   "workshop": 0,
+   "abstracts": "1,054 proceedings papers deposited to Crossref for 2025 (container title 'ADIPEC')",
+   "subfield": "engineering — petroleum (SPE-run technical programme); BOUNDARY: trade show with a technical conference",
+   "stream": null
+  },
+  {
+   "conference": "LACCEI International Multi-Conference for Engineering, Education and Technology",
+   "abstracts_numeric": 958,
+   "year": 2024,
+   "source_url": "https://api.crossref.org/works?filter=type:proceedings-article,from-pub-date:2024-01-01,until-pub-date:2024-12-31&facet=container-title:*&rows=0",
+   "rung": 4,
+   "tier": "BORDERLINE",
+   "events_per_yr": 1,
+   "method": "RUNG 4 PRODUCED THIS FIGURE — publisher deposit index (Crossref): container-title facet over all proceedings-article DOIs published in 2024 returns 958 items under the exact title 'Proceedings of the 22nd LACCEI International Multi-Conference for Engineering, Education and Technology (LACCEI 2024): “Sustainable Engineering for a Diverse, Equitable, and Inclusive Future at the Service of Education, Research, and Industry for a Society 5.0.”' (query: https://api.crossref.org/works?filter=type:proceedings-article,from-pub-date:2024-01-01,until-pub-date:2024-12-31&facet=container-title:*&rows=0). Unit = deposited proceedings papers = accepted papers; the deposit is by the publisher (IEEE Xplore, ACM DL, society press), so this is an archive count not a stated total. Not in the DBLP candidate set (DBLP does not index this series, or indexes it under a different stream). Cadence 1/yr. Language: n/a. [crossref wave, 2026-09-13]",
+   "workshop": 0,
+   "abstracts": "958 proceedings papers deposited to Crossref for 2024 (container title 'Proceedings of the 22nd LACCEI International Multi-Conference for Engineering, Education and Technology (LACCEI 2024): “Sustainable Engineering for a Diverse, Equitable, and Inclusive Future at the Service of Education, Research, and Industry for a Society 5.0.”')",
+   "subfield": "engineering — Latin American multi-conference",
+   "stream": null
+  },
+  {
+   "conference": "IEEE International Conference on Plasma Science (ICOPS)",
+   "abstracts_numeric": 932,
+   "year": 2024,
+   "source_url": "https://api.crossref.org/works?filter=type:proceedings-article,from-pub-date:2024-01-01,until-pub-date:2024-12-31&facet=container-title:*&rows=0",
+   "rung": 4,
+   "tier": "BORDERLINE",
+   "events_per_yr": 1,
+   "method": "RUNG 4 PRODUCED THIS FIGURE — publisher deposit index (Crossref): container-title facet over all proceedings-article DOIs published in 2024 returns 932 items under the exact title '2024 IEEE International Conference on Plasma Science (ICOPS)' (query: https://api.crossref.org/works?filter=type:proceedings-article,from-pub-date:2024-01-01,until-pub-date:2024-12-31&facet=container-title:*&rows=0). Unit = deposited proceedings papers = accepted papers; the deposit is by the publisher (IEEE Xplore, ACM DL, society press), so this is an archive count not a stated total. Not in the DBLP candidate set (DBLP does not index this series, or indexes it under a different stream). Cadence 1/yr. Language: n/a. [crossref wave, 2026-09-13]",
+   "workshop": 0,
+   "abstracts": "932 proceedings papers deposited to Crossref for 2024 (container title '2024 IEEE International Conference on Plasma Science (ICOPS)')",
+   "subfield": "engineering/physics — plasma (IEEE NPSS); BOUNDARY with physics",
+   "stream": null
+  },
+  {
+   "conference": "IEEE International Power Electronics and Motion Control Conference (IPEMC / ECCE Asia)",
+   "abstracts_numeric": 910,
+   "year": 2024,
+   "source_url": "https://api.crossref.org/works?filter=type:proceedings-article,from-pub-date:2024-01-01,until-pub-date:2024-12-31&facet=container-title:*&rows=0",
+   "rung": 4,
+   "tier": "BORDERLINE",
+   "events_per_yr": 0.25,
+   "method": "RUNG 4 PRODUCED THIS FIGURE — publisher deposit index (Crossref): container-title facet over all proceedings-article DOIs published in 2024 returns 910 items under the exact title '2024 IEEE 10th International Power Electronics and Motion Control Conference (IPEMC2024-ECCE Asia)' (query: https://api.crossref.org/works?filter=type:proceedings-article,from-pub-date:2024-01-01,until-pub-date:2024-12-31&facet=container-title:*&rows=0). Unit = deposited proceedings papers = accepted papers; the deposit is by the publisher (IEEE Xplore, ACM DL, society press), so this is an archive count not a stated total. Not in the DBLP candidate set (DBLP does not index this series, or indexes it under a different stream). Cadence 0.25/yr. Language: n/a. [crossref wave, 2026-09-13]",
+   "workshop": 0,
+   "abstracts": "910 proceedings papers deposited to Crossref for 2024 (container title '2024 IEEE 10th International Power Electronics and Motion Control Conference (IPEMC2024-ECCE Asia)')",
+   "subfield": "engineering — power electronics (every ~4 years)",
+   "stream": null
+  },
+  {
+   "conference": "European Conference on Antennas and Propagation (EuCAP)",
+   "abstracts_numeric": 919,
+   "year": 2025,
+   "source_url": "https://api.crossref.org/works?filter=type:proceedings-article,from-pub-date:2025-01-01,until-pub-date:2025-12-31&facet=container-title:*&rows=0",
+   "rung": 4,
+   "tier": "BORDERLINE",
+   "events_per_yr": 1,
+   "method": "RUNG 4 PRODUCED THIS FIGURE — publisher deposit index (Crossref): container-title facet over all proceedings-article DOIs published in 2025 returns 919 items under the exact title '2025 19th European Conference on Antennas and Propagation (EuCAP)' (query: https://api.crossref.org/works?filter=type:proceedings-article,from-pub-date:2025-01-01,until-pub-date:2025-12-31&facet=container-title:*&rows=0). Unit = deposited proceedings papers = accepted papers; the deposit is by the publisher (IEEE Xplore, ACM DL, society press), so this is an archive count not a stated total. Not in the DBLP candidate set (DBLP does not index this series, or indexes it under a different stream). Cadence 1/yr. Language: n/a. [crossref wave, 2026-09-13]",
+   "workshop": 0,
+   "abstracts": "919 proceedings papers deposited to Crossref for 2025 (container title '2025 19th European Conference on Antennas and Propagation (EuCAP)')",
+   "subfield": "engineering — antennas (EurAAP)",
+   "stream": null
+  },
+  {
+   "conference": "COBRAMSEG — Congresso Brasileiro de Mecânica dos Solos e Engenharia Geotécnica (ABMS)",
+   "abstracts_numeric": 803,
+   "year": 2024,
+   "source_url": "https://api.crossref.org/works?filter=type:proceedings-article,from-pub-date:2024-01-01,until-pub-date:2024-12-31&facet=container-title:*&rows=0",
+   "rung": 4,
+   "tier": "BORDERLINE",
+   "events_per_yr": 0.5,
+   "method": "RUNG 4 PRODUCED THIS FIGURE — publisher deposit index (Crossref): container-title facet over all proceedings-article DOIs published in 2024 returns 803 items under the exact title 'ANAIS DO XXI CONGRESSO BRASILEIRO DE MECÂNICA DOS SOLOS E ENGENHARIA GEOTÉCNICA' (query: https://api.crossref.org/works?filter=type:proceedings-article,from-pub-date:2024-01-01,until-pub-date:2024-12-31&facet=container-title:*&rows=0). Unit = deposited proceedings papers = accepted papers; the deposit is by the publisher (IEEE Xplore, ACM DL, society press), so this is an archive count not a stated total. Not in the DBLP candidate set (DBLP does not index this series, or indexes it under a different stream). Cadence 0.5/yr. Language: n/a. [crossref wave, 2026-09-13]",
+   "workshop": 0,
+   "abstracts": "803 proceedings papers deposited to Crossref for 2024 (container title 'ANAIS DO XXI CONGRESSO BRASILEIRO DE MECÂNICA DOS SOLOS E ENGENHARIA GEOTÉCNICA')",
+   "subfield": "engineering — geotechnical (Brazil, biennial)",
+   "stream": null
+  },
+  {
+   "conference": "International Conference on Microwave and Millimeter Wave Technology (ICMMT)",
+   "abstracts_numeric": 899,
+   "year": 2025,
+   "source_url": "https://api.crossref.org/works?filter=type:proceedings-article,from-pub-date:2025-01-01,until-pub-date:2025-12-31&facet=container-title:*&rows=0",
+   "rung": 4,
+   "tier": "BORDERLINE",
+   "events_per_yr": 0.5,
+   "method": "RUNG 4 PRODUCED THIS FIGURE — publisher deposit index (Crossref): container-title facet over all proceedings-article DOIs published in 2025 returns 899 items under the exact title '2025 International Conference on Microwave and Millimeter Wave Technology (ICMMT)' (query: https://api.crossref.org/works?filter=type:proceedings-article,from-pub-date:2025-01-01,until-pub-date:2025-12-31&facet=container-title:*&rows=0). Unit = deposited proceedings papers = accepted papers; the deposit is by the publisher (IEEE Xplore, ACM DL, society press), so this is an archive count not a stated total. Not in the DBLP candidate set (DBLP does not index this series, or indexes it under a different stream). Cadence 0.5/yr. Language: n/a. [crossref wave, 2026-09-13]",
+   "workshop": 0,
+   "abstracts": "899 proceedings papers deposited to Crossref for 2025 (container title '2025 International Conference on Microwave and Millimeter Wave Technology (ICMMT)')",
+   "subfield": "engineering — microwave (China, biennial)",
+   "stream": null
+  },
+  {
+   "conference": "International Conference on Computer and Information Technology (ICCIT, Bangladesh)",
+   "abstracts_numeric": 998,
+   "year": 2025,
+   "source_url": "https://api.crossref.org/works?filter=type:proceedings-article,from-pub-date:2025-01-01,until-pub-date:2025-12-31&facet=container-title:*&rows=0",
+   "rung": 4,
+   "tier": "BORDERLINE",
+   "events_per_yr": 1,
+   "method": "RUNG 4 PRODUCED THIS FIGURE — publisher deposit index (Crossref): container-title facet over all proceedings-article DOIs published in 2025 returns 998 items under the exact title '2025 28th International Conference on Computer and Information Technology (ICCIT)' (query: https://api.crossref.org/works?filter=type:proceedings-article,from-pub-date:2025-01-01,until-pub-date:2025-12-31&facet=container-title:*&rows=0). Unit = deposited proceedings papers = accepted papers; the deposit is by the publisher (IEEE Xplore, ACM DL, society press), so this is an archive count not a stated total. Not in the DBLP candidate set (DBLP does not index this series, or indexes it under a different stream). Cadence 1/yr. Language: n/a. [crossref wave, 2026-09-13]",
+   "workshop": 0,
+   "abstracts": "998 proceedings papers deposited to Crossref for 2025 (container title '2025 28th International Conference on Computer and Information Technology (ICCIT)')",
+   "subfield": "CS — general (IEEE Bangladesh)",
+   "stream": null
+  },
+  {
+   "conference": "COBEM — International Congress of Mechanical Engineering (ABCM, Brazil)",
+   "abstracts_numeric": 1340,
+   "year": 2025,
+   "source_url": "https://api.crossref.org/works?filter=type:proceedings-article,from-pub-date:2025-01-01,until-pub-date:2025-12-31&facet=container-title:*&rows=0",
+   "rung": 4,
+   "tier": "BORDERLINE",
+   "events_per_yr": 0.5,
+   "method": "RUNG 4 PRODUCED THIS FIGURE — publisher deposit index (Crossref): container-title facet over all proceedings-article DOIs published in 2025 returns 1,340 items under the exact title 'Proceedings of the 28th International Congress of Mechanical Engineering' (query: https://api.crossref.org/works?filter=type:proceedings-article,from-pub-date:2025-01-01,until-pub-date:2025-12-31&facet=container-title:*&rows=0). Unit = deposited proceedings papers = accepted papers; the deposit is by the publisher (IEEE Xplore, ACM DL, society press), so this is an archive count not a stated total. Not in the DBLP candidate set (DBLP does not index this series, or indexes it under a different stream). Cadence 0.5/yr. Language: n/a. [crossref wave, 2026-09-13]",
+   "workshop": 0,
+   "abstracts": "1,340 proceedings papers deposited to Crossref for 2025 (container title 'Proceedings of the 28th International Congress of Mechanical Engineering')",
+   "subfield": "engineering — mechanical (Brazil, biennial)",
+   "stream": null
+  },
+  {
+   "conference": "Forum Acusticum / Euronoise (European Acoustics Association)",
+   "abstracts_numeric": 971,
+   "year": 2025,
+   "source_url": "https://api.crossref.org/works?filter=type:proceedings-article,from-pub-date:2025-01-01,until-pub-date:2025-12-31&facet=container-title:*&rows=0",
+   "rung": 4,
+   "tier": "BORDERLINE",
+   "events_per_yr": 0.33,
+   "method": "RUNG 4 PRODUCED THIS FIGURE — publisher deposit index (Crossref): container-title facet over all proceedings-article DOIs published in 2025 returns 971 items under the exact title 'Proceedings of the 11th Convention of the European Acoustics Association Forum Acusticum / EuroNoise 2025' (query: https://api.crossref.org/works?filter=type:proceedings-article,from-pub-date:2025-01-01,until-pub-date:2025-12-31&facet=container-title:*&rows=0). Unit = deposited proceedings papers = accepted papers; the deposit is by the publisher (IEEE Xplore, ACM DL, society press), so this is an archive count not a stated total. Not in the DBLP candidate set (DBLP does not index this series, or indexes it under a different stream). Cadence 0.33/yr. Language: n/a. [crossref wave, 2026-09-13]",
+   "workshop": 0,
+   "abstracts": "971 proceedings papers deposited to Crossref for 2025 (container title 'Proceedings of the 11th Convention of the European Acoustics Association Forum Acusticum / EuroNoise 2025')",
+   "subfield": "engineering/physics — acoustics (triennial); BOUNDARY with physics (ASA is on the physical sheet)",
+   "stream": null
+  }
+ ],
+ "dupes": [
+  {
+   "conference": "Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC)",
+   "counted_on": "Census - Medicine & Health",
+   "stream": "conf/embc",
+   "main": 1386,
+   "year": 2024,
+   "existing": "EMBC (IEEE EMBS)"
+  }
+ ],
+ "crossref_only": [
+  {
+   "series": "aera",
+   "title": "Proceedings of the 2025 AERA Annual Meeting",
+   "year": 2025,
+   "n": 4676,
+   "existing": null
+  },
+  {
+   "series": "geological society america abstracts programs",
+   "title": "Geological Society of America Abstracts with Programs",
+   "year": 2025,
+   "n": 4667,
+   "existing": null
+  },
+  {
+   "series": "goldschmidt abstracts",
+   "title": "Goldschmidt2025 abstracts",
+   "year": 2025,
+   "n": 3615,
+   "existing": null
+  },
+  {
+   "series": "aiaa scitech forum",
+   "title": "AIAA SCITECH 2025 Forum",
+   "year": 2025,
+   "n": 2996,
+   "existing": "Census - Physical Sciences / AIAA SciTech Forum"
+  },
+  {
+   "series": "language resources evaluation",
+   "title": "Proceedings of the Language Resources and Evaluation Conference",
+   "year": 2024,
+   "n": 2170,
+   "existing": null
+  },
+  {
+   "series": "empirical methods natural language processing",
+   "title": "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing",
+   "year": 2025,
+   "n": 1810,
+   "existing": null
+  },
+  {
+   "series": "arquivos de neuro psiquiatria",
+   "title": "Arquivos de Neuro-Psiquiatria",
+   "year": 2024,
+   "n": 1775,
+   "existing": null
+  },
+  {
+   "series": "edulearn",
+   "title": "EDULEARN25 Proceedings",
+   "year": 2025,
+   "n": 1696,
+   "existing": null
+  },
+  {
+   "series": "iceri",
+   "title": "ICERI2025 Proceedings",
+   "year": 2025,
+   "n": 1619,
+   "existing": null
+  },
+  {
+   "series": "endoscopy",
+   "title": "Endoscopy",
+   "year": 2025,
+   "n": 1619,
+   "existing": null
+  },
+  {
+   "series": "esge days",
+   "title": "ESGE Days 2025",
+   "year": 2025,
+   "n": 1619,
+   "existing": null
+  },
+  {
+   "series": "association computational linguistics",
+   "title": "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+   "year": 2025,
+   "n": 1603,
+   "existing": null
+  },
+  {
+   "series": "chinese control",
+   "title": "2025 44th Chinese Control Conference (CCC)",
+   "year": 2025,
+   "n": 1556,
+   "existing": null
+  },
+  {
+   "series": "cleo",
+   "title": "CLEO 2025",
+   "year": 2025,
+   "n": 1553,
+   "existing": null
+  },
+  {
+   "series": "industrial engineering operations management",
+   "title": "Proceedings of the International Conference on Industrial Engineering and Operations Management",
+   "year": 2025,
+   "n": 1525,
+   "existing": null
+  },
+  {
+   "series": "anais do encontro nacional de engenharia de produ o",
+   "title": "Anais do Encontro Nacional de Engenharia de Produção",
+   "year": 2025,
+   "n": 1468,
+   "existing": null
+  },
+  {
+   "series": "antennas propagation inc usnc ursi radio science",
+   "title": "2024 IEEE International Symposium on Antennas and Propagation and INC/USNC‐URSI Radio Science Meeting (AP-S/INC-USNC-URSI)",
+   "year": 2024,
+   "n": 1382,
+   "existing": null
+  },
+  {
+   "series": "china automation",
+   "title": "2025 China Automation Congress (CAC)",
+   "year": 2025,
+   "n": 1343,
+   "existing": null
+  },
+  {
+   "series": "mechanical engineering",
+   "title": "Proceedings of the 28th International Congress of Mechanical Engineering",
+   "year": 2025,
+   "n": 1340,
+   "existing": null
+  },
+  {
+   "series": "lasers electro optics europe amp european quantum electronics",
+   "title": "2025 Conference on Lasers and Electro-Optics Europe &amp;amp; European Quantum Electronics Conference (CLEO/Europe-EQEC)",
+   "year": 2025,
+   "n": 1339,
+   "existing": "Census - Physical Sciences / CLEO/Europe-EQEC (co-sponsored with Optica/IEEE)"
+  },
+  {
+   "series": "bjn abstract cbn",
+   "title": "BJN Abstract-CBN24",
+   "year": 2024,
+   "n": 1294,
+   "existing": null
+  },
+  {
+   "series": "inted",
+   "title": "INTED2025 Proceedings",
+   "year": 2025,
+   "n": 1255,
+   "existing": null
+  },
+  {
+   "series": "ahfe",
+   "title": "AHFE International",
+   "year": 2025,
+   "n": 1238,
+   "existing": null
+  },
+  {
+   "series": "regular young investigator award abstracts",
+   "title": "Regular and Young Investigator Award Abstracts",
+   "year": 2025,
+   "n": 1237,
+   "existing": null
+  },
+  {
+   "series": "nuclear science medical imaging room temperature semiconductor detector",
+   "title": "2025 IEEE Nuclear Science Symposium (NSS), Medical Imaging Conference (MIC) and Room Temperature Semiconductor Detector Conference (RTSD)",
+   "year": 2025,
+   "n": 1229,
+   "existing": "Census - Physical Sciences / IEEE NSS/MIC/RTSD (Nuclear Science Symposium + Medical Imaging Conference)"
+  },
+  {
+   "series": "laccei multi engineering education technology engineering artificial intelligence sustainable technologies service society",
+   "title": "Proceedings of the 23rd LACCEI International Multi-Conference for Engineering, Education and Technology (LACCEI): \"Engineering, Artificial Intelligence, and Sustainable Technologies in service of society\"",
+   "year": 2025,
+   "n": 1153,
+   "existing": null
+  },
+  {
+   "series": "anais do xxxiii congresso de inicia o cient fica",
+   "title": "Anais do XXXIII Congresso de Iniciação Científica",
+   "year": 2025,
+   "n": 1125,
+   "existing": null
+  },
+  {
+   "series": "aiaa aviation forum ascend",
+   "title": "AIAA AVIATION FORUM AND ASCEND 2025",
+   "year": 2025,
+   "n": 1120,
+   "existing": "Census - Chemistry / DECHEMA FORUM"
+  },
+  {
+   "series": "anais do xxxii congresso de inicia o cient fica",
+   "title": "Anais do XXXII Congresso de Iniciação Científica (CONIC)",
+   "year": 2024,
+   "n": 1111,
+   "existing": null
+  },
+  {
+   "series": "chinese control decision",
+   "title": "2025 37th Chinese Control and Decision Conference (CCDC)",
+   "year": 2025,
+   "n": 1106,
+   "existing": null
+  },
+  {
+   "series": "s o paulo medical journal",
+   "title": "São Paulo Medical Journal",
+   "year": 2025,
+   "n": 1070,
+   "existing": null
+  },
+  {
+   "series": "adipec",
+   "title": "ADIPEC",
+   "year": 2025,
+   "n": 1054,
+   "existing": null
+  },
+  {
+   "series": "cosmic ray pos",
+   "title": "Proceedings of 39th International Cosmic Ray Conference — PoS(ICRC2025)",
+   "year": 2025,
+   "n": 1041,
+   "existing": null
+  },
+  {
+   "series": "poster presentations",
+   "title": "Poster Presentations",
+   "year": 2024,
+   "n": 1001,
+   "existing": null
+  },
+  {
+   "series": "computer information technology",
+   "title": "2025 28th International Conference on Computer and Information Technology (ICCIT)",
+   "year": 2025,
+   "n": 998,
+   "existing": null
+  },
+  {
+   "series": "journal neurological surgery part b skull base",
+   "title": "Journal of Neurological Surgery Part B: Skull Base",
+   "year": 2025,
+   "n": 988,
+   "existing": null
+  },
+  {
+   "series": "north american skull base society",
+   "title": "34th Annual Meeting North American Skull Base Society",
+   "year": 2025,
+   "n": 988,
+   "existing": "Census - Medicine & Health / North American Neuromodulation Society Annual Meeting"
+  },
+  {
+   "series": "photonics electromagnetics research",
+   "title": "2024 Photonics &amp; Electromagnetics Research Symposium (PIERS)",
+   "year": 2024,
+   "n": 987,
+   "existing": null
+  },
+  {
+   "series": "congreso nacional de medicina general y de familia abstracts publication",
+   "title": "31 Congreso Nacional de Medicina General y de Familia  Abstracts Publication",
+   "year": 2025,
+   "n": 974,
+   "existing": null
+  },
+  {
+   "series": "convention european acoustics association forum acusticum euronoise",
+   "title": "Proceedings of the 11th Convention of the European Acoustics Association Forum Acusticum / EuroNoise 2025",
+   "year": 2025,
+   "n": 971,
+   "existing": null
+  },
+  {
+   "series": "laccei multi engineering education technology sustainable engineering diverse equitable inclusive future service education research industry society",
+   "title": "Proceedings of the 22nd LACCEI International Multi-Conference for Engineering, Education and Technology (LACCEI 2024): “Sustainable Engineering for a Diverse, Equitable, and Inclusive Future at the Service of Education, Research, and Industry for a Society 5.0.”",
+   "year": 2024,
+   "n": 958,
+   "existing": null
+  },
+  {
+   "series": "energy conversion exposition",
+   "title": "2025 IEEE Energy Conversion Conference Congress and Exposition (ECCE)",
+   "year": 2025,
+   "n": 933,
+   "existing": null
+  },
+  {
+   "series": "plasma science",
+   "title": "2024 IEEE International Conference on Plasma Science (ICOPS)",
+   "year": 2024,
+   "n": 932,
+   "existing": null
+  },
+  {
+   "series": "european antennas propagation",
+   "title": "2025 19th European Conference on Antennas and Propagation (EuCAP)",
+   "year": 2025,
+   "n": 919,
+   "existing": null
+  },
+  {
+   "series": "eage exhibition",
+   "title": "86th EAGE Annual Conference &amp; Exhibition",
+   "year": 2025,
+   "n": 910,
+   "existing": null
+  },
+  {
+   "series": "power electronics motion control",
+   "title": "2024 IEEE 10th International Power Electronics and Motion Control Conference (IPEMC2024-ECCE Asia)",
+   "year": 2024,
+   "n": 910,
+   "existing": null
+  },
+  {
+   "series": "microwave millimeter wave technology",
+   "title": "2025 International Conference on Microwave and Millimeter Wave Technology (ICMMT)",
+   "year": 2025,
+   "n": 899,
+   "existing": null
+  },
+  {
+   "series": "abm",
+   "title": "ABM Proceedings",
+   "year": 2024,
+   "n": 857,
+   "existing": null
+  },
+  {
+   "series": "anais do xxi congresso brasileiro de mec nica dos solos e engenharia geot cnica",
+   "title": "ANAIS DO XXI CONGRESSO BRASILEIRO DE MECÂNICA DOS SOLOS E ENGENHARIA GEOTÉCNICA",
+   "year": 2024,
+   "n": 803,
+   "existing": null
+  },
+  {
+   "series": "zeitschrift f r gastroenterologie",
+   "title": "Zeitschrift für Gastroenterologie",
+   "year": 2025,
+   "n": 801,
+   "existing": null
+  }
+ ],
+ "handed_over": [
+  {
+   "title": "Proceedings of the 2025 AERA Annual Meeting",
+   "n": 4676,
+   "year": 2025,
+   "why": "social sciences — education (AERA ~4,700 papers/yr): the largest social-science meeting seen so far"
+  },
+  {
+   "title": "Geological Society of America Abstracts with Programs",
+   "n": 4667,
+   "year": 2025,
+   "why": "already on the physical-sciences sheet (GSA Connects)"
+  },
+  {
+   "title": "AIAA SCITECH 2025 Forum",
+   "n": 2996,
+   "year": 2025,
+   "why": "already on the physical-sciences sheet"
+  },
+  {
+   "title": "Proceedings of the Language Resources and Evaluation Conference",
+   "n": 2170,
+   "year": 2024,
+   "why": "LREC-COLING 2024 joint volume — LREC is a DBLP row"
+  },
+  {
+   "title": "CLEO 2025",
+   "n": 1553,
+   "year": 2025,
+   "why": "already on the physical-sciences sheet"
+  },
+  {
+   "title": "Goldschmidt2025 abstracts",
+   "n": 3615,
+   "year": 2025,
+   "why": "already on the chemistry sheet"
+  },
+  {
+   "title": "Arquivos de Neuro-Psiquiatria",
+   "n": 1775,
+   "year": 2024,
+   "why": "journal supplement (Brazilian neurology congress abstracts) — medicine lead"
+  },
+  {
+   "title": "ICERI2025 Proceedings",
+   "n": 1619,
+   "year": 2025,
+   "why": "education (IATED) — social sciences lead"
+  },
+  {
+   "title": "EDULEARN25 Proceedings",
+   "n": 1696,
+   "year": 2025,
+   "why": "education (IATED) — social sciences lead; low-selectivity commercial-academic conference"
+  },
+  {
+   "title": "Regular and Young Investigator Award Abstracts",
+   "n": 1237,
+   "year": 2025,
+   "why": "unidentifiable container title (a medical society's abstract supplement) — skip"
+  },
+  {
+   "title": "AIAA AVIATION FORUM AND ASCEND 2025",
+   "n": 1120,
+   "year": 2025,
+   "why": "already on the physical-sciences sheet"
+  },
+  {
+   "title": "INTED2025 Proceedings",
+   "n": 1255,
+   "year": 2025,
+   "why": "education (IATED) — social sciences lead"
+  },
+  {
+   "title": "BJN Abstract-CBN24",
+   "n": 1294,
+   "year": 2024,
+   "why": "journal supplement (Brazilian Journal of Nephrology congress) — medicine lead"
+  },
+  {
+   "title": "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing",
+   "n": 1810,
+   "year": 2025,
+   "why": "EMNLP main volume — EMNLP is a DBLP row (the Findings volume was the matched cross-check)"
+  },
+  {
+   "title": "Anais do XXXII Congresso de Iniciação Científica (CONIC)",
+   "n": 1111,
+   "year": 2024,
+   "why": "undergraduate research congress (UFPE, Brazil) — general/student research, like NCUR"
+  },
+  {
+   "title": "Poster Presentations",
+   "n": 1001,
+   "year": 2024,
+   "why": "unidentifiable container title — skip"
+  },
+  {
+   "title": "2025 IEEE Nuclear Science Symposium (NSS), Medical Imaging Conference (MIC) and Room Temperature Semiconductor Detector Conference (RTSD)",
+   "n": 1229,
+   "year": 2025,
+   "why": "already on Census - Physical Sciences / IEEE NSS/MIC/RTSD (Nuclear Science Symposium + Medical Imaging Conference)"
+  },
+  {
+   "title": "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+   "n": 1603,
+   "year": 2025,
+   "why": "ACL Volume 1 — ACL is a DBLP row"
+  },
+  {
+   "title": "ABM Proceedings",
+   "n": 857,
+   "year": 2024,
+   "why": "ABM (Brazilian metallurgy association) week — engineering/materials lead, title too generic to count safely"
+  },
+  {
+   "title": "31 Congreso Nacional de Medicina General y de Familia  Abstracts Publication",
+   "n": 974,
+   "year": 2025,
+   "why": "medicine — Spanish family-medicine congress (SEMG) lead"
+  },
+  {
+   "title": "São Paulo Medical Journal",
+   "n": 1070,
+   "year": 2025,
+   "why": "journal supplement — medicine lead (identify the congress)"
+  },
+  {
+   "title": "Endoscopy",
+   "n": 1619,
+   "year": 2025,
+   "why": "journal supplement carrying ESGE Days — same meeting"
+  },
+  {
+   "title": "ESGE Days 2025",
+   "n": 1619,
+   "year": 2025,
+   "why": "medicine — gastroenterology (check whether ESGE Days is on the medicine sheet)"
+  },
+  {
+   "title": "2025 Conference on Lasers and Electro-Optics Europe &amp;amp; European Quantum Electronics Conference (CLEO/Europe-EQEC)",
+   "n": 1339,
+   "year": 2025,
+   "why": "already on the physical-sciences sheet"
+  },
+  {
+   "title": "Anais do XXXIII Congresso de Iniciação Científica",
+   "n": 1125,
+   "year": 2025,
+   "why": "undergraduate research congress (UFPE, Brazil) — general/student research, like NCUR"
+  },
+  {
+   "title": "Proceedings of 39th International Cosmic Ray Conference — PoS(ICRC2025)",
+   "n": 1041,
+   "year": 2025,
+   "why": "physics (ICRC, biennial) — physical-sciences sheet lead"
+  },
+  {
+   "title": "Journal of Neurological Surgery Part B: Skull Base",
+   "n": 988,
+   "year": 2025,
+   "why": "medicine — already on the medicine sheet (North American Skull Base Society)"
+  },
+  {
+   "title": "34th Annual Meeting North American Skull Base Society",
+   "n": 988,
+   "year": 2025,
+   "why": "medicine — already on the medicine sheet (North American Skull Base Society)"
+  },
+  {
+   "title": "Zeitschrift für Gastroenterologie",
+   "n": 801,
+   "year": 2025,
+   "why": "journal supplement (DGVS Viszeralmedizin) — medicine lead"
+  }
+ ]
+}

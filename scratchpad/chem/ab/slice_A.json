@@ -1,0 +1,117 @@
+[
+ {
+  "source": "pilot1",
+  "conference": "ACS Spring National Meeting & Exposition",
+  "society": null,
+  "country": null,
+  "row": null
+ },
+ {
+  "source": "pilot1",
+  "conference": "ASMS Annual Conference on Mass Spectrometry and Allied Topics",
+  "society": null,
+  "country": null,
+  "row": null
+ },
+ {
+  "source": "pilot1",
+  "conference": "AIChE Annual Meeting",
+  "society": null,
+  "country": null,
+  "row": null
+ },
+ {
+  "source": "pilot1",
+  "conference": "GDCh Wissenschaftsforum Chemie (WiFo) / Science Forum Chemistry",
+  "society": null,
+  "country": null,
+  "row": null
+ },
+ {
+  "source": "pilot1",
+  "conference": "EuropaCat",
+  "society": null,
+  "country": null,
+  "row": null
+ },
+ {
+  "source": "pilot2",
+  "conference": "ACHEMA",
+  "society": null,
+  "country": null,
+  "row": 25,
+  "category": "tradefair"
+ },
+ {
+  "source": "pilot2",
+  "conference": "Keystone Symposia on Molecular and Cellular Biology",
+  "society": null,
+  "country": null,
+  "row": 230,
+  "category": "invite-led"
+ },
+ {
+  "source": "pilot2",
+  "conference": "JSAC Annual Meeting (日本分析化学会年会)",
+  "society": null,
+  "country": null,
+  "row": 251,
+  "category": "japan-confit"
+ },
+ {
+  "source": "pilot2",
+  "conference": "RCCT — International Conference on Chemical Thermodynamics in Russia",
+  "society": null,
+  "country": null,
+  "row": 291,
+  "category": "russian"
+ },
+ {
+  "source": "pilot2",
+  "conference": "JASIS (Japan Analytical & Scientific Instruments Show)",
+  "society": null,
+  "country": null,
+  "row": 298,
+  "category": "tradefair"
+ },
+ {
+  "source": "pilot2",
+  "conference": "全国分析化学年会 (CCS National Analytical Chemistry Conference)",
+  "society": null,
+  "country": null,
+  "row": 444,
+  "category": "chinese"
+ },
+ {
+  "source": "pilot2",
+  "conference": "全国能源化学学术会议 (CCS National Energy Chemistry Conference)",
+  "society": null,
+  "country": null,
+  "row": 449,
+  "category": "chinese"
+ },
+ {
+  "source": "pilot2",
+  "conference": "ARABLAB (ARABLAB Live)",
+  "society": null,
+  "country": null,
+  "row": 543,
+  "category": "tradefair"
+ },
+ {
+  "source": "pilot2",
+  "conference": "Reunión del Grupo Especializado de Adsorción (GEADS) — RSEQ",
+  "society": null,
+  "country": null,
+  "row": 575,
+  "category": "implied"
+ },
+ {
+  "source": "pilot2",
+  "conference": "Reunión del Grupo Especializado de Electroquímica (GEE) — RSEQ",
+  "society": null,
+  "country": null,
+  "row": 581,
+  "category": "implied"
+ }
+]

@@ -1,0 +1,142 @@
+[
+ {
+  "row": 294,
+  "conference": "analytica China",
+  "society": "Messe München Shanghai",
+  "country": "China",
+  "notes": "biennial since 2002 | biggest lab technology trade fair in Asia, with concurrent technical conferences | Phase 1 source: https://www.analyticachina.com.cn/en/"
+ },
+ {
+  "row": 54,
+  "conference": "Mendeleev Congress on General and Applied Chemistry",
+  "society": "Russian Chemical Society",
+  "country": "Russia",
+  "notes": "every 4-5 years | large Russian congress"
+ },
+ {
+  "row": 706,
+  "conference": "Кузнецовские чтения (Kuznetsov Readings, Novosibirsk)",
+  "society": "Siberian Branch RAS (Institute of Solid State Chemistry / Novosibirsk)",
+  "country": "Russia",
+  "notes": "annual | recurring Russian national/international chemistry conference series listed on a Russian chemistry conference calendar | Phase 1 source: https://cheminform.ru/konferenczii-2026/"
+ },
+ {
+  "row": 707,
+  "conference": "Зимняя школа по химии твёрдого тела (Winter School on Solid State Chemistry, Ekaterinburg)",
+  "society": "Ural Federal University / UB RAS",
+  "country": "Russia",
+  "notes": "annual, XXXV edition | recurring Russian national/international chemistry conference series listed on a Russian chemistry conference calendar | Phase 1 source: https://cheminform.ru/konferenczii-2026/"
+ },
+ {
+  "row": 5,
+  "conference": "ACS Regional Meetings (MARM, NERM, SERMACS, MWRM, SWRM, NORM, WRM, CERM)",
+  "society": "ACS",
+  "country": "US",
+  "notes": "8 regional meetings per year | each runs its own abstract call"
+ },
+ {
+  "row": 20,
+  "conference": "AIChE Spring Meeting & Global Congress on Process Safety",
+  "society": "AIChE",
+  "country": "US",
+  "notes": "annual | second AIChE meeting"
+ },
+ {
+  "row": 35,
+  "conference": "NAM — North American Catalysis Society Meeting",
+  "society": "NACS",
+  "country": "US",
+  "notes": "biennial | North American catalysis"
+ },
+ {
+  "row": 26,
+  "conference": "analytica Conference",
+  "society": "analytica / Messe Munchen",
+  "country": "Germany",
+  "notes": "biennial | trade + conference"
+ },
+ {
+  "row": 50,
+  "conference": "Chemiedozententagung",
+  "society": "GDCh",
+  "country": "Germany",
+  "notes": "annual | German academic meeting"
+ },
+ {
+  "row": 14,
+  "conference": "CSI — Chemical Research Society of India / ICS Annual Convention",
+  "society": "CRSI / Indian Chemical Society",
+  "country": "India",
+  "notes": "annual | national convention"
+ },
+ {
+  "row": 162,
+  "conference": "Indian Chemical Society Annual Convention / National Convention of Chemists",
+  "society": "Indian Chemical Society",
+  "country": "India",
+  "notes": "annual | national convention of the Indian Chemical Society | Phase 1 source: https://facs.website/facs-member-societies/"
+ },
+ {
+  "row": 11,
+  "conference": "CSJ Chemistry Festa",
+  "society": "Chemical Society of Japan",
+  "country": "Japan",
+  "notes": "annual, autumn | second CSJ meeting"
+ },
+ {
+  "row": 147,
+  "conference": "KCS General Meeting and Academic Presentation Conference (대한화학회 학술발표회)",
+  "society": "Korean Chemical Society",
+  "country": "South Korea",
+  "notes": "twice yearly (Spring + Fall); 135th edition | national meeting of the Korean Chemical Society | Phase 1 source: https://kchem.org/conf/kcs135/welcome"
+ },
+ {
+  "row": 53,
+  "conference": "SCI Congresso Nazionale (Societa Chimica Italiana)",
+  "society": "SCI",
+  "country": "Italy",
+  "notes": "annual/biennial | Italian national congress"
+ },
+ {
+  "row": 17,
+  "conference": "Reuniao Anual da Sociedade Brasileira de Quimica (RASBQ)",
+  "society": "Sociedade Brasileira de Quimica",
+  "country": "Brazil",
+  "notes": "annual | large Latin American national meeting"
+ },
+ {
+  "row": 6,
+  "conference": "Pacifichem",
+  "society": "ACS/CSJ/CIC/RACI/KCS/NZIC/CSC",
+  "country": "international",
+  "notes": "every 5 years, Honolulu | multi-society Pacific Basin congress, very large"
+ },
+ {
+  "row": 7,
+  "conference": "IUPAC World Chemistry Congress",
+  "society": "IUPAC",
+  "country": "international",
+  "notes": "biennial | global umbrella congress"
+ },
+ {
+  "row": 447,
+  "conference": "全国固态化学与无机合成学术会议 (CCS Solid State Chemistry and Inorganic Synthesis Conference)",
+  "society": "中国化学会 / Chinese Chemical Society",
+  "country": "China",
+  "notes": "recurring; 18th edition | CCS division congress | Phase 1 source: https://www.chemsoc.org.cn/meeting/home/"
+ },
+ {
+  "row": 252,
+  "conference": "Catalysis Society of Japan Annual Meeting (触媒討論会)",
+  "society": "Catalysis Society of Japan",
+  "country": "Japan",
+  "notes": "twice yearly | Japanese national catalysis meeting | Phase 1 source: https://www.chemistry.or.jp/en/events/calendar/index.html"
+ },
+ {
+  "row": 249,
+  "conference": "SPSJ Annual Meeting (高分子学会年次大会)",
+  "society": "Society of Polymer Science, Japan",
+  "country": "Japan",
+  "notes": "annual; ~12,000-member society | largest Japanese polymer chemistry meeting | Phase 1 source: https://en.wikipedia.org/wiki/Society_of_Polymer_Science"
+ }
+]

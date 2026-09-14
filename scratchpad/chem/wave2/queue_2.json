@@ -1,0 +1,122 @@
+[
+ {
+  "row": 7,
+  "level": 5,
+  "conference": "ECCE — European Congress of Chemical Engineering",
+  "society": "EFCE",
+  "country": "Europe",
+  "notes": "biennial | European congress"
+ },
+ {
+  "row": 10,
+  "level": 5,
+  "conference": "IWA World Water Congress & Exhibition",
+  "society": "International Water Association",
+  "country": "international",
+  "notes": "biennial; Oct 2026 Glasgow, ~10,000 participants | water treatment gap — very large applied meeting | Phase 1 source: https://worldwatercongress.org/"
+ },
+ {
+  "row": 13,
+  "level": 4,
+  "conference": "AOCS Annual Meeting (American Oil Chemists Society)",
+  "society": "AOCS",
+  "country": "US",
+  "notes": "annual | applied chemistry"
+ },
+ {
+  "row": 16,
+  "level": 4,
+  "conference": "IZC - International Zeolite Conference",
+  "society": "International Zeolite Association",
+  "country": "international",
+  "notes": "triennial; 22nd edition; 500+ attendees | world zeolite and porous materials congress | Phase 1 source: https://www.iza-online.org/IZC_Org.htm"
+ },
+ {
+  "row": 19,
+  "level": 4,
+  "conference": "Euromembrane",
+  "society": "European Membrane Society",
+  "country": "Europe",
+  "notes": "triennial; 2027 Gdansk | European membrane science congress | Phase 1 source: https://efce.info/events_overview.html"
+ },
+ {
+  "row": 22,
+  "level": 4,
+  "conference": "International Copper Conference (Copper series)",
+  "society": "MetSoc of CIM / international copper community",
+  "country": "international",
+  "notes": "every ~3 years; 10th edition 2019 | long-running extractive metallurgy series | Phase 1 source: http://web.cim.org/com2017/conference/related-events.cfm"
+ },
+ {
+  "row": 25,
+  "level": 3,
+  "conference": "ISMAR (International Society of Magnetic Resonance)",
+  "society": "ISMAR",
+  "country": "international",
+  "notes": "biennial | magnetic resonance"
+ },
+ {
+  "row": 28,
+  "level": 3,
+  "conference": "CHEMCON (Indian Chemical Engineering Congress)",
+  "society": "Indian Institute of Chemical Engineers (IIChE)",
+  "country": "India",
+  "notes": "annual | Indian national chemical engineering congress | Phase 1 source: https://www.iiche.org.in/"
+ },
+ {
+  "row": 31,
+  "level": 3,
+  "conference": "European Mass Spectrometry Conference (EMSC)",
+  "society": "national European MS societies (DGMS, SFSM, etc.)",
+  "country": "Europe",
+  "notes": "biennial | European counterpart to ASMS | Phase 1 source: https://en.wikipedia.org/wiki/International_Mass_Spectrometry_Foundation"
+ },
+ {
+  "row": 34,
+  "level": 3,
+  "conference": "ICP - International Conference on Photochemistry",
+  "society": "international photochemistry community",
+  "country": "international",
+  "notes": "biennial (odd years) | second global photochemistry series | Phase 1 source: http://publications.iupac.org/pac/conferences/family/PHOTO/index.html"
+ },
+ {
+  "row": 37,
+  "level": 3,
+  "conference": "IFSCC Congress / IFSCC Conference",
+  "society": "International Federation of Societies of Cosmetic Chemists",
+  "country": "international",
+  "notes": "congress and conference in alternating years | world cosmetic science congress | Phase 1 source: https://www.ifscc.org/"
+ },
+ {
+  "row": 40,
+  "level": 3,
+  "conference": "SIMS - International Conference on Secondary Ion Mass Spectrometry",
+  "society": "SIMS international community",
+  "country": "international",
+  "notes": "biennial | world SIMS surface analysis conference | Phase 1 source: https://www.mass-spec-capital.com/"
+ },
+ {
+  "row": 43,
+  "level": 3,
+  "conference": "COM — Conference of Metallurgy and Materials (Conference of Metallurgists)",
+  "society": "MetSoc of CIM (Canadian Institute of Mining, Metallurgy and Petroleum)",
+  "country": "Canada",
+  "notes": "annual; 65th Aug 2026 Calgary | extractive metallurgy gap, 65 editions | Phase 1 source: https://metsoc.org/annual-conference-of-metallurgists/"
+ },
+ {
+  "row": 46,
+  "level": 3,
+  "conference": "MACRO — International Conference on Polymer Science and Technology",
+  "society": "Society for Polymer Science India (SPSI)",
+  "country": "India",
+  "notes": "biennial | recurring national symposium of an Indian learned society | Phase 1 source: https://blogs.rsc.org/jm/?p=6142"
+ },
+ {
+  "row": 49,
+  "level": 3,
+  "conference": "Indian Science Congress — Chemical Sciences section",
+  "society": "Indian Science Congress Association (est. 1914)",
+  "country": "India",
+  "notes": "annual | recurring national symposium of an Indian learned society | Phase 1 source: https://en.wikipedia.org/wiki/Indian_Science_Congress_Association"
+ }
+]
