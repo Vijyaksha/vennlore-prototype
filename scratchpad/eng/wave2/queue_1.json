@@ -54,15 +54,6 @@
   "notes": "annual (June) | IMS week with RFIC and ARFTG together carries roughly a thousand contributions | Phase 1 second pass, loaded 2026-09-14"
  },
  {
-  "row": 109,
-  "conference": "IEICE Society Conference",
-  "society": "Institute of Electronics, Information and Communication Engineers (IEICE)",
-  "country": "Japan",
-  "subfield": "electronics / communications",
-  "events_per_yr": null,
-  "notes": "annual (September) | ~1,500-2,000 presentations; IEICE-only Japanese proceedings | Phase 1 second pass, loaded 2026-09-14"
- },
- {
   "row": 110,
   "conference": "JSAE Annual Congress (Spring and Autumn)",
   "society": "Society of Automotive Engineers of Japan (JSAE)",
