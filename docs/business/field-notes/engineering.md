@@ -663,3 +663,35 @@ IMS 411, EWRI 516 by rung 5, Structures Congress ~390 and MineXchange ~520 infer
   merge in alternate cycles. A joint year is counted once — Rupert chooses the sheet.
 - **ASCE deposits are optional at its congresses** (EWRI 105–147/yr, Structures 38–42/yr): the
   deposit is a floor and the eventscribe programme is the count.
+
+### Wave-2 researcher's refinements (relayed 2026-09-14, before its session limit hit)
+
+- **DBpia**: a row is a paper iff `autr_nm` is non-empty (also `frst_page`/`end_page`); other rows
+  are session headers, and papers + headers must equal `totCnt`.
+- **ConfTool**: count `class="paper_title"`; `form_tracks` is the organiser's own submission-type
+  filter, so the invited track can be excluded exactly (ECEE 2026: track 10 = Invited Lecture).
+- **Europa interactive programme**: split on `div.schedule-item`, read `div.sessionType`, count
+  `div.interventionTitle`.
+- **KSAS**: `<yr>c` (우주/space) is a separate series, not an edition of the main meeting.
+- **JSAE**: one `<tr>` per lecture with `p.article-title`; a second artefact is the programme zip
+  `jsae.or.jp/files_publish/news/<id>/<date>jsae<yr>s_sp.zip` (count PDFs).
+- **JCI**: drop 主題 rows containing 研究委員会 (committee reports).
+- **POMS**: paper IDs `\b148-[0-9]{4}\b` (prefix = EventsNet event id); the registered-participants
+  page `pomsmeetings.org/EventsNet/EventRegistration/RegisteredParticipants.aspx?ev=<id>` is a
+  static attendance directory.
+- **ISOPE**: blocks whose last line ends in a country name are papers; `[Proceedings only]` items
+  are published, not presented — exclude.
+- **ASA/ICA**: the meeting is the JASA issue `4_Supplement` with A-pages.
+- **INCE**: DOI suffix `^10.3397/([a-z]+)_(\d{4})_` — `in_` INTER-NOISE, `nc_` NOISE-CON, `no_` a third series.
+- **IFAC**: a congress is ONE issue of IFAC-PapersOnLine ((56,2) = 1,909 incl. the "Contents" record — drop it).
+- **EU PVSEC**: a leading day digit marks contributed IDs (O oral, V visual/poster); P-series are plenary/panel.
+- **ICSMGE eposter.at**: `data-poster-id` + `span.poster-category`; ids prefixed `Plenary-` are invited.
+- **USACM books of abstracts**: anchors `^ *ABSTRACT *$`, the running head and the dateline all agree.
+- **ECCM programme PDF**: IDs `#[0-9]{1,5}`.
+- **ICCM on Zenodo** is the official ISSN-bearing proceedings and matches the organiser's printed
+  table exactly — the one licensed exception to the "repositories are not proceedings" rule.
+- **HFES**: use ISSN `2169-5067`, NOT `1541-9312`; member 370 is a decoy.
+- **GAMM**: PAMM (ISSN `1617-7061`) is a collapsing floor (600 / 594 / 198 / 62 / 156) — count the BoA.
+- **ASME papers are optional for presentation** in ASME's own words:
+  `idetc.secure-platform.com/a/page/author_resources/paper_publication_requirements` — the deposit
+  is a floor for every ASME meeting.
