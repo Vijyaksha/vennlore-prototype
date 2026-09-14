@@ -56,7 +56,7 @@ def plan(recs, tag, r5=None, dupes=None, events_override=None, bar=900):
         if r9 and r.get('attendance_numeric'):
             call = dict(r, attendance=r['attendance_numeric'], bar=bar,
                         implied=attlib.implied_abstracts(r['attendance_numeric'], r['ratio']))
-            probs = attlib.check_ratio(call)
+            probs = [] if call.get('direct_abstracts') else attlib.check_ratio(call)   # a stated figure has no ratio behind it
             if probs:
                 out['problems'].append((n, f'ratio rejected: {probs}'))
             call.update(attlib.resolve_borderline(call))

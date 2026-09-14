@@ -77,3 +77,13 @@ def test_orchestrator_rung5_count_overrides_the_researcher_and_dupes_move_with_r
     a, b = out['wb_recs']
     assert (a['abstracts'], a['tier'], a['rung']) == ('1,700 papers', 'VERIFIED', 5) and 'counted in Playwright' in a['method']
     assert out['moves'] == [dict(row=71, expected_name='B', why='DUPLICATE of row X')]
+
+
+def test_rung9_row_with_a_stated_figure_needs_no_ratio_and_resolves_on_the_figure():
+    r9 = rec(outcome='INFERRED', abstracts_numeric=None, abstracts='~425+ REPORTED BY SOURCE, NOT COUNTED', rung=8,
+             source_url='https://x/report', attendance_numeric=20000, attendance_rung='A3', attendance_source_url='https://x/att',
+             direct_abstracts=425, ratio=None, ratio_rationale=None, verdict='OUT')
+    out = wavelib.plan([r9], tag=TAG)
+    assert out['problems'] == []
+    assert out['calls'][0]['decision'] == 'BELOW BAR' and out['calls'][0]['figure'] == 425
+    assert out['wb_recs'][0]['tier'] == 'OUT' and out['moves'][0]['row'] == 70
