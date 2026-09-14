@@ -5,8 +5,8 @@ Companion to `census-methodology.md`, which stays general. This file holds only 
 what you learn here, not there.
 
 Started 2026-09-13 from the index pass (DBLP + Crossref, 62 rows at zero searches) and the
-2026-09-14 second-pass phase 1. **Interim** — the first phase-2 wave over the 31 second-pass names
-has not run yet; extend this file from its results.
+2026-09-14 second-pass phase 1; the wave-1 section at the end records what phase 2 over the 30
+second-pass names found (2026-09-14).
 
 ## The unit, settled
 
@@ -62,7 +62,8 @@ INFORMS goes on Engineering (operations research); Sunbelt waits for a social-sc
      the convention site states the number of presentations per year.
    - **Confit** (`confit.atlas.jp`) is a JS SPA — HTTP 202 with an empty body to `curl` — so it is
      **rung 5, orchestrator-only**; it renders a `Presentations(N)` count once loaded.
-   - **DBpia / KISS** (Korea) index KCC and KIPS volumes; JS-heavy, likely rung 5.
+   - **Korea is NOT rung 5**: KIISE publishes a downloadable programme book and KIPS runs on
+     ManuscriptLink (both routes in the wave-1 table below); DBpia/KISS are not needed.
    - **CCF** recommendation notice enumerates the 36 Chinese national CS conferences
      (`ccf.org.cn/Media_list/ccf/2025-11-21/853354.shtml`); CNCC's own site states forum counts,
      but its forums are largely invited — count contributed posters/papers only.
