@@ -695,3 +695,55 @@ IMS 411, EWRI 516 by rung 5, Structures Congress ~390 and MineXchange ~520 infer
 - **ASME papers are optional for presentation** in ASME's own words:
   `idetc.secure-platform.com/a/page/author_resources/paper_publication_requirements` — the deposit
   is a floor for every ASME meeting.
+
+---
+
+## 9. Wave 3 (2026-09-14, the last 76 rows, three agents, 40 searches, ~57 rows at zero searches)
+
+The tail of the list — boundary trade shows, practitioner conventions, implied Chinese societies,
+smaller world congresses. **0 VERIFIED, 19 BORDERLINE, 57 OUT.** Every implied Chinese name
+resolved to a real meeting (CSEE 398, CMES ~120, CSAA ~646, CCES curated, CHES 267, CIE ~120, CSAE
+600–799, CAST 990 invited) and every one of them is under the bar — the "Chinese society layer"
+runs its research through technical-committee meetings and invited forums, not mass congresses.
+
+BORDERLINE kept: ASCE EMI 1,186 (2024, joint with PMC), THERMEC 1,131, KSAE 1,106 (autumn), WM
+Symposia ~1,050 inferred, World Tribology Congress 1,000+ stated, ABES ~1,000 stated, SES 943, AAPG
+ACE 914 (2019), MS&T 904, ABM Week 894, RSJ 861, fib ~840 stated, ICAS 817, ICONE 600 floor / 861
+in 2022, International Symposium on Combustion 591 floor, World Tunnel Congress 540+ floor,
+ICASP/ICOSSAR and Indian Engineering Congress unresolved, WEFTEC (Swapcard planner unread).
+
+Orchestrator calls: **ICTD** OUT (eventscribe index of the co-located ICTD + Pavements 2025 = 711,
+a ceiling); **CAST** OUT on programme character (990 invited forum talks, no open call — the CNCC
+shape; its member societies sit on the sheet separately).
+
+Knife-edge OUTs, all exact counts, for Rupert: **CBA 797** (2018 was 840), **SHASE 775** (rising
+611 → 689 → 775), **SOFT 757**, **IPTC 713**, **AESJ ≤751**.
+
+### Routes new in wave 3
+
+- **Cloudflare asset paths are often unwalled**: `matscitech.org`, `ceramics.org`, `tms.org` 403 on
+  pages but `matscitech.org/mst25/downloads/MST25-FinalProgram.pdf` returns 200 — try the asset
+  path before queueing rung 5.
+- **Curran / proceedings.com** publishes a free complete table-of-contents PDF for every society
+  proceedings it reprints (`/search.php?search_query=`); its dot leaders are spaced (`. . . .`), so
+  a `\.{3,}` regex matches nothing. Settled IMPC 2024 and CSCE 2019.
+- **Springer Lecture Notes in Civil Engineering** carries recent civil congresses as Crossref
+  book chapters — count by the book's ISBN/container.
+- **Swapcard planners** (WEFTEC: `wefevents.app.swapcard.com/event/<event>/plannings/<id>`) render
+  sessions per day behind infinite scroll via GraphQL; rung 5, and it counts sessions, not papers.
+- **eventscribe co-located events** share one index (ICTD + Pavements): the total is a ceiling for
+  either meeting.
+- **Joint editions to carry**: CIGR 2026 with EurAgEng; WCRR 2025 inside "Rail Research Week" with
+  IHHA; Leeds-Lyon 2022 inside the World Tribology Congress; EMI 2024 with PMC; ISIJ and JIM share
+  40 joint-session talks (J1–J40 in the ISIJ programme); MS&T hosts the TMS Fall Meeting.
+- **The Internet Archive was offline for the whole wave**, so every Wayback bypass in these notes
+  was unavailable; the agents found asset-path and Curran workarounds instead. Retry Wayback later.
+- **Chinese 余 convention**: "500余 reports + 百余 posters" bounds a count at 600–799 — enough to
+  rule OUT when the bound cannot reach 800.
+
+### Engineering — where it stands after phase 2
+
+136 second-pass rows + 31 index rows: **18 VERIFIED, 77 BORDERLINE, 75 parked OUT**. The deferred
+local-language pass (China's technical-committee meetings, more Japanese/Korean societies on
+Confit/DBpia) is the only remaining engineering work; the wave-3 evidence says it will add
+BORDERLINE rows, not VERIFIED ones.
