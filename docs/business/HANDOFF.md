@@ -105,9 +105,46 @@ input dirs with the 1,688-name exclusion list:
   Geológico Chileno (900+). Trade/policy events (World Water Week, Esri UC, INTERGEO, PDAC) flagged
   for a contributed-share check; four checked near-misses kept as records (DBG 508, SBAgro 678, SGEM
   532, SBGf 712); a list of searched negatives is in the agent's report.
-- **Next**: build the two sheet pairs with `chemlib.build_field` (400 spare rows), move APA/APS
-  across, load names as NOT YET CENSUSED, then phase 2 in waves of ~30 with the field-notes pattern
-  (a pilot wave first, notes written from it). Phase 2 needs Rupert's go.
+- **State right now**: phase 1 is FINISHED for both fields and nothing has been loaded onto the
+  workbook — the 327 names (200 + 127) live only in the two `names.json` files. Rupert explicitly
+  withheld the phase-2 go on 2026-09-14 ("no go-ahead for phase 2, just finish phase 1"); do not
+  build sheets or launch agents until he gives it.
+
+**THE PLAN FOR THESE ~300 NAMES (Rupert, 2026-09-14) — run it in this order when he says go:**
+
+1. **Two domains, two sheet pairs.** `Census - Social Sciences` / `Deleted - Social Sciences` and
+   `Census - Earth Sciences` / `Deleted - Earth Sciences`, built with `chemlib.build_field(names,
+   duplicates, field)` (400 spare rows inside the totals ranges), every name loaded as
+   `NOT YET CENSUSED`. At load: park APA Convention and APS Convention on the social deleted sheet as
+   "already counted on Census - Life Sciences" (or move them across — Rupert's call), and set
+   `why_listed` from each record's `why_plausibly_900` + `size_hint` + `boundary` flag.
+2. **Pilot wave: ONE census-researcher agent per domain, 30 rows each**, phase 2 under
+   `census-methodology.md` exactly as the engineering pilot ran (`scratchpad/eng/wave1/BRIEF.md` is
+   the template: blind run, clean input dir holding only the queue, zero-search rungs first, cap 3
+   searches per row, rung 5 back to the orchestrator, per-row checkpointing, the six-section report
+   at the end because it becomes the field notes). Pick the 30 as a representative mix, not the 30
+   easiest — US flagships, European mirrors, Asia/LatAm, world congresses, a few boundary rows — so
+   the notes learn the field's routes. Writeback through `scratchpad/apply_wave.py`
+   (`wavelib.plan` + the tested writers), totals recomputed from cells, commit before and after.
+3. **Field notes from the pilot**: write `docs/business/field-notes/social-sciences.md` and
+   `docs/business/field-notes/earth-sciences.md` in the chemistry/engineering pattern — scope and
+   overlap table, the unit, routes that worked with verbatim URL patterns and grouping keys, routes
+   that failed with the wall hit, counting rules, traps, rows for Rupert's eye. The pilot agent's
+   report is the body; the orchestrator adds the addenda.
+4. **The remaining ~260 names run as STAGGERED SCHEDULED phase-2 runs**, each wave carrying its
+   domain's field notes in the brief. Rupert will explain the staggering (cadence, wave size, how
+   many agents per run) to the chat agent when he starts it; the mechanics are the overnight
+   pattern already proven on engineering — a session cron (`CronCreate`, one-shot, local time)
+   that first checks every earlier wave for interruptions (compare each queue to its results file,
+   resume on the same brief and output path if short), then launches the next wave, writes back,
+   commits, and updates the field notes, this file and the status table. Pre-build the wave queues
+   (`scratchpad/<field>/wave<N>/queue_<k>.json`) from the sheet's remaining `NOT YET CENSUSED` rows
+   so each launch is one command. Keep the Mac awake (`caffeinate -i -s`) for the duration.
+
+Expected yield, for calibration only: social sciences 80–150 passing (the US flagships and
+European mirrors are the VERIFIED candidates; practitioner conventions and mid-size European
+societies the doubtful tail); earth sciences 60–100 (105 of its 127 names are flagged boundary, so
+expect one pass in three or four, as engineering's tail ran).
 
 **CURRENT PLAN — Rupert's last instruction, supersedes the numbered order below where they differ:**
 
