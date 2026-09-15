@@ -20,7 +20,7 @@ IGC Dublin 3,213 V, ECREA ECC 1,299 B, ALA 262 OUT, AESC 355 OUT. Orchestrator s
 | Sheet | After wave A + rung-5 pass | NOT YET CENSUSED |
 |---|---|---|
 | Census - Social Sciences | **44 V (34.28 ev/yr) + 39 B (63.61 V+B ev/yr)**, deleted 8 | 111 (incl. 5 unfinished wave-A rows) |
-| Census - Earth Sciences | **9 V (4.95 ev/yr) + 36 B (23.69 V+B ev/yr)**, deleted 45 | 37 (incl. 2 unfinished wave-A rows) |
+| Census - Earth Sciences | **9 V (4.95 ev/yr) + 35 B (23.19 V+B ev/yr)**, deleted 46 | 37 (incl. 2 unfinished wave-A rows) |
 
 **Wave B (dispatched 06:01 ET, ahead of the 06:30 bell, which was then retired):** one earth agent with ALL 37
 remaining earth rows (`scratchpad/earth/wave4/`), three social agents × 30 (`scratchpad/soc/wave4,5,6/`),
@@ -38,9 +38,10 @@ the re-pass is safe; `write_plan_wave.json` preserves the first plan).
 - soc: RGS-IBG r64 (Ex Ordo = CREDENTIAL wall, not rung 5), EISA r196 (Helsinki portal Cloudflare beats
   scripted Chrome), NSTA r191 (Blazor portal needs interactive filtering), APPAM r19 (All Academic guest
   session, papers-in-panels bulk count), ABAI r30 (reCAPTCHA v2 = HUMAN wall).
-- earth: Adaptation Futures r27 (EventsAir portal Closed), Colombia CCG r79 (agenda grid PDF downloaded, column
-  count still to run), IPPC r106 (plantprotection.org Cloudflare beats scripted Chrome), IAC India r91 (OneDrive
-  share links need an interactive download).
+- earth: Adaptation Futures r27 (EventsAir portal Closed), IPPC r106 (plantprotection.org Cloudflare beats
+  scripted Chrome). Settled in a second pass (commit fa8f024): IAC India r91 = 877 BORDERLINE (three OneDrive
+  Summaries volumes downloaded via the viewer's #downloadCommand, header-counted 283+306+288), Colombia CCG r79
+  ≈460 OUT (agenda grid: 367 filled 15-min room cells + ≤195 poster blocks, ceiling 562).
 
 **For Rupert's eye (decided knowingly, not read off arithmetic):** IAEG 801 (one above the floor), NARST 789 /
 ACSP 793 (11 and 7 below, prior editions 900 / 856 — kept BORDERLINE), Geo-Temas 747 exact OUT (53 short), IMA
