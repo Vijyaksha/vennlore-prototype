@@ -14,19 +14,26 @@ rows stay `NOT YET CENSUSED` for a future session. His other calls this session:
 from life to social** (done), census agents ALWAYS on Opus, and **streamline the process without
 lowering the evidence bar** (see `scratchpad/streamline.py`).
 
-### State at 16:04 (update from STATUS files — these numbers go stale)
+### FINAL STATE (2026-09-14 ~20:45) — both pilots COMPLETE and WRITTEN BACK
 
-- **soc-pilot**: 21/30 rows, 6 searches. Interim verdicts: 14 VERIFIED / 4 BORDERLINE / 3
-  NEEDS_RUNG_5. Giants counted: APSA 5,570, AERA 4,676 (Crossref container), ESA sociology 3,450,
-  AAG 3,283, ECER 3,216, ASC 3,010.
-- **earth-pilot**: 21/30 rows, 5 searches. Interim: 5 VERIFIED / 14 BORDERLINE / 2 OUT. AOGS
-  3,861 and CGU 3,922 counted; JpGU 4,600 / IUGG 4,439 / IGC 2,978 are organiser-stated (rung 2)
-  and correctly held at BORDERLINE — a stated total never reaches VERIFIED.
-- **NOTHING from the pilots is written to the workbook yet.**
-- Wave dirs: `scratchpad/soc/wave1/` and `scratchpad/earth/wave1/` (BRIEF.md, queue_1.json,
-  results_1.json, STATUS_1.json — results rewritten per row). **Resume rule if interrupted:**
-  compare queue to results; relaunch one Opus census-researcher per unfinished queue with the SAME
-  brief and output paths — per-row checkpointing means nothing is lost.
+- **Both pilots finished 30/30** (a usage-limit pause 18:35–19:42 cost nothing — per-row
+  checkpoints held and both resumed by mailbox message). Social: 10 searches; earth: 11.
+- **Workbook written and committed** (earth f7aa26a, social 6810257): social sheet 18 VERIFIED
+  (16.25 ev/yr) + 13 BORDERLINE (10.25) + 166 NOT YET CENSUSED; earth sheet 7 VERIFIED (4.2) +
+  14 BORDERLINE (9.24) + 95 NOT YET CENSUSED. Totals recomputed from cells.
+- **Orchestrator rung 5, all cleared**: ICA 3,541 (ICA25 Abstract Program PDF); DGPs 1,686
+  (Converia day pages, double-extraction exact); EEA-ESEM 1,093 contributed (Cloudflare-cleared
+  pager, 353 session pages); JpGU 5,412 platform count via `pub.confit.atlas.jp/en/event/<slug>/
+  search?f=&t=presentation` (route unlocks every Confit meeting); NCTM is login-walled → resolved
+  on the agent's rung-9 attendance.
+- **Intake decisions on record**: Chinese Geophysical Society parked as duplicate of CGU (same
+  co-organised meeting, identical 3,922); IUGG raised to VERIFIED for consistency with CGU (both
+  itemised published counts, KCS precedent) — **Rupert may demote both together if VERIFIED must
+  mean strict artefact counts**; implied APSA (Asia-Pacific Sociological) parked on non-existence.
+- **For Rupert**: SEG IMAGE (earth, 611 floor BORDERLINE) is the SEG+AAPG-ACE merger and
+  engineering r188 still carries ACE's DATED 2019 count (914) — retire one or keep both?
+- `field-notes/earth-sciences.md` published (pilot report + addenda);
+  `field-notes/social-sciences.md` pending only the soc-pilot's REPORT.md.
 
 ### What this session did before launching (all committed)
 
