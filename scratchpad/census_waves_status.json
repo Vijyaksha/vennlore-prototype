@@ -380,12 +380,17 @@
     144,
     153
    ],
-   "rows_returned": 0,
-   "agent": "running (dispatched 06:01 ET, 29 min before Bell 2)",
-   "rung5_pending": [],
-   "written_back": false,
+   "rows_returned": 30,
+   "agent": "DONE 07:04 ET",
+   "rung5_pending": [
+    29,
+    46,
+    144
+   ],
+   "written_back": true,
    "commit": null,
-   "searches_used": null
+   "searches_used": 9,
+   "summary": "0 V, 21 B (incl. 3 rung-9, WEAI spot-checked to 802 B, AECT 649 OUT by orchestrator), 9 OUT, CSA parked in umbrella 143"
   }
  },
  "wave_A_unfinished_rows": {
