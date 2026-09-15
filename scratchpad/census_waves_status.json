@@ -251,12 +251,16 @@
     121,
     122
    ],
-   "rows_returned": 0,
-   "agent": "running (dispatched 06:01 ET, 29 min before Bell 2)",
-   "rung5_pending": [],
-   "written_back": false,
+   "rows_returned": 37,
+   "agent": "DONE 07:19 ET",
+   "rung5_pending": [
+    73,
+    77
+   ],
+   "written_back": true,
    "commit": null,
-   "searches_used": null
+   "searches_used": 14,
+   "summary": "0 V, 2 B (both NEEDS_RUNG_5), 35 OUT (incl. 5 character-decided trade/forum events, IRC parked as joint with IGC). EARTH PHASE 2 COMPLETE."
   },
   "soc/wave4": {
    "field": "Social sciences & education",
