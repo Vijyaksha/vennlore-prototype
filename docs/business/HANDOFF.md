@@ -3,91 +3,48 @@
 State of play for the next session. The method lives in `census-methodology.md` (general, all
 fields) and `field-notes/<field>.md` (field-specific). This file is only where we stopped.
 
-## Where we stopped — 2026-09-14 evening (social sciences + earth sciences PILOTS RUNNING)
+## Where we stopped — 2026-09-15 (social + earth pilots DONE and WRITTEN; next: schedule the remaining waves)
 
-**Rupert gave the phase-2 go for both new fields this session.** The plan he set, then AMENDED
-mid-session: pilot wave of 30+30 (RUNNING as of 16:04), then a 4-agent wave of 120 and a 7:30 pm
-scheduled run for the rest — **both of those follow-ons were CANCELLED by Rupert ("cancel it —
-the follow-on"). No cron exists.** After the pilots: orchestrator does rung-5/bulk counts,
-intake-validates, writes back, writes both field-notes files, reports, and STOPS. The remaining
-rows stay `NOT YET CENSUSED` for a future session. His other calls this session: **move APA/APS
-from life to social** (done), census agents ALWAYS on Opus, and **streamline the process without
-lowering the evidence bar** (see `scratchpad/streamline.py`).
+**State:** both new fields are loaded, piloted (30 rows each, Opus census-researcher agents),
+written to the workbook, committed, and **all intake decisions are RATIFIED by Rupert — do not
+re-open** (IUGG/CGU stay VERIFIED on itemised published counts; SEG IMAGE + engineering r188 both
+kept; NCTM stays BORDERLINE ~840; JSM/AAR/CONIC stay on social).
 
-### FINAL STATE (2026-09-14 ~20:45) — both pilots COMPLETE and WRITTEN BACK
+| Sheet | State | Remaining |
+|---|---|---|
+| Census - Social Sciences | 18 V (16.25 ev/yr) + 13 B (10.25) | **166 NOT YET CENSUSED** |
+| Census - Earth Sciences | 7 V (4.2 ev/yr) + 14 B (9.24) | **95 NOT YET CENSUSED** |
 
-- **Both pilots finished 30/30** (a usage-limit pause 18:35–19:42 cost nothing — per-row
-  checkpoints held and both resumed by mailbox message). Social: 10 searches; earth: 11.
-- **Workbook written and committed** (earth f7aa26a, social 6810257): social sheet 18 VERIFIED
-  (16.25 ev/yr) + 13 BORDERLINE (10.25) + 166 NOT YET CENSUSED; earth sheet 7 VERIFIED (4.2) +
-  14 BORDERLINE (9.24) + 95 NOT YET CENSUSED. Totals recomputed from cells.
-- **Orchestrator rung 5, all cleared**: ICA 3,541 (ICA25 Abstract Program PDF); DGPs 1,686
-  (Converia day pages, double-extraction exact); EEA-ESEM 1,093 contributed (Cloudflare-cleared
-  pager, 353 session pages); JpGU 5,412 platform count via `pub.confit.atlas.jp/en/event/<slug>/
-  search?f=&t=presentation` (route unlocks every Confit meeting); NCTM is login-walled → resolved
-  on the agent's rung-9 attendance.
-- **Intake decisions on record**: Chinese Geophysical Society parked as duplicate of CGU (same
-  co-organised meeting, identical 3,922); IUGG raised to VERIFIED for consistency with CGU (both
-  itemised published counts, KCS precedent) — **Rupert may demote both together if VERIFIED must
-  mean strict artefact counts**; implied APSA (Asia-Pacific Sociological) parked on non-existence.
-- **RATIFIED BY RUPERT (2026-09-15, "for all of the decisions, you can just keep them")** — all
-  four open flags are now settled as written, do not re-open: (1) IUGG and CGU STAY VERIFIED on
-  itemised published counts (the KCS precedent stands as tier policy); (2) SEG IMAGE (earth,
-  BORDERLINE) and engineering r188 (AAPG ACE, DATED 2019) BOTH stay — Rupert accepts the known
-  merger overlap; (3) NCTM stays BORDERLINE on the rung-9 ~840; (4) JSM, AAR and CONIC stay on
-  Census - Social Sciences where the pilot placed them.
-- **Both field-notes files are published** (pilot report + orchestrator addenda):
-  `field-notes/earth-sciences.md` and `field-notes/social-sciences.md`. The soc pilot could not
-  write files (subagent harness guard), so its report travelled as 16 chunked messages and was
-  reassembled verbatim into `scratchpad/soc/wave1/REPORT.md`; the field-notes copy carries three
-  marked verdict corrections (EEA-ESEM BORDERLINE; ICA and DGPs VERIFIED at rung 5).
-- **Deferred retry queue (no verdict changes)**: PAA's 981 unlisted posters, JPA Confit cross-check,
-  KPA oral tracks, ICME via Wayback (Archive down all run). Boundary rows for deliberate assignment:
-  JSM, AAR, CONIC. New phase-1 lead: Pacific Sociological Association (pacificsoc.org).
+**Next task: schedule phase-2 waves over the 261 remaining rows. Rupert will give the wave
+parameters (cadence, size, agent count) directly — do not infer them.** Census agents are ALWAYS
+Opus; one domain per agent; clean wave dir (queue + brief only); budget cap is 1000, check
+`echo $CLAUDE_CODE_MAX_WEB_SEARCHES_PER_SESSION` and spend one throwaway search first.
 
-### What this session did before launching (all committed)
+### Where everything is
 
-1. **Sheets built and loaded** (commit cd8fb18): `Census/Deleted - Social Sciences` (197 live + 3
-   parked dupes) and `Census/Deleted - Earth Sciences` from the two phase-1 names.json files via
-   `chemlib.build_field` + new `scratchpad/fieldload.py` (tested). APA Convention (VERIFIED 2,976)
-   and APS Convention (BORDERLINE 1,350) MOVED from life rows 91/92 to social rows 202/203; move
-   verified neutral by recomputing totals from cells (life 7.0/40.25 → 6.0/38.25).
-2. **Dedupe sweep, Rupert-ordered** (commit ec5bdcf): fuzzy scan (tokens+acronyms+society) within
-   and across ALL sheets. Parked as already-counted: ASHA (med r234), TRB (eng r79), ECSS sport
-   (med r157), IAGG (med r148), and on earth IGC-geography + AAG (geography counted once, on
-   social r92/r14). ~25 acronym lookalikes checked by society and KEPT (ASA×4, ISA×2, APA×3,
-   ICA×3, IGC×3, ISC×3, AAS, BPS, ESA, SRA…). Live rows after: **social 196, earth 125** to census.
-3. **`scratchpad/streamline.py`** (commit 29fa781, tested): post-pilot protocol — reading diet
-   (own field notes + BINDING_DIGEST instead of ~55k tokens of docs), route hints in queues
-   (hints ≠ evidence), crawl budget (>~40 pages → `NEEDS_BULK_COUNT` + exact counting plan,
-   orchestrator bulk-counts), batched downloads, soft ~8-min/row timebox (trail + UNRESOLVED,
-   never a lower-grade figure). `build_wave_brief()` generates slim wave briefs. Both pilots got
-   measures 1–4 (sans reading diet) by mid-run message at ~15:40 — pace went from ~10 to ~2-3
-   min/row. Cost note (Rupert asked): downloads/grep counts are nearly free (bash-side); the
-   compute sinks are context size and per-row tool round-trips; next levers if wanted =
-   index-scripting whole slices (DBLP/CCS pattern) and ~15-20-row agent slices.
-
-### Orchestrator TODO once pilots return (the stopping work of THIS session)
-
-1. **Rung-5 + bulk-count queues** (browser is orchestrator-only): the NEEDS_RUNG_5 /
-   NEEDS_BULK_COUNT rows, each carrying the exact page or counting plan.
-2. **Intake flags already spotted**: (a) Chinese Geoscience Union AND Chinese Geophysical Society
-   both returned 3,922 — CGU's meeting is co-organised by the Geophysical Society, almost
-   certainly ONE meeting on two rows; adjudicate before writing. (b) SEG IMAGE 611 BORDERLINE —
-   check whether that is a floor/partial count; IMAGE is the post-2021 SEG+AAPG-ACE merger and
-   **engineering r188 holds ACE's DATED 2019 count (914) — Rupert decides whether r188 retires**.
-   (c) Verify no rung-2 stated total got VERIFIED.
-3. **Writeback** through `scratchpad/apply_wave.py` (wavelib.plan + tested writers), one run per
-   field (`--sheet "Census - Social Sciences" --deleted "Deleted - Social Sciences"`, same for
-   Earth); r5_notes.json / dupes.json / events_override.json per wave dir; totals recomputed from
-   cells; commit before and after.
-4. **Field notes**: write `docs/business/field-notes/social-sciences.md` and `earth-sciences.md`
-   from the pilots' six-section reports (report is the body, orchestrator adds addenda).
-5. Update the methodology status table + this file, then STOP (no wave 2, no cron — cancelled).
-
-**Remaining after the pilots: social 166, earth 95 `NOT YET CENSUSED`.** Budget: cap 1000
-confirmed live; ~12 searches used by this session so far. Tests: 117 green (`test_fieldload.py`,
-`test_streamline.py` new). The 2026-09-14-afternoon section below is superseded by this one.
+- **Workbook**: `docs/business/tam-sam-som-v3.xlsx` (committed clean — bad writes revert with git).
+- **Field notes (a wave agent reads ONLY its own field's notes + the digest below)**:
+  `docs/business/field-notes/social-sciences.md`, `field-notes/earth-sciences.md`.
+- **Slim brief generator**: `scratchpad/streamline.py` → `build_wave_brief(...)` — embeds
+  BINDING_DIGEST, crawl budget, timebox. **Use it; do NOT hand agents the full methodology + other
+  fields' notes — that overload is what slowed the pilots** (measured: ~10 → ~2-3 min/row after the
+  reading diet). Pilot wave dirs `scratchpad/{soc,earth}/wave1/` hold the worked example
+  (BRIEF.md, queue_1.json, results_1.json, r5_notes.json, dupes.json, REPORT.md).
+- **Writeback** (per wave): `cd scratchpad && python3 apply_wave.py --dir <field>/wave<N>
+  --sheet "Census - <Field>" --deleted "Deleted - <Field>" --tag "[<field> wave N, <date>]"
+  --today <date> --results results_k.json --queue queue_k.json --dry` — fix problems, drop `--dry`,
+  recompute totals from cells, commit before and after. Optional per-wave files: r5_notes.json /
+  dupes.json / events_override.json (formats in wavelib.plan docstring).
+- **Queue building**: rows with Tier `NOT YET CENSUSED` on each census sheet, largest-first; carry
+  each row's col-19 notes; add `route_hint` from the field notes / `scratchpad/{soc,earth}/p1/crossref_seen.json`.
+- **Rung 5 is the orchestrator's** (browser): agents return NEEDS_RUNG_5 / NEEDS_BULK_COUNT with
+  the exact page or counting plan.
+- **Tests** (run before any workbook write): `cd scratchpad && python3 -m pytest test_attlib.py
+  test_chemlib.py test_pilotlib.py test_ccslib.py test_writeback.py test_dedupe.py test_wavelib.py
+  test_fieldload.py test_streamline.py -q` — 117 green on 2026-09-15.
+- **Deferred, no verdict changes** (retry-later, listed in the field notes): PAA posters, JPA
+  Confit cross-check, KPA orals, ICME via Wayback. New phase-1 lead: Pacific Sociological
+  Association (pacificsoc.org). Session commits: cd8fb18 → fad3f54.
 
 ## Where we stopped — 2026-09-13 (life sciences)
 
