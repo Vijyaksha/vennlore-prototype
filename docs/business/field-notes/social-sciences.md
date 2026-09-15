@@ -545,3 +545,45 @@ than being substituted into row 162.
   Association** (pacificsoc.org, real US regional body) needs a phase-1 row; the sheet after
   writeback stands at **18 VERIFIED (16.25 ev/yr) + 13 BORDERLINE (10.25 ev/yr) + 166 NOT YET
   CENSUSED** (incl. APA/APS moved from life sciences).
+
+---
+
+## Orchestrator addenda (2026-09-15 overnight, waves A–B, Rupert's two bells)
+
+Routes, walls and traps found by the four wave-A researchers and the orchestrator's rung-5 pass. Field-specific
+results are in the wave dirs (`scratchpad/<field>/wave*/results.json`, `REPORT` = the agents' final tables in the
+session log) and in each row's Method cell; this section carries only what generalises.
+
+
+- **Dype Soluções platform** runs many Brazilian society congresses (CFP, ANPUH, ANPOCS, RBA, SBS): `/atividade/programacao` (whole programme) and `/atividade/hub/<track>`; papers are `<p class="m-4">` on consolidated pages — but consolidated pages can PAD (ANPOCS 423 vs 357 on detail pages): verify on detail pages.
+- **Realize Eventos** (CONEDU, ENDIPE): schedule table carries `data-ajax-url=".../base/api/divulgacoes/trabalhosAlocados"` returning every session with its works (open JSON).
+- **Confex is alive** for SSWR, MLA, ISA (`<host>/<meeting>/meetingapi.cgi/Paper`, `--compressed`) — probe the host before assuming a society left it.
+- **All Academic**: APPAM's instance issues a guest session and browse pages render to curl; AEJMC/APSA/ASA/ASC/MPSA still serve the reCAPTCHA stub. AEJMC publishes accepted abstracts as an .xlsx on its Higher Logic S3 bucket.
+- **WebFetch clears some Cloudflare walls curl cannot** (federationhss.ca, igc2024dublin.org) — try it before declaring rung 5; it did not help on SBL/ACSP/plantprotection.org.
+- **Oxford Abstracts**: `/event/<id>/titles` states the total submissions; `apigw.oxfordabstracts.com/services/program-pdf?event_id=<id>` serves the programme PDF unauthenticated (sessions only).
+- **C-IN portals** (czech-in.org cmPortalV15): the guest 'Abstract List' states the total (browser only).
+- **MiraSmart** (AAS/DPS): two-step cookie handshake (fetch Itinerary/ with a jar, then EventsAAG.aspx with the jar) yields the full server-rendered programme.
+- **WAS abstract books**: `wasblobstorage.blob.core.windows.net/meeting-abstracts/<CODE>AbstractBook.pdf` — HEAD tells you which editions exist.
+- **Unwalled WordPress mirrors** of Cloudflare-blocked societies exist (mineralogy-ima-wordpress.website); WordPress REST APIs may live at `/api/` instead of `/wp-json/` (IAVCEI). Media API `?search=` works where `mime_type=` returns 400.
+- **Programme data as a JS literal** (`EMBEDDED={...}`, ESC 2026) — a text extractor sees an empty page; grep the HTML for JSON.
+- **Google Drive public folders** list via `drive.google.com/embeddedfolderview?id=<id>#list`; files via `drive.usercontent.google.com/download?id=<id>&export=download&confirm=t` (content-type octet-stream).
+- **Crossref**: member+year faceting beats container filters (comma in a container title breaks the filter; `container-title` arrays double-count SGEM). Container filters need the exact string.
+- **Copernicus title discriminator varies**: EPSC2026/EPSC-DPS2025 title `Abstract <SLUG>-<n>`; EPSC2022/ICG2022 title every page `CO Meeting Organizer <SLUG>` and the discriminator is HTTP 200 vs 302. Test a known-good and known-absent id first.
+- **Dead domains that return HTTP 200**: Wayback-downloader demo stubs (suelossantacruz2025.com), domain-broker sale pages (ippcathens2024.gr, sociedadgeologicamexicana.org.mx), gambling squatters (sbagro.org→olxbaut.com, icme15.org), empty documents (cbagro2025.com.br content-length 0). Check the body, never the status.
+- **Credential walls are not rung 5**: Ex Ordo event spaces 'restricted to registered delegates' (RGS-IBG), eventi.unibo.it (IAG), IPSA library. **reCAPTCHA v2 is a human wall** (ABAI).
+- **Wayback / Internet Archive** was HTTP 503 all night — do not build a route on it.
+
+### Social-specific, this night
+- **Big counts settled**: CONEDU 5,092 (Realize API), ISA Forum 4,831 (Confex API forum2025), ANPUH 4,302 (Dype),
+  MPSA 4,201 (2024 programme), EAA 4,203 (abstract book), ALAS 3,617, CLACSO 3,446, AAA 3,245 (Confex), IGC Dublin
+  3,213 (provisional PDFs, browser), ICP 2,786, 4S 2,693, ISA (int. studies) 2,626, SRCD 2,621, ICAP 2,594, MLA 2,391
+  (Confex), SAA 2,109, EARLI 2,078, SSWR 1,945 (Confex), RBA 1,783, SBS 1,726, ESWC 1,721 (Oxford Abstracts titles),
+  EDULEARN 1,708, CIES 1,691, SBL 1,610 (program book, browser), IAMCR 1,523, EAWOP 1,509.
+- **Program books counted by timed items**: SBL's book lists every paper as 'Title (N min)' under S-/A-/P-/M-
+  prefixed session ids — count the S items minus role lines (Discussion/Panelist/Presiding/Respondent/Break).
+- **SAA**: the abstract archive PDF on saa.org (also tDAR collections per meeting) — 2,109 for 2026.
+- **Practitioner conventions decided by character**: ALA = 262 posters (its whole contributed set → OUT); NSTA
+  still open (Blazor portal); NCTM precedent (14%).
+- **Umbrella**: Canadian Congress (r143) is ~4,350 NOT COUNTED (rung 9 at 50%); CPSA/CSA/CSSE (152–154) meet
+  inside it — count their own programmes and flag duplicate_of 143, never add.
+- **Credential/human walls (not rung 5)**: Ex Ordo event spaces (RGS-IBG), ABAI reCAPTCHA v2, IPSA library.

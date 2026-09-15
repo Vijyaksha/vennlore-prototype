@@ -573,3 +573,49 @@ IHC's sister series), five 0.25–0.33, and one at **0.2** (IUFRO, five-yearly).
 - **Writeback state:** wave 1 (30 rows) written 2026-09-14 — census sheet 7 VERIFIED (4.2 ev/yr) +
   14 BORDERLINE (9.24 ev/yr) + 95 NOT YET CENSUSED; deleted sheet 8 OUT on positive evidence + 1
   duplicate + the 2 load-time parkings (IGC-geography, AAG — counted on social sciences).
+
+---
+
+## Orchestrator addenda (2026-09-15 overnight, waves A–B, Rupert's two bells)
+
+Routes, walls and traps found by the four wave-A researchers and the orchestrator's rung-5 pass. Field-specific
+results are in the wave dirs (`scratchpad/<field>/wave*/results.json`, `REPORT` = the agents' final tables in the
+session log) and in each row's Method cell; this section carries only what generalises.
+
+
+- **Dype Soluções platform** runs many Brazilian society congresses (CFP, ANPUH, ANPOCS, RBA, SBS): `/atividade/programacao` (whole programme) and `/atividade/hub/<track>`; papers are `<p class="m-4">` on consolidated pages — but consolidated pages can PAD (ANPOCS 423 vs 357 on detail pages): verify on detail pages.
+- **Realize Eventos** (CONEDU, ENDIPE): schedule table carries `data-ajax-url=".../base/api/divulgacoes/trabalhosAlocados"` returning every session with its works (open JSON).
+- **Confex is alive** for SSWR, MLA, ISA (`<host>/<meeting>/meetingapi.cgi/Paper`, `--compressed`) — probe the host before assuming a society left it.
+- **All Academic**: APPAM's instance issues a guest session and browse pages render to curl; AEJMC/APSA/ASA/ASC/MPSA still serve the reCAPTCHA stub. AEJMC publishes accepted abstracts as an .xlsx on its Higher Logic S3 bucket.
+- **WebFetch clears some Cloudflare walls curl cannot** (federationhss.ca, igc2024dublin.org) — try it before declaring rung 5; it did not help on SBL/ACSP/plantprotection.org.
+- **Oxford Abstracts**: `/event/<id>/titles` states the total submissions; `apigw.oxfordabstracts.com/services/program-pdf?event_id=<id>` serves the programme PDF unauthenticated (sessions only).
+- **C-IN portals** (czech-in.org cmPortalV15): the guest 'Abstract List' states the total (browser only).
+- **MiraSmart** (AAS/DPS): two-step cookie handshake (fetch Itinerary/ with a jar, then EventsAAG.aspx with the jar) yields the full server-rendered programme.
+- **WAS abstract books**: `wasblobstorage.blob.core.windows.net/meeting-abstracts/<CODE>AbstractBook.pdf` — HEAD tells you which editions exist.
+- **Unwalled WordPress mirrors** of Cloudflare-blocked societies exist (mineralogy-ima-wordpress.website); WordPress REST APIs may live at `/api/` instead of `/wp-json/` (IAVCEI). Media API `?search=` works where `mime_type=` returns 400.
+- **Programme data as a JS literal** (`EMBEDDED={...}`, ESC 2026) — a text extractor sees an empty page; grep the HTML for JSON.
+- **Google Drive public folders** list via `drive.google.com/embeddedfolderview?id=<id>#list`; files via `drive.usercontent.google.com/download?id=<id>&export=download&confirm=t` (content-type octet-stream).
+- **Crossref**: member+year faceting beats container filters (comma in a container title breaks the filter; `container-title` arrays double-count SGEM). Container filters need the exact string.
+- **Copernicus title discriminator varies**: EPSC2026/EPSC-DPS2025 title `Abstract <SLUG>-<n>`; EPSC2022/ICG2022 title every page `CO Meeting Organizer <SLUG>` and the discriminator is HTTP 200 vs 302. Test a known-good and known-absent id first.
+- **Dead domains that return HTTP 200**: Wayback-downloader demo stubs (suelossantacruz2025.com), domain-broker sale pages (ippcathens2024.gr, sociedadgeologicamexicana.org.mx), gambling squatters (sbagro.org→olxbaut.com, icme15.org), empty documents (cbagro2025.com.br content-length 0). Check the body, never the status.
+- **Credential walls are not rung 5**: Ex Ordo event spaces 'restricted to registered delegates' (RGS-IBG), eventi.unibo.it (IAG), IPSA library. **reCAPTCHA v2 is a human wall** (ABAI).
+- **Wayback / Internet Archive** was HTTP 503 all night — do not build a route on it.
+
+### Earth-specific, this night
+- **IUGG associations**: IAGA-IASPEI 2025 Lisbon = 1,470 (joint book of abstracts, the 43rd IASPEI assembly —
+  IASPEI has held no standalone assembly this century, so its row is parked as a duplicate); IACS-IAMAS-IAPSO
+  BACO-25 = 1,021; IAVCEI 2023 = 1,210; IAHS 2022 = 679 (OUT); IAG 2025 = ~700 submitted stated, 659 delegates
+  (OUT; eventi.unibo.it is a CREDENTIAL wall).
+- **Deposit indexes that ARE the programme** (paper required for every accepted abstract): WCGALP (Wageningen
+  Academic, Crossref exact container filter, 816), SBGf (member 9850 / prefix 10.22564, 714), ARMA/MEOS (OnePetro).
+  **Deposit indexes that are NOT**: IAEG (Springer chapters 309 vs 801 presented) — count the programme PDFs.
+- **World Geothermal Congress**: worldgeothermal.org/cpdb2/search_results.php?conference=World+Geothermal+Congress&year=<Y>
+  prints 'Found N results' (deposit index, lags); the organiser's itemised session pages are the current count (679).
+- **ISC**: confer.co.nz/isc2026 links an EventsAir 'Presenters by Session' .xlsx (parse the OOXML directly) — 724.
+- **Copernicus**: EPSC2026 = 1,257 (static pages); EPSC-DPS joint years count once; DPS on its own (MiraSmart) = 298.
+- **Chinese societies**: CSO (cso.org.cn, plain http) publishes meeting reports but no abstract volume — rung 9
+  (~110, CURATED forum, OUT); GSC circulars are mirrored by member journals/bureaux (cmgb.com.cn) — rung 9 ~780 B;
+  SSSC/CSSC annual meetings ~300 (OUT).
+- **AESC 2026**: the SPA's 'Download Program and Abstract Book' is a public Google Drive file (355 abstracts, OUT).
+- **Dead/misleading**: iuss/22wcss walls (BSSS mirror), ippcathens2024.gr sold, sociedadgeologicamexicana.org.mx
+  parked, suelossantacruz2025.com Wayback-downloader stub, sbagro.org squatter, cbagro2025.com.br empty 200.
