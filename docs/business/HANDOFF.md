@@ -32,8 +32,14 @@ lowering the evidence bar** (see `scratchpad/streamline.py`).
   mean strict artefact counts**; implied APSA (Asia-Pacific Sociological) parked on non-existence.
 - **For Rupert**: SEG IMAGE (earth, 611 floor BORDERLINE) is the SEG+AAPG-ACE merger and
   engineering r188 still carries ACE's DATED 2019 count (914) — retire one or keep both?
-- `field-notes/earth-sciences.md` published (pilot report + addenda);
-  `field-notes/social-sciences.md` pending only the soc-pilot's REPORT.md.
+- **Both field-notes files are published** (pilot report + orchestrator addenda):
+  `field-notes/earth-sciences.md` and `field-notes/social-sciences.md`. The soc pilot could not
+  write files (subagent harness guard), so its report travelled as 16 chunked messages and was
+  reassembled verbatim into `scratchpad/soc/wave1/REPORT.md`; the field-notes copy carries three
+  marked verdict corrections (EEA-ESEM BORDERLINE; ICA and DGPs VERIFIED at rung 5).
+- **Deferred retry queue (no verdict changes)**: PAA's 981 unlisted posters, JPA Confit cross-check,
+  KPA oral tracks, ICME via Wayback (Archive down all run). Boundary rows for deliberate assignment:
+  JSM, AAR, CONIC. New phase-1 lead: Pacific Sociological Association (pacificsoc.org).
 
 ### What this session did before launching (all committed)
 
