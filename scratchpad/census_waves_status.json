@@ -252,7 +252,7 @@
     122
    ],
    "rows_returned": 0,
-   "agent": "prepared (not dispatched)",
+   "agent": "running (dispatched 06:01 ET, 29 min before Bell 2)",
    "rung5_pending": [],
    "written_back": false,
    "commit": null,
@@ -295,7 +295,7 @@
     149
    ],
    "rows_returned": 0,
-   "agent": "prepared (not dispatched)",
+   "agent": "running (dispatched 06:01 ET, 29 min before Bell 2)",
    "rung5_pending": [],
    "written_back": false,
    "commit": null,
@@ -338,7 +338,7 @@
     152
    ],
    "rows_returned": 0,
-   "agent": "prepared (not dispatched)",
+   "agent": "running (dispatched 06:01 ET, 29 min before Bell 2)",
    "rung5_pending": [],
    "written_back": false,
    "commit": null,
@@ -381,7 +381,7 @@
     153
    ],
    "rows_returned": 0,
-   "agent": "prepared (not dispatched)",
+   "agent": "running (dispatched 06:01 ET, 29 min before Bell 2)",
    "rung5_pending": [],
    "written_back": false,
    "commit": null,
@@ -440,7 +440,11 @@
     92
    ],
    "earth/wave3": [
-    32
+    32,
+    79
+   ],
+   "earth/wave2": [
+    91
    ]
   },
   "still_pending": {
@@ -453,20 +457,18 @@
    ],
    "earth": [
     27,
-    79,
-    106,
-    91
+    106
    ]
   },
   "sheet_state": {
    "Census - Earth Sciences": {
     "totals": [
      4.95,
-     23.69
+     23.19
     ],
     "tiers": {
      "VERIFIED": 9,
-     "BORDERLINE": 36,
+     "BORDERLINE": 35,
      "NOT YET CENSUSED": 37
     }
    },
@@ -507,5 +509,9 @@
   194,
   201,
   106
- ]
+ ],
+ "bell2": {
+  "scheduled": "06:30 ET",
+  "actual_dispatch": "06:01 ET \u2014 all Wave A intake done, Wave B prepared early"
+ }
 }

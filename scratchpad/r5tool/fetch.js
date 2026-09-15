@@ -3,7 +3,7 @@
 const { chromium } = require('playwright');
 const fs = require('fs');
 const [,, mode, url, out, jsfile] = process.argv;
-const PROFILE = '/Users/rupertlim/AI_Projects/ConferenceApp/scratchpad/r5tool/profile';
+const PROFILE = process.env.R5_PROFILE || '/Users/rupertlim/AI_Projects/ConferenceApp/scratchpad/r5tool/profile';
 (async () => {
   const ctx = await chromium.launchPersistentContext(PROFILE, { channel: 'chrome', headless: false, viewport: { width: 1400, height: 900 },
     args: ['--disable-blink-features=AutomationControlled'] });
@@ -32,6 +32,19 @@ const PROFILE = '/Users/rupertlim/AI_Projects/ConferenceApp/scratchpad/r5tool/pr
       const buf = Buffer.from(r.b64, 'base64');
       fs.writeFileSync(out, buf);
       console.log(JSON.stringify({ warmTitle: t, status: r.status, type: r.type, bytes: buf.length }));
+    } else if (mode === 'dl') {
+      await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 60000 });
+      await waitChallenge();
+      await page.waitForLoadState('networkidle', { timeout: 30000 }).catch(() => {});
+      await page.waitForTimeout(3000);
+      const btn = page.locator('#downloadCommand, [data-automation-id="downloadCommand"]').first();
+      const alt = page.getByRole('menuitem', { name: /download/i }).first();
+      const [dl] = await Promise.all([
+        page.waitForEvent('download', { timeout: 120000 }),
+        (async () => { if (await btn.count()) await btn.click(); else if (await alt.count()) await alt.click(); else throw new Error('no Download control; title=' + await page.title()); })(),
+      ]);
+      await dl.saveAs(out);
+      console.log(JSON.stringify({ suggested: dl.suggestedFilename(), bytes: fs.statSync(out).size, url: page.url().slice(0, 120) }));
     } else {
       await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 60000 });
       const title = await waitChallenge();

@@ -2,30 +2,8 @@
  {
   "row": 79,
   "conference": "Congreso Colombiano de Geologia",
-  "tier": "BORDERLINE",
-  "abstracts": null,
-  "events_per_yr": 0.5,
-  "rung9": false,
-  "implied": null,
-  "decision": null,
-  "move": false
- },
- {
-  "row": 27,
-  "conference": "Adaptation Futures",
-  "tier": "BORDERLINE",
-  "abstracts": null,
-  "events_per_yr": 0.5,
-  "rung9": false,
-  "implied": null,
-  "decision": null,
-  "move": false
- },
- {
-  "row": 32,
-  "conference": "Australian Earth Sciences Convention (AESC)",
   "tier": "OUT",
-  "abstracts": "355 (2026, AESC Melbourne 3-6 Feb 2026 — every abstract in the official Program & Abstracts book, ids 5-389, orals + posters, including ~44 keynote/invited items)",
+  "abstracts": "~460 (2025, XX Congreso Colombiano de Geología, Cali 13-15 Aug — 367 oral talks counted as filled 15-minute room cells in the published agenda grid + ~90 posters (≤195 poster text blocks over 3 poster pages); upper bound 562)",
   "events_per_yr": 0.5,
   "rung9": false,
   "implied": null,

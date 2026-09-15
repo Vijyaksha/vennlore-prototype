@@ -13,6 +13,13 @@
   "orchestrator_note": "RUNG 5 attempted by the orchestrator (2026-09-15): the EventsAir interactive programme redirects to .../Portal/Closed — the portal has been retired with the event; nothing to enumerate. Stays BORDERLINE (no figure). Next action: Wayback capture of the agenda, or the poster directory PDF (Poster_Directory_251010.pdf) if it reappears under adaptationfutures2025.com/uploads/images/."
  },
  "79": {
-  "orchestrator_note": "BULK COUNT deferred by the orchestrator (2026-09-15): AgendaCCG2025-4.pdf downloaded (12 pp, 1800x2025 pt, seven-room 15-minute grid over 3 days + 3 poster days); a column-aware count by x-coordinate is still to be run. Stays BORDERLINE."
+  "abstracts_numeric": 460,
+  "abstracts": "~460 (2025, XX Congreso Colombiano de Geología, Cali 13-15 Aug — 367 oral talks counted as filled 15-minute room cells in the published agenda grid + ~90 posters (≤195 poster text blocks over 3 poster pages); upper bound 562)",
+  "year": 2025,
+  "rung": 3,
+  "source_url": "https://sociedadcolombianadegeologia.org/wp-content/uploads/2025/08/AgendaCCG2025-4.pdf",
+  "confidence": "derived",
+  "tier": "OUT",
+  "orchestrator_note": "BULK COUNT by the orchestrator (2026-09-15): AgendaCCG2025-4.pdf (12 pp, 1800x2025 pt) extracted with pdftotext -bbox-layout; on each oral page (pp 3,4,6,7,9,10) the '<hh:mm - hh:mm>' cells define 15-minute rows and the x-position clusters (≥5 blocks) define 6–8 room columns; every (row, room) cell holding text = one talk, minus cells whose text is a plenary/administrative item (Conversatorio, PANEL, Charla Especial, ACTO, Receso, Almuerzo… 25 cells excluded) → 59+66+69+71+67+35 = 367 orals. Poster pages (pp 5,8,11) carry 54+63+78 = 195 text blocks in title/author pairs under theme headings → ~90 posters; even if every block were a poster the total could not exceed 562. Both figures are far below the 800 floor and the grid IS the programme, so the row is OUT on positive evidence. Caveats: the agenda is 'sujeta a cambios'; a wrapped title split across two blocks in one cell still counts once (cells, not blocks, were counted); the 'Memorias CCG2025' volume (cover published, PDF not yet) would give an exact figure. Spanish-language artefact."
  }
 }

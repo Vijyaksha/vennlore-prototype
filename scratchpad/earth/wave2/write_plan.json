@@ -1,20 +1,9 @@
 [
  {
-  "row": 106,
-  "conference": "International Plant Protection Congress (IPPC)",
-  "tier": "BORDERLINE",
-  "abstracts": null,
-  "events_per_yr": 0.25,
-  "rung9": false,
-  "implied": null,
-  "decision": null,
-  "move": false
- },
- {
   "row": 91,
   "conference": "International Agronomy Congress (IAC)",
   "tier": "BORDERLINE",
-  "abstracts": null,
+  "abstracts": "877 (2025, 6th International Agronomy Congress, New Delhi 24-26 Nov — extended summaries in the three official Summaries volumes: Vol.1 283 + Vol.2 306 + Vol.3 288, incl. the Young Scientists/Students conclave theme)",
   "events_per_yr": 0.25,
   "rung9": false,
   "implied": null,
