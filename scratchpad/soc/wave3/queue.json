@@ -1,0 +1,302 @@
+[
+ {
+  "row": 143,
+  "conference": "Congress of the Humanities and Social Sciences",
+  "society": "Federation for the Humanities and Social Sciences (FHSS), Canada",
+  "country": "Canada",
+  "subfield": "social sciences (general)",
+  "events_per_yr": null,
+  "notes": "annual | a co-located congress of 70+ scholarly associations with 8,000-10,000 participants; thousands of contributed papers | Phase 1 source: https://www.federationhss.ca/en/congress/about-congress",
+  "route_hint": "UMBRELLA: Congress of the Humanities and Social Sciences (Canada) is 70+ associations meeting together; member rows CPSA (152), CSA (153), CSSE (154) are on this sheet but NOT in your queue. Count the umbrella's total contributed papers if an artefact exists (federationhss.ca programme), label it UMBRELLA, and note in duplicate_of that the member associations are inside it"
+ },
+ {
+  "row": 9,
+  "conference": "SAA Annual Meeting",
+  "society": "Society for American Archaeology",
+  "country": "US",
+  "subfield": "archaeology",
+  "events_per_yr": null,
+  "notes": "annual | 3,000-4,000 papers and posters per edition; largest archaeology meeting in the Americas | Phase 1 source: https://www.saa.org/annual-meeting",
+  "route_hint": "SAA: every meeting's abstracts are archived on tDAR — https://core.tdar.org/collection/71737/... (89th New Orleans 2024) and https://core.tdar.org/collection/88704 (all meetings) — count the records for one edition; also saa.org Abstract-Archives page and the final program PDF"
+ },
+ {
+  "row": 59,
+  "conference": "EAA Annual Meeting",
+  "society": "European Association of Archaeologists",
+  "country": "Europe",
+  "subfield": "archaeology",
+  "events_per_yr": null,
+  "notes": "annual | ~3,000 papers and posters; the largest archaeology meeting in Europe | Phase 1 source: https://www.e-a-a.org/annualmeeting",
+  "route_hint": "EAA Annual Meeting 2025 Belgrade / 2024 Rome: 'abstract book' PDF published on e-a-a.org after each meeting (count papers + posters)"
+ },
+ {
+  "row": 186,
+  "conference": "Congresso Brasileiro de Psicologia: Ciencia e Profissao (Congressao)",
+  "society": "Conselho Federal de Psicologia (CFP)",
+  "country": "Brazil",
+  "subfield": "psychology",
+  "events_per_yr": null,
+  "notes": "quadrennial | a search result states nearly 6,000 works approved and more than 14,000 registered participants; the largest scientific event in Brazilian psychology | Phase 1 source: https://www.7cbp.cbpsi.org.br/atividade/programacao",
+  "route_hint": "Congresso Brasileiro de Psicologia: Ciência e Profissão (7th, 2022? 'nearly 6,000 works approved' in a SNIPPET — open the page https://www.7cbp.cbpsi.org.br/atividade/programa); count the programme; quadrennial"
+ },
+ {
+  "row": 21,
+  "conference": "CIES Annual Conference",
+  "society": "Comparative and International Education Society",
+  "country": "US/international",
+  "subfield": "comparative education",
+  "events_per_yr": null,
+  "notes": "annual | 2,500-3,000 accepted presentations; the field's largest meeting | Phase 1 source: https://cies.us/page/AnnualConference",
+  "route_hint": "CIES 2025 Chicago / 2026: programme on cies.us (All Academic? CAPTCHA) — try the program PDF via wp-json media and the CIES 'program' site export"
+ },
+ {
+  "row": 116,
+  "conference": "SBPC Reuniao Anual",
+  "society": "Sociedade Brasileira para o Progresso da Ciencia",
+  "country": "Brazil",
+  "subfield": "general science incl. social sciences",
+  "events_per_yr": null,
+  "notes": "annual | BOUNDARY (may belong to another field) | several thousand resumos; general-science congress with a large social-science share | Phase 1 source: http://portal.sbpcnet.org.br/",
+  "route_hint": "SBPC Reunião Anual (77th 2025): resumos on sbpcnet.org.br anais (por edição); general-science congress — boundary; judge character and count"
+ },
+ {
+  "row": 118,
+  "conference": "Simposio Nacional de Historia (ANPUH)",
+  "society": "Associacao Nacional de Historia",
+  "country": "Brazil",
+  "subfield": "history",
+  "events_per_yr": null,
+  "notes": "biennial | BOUNDARY (may belong to another field) | ~2,000 trabalhos; boundary with humanities | Phase 1 source: https://anpuh.org.br/",
+  "route_hint": "ANPUH Simpósio Nacional de História (32nd 2023 / 33rd 2025): anais on anpuh.org.br / snh2025.anpuh.org — count trabalhos; boundary with humanities — flag"
+ },
+ {
+  "row": 95,
+  "conference": "IAMCR Annual Conference",
+  "society": "International Association for Media and Communication Research",
+  "country": "international",
+  "subfield": "communication and media",
+  "events_per_yr": null,
+  "notes": "annual | ~2,000 accepted abstracts | Phase 1 source: https://iamcr.org/",
+  "route_hint": "IAMCR 2025 Singapore / 2024 Christchurch: abstract book per section (iamcr.org publishes abstract books by section — sum sections, check union)"
+ },
+ {
+  "row": 183,
+  "conference": "CONEDU (Congresso Nacional de Educacao)",
+  "society": "Realize Eventos / Congresso Nacional de Educacao",
+  "country": "Brazil",
+  "subfield": "education",
+  "events_per_yr": null,
+  "notes": "annual | described as Brazil's largest education congress: more than 20,000 papers received across 11 editions (~1,800 per edition) and 57,600 participants | Phase 1 source: https://www.conedu.com.br/",
+  "route_hint": "CONEDU (Realize Eventos): anais on editorarealize.com.br/anais/ — per edition, count trabalhos; also the Even3/Crossref route; Portuguese"
+ },
+ {
+  "row": 184,
+  "conference": "EDUCERE (Congresso Nacional de Educacao, PUCPR)",
+  "society": "Pontificia Universidade Catolica do Parana",
+  "country": "Brazil",
+  "subfield": "education",
+  "events_per_yr": null,
+  "notes": "biennial | a long-running Brazilian national education congress with published anais; thousands of trabalhos per edition | Phase 1 source: https://eventum.pucpr.br/educere/outras2",
+  "route_hint": "EDUCERE (PUCPR) anais on eventum.pucpr.br/educere — count trabalhos per edition"
+ },
+ {
+  "row": 185,
+  "conference": "ENDIPE (Encontro Nacional de Didatica e Praticas de Ensino)",
+  "society": "ANDIPE / host universities",
+  "country": "Brazil",
+  "subfield": "education",
+  "events_per_yr": null,
+  "notes": "biennial | Brazil's national didactics and teaching-practice meeting; thousands of participants and trabalhos per edition | Phase 1 source: https://www.endipe.com.br/",
+  "route_hint": "ENDIPE (biennial): anais per edition (endipe.com.br / host university); Portuguese search 'anais ENDIPE trabalhos'"
+ },
+ {
+  "row": 64,
+  "conference": "RGS-IBG Annual International Conference",
+  "society": "Royal Geographical Society (with IBG)",
+  "country": "UK",
+  "subfield": "geography",
+  "events_per_yr": null,
+  "notes": "annual | ~1,800 contributed papers across 400+ sessions | Phase 1 source: https://www.rgs.org/research/annual-international-conference",
+  "route_hint": "RGS-IBG Annual International Conference 2025 Birmingham: programme (rgs.org, ex-ordo? or 'conference programme' PDF)"
+ },
+ {
+  "row": 189,
+  "conference": "ACE (Asian Conference on Education)",
+  "society": "IAFOR",
+  "country": "Japan/international",
+  "subfield": "education",
+  "events_per_yr": null,
+  "notes": "annual | a search result states ACE2025 received over 1,640 submissions from 92 countries | Phase 1 source: https://ace.iafor.org/",
+  "route_hint": "IAFOR ACE 2025 Tokyo: 'over 1,640 submissions' is a SNIPPET — open the page; the programme/abstract book PDF is on ace.iafor.org; count accepted presentations, not submissions"
+ },
+ {
+  "row": 19,
+  "conference": "APPAM Fall Research Conference",
+  "society": "Association for Public Policy Analysis and Management",
+  "country": "US",
+  "subfield": "public policy",
+  "events_per_yr": null,
+  "notes": "annual | ~1,500 accepted papers and posters | Phase 1 source: https://www.appam.org/conference-events/fall-research-conference/",
+  "route_hint": "APPAM Fall Research Conference 2025 Seattle: programme on appam.confex.com — try https://appam.confex.com/appam/2025/meetingapi.cgi/Program and /Paper"
+ },
+ {
+  "row": 28,
+  "conference": "AEJMC Annual Conference",
+  "society": "Association for Education in Journalism and Mass Communication",
+  "country": "US",
+  "subfield": "journalism and communication",
+  "events_per_yr": null,
+  "notes": "annual | ~1,500 refereed papers submitted to its divisions annually | Phase 1 source: https://www.aejmc.org/events/",
+  "route_hint": "AEJMC 2025 San Francisco: All Academic (CAPTCHA) — use aejmc.org program PDF / 'paper abstracts' pages; refereed paper counts are often stated per division"
+ },
+ {
+  "row": 96,
+  "conference": "AILA World Congress",
+  "society": "International Association of Applied Linguistics",
+  "country": "international",
+  "subfield": "applied linguistics",
+  "events_per_yr": null,
+  "notes": "triennial | ~1,500 accepted contributions | Phase 1 source: https://aila.info/",
+  "route_hint": "AILA World Congress 2024 Kuala Lumpur (21st): programme / book of abstracts; aila.info; triennial"
+ },
+ {
+  "row": 114,
+  "conference": "ANPOCS Encontro Anual",
+  "society": "Associacao Nacional de Pos-Graduacao e Pesquisa em Ciencias Sociais",
+  "country": "Brazil",
+  "subfield": "social sciences (general)",
+  "events_per_yr": null,
+  "notes": "annual | ~1,500 trabalhos across GTs and SPGs | Phase 1 source: https://www.anpocs.com/",
+  "route_hint": "ANPOCS Encontro Anual (48th 2024 / 49th 2025): anais/programação on anpocs.com — count trabalhos across GTs and SPGs"
+ },
+ {
+  "row": 188,
+  "conference": "RBA (Reuniao Brasileira de Antropologia)",
+  "society": "Associacao Brasileira de Antropologia",
+  "country": "Brazil",
+  "subfield": "anthropology",
+  "events_per_yr": null,
+  "notes": "biennial | Brazil's national anthropology meeting; ~1,500 trabalhos across GTs | Phase 1 source: https://www.portal.abant.org.br/",
+  "route_hint": "RBA (ABA) 34th Reunião Brasileira de Antropologia 2024: anais on portal.abant.org.br — count trabalhos across GTs"
+ },
+ {
+  "row": 196,
+  "conference": "EISA Pan-European Conference on International Relations",
+  "society": "European International Studies Association",
+  "country": "Europe",
+  "subfield": "international relations",
+  "events_per_yr": null,
+  "notes": "annual | ~1,000-1,500 contributed papers | Phase 1 source: https://www.eisa-net.org/",
+  "route_hint": "EISA PEC 2025 (18th Pan-European Conference): programme (eisa-net.org / conftool); count papers"
+ },
+ {
+  "row": 61,
+  "conference": "ECC (European Communication Conference)",
+  "society": "European Communication Research and Education Association (ECREA)",
+  "country": "Europe",
+  "subfield": "communication and media",
+  "events_per_yr": null,
+  "notes": "biennial | ~1,000-1,500 accepted papers | Phase 1 source: https://www.ecrea.eu/",
+  "route_hint": "ECREA ECC 2024 Ljubljana (10th): abstract book PDF / programme; ecrea.eu"
+ },
+ {
+  "row": 81,
+  "conference": "EAWOP Congress",
+  "society": "European Association of Work and Organizational Psychology",
+  "country": "Europe",
+  "subfield": "psychology",
+  "events_per_yr": null,
+  "notes": "biennial | ~1,000-1,500 accepted abstracts | Phase 1 source: https://www.eawop.org/",
+  "route_hint": "EAWOP 2025 Prague (22nd Congress): programme / abstract book; eawop2025.org"
+ },
+ {
+  "row": 115,
+  "conference": "Congresso Brasileiro de Sociologia (SBS)",
+  "society": "Sociedade Brasileira de Sociologia",
+  "country": "Brazil",
+  "subfield": "sociology",
+  "events_per_yr": null,
+  "notes": "biennial | ~1,000-1,500 trabalhos | Phase 1 source: https://www.sbsociologia.com.br/",
+  "route_hint": "SBS Congresso Brasileiro de Sociologia (22nd 2025 / 21st 2023): anais on sbsociologia.com.br — count trabalhos"
+ },
+ {
+  "row": 148,
+  "conference": "Econometric Society World Congress",
+  "society": "Econometric Society",
+  "country": "international",
+  "subfield": "economics",
+  "events_per_yr": null,
+  "notes": "quinquennial | ~1,000-1,500 contributed papers | Phase 1 source: https://www.econometricsociety.org/regions/world-congress",
+  "route_hint": "Econometric Society World Congress 2025 Seoul (13th): programme (econometricsociety.org / conference site) — count papers; quinquennial (0.2)"
+ },
+ {
+  "row": 132,
+  "conference": "SBL Annual Meeting",
+  "society": "Society of Biblical Literature",
+  "country": "US/international",
+  "subfield": "religion",
+  "events_per_yr": null,
+  "notes": "annual | BOUNDARY (may belong to another field) | ~1,200 contributed papers; co-located with AAR; boundary with humanities | Phase 1 source: https://www.acls.org/acls-member-societies/",
+  "route_hint": "SBL Annual Meeting 2025 Boston: program book PDF on sbl-site.org (co-located with AAR, row 131 counted — count SBL's own sessions only); boundary with humanities — flag"
+ },
+ {
+  "row": 26,
+  "conference": "SSWR Annual Conference",
+  "society": "Society for Social Work and Research",
+  "country": "US",
+  "subfield": "social work",
+  "events_per_yr": null,
+  "notes": "annual | ~1,200 submitted abstracts per year | Phase 1 source: https://sswr.org/annual-conference/",
+  "route_hint": "SSWR 2026 (30th Annual Conference): programme on sswr.confex.com? — try the Confex backing API; sswr.org"
+ },
+ {
+  "row": 38,
+  "conference": "NARST Annual International Conference",
+  "society": "National Association for Research in Science Teaching",
+  "country": "US/international",
+  "subfield": "science education",
+  "events_per_yr": null,
+  "notes": "annual | ~900-1,200 submitted papers and posters | Phase 1 source: https://narst.org/conferences",
+  "route_hint": "NARST 2025 National Harbor: programme / abstract book; narst.org"
+ },
+ {
+  "row": 191,
+  "conference": "NSTA National Conference on Science Education",
+  "society": "National Science Teaching Association",
+  "country": "US",
+  "subfield": "science education",
+  "events_per_yr": null,
+  "notes": "annual | a search result states the national conference offers over 1,400 presentations and workshops; practitioner-heavy | Phase 1 source: https://www.nsta.org/national-conference-science-education-indianapolis-2026",
+  "route_hint": "NSTA National Conference 2026 Indianapolis: '1,400 presentations and workshops' is a SNIPPET — open the page; practitioner-heavy → judge character (workshop sessions ≈ 1 presentation each, per the NCTM precedent)"
+ },
+ {
+  "row": 49,
+  "conference": "MLA Annual Convention",
+  "society": "Modern Language Association",
+  "country": "US",
+  "subfield": "languages and literature",
+  "events_per_yr": null,
+  "notes": "annual | BOUNDARY (may belong to another field) | ~800 sessions of contributed papers; boundary with humanities | Phase 1 source: https://www.mla.org/Convention",
+  "route_hint": "MLA Convention 2026 Toronto: programme on mla.confex.com (backing API meetingapi.cgi/Program) — ~800 sessions, count papers inside sessions; boundary with humanities — flag"
+ },
+ {
+  "row": 50,
+  "conference": "ALA Annual Conference",
+  "society": "American Library Association",
+  "country": "US",
+  "subfield": "library and information science",
+  "events_per_yr": null,
+  "notes": "annual | ~2,000 sessions; practitioner meeting, contributed-paper share uncertain | Phase 1 source: https://www.ala.org/conferencesevents/",
+  "route_hint": "ALA Annual Conference 2025 Philadelphia: practitioner meeting; judge character — is there an open research call? count contributed sessions/posters only"
+ },
+ {
+  "row": 20,
+  "conference": "ACSP Annual Conference",
+  "society": "Association of Collegiate Schools of Planning",
+  "country": "US",
+  "subfield": "urban studies and planning",
+  "events_per_yr": null,
+  "notes": "annual | ~1,000 accepted abstracts per year | Phase 1 source: https://www.acsp.org/page/AnnualConference",
+  "route_hint": "ACSP 2025 Minneapolis: programme / 'book of accepted abstracts' PDF on acsp.org"
+ }
+]

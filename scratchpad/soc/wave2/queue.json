@@ -1,0 +1,302 @@
+[
+ {
+  "row": 23,
+  "conference": "ISA Annual Convention",
+  "society": "International Studies Association",
+  "country": "US/international",
+  "subfield": "international relations",
+  "events_per_yr": null,
+  "notes": "annual | ~5,000 contributed papers across ~1,300 panels | Phase 1 source: https://www.isanet.org/Conferences",
+  "route_hint": "ISA (INTERNATIONAL STUDIES Association, isanet.org) — NOT the sociology ISA. Programme on the ISA convention site / All Academic (CAPTCHA-walled: do not fight it); try isanet.org wp-json media for a program PDF and the convention 'program' pages; ~1,300 panels"
+ },
+ {
+  "row": 8,
+  "conference": "AAA/CASCA Annual Meeting",
+  "society": "American Anthropological Association",
+  "country": "US",
+  "subfield": "anthropology",
+  "events_per_yr": null,
+  "notes": "annual | the discipline's flagship; thousands of contributed papers across several hundred sessions | Phase 1 source: https://www.americananthro.org/AnnualMeeting",
+  "route_hint": "AAA Annual Meeting: programme historically on Confex — try https://aaa.confex.com/aaa/<year>/meetingapi.cgi/Program and /Paper (open backing API); americananthro.org"
+ },
+ {
+  "row": 22,
+  "conference": "MPSA Annual Conference",
+  "society": "Midwest Political Science Association",
+  "country": "US",
+  "subfield": "political science",
+  "events_per_yr": null,
+  "notes": "annual | one of the largest political science meetings; several thousand contributed papers | Phase 1 source: https://www.mpsanet.org/conference/",
+  "route_hint": "MPSA: All Academic (CAPTCHA) — use the society's program PDF (mpsanet.org wp-json media?search=program) or the online program's static export"
+ },
+ {
+  "row": 195,
+  "conference": "ISA Forum of Sociology",
+  "society": "International Sociological Association",
+  "country": "international",
+  "subfield": "sociology",
+  "events_per_yr": null,
+  "notes": "quadrennial | the ISA's mid-term forum of research committees, distinct from the World Congress; ~3,000 contributed papers | Phase 1 source: https://www.isa-sociology.org/en/conferences/forum",
+  "route_hint": "ISA Forum of Sociology 2025 Rabat: Confex backing API https://isaconf.confex.com/isaconf/forum2025/meetingapi.cgi/Paper (use --compressed; probe the meeting code — wc2023 pattern) — exclude Withdrawn via the record field; distinct from World Congress (row 88, counted)"
+ },
+ {
+  "row": 90,
+  "conference": "ICP (International Congress of Psychology)",
+  "society": "International Union of Psychological Science (IUPsyS)",
+  "country": "international",
+  "subfield": "psychology",
+  "events_per_yr": null,
+  "notes": "quadrennial | ~3,000 accepted abstracts per congress | Phase 1 source: https://www.iupsys.net/",
+  "route_hint": "ICP 2024 Prague (33rd): abstract book / programme; icp2024.com; quadrennial"
+ },
+ {
+  "row": 15,
+  "conference": "SRCD Biennial Meeting",
+  "society": "Society for Research in Child Development",
+  "country": "US",
+  "subfield": "developmental psychology",
+  "events_per_yr": null,
+  "notes": "biennial | several thousand submitted abstracts per biennial meeting | Phase 1 source: https://www.srcd.org/event/srcd-biennial-meeting",
+  "route_hint": "SRCD Biennial 2025 Minneapolis: programme on Confex (srcd.confex.com/srcd/2025/meetingapi.cgi/Program?) or the SRCD program book PDF"
+ },
+ {
+  "row": 145,
+  "conference": "ICAP (International Congress of Applied Psychology)",
+  "society": "International Association of Applied Psychology (IAAP)",
+  "country": "international",
+  "subfield": "psychology",
+  "events_per_yr": null,
+  "notes": "quadrennial | ~2,000-3,000 accepted abstracts per congress | Phase 1 source: https://iaapsy.org/",
+  "route_hint": "ICAP 2026 Florence (July 2026) / ICAP 2023 (30th, online?): abstract book / programme; iaapsy.org"
+ },
+ {
+  "row": 120,
+  "conference": "Conferencia Latinoamericana y Caribena de Ciencias Sociales",
+  "society": "CLACSO",
+  "country": "Latin America",
+  "subfield": "social sciences (general)",
+  "events_per_yr": null,
+  "notes": "triennial | ~2,000+ ponencias across a very large regional congress | Phase 1 source: https://www.clacso.org/",
+  "route_hint": "CLACSO Conferencia Latinoamericana y Caribeña de Ciencias Sociales (10th, Bogotá 2025): programa/ponencias; Spanish search"
+ },
+ {
+  "row": 121,
+  "conference": "Congreso Latinoamericano de Sociologia (ALAS)",
+  "society": "Asociacion Latinoamericana de Sociologia",
+  "country": "Latin America",
+  "subfield": "sociology",
+  "events_per_yr": null,
+  "notes": "biennial | ~2,000 ponencias | Phase 1 source: https://sociologia-alas.org/",
+  "route_hint": "ALAS Congreso Latinoamericano de Sociología (XXXV 2025? / XXXIV Guadalajara 2024?): memorias/ponencias by GT; Spanish search 'ALAS congreso ponencias memoria'"
+ },
+ {
+  "row": 24,
+  "conference": "Law and Society Association Annual Meeting",
+  "society": "Law and Society Association",
+  "country": "US/international",
+  "subfield": "law and society",
+  "events_per_yr": null,
+  "notes": "annual | ~2,000 papers across 500+ sessions; often a joint international meeting | Phase 1 source: https://www.lawandsociety.org/annual-meeting/",
+  "route_hint": "Law and Society Association: programme on lawandsociety.org (program PDF; possibly Confex/'Cadmium'); 2025 Chicago"
+ },
+ {
+  "row": 80,
+  "conference": "ECP (European Congress of Psychology)",
+  "society": "European Federation of Psychologists' Associations (EFPA)",
+  "country": "Europe",
+  "subfield": "psychology",
+  "events_per_yr": null,
+  "notes": "biennial | ~2,000 accepted contributions | Phase 1 source: https://www.efpa.eu/",
+  "route_hint": "ECP 2025 Paphos (19th European Congress of Psychology): abstract book PDF (efpa.eu / ecp2025.eu)"
+ },
+ {
+  "row": 92,
+  "conference": "International Geographical Congress (IGC)",
+  "society": "International Geographical Union",
+  "country": "international",
+  "subfield": "geography",
+  "events_per_yr": null,
+  "notes": "quadrennial | ~2,000 contributed papers | Phase 1 source: https://igu-online.org/",
+  "route_hint": "IGC 2024 Dublin (35th International Geographical Congress): abstract book / programme (igc2024dublin.org); igu-online.org"
+ },
+ {
+  "row": 124,
+  "conference": "Indian Science Congress",
+  "society": "Indian Science Congress Association",
+  "country": "India",
+  "subfield": "general science incl. social sciences",
+  "events_per_yr": null,
+  "notes": "annual | BOUNDARY (may belong to another field) | thousands of contributed papers; has a social-science and education section",
+  "route_hint": "Indian Science Congress: check whether recent editions were HELD (2024 and 2025 editions were postponed/cancelled per news) — a meeting that does not currently take place is recorded as such; boundary/general-science — judge character; sciencecongress.nic.in"
+ },
+ {
+  "row": 86,
+  "conference": "EDULEARN",
+  "society": "IATED",
+  "country": "Spain/international",
+  "subfield": "education",
+  "events_per_yr": null,
+  "notes": "annual | Crossref lists 1,739 papers in EDULEARN24 and 1,696 in EDULEARN25 | SIZE HINT: 1,739 papers, EDULEARN24 Proceedings (crossref_seen.json (supplied)) | Phase 1 source: https://iated.org/edulearn/",
+  "route_hint": "IATED Crossref prefix 10.21125: container facet 'EDULEARN24 Proceedings' = 1,739 / EDULEARN25 = 1,696 (phase-1 hint). Verify via the facet + cursor re-derivation as in the field notes §2.4"
+ },
+ {
+  "row": 87,
+  "conference": "INTED (International Technology, Education and Development Conference)",
+  "society": "IATED",
+  "country": "Spain/international",
+  "subfield": "education",
+  "events_per_yr": null,
+  "notes": "annual | Crossref lists 1,312 papers in INTED2024 and 1,255 in INTED2025 | SIZE HINT: 1,312 papers, INTED2024 Proceedings (crossref_seen.json (supplied)) | Phase 1 source: https://iated.org/inted/",
+  "route_hint": "IATED Crossref prefix 10.21125: 'INTED2024 Proceedings' = 1,312 / INTED2025 = 1,255 (phase-1 hint). Same method as ICERI (counted)"
+ },
+ {
+  "row": 56,
+  "conference": "EARLI Biennial Conference",
+  "society": "European Association for Research on Learning and Instruction",
+  "country": "Europe",
+  "subfield": "learning sciences",
+  "events_per_yr": null,
+  "notes": "biennial | ~1,500-2,000 accepted contributions | Phase 1 source: https://www.earli.org/events",
+  "route_hint": "EARLI 2025 Graz (21st Biennial): book of abstracts / programme (earli.org, conftool?)"
+ },
+ {
+  "row": 159,
+  "conference": "Deutscher Kongress fuer Geographie (DKG)",
+  "society": "Deutsche Gesellschaft fuer Geographie (DGfG)",
+  "country": "Germany",
+  "subfield": "geography",
+  "events_per_yr": null,
+  "notes": "biennial | a search result describes 400+ sessions and more than 1,500 presentations at the 62nd congress (Frankfurt 2023); not verified on an opened page | Phase 1 source: https://www.dgfg.org/ueber-uns/kongresse/",
+  "route_hint": "Deutscher Kongress für Geographie 2023 Frankfurt: 'more than 1,500 presentations, 400+ sessions' claimed in a SNIPPET — open the page; programme on dkg2023.de / dgfg.org; German search 'Deutscher Kongress für Geographie Programm Vorträge'"
+ },
+ {
+  "row": 17,
+  "conference": "Psychonomic Society Annual Meeting",
+  "society": "Psychonomic Society",
+  "country": "US",
+  "subfield": "cognitive psychology",
+  "events_per_yr": null,
+  "notes": "annual | ~1,500 submitted talks and posters | Phase 1 source: https://www.psychonomic.org/mpage/annualmeeting",
+  "route_hint": "Psychonomic Society 2025 Denver: abstract book PDF published yearly on psychonomic.org (program/abstracts PDF)"
+ },
+ {
+  "row": 25,
+  "conference": "4S Annual Meeting",
+  "society": "Society for Social Studies of Science",
+  "country": "US/international",
+  "subfield": "sociology of science",
+  "events_per_yr": null,
+  "notes": "annual | ~1,500 contributed papers; joint with EASST in some years | Phase 1 source: https://www.4sonline.org/meeting/",
+  "route_hint": "4S 2025 Seattle / 4S 2024 Amsterdam (joint with EASST): programme (4sonline.org; often on a 'program' site with paper pages)"
+ },
+ {
+  "row": 30,
+  "conference": "ABAI Annual Convention",
+  "society": "Association for Behavior Analysis International",
+  "country": "US/international",
+  "subfield": "psychology",
+  "events_per_yr": null,
+  "notes": "annual | ~1,500 accepted presentations and posters | Phase 1 source: https://www.abainternational.org/events/annual-2026.aspx",
+  "route_hint": "ABAI 2026 (52nd Annual Convention): programme via the ABAI portal (abainternational.org/events); 'program book' PDF"
+ },
+ {
+  "row": 67,
+  "conference": "DGS Kongress",
+  "society": "Deutsche Gesellschaft fuer Soziologie",
+  "country": "Germany",
+  "subfield": "sociology",
+  "events_per_yr": null,
+  "notes": "biennial | Germany's sociology congress; ~1,500 contributed papers | Phase 1 source: https://soziologie.de/kongresse",
+  "route_hint": "DGS Kongress 2024 Duisburg-Essen (42nd): programme (kongress2024.soziologie.de); German search 'Programm Beiträge'"
+ },
+ {
+  "row": 91,
+  "conference": "IUAES World Congress",
+  "society": "International Union of Anthropological and Ethnological Sciences",
+  "country": "international",
+  "subfield": "anthropology",
+  "events_per_yr": null,
+  "notes": "quadrennial | ~1,500 contributed papers | Phase 1 source: https://iuaes.org/",
+  "route_hint": "IUAES 2023 (Delhi, joint with WAU) / IUAES-WAU 2025 Antigua: programme; iuaes.org"
+ },
+ {
+  "row": 93,
+  "conference": "International Population Conference",
+  "society": "International Union for the Scientific Study of Population (IUSSP)",
+  "country": "international",
+  "subfield": "demography and population",
+  "events_per_yr": null,
+  "notes": "quadrennial | ~1,500 accepted papers and posters | Phase 1 source: https://iussp.org/",
+  "route_hint": "IUSSP International Population Conference 2025 Brisbane: programme on iussp.org (Confex-like backend; count sessions × papers), 'IPC2025'"
+ },
+ {
+  "row": 101,
+  "conference": "Interamerican Congress of Psychology (SIP)",
+  "society": "Sociedad Interamericana de Psicologia",
+  "country": "Americas",
+  "subfield": "psychology",
+  "events_per_yr": null,
+  "notes": "biennial | ~1,500 accepted contributions | Phase 1 source: https://sipsych.org/",
+  "route_hint": "SIP Interamerican Congress of Psychology 2025 (40th, Rio? / 39th 2023 Asunción): programa / libro de resúmenes; Spanish/Portuguese search"
+ },
+ {
+  "row": 146,
+  "conference": "World Archaeological Congress (WAC)",
+  "society": "World Archaeological Congress",
+  "country": "international",
+  "subfield": "archaeology",
+  "events_per_yr": null,
+  "notes": "quadrennial | ~1,500 contributed papers per congress | Phase 1 source: https://worldarch.org/",
+  "route_hint": "WAC-10 Darwin 2025 (10th World Archaeological Congress, June 2025): programme; worldarch.org"
+ },
+ {
+  "row": 147,
+  "conference": "EASA Biennial Conference",
+  "society": "European Association of Social Anthropologists",
+  "country": "Europe",
+  "subfield": "anthropology",
+  "events_per_yr": null,
+  "notes": "biennial | ~1,500 contributed papers across 200+ panels | Phase 1 source: https://www.easaonline.org/conferences",
+  "route_hint": "EASA 2024 Barcelona (18th Biennial): programme on nomadit.co.uk/conference/easa2024 — NomadIT lists every paper per panel (countable, plain HTML)"
+ },
+ {
+  "row": 192,
+  "conference": "ICPS (International Convention of Psychological Science)",
+  "society": "Association for Psychological Science",
+  "country": "international",
+  "subfield": "psychology",
+  "events_per_yr": null,
+  "notes": "biennial | APS's biennial international convention, distinct from the APS Annual Convention already on the life-sciences sheet; 2,500+ attendees with symposia, flash talks and posters | Phase 1 source: https://www.psychologicalscience.org/icps",
+  "route_hint": "ICPS 2025 Brussels (APS): programme / abstracts; psychologicalscience.org/conventions/icps — distinct from APS Annual Convention (counted on this sheet already? check duplicate_of)"
+ },
+ {
+  "row": 60,
+  "conference": "Eurocrim (ESC Annual Conference)",
+  "society": "European Society of Criminology",
+  "country": "Europe",
+  "subfield": "criminology",
+  "events_per_yr": null,
+  "notes": "annual | ~1,000-1,500 accepted presentations | Phase 1 source: https://www.esc-eurocrim.org/",
+  "route_hint": "Eurocrim 2025 Athens (25th ESC conference): book of abstracts PDF (esc-eurocrim.org / conference site)"
+ },
+ {
+  "row": 74,
+  "conference": "Congreso Espanol de Sociologia",
+  "society": "Federacion Espanola de Sociologia (FES)",
+  "country": "Spain",
+  "subfield": "sociology",
+  "events_per_yr": null,
+  "notes": "triennial | ~1,000-1,500 comunicaciones per triennial congress | Phase 1 source: https://www.fes-sociologia.com/",
+  "route_hint": "Congreso Español de Sociología (XV, 2025?/XIV 2022 Murcia): libro de resúmenes / programa on fes-sociologia.com; Spanish search 'comunicaciones'"
+ },
+ {
+  "row": 82,
+  "conference": "ESERA Conference",
+  "society": "European Science Education Research Association",
+  "country": "Europe",
+  "subfield": "science education",
+  "events_per_yr": null,
+  "notes": "biennial | ~1,200 accepted contributions | Phase 1 source: https://www.esera.org/",
+  "route_hint": "ESERA 2025 Copenhagen (biennial): book of abstracts / programme (esera2025.org)"
+ }
+]
