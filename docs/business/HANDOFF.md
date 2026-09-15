@@ -19,8 +19,8 @@ orchestrator 1 → **82 of 1,000**.
 | Census - Earth Sciences | **9 V (4.95 ev/yr) + 37 B (24.44 V+B ev/yr)**, deleted 81 | **0 — earth phase 2 COMPLETE** |
 | Both | 57 V + 124 B = 181 passing, 128.20 ev/yr | |
 
-**Within this run** (236 researched rows): 32 VERIFIED, 118 BORDERLINE, 86 OUT/parked → 150 pass. Earth's tail
-passed one row in three, social's five in six.
+**Within this run** (236 researched rows): 32 VERIFIED, 97 BORDERLINE, 107 OUT/parked → 129 pass, 88.26 ev/yr.
+Earth's tail passed one row in four, social's roughly two in three.
 
 **Rows still NOT YET CENSUSED (social, 25):** 4 cut off from soc wave 4 — ORD r135, Russian Psychological Society
 r138, KONASPI r141, IEA World Congress r149 — plus the 21 never queued: r106 JERA, r156, r160, r161, r165, r166,
