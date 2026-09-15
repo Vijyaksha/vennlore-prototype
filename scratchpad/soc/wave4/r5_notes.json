@@ -1,0 +1,27 @@
+{
+ "147": {
+  "abstracts_numeric": 2006,
+  "abstracts": "2,006 papers in 287 paper-bearing panels (2024, EASA 18th Biennial Conference, Barcelona — NomadIT programme; films, labs and plenaries carry no papers)",
+  "year": 2024,
+  "rung": 4,
+  "source_url": "https://nomadit.co.uk/conference/easa2024/panels",
+  "confidence": "exact",
+  "tier": "VERIFIED",
+  "orchestrator_note": "BULK COUNT by the orchestrator (2026-09-15, curl only, no browser): followed the researcher's plan — https://nomadit.co.uk/conference/easa2024/panels (245 KB, plain HTML) lists 317 panel ids; fetched every https://nomadit.co.uk/conference/easa2024/p/<id> page (317/317, none short) and counted class=\"paper-title\" items: 2,006, all distinct; second anchor class=\"paper clearfix well\" blocks = 2,006 (exact agreement). 30 panels carry no papers (films, labs, plenaries, roundtables); per-panel median 8. ≥1,500 counted → VERIFIED. Biennial (0.5). English."
+ },
+ "155": {
+  "orchestrator_note": "ORCHESTRATOR (2026-09-15): OUT accepted on the itemised 2019 figure (692 = 404 orals + 288 posters, UAPS's own report); DATED — the 9th APC (2025) report exists only as a scanned image. FOR RUPERT: dated OUT; reopen by OCR if the 2025 edition matters."
+ },
+ "167": {
+  "orchestrator_note": "RUNG 5 not run by the orchestrator (2026-09-15): eval25.eventscribe.net renders in a scripted Chrome (the ALA/CSWE eventScribe pattern) but browser probing was stopped at Rupert's request. Stays BORDERLINE. Next action: open the Full Schedule (all=1) in a browser and classify items by type."
+ },
+ "112": {
+  "orchestrator_note": "RUNG 5 not run by the orchestrator (2026-09-15): EventsAir portal (JS-only). Character evidence already points to a curated CPD festival. Stays BORDERLINE pending a browser pass."
+ },
+ "127": {
+  "orchestrator_note": "RUNG 5 not run by the orchestrator (2026-09-15): every ASEEES page is Cloudflare-walled to curl/WebFetch and the programme sits on All Academic (CAPTCHA). Stays BORDERLINE. Next action: interactive browser on members.aseees.org preliminary program."
+ },
+ "100": {
+  "orchestrator_note": "RUNG 5 not run by the orchestrator (2026-09-15): repository deposits (157 for 2025) are a floor, not the programme; the WLIC programme needs a browser pass. Stays BORDERLINE."
+ }
+}
