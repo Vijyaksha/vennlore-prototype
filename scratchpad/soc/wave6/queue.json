@@ -1,0 +1,302 @@
+[
+ {
+  "row": 60,
+  "conference": "Eurocrim (ESC Annual Conference)",
+  "society": "European Society of Criminology",
+  "country": "Europe",
+  "subfield": "criminology",
+  "events_per_yr": null,
+  "notes": "annual | ~1,000-1,500 accepted presentations | Phase 1 source: https://www.esc-eurocrim.org/",
+  "route_hint": "Eurocrim 2025 Athens (ESC): book of abstracts PDF on the conference site / esc-eurocrim.org"
+ },
+ {
+  "row": 37,
+  "conference": "ISTE Live",
+  "society": "International Society for Technology in Education",
+  "country": "US",
+  "subfield": "educational technology",
+  "events_per_yr": null,
+  "notes": "annual | ~1,000+ accepted sessions and posters; practitioner meeting | Phase 1 source: https://iste.org/live",
+  "route_hint": "ISTE Live: practitioner convention — character decides; count only contributed research/poster sessions if an open research call exists"
+ },
+ {
+  "row": 29,
+  "conference": "SIOP Annual Conference",
+  "society": "Society for Industrial and Organizational Psychology",
+  "country": "US",
+  "subfield": "psychology",
+  "events_per_yr": null,
+  "notes": "annual | ~1,000+ accepted posters and symposia; ~5,000 attendees | Phase 1 source: https://www.siop.org/annual-conference/",
+  "route_hint": "SIOP Annual Conference: program on siop.org; SIOP publishes 'accepted submissions' counts in its program; count posters + symposia papers"
+ },
+ {
+  "row": 44,
+  "conference": "SRA Biennial Meeting",
+  "society": "Society for Research on Adolescence",
+  "country": "US",
+  "subfield": "developmental psychology",
+  "events_per_yr": null,
+  "notes": "biennial | ~1,000+ submitted abstracts per biennial meeting | Phase 1 source: https://www.s-r-a.org/biennial-meeting",
+  "route_hint": "SRA Biennial (Society for Research on Adolescence) 2026: program on s-r-a.org (Confex? probe sra.confex.com or the SRA 'program book')"
+ },
+ {
+  "row": 69,
+  "conference": "DGfE Kongress",
+  "society": "Deutsche Gesellschaft fuer Erziehungswissenschaft",
+  "country": "Germany",
+  "subfield": "education research",
+  "events_per_yr": null,
+  "notes": "biennial | ~1,000 accepted contributions | Phase 1 source: https://www.dgfe.de/",
+  "route_hint": "DGfE Kongress 2026 (biennial): programme on the host site (ConfTool likely) — count Beiträge"
+ },
+ {
+  "row": 103,
+  "conference": "ISSBD Biennial Meeting",
+  "society": "International Society for the Study of Behavioural Development",
+  "country": "international",
+  "subfield": "developmental psychology",
+  "events_per_yr": null,
+  "notes": "biennial | ~1,000 accepted abstracts | Phase 1 source: https://issbd.org/",
+  "route_hint": "ISSBD 2026 Biennial Meeting: programme / abstract book"
+ },
+ {
+  "row": 109,
+  "conference": "Chinese Sociological Association Annual Conference (中国社会学会学术年会)",
+  "society": "Chinese Sociological Association",
+  "country": "China",
+  "subfield": "sociology",
+  "events_per_yr": null,
+  "notes": "annual | ~1,000+ papers across dozens of parallel fora",
+  "route_hint": "中国社会学会学术年会: forum count and papers per forum from the society site / news mirrors; Chinese search"
+ },
+ {
+  "row": 177,
+  "conference": "WEAI Annual Conference",
+  "society": "Western Economic Association International",
+  "country": "US",
+  "subfield": "economics",
+  "events_per_yr": null,
+  "notes": "annual | ~1,000 contributed papers across 400+ sessions | Phase 1 source: https://weai.org/conferences",
+  "route_hint": "WEAI Annual Conference: program on weai.org (session listing with papers)"
+ },
+ {
+  "row": 197,
+  "conference": "CPA Annual National Convention",
+  "society": "Canadian Psychological Association",
+  "country": "Canada",
+  "subfield": "psychology",
+  "events_per_yr": null,
+  "notes": "annual | ~1,000 accepted posters and presentations; uncertain | Phase 1 source: https://www.cpapsych.org/",
+  "route_hint": "CPA National Convention: programme / abstract book PDF (cpa.ca)"
+ },
+ {
+  "row": 40,
+  "conference": "SRA Annual Meeting",
+  "society": "Society for Risk Analysis",
+  "country": "US/international",
+  "subfield": "risk and policy",
+  "events_per_yr": null,
+  "notes": "annual | ~1,000 contributed abstracts; SRA-Europe co-listed with ESREL in Crossref | Phase 1 source: https://www.sra.org/events/annual-meeting/",
+  "route_hint": "SRA (Society for Risk Analysis) Annual Meeting: program/abstract book on sra.org; Crossref co-listing with ESREL is a trap"
+ },
+ {
+  "row": 129,
+  "conference": "ASA Annual Meeting (American Studies)",
+  "society": "American Studies Association",
+  "country": "US",
+  "subfield": "area studies",
+  "events_per_yr": null,
+  "notes": "annual | ~1,000 contributed papers; uncertain | Phase 1 source: https://www.acls.org/acls-member-societies/",
+  "route_hint": "ASA = AMERICAN STUDIES Association (theasa.net), not sociology: program (All Academic? or program PDF)"
+ },
+ {
+  "row": 123,
+  "conference": "Indian Sociological Society All India Sociological Conference",
+  "society": "Indian Sociological Society",
+  "country": "India",
+  "subfield": "sociology",
+  "events_per_yr": null,
+  "notes": "annual | ~1,000 papers; uncertain | Phase 1 source: https://www.insoso.org/",
+  "route_hint": "Indian Sociological Society All India Sociological Conference: programme / abstracts on insoso.org"
+ },
+ {
+  "row": 150,
+  "conference": "World Economic History Congress",
+  "society": "International Economic History Association",
+  "country": "international",
+  "subfield": "economic history",
+  "events_per_yr": null,
+  "notes": "triennial | BOUNDARY (may belong to another field) | ~1,000 contributed papers; boundary with history | Phase 1 source: https://www.wehc.org/",
+  "route_hint": "World Economic History Congress 2025 Lund (triennial): programme (sessions x papers) on wehc2025.org"
+ },
+ {
+  "row": 46,
+  "conference": "NASP Annual Convention",
+  "society": "National Association of School Psychologists",
+  "country": "US",
+  "subfield": "school psychology",
+  "events_per_yr": null,
+  "notes": "annual | ~1,000 sessions and posters; practitioner-heavy, uncertain | Phase 1 source: https://www.nasponline.org/convention",
+  "route_hint": "NASP Convention: practitioner-heavy but has a research poster call — count posters + papers"
+ },
+ {
+  "row": 36,
+  "conference": "AECT International Convention",
+  "society": "Association for Educational Communications and Technology",
+  "country": "US",
+  "subfield": "educational technology",
+  "events_per_yr": null,
+  "notes": "annual | several hundred to ~1,000 contributed sessions; uncertain | Phase 1 source: https://www.aect.org/events.php",
+  "route_hint": "AECT Convention: program on aect.org (count concurrent sessions/papers)"
+ },
+ {
+  "row": 79,
+  "conference": "EAERE Annual Conference",
+  "society": "European Association of Environmental and Resource Economists",
+  "country": "Europe",
+  "subfield": "economics",
+  "events_per_yr": null,
+  "notes": "annual | ~800-1,000 contributed papers; uncertain | Phase 1 source: https://www.eaere.org/conferences/",
+  "route_hint": "EAERE Annual Conference 2025 Bergen: programme with papers (eaere-conferences.org) — count"
+ },
+ {
+  "row": 111,
+  "conference": "AARE Annual Conference",
+  "society": "Australian Association for Research in Education",
+  "country": "Australia",
+  "subfield": "education research",
+  "events_per_yr": null,
+  "notes": "annual | ~800-1,000 accepted papers; uncertain | Phase 1 source: https://www.aare.edu.au/conference/",
+  "route_hint": "AARE Conference 2025: program / abstracts (aare.edu.au) — count"
+ },
+ {
+  "row": 193,
+  "conference": "Sunbelt Conference",
+  "society": "International Network for Social Network Analysis (INSNA)",
+  "country": "international",
+  "subfield": "social networks",
+  "events_per_yr": null,
+  "notes": "annual | ~800-1,000 accepted paper and poster abstracts; uncertain | Phase 1 source: https://www.insna.org/sunbelt",
+  "route_hint": "Sunbelt (INSNA) 2025 Paris: programme (abstract book PDF) — count paper + poster abstracts"
+ },
+ {
+  "row": 62,
+  "conference": "European Population Conference",
+  "society": "European Association for Population Studies (EAPS)",
+  "country": "Europe",
+  "subfield": "demography and population",
+  "events_per_yr": null,
+  "notes": "biennial | ~800-1,000 submitted abstracts; uncertain | Phase 1 source: https://www.eaps.nl/epc",
+  "route_hint": "European Population Conference 2026 (EAPS, biennial): programme on eaps.nl / Confex-like"
+ },
+ {
+  "row": 66,
+  "conference": "ESRA Conference",
+  "society": "European Survey Research Association",
+  "country": "Europe",
+  "subfield": "survey research",
+  "events_per_yr": null,
+  "notes": "biennial | ~800 contributed papers; uncertain | Phase 1 source: https://www.europeansurveyresearch.org/conferences/",
+  "route_hint": "ESRA Conference 2025 (biennial): programme (europeansurveyresearch.org) — count papers"
+ },
+ {
+  "row": 41,
+  "conference": "AAPOR Annual Conference",
+  "society": "American Association for Public Opinion Research",
+  "country": "US",
+  "subfield": "survey research",
+  "events_per_yr": null,
+  "notes": "annual | ~600-900 submitted abstracts; uncertain | Phase 1 source: https://aapor.org/conference/",
+  "route_hint": "AAPOR conference: program on aapor.org (count papers + posters)"
+ },
+ {
+  "row": 51,
+  "conference": "SSSP Annual Meeting",
+  "society": "Society for the Study of Social Problems",
+  "country": "US",
+  "subfield": "sociology",
+  "events_per_yr": null,
+  "notes": "annual | ~500-800 contributed papers; uncertain whether it clears the bar | Phase 1 source: https://sssp1.org/",
+  "route_hint": "SSSP Annual Meeting: program PDF on sssp1.org"
+ },
+ {
+  "row": 83,
+  "conference": "ATEE Annual Conference",
+  "society": "Association for Teacher Education in Europe",
+  "country": "Europe",
+  "subfield": "teacher education",
+  "events_per_yr": null,
+  "notes": "annual | ~500-800 contributed papers; uncertain | Phase 1 source: https://atee.education/",
+  "route_hint": "ATEE Annual Conference: book of abstracts PDF"
+ },
+ {
+  "row": 71,
+  "conference": "DVPW Kongress",
+  "society": "Deutsche Vereinigung fuer Politikwissenschaft",
+  "country": "Germany",
+  "subfield": "political science",
+  "events_per_yr": null,
+  "notes": "triennial | ~500-800 contributed papers; uncertain | Phase 1 source: https://www.dvpw.de/",
+  "route_hint": "DVPW Kongress (triennial): programme (ConfTool) — count Beiträge"
+ },
+ {
+  "row": 98,
+  "conference": "WCCES World Congress of Comparative Education Societies",
+  "society": "World Council of Comparative Education Societies",
+  "country": "international",
+  "subfield": "comparative education",
+  "events_per_yr": null,
+  "notes": "triennial | ~1,000 contributed papers; uncertain | Phase 1 source: https://www.wcces-online.org/",
+  "route_hint": "WCCES World Congress (triennial; XIX 2025?): programme / abstract book"
+ },
+ {
+  "row": 134,
+  "conference": "SIPED Convegno Nazionale",
+  "society": "Societa Italiana di Pedagogia",
+  "country": "Italy",
+  "subfield": "education research",
+  "events_per_yr": null,
+  "notes": "annual | Italy's national pedagogy congress; EERA member association; size uncertain | Phase 1 source: https://eera-ecer.de/about-eera/membership/eera-members",
+  "route_hint": "SIPED Convegno Nazionale: programma / atti (siped.it); Italian search"
+ },
+ {
+  "row": 137,
+  "conference": "Ulusal Psikoloji Kongresi",
+  "society": "Turk Psikologlar Dernegi (Turkish Psychological Association)",
+  "country": "Turkey",
+  "subfield": "psychology",
+  "events_per_yr": null,
+  "notes": "biennial | Turkey's national psychology congress; all subfields, nationwide participation; size uncertain | Phase 1 source: https://kongre.psikolog.org.tr/",
+  "route_hint": "Ulusal Psikoloji Kongresi (Turkish, biennial): bildiri özetleri kitabı PDF; Turkish search"
+ },
+ {
+  "row": 140,
+  "conference": "AIDIPE Congreso Internacional de Investigacion Educativa",
+  "society": "Asociacion Interuniversitaria de Investigacion Pedagogica",
+  "country": "Spain",
+  "subfield": "education research",
+  "events_per_yr": null,
+  "notes": "biennial | Spain's education research congress; EERA member; probably a few hundred comunicaciones - uncertain | Phase 1 source: https://eera-ecer.de/about-eera/membership/eera-members",
+  "route_hint": "AIDIPE congreso: libro de actas/resúmenes; Spanish"
+ },
+ {
+  "row": 144,
+  "conference": "CODESRIA General Assembly",
+  "society": "Council for the Development of Social Science Research in Africa",
+  "country": "Africa",
+  "subfield": "social sciences (general)",
+  "events_per_yr": null,
+  "notes": "triennial | described as the largest triennial gathering of social science researchers in Africa | Phase 1 source: https://codesria.org/",
+  "route_hint": "CODESRIA General Assembly (triennial): programme; largely curated — character decides"
+ },
+ {
+  "row": 153,
+  "conference": "CSA Annual Conference",
+  "society": "Canadian Sociological Association",
+  "country": "Canada",
+  "subfield": "sociology",
+  "events_per_yr": null,
+  "notes": "annual | meets within the Canadian Congress; several hundred papers - uncertain | Phase 1 source: https://www.csa-scs.ca/",
+  "route_hint": "CSA meets inside Congress (row 143 umbrella): count CSA's own programme (csa-scs.ca) and flag duplicate_of row 143"
+ }
+]

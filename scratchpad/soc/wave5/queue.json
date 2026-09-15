@@ -1,0 +1,302 @@
+[
+ {
+  "row": 192,
+  "conference": "ICPS (International Convention of Psychological Science)",
+  "society": "Association for Psychological Science",
+  "country": "international",
+  "subfield": "psychology",
+  "events_per_yr": null,
+  "notes": "biennial | APS's biennial international convention, distinct from the APS Annual Convention already on the life-sciences sheet; 2,500+ attendees with symposia, flash talks and posters | Phase 1 source: https://www.psychologicalscience.org/icps",
+  "route_hint": "ICPS 2025 Brussels (APS International Convention of Psychological Science): programme / abstract listing; distinct from the APS Annual Convention (on this sheet already — check duplicate_of)"
+ },
+ {
+  "row": 82,
+  "conference": "ESERA Conference",
+  "society": "European Science Education Research Association",
+  "country": "Europe",
+  "subfield": "science education",
+  "events_per_yr": null,
+  "notes": "biennial | ~1,200 accepted contributions | Phase 1 source: https://www.esera.org/",
+  "route_hint": "ESERA 2025 Copenhagen: book of abstracts / programme (esera2025.org)"
+ },
+ {
+  "row": 27,
+  "conference": "CSWE Annual Program Meeting",
+  "society": "Council on Social Work Education",
+  "country": "US",
+  "subfield": "social work education",
+  "events_per_yr": null,
+  "notes": "annual | ~1,000 accepted sessions and posters | Phase 1 source: https://www.cswe.org/events/apm/",
+  "route_hint": "CSWE APM: programme on cswe.org (maybe Confex-like 'APM program' or All Academic); count papers + posters"
+ },
+ {
+  "row": 43,
+  "conference": "AAEA Annual Meeting",
+  "society": "Agricultural and Applied Economics Association",
+  "country": "US",
+  "subfield": "economics",
+  "events_per_yr": null,
+  "notes": "annual | ~1,000 selected papers and posters | Phase 1 source: https://www.aaea.org/meetings/2026-aaea-annual-meeting",
+  "route_hint": "AAEA Annual Meeting: AgEcon Search deposits selected papers (a floor); the program PDF on aaea.org is the artefact"
+ },
+ {
+  "row": 65,
+  "conference": "EASP General Meeting",
+  "society": "European Association of Social Psychology",
+  "country": "Europe",
+  "subfield": "psychology",
+  "events_per_yr": null,
+  "notes": "triennial | ~1,000 accepted abstracts per triennial meeting | Phase 1 source: https://www.easp.eu/",
+  "route_hint": "EASP General Meeting 2026 (triennial): programme / abstract book"
+ },
+ {
+  "row": 72,
+  "conference": "Congres de l'AFS",
+  "society": "Association francaise de sociologie",
+  "country": "France",
+  "subfield": "sociology",
+  "events_per_yr": null,
+  "notes": "biennial | ~1,000 contributed papers across research networks | Phase 1 source: https://www.afs-socio.fr/",
+  "route_hint": "Congrès de l'AFS 2025 (biennial): programme by RT (research networks) on afs-socio.fr — count communications"
+ },
+ {
+  "row": 107,
+  "conference": "Japan Sociological Society Annual Meeting (日本社会学会大会)",
+  "society": "Japan Sociological Society",
+  "country": "Japan",
+  "subfield": "sociology",
+  "events_per_yr": null,
+  "notes": "annual | ~1,000 presentations | Phase 1 source: https://jss-sociology.org/",
+  "route_hint": "日本社会学会大会: 報告要旨 on jss-sociology.org (大会報告要旨 PDF per 大会) — count reports"
+ },
+ {
+  "row": 154,
+  "conference": "CSSE Annual Conference",
+  "society": "Canadian Society for the Study of Education",
+  "country": "Canada",
+  "subfield": "education research",
+  "events_per_yr": null,
+  "notes": "annual | Canada's education research conference, meets within the Congress; ~1,000 presentations | Phase 1 source: https://csse-scee.ca/",
+  "route_hint": "CSSE meets inside Congress (row 143, umbrella counted ~4,350 inferred): count CSSE's own programme (csse-scee.ca program PDF) and set duplicate_of 'contained in row 143 umbrella'"
+ },
+ {
+  "row": 200,
+  "conference": "ICPP (International Conference on Public Policy)",
+  "society": "International Public Policy Association",
+  "country": "international",
+  "subfield": "public policy",
+  "events_per_yr": null,
+  "notes": "biennial | ~1,000 contributed papers across panels; uncertain | Phase 1 source: https://www.ippapublicpolicy.org/",
+  "route_hint": "ICPP (IPPA, biennial; ICPP7 2025 Chiang Mai): programme with papers per panel on ippapublicpolicy.org"
+ },
+ {
+  "row": 164,
+  "conference": "AAAL Annual Conference",
+  "society": "American Association for Applied Linguistics",
+  "country": "US/international",
+  "subfield": "applied linguistics",
+  "events_per_yr": null,
+  "notes": "annual | ~1,000 accepted papers and posters; co-located with TESOL in some years | Phase 1 source: https://www.aaal.org/conference",
+  "route_hint": "AAAL Annual Conference: program book PDF on aaal.org"
+ },
+ {
+  "row": 179,
+  "conference": "ICA (International Cartographic Conference)",
+  "society": "International Cartographic Association",
+  "country": "international",
+  "subfield": "cartography and GIScience",
+  "events_per_yr": null,
+  "notes": "biennial | BOUNDARY (may belong to another field) | ~1,000 contributed papers and posters; boundary with geoinformatics | Phase 1 source: https://icaci.org/",
+  "route_hint": "International Cartographic Conference (ICA, biennial; ICC 2025 Vancouver): proceedings on Copernicus 'Proceedings of the ICA' / 'Abstracts of the ICA' (Crossref / static pages) — count abstracts"
+ },
+ {
+  "row": 133,
+  "conference": "NWSA Annual Conference",
+  "society": "National Women's Studies Association",
+  "country": "US",
+  "subfield": "gender studies",
+  "events_per_yr": null,
+  "notes": "annual | ~1,000 contributed submissions; uncertain | Phase 1 source: https://www.acls.org/acls-member-societies/",
+  "route_hint": "NWSA: program on nwsa.org (Confex? probe nwsa.confex.com meetingapi.cgi/Program)"
+ },
+ {
+  "row": 151,
+  "conference": "PSA Annual International Conference",
+  "society": "Political Studies Association (UK)",
+  "country": "UK",
+  "subfield": "political science",
+  "events_per_yr": null,
+  "notes": "annual | ~1,000 contributed papers; uncertain | Phase 1 source: https://www.psa.ac.uk/psa/conference",
+  "route_hint": "PSA (UK Political Studies Association) Annual Conference: programme (psa.ac.uk, ex-ordo/conftool) — count papers"
+ },
+ {
+  "row": 35,
+  "conference": "NAEYC Annual Conference",
+  "society": "National Association for the Education of Young Children",
+  "country": "US",
+  "subfield": "early childhood education",
+  "events_per_yr": null,
+  "notes": "annual | ~1,000 sessions; practitioner-heavy, uncertain | Phase 1 source: https://www.naeyc.org/events/annual",
+  "route_hint": "NAEYC Annual Conference: practitioner — character decides"
+ },
+ {
+  "row": 163,
+  "conference": "TESOL International Convention & English Language Expo",
+  "society": "TESOL International Association",
+  "country": "US/international",
+  "subfield": "language teaching",
+  "events_per_yr": null,
+  "notes": "annual | 'hundreds of education sessions'; ~1,000 accepted proposals typical - uncertain | Phase 1 source: https://www.tesol.org/",
+  "route_hint": "TESOL: practitioner — character decides"
+ },
+ {
+  "row": 84,
+  "conference": "AESOP Annual Congress",
+  "society": "Association of European Schools of Planning",
+  "country": "Europe",
+  "subfield": "urban studies and planning",
+  "events_per_yr": null,
+  "notes": "annual | ~800-1,000 contributed papers; uncertain | Phase 1 source: https://aesop-planning.eu/",
+  "route_hint": "AESOP Congress 2025 Istanbul: book of abstracts PDF"
+ },
+ {
+  "row": 78,
+  "conference": "BPS Annual Conference",
+  "society": "British Psychological Society",
+  "country": "UK",
+  "subfield": "psychology",
+  "events_per_yr": null,
+  "notes": "annual | ~700-1,000 accepted abstracts; uncertain | Phase 1 source: https://www.bps.org.uk/events",
+  "route_hint": "BPS Annual Conference: programme / abstract book (bps.org.uk)"
+ },
+ {
+  "row": 157,
+  "conference": "ALAP Congreso Latinoamericano de Poblacion",
+  "society": "Asociacion Latinoamericana de Poblacion",
+  "country": "Latin America",
+  "subfield": "demography and population",
+  "events_per_yr": null,
+  "notes": "biennial | ~800-1,000 ponencias; uncertain | Phase 1 source: https://www.alapop.org/",
+  "route_hint": "ALAP Congreso (biennial): ponencias listing on alapop.org"
+ },
+ {
+  "row": 178,
+  "conference": "Southern Economic Association Annual Meeting",
+  "society": "Southern Economic Association",
+  "country": "US",
+  "subfield": "economics",
+  "events_per_yr": null,
+  "notes": "annual | ~800-1,000 contributed papers; uncertain | Phase 1 source: https://southerneconomic.org/",
+  "route_hint": "Southern Economic Association: program on southerneconomic.org (Confex? probe southerneconomic.confex.com)"
+ },
+ {
+  "row": 52,
+  "conference": "RSAI North American Meetings",
+  "society": "Regional Science Association International",
+  "country": "US",
+  "subfield": "regional science",
+  "events_per_yr": null,
+  "notes": "annual | ~800 contributed papers; uncertain | Phase 1 source: https://www.narsc.org/newsite/conference/",
+  "route_hint": "NARSC (RSAI North American): program on narsc.org — count papers"
+ },
+ {
+  "row": 32,
+  "conference": "ASHE Annual Conference",
+  "society": "Association for the Study of Higher Education",
+  "country": "US",
+  "subfield": "higher education research",
+  "events_per_yr": null,
+  "notes": "annual | ~700-1,000 submitted papers; uncertain whether it clears the bar | Phase 1 source: https://www.ashe.ws/conference",
+  "route_hint": "ASHE Conference: program on ashe.ws (count papers + posters)"
+ },
+ {
+  "row": 39,
+  "conference": "LSA Annual Meeting",
+  "society": "Linguistic Society of America",
+  "country": "US",
+  "subfield": "linguistics",
+  "events_per_yr": null,
+  "notes": "annual | the discipline's US flagship; abstract volume may fall short of 900 - uncertain | Phase 1 source: https://www.lsadc.org/annual_meeting",
+  "route_hint": "LSA (Linguistic Society of America) Annual Meeting: abstracts/program on lsadc.org (count papers + posters)"
+ },
+ {
+  "row": 76,
+  "conference": "NERA Congress",
+  "society": "Nordic Educational Research Association",
+  "country": "Nordics",
+  "subfield": "education research",
+  "events_per_yr": null,
+  "notes": "annual | ~700-900 accepted contributions; uncertain | Phase 1 source: https://nera-education.org/",
+  "route_hint": "NERA Congress: programme (nera-education.org / ConfTool)"
+ },
+ {
+  "row": 73,
+  "conference": "Congres de l'AFSP",
+  "society": "Association francaise de science politique",
+  "country": "France",
+  "subfield": "political science",
+  "events_per_yr": null,
+  "notes": "biennial | ~600-900 contributed papers; uncertain | Phase 1 source: https://www.afsp.info/",
+  "route_hint": "Congrès de l'AFSP (biennial): programme by section thématique (afsp.info) — count communications"
+ },
+ {
+  "row": 97,
+  "conference": "WERA Focal Meeting / World Congress",
+  "society": "World Education Research Association",
+  "country": "international",
+  "subfield": "education research",
+  "events_per_yr": null,
+  "notes": "annual | world federation of education research associations; size uncertain | Phase 1 source: https://www.weraonline.org/",
+  "route_hint": "WERA Focal Meeting: usually held inside a member association's conference — check duplicate_of (e.g. inside AERA/ECER) before counting"
+ },
+ {
+  "row": 126,
+  "conference": "AAS Annual Conference",
+  "society": "Association for Asian Studies",
+  "country": "US/international",
+  "subfield": "area studies",
+  "events_per_yr": null,
+  "notes": "annual | ~500-800 panels of contributed papers; uncertain | Phase 1 source: https://www.acls.org/acls-member-societies/",
+  "route_hint": "AAS = Association for ASIAN Studies (asianstudies.org): program (All Academic? CAPTCHA) — find PDF"
+ },
+ {
+  "row": 136,
+  "conference": "Ulusal Egitim Bilimleri Kongresi",
+  "society": "Turkish Educational Research Association (EAB) / host universities",
+  "country": "Turkey",
+  "subfield": "education research",
+  "events_per_yr": null,
+  "notes": "annual | Turkey's national education sciences congress; large national congress, ~500-1,000 bildiri | Phase 1 source: https://www.bilimsenligi.com/25-ulusal-egitim-bilimleri-kongresi.html/",
+  "route_hint": "Ulusal Eğitim Bilimleri Kongresi: bildiri özetleri kitabı; Turkish search"
+ },
+ {
+  "row": 139,
+  "conference": "Congreso Nacional de Psicologia (CNP)",
+  "society": "Consejo General de la Psicologia de Espana (COP)",
+  "country": "Spain",
+  "subfield": "psychology",
+  "events_per_yr": null,
+  "notes": "biennial | Spain's national psychology congress, all subfields; size uncertain | Phase 1 source: https://www.cop.es/index.php?page=congresos",
+  "route_hint": "Congreso Nacional de Psicología (COP, Spain): libro de resúmenes; Spanish search"
+ },
+ {
+  "row": 142,
+  "conference": "Korean Educational Research Association Annual Conference (한국교육학회 연차학술대회)",
+  "society": "Korean Educational Research Association",
+  "country": "South Korea",
+  "subfield": "education research",
+  "events_per_yr": null,
+  "notes": "annual | Korea's national education research conference; size uncertain | Phase 1 source: https://www.kedi.re.kr/khome/main/webhome/Home.do",
+  "route_hint": "한국교육학회 연차학술대회: 자료집 on the society file board (KPA-style download.html?fno=)"
+ },
+ {
+  "row": 152,
+  "conference": "CPSA Annual Conference",
+  "society": "Canadian Political Science Association",
+  "country": "Canada",
+  "subfield": "political science",
+  "events_per_yr": null,
+  "notes": "annual | meets within the Canadian Congress; several hundred papers - uncertain | Phase 1 source: https://www.cpsa-acsp.ca/",
+  "route_hint": "CPSA meets inside Congress (row 143 umbrella): count CPSA's own programme (cpsa-acsp.ca conference programme) and flag duplicate_of row 143"
+ }
+]

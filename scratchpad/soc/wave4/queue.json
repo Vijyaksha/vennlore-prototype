@@ -1,0 +1,302 @@
+[
+ {
+  "row": 147,
+  "conference": "EASA Biennial Conference",
+  "society": "European Association of Social Anthropologists",
+  "country": "Europe",
+  "subfield": "anthropology",
+  "events_per_yr": null,
+  "notes": "biennial | ~1,500 contributed papers across 200+ panels | Phase 1 source: https://www.easaonline.org/conferences",
+  "route_hint": "EASA 2024 Barcelona: NomadIT programme https://nomadit.co.uk/conference/easa2024 lists every paper per panel (plain HTML) — count papers, exclude roundtables/labs"
+ },
+ {
+  "row": 74,
+  "conference": "Congreso Espanol de Sociologia",
+  "society": "Federacion Espanola de Sociologia (FES)",
+  "country": "Spain",
+  "subfield": "sociology",
+  "events_per_yr": null,
+  "notes": "triennial | ~1,000-1,500 comunicaciones per triennial congress | Phase 1 source: https://www.fes-sociologia.com/",
+  "route_hint": "Congreso Español de Sociología (FES, triennial; XV 2025?): libro de resúmenes / programa; Spanish 'comunicaciones'"
+ },
+ {
+  "row": 34,
+  "conference": "NCTE Annual Convention",
+  "society": "National Council of Teachers of English",
+  "country": "US",
+  "subfield": "English education",
+  "events_per_yr": null,
+  "notes": "annual | ~1,000 contributed sessions; practitioner-heavy, uncertain | Phase 1 source: https://ncte.org/events/annual-convention/",
+  "route_hint": "NCTE Annual Convention: practitioner convention — character decides (workshop sessions ≈ 1 presentation); look for a program PDF"
+ },
+ {
+  "row": 31,
+  "conference": "ACJS Annual Meeting",
+  "society": "Academy of Criminal Justice Sciences",
+  "country": "US",
+  "subfield": "criminology",
+  "events_per_yr": null,
+  "notes": "annual | ~1,000 contributed papers and panels | Phase 1 source: https://www.acjs.org/page/AnnualMeeting",
+  "route_hint": "ACJS Annual Meeting: program book PDF on acjs.org (count papers inside panels)"
+ },
+ {
+  "row": 54,
+  "conference": "ICQI",
+  "society": "International Congress of Qualitative Inquiry",
+  "country": "US/international",
+  "subfield": "research methods",
+  "events_per_yr": null,
+  "notes": "annual | ~1,000 contributed presentations | Phase 1 source: https://icqi.org/",
+  "route_hint": "ICQI (International Congress of Qualitative Inquiry): program PDF on icqi.org — count papers"
+ },
+ {
+  "row": 70,
+  "conference": "GEBF Tagung",
+  "society": "Gesellschaft fuer Empirische Bildungsforschung",
+  "country": "Germany",
+  "subfield": "education research",
+  "events_per_yr": null,
+  "notes": "annual | ~1,000 accepted contributions; uncertain | Phase 1 source: https://www.gebf-ev.de/",
+  "route_hint": "GEBF Tagung 2026: programme (ConfTool?) — count Beiträge"
+ },
+ {
+  "row": 105,
+  "conference": "JAEP Annual Meeting (日本教育心理学会総会)",
+  "society": "Japanese Association of Educational Psychology",
+  "country": "Japan",
+  "subfield": "educational psychology",
+  "events_per_yr": null,
+  "notes": "annual | ~1,000 presentations; uncertain | Phase 1 source: https://www.edupsych.jp/",
+  "route_hint": "日本教育心理学会総会: proceedings 発表論文集 on J-STAGE (search the journal code via jstage browse; API cdjournal=<code>&vol=) — one volume per convention"
+ },
+ {
+  "row": 127,
+  "conference": "ASEEES Annual Convention",
+  "society": "Association for Slavic, East European, and Eurasian Studies",
+  "country": "US/international",
+  "subfield": "area studies",
+  "events_per_yr": null,
+  "notes": "annual | ~1,000 contributed papers across 700+ panels | Phase 1 source: https://www.acls.org/acls-member-societies/",
+  "route_hint": "ASEEES Convention: All Academic (CAPTCHA) likely — find the program PDF on aseees.org (wp-json media)"
+ },
+ {
+  "row": 199,
+  "conference": "SASE Annual Meeting",
+  "society": "Society for the Advancement of Socio-Economics",
+  "country": "international",
+  "subfield": "economic sociology",
+  "events_per_yr": null,
+  "notes": "annual | ~1,000 contributed papers; uncertain | Phase 1 source: https://sase.org/",
+  "route_hint": "SASE Annual Meeting: programme (sase.org; often Confex or 'program' pages) — count papers"
+ },
+ {
+  "row": 167,
+  "conference": "AEA Evaluation Conference",
+  "society": "American Evaluation Association",
+  "country": "US/international",
+  "subfield": "evaluation and policy research",
+  "events_per_yr": null,
+  "notes": "annual | ~1,000 accepted sessions, posters and demonstrations | Phase 1 source: https://www.evaluationconference.org/",
+  "route_hint": "AEA Evaluation conference: program on evaluationconference.org (count sessions x papers; posters)"
+ },
+ {
+  "row": 48,
+  "conference": "AHA Annual Meeting",
+  "society": "American Historical Association",
+  "country": "US",
+  "subfield": "history",
+  "events_per_yr": null,
+  "notes": "annual | BOUNDARY (may belong to another field) | ~300 sessions, roughly 1,000 papers; boundary with humanities | Phase 1 source: https://www.historians.org/annual-meeting/",
+  "route_hint": "AHA Annual Meeting: program on historians.org (session listing; count papers inside ~300 sessions); boundary with humanities — flag"
+ },
+ {
+  "row": 130,
+  "conference": "AAS Annual Meeting (African Studies Association)",
+  "society": "African Studies Association",
+  "country": "US/international",
+  "subfield": "area studies",
+  "events_per_yr": null,
+  "notes": "annual | ~1,000 contributed papers; uncertain | Phase 1 source: https://www.acls.org/acls-member-societies/",
+  "route_hint": "ASA = AFRICAN Studies Association (africanstudies.org): program PDF"
+ },
+ {
+  "row": 122,
+  "conference": "Jornadas de Sociologia de la UBA",
+  "society": "Universidad de Buenos Aires, Facultad de Ciencias Sociales",
+  "country": "Argentina",
+  "subfield": "sociology",
+  "events_per_yr": null,
+  "notes": "biennial | ~1,000 ponencias; uncertain",
+  "route_hint": "Jornadas de Sociología UBA (biennial): programa/ponencias on jornadasdesociologia.sociales.uba.ar — count ponencias"
+ },
+ {
+  "row": 155,
+  "conference": "UAPS African Population Conference",
+  "society": "Union for African Population Studies",
+  "country": "Africa",
+  "subfield": "demography and population",
+  "events_per_yr": null,
+  "notes": "quadrennial | ~1,000 accepted abstracts; uncertain | Phase 1 source: https://uaps-uepa.org/",
+  "route_hint": "UAPS African Population Conference (quadrennial): programme on uaps-uepa.org (Confex-like)"
+ },
+ {
+  "row": 172,
+  "conference": "SHAPE America National Convention",
+  "society": "Society of Health and Physical Educators",
+  "country": "US",
+  "subfield": "physical education",
+  "events_per_yr": null,
+  "notes": "annual | ~1,000 sessions; practitioner-heavy, uncertain | Phase 1 source: https://www.shapeamerica.org/events/",
+  "route_hint": "SHAPE America: practitioner — character decides"
+ },
+ {
+  "row": 45,
+  "conference": "Society for Prevention Research Annual Meeting",
+  "society": "Society for Prevention Research",
+  "country": "US",
+  "subfield": "prevention science",
+  "events_per_yr": null,
+  "notes": "annual | ~800-1,000 submitted abstracts; uncertain | Phase 1 source: https://www.preventionresearch.org/annual-meeting/",
+  "route_hint": "Society for Prevention Research: abstract book PDF on preventionresearch.org"
+ },
+ {
+  "row": 77,
+  "conference": "BERA Annual Conference",
+  "society": "British Educational Research Association",
+  "country": "UK",
+  "subfield": "education research",
+  "events_per_yr": null,
+  "notes": "annual | ~800-1,000 accepted papers; uncertain | Phase 1 source: https://www.bera.ac.uk/conference",
+  "route_hint": "BERA Conference 2025: programme / abstract book (bera.ac.uk)"
+ },
+ {
+  "row": 112,
+  "conference": "APS Congress / Australian Psychological Society Festival",
+  "society": "Australian Psychological Society",
+  "country": "Australia",
+  "subfield": "psychology",
+  "events_per_yr": null,
+  "notes": "annual | ~800 accepted abstracts; uncertain | Phase 1 source: https://psychology.org.au/",
+  "route_hint": "APS (Australian Psychological Society) Congress/Festival: programme; likely small — count"
+ },
+ {
+  "row": 198,
+  "conference": "Urban Affairs Association Annual Conference",
+  "society": "Urban Affairs Association",
+  "country": "US/international",
+  "subfield": "urban studies",
+  "events_per_yr": null,
+  "notes": "annual | ~800-1,000 contributed papers; uncertain | Phase 1 source: https://urbanaffairsassociation.org/",
+  "route_hint": "UAA Conference: program PDF on urbanaffairsassociation.org"
+ },
+ {
+  "row": 102,
+  "conference": "IACCP Congress",
+  "society": "International Association for Cross-Cultural Psychology",
+  "country": "international",
+  "subfield": "psychology",
+  "events_per_yr": null,
+  "notes": "biennial | ~800 contributed papers; uncertain | Phase 1 source: https://iaccp.org/",
+  "route_hint": "IACCP Congress 2026 (biennial): programme / abstract book"
+ },
+ {
+  "row": 128,
+  "conference": "MESA Annual Meeting",
+  "society": "Middle East Studies Association",
+  "country": "US/international",
+  "subfield": "area studies",
+  "events_per_yr": null,
+  "notes": "annual | ~800 contributed papers; uncertain | Phase 1 source: https://www.acls.org/acls-member-societies/",
+  "route_hint": "MESA Annual Meeting: program (mesana.org, All Academic likely CAPTCHA — find PDF)"
+ },
+ {
+  "row": 42,
+  "conference": "SREE Annual Conference",
+  "society": "Society for Research on Educational Effectiveness",
+  "country": "US",
+  "subfield": "education research",
+  "events_per_yr": null,
+  "notes": "annual | several hundred submitted papers; uncertain | Phase 1 source: https://www.sree.org/conferences",
+  "route_hint": "SREE conference: program (sree.org / Confex-like) — count"
+ },
+ {
+  "row": 53,
+  "conference": "Eastern Psychological Association Annual Meeting",
+  "society": "Eastern Psychological Association",
+  "country": "US",
+  "subfield": "psychology",
+  "events_per_yr": null,
+  "notes": "annual | large regional poster meeting; volume uncertain | Phase 1 source: https://www.easternpsychological.org/",
+  "route_hint": "Eastern Psychological Association: program PDF (large poster meeting) — count posters + papers"
+ },
+ {
+  "row": 75,
+  "conference": "Convegno Nazionale AIS",
+  "society": "Associazione Italiana di Sociologia",
+  "country": "Italy",
+  "subfield": "sociology",
+  "events_per_yr": null,
+  "notes": "biennial | national sociology congress; volume uncertain | Phase 1 source: https://www.ais-sociologia.it/",
+  "route_hint": "AIS Convegno Nazionale (Italian sociology, biennial): programma; Italian search"
+ },
+ {
+  "row": 100,
+  "conference": "IFLA World Library and Information Congress",
+  "society": "International Federation of Library Associations",
+  "country": "international",
+  "subfield": "library and information science",
+  "events_per_yr": null,
+  "notes": "annual | ~500 sessions; contributed-paper volume uncertain | Phase 1 source: https://www.ifla.org/wlic/",
+  "route_hint": "IFLA WLIC: library.ifla.org deposits the congress papers (countable, a floor); programme sessions ~500 — count papers"
+ },
+ {
+  "row": 99,
+  "conference": "ICLS / CSCL (ISLS Annual Meeting)",
+  "society": "International Society of the Learning Sciences",
+  "country": "international",
+  "subfield": "learning sciences",
+  "events_per_yr": null,
+  "notes": "annual | Crossref lists 620 papers for ICLS 2025; combined ICLS+CSCL may approach the bar | SIZE HINT: 620 papers, Proceedings of the 19th International Conference of the Learning Sciences - ICLS 2025 (crossref_seen.json (supplied)) | Phase 1 source: https://www.isls.org/conferences/",
+  "route_hint": "ISLS Annual Meeting (ICLS+CSCL): Crossref/ISLS repository per year — ICLS 2025 = 620 papers (phase-1 hint); count both tracks of one year, do not double count"
+ },
+ {
+  "row": 135,
+  "conference": "Onderwijs Research Dagen (ORD)",
+  "society": "Vereniging voor Onderwijsresearch (VOR)",
+  "country": "Netherlands",
+  "subfield": "education research",
+  "events_per_yr": null,
+  "notes": "annual | the Dutch national education research days; ~600-900 contributed papers; uncertain | Phase 1 source: https://eera-ecer.de/about-eera/membership/eera-members",
+  "route_hint": "Onderwijs Research Dagen: programma boek (Dutch search 'ORD <jaar> programma')"
+ },
+ {
+  "row": 138,
+  "conference": "Congress of the Russian Psychological Society (Syezd RPO)",
+  "society": "Russian Psychological Society (РПО)",
+  "country": "Russia",
+  "subfield": "psychology",
+  "events_per_yr": null,
+  "notes": "quadrennial | a search result describes 1,417 registered participants with accepted abstracts and 125 sections at the V Congress; not verified on an opened page | Phase 1 source: http://psyrus.ru/congress/",
+  "route_hint": "Russian Psychological Society congress: 1,417 participants is a SNIPPET claim — open psyrus.ru pages; Russian search (съезд РПО тезисы)"
+ },
+ {
+  "row": 141,
+  "conference": "KONASPI (Konvensi Nasional Pendidikan Indonesia)",
+  "society": "Indonesian national education convention / state universities",
+  "country": "Indonesia",
+  "subfield": "education",
+  "events_per_yr": null,
+  "notes": "quadrennial | Indonesia's national education convention with a large attached international conference; size uncertain | Phase 1 source: https://konaspi.unima.ac.id/unicssh/",
+  "route_hint": "KONASPI (quadrennial, Indonesia): proceedings; Indonesian search"
+ },
+ {
+  "row": 149,
+  "conference": "IEA World Congress",
+  "society": "International Economic Association",
+  "country": "international",
+  "subfield": "economics",
+  "events_per_yr": null,
+  "notes": "triennial | the discipline's world congress; size uncertain | Phase 1 source: https://www.iea-world.org/",
+  "route_hint": "IEA World Congress 2026 (triennial): programme on iea-world.org (Confex-like) — count papers"
+ }
+]

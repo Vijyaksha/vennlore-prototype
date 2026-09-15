@@ -1,0 +1,372 @@
+[
+ {
+  "row": 41,
+  "conference": "IWRA World Water Congress",
+  "society": "International Water Resources Association",
+  "country": "international (rotating)",
+  "subfield": "water resources",
+  "events_per_yr": null,
+  "notes": "every 3 years | BOUNDARY (may belong to another field) | the IWRA world congress with an open abstract call; size uncertain | Phase 1 source: https://iwra.org/",
+  "route_hint": "IWRA XIX World Water Congress Marrakech (Dec 2025) / XVIII Beijing 2023: programme / abstracts on iwra.org; count sessions x papers"
+ },
+ {
+  "row": 57,
+  "conference": "SGA Biennial Meeting",
+  "society": "Society for Geology Applied to Mineral Deposits",
+  "country": "international (rotating)",
+  "subfield": "economic geology",
+  "events_per_yr": null,
+  "notes": "biennial | BOUNDARY (may belong to another field) | the main economic-geology meeting; likely several hundred - borderline | Phase 1 source: https://e-sga.org/",
+  "route_hint": "SGA 2025 Golden Colorado (18th Biennial) proceedings volumes (countable TOC); e-sga.org"
+ },
+ {
+  "row": 131,
+  "conference": "Jahrestagung der Deutschen Bodenkundlichen Gesellschaft (DBG)",
+  "society": "Deutsche Bodenkundliche Gesellschaft",
+  "country": "Germany",
+  "subfield": "soil science",
+  "events_per_yr": null,
+  "notes": "annual/biennial (Tuebingen 2025) | BOUNDARY (may belong to another field) | Germany's national soil science meeting had 300 oral presentations and 208 posters in 2025 - about 508, below the bar; included as a checked near-miss | Phase 1 source: https://www.dbges.de/de/die-dbg/jahrestagungen/tuebingen-2025",
+  "route_hint": "Phase-1 figure: 300 orals + 208 posters = 508 in 2025 (Tuebingen) — OPEN the DBG page (dbges.de / jahrestagung site) and confirm; <800 on positive evidence = OUT"
+ },
+ {
+  "row": 98,
+  "conference": "European Conference on Severe Storms (ECSS)",
+  "society": "European Severe Storms Laboratory",
+  "country": "Europe (rotating)",
+  "subfield": "meteorology",
+  "events_per_yr": null,
+  "notes": "biennial (12th, Utrecht 2025) | BOUNDARY (may belong to another field) | a Copernicus-run European meteorology conference; likely a few hundred - low confidence | Phase 1 source: https://meetings.copernicus.org/references/meetings_2025-2021.html",
+  "route_hint": "Copernicus static per-abstract pages https://meetingorganizer.copernicus.org/ECSS2025/ECSS2025-<n>.html (test the <title>, not status; some meetings use 200/302 instead — test a known-good and known-absent id first)"
+ },
+ {
+  "row": 64,
+  "conference": "International Meeting of Sedimentology (IMS)",
+  "society": "International Association of Sedimentologists (IAS)",
+  "country": "Europe-centred (rotating; Izmir 2027)",
+  "subfield": "sedimentology",
+  "events_per_yr": null,
+  "notes": "annual in non-congress years | BOUNDARY (may belong to another field) | the IAS annual regional flagship; likely several hundred - borderline | Phase 1 source: https://www.sedimentologists.org/conferences",
+  "route_hint": "IAS International Meeting of Sedimentology (Aberdeen 2025 / Izmir 2027): abstract book PDF on the IAS site; distinct from ISC (row 63, counted 724)"
+ },
+ {
+  "row": 72,
+  "conference": "Meteoritical Society Annual Meeting",
+  "society": "The Meteoritical Society",
+  "country": "international (rotating)",
+  "subfield": "meteoritics/planetary science",
+  "events_per_yr": null,
+  "notes": "annual | BOUNDARY (may belong to another field) | the main meteoritics meeting; likely several hundred - boundary with physical sciences | Phase 1 source: https://meteoriticalsociety.org/",
+  "route_hint": "Meteoritical Society annual meeting runs on LPI/USRA: try the unwalled asset path https://www.hou.usra.edu/meetings/metsoc2025/pdf/<abstract-number>.pdf (HEAD-enumerate ids, clean 404 for missing) as for LPSC; HTML pages are Cloudflare 403"
+ },
+ {
+  "row": 74,
+  "conference": "International Conference on Permafrost (ICOP)",
+  "society": "International Permafrost Association",
+  "country": "international (rotating)",
+  "subfield": "permafrost/cryosphere",
+  "events_per_yr": null,
+  "notes": "every 4 years | BOUNDARY (may belong to another field) | the world permafrost conference; likely several hundred - low confidence | Phase 1 source: https://www.permafrost.org/",
+  "route_hint": "ICOP 2024 Whitehorse (12th International Conference on Permafrost): abstract book PDF (icop2024.org / permafrost.org)"
+ },
+ {
+  "row": 102,
+  "conference": "ICID International Congress on Irrigation and Drainage / World Irrigation Forum",
+  "society": "International Commission on Irrigation and Drainage (ICID)",
+  "country": "international (rotating)",
+  "subfield": "irrigation/drainage",
+  "events_per_yr": null,
+  "notes": "congress every 3 years, World Irrigation Forum in between | BOUNDARY (may belong to another field) | the 24th Congress abstract volume ran to 390 pages; borderline, and engineering-adjacent | Phase 1 source: https://icid-ciid.org/event/detail/25",
+  "route_hint": "ICID 26th Congress Marrakech 2025 / 25th Vizag 2023 + World Irrigation Forum: abstract volume PDFs on icid-ciid.org"
+ },
+ {
+  "row": 104,
+  "conference": "International Rangeland Congress (IRC)",
+  "society": "International Rangeland Congress continuing committee",
+  "country": "international (rotating)",
+  "subfield": "rangeland science",
+  "events_per_yr": null,
+  "notes": "every 4 years, often joint with the Grassland Congress | BOUNDARY (may belong to another field) | the world rangeland congress; likely several hundred - low confidence | Phase 1 source: https://www.internationalgrasslands.org/",
+  "route_hint": "XII IRC 2023 Covington KY was JOINT with the XXV International Grassland Congress (row 103, counted 416 — the joint edition is ONE meeting): set duplicate_of row 103 if your latest edition is that joint one; else count a standalone IRC (e.g. 2021 Nairobi)"
+ },
+ {
+  "row": 112,
+  "conference": "Japanese Society of Agricultural Meteorology Annual Meeting (日本農業気象学会全国大会)",
+  "society": "Japanese Society of Agricultural Meteorology (日本農業気象学会)",
+  "country": "Japan",
+  "subfield": "agricultural meteorology",
+  "events_per_yr": null,
+  "notes": "annual | BOUNDARY (may belong to another field) | abstract volumes published on J-STAGE; likely a few hundred - low confidence | Phase 1 source: https://www.jstage.jst.go.jp/browse/agrmet2/-char/ja/",
+  "route_hint": "J-STAGE volume total: https://www.jstage.jst.go.jp/browse/agrmet2/-char/ja → contents page string '選択された号の論文のN件中' for the 全国大会 講演要旨 volume"
+ },
+ {
+  "row": 120,
+  "conference": "Congreso Argentino de la Ciencia del Suelo",
+  "society": "Asociacion Argentina de la Ciencia del Suelo (AACS)",
+  "country": "Argentina",
+  "subfield": "soil science",
+  "events_per_yr": null,
+  "notes": "biennial (27th edition reached) | BOUNDARY (may belong to another field) | Argentina's national soil congress, larger in the years it is joint with the Latin American congress; alone it is likely under the bar | Phase 1 source: https://www.suelos.org.ar/",
+  "route_hint": "Argentine soil congress alone (non-joint years, e.g. XXVIII 2022 / XXIX 2024): actas/resúmenes; in joint years it is row 119's meeting — flag duplicate_of"
+ },
+ {
+  "row": 126,
+  "conference": "Swiss Geoscience Meeting (SGM)",
+  "society": "Platform Geosciences, Swiss Academy of Sciences (SCNAT)",
+  "country": "Switzerland",
+  "subfield": "geoscience",
+  "events_per_yr": null,
+  "notes": "annual (November) | BOUNDARY (may belong to another field) | Switzerland's national multi-disciplinary geoscience meeting; likely several hundred - borderline | Phase 1 source: https://geoscience-meeting.ch/",
+  "route_hint": "Swiss Geoscience Meeting abstract volume PDF per year on https://geoscience-meeting.ch/ (sgm<year>/abstracts) — count abstracts per symposium, sum, check union"
+ },
+ {
+  "row": 20,
+  "conference": "AAPG International Conference and Exhibition (ICE)",
+  "society": "American Association of Petroleum Geologists",
+  "country": "international (rotating)",
+  "subfield": "petroleum geology",
+  "events_per_yr": null,
+  "notes": "annual, outside the USA (ACE is the US edition, already censused) | BOUNDARY (may belong to another field) | the international sibling of AAPG ACE; uncertain size | Phase 1 source: https://www.aapg.org/",
+  "route_hint": "AAPG ICE (international, non-US) — check whether the series still runs after the IMAGE merger (row 19); Crossref prefix 10.1306 has no ICE container (field notes); AAPG Search & Discovery lists ICE abstracts per edition"
+ },
+ {
+  "row": 88,
+  "conference": "Saint Petersburg Geosciences Conference (Геомодель / Санкт-Петербург)",
+  "society": "EAGE Russia section / Geomodel organisers",
+  "country": "Russia",
+  "subfield": "geophysics/petroleum geoscience",
+  "events_per_yr": null,
+  "notes": "annual | BOUNDARY (may belong to another field) | a large Russian geoscience conference series; likely under the bar and partly an EAGE event (EAGE is already censused) | Phase 1 source: https://geomodel.ru/spb26",
+  "route_hint": "Geomodel / Saint Petersburg (EAGE-affiliated, geomodel.ru/spb26): EAGE is already counted on physical sciences — if this is an EAGE event, flag duplicate_of; Russian search"
+ },
+ {
+  "row": 123,
+  "conference": "Society of Economic Geologists Conference (SEG Conference)",
+  "society": "Society of Economic Geologists",
+  "country": "international (rotating)",
+  "subfield": "economic geology",
+  "events_per_yr": null,
+  "notes": "annual | BOUNDARY (may belong to another field) | the SEG annual conference; likely several hundred - low confidence | Phase 1 source: https://www.segweb.org/",
+  "route_hint": "SEG = Society of ECONOMIC Geologists (segweb.org), NOT the geophysics SEG; SEG 2025 Conference abstracts/program PDF"
+ },
+ {
+  "row": 38,
+  "conference": "Congresso Brasileiro de Engenharia Agricola (CONBEA)",
+  "society": "Sociedade Brasileira de Engenharia Agricola (SBEA)",
+  "country": "Brazil",
+  "subfield": "agricultural engineering",
+  "events_per_yr": null,
+  "notes": "annual | BOUNDARY (may belong to another field) | Brazil's agricultural engineering congress; size uncertain, boundary with engineering | Phase 1 source: https://www.sbea.org.br/",
+  "route_hint": "CONBEA (SBEA): anais per edition — Brazilian anais may sit on Even3 (Crossref prefix 10.29327 container facet) or a host university; Portuguese search"
+ },
+ {
+  "row": 40,
+  "conference": "AWRA Annual Water Resources Conference",
+  "society": "American Water Resources Association",
+  "country": "USA",
+  "subfield": "water resources",
+  "events_per_yr": null,
+  "notes": "annual | BOUNDARY (may belong to another field) | US water-resources meeting; probably a few hundred - low confidence | Phase 1 source: https://www.awra.org/",
+  "route_hint": "AWRA annual conference: program PDF on awra.org (count presentations)"
+ },
+ {
+  "row": 48,
+  "conference": "CMOS Congress",
+  "society": "Canadian Meteorological and Oceanographic Society",
+  "country": "Canada",
+  "subfield": "meteorology/oceanography",
+  "events_per_yr": null,
+  "notes": "annual | BOUNDARY (may belong to another field) | Canada's AMS-equivalent; likely a few hundred - low confidence | Phase 1 source: https://www.cmos.ca/",
+  "route_hint": "CMOS Congress: abstract book / programme (cmos.ca; Confex? probe cmos.confex.com meetingapi.cgi/Program)"
+ },
+ {
+  "row": 49,
+  "conference": "AMOS Annual Meeting",
+  "society": "Australian Meteorological and Oceanographic Society",
+  "country": "Australia",
+  "subfield": "meteorology/oceanography",
+  "events_per_yr": null,
+  "notes": "annual | BOUNDARY (may belong to another field) | Australia's AMS-equivalent; likely a few hundred - low confidence | Phase 1 source: https://www.amos.org.au/",
+  "route_hint": "AMOS annual meeting: abstract book / programme PDF (amos.org.au)"
+ },
+ {
+  "row": 50,
+  "conference": "Royal Meteorological Society Annual Conference",
+  "society": "Royal Meteorological Society (UK)",
+  "country": "UK",
+  "subfield": "meteorology",
+  "events_per_yr": null,
+  "notes": "annual | BOUNDARY (may belong to another field) | the UK meteorology conference; probably small - low confidence | Phase 1 source: https://www.rmets.org/",
+  "route_hint": "RMetS annual conference: programme (rmets.org); likely small"
+ },
+ {
+  "row": 54,
+  "conference": "Colloquium of African Geology (CAG)",
+  "society": "Geological Society of Africa",
+  "country": "Africa (rotating)",
+  "subfield": "geology",
+  "events_per_yr": null,
+  "notes": "every 2-3 years | BOUNDARY (may belong to another field) | the pan-African geology colloquium; likely a few hundred - low confidence | Phase 1 source: https://geologicalsocietyofafrica.org/",
+  "route_hint": "CAG (Colloquium of African Geology): abstract volume PDF per edition (CAG30 2025? Geological Society of Africa)"
+ },
+ {
+  "row": 73,
+  "conference": "Congress of the Carpathian-Balkan Geological Association (CBGA)",
+  "society": "Carpathian-Balkan Geological Association",
+  "country": "Central/Southeast Europe (rotating)",
+  "subfield": "regional geology",
+  "events_per_yr": null,
+  "notes": "every 4 years | BOUNDARY (may belong to another field) | the regional geological congress for Central and Southeast Europe; size uncertain, likely a few hundred | Phase 1 source: https://www.iugs.org/organization/affiliated-organizations",
+  "route_hint": "CBGA congress (XXII 2022 Plovdiv?): abstract volume PDF"
+ },
+ {
+  "row": 85,
+  "conference": "Geocongress (South Africa)",
+  "society": "Geological Society of South Africa",
+  "country": "South Africa",
+  "subfield": "geology",
+  "events_per_yr": null,
+  "notes": "biennial | BOUNDARY (may belong to another field) | South Africa's national geoscience congress; likely a few hundred - low confidence | Phase 1 source: https://www.gssa.org.za/",
+  "route_hint": "Geocongress (GSSA, biennial): abstract volume / programme"
+ },
+ {
+  "row": 86,
+  "conference": "Geosciences Society of New Zealand Annual Conference",
+  "society": "Geoscience Society of New Zealand",
+  "country": "New Zealand",
+  "subfield": "geoscience",
+  "events_per_yr": null,
+  "notes": "annual | BOUNDARY (may belong to another field) | New Zealand's national geoscience conference; likely a few hundred - low confidence | Phase 1 source: https://gsnz.org.nz/",
+  "route_hint": "GSNZ annual conference: abstracts volume (Geoscience Society of NZ Miscellaneous Publication series, PDF)"
+ },
+ {
+  "row": 129,
+  "conference": "National Geoscience Conference (NGC), Malaysia",
+  "society": "Geological Society of Malaysia",
+  "country": "Malaysia",
+  "subfield": "geoscience",
+  "events_per_yr": null,
+  "notes": "annual (39th edition in 2026, Miri) | BOUNDARY (may belong to another field) | Malaysia's flagship annual geoscience conference with published proceedings; likely well under the bar - low confidence | Phase 1 source: https://gsm.org.my/",
+  "route_hint": "NGC Malaysia (Geological Society of Malaysia): proceedings / abstract volume PDF (gsm.org.my)"
+ },
+ {
+  "row": 130,
+  "conference": "IAGOD Quadrennial Symposium",
+  "society": "International Association on the Genesis of Ore Deposits",
+  "country": "international (rotating; Porto 2026)",
+  "subfield": "ore deposits/economic geology",
+  "events_per_yr": null,
+  "notes": "every 4 years | BOUNDARY (may belong to another field) | the quadrennial ore-deposits symposium; likely several hundred - low confidence | Phase 1 source: https://www.iugs.org/organization/affiliated-organizations",
+  "route_hint": "IAGOD Quadrennial Symposium (2026 Porto / 2022?): abstract volume"
+ },
+ {
+  "row": 56,
+  "conference": "PDAC Convention",
+  "society": "Prospectors and Developers Association of Canada",
+  "country": "Canada",
+  "subfield": "mineral exploration",
+  "events_per_yr": null,
+  "notes": "annual (March, Toronto) | BOUNDARY (may belong to another field) | the world's largest mineral-exploration convention (~25,000 attendees) but mostly trade, not contributed abstracts; flag boundary | Phase 1 source: https://www.pdac.ca/",
+  "route_hint": "PDAC: trade convention — the abstracts bar and programme character decide, never the 25,000 headcount; look for a technical program with contributed talks"
+ },
+ {
+  "row": 42,
+  "conference": "World Water Week",
+  "society": "Stockholm International Water Institute (SIWI)",
+  "country": "Sweden",
+  "subfield": "water/policy",
+  "events_per_yr": null,
+  "notes": "annual (August) | BOUNDARY (may belong to another field) | very large water gathering but session-proposal rather than abstract based; flag boundary | Phase 1 source: https://www.worldwaterweek.org/",
+  "route_hint": "World Water Week: session-proposal event, not abstract-based — character decides"
+ },
+ {
+  "row": 108,
+  "conference": "Esri User Conference",
+  "society": "Esri",
+  "country": "USA (San Diego)",
+  "subfield": "GIS/geospatial",
+  "events_per_yr": null,
+  "notes": "annual (July) | BOUNDARY (may belong to another field) | over 20,000 in-person attendees, but the programme is product sessions and user presentations rather than a peer-reviewed abstract call; flag boundary | Phase 1 source: https://www.esri.com/en-us/about/events/uc/overview",
+  "route_hint": "Esri UC: product/user sessions, no peer-reviewed call — character decides"
+ },
+ {
+  "row": 109,
+  "conference": "INTERGEO",
+  "society": "DVW (German Society for Geodesy, Geoinformation and Land Management)",
+  "country": "Germany",
+  "subfield": "geodesy/geoinformation",
+  "events_per_yr": null,
+  "notes": "annual (September) | BOUNDARY (may belong to another field) | the largest geodesy and geoinformation trade event with an attached conference; the contributed-paper share is likely small - flag boundary | Phase 1 source: https://www.intergeo.de/",
+  "route_hint": "INTERGEO: trade fair + conference — count the contributed-paper share only"
+ },
+ {
+  "row": 75,
+  "conference": "Groundwater Week",
+  "society": "National Ground Water Association (NGWA)",
+  "country": "USA",
+  "subfield": "groundwater",
+  "events_per_yr": null,
+  "notes": "annual (December) | BOUNDARY (may belong to another field) | the largest US groundwater event, but largely trade and training rather than contributed abstracts; flag boundary | Phase 1 source: https://www.ngwa.org/",
+  "route_hint": "Groundwater Week (NGWA): mostly trade/training; count the contributed technical presentations only"
+ },
+ {
+  "row": 115,
+  "conference": "China Association of Agricultural Science Societies Annual Meeting (中国农学会年会暨中国现代农业发展论坛)",
+  "society": "China Association of Agricultural Science Societies (中国农学会)",
+  "country": "China",
+  "subfield": "agricultural science (umbrella)",
+  "events_per_yr": null,
+  "notes": "annual (13th forum in 2026) | BOUNDARY (may belong to another field) | an umbrella body with 33 branches and links to 31 provincial societies; its annual meeting is a forum rather than an abstract-driven congress - flag boundary | Phase 1 source: https://www.caass.org.cn/",
+  "route_hint": "中国农学会年会: umbrella forum — character decides; Chinese search"
+ },
+ {
+  "row": 39,
+  "conference": "Indian Geological Congress annual convention",
+  "society": "Indian Geological Congress / Geological Society of India",
+  "country": "India",
+  "subfield": "geoscience",
+  "events_per_yr": null,
+  "notes": "IMPLIED NAME — the society or group is confirmed but this meeting title was never verified. Phase 2 must resolve it to a real name or drop the row. | annual | BOUNDARY (may belong to another field) | India's geoscience congress; identity and size need phase-2 disambiguation | Phase 1 source: https://www.geosocindia.org/",
+  "route_hint": "IMPLIED NAME — resolve first (Indian Geological Congress / Geological Society of India annual convention); if no real recurring meeting, UNRESOLVED with the trail"
+ },
+ {
+  "row": 77,
+  "conference": "Nigerian Mining and Geosciences Society Annual International Conference",
+  "society": "Nigerian Mining and Geosciences Society (NMGS)",
+  "country": "Nigeria",
+  "subfield": "geoscience/mining",
+  "events_per_yr": null,
+  "notes": "IMPLIED NAME — the society or group is confirmed but this meeting title was never verified. Phase 2 must resolve it to a real name or drop the row. | annual | BOUNDARY (may belong to another field) | the largest African national geoscience society meeting; size unknown - low confidence | Phase 1 source: https://www.iugs.org/organization/affiliated-organizations",
+  "route_hint": "IMPLIED NAME — resolve first (NMGS Annual International Conference, nmgs.org.ng)"
+ },
+ {
+  "row": 87,
+  "conference": "Symposium of Geological Society of Iran (همایش انجمن زمین‌شناسی ایران)",
+  "society": "Geological Society of Iran",
+  "country": "Iran",
+  "subfield": "geology",
+  "events_per_yr": null,
+  "notes": "IMPLIED NAME — the society or group is confirmed but this meeting title was never verified. Phase 2 must resolve it to a real name or drop the row. | annual | BOUNDARY (may belong to another field) | Iran's national geology symposium; Persian-language sizing needed, size unknown | Phase 1 source: https://www.gsi.ir/",
+  "route_hint": "IMPLIED NAME — resolve first (Geological Society of Iran symposium, gsi.ir? / Persian search همایش انجمن زمین‌شناسی ایران)"
+ },
+ {
+  "row": 121,
+  "conference": "Israel Geological Society Annual Meeting",
+  "society": "Israel Geological Society",
+  "country": "Israel",
+  "subfield": "geology",
+  "events_per_yr": null,
+  "notes": "IMPLIED NAME — the society or group is confirmed but this meeting title was never verified. Phase 2 must resolve it to a real name or drop the row. | annual | BOUNDARY (may belong to another field) | a national geoscience meeting from the GSA associated-societies list; likely well under the bar - low confidence | Phase 1 source: https://www.geosociety.org/about/associated-societies",
+  "route_hint": "IMPLIED NAME — resolve first (Israel Geological Society annual meeting, igs.org.il; abstracts booklet PDF is published yearly — count)"
+ },
+ {
+  "row": 122,
+  "conference": "Nepal Geological Society Congress / Nepal Geological Congress",
+  "society": "Nepal Geological Society",
+  "country": "Nepal",
+  "subfield": "geology",
+  "events_per_yr": null,
+  "notes": "IMPLIED NAME — the society or group is confirmed but this meeting title was never verified. Phase 2 must resolve it to a real name or drop the row. | every 2-3 years | BOUNDARY (may belong to another field) | a Himalayan national geoscience congress from the GSA associated-societies list; likely well under the bar - low confidence | Phase 1 source: https://www.geosociety.org/about/associated-societies",
+  "route_hint": "IMPLIED NAME — resolve first (Nepal Geological Society / Nepal Geological Congress, ngs.org.np)"
+ }
+]
