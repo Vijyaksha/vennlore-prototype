@@ -30,8 +30,12 @@ lowering the evidence bar** (see `scratchpad/streamline.py`).
   co-organised meeting, identical 3,922); IUGG raised to VERIFIED for consistency with CGU (both
   itemised published counts, KCS precedent) — **Rupert may demote both together if VERIFIED must
   mean strict artefact counts**; implied APSA (Asia-Pacific Sociological) parked on non-existence.
-- **For Rupert**: SEG IMAGE (earth, 611 floor BORDERLINE) is the SEG+AAPG-ACE merger and
-  engineering r188 still carries ACE's DATED 2019 count (914) — retire one or keep both?
+- **RATIFIED BY RUPERT (2026-09-15, "for all of the decisions, you can just keep them")** — all
+  four open flags are now settled as written, do not re-open: (1) IUGG and CGU STAY VERIFIED on
+  itemised published counts (the KCS precedent stands as tier policy); (2) SEG IMAGE (earth,
+  BORDERLINE) and engineering r188 (AAPG ACE, DATED 2019) BOTH stay — Rupert accepts the known
+  merger overlap; (3) NCTM stays BORDERLINE on the rung-9 ~840; (4) JSM, AAR and CONIC stay on
+  Census - Social Sciences where the pilot placed them.
 - **Both field-notes files are published** (pilot report + orchestrator addenda):
   `field-notes/earth-sciences.md` and `field-notes/social-sciences.md`. The soc pilot could not
   write files (subagent harness guard), so its report travelled as 16 chunked messages and was
