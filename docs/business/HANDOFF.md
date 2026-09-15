@@ -3,62 +3,58 @@
 State of play for the next session. The method lives in `census-methodology.md` (general, all
 fields) and `field-notes/<field>.md` (field-specific). This file is only where we stopped.
 
-## Where we stopped — 2026-09-15 OVERNIGHT (Rupert's two bells: wave A 01:00 ET DONE + written; wave B dispatched 06:01 ET, RUNNING)
+## Where we stopped — 2026-09-15 11:00 ET (Rupert's two bells DONE: waves A+B written; earth COMPLETE; 25 social rows left)
 
-**Rupert's instruction (2026-09-14 night):** two timed bells, 1:00 am and 6:30 am ET, each launching four Opus
-census-researcher agents × 30 rows over the social + earth `NOT YET CENSUSED` rows (261 at start), Bell 2 first
-finishing anything Bell 1 left unfinished. Methodology + field notes are the truth; this file is context only.
+**Rupert's instruction (2026-09-14 night):** two bells (01:00 and 06:30 ET), four Opus census-researcher agents ×
+~30 rows each, over the 261 social + earth `NOT YET CENSUSED` rows; Bell 2 first finishes Bell 1's leftovers.
+Methodology + field notes are the truth; this file is context only. Wave A ran 01:06–02:31 (two agents cut off by
+the usage limit, finished after the 05:40 reset); Wave B was dispatched 06:01 (bell retired), one agent cut off
+at 07:20 and written after the 10:40 reset. **247 rows queued, 236 researched by agents, all written back and
+committed; orchestrator rung-5/bulk passes settled 14 more rows.** Searches: agents 12+9+9+8+14+9+11+9 = 81,
+orchestrator 1 → **82 of 1,000**.
 
-**Wave A (Bell 1, 01:06 ET) — 120 rows queued, 113 researched, ALL written back and committed.** Two agents
-finished (earth wave2 30/30, soc wave3 30/30); two were cut off by the 02:31 ET usage limit (earth wave3 28/30,
-soc wave2 25/30) — their partial results were written at 05:45 after the 05:40 reset. Orchestrator rung-5 pass
-(scripted Chrome via `scratchpad/r5tool/fetch.js`, because the Playwright MCP profile was locked by another
-session and the Chrome extension was disconnected) settled 6 rows: SBL 1,610 V, Econometric Society WC 1,721 V,
-IGC Dublin 3,213 V, ECREA ECC 1,299 B, ALA 262 OUT, AESC 355 OUT. Orchestrator searches: 1 (throwaway); agents
-12 + 9 + 9 + 8 = 38.
-
-| Sheet | After wave A + rung-5 pass | NOT YET CENSUSED |
+| Sheet | State after the run | NOT YET CENSUSED |
 |---|---|---|
-| Census - Social Sciences | **44 V (34.28 ev/yr) + 39 B (63.61 V+B ev/yr)**, deleted 8 | 111 (incl. 5 unfinished wave-A rows) |
-| Census - Earth Sciences | **9 V (4.95 ev/yr) + 35 B (23.19 V+B ev/yr)**, deleted 46 | 37 (incl. 2 unfinished wave-A rows) |
+| Census - Social Sciences | **48 V (36.61 ev/yr) + 87 B (103.76 V+B ev/yr)**, deleted 42 | **25** (list below) |
+| Census - Earth Sciences | **9 V (4.95 ev/yr) + 37 B (24.44 V+B ev/yr)**, deleted 81 | **0 — earth phase 2 COMPLETE** |
+| Both | 57 V + 124 B = 181 passing, 128.20 ev/yr | |
 
-**Wave B (dispatched 06:01 ET, ahead of the 06:30 bell, which was then retired):** one earth agent with ALL 37
-remaining earth rows (`scratchpad/earth/wave4/`), three social agents × 30 (`scratchpad/soc/wave4,5,6/`),
-largest-first, the 7 unfinished wave-A rows at the head of the queues. **21 social rows remain for Rupert after
-wave B** (listed in `scratchpad/census_waves_status.json` → `wave_B_leftover_soc_rows`: rows 156, 160, 161, 165,
-166, 168–171, 173–176, 180–182, 187, 190, 194, 201, 106).
+**Within this run** (236 researched rows): 32 VERIFIED, 118 BORDERLINE, 86 OUT/parked → 150 pass. Earth's tail
+passed one row in three, social's five in six.
 
-**Live state file:** `scratchpad/census_waves_status.json` (per wave dir: rows queued/returned, agent state,
-written-back, rung-5 pending). Each wave dir holds `BRIEF.md`, `queue.json`, `results.json`, `STATUS.json`,
-`write_plan.json`, and for wave A also `r5_notes.json` + `results_r5pass.json` (the rung-5 re-pass runs
-`apply_wave.py` a second time on a results SUBSET — `writeback.apply` appends to Method and overwrites Tier, so
-the re-pass is safe; `write_plan_wave.json` preserves the first plan).
+**Rows still NOT YET CENSUSED (social, 25):** 4 cut off from soc wave 4 — ORD r135, Russian Psychological Society
+r138, KONASPI r141, IEA World Congress r149 — plus the 21 never queued: r106 JERA, r156, r160, r161, r165, r166,
+r168–r171, r173–r176, r180–r182, r187, r190, r194, r201. Queue them largest-first; the wave briefs in
+`scratchpad/soc/wave4/BRIEF.md` carry every route learned.
 
-**Rung-5 / bulk-count items still open (all rows sit BORDERLINE with the next action in Method):**
-- soc: RGS-IBG r64 (Ex Ordo = CREDENTIAL wall, not rung 5), EISA r196 (Helsinki portal Cloudflare beats
-  scripted Chrome), NSTA r191 (Blazor portal needs interactive filtering), APPAM r19 (All Academic guest
-  session, papers-in-panels bulk count), ABAI r30 (reCAPTCHA v2 = HUMAN wall).
-- earth: Adaptation Futures r27 (EventsAir portal Closed), IPPC r106 (plantprotection.org Cloudflare beats
-  scripted Chrome). Settled in a second pass (commit fa8f024): IAC India r91 = 877 BORDERLINE (three OneDrive
-  Summaries volumes downloaded via the viewer's #downloadCommand, header-counted 283+306+288), Colombia CCG r79
-  ≈460 OUT (agenda grid: 367 filled 15-min room cells + ≤195 poster blocks, ceiling 562).
+**Rung-5 / browser items still open** (rows sit BORDERLINE with the next action in Method): soc — RGS-IBG r64
+(credential wall), EISA r196, NSTA r191, APPAM r19, ABAI r30 (reCAPTCHA), SIOP r29, NASP r46 (rolled to 2027),
+CODESRIA r144 (host down), CSWE r27 (858 eventScribe items, type split pending), NAEYC r35, AESOP done, AAS r126,
+NWSA r133, ALAP r157 (CAPTCHA), IFLA r100, APS Australia r112, ASEEES r127, AEA r167; earth — Adaptation Futures
+r27 (portal closed), IPPC r106, CBGA r73 (Cloudflare PDF), NMGS r77 (Angular app). **Browser passes were stopped
+at Rupert's request at ~07:15**; the scripted-Chrome helper is `scratchpad/r5tool/fetch.js` (see memory note).
 
-**For Rupert's eye (decided knowingly, not read off arithmetic):** IAEG 801 (one above the floor), NARST 789 /
-ACSP 793 (11 and 7 below, prior editions 900 / 856 — kept BORDERLINE), Geo-Temas 747 exact OUT (53 short), IMA
-747 dated 2014 kept BORDERLINE, WCGALP 816 B via leeway; Canadian Congress r143 rung-9 ~4,350 NOT COUNTED is an
-UMBRELLA containing CPSA/CSA/CSSE (rows 152–154, in wave B with duplicate_of instructions); EPSC/DPS counted on
-non-joint years; IASPEI parked as a duplicate of IAGA-IASPEI; SBL's 8 joint S/A sessions may overlap AAR by ≤30
-papers; ECC/ESWC/IGC figures are platform-stated or provisional-programme counts (see Method cells).
+**Decisions for Rupert's eye (all recorded in Method cells):**
+- **Canadian Congress umbrella (r143, rung-9 ~4,350 NOT COUNTED, B)**: members CSA r153 (885 counted) and CSSE
+  r154 (829 counted) PARKED as contained-in-umbrella per the ASSA/JSM precedent; CPSA r152 573 OUT. Reversible as
+  a set if he prefers counting members and parking the inferred umbrella.
+- Knife-edges: WEAI raised to 802 B (16 job-market papers added to 786); IAEG 801 B; AHA 803 B; ACSP 793 / NARST
+  789 kept B (prior editions higher); Geo-Temas 747 exact OUT; IMA 747 dated 2014 kept B; UAPS 692 dated 2019 OUT;
+  BERA 645 (2023) OUT; ISLS 755 OUT; WCGALP 816 B.
+- Discontinued/merged: ICPS → APS convention (parked); BPS annual conference (0 ev/yr, likely discontinued —
+  delete on non-existence if confirmed); WERA Focal Meeting = strand inside host (parked; **phase-1 gap: WERA
+  World Congress Bilbao 2027 needs a row**); Ulusal Eğitim Bilimleri Kongresi 0 ev/yr override (no edition since
+  2016); IASPEI = IAGA-IASPEI joint (parked); IRC = joint with IGC (parked).
+- Character-decided OUTs (no contributed-abstract programme): PDAC, World Water Week, Esri UC, Groundwater Week,
+  CAASS, ASSW; ALA (262 posters = whole contributed set).
+- Platform-stated / provisional counts written as counted: ESWC 1,721 & AECT 649 (Oxford Abstracts titles), ECREA
+  1,299 (C-IN), IGC Dublin 3,213 (provisional PDFs), AESOP 1,087 (Indico), ISTE 1,399 floor, NCTE 1,302 floor.
 
-**Field-notes additions from tonight are in each wave brief's traps section** (`scratchpad/soc/wave4/BRIEF.md`,
-`scratchpad/earth/wave4/BRIEF.md`, "Routes and traps learned tonight") — Dype Soluções, Realize API, Confex
-alive for SSWR/MLA, APPAM All Academic guest session, AEJMC .xlsx, WebFetch vs Cloudflare, Oxford Abstracts
-titles + program-pdf, C-IN abstract list, MiraSmart handshake, WAS blob codes, unwalled WordPress mirrors,
-Google Drive folder views, Crossref member+year faceting, Copernicus 200/302 variant, dead domains returning
-200, credential walls. **Copy them into the field-notes files when wave B is written.**
-
-Commits tonight: 18c581d (prep) → e017026/b883de4 (earth w2) → fb3be1e (soc w3) → 06501da/cf0b3b6/e98ec3e
-(partial waves) → cfd083d (rung-5 pass) → 7ea130d (wave B prep).
+**Where everything is:** live state `scratchpad/census_waves_status.json`; wave dirs `scratchpad/earth/wave2-4`,
+`scratchpad/soc/wave2-6` (BRIEF, queue, results, STATUS, write_plan, r5_notes, dupes, events_override,
+results_r5pass*); field notes carry two addenda sections (overnight + wave B). Writeback recipe unchanged
+(`apply_wave.py`; a rung-5 re-pass = same command on a results SUBSET, Method appends). Commits 18c581d → 22b7261.
+**Nothing pushed** — Rupert did not ask.
 
 ## Where we stopped — 2026-09-15 (social + earth pilots DONE and WRITTEN; next: schedule the remaining waves)
 
