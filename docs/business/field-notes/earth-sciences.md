@@ -619,3 +619,23 @@ session log) and in each row's Method cell; this section carries only what gener
 - **AESC 2026**: the SPA's 'Download Program and Abstract Book' is a public Google Drive file (355 abstracts, OUT).
 - **Dead/misleading**: iuss/22wcss walls (BSSS mirror), ippcathens2024.gr sold, sociedadgeologicamexicana.org.mx
   parked, suelossantacruz2025.com Wayback-downloader stub, sbagro.org squatter, cbagro2025.com.br empty 200.
+
+### Wave B additions (2026-09-15 morning, four more agents)
+- **Whova public agenda API**: `https://whova.com/xems/apis/event_webpage/agenda/public/get_agendas/?event_id=<eid>` (the `eid` is in the society page's `embedagenda.js` tag; the parameter must be `event_id`); `programs` is a nested list — flatten it. Won AAEA and EASP.
+- **X-CD Technologies** (`xcdsystem.com/<society>/program/<key>/index.cfm`) serves the whole programme server-side with a Type label per item (AAAL 920 floor, NWSA 477 sessions); nested papers load via a POST proxy that answers 'No data available' to guests until the programme is final.
+- **MyMeetingSavvy** (`<society>.mymeetingsavvy.net/program`): whole detailed programme on one page (Southern Economic Association 2,086).
+- **Fourwaves**: the Nuxt shell is identical for every slug, but `api.fourwaves.com/events/<slug>` → uuid → `/events/<uuid>/sessions` gives every session with `presentationCount` (CSA 885).
+- **CPSA's CFP system** generates the full programme with abstracts at `mycpsa-cpsa-acsp.ca/cfp/cfp_<year>/pdf`; cpsa-acsp.ca needs `curl --compressed`.
+- **Confex is alive** for AHA (`aha.confex.com/aha/<year>/meetingapi.cgi/Paper`) and AAPOR (`aapor.confex.com`) too — AAPOR's 'Panels' records are individual presentations.
+- **Oxford Abstracts `/event/<id>/titles`** settled AECT (649) and the Econometric Society (1,721); the program-pdf endpoint is sessions-only.
+- **GrowthZone societies** (ACJS): programme books sit behind `…growthzoneapp.com/ap/CloudFile/Download/<key>` links listed on the society's past-programs page, not in wp-json.
+- **ISTE**: the prior year's programme search loads a static cache `…/program/search/PROGRAM_SEARCH_CACHES/sessionDetails.<stamp>.js` holding every session with the organiser's own category (1,399 contributed of 1,827 items).
+- **LRZ Sync+Share** (German universities): `syncandshare.lrz.de/dl/<token>/.dir` returns a shared folder as a ZIP (DGfE Programmheft).
+- **Korean 'CUPID' slowAES anti-bot wall** (ekera.org) hands over key/IV/ciphertext in JS — decrypt with `openssl enc -d -aes-128-cbc -nopad` and pass the hex as a cookie; not rung 5.
+- **Civilica** (`civilica.com/l/<id>/`) prints تعداد مقالات for every Iranian conference in plain HTML — the key to the Iranian layer (Geological Society of Iran 166).
+- **CMOS archives**: `cmosarchives.ca/Congress_P_A/program_abstracts<YEAR>.pdf` holds every congress volume 2002–2026 with entries labelled 'Contributed abstract' / 'Invited session speaker'; the index page is iso-8859-1 — decode as latin-1.
+- **Copernicus ICA hosts** are `ica-abs.copernicus.org` and `ica-proc.copernicus.org` (Crossref's prefix facet misses both).
+- **IFLA repository** is DSpace 7 with the REST backend at `/rest/api` (not `/server/api`): deposits are a FLOOR (157 for 2025), never the programme.
+- **AgEcon Search** returns HTTP 202 with a zero-byte body; **proceedings.science** (Galoa, ALAP) is a CAPTCHA; eventScribe instances are Cloudflare-403 to curl and WebFetch but render in a scripted Chrome (ALA, CSWE); naeyc.org and asianstudies.org refuse everything tried.
+- **Discontinued / merged meetings found**: ICPS merged into the APS Annual Convention from 2025; no society-wide BPS Annual Conference since Jan 2023; WERA Focal Meeting is a strand inside a host association's meeting (a standalone WERA Congress comes in Bilbao 2027 — phase-1 gap); Ulusal Eğitim Bilimleri Kongresi not traceable after 2016; AARE's conference-papers database offline.
+- **Umbrella handling applied**: CSA (885) and CSSE (829) parked as contained in the Canadian Congress umbrella (row 143, rung-9 ~4,350); CPSA 573 OUT. Reversible as a set if Rupert prefers counting members.
