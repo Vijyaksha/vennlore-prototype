@@ -39,12 +39,16 @@
     55,
     118
    ],
-   "rows_returned": 0,
-   "agent": "running (dispatched 01:06 ET)",
-   "rung5_pending": [],
-   "written_back": false,
-   "commit": null,
-   "searches_used": null
+   "rows_returned": 30,
+   "agent": "DONE 02:26 ET",
+   "rung5_pending": [
+    106,
+    91
+   ],
+   "written_back": true,
+   "commit": "b883de4",
+   "searches_used": 12,
+   "summary": "1 V, 12 B, 16 OUT, 1 dup parked (row 10)"
   },
   "earth/wave3": {
    "field": "Earth, environmental & agricultural sciences",
@@ -81,12 +85,12 @@
     57,
     95
    ],
-   "rows_returned": 0,
-   "agent": "running (dispatched 01:06 ET)",
+   "rows_returned": 27,
+   "agent": "running",
    "rung5_pending": [],
    "written_back": false,
    "commit": null,
-   "searches_used": null
+   "searches_used": 8
   },
   "soc/wave2": {
    "field": "Social sciences & education",
@@ -123,12 +127,12 @@
     74,
     82
    ],
-   "rows_returned": 0,
-   "agent": "running (dispatched 01:06 ET)",
+   "rows_returned": 24,
+   "agent": "running",
    "rung5_pending": [],
    "written_back": false,
    "commit": null,
-   "searches_used": null
+   "searches_used": 8
   },
   "soc/wave3": {
    "field": "Social sciences & education",
@@ -165,12 +169,22 @@
     50,
     20
    ],
-   "rows_returned": 0,
-   "agent": "running (dispatched 01:06 ET)",
-   "rung5_pending": [],
-   "written_back": false,
-   "commit": null,
-   "searches_used": null
+   "rows_returned": 30,
+   "agent": "DONE ~02:20 ET",
+   "rung5_pending": [
+    64,
+    19,
+    196,
+    61,
+    148,
+    132,
+    191,
+    50
+   ],
+   "written_back": true,
+   "commit": "fb3be1e",
+   "searches_used": 9,
+   "summary": "11 V, 18 B, 1 OUT; row 143 rung-9 umbrella ~4,350 NOT COUNTED"
   }
  }
 }
