@@ -1,0 +1,18 @@
+{
+ "32": {
+  "abstracts_numeric": 355,
+  "abstracts": "355 (2026, AESC Melbourne 3-6 Feb 2026 — every abstract in the official Program & Abstracts book, ids 5-389, orals + posters, including ~44 keynote/invited items)",
+  "year": 2026,
+  "rung": 5,
+  "source_url": "https://drive.google.com/file/d/10lNYlg0uFjhj7FtAl3NKplC8LEYE_fJJ/view?usp=drive_link",
+  "confidence": "exact",
+  "tier": "OUT",
+  "orchestrator_note": "RUNG 5 by the orchestrator (2026-09-15): the SPA at aescgsa.com.au rendered in a scripted Chrome exposes 'Download Program and Abstract Book' → a public Google Drive file (fetched via drive.usercontent.google.com/download?id=10lNYlg0uFjhj7FtAl3NKplC8LEYE_fJJ&export=download&confirm=t, 24.5 MB, 412 pp, 'AESC 2026 Program Book.indd'). Abstract headers '<n> - <title>' counted: 355 distinct ids (5–389) in BOTH extraction modes, across 50 sessions (incl. the Thursday/Tuesday poster sessions). Keynote/invited mentions ~44 are inside the 355, so the contributed figure is lower still. The book IS the programme, so 355 is complete evidence: OUT. Biennial (0.5)."
+ },
+ "27": {
+  "orchestrator_note": "RUNG 5 attempted by the orchestrator (2026-09-15): the EventsAir interactive programme redirects to .../Portal/Closed — the portal has been retired with the event; nothing to enumerate. Stays BORDERLINE (no figure). Next action: Wayback capture of the agenda, or the poster directory PDF (Poster_Directory_251010.pdf) if it reappears under adaptationfutures2025.com/uploads/images/."
+ },
+ "79": {
+  "orchestrator_note": "BULK COUNT deferred by the orchestrator (2026-09-15): AgendaCCG2025-4.pdf downloaded (12 pp, 1800x2025 pt, seven-room 15-minute grid over 3 days + 3 poster days); a column-aware count by x-coordinate is still to be run. Stays BORDERLINE."
+ }
+}

@@ -1,0 +1,15 @@
+{
+ "92": {
+  "abstracts_numeric": 3213,
+  "abstracts": "3,213 (2024, 35th IGC Dublin — provisional programme of 13 March / 18 April 2024: 2,807 session presentations + 407 posters, 1 reference number in both lists)",
+  "year": 2024,
+  "rung": 5,
+  "source_url": "https://igc2024dublin.org/wp-content/uploads/2024/03/IGC-2024-Detailed-Session-Listing-Provisional-Programme-13.03.24a.pdf",
+  "confidence": "derived",
+  "tier": "VERIFIED",
+  "orchestrator_note": "RUNG 5 by the orchestrator (2026-09-15): igc2024dublin.org 403s curl on a client fingerprint but serves a scripted Chrome; downloaded the 'Detailed Session Listing' (83 pp) and 'Poster Presentations' (14 pp) PDFs via in-page fetch. Each row is 'Reference | Title | Presenter | Commission and Session'; counted distinct reference numbers at line start: sessions 2,807 (layout and raw modes agree, 2,807/2,807), posters 407 layout / 408 raw (one wrapped row), intersection 1 → union 3,213 across 42 commissions. Provisional programme (final was not published as a PDF), 85 presenters 'TBC'; the listing is contributed sessions only (keynotes are on separate pages). Quadrennial (0.25). Poster list URL: https://igc2024dublin.org/wp-content/uploads/2024/04/IGC-2024-Provisional-Programme-Poster-Presentations-18.04.24.pdf"
+ },
+ "30": {
+  "orchestrator_note": "RUNG 5 attempted by the orchestrator (2026-09-15): in a scripted Chrome the ABAI programme redirects to potw-loading-recaptchav2.aspx — a visible reCAPTCHA v2, i.e. a HUMAN-ONLY wall (the researcher had seen the v3 variant). Do not re-queue for a browser. Stays BORDERLINE with no figure; next action: a human opens https://www.abainternational.org/events/program-details/summary.aspx?intConvID=127&a=r once, or ABAI publishes a programme PDF."
+ }
+}

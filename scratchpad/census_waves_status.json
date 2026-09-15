@@ -85,12 +85,23 @@
     57,
     95
    ],
-   "rows_returned": 27,
-   "agent": "running",
-   "rung5_pending": [],
-   "written_back": false,
-   "commit": null,
-   "searches_used": 8
+   "rows_returned": 28,
+   "agent": "CUT OFF by usage limit 02:31 ET at 28/30",
+   "rung5_pending": [
+    27,
+    32
+   ],
+   "written_back": true,
+   "commit": "see git log",
+   "searches_used": 9,
+   "bulk_count_pending": [
+    79
+   ],
+   "unfinished_rows": [
+    41,
+    57
+   ],
+   "summary": "1 V, 11 B, 16 OUT"
   },
   "soc/wave2": {
    "field": "Social sciences & education",
@@ -127,12 +138,23 @@
     74,
     82
    ],
-   "rows_returned": 24,
-   "agent": "running",
-   "rung5_pending": [],
-   "written_back": false,
-   "commit": null,
-   "searches_used": 8
+   "rows_returned": 25,
+   "agent": "CUT OFF by usage limit 02:31 ET at 25/30",
+   "rung5_pending": [
+    92,
+    30
+   ],
+   "written_back": true,
+   "commit": "see git log",
+   "searches_used": 8,
+   "unfinished_rows": [
+    147,
+    192,
+    60,
+    74,
+    82
+   ],
+   "summary": "12 V, 12 B, 1 OUT"
   },
   "soc/wave3": {
    "field": "Social sciences & education",
@@ -185,6 +207,103 @@
    "commit": "fb3be1e",
    "searches_used": 9,
    "summary": "11 V, 18 B, 1 OUT; row 143 rung-9 umbrella ~4,350 NOT COUNTED"
+  }
+ },
+ "wave_A_unfinished_rows": {
+  "earth": [
+   41,
+   57
+  ],
+  "soc": [
+   147,
+   192,
+   60,
+   74,
+   82
+  ]
+ },
+ "rung5_queue": {
+  "earth": [
+   106,
+   91,
+   27,
+   32
+  ],
+  "soc": [
+   64,
+   19,
+   196,
+   61,
+   148,
+   132,
+   191,
+   50,
+   92,
+   30
+  ],
+  "bulk_count": {
+   "earth": [
+    79
+   ]
+  }
+ },
+ "browser_note": "Playwright MCP profile locked by another session; Chrome extension disconnected; using scratchpad/r5tool/fetch.js (node playwright, chrome channel, own profile). Cloudflare (Helsinki portal) still blocks it.",
+ "rung5_pass": {
+  "written": "2026-09-15 ~06:15 ET",
+  "resolved": {
+   "soc/wave3": [
+    132,
+    148,
+    50,
+    61
+   ],
+   "soc/wave2": [
+    92
+   ],
+   "earth/wave3": [
+    32
+   ]
+  },
+  "still_pending": {
+   "soc": [
+    64,
+    196,
+    191,
+    19,
+    30
+   ],
+   "earth": [
+    27,
+    79,
+    106,
+    91
+   ]
+  },
+  "sheet_state": {
+   "Census - Earth Sciences": {
+    "totals": [
+     4.95,
+     23.69
+    ],
+    "tiers": {
+     "VERIFIED": 9,
+     "BORDERLINE": 36,
+     "NOT YET CENSUSED": 37
+    }
+   },
+   "Census - Social Sciences": {
+    "totals": [
+     34.28,
+     63.61
+    ],
+    "tiers": {
+     "VERIFIED": 44,
+     "BORDERLINE": 39,
+     "NOT YET CENSUSED": 111
+    }
+   },
+   "Deleted - Earth Sciences": 45,
+   "Deleted - Social Sciences": 8
   }
  }
 }
