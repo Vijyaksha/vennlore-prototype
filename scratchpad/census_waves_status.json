@@ -337,12 +337,18 @@
     142,
     152
    ],
-   "rows_returned": 0,
-   "agent": "running (dispatched 06:01 ET, 29 min before Bell 2)",
-   "rung5_pending": [],
-   "written_back": false,
+   "rows_returned": 30,
+   "agent": "DONE 07:14 ET",
+   "rung5_pending": [
+    27,
+    35,
+    126,
+    133
+   ],
+   "written_back": true,
    "commit": null,
-   "searches_used": null
+   "searches_used": 11,
+   "summary": "2 V, 18 B (AESOP 1,087 by orchestrator), 10 OUT; WERA/ICPS/CSSE parked as duplicates; UEBK 0 ev/yr override"
   },
   "soc/wave6": {
    "field": "Social sciences & education",
