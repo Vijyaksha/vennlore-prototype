@@ -1,0 +1,31 @@
+{
+ "177": {
+  "abstracts_numeric": 802,
+  "abstracts": "802 (2026, WEAI 101st Annual Conference, Denver + virtual — 786 papers in 226 paper sessions + 16 job-market papers in the separately printed Graduate Student Workshop; both from the print programme)",
+  "year": 2026,
+  "rung": 3,
+  "source_url": "https://assets.noviams.com/novi-file-uploads/weai/WEAI-Program-2026-www-lo.pdf",
+  "confidence": "exact",
+  "tier": "BORDERLINE",
+  "orchestrator_note": "ORCHESTRATOR SPOT-CHECK of a decisive row (2026-09-15): the researcher counted 786 papers in the 226 paper sessions and separately noted 16 job-market papers presented in the Graduate Student Workshop printed in the same programme. Those are accepted contributed presentations at the conference (the unit), so the row figure is 802, which sits inside the 800–899 leeway → BORDERLINE rather than OUT. Knife-edge either way; FOR RUPERT'S EYE."
+ },
+ "29": {
+  "orchestrator_note": "RUNG 5 reviewed by the orchestrator (2026-09-15): SIOP publishes no programme book; the only PDFs are a schedule overview without session titles and an on-site guide, so a browser would gain nothing on siop.org. The programme lives in a members-only app. Stays BORDERLINE (no figure; ~5,000 attendees per phase-1 note, not sourced). Next action: SIOP's 'Conference Program' web app if it opens to guests, or an exhibitor prospectus for rung 9."
+ },
+ "46": {
+  "orchestrator_note": "RUNG 5 reviewed by the orchestrator (2026-09-15): the session-list generator (program-pdf.ashx?mode=glance) has rolled over to the empty 2027 convention; nothing to enumerate until NASP posts the 2027 programme (or a Wayback capture of the 2026 one appears). Stays BORDERLINE."
+ },
+ "144": {
+  "orchestrator_note": "RUNG 5 reviewed by the orchestrator (2026-09-15): the 16th General Assembly programme PDF host (16thgeneralassembly.codesria.org) serves an expired certificate and then HTTP 503 — a down host, not a bot wall; a browser fails identically. Stays BORDERLINE. Next action: retry the PDF later or via Wayback."
+ },
+ "36": {
+  "abstracts_numeric": 649,
+  "abstracts": "649 (2025, AECT International Convention, Las Vegas — Oxford Abstracts programme 'Titles' list states 1 to 20 of 649 accepted programme items; 239 sessions counted by the researcher: 175 concurrent, 24 panels, 22 demonstrations-in-progress, 18 roundtables)",
+  "year": 2025,
+  "rung": 5,
+  "source_url": "https://virtual.oxfordabstracts.com/event/74506/titles",
+  "confidence": "exact",
+  "tier": "OUT",
+  "orchestrator_note": "RUNG 5 by the orchestrator (2026-09-15): opened the Oxford Abstracts virtual programme in a scripted Chrome; the Titles view states the platform's own total, 649 items (33 pages of 20). Same evidence class as the Econometric Society row (row 148). 649 across 239 sessions = 2.7 per session, consistent with a concurrent-session convention. Positive evidence well under the 800 floor on the organiser's own platform total → OUT. Members-only proceedings (aect.org login) are a credential wall and were not needed."
+ }
+}
