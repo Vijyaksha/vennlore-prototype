@@ -298,12 +298,24 @@
     141,
     149
    ],
-   "rows_returned": 0,
-   "agent": "running (dispatched 06:01 ET, 29 min before Bell 2)",
-   "rung5_pending": [],
-   "written_back": false,
+   "rows_returned": 26,
+   "agent": "CUT OFF by usage limit 07:20 ET at 26/30",
+   "rung5_pending": [
+    100,
+    112,
+    127,
+    167
+   ],
+   "written_back": true,
    "commit": null,
-   "searches_used": null
+   "searches_used": 9,
+   "unfinished_rows": [
+    135,
+    138,
+    141,
+    149
+   ],
+   "summary": "2 V (Congreso Esp. Soc. 1,539; EASA 2,006 by orchestrator bulk count), 13 B, 11 OUT"
   },
   "soc/wave5": {
    "field": "Social sciences & education",
@@ -528,5 +540,137 @@
  "bell2": {
   "scheduled": "06:30 ET",
   "actual_dispatch": "06:01 ET \u2014 all Wave A intake done, Wave B prepared early"
+ },
+ "final_state_2026-09-15_11:00_ET": {
+  "Census - Social Sciences": {
+   "tiers": {
+    "VERIFIED": 48,
+    "BORDERLINE": 87,
+    "NOT YET CENSUSED": 25
+   },
+   "V": 36.61,
+   "VB": 103.76,
+   "deleted": 42,
+   "nyc": [
+    [
+     106,
+     "JERA Annual Meeting (\u65e5\u672c\u6559\u80b2\u5b66\u4f1a\u5927\u4f1a)"
+    ],
+    [
+     135,
+     "Onderwijs Research Dagen (ORD)"
+    ],
+    [
+     138,
+     "Congress of the Russian Psychological Society (Syezd RPO)"
+    ],
+    [
+     141,
+     "KONASPI (Konvensi Nasional Pendidikan Indonesia)"
+    ],
+    [
+     149,
+     "IEA World Congress"
+    ],
+    [
+     156,
+     "APA Conference (Asian Population Association)"
+    ],
+    [
+     160,
+     "EUGEO Congress"
+    ],
+    [
+     161,
+     "Annual Meeting of the Association of Japanese Geographers (\u65e5\u672c\u5730\u7406\u5b66\u4f1a\u5927\u4f1a)"
+    ],
+    [
+     165,
+     "ACTFL Annual Convention and World Languages Expo"
+    ],
+    [
+     166,
+     "CEC Convention & Expo"
+    ],
+    [
+     168,
+     "AACE E-Learn / EdMedia / SITE conferences"
+    ],
+    [
+     169,
+     "ICDE World Conference on Online Learning"
+    ],
+    [
+     170,
+     "HERDSA Conference"
+    ],
+    [
+     171,
+     "ICSEI Congress"
+    ],
+    [
+     173,
+     "ASPA Annual Conference"
+    ],
+    [
+     174,
+     "EGPA Annual Conference"
+    ],
+    [
+     175,
+     "IIAS Congress"
+    ],
+    [
+     176,
+     "ENHR Conference"
+    ],
+    [
+     180,
+     "Women's Worlds Congress"
+    ],
+    [
+     181,
+     "Iranian Psychological Association Congress (\u06a9\u0646\u06af\u0631\u0647 \u0627\u0646\u062c\u0645\u0646 \u0631\u0648\u0627\u0646\u0634\u0646\u0627\u0633\u06cc \u0627\u06cc\u0631\u0627\u0646)"
+    ],
+    [
+     182,
+     "Iranian Sociological Association Congress"
+    ],
+    [
+     187,
+     "CBAS (Congresso Brasileiro de Assistentes Sociais)"
+    ],
+    [
+     190,
+     "ECE (European Conference on Education)"
+    ],
+    [
+     194,
+     "SWSD (Joint World Conference on Social Work, Education and Social Development)"
+    ],
+    [
+     201,
+     "NAEA National Convention"
+    ]
+   ]
+  },
+  "Census - Earth Sciences": {
+   "tiers": {
+    "VERIFIED": 9,
+    "BORDERLINE": 37
+   },
+   "V": 4.95,
+   "VB": 24.44,
+   "deleted": 81,
+   "nyc": []
+  }
+ },
+ "wave_B_unfinished_rows": {
+  "soc": [
+   135,
+   138,
+   141,
+   149
+  ]
  }
 }
