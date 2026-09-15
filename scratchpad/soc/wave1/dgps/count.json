@@ -1,0 +1,25 @@
+{
+ "sessions": {
+  "Research Talk": 83,
+  "Fachgruppensymposium": 10,
+  "Symposium": 138,
+  "Coupled symposium": 14,
+  "Panel discussion": 19,
+  "Keynote": 13,
+  "Position Paper": 21,
+  "Flashlight": 1,
+  "Poster": 3
+ },
+ "papers": {
+  "Research Talk": 356,
+  "Fachgruppensymposium": 56,
+  "Symposium": 651,
+  "Coupled symposium": 130,
+  "Panel discussion": 0,
+  "Keynote": 0,
+  "Position Paper": 39,
+  "Flashlight": 9,
+  "Poster": 445
+ },
+ "total": 1686
+}
