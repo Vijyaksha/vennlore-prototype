@@ -52,3 +52,6 @@ scratchpad/__pycache__/
 # Claude Code local runtime state (project settings.json is shared)
 .claude/worktrees/
 .claude/scheduled_tasks.lock
+
+# scripted-browser Chrome profiles (rung-5 helper)
+scratchpad/r5tool/profile*/
