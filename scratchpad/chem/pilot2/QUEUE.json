@@ -1,0 +1,162 @@
+[
+  {
+    "row": 443,
+    "category": "chinese",
+    "conference": "中国化学会学术年会 (CCS National Congress)",
+    "society": "中国化学会 / Chinese Chemical Society",
+    "country": "China",
+    "notes": "biennial-ish; 35th April 2026 Chongqing, 72 symposia | largest chemistry meeting in China | Phase 1 source: https://www.chemsoc.org.cn/meeting/home/announcement/a6966.html"
+  },
+  {
+    "row": 444,
+    "category": "chinese",
+    "conference": "全国分析化学年会 (CCS National Analytical Chemistry Conference)",
+    "society": "中国化学会 / Chinese Chemical Society",
+    "country": "China",
+    "notes": "recurring; 15th edition announced | CCS division congress, Chinese-language | Phase 1 source: https://www.chemsoc.org.cn/meeting/home/"
+  },
+  {
+    "row": 446,
+    "category": "chinese",
+    "conference": "全国理论与计算化学会议 (CCS National Theoretical and Computational Chemistry Conference)",
+    "society": "中国化学会 / Chinese Chemical Society",
+    "country": "China",
+    "notes": "recurring; 16th edition | CCS division congress | Phase 1 source: https://www.chemsoc.org.cn/meeting/home/"
+  },
+  {
+    "row": 449,
+    "category": "chinese",
+    "conference": "全国能源化学学术会议 (CCS National Energy Chemistry Conference)",
+    "society": "中国化学会 / Chinese Chemical Society",
+    "country": "China",
+    "notes": "recurring (inaugural edition listed) | CCS division congress | Phase 1 source: https://www.chemsoc.org.cn/meeting/home/m415"
+  },
+  {
+    "row": 256,
+    "category": "chinese",
+    "conference": "CIESC Annual Meeting (中国化工学会年会)",
+    "society": "Chemical Industry and Engineering Society of China",
+    "country": "China",
+    "notes": "annual | Chinese national chemical engineering meeting | Phase 1 source: https://www0.scej.org/iches2026/cfp.html"
+  },
+  {
+    "row": 478,
+    "category": "russian",
+    "conference": "Менделеевский съезд по общей и прикладной химии (Mendeleev Congress on General and Applied Chemistry)",
+    "society": "Российское химическое общество им. Д.И. Менделеева / Mendeleev Russian Chemical Society",
+    "country": "Russia",
+    "notes": "every ~4 years; XXII Oct 2024 Sirius/Sochi | largest Russian chemistry congress, 22 editions, Russian-language | Phase 1 source: https://mendeleevcongress.ru/en/home/"
+  },
+  {
+    "row": 560,
+    "category": "russian",
+    "conference": "РОСКАТАЛИЗ — Российский конгресс по катализу (Russian Congress on Catalysis)",
+    "society": "Институт катализа СО РАН / Russian catalysis community",
+    "country": "Russia",
+    "notes": "every ~3 years; editions 2011, 2014, 2017, 2021, V in 2025 St Petersburg | Russian-language subfield congress — the biggest hole area | Phase 1 source: https://catalysis.ru/block/index.php?ID=1&SECTION_ID=1587"
+  },
+  {
+    "row": 291,
+    "category": "russian",
+    "conference": "RCCT — International Conference on Chemical Thermodynamics in Russia",
+    "society": "Mendeleev Russian Chemical Society / RAS",
+    "country": "Russia",
+    "notes": "biennial; XXV in Ekaterinburg 2026 | recurring Russian national subfield conference | Phase 1 source: https://rcct2026.ru/en/"
+  },
+  {
+    "row": 292,
+    "category": "russian",
+    "conference": "Mendeleev Conference for Young Scientists (St Petersburg)",
+    "society": "Mendeleev Russian Chemical Society / St Petersburg State University",
+    "country": "Russia",
+    "notes": "annual | recurring Russian national early-career meeting | Phase 1 source: https://english.spbu.ru/news-events/calendar/mendeleev-2026"
+  },
+  {
+    "row": 575,
+    "category": "implied",
+    "conference": "Reunión del Grupo Especializado de Adsorción (GEADS) — RSEQ",
+    "society": "Real Sociedad Española de Química (RSEQ)",
+    "country": "Spain",
+    "notes": "IMPLIED NAME — the society or group is confirmed but this meeting title was never verified. Phase 2 must resolve it to a real name or drop the row. | recurring (typically biennial reunión) | one of the 30 RSEQ specialised groups; each runs its own recurring reunión | Phase 1 source: https://geads.rseq.org/"
+  },
+  {
+    "row": 581,
+    "category": "implied",
+    "conference": "Reunión del Grupo Especializado de Electroquímica (GEE) — RSEQ",
+    "society": "Real Sociedad Española de Química (RSEQ)",
+    "country": "Spain",
+    "notes": "IMPLIED NAME — the society or group is confirmed but this meeting title was never verified. Phase 2 must resolve it to a real name or drop the row. | recurring (typically biennial reunión) | one of the 30 RSEQ specialised groups; each runs its own recurring reunión | Phase 1 source: https://gee.rseq.org/"
+  },
+  {
+    "row": 577,
+    "category": "implied",
+    "conference": "Reunión del Grupo Especializado de Ciencias y Tecnologías (Bio)analíticas (GCTbA) — RSEQ",
+    "society": "Real Sociedad Española de Química (RSEQ)",
+    "country": "Spain",
+    "notes": "IMPLIED NAME — the society or group is confirmed but this meeting title was never verified. Phase 2 must resolve it to a real name or drop the row. | recurring (typically biennial reunión) | one of the 30 RSEQ specialised groups; each runs its own recurring reunión | Phase 1 source: https://gctba.rseq.org/"
+  },
+  {
+    "row": 251,
+    "category": "japan-confit",
+    "conference": "JSAC Annual Meeting (日本分析化学会年会)",
+    "society": "Japan Society for Analytical Chemistry",
+    "country": "Japan",
+    "notes": "annual | Japanese national analytical chemistry meeting | Phase 1 source: https://www.chemistry.or.jp/en/events/calendar/index.html"
+  },
+  {
+    "row": 250,
+    "category": "japan-confit",
+    "conference": "SPSJ Symposium on Macromolecules (高分子討論会)",
+    "society": "Society of Polymer Science, Japan",
+    "country": "Japan",
+    "notes": "annual, autumn | second SPSJ national meeting | Phase 1 source: https://en.wikipedia.org/wiki/Society_of_Polymer_Science"
+  },
+  {
+    "row": 19,
+    "category": "aiche",
+    "conference": "AIChE Annual Meeting",
+    "society": "AIChE",
+    "country": "US",
+    "notes": "annual | ~6,000 papers"
+  },
+  {
+    "row": 25,
+    "category": "tradefair",
+    "conference": "ACHEMA",
+    "society": "DECHEMA",
+    "country": "Germany",
+    "notes": "every 3 years | trade-heavy; include and let phase 2 decide"
+  },
+  {
+    "row": 298,
+    "category": "tradefair",
+    "conference": "JASIS (Japan Analytical & Scientific Instruments Show)",
+    "society": "Japan Analytical Instruments Manufacturers' Association / JSIA",
+    "country": "Japan",
+    "notes": "annual, with JASIS Conference | largest Japanese analytical instrument show with scientific conference | Phase 1 source: https://lab-instrument-index.com/events/"
+  },
+  {
+    "row": 543,
+    "category": "tradefair",
+    "conference": "ARABLAB (ARABLAB Live)",
+    "society": "Terrapinn",
+    "country": "Middle East (Dubai)",
+    "notes": "annual | trade-fair layer — leading lab event in Middle East & Africa | Phase 1 source: https://www.terrapinn.com/exhibition/arablab-live/2025-Exhibitor-List.stm"
+  },
+  {
+    "row": 229,
+    "category": "invite-led",
+    "conference": "Gordon Research Conferences (GRC series)",
+    "society": "Gordon Research Conferences",
+    "country": "US / international",
+    "notes": "hundreds of topical conferences per year since 1931 | flagship invite-led chemistry conference series | Phase 1 source: https://www.grc.org/"
+  },
+  {
+    "row": 230,
+    "category": "invite-led",
+    "conference": "Keystone Symposia on Molecular and Cellular Biology",
+    "society": "Keystone Symposia",
+    "country": "US / international",
+    "notes": "many meetings per year | invite-led series on the chemistry/biology boundary | Phase 1 source: https://www.keystonesymposia.org/"
+  }
+]

@@ -1,0 +1,302 @@
+[
+ {
+  "row": 28,
+  "conference": "World Geothermal Congress",
+  "society": "International Geothermal Association",
+  "country": "international (rotating)",
+  "subfield": "geothermal energy/geoscience",
+  "events_per_yr": null,
+  "notes": "every 3-5 years | BOUNDARY (may belong to another field) | the world geothermal congress publishes very large proceedings (thousands of papers historically) | Phase 1 source: https://www.geothermal-energy.org/",
+  "route_hint": "World Geothermal Congress 2023 Beijing / 2020+1 Reykjavik: every paper is in the IGA Geothermal Paper Database (https://www.geothermal-energy.org/explore/our-databases/conference-paper-database/) filterable by conference — count entries for one WGC edition; also pangea.stanford.edu ERE db"
+ },
+ {
+  "row": 63,
+  "conference": "International Sedimentological Congress (ISC)",
+  "society": "International Association of Sedimentologists (IAS)",
+  "country": "international (rotating; Wellington 2026)",
+  "subfield": "sedimentology",
+  "events_per_yr": null,
+  "notes": "every 4 years | BOUNDARY (may belong to another field) | the global sedimentology congress; historically well over a thousand participants | Phase 1 source: https://www.sedimentologists.org/conferences",
+  "route_hint": "ISC 2022 Beijing (21st, online) / ISC 2026 Wellington: abstract volume; sedimentologists.org; IAS annual IMS (row 64) is a separate series"
+ },
+ {
+  "row": 68,
+  "conference": "International Conference on Geomorphology (ICG)",
+  "society": "International Association of Geomorphologists",
+  "country": "international (rotating)",
+  "subfield": "geomorphology",
+  "events_per_yr": null,
+  "notes": "every 4 years | BOUNDARY (may belong to another field) | the world geomorphology conference; over a thousand abstracts in recent editions | Phase 1 source: https://geomorph.org/",
+  "route_hint": "10th ICG Coimbra 2022 abstract book (icg2022.eu); geomorph.org"
+ },
+ {
+  "row": 71,
+  "conference": "World Landslide Forum (WLF)",
+  "society": "International Consortium on Landslides (ICL) with IUGG, IUGS, ISC",
+  "country": "international (rotating; 7th in Faridabad, India, 2026)",
+  "subfield": "natural hazards/landslides",
+  "events_per_yr": null,
+  "notes": "every 3 years | BOUNDARY (may belong to another field) | the world landslide forum publishes very large multi-volume proceedings | Phase 1 source: https://iugg.org/meetings/meeting-calendar/",
+  "route_hint": "WLF6 Florence 2023: proceedings in Springer 'Progress in Landslide Research and Technology' volumes — Crossref book chapters per volume; count chapters of the WLF6 volumes; WLF7 2026 Faridabad"
+ },
+ {
+  "row": 22,
+  "conference": "Europlanet Science Congress (EPSC)",
+  "society": "Europlanet Society",
+  "country": "Europe",
+  "subfield": "planetary science",
+  "events_per_yr": null,
+  "notes": "annual (September), Copernicus abstract system | BOUNDARY (may belong to another field) | the European planetary congress, around a thousand abstracts; boundary with physical sciences | Phase 1 source: https://www.epsc-dps.eu/",
+  "route_hint": "Copernicus meeting: static per-abstract pages https://meetingorganizer.copernicus.org/<SLUG>/<SLUG>-<n>.html (test the <title>, not the status); slugs seen: EPSC2022, EPSC2024, EPSC-DPS2025 (joint year — count once and flag duplicate_of with row 23 for joint editions), EPSC2026"
+ },
+ {
+  "row": 23,
+  "conference": "AAS Division for Planetary Sciences Annual Meeting (DPS)",
+  "society": "American Astronomical Society, Division for Planetary Sciences",
+  "country": "USA",
+  "subfield": "planetary science",
+  "events_per_yr": null,
+  "notes": "annual; occasionally joint with EPSC | BOUNDARY (may belong to another field) | around a thousand abstracts in joint years; boundary with physical sciences (astronomy) | Phase 1 source: https://dps.aas.org/",
+  "route_hint": "DPS meets on the AAS platform (aas.org / dps.aas.org abstracts in BAAS; joint EPSC-DPS years are Copernicus — Copernicus meeting: static per-abstract pages https://meetingorganizer.copernicus.org/<SLUG>/<SLUG>-<n>.html (test the <title>, not the status); slugs seen: EPSC-DPS2025). Count a NON-joint year (DPS 2024 Boise) and flag the joint-year duplicate with row 22. Boundary with physical sciences (astronomy)"
+ },
+ {
+  "row": 99,
+  "conference": "World Forestry Congress (WFC)",
+  "society": "FAO with a host government",
+  "country": "international (rotating; Seoul 2022)",
+  "subfield": "forestry",
+  "events_per_yr": null,
+  "notes": "every 6 years | BOUNDARY (may belong to another field) | over 15,000 participants from 146 countries in 2022 with an open call for papers and posters; largely policy, so the contributed-abstract share needs checking | Phase 1 source: https://en.wikipedia.org/wiki/World_Forestry_Congress",
+  "route_hint": "XV World Forestry Congress Seoul 2022: FAO/KFS report itemises abstracts (poster/paper calls); largely policy — judge character. Cadence ~6 years (0.17)"
+ },
+ {
+  "row": 89,
+  "conference": "Ocean Science Biennial Conference of the Chinese Society for Oceanography (中国海洋学会学术年会)",
+  "society": "Chinese Society for Oceanography (中国海洋学会)",
+  "country": "China",
+  "subfield": "oceanography",
+  "events_per_yr": null,
+  "notes": "biennial (2024 Shanghai, 2025 with Oceanology Asia) | BOUNDARY (may belong to another field) | China's national ocean-science biennial conference; Chinese-language sizing needed | Phase 1 source: https://www.oceanologyasia.com/en/page/conferences",
+  "route_hint": "中国海洋学会 学术年会: society site (cso.org.cn?) and government/news mirrors; Chinese search '中国海洋学会学术年会 论文 摘要 报告 场'"
+ },
+ {
+  "row": 81,
+  "conference": "Geological Society of China Annual Academic Meeting (中国地质学会学术年会)",
+  "society": "Geological Society of China (中国地质学会)",
+  "country": "China",
+  "subfield": "geology",
+  "events_per_yr": null,
+  "notes": "IMPLIED NAME — the society or group is confirmed but this meeting title was never verified. Phase 2 must resolve it to a real name or drop the row. | annual | China's national geological society annual meeting; Chinese-language sizing needed | Phase 1 source: http://www.geosociety.org.cn/",
+  "route_hint": "IMPLIED NAME — resolve first: 中国地质学会学术年会 (Geological Society of China, geosociety.org.cn); Chinese search '中国地质学会 学术年会 报告 论文摘要'; ministry/news mirrors (mnr.gov.cn, cgs.gov.cn) fetch cleanly when the society site blocks"
+ },
+ {
+  "row": 44,
+  "conference": "Soil Science Society of China Annual Academic Conference (中国土壤学会学术年会)",
+  "society": "Soil Science Society of China (中国土壤学会)",
+  "country": "China",
+  "subfield": "soil science",
+  "events_per_yr": null,
+  "notes": "IMPLIED NAME — the society or group is confirmed but this meeting title was never verified. Phase 2 must resolve it to a real name or drop the row. | annual/biennial | China's national soil society meeting; Chinese-language sizing needed | Phase 1 source: http://www.csss.org.cn/",
+  "route_hint": "IMPLIED NAME — resolve first: 中国土壤学会学术年会 (csss.org.cn); Chinese search; gov/news mirrors"
+ },
+ {
+  "row": 114,
+  "conference": "Crop Science Society of China Annual Academic Conference (中国作物学会学术年会)",
+  "society": "Crop Science Society of China (中国作物学会)",
+  "country": "China",
+  "subfield": "crop science",
+  "events_per_yr": null,
+  "notes": "IMPLIED NAME — the society or group is confirmed but this meeting title was never verified. Phase 2 must resolve it to a real name or drop the row. | annual | BOUNDARY (may belong to another field) | China's national crop science society annual meeting; Chinese-language sizing needed | Phase 1 source: http://www.chinacrops.org/",
+  "route_hint": "IMPLIED NAME — resolve first: 中国作物学会学术年会 (cssc.org.cn / crop.org.cn); Chinese search"
+ },
+ {
+  "row": 128,
+  "conference": "Taiwan Geosciences Assembly (TGA, 臺灣地球科學聯合學術研討會)",
+  "society": "Chinese Geoscience Union in Taiwan (中華民國地球科學學會) with co-organising societies",
+  "country": "Taiwan",
+  "subfield": "geoscience (union)",
+  "events_per_yr": null,
+  "notes": "annual (May, Taipei) | BOUNDARY (may belong to another field) | Taiwan's joint assembly across space science, atmospheric science, oceanography, geology, hydrology, geophysics, geography and science education; Chinese-language sizing needed | Phase 1 source: http://www.cgu.org.tw/index.php/en-conferences",
+  "route_hint": "TGA 臺灣地球科學聯合學術研討會 (Taipei, May): programme/abstract search on the TGA site (tga.cgu.org.tw or similar); Chinese search '臺灣地球科學聯合學術研討會 摘要 篇數'"
+ },
+ {
+  "row": 84,
+  "conference": "Geological Society of Korea Annual Meeting / Korean Earth Science joint conference (지질과학연합 학술대회)",
+  "society": "Geological Society of Korea (대한지질학회)",
+  "country": "South Korea",
+  "subfield": "geoscience",
+  "events_per_yr": null,
+  "notes": "IMPLIED NAME — the society or group is confirmed but this meeting title was never verified. Phase 2 must resolve it to a real name or drop the row. | annual (autumn), often a joint meeting of Korean earth-science societies | BOUNDARY (may belong to another field) | Korea's national geoscience joint meeting; Korean-language sizing needed | Phase 1 source: https://www.gskorea.or.kr/",
+  "route_hint": "IMPLIED NAME — resolve first: 대한지질학회 / 지질과학연합 학술대회 (gskorea.or.kr); Korean search '지질과학연합학술대회 초록집'; society file boards (download.html?fno=) as in the KPA pattern"
+ },
+ {
+  "row": 31,
+  "conference": "GAC-MAC Joint Annual Meeting",
+  "society": "Geological Association of Canada / Mineralogical Association of Canada",
+  "country": "Canada",
+  "subfield": "geology",
+  "events_per_yr": null,
+  "notes": "annual (May) | BOUNDARY (may belong to another field) | Canada's national geoscience meeting; several hundred to ~1,000 abstracts - borderline | Phase 1 source: https://gac.ca/",
+  "route_hint": "GAC-MAC abstracts volume: 'GAC-MAC Abstracts' (Geological Association of Canada, gac.ca/publications; Crossref journal 'Geoscience Canada' is NOT it). 2024 Brandon, 2025 Ottawa — count the abstract volume"
+ },
+ {
+  "row": 101,
+  "conference": "World Aquaculture (WAS international editions, incl. Asian-Pacific Aquaculture and Aquaculture Europe)",
+  "society": "World Aquaculture Society / European Aquaculture Society",
+  "country": "international (rotating)",
+  "subfield": "aquaculture",
+  "events_per_yr": null,
+  "notes": "annual, several regional editions per year | BOUNDARY (may belong to another field) | the WAS regional meetings run large abstract books; boundary with life sciences | Phase 1 source: https://www.was.org/MeetingAbstracts/Index",
+  "route_hint": "WAS regional editions: https://www.was.org/MeetingAbstracts/Index lists every meeting's abstracts (countable per meeting); pick ONE edition as the unit (e.g. Aquaculture Europe 2025) and report events_per_yr for that series; row 100 (Aquaculture America / Triennial) is already counted — do not duplicate it"
+ },
+ {
+  "row": 67,
+  "conference": "IAEG International Congress",
+  "society": "International Association for Engineering Geology and the Environment",
+  "country": "international (rotating)",
+  "subfield": "engineering geology",
+  "events_per_yr": null,
+  "notes": "every 4 years | BOUNDARY (may belong to another field) | the quadrennial engineering-geology congress with multi-volume proceedings; boundary with engineering | Phase 1 source: https://iaeg.info/",
+  "route_hint": "IAEG XIV Congress Chengdu 2023: proceedings in Springer 'Engineering Geology for a Habitable Earth' volumes — count chapters via Crossref; boundary with engineering"
+ },
+ {
+  "row": 69,
+  "conference": "ISRM International Congress on Rock Mechanics",
+  "society": "International Society for Rock Mechanics and Rock Engineering",
+  "country": "international (rotating)",
+  "subfield": "rock mechanics",
+  "events_per_yr": null,
+  "notes": "every 4 years | BOUNDARY (may belong to another field) | the quadrennial world rock-mechanics congress; boundary with engineering | Phase 1 source: https://isrm.net/",
+  "route_hint": "ISRM 16th Congress Salzburg 2023 proceedings (OnePetro / Austrian Society) — count papers; boundary with engineering"
+ },
+ {
+  "row": 79,
+  "conference": "Congreso Colombiano de Geologia",
+  "society": "Sociedad Colombiana de Geologia",
+  "country": "Colombia",
+  "subfield": "geology",
+  "events_per_yr": null,
+  "notes": "every 2-3 years (XX edition) | BOUNDARY (may belong to another field) | Colombia's national geology congress with a published resumenes volume; size uncertain | Phase 1 source: https://sociedadcolombianadegeologia.org/resumenes/",
+  "route_hint": "https://sociedadcolombianadegeologia.org/resumenes/ — published resúmenes volume; Spanish search"
+ },
+ {
+  "row": 53,
+  "conference": "Congresso Congiunto SGI-SIMP (Geoscienze)",
+  "society": "Societa Geologica Italiana / Societa Italiana di Mineralogia e Petrologia",
+  "country": "Italy",
+  "subfield": "geoscience",
+  "events_per_yr": null,
+  "notes": "annual | BOUNDARY (may belong to another field) | Italy's joint national geoscience congress; Italian-language sizing needed | Phase 1 source: https://www.socgeol.it/",
+  "route_hint": "Congresso SGI-SIMP 'Geosciences' (Bari 2024, Potenza 2023): abstract book PDF on socgeol.it / congresso site; Italian search 'abstract book congresso SGI-SIMP'"
+ },
+ {
+  "row": 127,
+  "conference": "Congress of the Dokuchaev Soil Science Society (Съезд Общества почвоведов им. В.В. Докучаева)",
+  "society": "Dokuchaev Soil Science Society (Общество почвоведов им. В.В. Докучаева)",
+  "country": "Russia",
+  "subfield": "soil science",
+  "events_per_yr": null,
+  "notes": "every 4-5 years (IX congress) | BOUNDARY (may belong to another field) | Russia's national soil science congress with a published тезисы докладов volume; Russian-language sizing needed | Phase 1 source: https://soilsociety.ru/",
+  "route_hint": "Съезд Общества почвоведов им. Докучаева (IX 2024 Kazan?): тезисы докладов PDF on soilsociety.ru; Russian search"
+ },
+ {
+  "row": 111,
+  "conference": "Crop Science Society of Japan Meeting (日本作物学会講演会)",
+  "society": "Crop Science Society of Japan (日本作物学会)",
+  "country": "Japan",
+  "subfield": "crop science",
+  "events_per_yr": null,
+  "notes": "twice yearly (250th meeting reached by 2025) | BOUNDARY (may belong to another field) | a long-running twice-yearly meeting with abstract volumes on J-STAGE; each meeting is likely several hundred - borderline | Phase 1 source: https://www.jstage.jst.go.jp/browse/jcsproc/-char/ja",
+  "route_hint": "日本作物学会講演会 (twice yearly): abstract volumes on J-STAGE — find the journal code (browse/jcsproc?) and read the volume total string '選択された号の論文のN件中'; report the larger edition with events_per_yr=2"
+ },
+ {
+  "row": 90,
+  "conference": "Oceanographic Society of Japan Autumn Meeting (日本海洋学会秋季大会)",
+  "society": "Oceanographic Society of Japan (日本海洋学会)",
+  "country": "Japan",
+  "subfield": "oceanography",
+  "events_per_yr": null,
+  "notes": "twice yearly; the spring meeting is co-sponsored inside JpGU, the autumn meeting stands alone | BOUNDARY (may belong to another field) | Japan's national oceanography society meeting; the autumn edition is likely several hundred - borderline | Phase 1 source: https://kaiyo-gakkai.jp/jos/en/annual_meeting",
+  "route_hint": "日本海洋学会秋季大会 (autumn only; spring is inside JpGU): 講演要旨集 on kaiyo-gakkai.jp or J-STAGE; count the autumn edition; Japanese search"
+ },
+ {
+  "row": 24,
+  "conference": "SCAR Open Science Conference",
+  "society": "Scientific Committee on Antarctic Research",
+  "country": "international (rotating)",
+  "subfield": "polar science",
+  "events_per_yr": null,
+  "notes": "biennial | BOUNDARY (may belong to another field) | the main Antarctic science meeting; may fall under 900 alone, larger in joint POLAR years | Phase 1 source: https://scar.org/",
+  "route_hint": "SCAR OSC 2024 Pucón abstract book (scar2024.org); biennial; 'POLAR' joint years are larger — say which edition"
+ },
+ {
+  "row": 25,
+  "conference": "Arctic Science Summit Week (ASSW)",
+  "society": "International Arctic Science Committee (IASC)",
+  "country": "international (rotating)",
+  "subfield": "polar science",
+  "events_per_yr": null,
+  "notes": "annual | BOUNDARY (may belong to another field) | the annual Arctic science gathering; size uncertain, likely borderline | Phase 1 source: https://iasc.info/",
+  "route_hint": "ASSW 2025 Boulder / 2024 Edinburgh: programme + abstracts (assw.info); largely a business/science week — judge character"
+ },
+ {
+  "row": 27,
+  "conference": "Adaptation Futures",
+  "society": "World Adaptation Science Programme / UNEP (rotating hosts)",
+  "country": "international (rotating)",
+  "subfield": "climate adaptation",
+  "events_per_yr": null,
+  "notes": "biennial | BOUNDARY (may belong to another field) | the largest climate-adaptation conference, with an open abstract call; size uncertain | Phase 1 source: https://adaptationfutures2025.com/",
+  "route_hint": "Adaptation Futures 2025 Christchurch (Oct 2025) / 2023 Montréal: programme, abstract count; adaptationfutures2025.com"
+ },
+ {
+  "row": 29,
+  "conference": "FIG Working Week / FIG Congress",
+  "society": "International Federation of Surveyors (FIG)",
+  "country": "international (rotating)",
+  "subfield": "geodesy/surveying",
+  "events_per_yr": null,
+  "notes": "annual Working Week, quadrennial Congress | BOUNDARY (may belong to another field) | surveying and geomatics congress with contributed papers; possibly a few hundred - borderline | Phase 1 source: https://www.fig.net/",
+  "route_hint": "FIG Working Week / Congress: every paper is listed on fig.net/resources/proceedings/fig_proceedings/<year>/ — count the technical programme papers for one WW (2025 Brisbane / 2024 Accra)"
+ },
+ {
+  "row": 32,
+  "conference": "Australian Earth Sciences Convention (AESC)",
+  "society": "Geological Society of Australia",
+  "country": "Australia",
+  "subfield": "geoscience",
+  "events_per_yr": null,
+  "notes": "biennial | BOUNDARY (may belong to another field) | Australia's national earth-science convention; size uncertain | Phase 1 source: https://www.gsa.org.au/",
+  "route_hint": "AESC 2025 Adelaide / 2023 Perth: abstract volume on gsa.org.au (GSA Abstracts series)"
+ },
+ {
+  "row": 41,
+  "conference": "IWRA World Water Congress",
+  "society": "International Water Resources Association",
+  "country": "international (rotating)",
+  "subfield": "water resources",
+  "events_per_yr": null,
+  "notes": "every 3 years | BOUNDARY (may belong to another field) | the IWRA world congress with an open abstract call; size uncertain | Phase 1 source: https://iwra.org/",
+  "route_hint": "IWRA XIX World Water Congress Marrakech Dec 2025 / XVIII Beijing 2023: programme / abstracts; iwra.org"
+ },
+ {
+  "row": 57,
+  "conference": "SGA Biennial Meeting",
+  "society": "Society for Geology Applied to Mineral Deposits",
+  "country": "international (rotating)",
+  "subfield": "economic geology",
+  "events_per_yr": null,
+  "notes": "biennial | BOUNDARY (may belong to another field) | the main economic-geology meeting; likely several hundred - borderline | Phase 1 source: https://e-sga.org/",
+  "route_hint": "SGA 2025 Golden Colorado (18th Biennial) proceedings volumes (usually 2 vols, countable TOC); e-sga.org"
+ },
+ {
+  "row": 95,
+  "conference": "One Ocean Science Congress (OOSC)",
+  "society": "IFREMER/CNRS with IOC-UNESCO, Copernicus abstract system",
+  "country": "France (Nice 2025), tied to the UN Ocean Conference",
+  "subfield": "ocean science",
+  "events_per_yr": null,
+  "notes": "one-off/irregular, aligned with UN Ocean Conferences | BOUNDARY (may belong to another field) | the scientific foundation congress for the 3rd UN Ocean Conference, with a global open abstract call via Copernicus | Phase 1 source: https://one-ocean-science-2025.org/",
+  "route_hint": "Copernicus meeting: static per-abstract pages https://meetingorganizer.copernicus.org/<SLUG>/<SLUG>-<n>.html (test the <title>, not the status); slugs seen: OOS2025 (One Ocean Science Congress, Nice 2025) — static per-abstract pages; one-off/irregular cadence — record it honestly"
+ }
+]

@@ -1,0 +1,13 @@
+[
+ {
+  "row": 79,
+  "conference": "Congreso Colombiano de Geologia",
+  "tier": "OUT",
+  "abstracts": "~460 (2025, XX Congreso Colombiano de Geología, Cali 13-15 Aug — 367 oral talks counted as filled 15-minute room cells in the published agenda grid + ~90 posters (≤195 poster text blocks over 3 poster pages); upper bound 562)",
+  "events_per_yr": 0.5,
+  "rung9": false,
+  "implied": null,
+  "decision": null,
+  "move": true
+ }
+]

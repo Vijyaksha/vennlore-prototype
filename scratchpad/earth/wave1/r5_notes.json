@@ -1,0 +1,16 @@
+{
+ "5": {
+  "abstracts_numeric": 5412,
+  "abstracts": "5,412 presentations (JpGU 2025, Confit platform count: 'Presentations(5,412)' across 'Sessions(761)'; INCLUDES invited papers — JpGU marks them per item and runs a small invited share, so the contributed figure is somewhat lower and still far above 1,500)",
+  "year": 2025,
+  "rung": 5,
+  "source_url": "https://pub.confit.atlas.jp/en/event/jpgu2025/search?f=&t=presentation",
+  "confidence": "exact",
+  "tier": "VERIFIED",
+  "orchestrator_note": "RUNG 5 by the orchestrator. confit.atlas.jp redirects to the NEW public mirror pub.confit.atlas.jp, which renders without login in Playwright. The presentation search with an empty query states the platform's own total: Presentations(5,412), Sessions(761) — the artefact's stated count, same pattern as M&M's 'results found'. Items carry per-presentation invited markers (star 'Invited Papers') but no bulk facet to split them; the invited share cannot flip the verdict at this size. Supersedes the agent's rung-2 stated '~4,600' (2024 greeting page) — 2025 platform count is higher and exact. ROUTE FOR THE FIELD NOTES: pub.confit.atlas.jp/en/event/<slug>/search?f=&t=presentation states the total for ANY Confit-hosted meeting without driving the SPA."
+ },
+ "8": {
+  "tier": "VERIFIED",
+  "orchestrator_note": "INTAKE CONSISTENCY OVERRIDE (orchestrator, 2026-09-14): tier raised BORDERLINE -> VERIFIED. The figure is an ITEMISED published count (3,109 oral + 1,330 poster = 4,439, IUGG annual report 2023, exact page) — the same evidence class as CGU row 45 (2,839 oral + 1,083 poster, CGS newsletter), which this wave already carries as VERIFIED, and as the KCS per-track-table precedent (chemistry, 2026-09-12). A rounded organiser statement (JpGU-style 'over 4,600') stays BORDERLINE; an itemised report figure is a published count. FOR RUPERT'S EYE: if he prefers strict artefact-counts-only for VERIFIED, demote BOTH rows 8 and 45 together."
+ }
+}

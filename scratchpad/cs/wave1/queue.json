@@ -1,0 +1,272 @@
+[
+ {
+  "row": 68,
+  "conference": "China National Computer Congress (CNCC)",
+  "society": "China Computer Federation (CCF)",
+  "country": "CN",
+  "subfield": "general CS",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | annual | CCF flagship; 12,000+ registrations across ~150 thematic forums. Caveat for phase 2: forum talks are largely invited, so the CONTRIBUTED count may be far lower than the attendance suggests. | Phase-1 size hint (page opened, not a figure): 本届大会注册人数突破1.2万人 (registrations exceeded 12,000) — https://www.hlj.gov.cn/hlj/c107856/202510/c00_31882464.shtml | Phase 1 source: https://www.ccf.org.cn/Activities/ConferenceS/ | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 69,
+  "conference": "IPSJ National Convention (情報処理学会全国大会)",
+  "society": "Information Processing Society of Japan (IPSJ)",
+  "country": "JP",
+  "subfield": "general CS",
+  "events_per_yr": null,
+  "notes": "annual (spring) | Japan's national CS convention; the 87th (2025) edition advertises roughly 1,200 general contributed presentations plus invited events. Proceedings appear only in IPSJ's own digital library. | Phase 1 source: https://www.ipsj.or.jp/event/taikai/87/index.html | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 70,
+  "conference": "JSAI Annual Conference (人工知能学会全国大会)",
+  "society": "Japanese Society for Artificial Intelligence (JSAI)",
+  "country": "JP",
+  "subfield": "AI",
+  "events_per_yr": null,
+  "notes": "annual | Japan's national AI meeting; the 39th (2025) edition is reported at 1,186 presentations and 4,939 participants, up 25% on the previous year. Published only in JSAI's own proceedings series (pjsai on J-Stage), outside DBLP and Crossref. | Phase 1 source: https://www.ai-gakkai.or.jp/jsai2025/ | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 71,
+  "conference": "Korea Computer Congress (KCC)",
+  "society": "Korean Institute of Information Scientists and Engineers (KIISE)",
+  "country": "KR",
+  "subfield": "general CS",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | annual (summer) | KIISE's national summer congress; the 2025 proceedings run to roughly 850 Korean-language papers, close to the bar and possibly over it once posters and co-located society tracks are counted. Indexed only in DBpia/KISS. | Phase 1 source: https://www.kiise.or.kr/conference/kcc/2025/ | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 72,
+  "conference": "Annual Conference of KIPS (ACK)",
+  "society": "Korea Information Processing Society (KIPS)",
+  "country": "KR",
+  "subfield": "general CS",
+  "events_per_yr": null,
+  "notes": "semi-annual | Korea's second national CS society; large domestic-language paper volume | Phase 1 source: https://ack.kips.or.kr/notice | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 73,
+  "conference": "Congresso da Sociedade Brasileira de Computacao (CSBC)",
+  "society": "Sociedade Brasileira de Computacao (SBC)",
+  "country": "BR",
+  "subfield": "general CS",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | annual | Umbrella week co-locating ~20 SBC symposia and workshops; umbrella total plausibly clears 900 | Phase 1 source: https://sol.sbc.org.br/index.php/csbc/issue/view/1527 | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 74,
+  "conference": "IEEE Symposium Series on Computational Intelligence (SSCI)",
+  "society": "IEEE Computational Intelligence Society",
+  "country": "US/intl",
+  "subfield": "computational intelligence",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | annual | Umbrella of ~20 co-located symposia; not a single DBLP stream | Phase 1 source: https://ieee-ssci.org/ | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 75,
+  "conference": "IEEE World Congress on Computational Intelligence (WCCI)",
+  "society": "IEEE Computational Intelligence Society",
+  "country": "intl",
+  "subfield": "computational intelligence",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | biennial | Umbrella co-locating IJCNN, CEC and FUZZ-IEEE; umbrella total several thousand papers | Phase 1 source: https://cis.ieee.org/images/files/Documents/call-for-papers/SSCI/call_for_papers.pdf | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 76,
+  "conference": "International Conference on Computational Social Science (IC2S2)",
+  "society": "(independent / IC2S2 steering committee)",
+  "country": "intl",
+  "subfield": "computational social science",
+  "events_per_yr": null,
+  "notes": "annual | Abstract-only conference with no proceedings; recent editions accept on the order of a thousand contributed abstracts and posters | Phase 1 source: https://ic2s2-2025.org/submit-abstract/ | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 77,
+  "conference": "SIAM Conference on Computational Science and Engineering (CSE)",
+  "society": "Society for Industrial and Applied Mathematics (SIAM)",
+  "country": "US",
+  "subfield": "computational science",
+  "events_per_yr": null,
+  "notes": "biennial | Abstract-only minisymposium format with several thousand talks; invisible to proceedings indexes | Phase 1 source: https://www.siam.org/conferences-events/past-event-archive/cse25/program/ | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 78,
+  "conference": "Conference on Complex Systems (CCS)",
+  "society": "Complex Systems Society",
+  "country": "intl",
+  "subfield": "complex systems / network science",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | annual | Abstract-only; ~1,000 contributed talks and posters per edition | Phase 1 source: https://ccs25.cssociety.org/programme/ | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 79,
+  "conference": "NetSci — International School and Conference on Network Science",
+  "society": "Network Science Society",
+  "country": "intl",
+  "subfield": "network science",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | annual | Abstract-only contributed talk and poster programme | Phase 1 source: https://netsci2025.github.io/ | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 80,
+  "conference": "Conferencia Latinoamericana de Informatica (CLEI)",
+  "society": "Centro Latinoamericano de Estudios en Informatica (CLEI)",
+  "country": "LATAM",
+  "subfield": "general CS",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | annual | Latin American umbrella congress co-locating several symposia plus a national host congress | Phase 1 source: https://www.ifip.org/country-representative-members/ | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 81,
+  "conference": "Congreso Espanol de Informatica (CEDI)",
+  "society": "Sociedad Cientifica Informatica de Espana (SCIE)",
+  "country": "ES",
+  "subfield": "general CS",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | every 4 years (2024 A Coruna); component jornadas run annually in between | Spain's quadrennial umbrella multi-congress co-locating ~15 national jornadas; reported to draw over a thousand professionals. Component jornadas are individually small, so the umbrella total is the only way it clears the bar. | Phase 1 source: https://www.scie.es/actividades/cedi/ | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 82,
+  "conference": "CSI Annual Convention",
+  "society": "Computer Society of India (CSI)",
+  "country": "IN",
+  "subfield": "general CS",
+  "events_per_yr": null,
+  "notes": "IMPLIED NAME — the society or group is confirmed but this meeting title was never verified. Phase 2 must resolve it to a real name or drop the row. | BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | annual | India's IFIP country-representative society; no 2025 convention programme found in English, size entirely unverified. Listed as an honest placeholder for phase 2. | Phase 1 source: https://csiindia.org/ | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 83,
+  "conference": "Jornadas Argentinas de Informatica (JAIIO)",
+  "society": "Sociedad Argentina de Informatica (SADIO)",
+  "country": "AR",
+  "subfield": "general CS",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | annual | Umbrella of ~15 co-located symposia | Phase 1 source: https://www.ifip.org/country-representative-members/ | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 84,
+  "conference": "HPC China (全国高性能计算学术年会)",
+  "society": "China Computer Federation (CCF) HPC TC",
+  "country": "CN",
+  "subfield": "high-performance computing",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | annual | CCF national HPC congress, thousands of attendees | Phase 1 source: https://www.ccf.org.cn/Media_list/ccf/2025-11-21/853354.shtml | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 85,
+  "conference": "ChinaSoft (中国软件大会)",
+  "society": "China Computer Federation (CCF)",
+  "country": "CN",
+  "subfield": "software engineering",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | annual | CCF national software congress; umbrella of many forums | Phase 1 source: https://www.ccf.org.cn/Media_list/ccf/2025-11-21/853354.shtml | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 86,
+  "conference": "China Conference on Artificial Intelligence (CCAI, 中国人工智能大会)",
+  "society": "Chinese Association for Artificial Intelligence (CAAI)",
+  "country": "CN",
+  "subfield": "AI",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | annual | CAAI's flagship national AI congress | Phase 1 source: https://ccai.caai.cn/ | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 87,
+  "conference": "IFIP World Computer Congress (WCC)",
+  "society": "International Federation for Information Processing (IFIP)",
+  "country": "intl",
+  "subfield": "general CS",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | biennial/irregular | Federation-wide umbrella co-locating many IFIP TC conferences | Phase 1 source: https://www.ifip.org/country-representative-members/ | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 88,
+  "conference": "Conference on Language Modeling (COLM)",
+  "society": "(independent, OpenReview-hosted)",
+  "country": "intl",
+  "subfield": "NLP / ML",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | annual | OpenReview-only venue outside DBLP's proceedings model; acceptance counts in the high hundreds and rising | Phase 1 source: https://openreview.net/group?id=colmweb.org%2FCOLM%2F2025%2FConference | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 89,
+  "conference": "FOSDEM",
+  "society": "FOSDEM / open-source community",
+  "country": "BE",
+  "subfield": "systems / open source",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | annual | ~900 CFP-selected contributed talks across main tracks and devrooms; no proceedings | Phase 1 source: https://fosdem.org/ | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 90,
+  "conference": "Grace Hopper Celebration (GHC)",
+  "society": "AnitaB.org",
+  "country": "US",
+  "subfield": "general CS",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | annual | 20,000+ attendees with a large CFP-selected session and ACM Student Research Competition poster programme | Phase 1 source: https://ghc.anitab.org/ | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 91,
+  "conference": "RSA Conference",
+  "society": "RSA Conference LLC",
+  "country": "US",
+  "subfield": "security",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | annual | ~600 CFP-selected contributed sessions; industry venue with no proceedings | Phase 1 source: https://www.rsaconference.com/ | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 92,
+  "conference": "ACM Federated Computing Research Conference (FCRC)",
+  "society": "Association for Computing Machinery (ACM)",
+  "country": "US",
+  "subfield": "general CS (umbrella)",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | every ~4 years (1993-2023) | Week-long umbrella co-locating ~10 affiliated ACM conferences (STOC, ISCA, PLDI, SIGMETRICS, EC and others) plus workshops; the umbrella total plausibly clears 900 even though every track is separately in DBLP. Flagged because counting it risks double-counting those tracks. | Phase 1 source: https://en.wikipedia.org/wiki/Federated_Computing_Research_Conference | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 93,
+  "conference": "Federated Logic Conference (FLoC)",
+  "society": "FLoC steering committee / participating societies",
+  "country": "intl",
+  "subfield": "logic and theory (umbrella)",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | every ~4 years | Umbrella co-locating roughly a dozen logic-in-CS conferences and many workshops; no single DBLP proceedings container for the umbrella. | Phase 1 source: https://en.wikipedia.org/wiki/ETAPS_International_Joint_Conferences_on_Theory_and_Practice_of_Software | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 94,
+  "conference": "NVIDIA GTC (GPU Technology Conference)",
+  "society": "NVIDIA",
+  "country": "US",
+  "subfield": "AI / accelerated computing",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | annual (plus regional editions) | Industry venue with an open call for sessions; the 2025 San Jose edition ran 700+ conference sessions, and the brand also runs DC and regional editions. No proceedings, so invisible to every index. | Phase-1 size hint (page opened, not a figure): over 700 sessions covering topics from physical AI and AI factories to agentic AI and inference — https://www.nvidia.com/gtc/sessions/gtc-recommended/ | Phase 1 source: https://www.nvidia.com/gtc/sessions/gtc-recommended/ | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 95,
+  "conference": "Annual Meeting of the Association for Natural Language Processing (言語処理学会年次大会, NLP)",
+  "society": "Association for Natural Language Processing (ANLP, Japan)",
+  "country": "JP",
+  "subfield": "NLP",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | annual (March) | Japan's national NLP meeting; 777 presentations and 2,248 participants in 2025, up from 559 the year before, so the next edition plausibly crosses 900. Proceedings published only on ANLP's own site, outside DBLP and Crossref. | Phase 1 source: https://anlp.jp/nlp2025/ | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 96,
+  "conference": "China Conference on Image and Graphics (CCIG, 中国图象图形大会)",
+  "society": "China Society of Image and Graphics (CSIG)",
+  "country": "CN",
+  "subfield": "vision / graphics",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | annual | CSIG's flagship national congress; 4,000+ attendees across 45 forums in 2025. Contributed-paper share unclear, which is why it is flagged. | Phase-1 size hint (page opened, not a figure): 大会设置45场学术论坛…参会人数超4000人 — https://ccig.csig.org.cn/2025/ | Phase 1 source: https://ccig.csig.org.cn/2025/ | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 97,
+  "conference": "INFORMS Annual Meeting",
+  "society": "Institute for Operations Research and the Management Sciences (INFORMS)",
+  "country": "US",
+  "subfield": "operations research / analytics (CS-adjacent)",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | annual | Abstract-only meeting with several thousand contributed talks and no proceedings, so invisible to DBLP and Crossref. SCOPE FLAG: operations research and analytics rather than core CS; phase 2 or the orchestrator should decide whether it belongs to this field at all. | Phase 1 source: https://en.wikipedia.org/wiki/List_of_computer_science_conferences | Phase 1 second pass, loaded 2026-09-14"
+ }
+]

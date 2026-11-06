@@ -1,0 +1,30 @@
+{
+ "136": {
+  "orchestrator_note": "ORCHESTRATOR (2026-09-15): events_per_yr set to 0 by override — two Turkish-language searches found no edition after the 25th congress (2016) and the 2016 abstract system is an empty shell; the row stays BORDERLINE/UNKNOWN per rule 1 but contributes 0 ev/yr until an edition after 2016 is found (same treatment as the unresolved row 162 in wave 1). If a current edition surfaces, restore 1/yr."
+ },
+ "78": {
+  "orchestrator_note": "ORCHESTRATOR (2026-09-15): researcher found no society-wide BPS Annual Conference after January 2023 (section conferences continue); events_per_yr 0 as returned. Likely DISCONTINUED — for Rupert: if confirmed, delete on non-existence rather than size."
+ },
+ "84": {
+  "abstracts_numeric": 1087,
+  "abstracts": "1,087 oral + 5 poster contributions (2025, AESOP Annual Congress Istanbul 7-11 July — Indico export, 1,095 contributions of which ~8 are keynote/roundtable items)",
+  "year": 2025,
+  "rung": 5,
+  "source_url": "https://congress.aesop-planning.eu/export/event/1.json?detail=contributions",
+  "confidence": "exact",
+  "tier": "BORDERLINE",
+  "orchestrator_note": "RUNG 5 by the orchestrator (2026-09-15): congress.aesop-planning.eu is Cloudflare-walled to curl/WebFetch but a scripted Chrome cleared it; the Indico export API then returned the whole event (5.5 MB JSON): 1,095 contributions — type Oral 1,087, Poster 5, untyped 3 — in 87 sessions across 69 tracks; ~8 titles are keynotes/roundtables (inside the 1,087). Exact platform count, same evidence class as EPS-HEP's Indico export in the methodology. 1,087 sits in the 800–1,499 band: BORDERLINE. Annual (1)."
+ },
+ "27": {
+  "orchestrator_note": "RUNG 5 attempted by the orchestrator (2026-09-15): cswe2025.eventscribe.net rendered in a scripted Chrome — the Full Schedule (all=1) lists 858 programme items (PresentationIDs) but the list markup carries no session-type label (only title, time, CE badge), and it includes non-session entries (respite spaces, nursing rooms, meetings). Splitting papers/posters from business items needs the per-item PresentationInfo.asp detail (858 calls) or the eventScribe type filters — not run tonight. Stays BORDERLINE (858 items is an upper bound on contributed sessions, not a count). Next action: iterate ajaxcalls/PresentationInfo.asp?PresentationID=<id> in the browser session and classify by type."
+ },
+ "133": {
+  "orchestrator_note": "BULK COUNT attempted by the orchestrator (2026-09-15): the X-CD detail proxy (/nwsa/proxy.cfm?public_program_details=1, POST with the page's data-* attributes) returns 'No data available' even from inside the browser session for the sessions sampled — the nested paper lists are not served to guests at this stage. 477 sessions by type stand (136 Paper, 101 Panel, 97 Roundtable, 88 Workshop, 37 Interactive…). Stays BORDERLINE; next action: retry after the programme is finalised, or count the printed program PDF when NWSA posts it."
+ },
+ "126": {
+  "orchestrator_note": "RUNG 5 attempted by the orchestrator (2026-09-15): asianstudies.org's Cloudflare wall blocks the 2026 programme PDF even for a scripted Chrome (challenge never clears; in-page fetch 403). Stays BORDERLINE. Next action: interactive browser download of AAS-2026-Annual-Conference-Program-PDF-Reduced-Size-2.pdf, then count papers inside panels."
+ },
+ "35": {
+  "orchestrator_note": "RUNG 5 not completed by the orchestrator (2026-09-15): naeyc2025.eventscribe.net answered 404 on agenda.asp (the 2025 instance may be retired); further browser probing was stopped at Rupert's request. Stays BORDERLINE. Next action: locate the live eventScribe instance (naeyc2026?) and count contributed sessions by type; practitioner convention — character decides."
+ }
+}

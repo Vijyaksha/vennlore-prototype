@@ -1,0 +1,222 @@
+[
+ {
+  "row": 44,
+  "conference": "ACS Midwest Regional Meeting (MWRM)",
+  "society": "American Chemical Society",
+  "country": "US",
+  "notes": "annual | ACS regional meeting | Phase 1 source: https://web.cvent.com/event/d2645e5c-9aca-4467-918a-5b4af40f6a33/summary",
+  "done": false,
+  "tier": "NOT YET CENSUSED",
+  "prio": null,
+  "score": 6
+ },
+ {
+  "row": 66,
+  "conference": "Pittcon (Pittsburgh Conference on Analytical Chemistry and Applied Spectroscopy)",
+  "society": "Pittsburgh Conference (SACP + SSP)",
+  "country": "US",
+  "notes": "annual; ~20,000 attendees at peak | North America's largest laboratory analysis conference and expo | Phase 1 source: https://pittcon.org/",
+  "done": false,
+  "tier": "NOT YET CENSUSED",
+  "prio": null,
+  "score": 6
+ },
+ {
+  "row": 107,
+  "conference": "International Symposium on Chromatography (ISC)",
+  "society": "EuChemS Division of Analytical Chemistry / national hosts",
+  "country": "Europe/international",
+  "notes": "biennial; 35th in 2026 Prague; series since 1956 | oldest international separation science congress | Phase 1 source: https://www.isc2026.org/",
+  "done": false,
+  "tier": "NOT YET CENSUSED",
+  "prio": null,
+  "score": 6
+ },
+ {
+  "row": 143,
+  "conference": "OMCOS - International Symposium on Organometallic Chemistry Directed Toward Organic Synthesis",
+  "society": "IUPAC",
+  "country": "international",
+  "notes": "biennial; OMCOS 22 | major IUPAC organometallic-synthesis series | Phase 1 source: https://publications.iupac.org/pac/conferences/family/OMCOS/index.html",
+  "done": false,
+  "tier": "NOT YET CENSUSED",
+  "prio": null,
+  "score": 6
+ },
+ {
+  "row": 181,
+  "conference": "International Symposium on Ionic Polymerization (IP)",
+  "society": "IUPAC Polymer Division",
+  "country": "international",
+  "notes": "biennial; 16th 2026 Kolkata | specialised polymerisation symposium series | Phase 1 source: https://iupac.org/events/category/international-conference/",
+  "done": false,
+  "tier": "NOT YET CENSUSED",
+  "prio": null,
+  "score": 6
+ },
+ {
+  "row": 78,
+  "conference": "EuChemS European Conference on Research in Chemical Education (ECRICE)",
+  "society": "EuChemS Division of Chemical Education",
+  "country": "Europe",
+  "notes": "biennial; 17th in 2026, joint with ICCE | European mirror of ICCE | Phase 1 source: https://iccecrice2026.org/",
+  "done": false,
+  "tier": "NOT YET CENSUSED",
+  "prio": null,
+  "score": 5
+ },
+ {
+  "row": 156,
+  "conference": "EUROFOODCHEM",
+  "society": "EuChemS Division of Food Chemistry",
+  "country": "Europe",
+  "notes": "biennial; XXIV in Parma 2024 | European food chemistry congress | Phase 1 source: https://www.euchems.eu/divisions/food-chemistry/conferences/",
+  "done": false,
+  "tier": "NOT YET CENSUSED",
+  "prio": null,
+  "score": 5
+ },
+ {
+  "row": 32,
+  "conference": "EFMC-ISMC — International Symposium on Medicinal Chemistry",
+  "society": "EFMC",
+  "country": "Europe",
+  "notes": "biennial | medicinal chemistry flagship",
+  "done": false,
+  "tier": "NOT YET CENSUSED",
+  "prio": null,
+  "score": 4
+ },
+ {
+  "row": 61,
+  "conference": "CRSI National Symposium in Chemistry (NSC)",
+  "society": "Chemical Research Society of India",
+  "country": "India",
+  "notes": "twice yearly | major Indian national chemistry symposium series | Phase 1 source: https://facs.website/facs-member-societies/",
+  "done": false,
+  "tier": "NOT YET CENSUSED",
+  "prio": null,
+  "score": 4
+ },
+ {
+  "row": 108,
+  "conference": "HPLC - International Symposium on High Performance Liquid Phase Separations and Related Techniques",
+  "society": "independent permanent scientific committee",
+  "country": "international (rotating Europe/US/Asia)",
+  "notes": "annual, rotating continents | flagship LC separations symposium series | Phase 1 source: https://hplc.eu/events.htm",
+  "done": false,
+  "tier": "NOT YET CENSUSED",
+  "prio": null,
+  "score": 4
+ },
+ {
+  "row": 121,
+  "conference": "ICQC - International Congress of Quantum Chemistry",
+  "society": "International Academy of Quantum Molecular Science",
+  "country": "international",
+  "notes": "triennial since 1973; 18th 2026 Berkeley | principal quantum chemistry congress | Phase 1 source: https://www.iaqms.org/congress.php",
+  "done": false,
+  "tier": "NOT YET CENSUSED",
+  "prio": null,
+  "score": 4
+ },
+ {
+  "row": 130,
+  "conference": "EAS - Eastern Analytical Symposium and Exposition",
+  "society": "Eastern Analytical Symposium",
+  "country": "US",
+  "notes": "annual, November, Princeton NJ; 2000+ attendees | large regional analytical chemistry symposium | Phase 1 source: https://en.wikipedia.org/wiki/Eastern_Analytical_Symposium",
+  "done": false,
+  "tier": "NOT YET CENSUSED",
+  "prio": null,
+  "score": 4
+ },
+ {
+  "row": 152,
+  "conference": "ICMAT - International Conference on Materials for Advanced Technologies",
+  "society": "Materials Research Society of Singapore",
+  "country": "Singapore/Asia",
+  "notes": "biennial | major Asian materials congress | Phase 1 source: https://www.mrs.org.sg/icmat/",
+  "done": false,
+  "tier": "NOT YET CENSUSED",
+  "prio": null,
+  "score": 4
+ },
+ {
+  "row": 161,
+  "conference": "ICBS Annual Conference",
+  "society": "International Chemical Biology Society",
+  "country": "international",
+  "notes": "annual since 2011; 15th ICBS2026 | world chemical biology society meeting | Phase 1 source: https://www.chemical-biology.org/",
+  "done": false,
+  "tier": "NOT YET CENSUSED",
+  "prio": null,
+  "score": 4
+ },
+ {
+  "row": 168,
+  "conference": "ISFC - International Symposium on Fluorine Chemistry",
+  "society": "international steering committee",
+  "country": "international",
+  "notes": "every three years since 1959; 25th in 2027 | world fluorine chemistry symposium | Phase 1 source: https://en.wikipedia.org/wiki/International_Symposium_on_Fluorine_Chemistry",
+  "done": false,
+  "tier": "NOT YET CENSUSED",
+  "prio": null,
+  "score": 4
+ },
+ {
+  "row": 183,
+  "conference": "International Conference on Retinal Proteins",
+  "society": "independent",
+  "country": "international",
+  "notes": "biennial; 21st 2026 Siena | specialised photobiology chemistry series | Phase 1 source: https://iupac.org/events/category/international-conference/",
+  "done": false,
+  "tier": "NOT YET CENSUSED",
+  "prio": null,
+  "score": 4
+ },
+ {
+  "row": 194,
+  "conference": "CPHI Worldwide",
+  "society": "Informa Markets",
+  "country": "Europe/international",
+  "notes": "annual, rotating European cities; tens of thousands of attendees | largest pharma ingredient industry event where process chemists meet | Phase 1 source: https://www.cphi.com/",
+  "done": false,
+  "tier": "NOT YET CENSUSED",
+  "prio": null,
+  "score": 4
+ },
+ {
+  "row": 206,
+  "conference": "Hazards (IChemE Process Safety Conference)",
+  "society": "IChemE",
+  "country": "UK",
+  "notes": "annual; Hazards 36 in 2026 | long-running IChemE technical conference series | Phase 1 source: https://efce.info/events_overview.html",
+  "done": false,
+  "tier": "NOT YET CENSUSED",
+  "prio": null,
+  "score": 4
+ },
+ {
+  "row": 227,
+  "conference": "The Protein Society Annual Symposium",
+  "society": "The Protein Society",
+  "country": "US",
+  "notes": "annual; PS40 July 2026 Boston | biochemistry boundary, 40 editions | Phase 1 source: https://www.proteinsociety.org/annual-symposium",
+  "done": false,
+  "tier": "NOT YET CENSUSED",
+  "prio": null,
+  "score": 4
+ },
+ {
+  "row": 240,
+  "conference": "European Detergents Conference (Jahrestagung der Fachgruppe Chemie des Waschens)",
+  "society": "GDCh Fachgruppe Chemie des Waschens",
+  "country": "Europe/Germany",
+  "notes": "annual; 2026 Berlin | detergents gap — industrial chemistry | Phase 1 source: https://www.gdch.de/veranstaltungen/tagungen/gdch-tagungen-2026.html",
+  "done": false,
+  "tier": "NOT YET CENSUSED",
+  "prio": null,
+  "score": 4
+ }
+]

@@ -1,0 +1,33 @@
+[
+ {
+  "row": 91,
+  "conference": "International Agronomy Congress (IAC)",
+  "outcome": "NEEDS_RUNG_5",
+  "abstracts_numeric": null,
+  "abstracts": "UNKNOWN — the three Extended Summaries volumes for the 6th congress exist and are named, but sit on OneDrive share links that curl cannot open",
+  "year": 2025,
+  "rung": null,
+  "source_url": "https://isa-india.in/iac-publications/",
+  "spot_checks": [],
+  "searches_used": 0,
+  "events_per_yr": 0.25,
+  "cadence_evidence": "Roughly four to five years, from the society's own post history: 'Fourth International Agronomy Congress 2016' (posted 22 November 2016), the Fifth congress 23-27 November 2021 (first and second circulars posted January and October 2021), and 'Sixth International Agronomy Congress: At A Glance' posted 27 November 2025 — https://isa-india.in/wp-json/wp/v2/posts?search=Agronomy%20Congress.",
+  "attendance_numeric": null,
+  "attendance_year": null,
+  "attendance_basis": null,
+  "attendance_rung": null,
+  "attendance_source_url": null,
+  "alt_figures": [],
+  "character": "India's flagship international agronomy congress, run by the Indian Society of Agronomy from the National Agricultural Science Complex, New Delhi; the 6th congress was held in November 2025.",
+  "character_evidence": "https://isa-india.in/sixth-international-agronomy-congress-at-a-glance/ (posted 27 November 2025) and the society's publications page listing the congress volumes.",
+  "programme_type": "contributed extended-summary congress; the society publishes the accepted contributions as multi-volume Extended Summaries plus a special issue of the Indian Journal of Agronomy",
+  "programme_evidence": "The 5th congress (2021) published four 'Extended Summaries' volumes plus two IJA special issues, a Lead Paper issue and a souvenir; the 6th (2025) publishes three 'Summaries' volumes plus an IJA Special Issue 2025 and a souvenir (https://isa-india.in/iac-publications/ and https://isa-india.in/fifth-iac-publications/).",
+  "direct_abstracts": null,
+  "ratio": null,
+  "ratio_rationale": null,
+  "duplicate_of": null,
+  "method": "Zero searches. The route hint's hosts are dead — iac.isa-india.in is NXDOMAIN and indianagronomy.org does not resolve — but the society itself is live at https://isa-india.in/ (WordPress, unwalled, REST API open). Its publications page https://isa-india.in/iac-publications/ names the 6th congress's artefacts exactly: 'Summaries-Vol. 1 (1).pdf', 'Summaries-Vol. 2 (1).pdf', 'Summaries-Vol. 3 (2).pdf', 'Souvenir Final 2.pdf', 'Indian Journal of Agronomy Special Issue 2025.pdf'. THE WALL, and it is a new one for the field notes: the society hosts nothing itself — every volume is a OneDrive share link on 1drv.ms. curl cannot fetch these. The documented API transform (base64url the share URL into https://api.onedrive.com/v1.0/shares/u!<b64>/root/content) returns HTTP 401 with {\"error\":{\"code\":\"unauthenticated\"}}, and appending ?download=1 to the 1drv.ms link 302s to login.live.com. A browser opens an anonymous OneDrive share without signing in, so this is a genuine rung-5 job, not a credential wall. I also tried the previous edition as a fallback and it is worse: the 5th congress (2021) published four Extended Summaries volumes on Google Drive (ids 1oJvSb1WEoSQPjze6jhr79xB56jKxO5ar, 1PztGVWHGQxbGzpRJEn2Sje7n0VTCOSdA, 1KC950mcPinNSRRa6tfbTLse4Vfe2pa1t, 1ToE9k4C9ceG07bW121MPwTDp85XssoFV), and all four now return HTTP 404 from both drive.usercontent.google.com/download and drive.google.com/file/d/<id>/view — the files have been deleted. RUNG-5 TARGETS, in order, all from https://isa-india.in/iac-publications/ : (1) https://1drv.ms/b/c/dc3b535d5cddee60/IQB0ojr153HNSZPW7NDFUswwAczvgm1iX_Z_zmsbafrHkoY (Summaries Vol. 1), (2) https://1drv.ms/b/c/dc3b535d5cddee60/IQDHFGXTzqCyQo5aaD6Okg73AUJcUVmwndWrxbQYwNXy6tU (Vol. 2), (3) https://1drv.ms/b/c/dc3b535d5cddee60/IQB7XuzWcYdxR5s7g17yFS3xAZOdGpEbepmKp_wIy0i7JIU (Vol. 3). Counting plan once downloaded: the volumes are extended-summary books, so count numbered summary entries per volume and sum the three; cross-check against the contents pages' dot leaders and exclude any lead/invited papers, which this society publishes in a SEPARATE 'Lead Paper issue' volume and so should not appear inside the Summaries. Searched in English only; the Indian Society of Agronomy publishes in English (local-language search not required).",
+  "verdict": "NEEDS_RUNG_5",
+  "confidence": "floor"
+ }
+]

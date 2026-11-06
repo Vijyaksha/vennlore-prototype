@@ -1,0 +1,4010 @@
+[
+ {
+  "score": 9,
+  "a": 442,
+  "b": 534,
+  "an": "SCEJ Annual Meeting (化学工学会年会)",
+  "bn": "化学工学会年会 (SCEJ Annual Meeting)",
+  "why": "acronym SCEJ; same CJK name; words 1.00"
+ },
+ {
+  "score": 9,
+  "a": 443,
+  "b": 535,
+  "an": "SCEJ Autumn Meeting (化学工学会秋季大会)",
+  "bn": "化学工学会秋季大会 (SCEJ Autumn Meeting)",
+  "why": "acronym SCEJ; same CJK name; words 1.00"
+ },
+ {
+  "score": 9,
+  "a": 445,
+  "b": 520,
+  "an": "SPSJ Annual Meeting (高分子学会年次大会)",
+  "bn": "高分子学会年次大会 (SPSJ Annual Meeting)",
+  "why": "acronym SPSJ; same CJK name; words 1.00"
+ },
+ {
+  "score": 9,
+  "a": 447,
+  "b": 518,
+  "an": "JSAC Annual Meeting (日本分析化学会年会)",
+  "bn": "日本分析化学会年会 (JSAC Annual Meeting)",
+  "why": "acronym JSAC; same CJK name; words 1.00"
+ },
+ {
+  "score": 9,
+  "a": 452,
+  "b": 589,
+  "an": "CIESC Annual Meeting (中国化工学会年会)",
+  "bn": "中国化工学会年会 (CIESC Annual Meeting)",
+  "why": "acronym CIESC; same CJK name; words 1.00"
+ },
+ {
+  "score": 7,
+  "a": 372,
+  "b": 566,
+  "an": "CSJ Annual Meeting (日本化学会春季年会)",
+  "bn": "日本化学会春季年会 (CSJ Spring Annual Meeting)",
+  "why": "acronym CSJ; same CJK name; words 0.50"
+ },
+ {
+  "score": 7,
+  "a": 448,
+  "b": 516,
+  "an": "Catalysis Society of Japan Annual Meeting (触媒討論会)",
+  "bn": "触媒討論会 (Catalysis Society of Japan Meeting)",
+  "why": "same CJK name; words 1.00"
+ },
+ {
+  "score": 7,
+  "a": 792,
+  "b": 793,
+  "an": "대한화학회 물리화학분과회 학술발표회 (KCS Physical Chemistry Division Symposium)",
+  "bn": "대한화학회 유기화학분과회 학술발표회 (KCS Organic Chemistry Division Symposium)",
+  "why": "acronym KCS; same CJK name; words 0.50"
+ },
+ {
+  "score": 7,
+  "a": 792,
+  "b": 794,
+  "an": "대한화학회 물리화학분과회 학술발표회 (KCS Physical Chemistry Division Symposium)",
+  "bn": "대한화학회 무기화학분과회 학술발표회 (KCS Inorganic Chemistry Division Symposium)",
+  "why": "acronym KCS; same CJK name; words 0.50"
+ },
+ {
+  "score": 7,
+  "a": 792,
+  "b": 795,
+  "an": "대한화학회 물리화학분과회 학술발표회 (KCS Physical Chemistry Division Symposium)",
+  "bn": "대한화학회 분석화학분과회 학술발표회 (KCS Analytical Chemistry Division Symposium)",
+  "why": "acronym KCS; same CJK name; words 0.50"
+ },
+ {
+  "score": 7,
+  "a": 792,
+  "b": 796,
+  "an": "대한화학회 물리화학분과회 학술발표회 (KCS Physical Chemistry Division Symposium)",
+  "bn": "대한화학회 의약화학분과회 학술발표회 (KCS Medicinal Chemistry Division Symposium)",
+  "why": "acronym KCS; same CJK name; words 0.50"
+ },
+ {
+  "score": 7,
+  "a": 792,
+  "b": 797,
+  "an": "대한화학회 물리화학분과회 학술발표회 (KCS Physical Chemistry Division Symposium)",
+  "bn": "대한화학회 화학교육분과회 학술발표회 (KCS Chemical Education Division Symposium)",
+  "why": "acronym KCS; same CJK name; words 0.50"
+ },
+ {
+  "score": 7,
+  "a": 793,
+  "b": 794,
+  "an": "대한화학회 유기화학분과회 학술발표회 (KCS Organic Chemistry Division Symposium)",
+  "bn": "대한화학회 무기화학분과회 학술발표회 (KCS Inorganic Chemistry Division Symposium)",
+  "why": "acronym KCS; same CJK name; words 0.50"
+ },
+ {
+  "score": 7,
+  "a": 793,
+  "b": 795,
+  "an": "대한화학회 유기화학분과회 학술발표회 (KCS Organic Chemistry Division Symposium)",
+  "bn": "대한화학회 분석화학분과회 학술발표회 (KCS Analytical Chemistry Division Symposium)",
+  "why": "acronym KCS; same CJK name; words 0.50"
+ },
+ {
+  "score": 7,
+  "a": 793,
+  "b": 796,
+  "an": "대한화학회 유기화학분과회 학술발표회 (KCS Organic Chemistry Division Symposium)",
+  "bn": "대한화학회 의약화학분과회 학술발표회 (KCS Medicinal Chemistry Division Symposium)",
+  "why": "acronym KCS; same CJK name; words 0.50"
+ },
+ {
+  "score": 7,
+  "a": 793,
+  "b": 797,
+  "an": "대한화학회 유기화학분과회 학술발표회 (KCS Organic Chemistry Division Symposium)",
+  "bn": "대한화학회 화학교육분과회 학술발표회 (KCS Chemical Education Division Symposium)",
+  "why": "acronym KCS; same CJK name; words 0.50"
+ },
+ {
+  "score": 7,
+  "a": 794,
+  "b": 795,
+  "an": "대한화학회 무기화학분과회 학술발표회 (KCS Inorganic Chemistry Division Symposium)",
+  "bn": "대한화학회 분석화학분과회 학술발표회 (KCS Analytical Chemistry Division Symposium)",
+  "why": "acronym KCS; same CJK name; words 0.50"
+ },
+ {
+  "score": 7,
+  "a": 794,
+  "b": 796,
+  "an": "대한화학회 무기화학분과회 학술발표회 (KCS Inorganic Chemistry Division Symposium)",
+  "bn": "대한화학회 의약화학분과회 학술발표회 (KCS Medicinal Chemistry Division Symposium)",
+  "why": "acronym KCS; same CJK name; words 0.50"
+ },
+ {
+  "score": 7,
+  "a": 794,
+  "b": 797,
+  "an": "대한화학회 무기화학분과회 학술발표회 (KCS Inorganic Chemistry Division Symposium)",
+  "bn": "대한화학회 화학교육분과회 학술발표회 (KCS Chemical Education Division Symposium)",
+  "why": "acronym KCS; same CJK name; words 0.50"
+ },
+ {
+  "score": 7,
+  "a": 795,
+  "b": 796,
+  "an": "대한화학회 분석화학분과회 학술발표회 (KCS Analytical Chemistry Division Symposium)",
+  "bn": "대한화학회 의약화학분과회 학술발표회 (KCS Medicinal Chemistry Division Symposium)",
+  "why": "acronym KCS; same CJK name; words 0.50"
+ },
+ {
+  "score": 7,
+  "a": 795,
+  "b": 797,
+  "an": "대한화학회 분석화학분과회 학술발표회 (KCS Analytical Chemistry Division Symposium)",
+  "bn": "대한화학회 화학교육분과회 학술발표회 (KCS Chemical Education Division Symposium)",
+  "why": "acronym KCS; same CJK name; words 0.50"
+ },
+ {
+  "score": 7,
+  "a": 796,
+  "b": 797,
+  "an": "대한화학회 의약화학분과회 학술발표회 (KCS Medicinal Chemistry Division Symposium)",
+  "bn": "대한화학회 화학교육분과회 학술발표회 (KCS Chemical Education Division Symposium)",
+  "why": "acronym KCS; same CJK name; words 0.50"
+ },
+ {
+  "score": 6,
+  "a": 13,
+  "b": 50,
+  "an": "RSC Faraday Discussions",
+  "bn": "Faraday Discussions (RSC conference series)",
+  "why": "acronym RSC; words 1.00"
+ },
+ {
+  "score": 6,
+  "a": 15,
+  "b": 67,
+  "an": "AIChE Spring Meeting & Global Congress on Process Safety",
+  "bn": "AIChE Spring Meeting and Global Congress on Process Safety",
+  "why": "acronym AIChE; words 1.00"
+ },
+ {
+  "score": 6,
+  "a": 16,
+  "b": 55,
+  "an": "ECCE — European Congress of Chemical Engineering",
+  "bn": "European Congress of Chemical Engineering (ECCE)",
+  "why": "acronym ECCE; words 1.00"
+ },
+ {
+  "score": 6,
+  "a": 17,
+  "b": 57,
+  "an": "WCCE — World Congress of Chemical Engineering",
+  "bn": "World Congress of Chemical Engineering (WCCE)",
+  "why": "acronym WCCE; words 1.00"
+ },
+ {
+  "score": 6,
+  "a": 21,
+  "b": 107,
+  "an": "ISC — International Symposium on Chromatography",
+  "bn": "International Symposium on Chromatography (ISC)",
+  "why": "acronym ISC; words 1.00"
+ },
+ {
+  "score": 6,
+  "a": 23,
+  "b": 88,
+  "an": "ICCC — International Conference on Coordination Chemistry",
+  "bn": "International Conference on Coordination Chemistry (ICCC)",
+  "why": "acronym ICCC; words 1.00"
+ },
+ {
+  "score": 6,
+  "a": 26,
+  "b": 82,
+  "an": "ICC — International Congress on Catalysis",
+  "bn": "International Congress on Catalysis (ICC)",
+  "why": "acronym ICC; words 1.00"
+ },
+ {
+  "score": 6,
+  "a": 28,
+  "b": 440,
+  "an": "NAM — North American Catalysis Society Meeting",
+  "bn": "North American Catalysis Society Meeting (NAM)",
+  "why": "acronym NAM; words 1.00"
+ },
+ {
+  "score": 6,
+  "a": 32,
+  "b": 123,
+  "an": "EFMC-ISMC — International Symposium on Medicinal Chemistry",
+  "bn": "EFMC Medicinal Chemistry / EFMC-ISMC International Symposium on Medicinal Chemistry",
+  "why": "acronym EFMC-ISMC; words 1.00"
+ },
+ {
+  "score": 6,
+  "a": 33,
+  "b": 127,
+  "an": "ACS Green Chemistry & Engineering Conference",
+  "bn": "ACS Green Chemistry & Engineering Conference (GC&E)",
+  "why": "acronym ACS; words 1.00"
+ },
+ {
+  "score": 6,
+  "a": 61,
+  "b": 101,
+  "an": "CRSI National Symposium in Chemistry (NSC)",
+  "bn": "CRSI National Symposium in Chemistry (CRSI-NSC)",
+  "why": "acronym CRSI; words 1.00"
+ },
+ {
+  "score": 6,
+  "a": 84,
+  "b": 138,
+  "an": "European Symposium on Organic Reactivity (ESOR)",
+  "bn": "ESOR - European Symposium on Organic Reactivity",
+  "why": "acronym ESOR; words 1.00"
+ },
+ {
+  "score": 6,
+  "a": 85,
+  "b": 633,
+  "an": "European Symposium on Thermal Analysis and Calorimetry (ESTAC)",
+  "bn": "ESTAC — European Symposium on Thermal Analysis and Calorimetry",
+  "why": "acronym ESTAC; words 1.00"
+ },
+ {
+  "score": 6,
+  "a": 175,
+  "b": 231,
+  "an": "EUROCORR - The European Corrosion Congress",
+  "bn": "EUROCORR — European Corrosion Congress",
+  "why": "acronym EUROCORR; words 1.00"
+ },
+ {
+  "score": 6,
+  "a": 286,
+  "b": 373,
+  "an": "CSJ Chemistry Festa",
+  "bn": "CSJ Chemistry Festa (化学フェスタ)",
+  "why": "acronym CSJ; words 1.00"
+ },
+ {
+  "score": 6,
+  "a": 332,
+  "b": 569,
+  "an": "Congrès National de la Société Chimique de France (SCF Congress)",
+  "bn": "Congrès de la Société Chimique de France (SCF Congress)",
+  "why": "acronym SCF; words 1.00"
+ },
+ {
+  "score": 6,
+  "a": 388,
+  "b": 544,
+  "an": "Pure and Applied Chemistry International Conference (PACCON)",
+  "bn": "PACCON — Pure and Applied Chemistry International Conference",
+  "why": "acronym PACCON; words 1.00"
+ },
+ {
+  "score": 5,
+  "a": 20,
+  "b": 108,
+  "an": "HPLC Symposium (International Symposium on High Performance Liquid Phase Separations)",
+  "bn": "HPLC - International Symposium on High Performance Liquid Phase Separations and Related Techniques",
+  "why": "acronym HPLC; words 0.75"
+ },
+ {
+  "score": 5,
+  "a": 34,
+  "b": 72,
+  "an": "SETAC Annual Meeting (Europe + North America)",
+  "bn": "SETAC North America Annual Meeting",
+  "why": "acronym SETAC; words 0.75"
+ },
+ {
+  "score": 5,
+  "a": 78,
+  "b": 105,
+  "an": "EuChemS European Conference on Research in Chemical Education (ECRICE)",
+  "bn": "European Conference on Research in Chemical Education (ECRICE)",
+  "why": "acronym ECRICE; words 0.75"
+ },
+ {
+  "score": 5,
+  "a": 92,
+  "b": 140,
+  "an": "ACS Colloid and Surface Science Symposium (CSSS)",
+  "bn": "ACS Colloid and Surface Science Symposium",
+  "why": "acronym ACS; words 0.80"
+ },
+ {
+  "score": 5,
+  "a": 327,
+  "b": 575,
+  "an": "Convegno Nazionale della Divisione di Chimica Organica (CDCO)",
+  "bn": "CDCO — Convegno Nazionale della Divisione di Chimica Organica SCI",
+  "why": "acronym CDCO; words 0.88"
+ },
+ {
+  "score": 5,
+  "a": 374,
+  "b": 792,
+  "an": "KCS General Meeting and Academic Presentation Conference (대한화학회 학술발표회)",
+  "bn": "대한화학회 물리화학분과회 학술발표회 (KCS Physical Chemistry Division Symposium)",
+  "why": "acronym KCS; same CJK name"
+ },
+ {
+  "score": 5,
+  "a": 374,
+  "b": 793,
+  "an": "KCS General Meeting and Academic Presentation Conference (대한화학회 학술발표회)",
+  "bn": "대한화학회 유기화학분과회 학술발표회 (KCS Organic Chemistry Division Symposium)",
+  "why": "acronym KCS; same CJK name"
+ },
+ {
+  "score": 5,
+  "a": 374,
+  "b": 794,
+  "an": "KCS General Meeting and Academic Presentation Conference (대한화학회 학술발표회)",
+  "bn": "대한화학회 무기화학분과회 학술발표회 (KCS Inorganic Chemistry Division Symposium)",
+  "why": "acronym KCS; same CJK name"
+ },
+ {
+  "score": 5,
+  "a": 374,
+  "b": 795,
+  "an": "KCS General Meeting and Academic Presentation Conference (대한화학회 학술발표회)",
+  "bn": "대한화학회 분석화학분과회 학술발표회 (KCS Analytical Chemistry Division Symposium)",
+  "why": "acronym KCS; same CJK name"
+ },
+ {
+  "score": 5,
+  "a": 374,
+  "b": 796,
+  "an": "KCS General Meeting and Academic Presentation Conference (대한화학회 학술발표회)",
+  "bn": "대한화학회 의약화학분과회 학술발표회 (KCS Medicinal Chemistry Division Symposium)",
+  "why": "acronym KCS; same CJK name"
+ },
+ {
+  "score": 5,
+  "a": 374,
+  "b": 797,
+  "an": "KCS General Meeting and Academic Presentation Conference (대한화학회 학술발표회)",
+  "bn": "대한화학회 화학교육분과회 학술발표회 (KCS Chemical Education Division Symposium)",
+  "why": "acronym KCS; same CJK name"
+ },
+ {
+  "score": 5,
+  "a": 446,
+  "b": 519,
+  "an": "SPSJ Symposium on Macromolecules (高分子討論会)",
+  "bn": "高分子討論会 (SPSJ Polymer Discussion Meeting)",
+  "why": "acronym SPSJ; same CJK name"
+ },
+ {
+  "score": 5,
+  "a": 451,
+  "b": 533,
+  "an": "Polymer Society of Korea meeting (한국고분자학회 학술대회)",
+  "bn": "한국고분자학회 춘계/추계 학술대회 (Polymer Society of Korea Spring/Fall Meeting)",
+  "why": "same CJK name; words 0.50"
+ },
+ {
+  "score": 5,
+  "a": 574,
+  "b": 636,
+  "an": "ANALITICA — Congresso Nazionale della Divisione di Chimica Analitica SCI",
+  "bn": "Congresso Nazionale della Divisione di Didattica Chimica SCI",
+  "why": "acronym SCI; words 0.75"
+ },
+ {
+  "score": 5,
+  "a": 656,
+  "b": 688,
+  "an": "中国化学会DNA纳米技术研讨会 (CCS Symposium on DNA Nanotechnology)",
+  "bn": "中国化学会《化学教育》读者、作者、编者学术交流会 (CCS Chemical Education Journal Readers-Authors-Editors Conference)",
+  "why": "acronym CCS; same CJK name"
+ },
+ {
+  "score": 5,
+  "a": 737,
+  "b": 778,
+  "an": "Всероссийское Совещание заведующих кафедрами органической химии (All-Russian Meeting of Heads of Organic Chemistry Departments)",
+  "bn": "Всероссийская конференция по органической химии (All-Russian Conference on Organic Chemistry)",
+  "why": "same Cyrillic words; words 0.60"
+ },
+ {
+  "score": 5,
+  "a": 744,
+  "b": 762,
+  "an": "Международная научная конференция «Современная химическая физика» (Modern Chemical Physics, Chernogolovka)",
+  "bn": "Симпозиум «Современная химическая физика» (Symposium on Modern Chemical Physics, Tuapse)",
+  "why": "same Cyrillic words; words 0.50"
+ },
+ {
+  "score": 5,
+  "a": 764,
+  "b": 778,
+  "an": "Всероссийская конференция по наноматериалам «НАНО» (All-Russian Conference on Nanomaterials)",
+  "bn": "Всероссийская конференция по органической химии (All-Russian Conference on Organic Chemistry)",
+  "why": "same Cyrillic words; words 0.50"
+ },
+ {
+  "score": 5,
+  "a": 789,
+  "b": 790,
+  "an": "한국분석과학회 춘계/추계 학술대회 (Korean Society of Analytical Sciences Spring/Fall Meeting)",
+  "bn": "한국전기화학회 춘계/추계 학술대회 (Korean Electrochemical Society Spring/Fall Meeting)",
+  "why": "same CJK name; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 8,
+  "b": 49,
+  "an": "IUPAC World Chemistry Congress",
+  "bn": "World Chemistry Leadership Meeting (IUPAC)",
+  "why": "acronym IUPAC; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 11,
+  "b": 58,
+  "an": "RACI National Convention",
+  "bn": "RACI National Congress",
+  "why": "acronym RACI; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 22,
+  "b": 80,
+  "an": "EUCHEM / ESOC — European Symposium on Organic Chemistry",
+  "bn": "European Symposium on Organic Chemistry (ESOC)",
+  "why": "acronym ESOC; words 0.67"
+ },
+ {
+  "score": 4,
+  "a": 25,
+  "b": 115,
+  "an": "ISE Annual Meeting (International Society of Electrochemistry)",
+  "bn": "ISE Annual Meeting",
+  "why": "acronym ISE; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 34,
+  "b": 73,
+  "an": "SETAC Annual Meeting (Europe + North America)",
+  "bn": "SETAC Europe Annual Meeting",
+  "why": "acronym SETAC; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 37,
+  "b": 69,
+  "an": "AACC/ADPI cereal chemistry (Cereals & Grains Annual Meeting)",
+  "bn": "AACC Annual Meeting (Cereals & Grains Association)",
+  "why": "acronym AACC; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 77,
+  "b": 106,
+  "an": "IUPAC International Conference on Chemistry Education (ICCE)",
+  "bn": "International Conference on Chemistry Education (ICCE)",
+  "why": "acronym ICCE; words 0.67"
+ },
+ {
+  "score": 4,
+  "a": 83,
+  "b": 115,
+  "an": "ISE Topical Meeting",
+  "bn": "ISE Annual Meeting",
+  "why": "acronym ISE; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 89,
+  "b": 206,
+  "an": "IChemE Annual Conference / Hazards conference series",
+  "bn": "Hazards (IChemE Process Safety Conference)",
+  "why": "acronym IChemE; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 91,
+  "b": 146,
+  "an": "ACS National Organic Chemistry Symposium (NOS)",
+  "bn": "National Organic Chemistry Symposium (NOS)",
+  "why": "acronym NOS; words 0.67"
+ },
+ {
+  "score": 4,
+  "a": 223,
+  "b": 225,
+  "an": "FEBS Congress",
+  "bn": "FEBS3+ Meeting",
+  "why": "words 1.00"
+ },
+ {
+  "score": 4,
+  "a": 262,
+  "b": 263,
+  "an": "ICG — International Congress on Glass",
+  "bn": "ICG Annual Conference",
+  "why": "acronym ICG; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 285,
+  "b": 372,
+  "an": "Annual Meeting of the Chemical Society of Japan (CSJ)",
+  "bn": "CSJ Annual Meeting (日本化学会春季年会)",
+  "why": "acronym CSJ; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 286,
+  "b": 372,
+  "an": "CSJ Chemistry Festa",
+  "bn": "CSJ Annual Meeting (日本化学会春季年会)",
+  "why": "acronym CSJ; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 287,
+  "b": 375,
+  "an": "Chinese Chemical Society National Congress",
+  "bn": "Chinese Chemical Society Congress (中国化学会学术年会)",
+  "why": "words 1.00"
+ },
+ {
+  "score": 4,
+  "a": 289,
+  "b": 376,
+  "an": "Reuniao Anual da Sociedade Brasileira de Quimica (RASBQ)",
+  "bn": "Reunião Anual da Sociedade Brasileira de Química (RASBQ)",
+  "why": "acronym RASBQ; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 291,
+  "b": 505,
+  "an": "analytica Conference",
+  "bn": "analytica",
+  "why": "words 1.00"
+ },
+ {
+  "score": 4,
+  "a": 293,
+  "b": 513,
+  "an": "FLAQ / Latin American Congress of Chemistry (CLAQ)",
+  "bn": "CLAQ - Latin American Congress of Chemistry (Congreso Latinoamericano de Quimica)",
+  "why": "acronym CLAQ; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 299,
+  "b": 540,
+  "an": "Mendeleev Congress on General and Applied Chemistry",
+  "bn": "Менделеевский съезд по общей и прикладной химии (Mendeleev Congress on General and Applied Chemistry)",
+  "why": "words 1.00"
+ },
+ {
+  "score": 4,
+  "a": 311,
+  "b": 560,
+  "an": "GDCh MAKRO (Macromolecular Colloquium / polymer conference)",
+  "bn": "MAKRO (GDCh Macromolecular Chemistry Conference)",
+  "why": "acronym MAKRO; words 0.60"
+ },
+ {
+  "score": 4,
+  "a": 316,
+  "b": 555,
+  "an": "Jahrestagung der FG Umweltchemie und Ökotoxikologie (UMWELT)",
+  "bn": "Umwelt (Jahrestagung Umweltchemie und Ökotoxikologie)",
+  "why": "words 1.00"
+ },
+ {
+  "score": 4,
+  "a": 329,
+  "b": 574,
+  "an": "Congresso della Divisione di Chimica Fisica (SCI Physical Chemistry Division Congress)",
+  "bn": "ANALITICA — Congresso Nazionale della Divisione di Chimica Analitica SCI",
+  "why": "acronym SCI; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 329,
+  "b": 636,
+  "an": "Congresso della Divisione di Chimica Fisica (SCI Physical Chemistry Division Congress)",
+  "bn": "Congresso Nazionale della Divisione di Didattica Chimica SCI",
+  "why": "acronym SCI; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 365,
+  "b": 465,
+  "an": "Meeting of the Society of Chemists and Technologists of Macedonia",
+  "bn": "Congress of the Society of Chemists and Technologists of Macedonia",
+  "why": "words 1.00"
+ },
+ {
+  "score": 4,
+  "a": 372,
+  "b": 373,
+  "an": "CSJ Annual Meeting (日本化学会春季年会)",
+  "bn": "CSJ Chemistry Festa (化学フェスタ)",
+  "why": "acronym CSJ; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 411,
+  "b": 549,
+  "an": "Chemical Society of Kenya conference",
+  "bn": "Kenya Chemical Society International Conference",
+  "why": "words 1.00"
+ },
+ {
+  "score": 4,
+  "a": 442,
+  "b": 443,
+  "an": "SCEJ Annual Meeting (化学工学会年会)",
+  "bn": "SCEJ Autumn Meeting (化学工学会秋季大会)",
+  "why": "acronym SCEJ; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 442,
+  "b": 535,
+  "an": "SCEJ Annual Meeting (化学工学会年会)",
+  "bn": "化学工学会秋季大会 (SCEJ Autumn Meeting)",
+  "why": "acronym SCEJ; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 443,
+  "b": 534,
+  "an": "SCEJ Autumn Meeting (化学工学会秋季大会)",
+  "bn": "化学工学会年会 (SCEJ Annual Meeting)",
+  "why": "acronym SCEJ; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 445,
+  "b": 446,
+  "an": "SPSJ Annual Meeting (高分子学会年次大会)",
+  "bn": "SPSJ Symposium on Macromolecules (高分子討論会)",
+  "why": "acronym SPSJ; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 446,
+  "b": 520,
+  "an": "SPSJ Symposium on Macromolecules (高分子討論会)",
+  "bn": "高分子学会年次大会 (SPSJ Annual Meeting)",
+  "why": "acronym SPSJ; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 467,
+  "b": 500,
+  "an": "National Meeting on Medicinal Chemistry (NMMC, Portugal)",
+  "bn": "National Meeting on Medicinal Chemistry (NMMC)",
+  "why": "acronym NMMC; words 0.67"
+ },
+ {
+  "score": 4,
+  "a": 488,
+  "b": 582,
+  "an": "Eurasia Conference on Chemical Sciences (EuAsC2S)",
+  "bn": "EuAsC2S — Eurasia Conference on Chemical Sciences",
+  "why": "words 1.00"
+ },
+ {
+  "score": 4,
+  "a": 523,
+  "b": 524,
+  "an": "中国化学会学术年会 (CCS National Congress)",
+  "bn": "全国分析化学年会 (CCS National Analytical Chemistry Conference)",
+  "why": "acronym CCS; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 523,
+  "b": 525,
+  "an": "中国化学会学术年会 (CCS National Congress)",
+  "bn": "全国配位化学会议 (CCS National Coordination Chemistry Conference)",
+  "why": "acronym CCS; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 523,
+  "b": 528,
+  "an": "中国化学会学术年会 (CCS National Congress)",
+  "bn": "全国化学生物学学术会议 (CCS National Chemical Biology Conference)",
+  "why": "acronym CCS; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 523,
+  "b": 529,
+  "an": "中国化学会学术年会 (CCS National Congress)",
+  "bn": "全国能源化学学术会议 (CCS National Energy Chemistry Conference)",
+  "why": "acronym CCS; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 523,
+  "b": 530,
+  "an": "中国化学会学术年会 (CCS National Congress)",
+  "bn": "全国资源化学学术研讨会 (CCS National Resources Chemistry Symposium)",
+  "why": "acronym CCS; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 523,
+  "b": 637,
+  "an": "中国化学会学术年会 (CCS National Congress)",
+  "bn": "中国化学会全国环境化学大会 (CCS National Conference on Environmental Chemistry)",
+  "why": "acronym CCS; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 523,
+  "b": 641,
+  "an": "中国化学会学术年会 (CCS National Congress)",
+  "bn": "中国化学会全国电化学大会 (CCS National Congress on Electrochemistry)",
+  "why": "acronym CCS; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 523,
+  "b": 643,
+  "an": "中国化学会学术年会 (CCS National Congress)",
+  "bn": "中国化学会全国金属有机化学学术讨论会 (CCS National Symposium on Organometallic Chemistry)",
+  "why": "acronym CCS; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 523,
+  "b": 665,
+  "an": "中国化学会学术年会 (CCS National Congress)",
+  "bn": "中国化学会全国氟化学会议 (CCS National Conference on Fluorine Chemistry)",
+  "why": "acronym CCS; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 523,
+  "b": 671,
+  "an": "中国化学会学术年会 (CCS National Congress)",
+  "bn": "中国化学会全国多酸化学学术研讨会 (CCS National Symposium on Polyoxometalate Chemistry)",
+  "why": "acronym CCS; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 523,
+  "b": 672,
+  "an": "中国化学会学术年会 (CCS National Congress)",
+  "bn": "中国化学会全国生物物理化学大会 (CCS National Congress on Biophysical Chemistry)",
+  "why": "acronym CCS; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 523,
+  "b": 673,
+  "an": "中国化学会学术年会 (CCS National Congress)",
+  "bn": "中国化学会全国催化学术会议 (CCS National Conference on Catalysis)",
+  "why": "acronym CCS; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 523,
+  "b": 674,
+  "an": "中国化学会学术年会 (CCS National Congress)",
+  "bn": "中国化学会全国高分子学术论文报告会 (CCS National Polymer Conference)",
+  "why": "acronym CCS; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 523,
+  "b": 682,
+  "an": "中国化学会学术年会 (CCS National Congress)",
+  "bn": "中国化学会硼化学会议 (CCS Conference on Boron Chemistry)",
+  "why": "acronym CCS; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 523,
+  "b": 684,
+  "an": "中国化学会学术年会 (CCS National Congress)",
+  "bn": "中国化学会全国化学推进剂学术会议 (CCS National Conference on Chemical Propellants)",
+  "why": "acronym CCS; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 523,
+  "b": 685,
+  "an": "中国化学会学术年会 (CCS National Congress)",
+  "bn": "中国化学会全国绿色化学学术会议 (CCS National Conference on Green Chemistry)",
+  "why": "acronym CCS; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 523,
+  "b": 686,
+  "an": "中国化学会学术年会 (CCS National Congress)",
+  "bn": "中国化学会农业化学学术讨论会 (CCS Symposium on Agricultural Chemistry)",
+  "why": "acronym CCS; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 523,
+  "b": 690,
+  "an": "中国化学会学术年会 (CCS National Congress)",
+  "bn": "中国化学会全国有机化学学术会议 (CCS National Conference on Organic Chemistry)",
+  "why": "acronym CCS; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 523,
+  "b": 691,
+  "an": "中国化学会学术年会 (CCS National Congress)",
+  "bn": "中国化学会全国糖化学会议 (CCS National Conference on Carbohydrate Chemistry)",
+  "why": "acronym CCS; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 523,
+  "b": 697,
+  "an": "中国化学会学术年会 (CCS National Congress)",
+  "bn": "中国化学会全国结构化学学术会议 (CCS National Conference on Structural Chemistry)",
+  "why": "acronym CCS; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 523,
+  "b": 698,
+  "an": "中国化学会学术年会 (CCS National Congress)",
+  "bn": "中国化学会全国纤维素学术研讨会 (CCS National Symposium on Cellulose)",
+  "why": "acronym CCS; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 523,
+  "b": 701,
+  "an": "中国化学会学术年会 (CCS National Congress)",
+  "bn": "中国化学会全国燃烧化学学术会议 (CCS National Conference on Combustion Chemistry)",
+  "why": "acronym CCS; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 523,
+  "b": 703,
+  "an": "中国化学会学术年会 (CCS National Congress)",
+  "bn": "中国化学会全国电分析化学学术会议 (CCS National Conference on Electroanalytical Chemistry)",
+  "why": "acronym CCS; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 523,
+  "b": 705,
+  "an": "中国化学会学术年会 (CCS National Congress)",
+  "bn": "中国化学会全国计算（机）化学学术会议 (CCS National Conference on Computational Chemistry)",
+  "why": "acronym CCS; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 523,
+  "b": 707,
+  "an": "中国化学会学术年会 (CCS National Congress)",
+  "bn": "中国化学会全国光化学学术讨论会 (CCS National Symposium on Photochemistry)",
+  "why": "acronym CCS; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 523,
+  "b": 708,
+  "an": "中国化学会学术年会 (CCS National Congress)",
+  "bn": "中国化学会全国二氧化碳资源化利用学术会议 (CCS National Conference on CO2 Utilization)",
+  "why": "acronym CCS; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 523,
+  "b": 713,
+  "an": "中国化学会学术年会 (CCS National Congress)",
+  "bn": "中国化学会全国流变学学术会议 (CCS National Conference on Rheology)",
+  "why": "acronym CCS; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 523,
+  "b": 716,
+  "an": "中国化学会学术年会 (CCS National Congress)",
+  "bn": "中国化学会簇发光国际会议 (CCS International Conference on Clusterluminescence)",
+  "why": "acronym CCS; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 526,
+  "b": 705,
+  "an": "全国理论与计算化学会议 (CCS National Theoretical and Computational Chemistry Conference)",
+  "bn": "中国化学会全国计算（机）化学学术会议 (CCS National Conference on Computational Chemistry)",
+  "why": "acronym CCS; words 0.67"
+ },
+ {
+  "score": 4,
+  "a": 528,
+  "b": 651,
+  "an": "全国化学生物学学术会议 (CCS National Chemical Biology Conference)",
+  "bn": "中国化学会全国生物无机化学学术会议暨金属化学生物学学术会议 (CCS National Conference on Bioinorganic Chemistry and Metallochemical Biology)",
+  "why": "acronym CCS; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 529,
+  "b": 669,
+  "an": "全国能源化学学术会议 (CCS National Energy Chemistry Conference)",
+  "bn": "中国化学会电化学能量转换研讨会 (CCS Symposium on Electrochemical Energy Conversion)",
+  "why": "acronym CCS; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 529,
+  "b": 681,
+  "an": "全国能源化学学术会议 (CCS National Energy Chemistry Conference)",
+  "bn": "中国化学会纳米化学与能源材料研讨会 (CCS Symposium on Nanochemistry and Energy Materials)",
+  "why": "acronym CCS; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 534,
+  "b": 535,
+  "an": "化学工学会年会 (SCEJ Annual Meeting)",
+  "bn": "化学工学会秋季大会 (SCEJ Autumn Meeting)",
+  "why": "acronym SCEJ; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 574,
+  "b": 575,
+  "an": "ANALITICA — Congresso Nazionale della Divisione di Chimica Analitica SCI",
+  "bn": "CDCO — Convegno Nazionale della Divisione di Chimica Organica SCI",
+  "why": "acronym SCI; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 574,
+  "b": 630,
+  "an": "ANALITICA — Congresso Nazionale della Divisione di Chimica Analitica SCI",
+  "bn": "Congresso della Divisione di Chimica dei Sistemi Biologici SCI",
+  "why": "acronym SCI; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 575,
+  "b": 636,
+  "an": "CDCO — Convegno Nazionale della Divisione di Chimica Organica SCI",
+  "bn": "Congresso Nazionale della Divisione di Didattica Chimica SCI",
+  "why": "acronym SCI; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 593,
+  "b": 599,
+  "an": "Reunión del Grupo Especializado de Adsorción (GEADS) — RSEQ",
+  "bn": "Reunión del Grupo Especializado de Electroquímica (GEE) — RSEQ",
+  "why": "acronym RSEQ; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 593,
+  "b": 603,
+  "an": "Reunión del Grupo Especializado de Adsorción (GEADS) — RSEQ",
+  "bn": "Reunión del Grupo Especializado de Fotoquímica (GRUFO) — RSEQ",
+  "why": "acronym RSEQ; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 593,
+  "b": 610,
+  "an": "Reunión del Grupo Especializado de Adsorción (GEADS) — RSEQ",
+  "bn": "Reunión del Grupo Especializado de Polímeros (GEP) — RSEQ",
+  "why": "acronym RSEQ; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 593,
+  "b": 619,
+  "an": "Reunión del Grupo Especializado de Adsorción (GEADS) — RSEQ",
+  "bn": "Reunión del Grupo Especializado de Reología (GER) — RSEQ",
+  "why": "acronym RSEQ; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 593,
+  "b": 621,
+  "an": "Reunión del Grupo Especializado de Adsorción (GEADS) — RSEQ",
+  "bn": "Reunión del Grupo Especializado de Termodinámica (GET) — RSEQ",
+  "why": "acronym RSEQ; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 599,
+  "b": 603,
+  "an": "Reunión del Grupo Especializado de Electroquímica (GEE) — RSEQ",
+  "bn": "Reunión del Grupo Especializado de Fotoquímica (GRUFO) — RSEQ",
+  "why": "acronym RSEQ; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 599,
+  "b": 610,
+  "an": "Reunión del Grupo Especializado de Electroquímica (GEE) — RSEQ",
+  "bn": "Reunión del Grupo Especializado de Polímeros (GEP) — RSEQ",
+  "why": "acronym RSEQ; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 599,
+  "b": 619,
+  "an": "Reunión del Grupo Especializado de Electroquímica (GEE) — RSEQ",
+  "bn": "Reunión del Grupo Especializado de Reología (GER) — RSEQ",
+  "why": "acronym RSEQ; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 599,
+  "b": 621,
+  "an": "Reunión del Grupo Especializado de Electroquímica (GEE) — RSEQ",
+  "bn": "Reunión del Grupo Especializado de Termodinámica (GET) — RSEQ",
+  "why": "acronym RSEQ; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 603,
+  "b": 610,
+  "an": "Reunión del Grupo Especializado de Fotoquímica (GRUFO) — RSEQ",
+  "bn": "Reunión del Grupo Especializado de Polímeros (GEP) — RSEQ",
+  "why": "acronym RSEQ; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 603,
+  "b": 619,
+  "an": "Reunión del Grupo Especializado de Fotoquímica (GRUFO) — RSEQ",
+  "bn": "Reunión del Grupo Especializado de Reología (GER) — RSEQ",
+  "why": "acronym RSEQ; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 603,
+  "b": 621,
+  "an": "Reunión del Grupo Especializado de Fotoquímica (GRUFO) — RSEQ",
+  "bn": "Reunión del Grupo Especializado de Termodinámica (GET) — RSEQ",
+  "why": "acronym RSEQ; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 606,
+  "b": 607,
+  "an": "Reunión del Grupo Especializado de Ingeniería Química (GIQ) — RSEQ",
+  "bn": "Reunión del Grupo Especializado de Inteligencia Artificial en Química (GEIAQ) — RSEQ",
+  "why": "acronym RSEQ; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 606,
+  "b": 611,
+  "an": "Reunión del Grupo Especializado de Ingeniería Química (GIQ) — RSEQ",
+  "bn": "Reunión del Grupo Especializado de Química Biológica (GEQB) — RSEQ",
+  "why": "acronym RSEQ; words 0.56"
+ },
+ {
+  "score": 4,
+  "a": 606,
+  "b": 612,
+  "an": "Reunión del Grupo Especializado de Ingeniería Química (GIQ) — RSEQ",
+  "bn": "Reunión del Grupo Especializado de Química y Computación (GEQC) — RSEQ",
+  "why": "acronym RSEQ; words 0.56"
+ },
+ {
+  "score": 4,
+  "a": 606,
+  "b": 613,
+  "an": "Reunión del Grupo Especializado de Ingeniería Química (GIQ) — RSEQ",
+  "bn": "Reunión del Grupo Especializado de Química del Estado Sólido (GEQES) — RSEQ",
+  "why": "acronym RSEQ; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 606,
+  "b": 615,
+  "an": "Reunión del Grupo Especializado de Ingeniería Química (GIQ) — RSEQ",
+  "bn": "Reunión del Grupo Especializado de Química Inorgánica (GEQI) — RSEQ",
+  "why": "acronym RSEQ; words 0.56"
+ },
+ {
+  "score": 4,
+  "a": 606,
+  "b": 616,
+  "an": "Reunión del Grupo Especializado de Ingeniería Química (GIQ) — RSEQ",
+  "bn": "Reunión del Grupo Especializado de Química Organometálica (GEQO) — RSEQ",
+  "why": "acronym RSEQ; words 0.56"
+ },
+ {
+  "score": 4,
+  "a": 606,
+  "b": 617,
+  "an": "Reunión del Grupo Especializado de Ingeniería Química (GIQ) — RSEQ",
+  "bn": "Reunión del Grupo Especializado de Química de Productos Naturales (GQPN) — RSEQ",
+  "why": "acronym RSEQ; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 606,
+  "b": 618,
+  "an": "Reunión del Grupo Especializado de Ingeniería Química (GIQ) — RSEQ",
+  "bn": "Reunión del Grupo Especializado de Química Verde (GEQV) — RSEQ",
+  "why": "acronym RSEQ; words 0.56"
+ },
+ {
+  "score": 4,
+  "a": 607,
+  "b": 611,
+  "an": "Reunión del Grupo Especializado de Inteligencia Artificial en Química (GEIAQ) — RSEQ",
+  "bn": "Reunión del Grupo Especializado de Química Biológica (GEQB) — RSEQ",
+  "why": "acronym RSEQ; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 607,
+  "b": 612,
+  "an": "Reunión del Grupo Especializado de Inteligencia Artificial en Química (GEIAQ) — RSEQ",
+  "bn": "Reunión del Grupo Especializado de Química y Computación (GEQC) — RSEQ",
+  "why": "acronym RSEQ; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 607,
+  "b": 615,
+  "an": "Reunión del Grupo Especializado de Inteligencia Artificial en Química (GEIAQ) — RSEQ",
+  "bn": "Reunión del Grupo Especializado de Química Inorgánica (GEQI) — RSEQ",
+  "why": "acronym RSEQ; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 607,
+  "b": 616,
+  "an": "Reunión del Grupo Especializado de Inteligencia Artificial en Química (GEIAQ) — RSEQ",
+  "bn": "Reunión del Grupo Especializado de Química Organometálica (GEQO) — RSEQ",
+  "why": "acronym RSEQ; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 607,
+  "b": 618,
+  "an": "Reunión del Grupo Especializado de Inteligencia Artificial en Química (GEIAQ) — RSEQ",
+  "bn": "Reunión del Grupo Especializado de Química Verde (GEQV) — RSEQ",
+  "why": "acronym RSEQ; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 610,
+  "b": 619,
+  "an": "Reunión del Grupo Especializado de Polímeros (GEP) — RSEQ",
+  "bn": "Reunión del Grupo Especializado de Reología (GER) — RSEQ",
+  "why": "acronym RSEQ; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 610,
+  "b": 621,
+  "an": "Reunión del Grupo Especializado de Polímeros (GEP) — RSEQ",
+  "bn": "Reunión del Grupo Especializado de Termodinámica (GET) — RSEQ",
+  "why": "acronym RSEQ; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 611,
+  "b": 612,
+  "an": "Reunión del Grupo Especializado de Química Biológica (GEQB) — RSEQ",
+  "bn": "Reunión del Grupo Especializado de Química y Computación (GEQC) — RSEQ",
+  "why": "acronym RSEQ; words 0.56"
+ },
+ {
+  "score": 4,
+  "a": 611,
+  "b": 613,
+  "an": "Reunión del Grupo Especializado de Química Biológica (GEQB) — RSEQ",
+  "bn": "Reunión del Grupo Especializado de Química del Estado Sólido (GEQES) — RSEQ",
+  "why": "acronym RSEQ; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 611,
+  "b": 615,
+  "an": "Reunión del Grupo Especializado de Química Biológica (GEQB) — RSEQ",
+  "bn": "Reunión del Grupo Especializado de Química Inorgánica (GEQI) — RSEQ",
+  "why": "acronym RSEQ; words 0.56"
+ },
+ {
+  "score": 4,
+  "a": 611,
+  "b": 616,
+  "an": "Reunión del Grupo Especializado de Química Biológica (GEQB) — RSEQ",
+  "bn": "Reunión del Grupo Especializado de Química Organometálica (GEQO) — RSEQ",
+  "why": "acronym RSEQ; words 0.56"
+ },
+ {
+  "score": 4,
+  "a": 611,
+  "b": 617,
+  "an": "Reunión del Grupo Especializado de Química Biológica (GEQB) — RSEQ",
+  "bn": "Reunión del Grupo Especializado de Química de Productos Naturales (GQPN) — RSEQ",
+  "why": "acronym RSEQ; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 611,
+  "b": 618,
+  "an": "Reunión del Grupo Especializado de Química Biológica (GEQB) — RSEQ",
+  "bn": "Reunión del Grupo Especializado de Química Verde (GEQV) — RSEQ",
+  "why": "acronym RSEQ; words 0.56"
+ },
+ {
+  "score": 4,
+  "a": 612,
+  "b": 613,
+  "an": "Reunión del Grupo Especializado de Química y Computación (GEQC) — RSEQ",
+  "bn": "Reunión del Grupo Especializado de Química del Estado Sólido (GEQES) — RSEQ",
+  "why": "acronym RSEQ; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 612,
+  "b": 615,
+  "an": "Reunión del Grupo Especializado de Química y Computación (GEQC) — RSEQ",
+  "bn": "Reunión del Grupo Especializado de Química Inorgánica (GEQI) — RSEQ",
+  "why": "acronym RSEQ; words 0.56"
+ },
+ {
+  "score": 4,
+  "a": 612,
+  "b": 616,
+  "an": "Reunión del Grupo Especializado de Química y Computación (GEQC) — RSEQ",
+  "bn": "Reunión del Grupo Especializado de Química Organometálica (GEQO) — RSEQ",
+  "why": "acronym RSEQ; words 0.56"
+ },
+ {
+  "score": 4,
+  "a": 612,
+  "b": 617,
+  "an": "Reunión del Grupo Especializado de Química y Computación (GEQC) — RSEQ",
+  "bn": "Reunión del Grupo Especializado de Química de Productos Naturales (GQPN) — RSEQ",
+  "why": "acronym RSEQ; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 612,
+  "b": 618,
+  "an": "Reunión del Grupo Especializado de Química y Computación (GEQC) — RSEQ",
+  "bn": "Reunión del Grupo Especializado de Química Verde (GEQV) — RSEQ",
+  "why": "acronym RSEQ; words 0.56"
+ },
+ {
+  "score": 4,
+  "a": 613,
+  "b": 615,
+  "an": "Reunión del Grupo Especializado de Química del Estado Sólido (GEQES) — RSEQ",
+  "bn": "Reunión del Grupo Especializado de Química Inorgánica (GEQI) — RSEQ",
+  "why": "acronym RSEQ; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 613,
+  "b": 616,
+  "an": "Reunión del Grupo Especializado de Química del Estado Sólido (GEQES) — RSEQ",
+  "bn": "Reunión del Grupo Especializado de Química Organometálica (GEQO) — RSEQ",
+  "why": "acronym RSEQ; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 613,
+  "b": 618,
+  "an": "Reunión del Grupo Especializado de Química del Estado Sólido (GEQES) — RSEQ",
+  "bn": "Reunión del Grupo Especializado de Química Verde (GEQV) — RSEQ",
+  "why": "acronym RSEQ; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 615,
+  "b": 616,
+  "an": "Reunión del Grupo Especializado de Química Inorgánica (GEQI) — RSEQ",
+  "bn": "Reunión del Grupo Especializado de Química Organometálica (GEQO) — RSEQ",
+  "why": "acronym RSEQ; words 0.56"
+ },
+ {
+  "score": 4,
+  "a": 615,
+  "b": 617,
+  "an": "Reunión del Grupo Especializado de Química Inorgánica (GEQI) — RSEQ",
+  "bn": "Reunión del Grupo Especializado de Química de Productos Naturales (GQPN) — RSEQ",
+  "why": "acronym RSEQ; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 615,
+  "b": 618,
+  "an": "Reunión del Grupo Especializado de Química Inorgánica (GEQI) — RSEQ",
+  "bn": "Reunión del Grupo Especializado de Química Verde (GEQV) — RSEQ",
+  "why": "acronym RSEQ; words 0.56"
+ },
+ {
+  "score": 4,
+  "a": 616,
+  "b": 617,
+  "an": "Reunión del Grupo Especializado de Química Organometálica (GEQO) — RSEQ",
+  "bn": "Reunión del Grupo Especializado de Química de Productos Naturales (GQPN) — RSEQ",
+  "why": "acronym RSEQ; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 616,
+  "b": 618,
+  "an": "Reunión del Grupo Especializado de Química Organometálica (GEQO) — RSEQ",
+  "bn": "Reunión del Grupo Especializado de Química Verde (GEQV) — RSEQ",
+  "why": "acronym RSEQ; words 0.56"
+ },
+ {
+  "score": 4,
+  "a": 617,
+  "b": 618,
+  "an": "Reunión del Grupo Especializado de Química de Productos Naturales (GQPN) — RSEQ",
+  "bn": "Reunión del Grupo Especializado de Química Verde (GEQV) — RSEQ",
+  "why": "acronym RSEQ; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 619,
+  "b": 621,
+  "an": "Reunión del Grupo Especializado de Reología (GER) — RSEQ",
+  "bn": "Reunión del Grupo Especializado de Termodinámica (GET) — RSEQ",
+  "why": "acronym RSEQ; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 630,
+  "b": 636,
+  "an": "Congresso della Divisione di Chimica dei Sistemi Biologici SCI",
+  "bn": "Congresso Nazionale della Divisione di Didattica Chimica SCI",
+  "why": "acronym SCI; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 637,
+  "b": 711,
+  "an": "中国化学会全国环境化学大会 (CCS National Conference on Environmental Chemistry)",
+  "bn": "中国化学会全国环境催化与环境材料学术会议 (CCS National Conference on Environmental Catalysis and Environmental Materials)",
+  "why": "acronym CCS; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 644,
+  "b": 662,
+  "an": "中国化学会全国有机自由基化学会议 (CCS National Conference on Organic Radical Chemistry)",
+  "bn": "中国化学会全国有机合成化学学术研讨会 (CCS National Symposium on Organic Synthesis)",
+  "why": "acronym CCS; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 644,
+  "b": 683,
+  "an": "中国化学会全国有机自由基化学会议 (CCS National Conference on Organic Radical Chemistry)",
+  "bn": "中国化学会全国物理有机化学学术会议 (CCS National Conference on Physical Organic Chemistry)",
+  "why": "acronym CCS; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 644,
+  "b": 690,
+  "an": "中国化学会全国有机自由基化学会议 (CCS National Conference on Organic Radical Chemistry)",
+  "bn": "中国化学会全国有机化学学术会议 (CCS National Conference on Organic Chemistry)",
+  "why": "acronym CCS; words 0.67"
+ },
+ {
+  "score": 4,
+  "a": 644,
+  "b": 693,
+  "an": "中国化学会全国有机自由基化学会议 (CCS National Conference on Organic Radical Chemistry)",
+  "bn": "中国化学会全国有机分析及生物分析学术研讨会 (CCS National Symposium on Organic and Bioanalytical Chemistry)",
+  "why": "acronym CCS; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 645,
+  "b": 664,
+  "an": "中国化学会青年分子筛学术大会 (CCS Young Scientists' Zeolite Conference)",
+  "bn": "中国化学会电合成青年学术研讨会 (CCS Young Scientists' Symposium on Electrosynthesis)",
+  "why": "acronym CCS; words 0.60"
+ },
+ {
+  "score": 4,
+  "a": 653,
+  "b": 695,
+  "an": "中国化学会关注西部化学教育发展论坛 (CCS Forum on Chemistry Education Development in Western China)",
+  "bn": "中国化学会西部合成化学论坛 (CCS Western China Forum on Synthetic Chemistry)",
+  "why": "acronym CCS; words 0.57"
+ },
+ {
+  "score": 4,
+  "a": 654,
+  "b": 715,
+  "an": "中国化学会晶态材料前沿论坛 (CCS Frontiers Forum on Crystalline Materials)",
+  "bn": "中国化学会高分子前沿论坛 (CCS Polymer Frontiers Forum)",
+  "why": "acronym CCS; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 661,
+  "b": 689,
+  "an": "中国化学会全国化学热力学与热分析学术会议 (CCS National Conference on Chemical Thermodynamics and Thermal Analysis)",
+  "bn": "中国化学会全国热分析动力学与热动力学学术会议 (CCS National Conference on Thermal Analysis Kinetics and Thermokinetics)",
+  "why": "acronym CCS; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 662,
+  "b": 683,
+  "an": "中国化学会全国有机合成化学学术研讨会 (CCS National Symposium on Organic Synthesis)",
+  "bn": "中国化学会全国物理有机化学学术会议 (CCS National Conference on Physical Organic Chemistry)",
+  "why": "acronym CCS; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 662,
+  "b": 690,
+  "an": "中国化学会全国有机合成化学学术研讨会 (CCS National Symposium on Organic Synthesis)",
+  "bn": "中国化学会全国有机化学学术会议 (CCS National Conference on Organic Chemistry)",
+  "why": "acronym CCS; words 0.67"
+ },
+ {
+  "score": 4,
+  "a": 662,
+  "b": 693,
+  "an": "中国化学会全国有机合成化学学术研讨会 (CCS National Symposium on Organic Synthesis)",
+  "bn": "中国化学会全国有机分析及生物分析学术研讨会 (CCS National Symposium on Organic and Bioanalytical Chemistry)",
+  "why": "acronym CCS; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 667,
+  "b": 674,
+  "an": "中国化学会高分子结晶研讨会 (CCS Symposium on Polymer Crystallization)",
+  "bn": "中国化学会全国高分子学术论文报告会 (CCS National Polymer Conference)",
+  "why": "acronym CCS; words 0.67"
+ },
+ {
+  "score": 4,
+  "a": 673,
+  "b": 711,
+  "an": "中国化学会全国催化学术会议 (CCS National Conference on Catalysis)",
+  "bn": "中国化学会全国环境催化与环境材料学术会议 (CCS National Conference on Environmental Catalysis and Environmental Materials)",
+  "why": "acronym CCS; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 674,
+  "b": 715,
+  "an": "中国化学会全国高分子学术论文报告会 (CCS National Polymer Conference)",
+  "bn": "中国化学会高分子前沿论坛 (CCS Polymer Frontiers Forum)",
+  "why": "acronym CCS; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 683,
+  "b": 690,
+  "an": "中国化学会全国物理有机化学学术会议 (CCS National Conference on Physical Organic Chemistry)",
+  "bn": "中国化学会全国有机化学学术会议 (CCS National Conference on Organic Chemistry)",
+  "why": "acronym CCS; words 0.67"
+ },
+ {
+  "score": 4,
+  "a": 683,
+  "b": 693,
+  "an": "中国化学会全国物理有机化学学术会议 (CCS National Conference on Physical Organic Chemistry)",
+  "bn": "中国化学会全国有机分析及生物分析学术研讨会 (CCS National Symposium on Organic and Bioanalytical Chemistry)",
+  "why": "acronym CCS; words 0.50"
+ },
+ {
+  "score": 4,
+  "a": 690,
+  "b": 693,
+  "an": "中国化学会全国有机化学学术会议 (CCS National Conference on Organic Chemistry)",
+  "bn": "中国化学会全国有机分析及生物分析学术研讨会 (CCS National Symposium on Organic and Bioanalytical Chemistry)",
+  "why": "acronym CCS; words 0.67"
+ },
+ {
+  "score": 4,
+  "a": 694,
+  "b": 715,
+  "an": "中国化学会华聚荟论坛 (CCS Huajuhui Forum (polymer community))",
+  "bn": "中国化学会高分子前沿论坛 (CCS Polymer Frontiers Forum)",
+  "why": "acronym CCS; words 0.50"
+ },
+ {
+  "score": 3,
+  "a": 18,
+  "b": 66,
+  "an": "Pittcon (Conference on Analytical Chemistry and Applied Spectroscopy)",
+  "bn": "Pittcon (Pittsburgh Conference on Analytical Chemistry and Applied Spectroscopy)",
+  "why": "words 0.80"
+ },
+ {
+  "score": 3,
+  "a": 30,
+  "b": 74,
+  "an": "Gordon Research Conferences (series)",
+  "bn": "Gordon Research Conferences (GRC series)",
+  "why": "words 0.75"
+ },
+ {
+  "score": 3,
+  "a": 184,
+  "b": 185,
+  "an": "EWCPS - European Winter Conference on Plasma Spectrochemistry",
+  "bn": "Winter Conference on Plasma Spectrochemistry (US)",
+  "why": "words 0.75"
+ },
+ {
+  "score": 3,
+  "a": 284,
+  "b": 565,
+  "an": "GDCh Wissenschaftsforum Chemie (WiFo)",
+  "bn": "Wissenschaftsforum Chemie (WiFo)",
+  "why": "words 0.75"
+ },
+ {
+  "score": 3,
+  "a": 374,
+  "b": 532,
+  "an": "KCS General Meeting and Academic Presentation Conference (대한화학회 학술발표회)",
+  "bn": "대한화학회 학술발표회 (Korean Chemical Society General Meeting)",
+  "why": "same CJK name"
+ },
+ {
+  "score": 3,
+  "a": 375,
+  "b": 523,
+  "an": "Chinese Chemical Society Congress (中国化学会学术年会)",
+  "bn": "中国化学会学术年会 (CCS National Congress)",
+  "why": "same CJK name"
+ },
+ {
+  "score": 3,
+  "a": 377,
+  "b": 573,
+  "an": "Congreso Mexicano de Química / Congreso Nacional de Educación Química",
+  "bn": "Congreso Nacional de Educación Química",
+  "why": "words 0.75"
+ },
+ {
+  "score": 3,
+  "a": 450,
+  "b": 451,
+  "an": "KIChE Annual Meeting (한국화학공학회 학술대회)",
+  "bn": "Polymer Society of Korea meeting (한국고분자학회 학술대회)",
+  "why": "same CJK name"
+ },
+ {
+  "score": 3,
+  "a": 450,
+  "b": 533,
+  "an": "KIChE Annual Meeting (한국화학공학회 학술대회)",
+  "bn": "한국고분자학회 춘계/추계 학술대회 (Polymer Society of Korea Spring/Fall Meeting)",
+  "why": "same CJK name"
+ },
+ {
+  "score": 3,
+  "a": 450,
+  "b": 789,
+  "an": "KIChE Annual Meeting (한국화학공학회 학술대회)",
+  "bn": "한국분석과학회 춘계/추계 학술대회 (Korean Society of Analytical Sciences Spring/Fall Meeting)",
+  "why": "same CJK name"
+ },
+ {
+  "score": 3,
+  "a": 450,
+  "b": 790,
+  "an": "KIChE Annual Meeting (한국화학공학회 학술대회)",
+  "bn": "한국전기화학회 춘계/추계 학술대회 (Korean Electrochemical Society Spring/Fall Meeting)",
+  "why": "same CJK name"
+ },
+ {
+  "score": 3,
+  "a": 450,
+  "b": 791,
+  "an": "KIChE Annual Meeting (한국화학공학회 학술대회)",
+  "bn": "대한약학회 학술대회 (Pharmaceutical Society of Korea Convention)",
+  "why": "same CJK name"
+ },
+ {
+  "score": 3,
+  "a": 451,
+  "b": 789,
+  "an": "Polymer Society of Korea meeting (한국고분자학회 학술대회)",
+  "bn": "한국분석과학회 춘계/추계 학술대회 (Korean Society of Analytical Sciences Spring/Fall Meeting)",
+  "why": "same CJK name"
+ },
+ {
+  "score": 3,
+  "a": 451,
+  "b": 790,
+  "an": "Polymer Society of Korea meeting (한국고분자학회 학술대회)",
+  "bn": "한국전기화학회 춘계/추계 학술대회 (Korean Electrochemical Society Spring/Fall Meeting)",
+  "why": "same CJK name"
+ },
+ {
+  "score": 3,
+  "a": 451,
+  "b": 791,
+  "an": "Polymer Society of Korea meeting (한국고분자학회 학술대회)",
+  "bn": "대한약학회 학술대회 (Pharmaceutical Society of Korea Convention)",
+  "why": "same CJK name"
+ },
+ {
+  "score": 3,
+  "a": 532,
+  "b": 792,
+  "an": "대한화학회 학술발표회 (Korean Chemical Society General Meeting)",
+  "bn": "대한화학회 물리화학분과회 학술발표회 (KCS Physical Chemistry Division Symposium)",
+  "why": "same CJK name"
+ },
+ {
+  "score": 3,
+  "a": 532,
+  "b": 793,
+  "an": "대한화학회 학술발표회 (Korean Chemical Society General Meeting)",
+  "bn": "대한화학회 유기화학분과회 학술발표회 (KCS Organic Chemistry Division Symposium)",
+  "why": "same CJK name"
+ },
+ {
+  "score": 3,
+  "a": 532,
+  "b": 794,
+  "an": "대한화학회 학술발표회 (Korean Chemical Society General Meeting)",
+  "bn": "대한화학회 무기화학분과회 학술발표회 (KCS Inorganic Chemistry Division Symposium)",
+  "why": "same CJK name"
+ },
+ {
+  "score": 3,
+  "a": 532,
+  "b": 795,
+  "an": "대한화학회 학술발표회 (Korean Chemical Society General Meeting)",
+  "bn": "대한화학회 분석화학분과회 학술발표회 (KCS Analytical Chemistry Division Symposium)",
+  "why": "same CJK name"
+ },
+ {
+  "score": 3,
+  "a": 532,
+  "b": 796,
+  "an": "대한화학회 학술발표회 (Korean Chemical Society General Meeting)",
+  "bn": "대한화학회 의약화학분과회 학술발표회 (KCS Medicinal Chemistry Division Symposium)",
+  "why": "same CJK name"
+ },
+ {
+  "score": 3,
+  "a": 532,
+  "b": 797,
+  "an": "대한화학회 학술발표회 (Korean Chemical Society General Meeting)",
+  "bn": "대한화학회 화학교육분과회 학술발표회 (KCS Chemical Education Division Symposium)",
+  "why": "same CJK name"
+ },
+ {
+  "score": 3,
+  "a": 533,
+  "b": 789,
+  "an": "한국고분자학회 춘계/추계 학술대회 (Polymer Society of Korea Spring/Fall Meeting)",
+  "bn": "한국분석과학회 춘계/추계 학술대회 (Korean Society of Analytical Sciences Spring/Fall Meeting)",
+  "why": "same CJK name"
+ },
+ {
+  "score": 3,
+  "a": 533,
+  "b": 790,
+  "an": "한국고분자학회 춘계/추계 학술대회 (Polymer Society of Korea Spring/Fall Meeting)",
+  "bn": "한국전기화학회 춘계/추계 학술대회 (Korean Electrochemical Society Spring/Fall Meeting)",
+  "why": "same CJK name"
+ },
+ {
+  "score": 3,
+  "a": 533,
+  "b": 791,
+  "an": "한국고분자학회 춘계/추계 학술대회 (Polymer Society of Korea Spring/Fall Meeting)",
+  "bn": "대한약학회 학술대회 (Pharmaceutical Society of Korea Convention)",
+  "why": "same CJK name"
+ },
+ {
+  "score": 3,
+  "a": 540,
+  "b": 730,
+  "an": "Менделеевский съезд по общей и прикладной химии (Mendeleev Congress on General and Applied Chemistry)",
+  "bn": "Конференция молодых учёных по общей и неорганической химии (Young Scientists' Conference on General and Inorganic Chemistry)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 540,
+  "b": 827,
+  "an": "Менделеевский съезд по общей и прикладной химии (Mendeleev Congress on General and Applied Chemistry)",
+  "bn": "Конференции Института общей и неорганической химии АН Республики Узбекистан (Institute of General and Inorganic Chemistry, Uzbek Academy of Sciences — conference series)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 725,
+  "b": 728,
+  "an": "Зимняя школа по химии твёрдого тела (Winter School on Solid State Chemistry, Ekaterinburg)",
+  "bn": "Всероссийская молодежная научная школа-конференция «Актуальные проблемы органической химии» (Current Problems of Organic Chemistry)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 725,
+  "b": 747,
+  "an": "Зимняя школа по химии твёрдого тела (Winter School on Solid State Chemistry, Ekaterinburg)",
+  "bn": "Петербургская школа по аналитической химии (St Petersburg School of Analytical Chemistry)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 725,
+  "b": 761,
+  "an": "Зимняя школа по химии твёрдого тела (Winter School on Solid State Chemistry, Ekaterinburg)",
+  "bn": "Всероссийская молодёжная школа-конференция по актуальным проблемам химии и биологии (Vladivostok)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 726,
+  "b": 728,
+  "an": "Научная конференция «Динамические процессы в химии элементоорганических соединений» (Dynamic Processes in Organoelement Chemistry, Kazan)",
+  "bn": "Всероссийская молодежная научная школа-конференция «Актуальные проблемы органической химии» (Current Problems of Organic Chemistry)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 726,
+  "b": 730,
+  "an": "Научная конференция «Динамические процессы в химии элементоорганических соединений» (Dynamic Processes in Organoelement Chemistry, Kazan)",
+  "bn": "Конференция молодых учёных по общей и неорганической химии (Young Scientists' Conference on General and Inorganic Chemistry)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 726,
+  "b": 744,
+  "an": "Научная конференция «Динамические процессы в химии элементоорганических соединений» (Dynamic Processes in Organoelement Chemistry, Kazan)",
+  "bn": "Международная научная конференция «Современная химическая физика» (Modern Chemical Physics, Chernogolovka)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 726,
+  "b": 745,
+  "an": "Научная конференция «Динамические процессы в химии элементоорганических соединений» (Dynamic Processes in Organoelement Chemistry, Kazan)",
+  "bn": "Черняевская конференция по химии, аналитике и технологии платиновых металлов (Chernyaev Conference on Platinum Metals)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 726,
+  "b": 754,
+  "an": "Научная конференция «Динамические процессы в химии элементоорганических соединений» (Dynamic Processes in Organoelement Chemistry, Kazan)",
+  "bn": "Российская конференция по медицинской химии MedChem Russia",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 726,
+  "b": 755,
+  "an": "Научная конференция «Динамические процессы в химии элементоорганических соединений» (Dynamic Processes in Organoelement Chemistry, Kazan)",
+  "bn": "Плёсская международная научная конференция по электрохимии (Plyos International Conference on Electrochemistry)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 726,
+  "b": 761,
+  "an": "Научная конференция «Динамические процессы в химии элементоорганических соединений» (Dynamic Processes in Organoelement Chemistry, Kazan)",
+  "bn": "Всероссийская молодёжная школа-конференция по актуальным проблемам химии и биологии (Vladivostok)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 726,
+  "b": 774,
+  "an": "Научная конференция «Динамические процессы в химии элементоорганических соединений» (Dynamic Processes in Organoelement Chemistry, Kazan)",
+  "bn": "Научная конференция «Компьютерное моделирование и структурный анализ молекул» (CMSAM — Computer Modelling and Structural Analysis of Molecules)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 726,
+  "b": 776,
+  "an": "Научная конференция «Динамические процессы в химии элементоорганических соединений» (Dynamic Processes in Organoelement Chemistry, Kazan)",
+  "bn": "Научная конференция «Искусственный интеллект в химии и материаловедении» (AI in Chemistry and Materials Science)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 726,
+  "b": 777,
+  "an": "Научная конференция «Динамические процессы в химии элементоорганических соединений» (Dynamic Processes in Organoelement Chemistry, Kazan)",
+  "bn": "Международный симпозиум «Современные тенденции в химии металлорганических соединений и катализе» (Vol'pin Symposium on Organometallic Chemistry and Catalysis)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 726,
+  "b": 778,
+  "an": "Научная конференция «Динамические процессы в химии элементоорганических соединений» (Dynamic Processes in Organoelement Chemistry, Kazan)",
+  "bn": "Всероссийская конференция по органической химии (All-Russian Conference on Organic Chemistry)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 726,
+  "b": 825,
+  "an": "Научная конференция «Динамические процессы в химии элементоорганических соединений» (Dynamic Processes in Organoelement Chemistry, Kazan)",
+  "bn": "Научная конференция молодых учёных «Актуальные проблемы химии природных соединений» (Current Problems of the Chemistry of Natural Compounds, Tashkent)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 726,
+  "b": 826,
+  "an": "Научная конференция «Динамические процессы в химии элементоорганических соединений» (Dynamic Processes in Organoelement Chemistry, Kazan)",
+  "bn": "Международная научная конференция «Химия и технология растительных веществ» (International Conference on Chemistry and Technology of Plant Substances)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 726,
+  "b": 833,
+  "an": "Научная конференция «Динамические процессы в химии элементоорганических соединений» (Dynamic Processes in Organoelement Chemistry, Kazan)",
+  "bn": "Международная научная конференция «Химия и химические технологии: достижения и перспективы развития» (Ashgabat)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 726,
+  "b": 834,
+  "an": "Научная конференция «Динамические процессы в химии элементоорганических соединений» (Dynamic Processes in Organoelement Chemistry, Kazan)",
+  "bn": "Научно-практическая конференция Узбекистана и Таджикистана по химии (Uzbekistan–Tajikistan joint scientific-practical chemistry conference)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 727,
+  "b": 728,
+  "an": "Всероссийская конференция «День редких земель» (Rare Earths Day)",
+  "bn": "Всероссийская молодежная научная школа-конференция «Актуальные проблемы органической химии» (Current Problems of Organic Chemistry)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 727,
+  "b": 733,
+  "an": "Всероссийская конференция «День редких земель» (Rare Earths Day)",
+  "bn": "Всероссийская школа-конференция «Фотокатализ» (Photocatalysis, Novosibirsk)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 727,
+  "b": 734,
+  "an": "Всероссийская конференция «День редких земель» (Rare Earths Day)",
+  "bn": "Всероссийская конференция молодых учёных-химиков (All-Russian Conference of Young Chemists, Nizhny Novgorod)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 727,
+  "b": 740,
+  "an": "Всероссийская конференция «День редких земель» (Rare Earths Day)",
+  "bn": "Всероссийская научно-практическая конференция «Технологии и оборудование химической, биотехнологической и пищевой промышленности» (Biysk)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 727,
+  "b": 748,
+  "an": "Всероссийская конференция «День редких земель» (Rare Earths Day)",
+  "bn": "Всероссийская конференция «Керамика и композиционные материалы» (Ceramics and Composite Materials)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 727,
+  "b": 761,
+  "an": "Всероссийская конференция «День редких земель» (Rare Earths Day)",
+  "bn": "Всероссийская молодёжная школа-конференция по актуальным проблемам химии и биологии (Vladivostok)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 727,
+  "b": 763,
+  "an": "Всероссийская конференция «День редких земель» (Rare Earths Day)",
+  "bn": "Всероссийская конференция по аналитической спектроскопии (All-Russian Conference on Analytical Spectroscopy)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 727,
+  "b": 764,
+  "an": "Всероссийская конференция «День редких земель» (Rare Earths Day)",
+  "bn": "Всероссийская конференция по наноматериалам «НАНО» (All-Russian Conference on Nanomaterials)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 727,
+  "b": 771,
+  "an": "Всероссийская конференция «День редких земель» (Rare Earths Day)",
+  "bn": "Всероссийская конференция «Аналитика Сибири и Дальнего Востока» (Analytics of Siberia and the Far East)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 727,
+  "b": 778,
+  "an": "Всероссийская конференция «День редких земель» (Rare Earths Day)",
+  "bn": "Всероссийская конференция по органической химии (All-Russian Conference on Organic Chemistry)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 727,
+  "b": 779,
+  "an": "Всероссийская конференция «День редких земель» (Rare Earths Day)",
+  "bn": "Всероссийская конференция «Органические радикалы и органическая электрохимия» им. академика В.И. Овчаренко (Ovcharenko Conference on Organic Radicals and Organic Electrochemistry)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 728,
+  "b": 730,
+  "an": "Всероссийская молодежная научная школа-конференция «Актуальные проблемы органической химии» (Current Problems of Organic Chemistry)",
+  "bn": "Конференция молодых учёных по общей и неорганической химии (Young Scientists' Conference on General and Inorganic Chemistry)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 728,
+  "b": 733,
+  "an": "Всероссийская молодежная научная школа-конференция «Актуальные проблемы органической химии» (Current Problems of Organic Chemistry)",
+  "bn": "Всероссийская школа-конференция «Фотокатализ» (Photocatalysis, Novosibirsk)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 728,
+  "b": 734,
+  "an": "Всероссийская молодежная научная школа-конференция «Актуальные проблемы органической химии» (Current Problems of Organic Chemistry)",
+  "bn": "Всероссийская конференция молодых учёных-химиков (All-Russian Conference of Young Chemists, Nizhny Novgorod)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 728,
+  "b": 735,
+  "an": "Всероссийская молодежная научная школа-конференция «Актуальные проблемы органической химии» (Current Problems of Organic Chemistry)",
+  "bn": "Международная конференция «Современные проблемы адсорбции» (Modern Problems of Adsorption)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 728,
+  "b": 736,
+  "an": "Всероссийская молодежная научная школа-конференция «Актуальные проблемы органической химии» (Current Problems of Organic Chemistry)",
+  "bn": "«Проблемы теоретической и экспериментальной химии» (Problems of Theoretical and Experimental Chemistry, Ekaterinburg)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 728,
+  "b": 737,
+  "an": "Всероссийская молодежная научная школа-конференция «Актуальные проблемы органической химии» (Current Problems of Organic Chemistry)",
+  "bn": "Всероссийское Совещание заведующих кафедрами органической химии (All-Russian Meeting of Heads of Organic Chemistry Departments)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 728,
+  "b": 740,
+  "an": "Всероссийская молодежная научная школа-конференция «Актуальные проблемы органической химии» (Current Problems of Organic Chemistry)",
+  "bn": "Всероссийская научно-практическая конференция «Технологии и оборудование химической, биотехнологической и пищевой промышленности» (Biysk)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 728,
+  "b": 743,
+  "an": "Всероссийская молодежная научная школа-конференция «Актуальные проблемы органической химии» (Current Problems of Organic Chemistry)",
+  "bn": "Северо-кавказский симпозиум по органической химии (North Caucasus Symposium on Organic Chemistry, Stavropol)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 728,
+  "b": 744,
+  "an": "Всероссийская молодежная научная школа-конференция «Актуальные проблемы органической химии» (Current Problems of Organic Chemistry)",
+  "bn": "Международная научная конференция «Современная химическая физика» (Modern Chemical Physics, Chernogolovka)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 728,
+  "b": 745,
+  "an": "Всероссийская молодежная научная школа-конференция «Актуальные проблемы органической химии» (Current Problems of Organic Chemistry)",
+  "bn": "Черняевская конференция по химии, аналитике и технологии платиновых металлов (Chernyaev Conference on Platinum Metals)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 728,
+  "b": 746,
+  "an": "Всероссийская молодежная научная школа-конференция «Актуальные проблемы органической химии» (Current Problems of Organic Chemistry)",
+  "bn": "Конференция «Фундаментальные и прикладные проблемы ионики твердого тела» (Fundamental and Applied Problems of Solid State Ionics)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 728,
+  "b": 747,
+  "an": "Всероссийская молодежная научная школа-конференция «Актуальные проблемы органической химии» (Current Problems of Organic Chemistry)",
+  "bn": "Петербургская школа по аналитической химии (St Petersburg School of Analytical Chemistry)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 728,
+  "b": 748,
+  "an": "Всероссийская молодежная научная школа-конференция «Актуальные проблемы органической химии» (Current Problems of Organic Chemistry)",
+  "bn": "Всероссийская конференция «Керамика и композиционные материалы» (Ceramics and Composite Materials)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 728,
+  "b": 754,
+  "an": "Всероссийская молодежная научная школа-конференция «Актуальные проблемы органической химии» (Current Problems of Organic Chemistry)",
+  "bn": "Российская конференция по медицинской химии MedChem Russia",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 728,
+  "b": 755,
+  "an": "Всероссийская молодежная научная школа-конференция «Актуальные проблемы органической химии» (Current Problems of Organic Chemistry)",
+  "bn": "Плёсская международная научная конференция по электрохимии (Plyos International Conference on Electrochemistry)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 728,
+  "b": 759,
+  "an": "Всероссийская молодежная научная школа-конференция «Актуальные проблемы органической химии» (Current Problems of Organic Chemistry)",
+  "bn": "Международная осенняя школа-конференция по органической электронике (IFSOE — International Fall School on Organic Electronics)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 728,
+  "b": 760,
+  "an": "Всероссийская молодежная научная школа-конференция «Актуальные проблемы органической химии» (Current Problems of Organic Chemistry)",
+  "bn": "Международная конференция «Актуальные проблемы преобразования энергии в литиевых электрохимических системах» (Energy Conversion in Lithium Electrochemical Systems)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 728,
+  "b": 761,
+  "an": "Всероссийская молодежная научная школа-конференция «Актуальные проблемы органической химии» (Current Problems of Organic Chemistry)",
+  "bn": "Всероссийская молодёжная школа-конференция по актуальным проблемам химии и биологии (Vladivostok)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 728,
+  "b": 763,
+  "an": "Всероссийская молодежная научная школа-конференция «Актуальные проблемы органической химии» (Current Problems of Organic Chemistry)",
+  "bn": "Всероссийская конференция по аналитической спектроскопии (All-Russian Conference on Analytical Spectroscopy)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 728,
+  "b": 764,
+  "an": "Всероссийская молодежная научная школа-конференция «Актуальные проблемы органической химии» (Current Problems of Organic Chemistry)",
+  "bn": "Всероссийская конференция по наноматериалам «НАНО» (All-Russian Conference on Nanomaterials)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 728,
+  "b": 765,
+  "an": "Всероссийская молодежная научная школа-конференция «Актуальные проблемы органической химии» (Current Problems of Organic Chemistry)",
+  "bn": "Всероссийская школа молодых учёных «Электрохимические устройства» (Electrochemical Devices)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 728,
+  "b": 771,
+  "an": "Всероссийская молодежная научная школа-конференция «Актуальные проблемы органической химии» (Current Problems of Organic Chemistry)",
+  "bn": "Всероссийская конференция «Аналитика Сибири и Дальнего Востока» (Analytics of Siberia and the Far East)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 728,
+  "b": 773,
+  "an": "Всероссийская молодежная научная школа-конференция «Актуальные проблемы органической химии» (Current Problems of Organic Chemistry)",
+  "bn": "Санкт-Петербургская конференция молодых учёных «Современные проблемы науки о полимерах» (Modern Problems of Polymer Science)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 728,
+  "b": 774,
+  "an": "Всероссийская молодежная научная школа-конференция «Актуальные проблемы органической химии» (Current Problems of Organic Chemistry)",
+  "bn": "Научная конференция «Компьютерное моделирование и структурный анализ молекул» (CMSAM — Computer Modelling and Structural Analysis of Molecules)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 728,
+  "b": 775,
+  "an": "Всероссийская молодежная научная школа-конференция «Актуальные проблемы органической химии» (Current Problems of Organic Chemistry)",
+  "bn": "«Актуальные проблемы неорганической химии: координационная химия» (Current Problems of Inorganic Chemistry: Coordination Chemistry)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 728,
+  "b": 776,
+  "an": "Всероссийская молодежная научная школа-конференция «Актуальные проблемы органической химии» (Current Problems of Organic Chemistry)",
+  "bn": "Научная конференция «Искусственный интеллект в химии и материаловедении» (AI in Chemistry and Materials Science)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 728,
+  "b": 778,
+  "an": "Всероссийская молодежная научная школа-конференция «Актуальные проблемы органической химии» (Current Problems of Organic Chemistry)",
+  "bn": "Всероссийская конференция по органической химии (All-Russian Conference on Organic Chemistry)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 728,
+  "b": 779,
+  "an": "Всероссийская молодежная научная школа-конференция «Актуальные проблемы органической химии» (Current Problems of Organic Chemistry)",
+  "bn": "Всероссийская конференция «Органические радикалы и органическая электрохимия» им. академика В.И. Овчаренко (Ovcharenko Conference on Organic Radicals and Organic Electrochemistry)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 728,
+  "b": 825,
+  "an": "Всероссийская молодежная научная школа-конференция «Актуальные проблемы органической химии» (Current Problems of Organic Chemistry)",
+  "bn": "Научная конференция молодых учёных «Актуальные проблемы химии природных соединений» (Current Problems of the Chemistry of Natural Compounds, Tashkent)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 728,
+  "b": 826,
+  "an": "Всероссийская молодежная научная школа-конференция «Актуальные проблемы органической химии» (Current Problems of Organic Chemistry)",
+  "bn": "Международная научная конференция «Химия и технология растительных веществ» (International Conference on Chemistry and Technology of Plant Substances)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 728,
+  "b": 833,
+  "an": "Всероссийская молодежная научная школа-конференция «Актуальные проблемы органической химии» (Current Problems of Organic Chemistry)",
+  "bn": "Международная научная конференция «Химия и химические технологии: достижения и перспективы развития» (Ashgabat)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 728,
+  "b": 834,
+  "an": "Всероссийская молодежная научная школа-конференция «Актуальные проблемы органической химии» (Current Problems of Organic Chemistry)",
+  "bn": "Научно-практическая конференция Узбекистана и Таджикистана по химии (Uzbekistan–Tajikistan joint scientific-practical chemistry conference)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 729,
+  "b": 799,
+  "an": "Химия и химическое образование XXI века (Chemistry and Chemical Education of the 21st Century, St Petersburg)",
+  "bn": "Международная конференция «Химия и химическое образование — Свиридовские чтения» (Sviridov Readings, Minsk)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 730,
+  "b": 734,
+  "an": "Конференция молодых учёных по общей и неорганической химии (Young Scientists' Conference on General and Inorganic Chemistry)",
+  "bn": "Всероссийская конференция молодых учёных-химиков (All-Russian Conference of Young Chemists, Nizhny Novgorod)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 730,
+  "b": 745,
+  "an": "Конференция молодых учёных по общей и неорганической химии (Young Scientists' Conference on General and Inorganic Chemistry)",
+  "bn": "Черняевская конференция по химии, аналитике и технологии платиновых металлов (Chernyaev Conference on Platinum Metals)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 730,
+  "b": 754,
+  "an": "Конференция молодых учёных по общей и неорганической химии (Young Scientists' Conference on General and Inorganic Chemistry)",
+  "bn": "Российская конференция по медицинской химии MedChem Russia",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 730,
+  "b": 761,
+  "an": "Конференция молодых учёных по общей и неорганической химии (Young Scientists' Conference on General and Inorganic Chemistry)",
+  "bn": "Всероссийская молодёжная школа-конференция по актуальным проблемам химии и биологии (Vladivostok)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 730,
+  "b": 765,
+  "an": "Конференция молодых учёных по общей и неорганической химии (Young Scientists' Conference on General and Inorganic Chemistry)",
+  "bn": "Всероссийская школа молодых учёных «Электрохимические устройства» (Electrochemical Devices)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 730,
+  "b": 773,
+  "an": "Конференция молодых учёных по общей и неорганической химии (Young Scientists' Conference on General and Inorganic Chemistry)",
+  "bn": "Санкт-Петербургская конференция молодых учёных «Современные проблемы науки о полимерах» (Modern Problems of Polymer Science)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 730,
+  "b": 775,
+  "an": "Конференция молодых учёных по общей и неорганической химии (Young Scientists' Conference on General and Inorganic Chemistry)",
+  "bn": "«Актуальные проблемы неорганической химии: координационная химия» (Current Problems of Inorganic Chemistry: Coordination Chemistry)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 730,
+  "b": 776,
+  "an": "Конференция молодых учёных по общей и неорганической химии (Young Scientists' Conference on General and Inorganic Chemistry)",
+  "bn": "Научная конференция «Искусственный интеллект в химии и материаловедении» (AI in Chemistry and Materials Science)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 730,
+  "b": 778,
+  "an": "Конференция молодых учёных по общей и неорганической химии (Young Scientists' Conference on General and Inorganic Chemistry)",
+  "bn": "Всероссийская конференция по органической химии (All-Russian Conference on Organic Chemistry)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 730,
+  "b": 825,
+  "an": "Конференция молодых учёных по общей и неорганической химии (Young Scientists' Conference on General and Inorganic Chemistry)",
+  "bn": "Научная конференция молодых учёных «Актуальные проблемы химии природных соединений» (Current Problems of the Chemistry of Natural Compounds, Tashkent)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 730,
+  "b": 827,
+  "an": "Конференция молодых учёных по общей и неорганической химии (Young Scientists' Conference on General and Inorganic Chemistry)",
+  "bn": "Конференции Института общей и неорганической химии АН Республики Узбекистан (Institute of General and Inorganic Chemistry, Uzbek Academy of Sciences — conference series)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 730,
+  "b": 834,
+  "an": "Конференция молодых учёных по общей и неорганической химии (Young Scientists' Conference on General and Inorganic Chemistry)",
+  "bn": "Научно-практическая конференция Узбекистана и Таджикистана по химии (Uzbekistan–Tajikistan joint scientific-practical chemistry conference)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 731,
+  "b": 749,
+  "an": "Международный симпозиум «Дизайн и синтез супрамолекулярных архитектур» (Design and Synthesis of Supramolecular Architectures, Kazan)",
+  "bn": "Международный симпозиум «Нековалентные взаимодействия в синтезе, катализе и кристаллохимическом дизайне» (Noncovalent Interactions in Synthesis, Catalysis and Crystal Design)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 731,
+  "b": 777,
+  "an": "Международный симпозиум «Дизайн и синтез супрамолекулярных архитектур» (Design and Synthesis of Supramolecular Architectures, Kazan)",
+  "bn": "Международный симпозиум «Современные тенденции в химии металлорганических соединений и катализе» (Vol'pin Symposium on Organometallic Chemistry and Catalysis)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 732,
+  "b": 754,
+  "an": "Российская конференция «Рентгеновские методы исследования веществ и материалов» (РеМИс / X-ray Methods for Substances and Materials)",
+  "bn": "Российская конференция по медицинской химии MedChem Russia",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 732,
+  "b": 817,
+  "an": "Российская конференция «Рентгеновские методы исследования веществ и материалов» (РеМИс / X-ray Methods for Substances and Materials)",
+  "bn": "Международная российско-казахстанская научно-практическая конференция «Химические технологии функциональных материалов» (International Russian-Kazakhstani Conference on Chemical Technologies of Functional Materials)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 732,
+  "b": 826,
+  "an": "Российская конференция «Рентгеновские методы исследования веществ и материалов» (РеМИс / X-ray Methods for Substances and Materials)",
+  "bn": "Международная научная конференция «Химия и технология растительных веществ» (International Conference on Chemistry and Technology of Plant Substances)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 733,
+  "b": 734,
+  "an": "Всероссийская школа-конференция «Фотокатализ» (Photocatalysis, Novosibirsk)",
+  "bn": "Всероссийская конференция молодых учёных-химиков (All-Russian Conference of Young Chemists, Nizhny Novgorod)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 733,
+  "b": 740,
+  "an": "Всероссийская школа-конференция «Фотокатализ» (Photocatalysis, Novosibirsk)",
+  "bn": "Всероссийская научно-практическая конференция «Технологии и оборудование химической, биотехнологической и пищевой промышленности» (Biysk)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 733,
+  "b": 748,
+  "an": "Всероссийская школа-конференция «Фотокатализ» (Photocatalysis, Novosibirsk)",
+  "bn": "Всероссийская конференция «Керамика и композиционные материалы» (Ceramics and Composite Materials)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 733,
+  "b": 759,
+  "an": "Всероссийская школа-конференция «Фотокатализ» (Photocatalysis, Novosibirsk)",
+  "bn": "Международная осенняя школа-конференция по органической электронике (IFSOE — International Fall School on Organic Electronics)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 733,
+  "b": 761,
+  "an": "Всероссийская школа-конференция «Фотокатализ» (Photocatalysis, Novosibirsk)",
+  "bn": "Всероссийская молодёжная школа-конференция по актуальным проблемам химии и биологии (Vladivostok)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 733,
+  "b": 763,
+  "an": "Всероссийская школа-конференция «Фотокатализ» (Photocatalysis, Novosibirsk)",
+  "bn": "Всероссийская конференция по аналитической спектроскопии (All-Russian Conference on Analytical Spectroscopy)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 733,
+  "b": 764,
+  "an": "Всероссийская школа-конференция «Фотокатализ» (Photocatalysis, Novosibirsk)",
+  "bn": "Всероссийская конференция по наноматериалам «НАНО» (All-Russian Conference on Nanomaterials)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 733,
+  "b": 765,
+  "an": "Всероссийская школа-конференция «Фотокатализ» (Photocatalysis, Novosibirsk)",
+  "bn": "Всероссийская школа молодых учёных «Электрохимические устройства» (Electrochemical Devices)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 733,
+  "b": 771,
+  "an": "Всероссийская школа-конференция «Фотокатализ» (Photocatalysis, Novosibirsk)",
+  "bn": "Всероссийская конференция «Аналитика Сибири и Дальнего Востока» (Analytics of Siberia and the Far East)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 733,
+  "b": 778,
+  "an": "Всероссийская школа-конференция «Фотокатализ» (Photocatalysis, Novosibirsk)",
+  "bn": "Всероссийская конференция по органической химии (All-Russian Conference on Organic Chemistry)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 733,
+  "b": 779,
+  "an": "Всероссийская школа-конференция «Фотокатализ» (Photocatalysis, Novosibirsk)",
+  "bn": "Всероссийская конференция «Органические радикалы и органическая электрохимия» им. академика В.И. Овчаренко (Ovcharenko Conference on Organic Radicals and Organic Electrochemistry)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 734,
+  "b": 740,
+  "an": "Всероссийская конференция молодых учёных-химиков (All-Russian Conference of Young Chemists, Nizhny Novgorod)",
+  "bn": "Всероссийская научно-практическая конференция «Технологии и оборудование химической, биотехнологической и пищевой промышленности» (Biysk)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 734,
+  "b": 748,
+  "an": "Всероссийская конференция молодых учёных-химиков (All-Russian Conference of Young Chemists, Nizhny Novgorod)",
+  "bn": "Всероссийская конференция «Керамика и композиционные материалы» (Ceramics and Composite Materials)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 734,
+  "b": 761,
+  "an": "Всероссийская конференция молодых учёных-химиков (All-Russian Conference of Young Chemists, Nizhny Novgorod)",
+  "bn": "Всероссийская молодёжная школа-конференция по актуальным проблемам химии и биологии (Vladivostok)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 734,
+  "b": 763,
+  "an": "Всероссийская конференция молодых учёных-химиков (All-Russian Conference of Young Chemists, Nizhny Novgorod)",
+  "bn": "Всероссийская конференция по аналитической спектроскопии (All-Russian Conference on Analytical Spectroscopy)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 734,
+  "b": 764,
+  "an": "Всероссийская конференция молодых учёных-химиков (All-Russian Conference of Young Chemists, Nizhny Novgorod)",
+  "bn": "Всероссийская конференция по наноматериалам «НАНО» (All-Russian Conference on Nanomaterials)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 734,
+  "b": 765,
+  "an": "Всероссийская конференция молодых учёных-химиков (All-Russian Conference of Young Chemists, Nizhny Novgorod)",
+  "bn": "Всероссийская школа молодых учёных «Электрохимические устройства» (Electrochemical Devices)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 734,
+  "b": 771,
+  "an": "Всероссийская конференция молодых учёных-химиков (All-Russian Conference of Young Chemists, Nizhny Novgorod)",
+  "bn": "Всероссийская конференция «Аналитика Сибири и Дальнего Востока» (Analytics of Siberia and the Far East)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 734,
+  "b": 773,
+  "an": "Всероссийская конференция молодых учёных-химиков (All-Russian Conference of Young Chemists, Nizhny Novgorod)",
+  "bn": "Санкт-Петербургская конференция молодых учёных «Современные проблемы науки о полимерах» (Modern Problems of Polymer Science)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 734,
+  "b": 778,
+  "an": "Всероссийская конференция молодых учёных-химиков (All-Russian Conference of Young Chemists, Nizhny Novgorod)",
+  "bn": "Всероссийская конференция по органической химии (All-Russian Conference on Organic Chemistry)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 734,
+  "b": 779,
+  "an": "Всероссийская конференция молодых учёных-химиков (All-Russian Conference of Young Chemists, Nizhny Novgorod)",
+  "bn": "Всероссийская конференция «Органические радикалы и органическая электрохимия» им. академика В.И. Овчаренко (Ovcharenko Conference on Organic Radicals and Organic Electrochemistry)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 734,
+  "b": 825,
+  "an": "Всероссийская конференция молодых учёных-химиков (All-Russian Conference of Young Chemists, Nizhny Novgorod)",
+  "bn": "Научная конференция молодых учёных «Актуальные проблемы химии природных соединений» (Current Problems of the Chemistry of Natural Compounds, Tashkent)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 735,
+  "b": 738,
+  "an": "Международная конференция «Современные проблемы адсорбции» (Modern Problems of Adsorption)",
+  "bn": "Международная научно-практическая конференция «Химия и химическая технология в XXI веке» (ХХТ, Tomsk)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 735,
+  "b": 744,
+  "an": "Международная конференция «Современные проблемы адсорбции» (Modern Problems of Adsorption)",
+  "bn": "Международная научная конференция «Современная химическая физика» (Modern Chemical Physics, Chernogolovka)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 735,
+  "b": 746,
+  "an": "Международная конференция «Современные проблемы адсорбции» (Modern Problems of Adsorption)",
+  "bn": "Конференция «Фундаментальные и прикладные проблемы ионики твердого тела» (Fundamental and Applied Problems of Solid State Ionics)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 735,
+  "b": 753,
+  "an": "Международная конференция «Современные проблемы адсорбции» (Modern Problems of Adsorption)",
+  "bn": "Международная конференция «Кластеры» (Clusters Conference, Novosibirsk)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 735,
+  "b": 755,
+  "an": "Международная конференция «Современные проблемы адсорбции» (Modern Problems of Adsorption)",
+  "bn": "Плёсская международная научная конференция по электрохимии (Plyos International Conference on Electrochemistry)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 735,
+  "b": 757,
+  "an": "Международная конференция «Современные проблемы адсорбции» (Modern Problems of Adsorption)",
+  "bn": "Международная конференция «Атомно-слоевое осаждение: Россия» (Atomic Layer Deposition Russia)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 735,
+  "b": 759,
+  "an": "Международная конференция «Современные проблемы адсорбции» (Modern Problems of Adsorption)",
+  "bn": "Международная осенняя школа-конференция по органической электронике (IFSOE — International Fall School on Organic Electronics)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 735,
+  "b": 760,
+  "an": "Международная конференция «Современные проблемы адсорбции» (Modern Problems of Adsorption)",
+  "bn": "Международная конференция «Актуальные проблемы преобразования энергии в литиевых электрохимических системах» (Energy Conversion in Lithium Electrochemical Systems)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 735,
+  "b": 773,
+  "an": "Международная конференция «Современные проблемы адсорбции» (Modern Problems of Adsorption)",
+  "bn": "Санкт-Петербургская конференция молодых учёных «Современные проблемы науки о полимерах» (Modern Problems of Polymer Science)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 735,
+  "b": 798,
+  "an": "Международная конференция «Современные проблемы адсорбции» (Modern Problems of Adsorption)",
+  "bn": "Международная конференция «Химия и химическая технология» / «Химия в Армении» (Chemistry and Chemical Technology / Chemistry in Armenia, Yerevan)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 735,
+  "b": 799,
+  "an": "Международная конференция «Современные проблемы адсорбции» (Modern Problems of Adsorption)",
+  "bn": "Международная конференция «Химия и химическое образование — Свиридовские чтения» (Sviridov Readings, Minsk)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 735,
+  "b": 817,
+  "an": "Международная конференция «Современные проблемы адсорбции» (Modern Problems of Adsorption)",
+  "bn": "Международная российско-казахстанская научно-практическая конференция «Химические технологии функциональных материалов» (International Russian-Kazakhstani Conference on Chemical Technologies of Functional Materials)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 735,
+  "b": 825,
+  "an": "Международная конференция «Современные проблемы адсорбции» (Modern Problems of Adsorption)",
+  "bn": "Научная конференция молодых учёных «Актуальные проблемы химии природных соединений» (Current Problems of the Chemistry of Natural Compounds, Tashkent)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 735,
+  "b": 826,
+  "an": "Международная конференция «Современные проблемы адсорбции» (Modern Problems of Adsorption)",
+  "bn": "Международная научная конференция «Химия и технология растительных веществ» (International Conference on Chemistry and Technology of Plant Substances)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 735,
+  "b": 833,
+  "an": "Международная конференция «Современные проблемы адсорбции» (Modern Problems of Adsorption)",
+  "bn": "Международная научная конференция «Химия и химические технологии: достижения и перспективы развития» (Ashgabat)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 736,
+  "b": 775,
+  "an": "«Проблемы теоретической и экспериментальной химии» (Problems of Theoretical and Experimental Chemistry, Ekaterinburg)",
+  "bn": "«Актуальные проблемы неорганической химии: координационная химия» (Current Problems of Inorganic Chemistry: Coordination Chemistry)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 736,
+  "b": 825,
+  "an": "«Проблемы теоретической и экспериментальной химии» (Problems of Theoretical and Experimental Chemistry, Ekaterinburg)",
+  "bn": "Научная конференция молодых учёных «Актуальные проблемы химии природных соединений» (Current Problems of the Chemistry of Natural Compounds, Tashkent)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 737,
+  "b": 742,
+  "an": "Всероссийское Совещание заведующих кафедрами органической химии (All-Russian Meeting of Heads of Organic Chemistry Departments)",
+  "bn": "Всероссийское совещание по неорганическим и органосиликатным покрытиям (All-Russian Meeting on Inorganic and Organosilicate Coatings)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 737,
+  "b": 743,
+  "an": "Всероссийское Совещание заведующих кафедрами органической химии (All-Russian Meeting of Heads of Organic Chemistry Departments)",
+  "bn": "Северо-кавказский симпозиум по органической химии (North Caucasus Symposium on Organic Chemistry, Stavropol)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 738,
+  "b": 740,
+  "an": "Международная научно-практическая конференция «Химия и химическая технология в XXI веке» (ХХТ, Tomsk)",
+  "bn": "Всероссийская научно-практическая конференция «Технологии и оборудование химической, биотехнологической и пищевой промышленности» (Biysk)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 738,
+  "b": 744,
+  "an": "Международная научно-практическая конференция «Химия и химическая технология в XXI веке» (ХХТ, Tomsk)",
+  "bn": "Международная научная конференция «Современная химическая физика» (Modern Chemical Physics, Chernogolovka)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 738,
+  "b": 753,
+  "an": "Международная научно-практическая конференция «Химия и химическая технология в XXI веке» (ХХТ, Tomsk)",
+  "bn": "Международная конференция «Кластеры» (Clusters Conference, Novosibirsk)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 738,
+  "b": 755,
+  "an": "Международная научно-практическая конференция «Химия и химическая технология в XXI веке» (ХХТ, Tomsk)",
+  "bn": "Плёсская международная научная конференция по электрохимии (Plyos International Conference on Electrochemistry)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 738,
+  "b": 757,
+  "an": "Международная научно-практическая конференция «Химия и химическая технология в XXI веке» (ХХТ, Tomsk)",
+  "bn": "Международная конференция «Атомно-слоевое осаждение: Россия» (Atomic Layer Deposition Russia)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 738,
+  "b": 759,
+  "an": "Международная научно-практическая конференция «Химия и химическая технология в XXI веке» (ХХТ, Tomsk)",
+  "bn": "Международная осенняя школа-конференция по органической электронике (IFSOE — International Fall School on Organic Electronics)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 738,
+  "b": 760,
+  "an": "Международная научно-практическая конференция «Химия и химическая технология в XXI веке» (ХХТ, Tomsk)",
+  "bn": "Международная конференция «Актуальные проблемы преобразования энергии в литиевых электрохимических системах» (Energy Conversion in Lithium Electrochemical Systems)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 738,
+  "b": 798,
+  "an": "Международная научно-практическая конференция «Химия и химическая технология в XXI веке» (ХХТ, Tomsk)",
+  "bn": "Международная конференция «Химия и химическая технология» / «Химия в Армении» (Chemistry and Chemical Technology / Chemistry in Armenia, Yerevan)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 738,
+  "b": 799,
+  "an": "Международная научно-практическая конференция «Химия и химическая технология в XXI веке» (ХХТ, Tomsk)",
+  "bn": "Международная конференция «Химия и химическое образование — Свиридовские чтения» (Sviridov Readings, Minsk)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 738,
+  "b": 817,
+  "an": "Международная научно-практическая конференция «Химия и химическая технология в XXI веке» (ХХТ, Tomsk)",
+  "bn": "Международная российско-казахстанская научно-практическая конференция «Химические технологии функциональных материалов» (International Russian-Kazakhstani Conference on Chemical Technologies of Functional Materials)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 738,
+  "b": 826,
+  "an": "Международная научно-практическая конференция «Химия и химическая технология в XXI веке» (ХХТ, Tomsk)",
+  "bn": "Международная научная конференция «Химия и технология растительных веществ» (International Conference on Chemistry and Technology of Plant Substances)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 738,
+  "b": 833,
+  "an": "Международная научно-практическая конференция «Химия и химическая технология в XXI веке» (ХХТ, Tomsk)",
+  "bn": "Международная научная конференция «Химия и химические технологии: достижения и перспективы развития» (Ashgabat)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 738,
+  "b": 834,
+  "an": "Международная научно-практическая конференция «Химия и химическая технология в XXI веке» (ХХТ, Tomsk)",
+  "bn": "Научно-практическая конференция Узбекистана и Таджикистана по химии (Uzbekistan–Tajikistan joint scientific-practical chemistry conference)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 740,
+  "b": 745,
+  "an": "Всероссийская научно-практическая конференция «Технологии и оборудование химической, биотехнологической и пищевой промышленности» (Biysk)",
+  "bn": "Черняевская конференция по химии, аналитике и технологии платиновых металлов (Chernyaev Conference on Platinum Metals)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 740,
+  "b": 748,
+  "an": "Всероссийская научно-практическая конференция «Технологии и оборудование химической, биотехнологической и пищевой промышленности» (Biysk)",
+  "bn": "Всероссийская конференция «Керамика и композиционные материалы» (Ceramics and Composite Materials)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 740,
+  "b": 761,
+  "an": "Всероссийская научно-практическая конференция «Технологии и оборудование химической, биотехнологической и пищевой промышленности» (Biysk)",
+  "bn": "Всероссийская молодёжная школа-конференция по актуальным проблемам химии и биологии (Vladivostok)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 740,
+  "b": 763,
+  "an": "Всероссийская научно-практическая конференция «Технологии и оборудование химической, биотехнологической и пищевой промышленности» (Biysk)",
+  "bn": "Всероссийская конференция по аналитической спектроскопии (All-Russian Conference on Analytical Spectroscopy)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 740,
+  "b": 764,
+  "an": "Всероссийская научно-практическая конференция «Технологии и оборудование химической, биотехнологической и пищевой промышленности» (Biysk)",
+  "bn": "Всероссийская конференция по наноматериалам «НАНО» (All-Russian Conference on Nanomaterials)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 740,
+  "b": 771,
+  "an": "Всероссийская научно-практическая конференция «Технологии и оборудование химической, биотехнологической и пищевой промышленности» (Biysk)",
+  "bn": "Всероссийская конференция «Аналитика Сибири и Дальнего Востока» (Analytics of Siberia and the Far East)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 740,
+  "b": 778,
+  "an": "Всероссийская научно-практическая конференция «Технологии и оборудование химической, биотехнологической и пищевой промышленности» (Biysk)",
+  "bn": "Всероссийская конференция по органической химии (All-Russian Conference on Organic Chemistry)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 740,
+  "b": 779,
+  "an": "Всероссийская научно-практическая конференция «Технологии и оборудование химической, биотехнологической и пищевой промышленности» (Biysk)",
+  "bn": "Всероссийская конференция «Органические радикалы и органическая электрохимия» им. академика В.И. Овчаренко (Ovcharenko Conference on Organic Radicals and Organic Electrochemistry)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 740,
+  "b": 817,
+  "an": "Всероссийская научно-практическая конференция «Технологии и оборудование химической, биотехнологической и пищевой промышленности» (Biysk)",
+  "bn": "Международная российско-казахстанская научно-практическая конференция «Химические технологии функциональных материалов» (International Russian-Kazakhstani Conference on Chemical Technologies of Functional Materials)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 740,
+  "b": 833,
+  "an": "Всероссийская научно-практическая конференция «Технологии и оборудование химической, биотехнологической и пищевой промышленности» (Biysk)",
+  "bn": "Международная научная конференция «Химия и химические технологии: достижения и перспективы развития» (Ashgabat)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 740,
+  "b": 834,
+  "an": "Всероссийская научно-практическая конференция «Технологии и оборудование химической, биотехнологической и пищевой промышленности» (Biysk)",
+  "bn": "Научно-практическая конференция Узбекистана и Таджикистана по химии (Uzbekistan–Tajikistan joint scientific-practical chemistry conference)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 743,
+  "b": 777,
+  "an": "Северо-кавказский симпозиум по органической химии (North Caucasus Symposium on Organic Chemistry, Stavropol)",
+  "bn": "Международный симпозиум «Современные тенденции в химии металлорганических соединений и катализе» (Vol'pin Symposium on Organometallic Chemistry and Catalysis)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 743,
+  "b": 778,
+  "an": "Северо-кавказский симпозиум по органической химии (North Caucasus Symposium on Organic Chemistry, Stavropol)",
+  "bn": "Всероссийская конференция по органической химии (All-Russian Conference on Organic Chemistry)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 744,
+  "b": 753,
+  "an": "Международная научная конференция «Современная химическая физика» (Modern Chemical Physics, Chernogolovka)",
+  "bn": "Международная конференция «Кластеры» (Clusters Conference, Novosibirsk)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 744,
+  "b": 755,
+  "an": "Международная научная конференция «Современная химическая физика» (Modern Chemical Physics, Chernogolovka)",
+  "bn": "Плёсская международная научная конференция по электрохимии (Plyos International Conference on Electrochemistry)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 744,
+  "b": 757,
+  "an": "Международная научная конференция «Современная химическая физика» (Modern Chemical Physics, Chernogolovka)",
+  "bn": "Международная конференция «Атомно-слоевое осаждение: Россия» (Atomic Layer Deposition Russia)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 744,
+  "b": 759,
+  "an": "Международная научная конференция «Современная химическая физика» (Modern Chemical Physics, Chernogolovka)",
+  "bn": "Международная осенняя школа-конференция по органической электронике (IFSOE — International Fall School on Organic Electronics)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 744,
+  "b": 760,
+  "an": "Международная научная конференция «Современная химическая физика» (Modern Chemical Physics, Chernogolovka)",
+  "bn": "Международная конференция «Актуальные проблемы преобразования энергии в литиевых электрохимических системах» (Energy Conversion in Lithium Electrochemical Systems)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 744,
+  "b": 774,
+  "an": "Международная научная конференция «Современная химическая физика» (Modern Chemical Physics, Chernogolovka)",
+  "bn": "Научная конференция «Компьютерное моделирование и структурный анализ молекул» (CMSAM — Computer Modelling and Structural Analysis of Molecules)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 744,
+  "b": 776,
+  "an": "Международная научная конференция «Современная химическая физика» (Modern Chemical Physics, Chernogolovka)",
+  "bn": "Научная конференция «Искусственный интеллект в химии и материаловедении» (AI in Chemistry and Materials Science)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 744,
+  "b": 798,
+  "an": "Международная научная конференция «Современная химическая физика» (Modern Chemical Physics, Chernogolovka)",
+  "bn": "Международная конференция «Химия и химическая технология» / «Химия в Армении» (Chemistry and Chemical Technology / Chemistry in Armenia, Yerevan)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 744,
+  "b": 799,
+  "an": "Международная научная конференция «Современная химическая физика» (Modern Chemical Physics, Chernogolovka)",
+  "bn": "Международная конференция «Химия и химическое образование — Свиридовские чтения» (Sviridov Readings, Minsk)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 744,
+  "b": 817,
+  "an": "Международная научная конференция «Современная химическая физика» (Modern Chemical Physics, Chernogolovka)",
+  "bn": "Международная российско-казахстанская научно-практическая конференция «Химические технологии функциональных материалов» (International Russian-Kazakhstani Conference on Chemical Technologies of Functional Materials)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 744,
+  "b": 825,
+  "an": "Международная научная конференция «Современная химическая физика» (Modern Chemical Physics, Chernogolovka)",
+  "bn": "Научная конференция молодых учёных «Актуальные проблемы химии природных соединений» (Current Problems of the Chemistry of Natural Compounds, Tashkent)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 744,
+  "b": 826,
+  "an": "Международная научная конференция «Современная химическая физика» (Modern Chemical Physics, Chernogolovka)",
+  "bn": "Международная научная конференция «Химия и технология растительных веществ» (International Conference on Chemistry and Technology of Plant Substances)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 744,
+  "b": 833,
+  "an": "Международная научная конференция «Современная химическая физика» (Modern Chemical Physics, Chernogolovka)",
+  "bn": "Международная научная конференция «Химия и химические технологии: достижения и перспективы развития» (Ashgabat)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 745,
+  "b": 754,
+  "an": "Черняевская конференция по химии, аналитике и технологии платиновых металлов (Chernyaev Conference on Platinum Metals)",
+  "bn": "Российская конференция по медицинской химии MedChem Russia",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 745,
+  "b": 761,
+  "an": "Черняевская конференция по химии, аналитике и технологии платиновых металлов (Chernyaev Conference on Platinum Metals)",
+  "bn": "Всероссийская молодёжная школа-конференция по актуальным проблемам химии и биологии (Vladivostok)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 745,
+  "b": 776,
+  "an": "Черняевская конференция по химии, аналитике и технологии платиновых металлов (Chernyaev Conference on Platinum Metals)",
+  "bn": "Научная конференция «Искусственный интеллект в химии и материаловедении» (AI in Chemistry and Materials Science)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 745,
+  "b": 778,
+  "an": "Черняевская конференция по химии, аналитике и технологии платиновых металлов (Chernyaev Conference on Platinum Metals)",
+  "bn": "Всероссийская конференция по органической химии (All-Russian Conference on Organic Chemistry)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 745,
+  "b": 817,
+  "an": "Черняевская конференция по химии, аналитике и технологии платиновых металлов (Chernyaev Conference on Platinum Metals)",
+  "bn": "Международная российско-казахстанская научно-практическая конференция «Химические технологии функциональных материалов» (International Russian-Kazakhstani Conference on Chemical Technologies of Functional Materials)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 745,
+  "b": 825,
+  "an": "Черняевская конференция по химии, аналитике и технологии платиновых металлов (Chernyaev Conference on Platinum Metals)",
+  "bn": "Научная конференция молодых учёных «Актуальные проблемы химии природных соединений» (Current Problems of the Chemistry of Natural Compounds, Tashkent)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 745,
+  "b": 833,
+  "an": "Черняевская конференция по химии, аналитике и технологии платиновых металлов (Chernyaev Conference on Platinum Metals)",
+  "bn": "Международная научная конференция «Химия и химические технологии: достижения и перспективы развития» (Ashgabat)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 745,
+  "b": 834,
+  "an": "Черняевская конференция по химии, аналитике и технологии платиновых металлов (Chernyaev Conference on Platinum Metals)",
+  "bn": "Научно-практическая конференция Узбекистана и Таджикистана по химии (Uzbekistan–Tajikistan joint scientific-practical chemistry conference)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 746,
+  "b": 760,
+  "an": "Конференция «Фундаментальные и прикладные проблемы ионики твердого тела» (Fundamental and Applied Problems of Solid State Ionics)",
+  "bn": "Международная конференция «Актуальные проблемы преобразования энергии в литиевых электрохимических системах» (Energy Conversion in Lithium Electrochemical Systems)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 746,
+  "b": 773,
+  "an": "Конференция «Фундаментальные и прикладные проблемы ионики твердого тела» (Fundamental and Applied Problems of Solid State Ionics)",
+  "bn": "Санкт-Петербургская конференция молодых учёных «Современные проблемы науки о полимерах» (Modern Problems of Polymer Science)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 746,
+  "b": 825,
+  "an": "Конференция «Фундаментальные и прикладные проблемы ионики твердого тела» (Fundamental and Applied Problems of Solid State Ionics)",
+  "bn": "Научная конференция молодых учёных «Актуальные проблемы химии природных соединений» (Current Problems of the Chemistry of Natural Compounds, Tashkent)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 747,
+  "b": 761,
+  "an": "Петербургская школа по аналитической химии (St Petersburg School of Analytical Chemistry)",
+  "bn": "Всероссийская молодёжная школа-конференция по актуальным проблемам химии и биологии (Vladivostok)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 748,
+  "b": 761,
+  "an": "Всероссийская конференция «Керамика и композиционные материалы» (Ceramics and Composite Materials)",
+  "bn": "Всероссийская молодёжная школа-конференция по актуальным проблемам химии и биологии (Vladivostok)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 748,
+  "b": 763,
+  "an": "Всероссийская конференция «Керамика и композиционные материалы» (Ceramics and Composite Materials)",
+  "bn": "Всероссийская конференция по аналитической спектроскопии (All-Russian Conference on Analytical Spectroscopy)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 748,
+  "b": 764,
+  "an": "Всероссийская конференция «Керамика и композиционные материалы» (Ceramics and Composite Materials)",
+  "bn": "Всероссийская конференция по наноматериалам «НАНО» (All-Russian Conference on Nanomaterials)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 748,
+  "b": 771,
+  "an": "Всероссийская конференция «Керамика и композиционные материалы» (Ceramics and Composite Materials)",
+  "bn": "Всероссийская конференция «Аналитика Сибири и Дальнего Востока» (Analytics of Siberia and the Far East)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 748,
+  "b": 778,
+  "an": "Всероссийская конференция «Керамика и композиционные материалы» (Ceramics and Composite Materials)",
+  "bn": "Всероссийская конференция по органической химии (All-Russian Conference on Organic Chemistry)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 748,
+  "b": 779,
+  "an": "Всероссийская конференция «Керамика и композиционные материалы» (Ceramics and Composite Materials)",
+  "bn": "Всероссийская конференция «Органические радикалы и органическая электрохимия» им. академика В.И. Овчаренко (Ovcharenko Conference on Organic Radicals and Organic Electrochemistry)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 749,
+  "b": 777,
+  "an": "Международный симпозиум «Нековалентные взаимодействия в синтезе, катализе и кристаллохимическом дизайне» (Noncovalent Interactions in Synthesis, Catalysis and Crystal Design)",
+  "bn": "Международный симпозиум «Современные тенденции в химии металлорганических соединений и катализе» (Vol'pin Symposium on Organometallic Chemistry and Catalysis)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 753,
+  "b": 755,
+  "an": "Международная конференция «Кластеры» (Clusters Conference, Novosibirsk)",
+  "bn": "Плёсская международная научная конференция по электрохимии (Plyos International Conference on Electrochemistry)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 753,
+  "b": 757,
+  "an": "Международная конференция «Кластеры» (Clusters Conference, Novosibirsk)",
+  "bn": "Международная конференция «Атомно-слоевое осаждение: Россия» (Atomic Layer Deposition Russia)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 753,
+  "b": 759,
+  "an": "Международная конференция «Кластеры» (Clusters Conference, Novosibirsk)",
+  "bn": "Международная осенняя школа-конференция по органической электронике (IFSOE — International Fall School on Organic Electronics)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 753,
+  "b": 760,
+  "an": "Международная конференция «Кластеры» (Clusters Conference, Novosibirsk)",
+  "bn": "Международная конференция «Актуальные проблемы преобразования энергии в литиевых электрохимических системах» (Energy Conversion in Lithium Electrochemical Systems)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 753,
+  "b": 798,
+  "an": "Международная конференция «Кластеры» (Clusters Conference, Novosibirsk)",
+  "bn": "Международная конференция «Химия и химическая технология» / «Химия в Армении» (Chemistry and Chemical Technology / Chemistry in Armenia, Yerevan)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 753,
+  "b": 799,
+  "an": "Международная конференция «Кластеры» (Clusters Conference, Novosibirsk)",
+  "bn": "Международная конференция «Химия и химическое образование — Свиридовские чтения» (Sviridov Readings, Minsk)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 753,
+  "b": 817,
+  "an": "Международная конференция «Кластеры» (Clusters Conference, Novosibirsk)",
+  "bn": "Международная российско-казахстанская научно-практическая конференция «Химические технологии функциональных материалов» (International Russian-Kazakhstani Conference on Chemical Technologies of Functional Materials)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 753,
+  "b": 826,
+  "an": "Международная конференция «Кластеры» (Clusters Conference, Novosibirsk)",
+  "bn": "Международная научная конференция «Химия и технология растительных веществ» (International Conference on Chemistry and Technology of Plant Substances)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 753,
+  "b": 833,
+  "an": "Международная конференция «Кластеры» (Clusters Conference, Novosibirsk)",
+  "bn": "Международная научная конференция «Химия и химические технологии: достижения и перспективы развития» (Ashgabat)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 754,
+  "b": 761,
+  "an": "Российская конференция по медицинской химии MedChem Russia",
+  "bn": "Всероссийская молодёжная школа-конференция по актуальным проблемам химии и биологии (Vladivostok)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 754,
+  "b": 776,
+  "an": "Российская конференция по медицинской химии MedChem Russia",
+  "bn": "Научная конференция «Искусственный интеллект в химии и материаловедении» (AI in Chemistry and Materials Science)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 754,
+  "b": 778,
+  "an": "Российская конференция по медицинской химии MedChem Russia",
+  "bn": "Всероссийская конференция по органической химии (All-Russian Conference on Organic Chemistry)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 754,
+  "b": 825,
+  "an": "Российская конференция по медицинской химии MedChem Russia",
+  "bn": "Научная конференция молодых учёных «Актуальные проблемы химии природных соединений» (Current Problems of the Chemistry of Natural Compounds, Tashkent)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 754,
+  "b": 834,
+  "an": "Российская конференция по медицинской химии MedChem Russia",
+  "bn": "Научно-практическая конференция Узбекистана и Таджикистана по химии (Uzbekistan–Tajikistan joint scientific-practical chemistry conference)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 755,
+  "b": 757,
+  "an": "Плёсская международная научная конференция по электрохимии (Plyos International Conference on Electrochemistry)",
+  "bn": "Международная конференция «Атомно-слоевое осаждение: Россия» (Atomic Layer Deposition Russia)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 755,
+  "b": 759,
+  "an": "Плёсская международная научная конференция по электрохимии (Plyos International Conference on Electrochemistry)",
+  "bn": "Международная осенняя школа-конференция по органической электронике (IFSOE — International Fall School on Organic Electronics)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 755,
+  "b": 760,
+  "an": "Плёсская международная научная конференция по электрохимии (Plyos International Conference on Electrochemistry)",
+  "bn": "Международная конференция «Актуальные проблемы преобразования энергии в литиевых электрохимических системах» (Energy Conversion in Lithium Electrochemical Systems)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 755,
+  "b": 774,
+  "an": "Плёсская международная научная конференция по электрохимии (Plyos International Conference on Electrochemistry)",
+  "bn": "Научная конференция «Компьютерное моделирование и структурный анализ молекул» (CMSAM — Computer Modelling and Structural Analysis of Molecules)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 755,
+  "b": 776,
+  "an": "Плёсская международная научная конференция по электрохимии (Plyos International Conference on Electrochemistry)",
+  "bn": "Научная конференция «Искусственный интеллект в химии и материаловедении» (AI in Chemistry and Materials Science)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 755,
+  "b": 798,
+  "an": "Плёсская международная научная конференция по электрохимии (Plyos International Conference on Electrochemistry)",
+  "bn": "Международная конференция «Химия и химическая технология» / «Химия в Армении» (Chemistry and Chemical Technology / Chemistry in Armenia, Yerevan)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 755,
+  "b": 799,
+  "an": "Плёсская международная научная конференция по электрохимии (Plyos International Conference on Electrochemistry)",
+  "bn": "Международная конференция «Химия и химическое образование — Свиридовские чтения» (Sviridov Readings, Minsk)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 755,
+  "b": 817,
+  "an": "Плёсская международная научная конференция по электрохимии (Plyos International Conference on Electrochemistry)",
+  "bn": "Международная российско-казахстанская научно-практическая конференция «Химические технологии функциональных материалов» (International Russian-Kazakhstani Conference on Chemical Technologies of Functional Materials)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 755,
+  "b": 825,
+  "an": "Плёсская международная научная конференция по электрохимии (Plyos International Conference on Electrochemistry)",
+  "bn": "Научная конференция молодых учёных «Актуальные проблемы химии природных соединений» (Current Problems of the Chemistry of Natural Compounds, Tashkent)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 755,
+  "b": 826,
+  "an": "Плёсская международная научная конференция по электрохимии (Plyos International Conference on Electrochemistry)",
+  "bn": "Международная научная конференция «Химия и технология растительных веществ» (International Conference on Chemistry and Technology of Plant Substances)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 755,
+  "b": 833,
+  "an": "Плёсская международная научная конференция по электрохимии (Plyos International Conference on Electrochemistry)",
+  "bn": "Международная научная конференция «Химия и химические технологии: достижения и перспективы развития» (Ashgabat)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 757,
+  "b": 759,
+  "an": "Международная конференция «Атомно-слоевое осаждение: Россия» (Atomic Layer Deposition Russia)",
+  "bn": "Международная осенняя школа-конференция по органической электронике (IFSOE — International Fall School on Organic Electronics)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 757,
+  "b": 760,
+  "an": "Международная конференция «Атомно-слоевое осаждение: Россия» (Atomic Layer Deposition Russia)",
+  "bn": "Международная конференция «Актуальные проблемы преобразования энергии в литиевых электрохимических системах» (Energy Conversion in Lithium Electrochemical Systems)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 757,
+  "b": 798,
+  "an": "Международная конференция «Атомно-слоевое осаждение: Россия» (Atomic Layer Deposition Russia)",
+  "bn": "Международная конференция «Химия и химическая технология» / «Химия в Армении» (Chemistry and Chemical Technology / Chemistry in Armenia, Yerevan)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 757,
+  "b": 799,
+  "an": "Международная конференция «Атомно-слоевое осаждение: Россия» (Atomic Layer Deposition Russia)",
+  "bn": "Международная конференция «Химия и химическое образование — Свиридовские чтения» (Sviridov Readings, Minsk)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 757,
+  "b": 817,
+  "an": "Международная конференция «Атомно-слоевое осаждение: Россия» (Atomic Layer Deposition Russia)",
+  "bn": "Международная российско-казахстанская научно-практическая конференция «Химические технологии функциональных материалов» (International Russian-Kazakhstani Conference on Chemical Technologies of Functional Materials)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 757,
+  "b": 826,
+  "an": "Международная конференция «Атомно-слоевое осаждение: Россия» (Atomic Layer Deposition Russia)",
+  "bn": "Международная научная конференция «Химия и технология растительных веществ» (International Conference on Chemistry and Technology of Plant Substances)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 757,
+  "b": 833,
+  "an": "Международная конференция «Атомно-слоевое осаждение: Россия» (Atomic Layer Deposition Russia)",
+  "bn": "Международная научная конференция «Химия и химические технологии: достижения и перспективы развития» (Ashgabat)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 759,
+  "b": 760,
+  "an": "Международная осенняя школа-конференция по органической электронике (IFSOE — International Fall School on Organic Electronics)",
+  "bn": "Международная конференция «Актуальные проблемы преобразования энергии в литиевых электрохимических системах» (Energy Conversion in Lithium Electrochemical Systems)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 759,
+  "b": 761,
+  "an": "Международная осенняя школа-конференция по органической электронике (IFSOE — International Fall School on Organic Electronics)",
+  "bn": "Всероссийская молодёжная школа-конференция по актуальным проблемам химии и биологии (Vladivostok)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 759,
+  "b": 778,
+  "an": "Международная осенняя школа-конференция по органической электронике (IFSOE — International Fall School on Organic Electronics)",
+  "bn": "Всероссийская конференция по органической химии (All-Russian Conference on Organic Chemistry)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 759,
+  "b": 798,
+  "an": "Международная осенняя школа-конференция по органической электронике (IFSOE — International Fall School on Organic Electronics)",
+  "bn": "Международная конференция «Химия и химическая технология» / «Химия в Армении» (Chemistry and Chemical Technology / Chemistry in Armenia, Yerevan)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 759,
+  "b": 799,
+  "an": "Международная осенняя школа-конференция по органической электронике (IFSOE — International Fall School on Organic Electronics)",
+  "bn": "Международная конференция «Химия и химическое образование — Свиридовские чтения» (Sviridov Readings, Minsk)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 759,
+  "b": 817,
+  "an": "Международная осенняя школа-конференция по органической электронике (IFSOE — International Fall School on Organic Electronics)",
+  "bn": "Международная российско-казахстанская научно-практическая конференция «Химические технологии функциональных материалов» (International Russian-Kazakhstani Conference on Chemical Technologies of Functional Materials)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 759,
+  "b": 826,
+  "an": "Международная осенняя школа-конференция по органической электронике (IFSOE — International Fall School on Organic Electronics)",
+  "bn": "Международная научная конференция «Химия и технология растительных веществ» (International Conference on Chemistry and Technology of Plant Substances)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 759,
+  "b": 833,
+  "an": "Международная осенняя школа-конференция по органической электронике (IFSOE — International Fall School on Organic Electronics)",
+  "bn": "Международная научная конференция «Химия и химические технологии: достижения и перспективы развития» (Ashgabat)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 760,
+  "b": 773,
+  "an": "Международная конференция «Актуальные проблемы преобразования энергии в литиевых электрохимических системах» (Energy Conversion in Lithium Electrochemical Systems)",
+  "bn": "Санкт-Петербургская конференция молодых учёных «Современные проблемы науки о полимерах» (Modern Problems of Polymer Science)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 760,
+  "b": 775,
+  "an": "Международная конференция «Актуальные проблемы преобразования энергии в литиевых электрохимических системах» (Energy Conversion in Lithium Electrochemical Systems)",
+  "bn": "«Актуальные проблемы неорганической химии: координационная химия» (Current Problems of Inorganic Chemistry: Coordination Chemistry)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 760,
+  "b": 798,
+  "an": "Международная конференция «Актуальные проблемы преобразования энергии в литиевых электрохимических системах» (Energy Conversion in Lithium Electrochemical Systems)",
+  "bn": "Международная конференция «Химия и химическая технология» / «Химия в Армении» (Chemistry and Chemical Technology / Chemistry in Armenia, Yerevan)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 760,
+  "b": 799,
+  "an": "Международная конференция «Актуальные проблемы преобразования энергии в литиевых электрохимических системах» (Energy Conversion in Lithium Electrochemical Systems)",
+  "bn": "Международная конференция «Химия и химическое образование — Свиридовские чтения» (Sviridov Readings, Minsk)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 760,
+  "b": 817,
+  "an": "Международная конференция «Актуальные проблемы преобразования энергии в литиевых электрохимических системах» (Energy Conversion in Lithium Electrochemical Systems)",
+  "bn": "Международная российско-казахстанская научно-практическая конференция «Химические технологии функциональных материалов» (International Russian-Kazakhstani Conference on Chemical Technologies of Functional Materials)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 760,
+  "b": 825,
+  "an": "Международная конференция «Актуальные проблемы преобразования энергии в литиевых электрохимических системах» (Energy Conversion in Lithium Electrochemical Systems)",
+  "bn": "Научная конференция молодых учёных «Актуальные проблемы химии природных соединений» (Current Problems of the Chemistry of Natural Compounds, Tashkent)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 760,
+  "b": 826,
+  "an": "Международная конференция «Актуальные проблемы преобразования энергии в литиевых электрохимических системах» (Energy Conversion in Lithium Electrochemical Systems)",
+  "bn": "Международная научная конференция «Химия и технология растительных веществ» (International Conference on Chemistry and Technology of Plant Substances)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 760,
+  "b": 833,
+  "an": "Международная конференция «Актуальные проблемы преобразования энергии в литиевых электрохимических системах» (Energy Conversion in Lithium Electrochemical Systems)",
+  "bn": "Международная научная конференция «Химия и химические технологии: достижения и перспективы развития» (Ashgabat)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 761,
+  "b": 763,
+  "an": "Всероссийская молодёжная школа-конференция по актуальным проблемам химии и биологии (Vladivostok)",
+  "bn": "Всероссийская конференция по аналитической спектроскопии (All-Russian Conference on Analytical Spectroscopy)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 761,
+  "b": 764,
+  "an": "Всероссийская молодёжная школа-конференция по актуальным проблемам химии и биологии (Vladivostok)",
+  "bn": "Всероссийская конференция по наноматериалам «НАНО» (All-Russian Conference on Nanomaterials)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 761,
+  "b": 765,
+  "an": "Всероссийская молодёжная школа-конференция по актуальным проблемам химии и биологии (Vladivostok)",
+  "bn": "Всероссийская школа молодых учёных «Электрохимические устройства» (Electrochemical Devices)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 761,
+  "b": 771,
+  "an": "Всероссийская молодёжная школа-конференция по актуальным проблемам химии и биологии (Vladivostok)",
+  "bn": "Всероссийская конференция «Аналитика Сибири и Дальнего Востока» (Analytics of Siberia and the Far East)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 761,
+  "b": 776,
+  "an": "Всероссийская молодёжная школа-конференция по актуальным проблемам химии и биологии (Vladivostok)",
+  "bn": "Научная конференция «Искусственный интеллект в химии и материаловедении» (AI in Chemistry and Materials Science)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 761,
+  "b": 778,
+  "an": "Всероссийская молодёжная школа-конференция по актуальным проблемам химии и биологии (Vladivostok)",
+  "bn": "Всероссийская конференция по органической химии (All-Russian Conference on Organic Chemistry)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 761,
+  "b": 779,
+  "an": "Всероссийская молодёжная школа-конференция по актуальным проблемам химии и биологии (Vladivostok)",
+  "bn": "Всероссийская конференция «Органические радикалы и органическая электрохимия» им. академика В.И. Овчаренко (Ovcharenko Conference on Organic Radicals and Organic Electrochemistry)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 761,
+  "b": 825,
+  "an": "Всероссийская молодёжная школа-конференция по актуальным проблемам химии и биологии (Vladivostok)",
+  "bn": "Научная конференция молодых учёных «Актуальные проблемы химии природных соединений» (Current Problems of the Chemistry of Natural Compounds, Tashkent)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 761,
+  "b": 834,
+  "an": "Всероссийская молодёжная школа-конференция по актуальным проблемам химии и биологии (Vladivostok)",
+  "bn": "Научно-практическая конференция Узбекистана и Таджикистана по химии (Uzbekistan–Tajikistan joint scientific-practical chemistry conference)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 763,
+  "b": 764,
+  "an": "Всероссийская конференция по аналитической спектроскопии (All-Russian Conference on Analytical Spectroscopy)",
+  "bn": "Всероссийская конференция по наноматериалам «НАНО» (All-Russian Conference on Nanomaterials)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 763,
+  "b": 771,
+  "an": "Всероссийская конференция по аналитической спектроскопии (All-Russian Conference on Analytical Spectroscopy)",
+  "bn": "Всероссийская конференция «Аналитика Сибири и Дальнего Востока» (Analytics of Siberia and the Far East)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 763,
+  "b": 778,
+  "an": "Всероссийская конференция по аналитической спектроскопии (All-Russian Conference on Analytical Spectroscopy)",
+  "bn": "Всероссийская конференция по органической химии (All-Russian Conference on Organic Chemistry)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 763,
+  "b": 779,
+  "an": "Всероссийская конференция по аналитической спектроскопии (All-Russian Conference on Analytical Spectroscopy)",
+  "bn": "Всероссийская конференция «Органические радикалы и органическая электрохимия» им. академика В.И. Овчаренко (Ovcharenko Conference on Organic Radicals and Organic Electrochemistry)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 764,
+  "b": 771,
+  "an": "Всероссийская конференция по наноматериалам «НАНО» (All-Russian Conference on Nanomaterials)",
+  "bn": "Всероссийская конференция «Аналитика Сибири и Дальнего Востока» (Analytics of Siberia and the Far East)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 764,
+  "b": 779,
+  "an": "Всероссийская конференция по наноматериалам «НАНО» (All-Russian Conference on Nanomaterials)",
+  "bn": "Всероссийская конференция «Органические радикалы и органическая электрохимия» им. академика В.И. Овчаренко (Ovcharenko Conference on Organic Radicals and Organic Electrochemistry)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 765,
+  "b": 773,
+  "an": "Всероссийская школа молодых учёных «Электрохимические устройства» (Electrochemical Devices)",
+  "bn": "Санкт-Петербургская конференция молодых учёных «Современные проблемы науки о полимерах» (Modern Problems of Polymer Science)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 765,
+  "b": 825,
+  "an": "Всероссийская школа молодых учёных «Электрохимические устройства» (Electrochemical Devices)",
+  "bn": "Научная конференция молодых учёных «Актуальные проблемы химии природных соединений» (Current Problems of the Chemistry of Natural Compounds, Tashkent)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 770,
+  "b": 817,
+  "an": "Конгресс «Химия и химические технологии в цифровую эпоху» (Хим×Тех — Chemistry and Chemical Technologies in the Digital Age)",
+  "bn": "Международная российско-казахстанская научно-практическая конференция «Химические технологии функциональных материалов» (International Russian-Kazakhstani Conference on Chemical Technologies of Functional Materials)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 770,
+  "b": 833,
+  "an": "Конгресс «Химия и химические технологии в цифровую эпоху» (Хим×Тех — Chemistry and Chemical Technologies in the Digital Age)",
+  "bn": "Международная научная конференция «Химия и химические технологии: достижения и перспективы развития» (Ashgabat)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 771,
+  "b": 778,
+  "an": "Всероссийская конференция «Аналитика Сибири и Дальнего Востока» (Analytics of Siberia and the Far East)",
+  "bn": "Всероссийская конференция по органической химии (All-Russian Conference on Organic Chemistry)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 771,
+  "b": 779,
+  "an": "Всероссийская конференция «Аналитика Сибири и Дальнего Востока» (Analytics of Siberia and the Far East)",
+  "bn": "Всероссийская конференция «Органические радикалы и органическая электрохимия» им. академика В.И. Овчаренко (Ovcharenko Conference on Organic Radicals and Organic Electrochemistry)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 773,
+  "b": 825,
+  "an": "Санкт-Петербургская конференция молодых учёных «Современные проблемы науки о полимерах» (Modern Problems of Polymer Science)",
+  "bn": "Научная конференция молодых учёных «Актуальные проблемы химии природных соединений» (Current Problems of the Chemistry of Natural Compounds, Tashkent)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 774,
+  "b": 776,
+  "an": "Научная конференция «Компьютерное моделирование и структурный анализ молекул» (CMSAM — Computer Modelling and Structural Analysis of Molecules)",
+  "bn": "Научная конференция «Искусственный интеллект в химии и материаловедении» (AI in Chemistry and Materials Science)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 774,
+  "b": 825,
+  "an": "Научная конференция «Компьютерное моделирование и структурный анализ молекул» (CMSAM — Computer Modelling and Structural Analysis of Molecules)",
+  "bn": "Научная конференция молодых учёных «Актуальные проблемы химии природных соединений» (Current Problems of the Chemistry of Natural Compounds, Tashkent)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 774,
+  "b": 826,
+  "an": "Научная конференция «Компьютерное моделирование и структурный анализ молекул» (CMSAM — Computer Modelling and Structural Analysis of Molecules)",
+  "bn": "Международная научная конференция «Химия и технология растительных веществ» (International Conference on Chemistry and Technology of Plant Substances)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 774,
+  "b": 833,
+  "an": "Научная конференция «Компьютерное моделирование и структурный анализ молекул» (CMSAM — Computer Modelling and Structural Analysis of Molecules)",
+  "bn": "Международная научная конференция «Химия и химические технологии: достижения и перспективы развития» (Ashgabat)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 775,
+  "b": 825,
+  "an": "«Актуальные проблемы неорганической химии: координационная химия» (Current Problems of Inorganic Chemistry: Coordination Chemistry)",
+  "bn": "Научная конференция молодых учёных «Актуальные проблемы химии природных соединений» (Current Problems of the Chemistry of Natural Compounds, Tashkent)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 775,
+  "b": 827,
+  "an": "«Актуальные проблемы неорганической химии: координационная химия» (Current Problems of Inorganic Chemistry: Coordination Chemistry)",
+  "bn": "Конференции Института общей и неорганической химии АН Республики Узбекистан (Institute of General and Inorganic Chemistry, Uzbek Academy of Sciences — conference series)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 776,
+  "b": 778,
+  "an": "Научная конференция «Искусственный интеллект в химии и материаловедении» (AI in Chemistry and Materials Science)",
+  "bn": "Всероссийская конференция по органической химии (All-Russian Conference on Organic Chemistry)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 776,
+  "b": 825,
+  "an": "Научная конференция «Искусственный интеллект в химии и материаловедении» (AI in Chemistry and Materials Science)",
+  "bn": "Научная конференция молодых учёных «Актуальные проблемы химии природных соединений» (Current Problems of the Chemistry of Natural Compounds, Tashkent)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 776,
+  "b": 826,
+  "an": "Научная конференция «Искусственный интеллект в химии и материаловедении» (AI in Chemistry and Materials Science)",
+  "bn": "Международная научная конференция «Химия и технология растительных веществ» (International Conference on Chemistry and Technology of Plant Substances)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 776,
+  "b": 833,
+  "an": "Научная конференция «Искусственный интеллект в химии и материаловедении» (AI in Chemistry and Materials Science)",
+  "bn": "Международная научная конференция «Химия и химические технологии: достижения и перспективы развития» (Ashgabat)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 776,
+  "b": 834,
+  "an": "Научная конференция «Искусственный интеллект в химии и материаловедении» (AI in Chemistry and Materials Science)",
+  "bn": "Научно-практическая конференция Узбекистана и Таджикистана по химии (Uzbekistan–Tajikistan joint scientific-practical chemistry conference)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 777,
+  "b": 825,
+  "an": "Международный симпозиум «Современные тенденции в химии металлорганических соединений и катализе» (Vol'pin Symposium on Organometallic Chemistry and Catalysis)",
+  "bn": "Научная конференция молодых учёных «Актуальные проблемы химии природных соединений» (Current Problems of the Chemistry of Natural Compounds, Tashkent)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 778,
+  "b": 779,
+  "an": "Всероссийская конференция по органической химии (All-Russian Conference on Organic Chemistry)",
+  "bn": "Всероссийская конференция «Органические радикалы и органическая электрохимия» им. академика В.И. Овчаренко (Ovcharenko Conference on Organic Radicals and Organic Electrochemistry)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 778,
+  "b": 825,
+  "an": "Всероссийская конференция по органической химии (All-Russian Conference on Organic Chemistry)",
+  "bn": "Научная конференция молодых учёных «Актуальные проблемы химии природных соединений» (Current Problems of the Chemistry of Natural Compounds, Tashkent)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 778,
+  "b": 834,
+  "an": "Всероссийская конференция по органической химии (All-Russian Conference on Organic Chemistry)",
+  "bn": "Научно-практическая конференция Узбекистана и Таджикистана по химии (Uzbekistan–Tajikistan joint scientific-practical chemistry conference)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 789,
+  "b": 791,
+  "an": "한국분석과학회 춘계/추계 학술대회 (Korean Society of Analytical Sciences Spring/Fall Meeting)",
+  "bn": "대한약학회 학술대회 (Pharmaceutical Society of Korea Convention)",
+  "why": "same CJK name"
+ },
+ {
+  "score": 3,
+  "a": 790,
+  "b": 791,
+  "an": "한국전기화학회 춘계/추계 학술대회 (Korean Electrochemical Society Spring/Fall Meeting)",
+  "bn": "대한약학회 학술대회 (Pharmaceutical Society of Korea Convention)",
+  "why": "same CJK name"
+ },
+ {
+  "score": 3,
+  "a": 798,
+  "b": 799,
+  "an": "Международная конференция «Химия и химическая технология» / «Химия в Армении» (Chemistry and Chemical Technology / Chemistry in Armenia, Yerevan)",
+  "bn": "Международная конференция «Химия и химическое образование — Свиридовские чтения» (Sviridov Readings, Minsk)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 798,
+  "b": 817,
+  "an": "Международная конференция «Химия и химическая технология» / «Химия в Армении» (Chemistry and Chemical Technology / Chemistry in Armenia, Yerevan)",
+  "bn": "Международная российско-казахстанская научно-практическая конференция «Химические технологии функциональных материалов» (International Russian-Kazakhstani Conference on Chemical Technologies of Functional Materials)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 798,
+  "b": 826,
+  "an": "Международная конференция «Химия и химическая технология» / «Химия в Армении» (Chemistry and Chemical Technology / Chemistry in Armenia, Yerevan)",
+  "bn": "Международная научная конференция «Химия и технология растительных веществ» (International Conference on Chemistry and Technology of Plant Substances)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 798,
+  "b": 833,
+  "an": "Международная конференция «Химия и химическая технология» / «Химия в Армении» (Chemistry and Chemical Technology / Chemistry in Armenia, Yerevan)",
+  "bn": "Международная научная конференция «Химия и химические технологии: достижения и перспективы развития» (Ashgabat)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 799,
+  "b": 817,
+  "an": "Международная конференция «Химия и химическое образование — Свиридовские чтения» (Sviridov Readings, Minsk)",
+  "bn": "Международная российско-казахстанская научно-практическая конференция «Химические технологии функциональных материалов» (International Russian-Kazakhstani Conference on Chemical Technologies of Functional Materials)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 799,
+  "b": 826,
+  "an": "Международная конференция «Химия и химическое образование — Свиридовские чтения» (Sviridov Readings, Minsk)",
+  "bn": "Международная научная конференция «Химия и технология растительных веществ» (International Conference on Chemistry and Technology of Plant Substances)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 799,
+  "b": 833,
+  "an": "Международная конференция «Химия и химическое образование — Свиридовские чтения» (Sviridov Readings, Minsk)",
+  "bn": "Международная научная конференция «Химия и химические технологии: достижения и перспективы развития» (Ashgabat)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 817,
+  "b": 826,
+  "an": "Международная российско-казахстанская научно-практическая конференция «Химические технологии функциональных материалов» (International Russian-Kazakhstani Conference on Chemical Technologies of Functional Materials)",
+  "bn": "Международная научная конференция «Химия и технология растительных веществ» (International Conference on Chemistry and Technology of Plant Substances)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 817,
+  "b": 833,
+  "an": "Международная российско-казахстанская научно-практическая конференция «Химические технологии функциональных материалов» (International Russian-Kazakhstani Conference on Chemical Technologies of Functional Materials)",
+  "bn": "Международная научная конференция «Химия и химические технологии: достижения и перспективы развития» (Ashgabat)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 817,
+  "b": 834,
+  "an": "Международная российско-казахстанская научно-практическая конференция «Химические технологии функциональных материалов» (International Russian-Kazakhstani Conference on Chemical Technologies of Functional Materials)",
+  "bn": "Научно-практическая конференция Узбекистана и Таджикистана по химии (Uzbekistan–Tajikistan joint scientific-practical chemistry conference)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 818,
+  "b": 827,
+  "an": "Научные конференции Института топлива, катализа и электрохимии им. Д.В. Сокольского (Sokolsky Institute conference series, Almaty)",
+  "bn": "Конференции Института общей и неорганической химии АН Республики Узбекистан (Institute of General and Inorganic Chemistry, Uzbek Academy of Sciences — conference series)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 825,
+  "b": 826,
+  "an": "Научная конференция молодых учёных «Актуальные проблемы химии природных соединений» (Current Problems of the Chemistry of Natural Compounds, Tashkent)",
+  "bn": "Международная научная конференция «Химия и технология растительных веществ» (International Conference on Chemistry and Technology of Plant Substances)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 825,
+  "b": 833,
+  "an": "Научная конференция молодых учёных «Актуальные проблемы химии природных соединений» (Current Problems of the Chemistry of Natural Compounds, Tashkent)",
+  "bn": "Международная научная конференция «Химия и химические технологии: достижения и перспективы развития» (Ashgabat)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 825,
+  "b": 834,
+  "an": "Научная конференция молодых учёных «Актуальные проблемы химии природных соединений» (Current Problems of the Chemistry of Natural Compounds, Tashkent)",
+  "bn": "Научно-практическая конференция Узбекистана и Таджикистана по химии (Uzbekistan–Tajikistan joint scientific-practical chemistry conference)",
+  "why": "same Cyrillic words"
+ },
+ {
+  "score": 3,
+  "a": 826,
+  "b": 833,
+  "an": "Международная научная конференция «Химия и технология растительных веществ» (International Conference on Chemistry and Technology of Plant Substances)",
+  "bn": "Международная научная конференция «Химия и химические технологии: достижения и перспективы развития» (Ashgabat)",
+  "why": "same Cyrillic words"
+ }
+]

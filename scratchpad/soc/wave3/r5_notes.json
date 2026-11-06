@@ -1,0 +1,54 @@
+{
+ "132": {
+  "abstracts_numeric": 1610,
+  "abstracts": "1,610 (2024, SBL Annual Meeting San Diego — contributed papers in the 470 SBL 'S' sessions of the joint AAR/SBL program book; AAR 'A' sessions and affiliate 'P' sessions excluded)",
+  "year": 2024,
+  "rung": 5,
+  "source_url": "https://www.sbl-site.org/wp-content/uploads/2025/06/2024-AM-ProgramBook-web-version.pdf",
+  "confidence": "exact",
+  "tier": "VERIFIED",
+  "orchestrator_note": "RUNG 5 by the orchestrator (2026-09-15): sbl-site.org is Cloudflare-walled to curl/WebFetch but opens in a scripted Chrome (playwright, chrome channel); fetched the 2024 program book (440 pp, 20.3 MB) via in-page fetch after the archive page cleared the challenge. Counted in pdftotext -raw: every timed item '(N min)' inside sessions whose ID starts with S (470 sessions, 8 of them joint S/A) minus role/administrative items (Discussion 686, Panelist 238, Presiding 80, Respondent 69, Break 65, Business Meeting 31, Introduction 13, Response 10, Reception 7, misc 3) = 1,610 papers; durations cluster at 20/25/30 min (385/634/421). Excluded: A (AAR, 375 sessions — counted on row 131 from papers.aarweb.org), P (89 affiliate sessions, 132 timed items), M (124 additional meetings). Validation: both extraction modes give 3,206 timed items book-wide. Caveat: the 8 joint S/A sessions are counted here and may also sit inside AAR's 1,396 (overlap ≤ ~30 papers). English. Papers per SBL session 3.4."
+ },
+ "148": {
+  "abstracts_numeric": 1721,
+  "abstracts": "1,721 (2025, 13th Econometric Society World Congress, Seoul — Oxford Abstracts programme 'Titles' list states 1 to 20 of 1721; includes the few invited/plenary lectures, not separable in bulk)",
+  "year": 2025,
+  "rung": 5,
+  "source_url": "https://virtual.oxfordabstracts.com/event/73643/titles",
+  "confidence": "exact",
+  "tier": "VERIFIED",
+  "orchestrator_note": "RUNG 5 by the orchestrator (2026-09-15): opened the Oxford Abstracts virtual programme in a scripted Chrome; the Titles view is the platform's own submission list and states '1 to 20 of 1721' (pager of 87 pages, 20 per page). Platform-stated total, same evidence class as Confit's Presentations(N) and M&M's 'results found'. Cross-check: the programme PDF endpoint https://apigw.oxfordabstracts.com/services/program-pdf?event_id=73643 (26 pp, open to curl) lists ~400 parallel sessions with chairs but no papers → 1,721/400 ≈ 4.3 papers per session, consistent. Invited/plenary items are included and cannot be split in bulk; they are a handful against 1,721. Quinquennial (0.2). NEW ROUTE: any Oxford Abstracts virtual conference exposes /event/<id>/titles with a stated total, and /services/program-pdf?event_id=<id> without login."
+ },
+ "50": {
+  "abstracts_numeric": 262,
+  "abstracts": "262 (2026, ALA Annual Conference — poster presentations, the whole of ALA's contributed research programme; the rest of the schedule is professional-development sessions with no research call)",
+  "year": 2026,
+  "rung": 5,
+  "source_url": "https://annual2026.eventscribe.net/agenda.asp?BCFO=PO&pfp=Posters&fa=&fb=&fc=&fd=&all=1",
+  "confidence": "exact",
+  "tier": "OUT",
+  "orchestrator_note": "RUNG 5 by the orchestrator (2026-09-15): eventScribe is Cloudflare-walled to curl but rendered in a scripted Chrome; the posters agenda with all=1 (unpaginated) carries 262 distinct PresentationID entries in 11 day/time buckets (Saturday, Sunday). Per the researcher's counting rule the poster programme is ALA's entire contributed set, so 262 is complete positive evidence, not a partial artefact: OUT."
+ },
+ "61": {
+  "abstracts_numeric": 1299,
+  "abstracts": "1,299 (2026, ECREA ECC Brno — C-IN searchable programme 'Abstract List' states 1 - 10 of 1299 items; includes plenary/special-session abstracts, not separable in bulk)",
+  "year": 2026,
+  "rung": 5,
+  "source_url": "https://www.czech-in.org/cmPortalV15/CM_W3_Searchable/ecc26/normal#!abstractlist",
+  "confidence": "exact",
+  "tier": "BORDERLINE",
+  "orchestrator_note": "RUNG 5 by the orchestrator (2026-09-15): the C-IN portal is a JS shell to curl; in a scripted Chrome the guest view's 'Abstract List' loads and states '1 - 10 of 1299 items' (platform-stated total; abstract detail pages are behind 'Log on' but the list and its count are public). Session-type legend: Academic Workshop, Business Meeting, Panel, Plenary Session, Roundtable, Special Panel, Special Session — plenary/roundtable abstracts are inside the 1,299 and cannot be split without login; they are a small share. 1,299 sits in the 800–1,499 band: BORDERLINE. Biennial (0.5)."
+ },
+ "64": {
+  "orchestrator_note": "RUNG 5 attempted by the orchestrator (2026-09-15): https://event.ac2026.exordo.com/ is NOT a browser wall — in Chrome it reads 'ac2026 is Open to Registered Delegates. Access to this event space is restricted to registered delegates. Log in and register to access.' A CREDENTIAL wall, so no browser gains anything; do not re-queue. Row stays BORDERLINE on the researcher's evidence: 'nearly 600 sessions' and 'over 2,000 geographers' stated by the RGS, no paper count published. Next action: a programme PDF if the RGS ever publishes one, or rung 9 with a judged ratio."
+ },
+ "196": {
+  "orchestrator_note": "RUNG 5 attempted by the orchestrator (2026-09-15): the Helsinki research-portal PDF stays behind Cloudflare even for a scripted Chrome (challenge never clears: 'Just a moment...' on the origin, in-page fetch 403). eisa-net.org's own /pdf-programme-pec25/ was down for the researcher. Stays BORDERLINE with no figure. Next action: retry https://eisa-net.org/pdf-programme-pec25/ and the Helsinki PDF from an interactive browser."
+ },
+ "191": {
+  "orchestrator_note": "RUNG 5 attempted by the orchestrator (2026-09-15): https://portal.nsta.org/conference/sessions renders in Chrome as a Blazor app showing '0 Results' until filters are driven interactively; not enumerated tonight. Stays BORDERLINE (no figure, practitioner convention — character judgement pending). Next action: drive the Day/Session Type filters interactively and count session cards by type."
+ },
+ "19": {
+  "orchestrator_note": "RUNG 5 / bulk count not run by the orchestrator tonight (2026-09-15): the All Academic APPAM instance issues a guest session (researcher's finding) but the per-session-type result pages need the browser click-key handshake; 338 Panels + 20 Student Research Panels + 2 poster sessions were counted at session level, papers not enumerated (panel rule forbids writing the session count). Stays BORDERLINE. Next action: open https://convention2.allacademic.com/one/appam/appam26/ in a browser, browse by session type, count papers inside panels."
+ }
+}

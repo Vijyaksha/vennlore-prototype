@@ -1,0 +1,16 @@
+{
+ "78": {
+  "abstracts_numeric": 711,
+  "abstracts": "≤711 presentations (2025 — the complete eventscribe 'Browse by Title' index of the co-located ICTD + International Airfield & Highway Pavements Conference; ICTD alone is a subset, so this is a CEILING) — OUT on positive evidence",
+  "year": 2025,
+  "rung": 5,
+  "source_url": "https://ictd-pavements2025.eventscribe.net/SearchByPresentation.asp?pfp=BrowsebyTitle",
+  "confidence": "derived",
+  "tier": "OUT",
+  "orchestrator_note": "RUNG 5 BY THE ORCHESTRATOR (2026-09-14, Playwright; 0 searches): the eventscribe site is Cloudflare 403 to curl but opens in a browser; 'Browse by Title' states '711 results found' and carries 711 unique PresentationID links. The 2025 event was co-located with the Airfield & Highway Pavements Conference and the index covers both, so ICTD's own programme is at most 711 and in practice a fraction of it (the visible titles are mostly pavements). Consistent with the researcher's Crossref deposit floor of 208. VERDICT OUT (ceiling 711 < 800)."
+ },
+ "196": {
+  "tier": "OUT",
+  "orchestrator_note": "ORCHESTRATOR CALL (2026-09-14): the researcher recorded 990 organiser-stated 高水平学术报告 but flagged the unit rather than deciding it. CAST's own page shows the presentations are delivered in 98 invited 专题论坛 convened by member societies with no open abstract call feeding the podium; the 1,240 'collected papers' go to 157 partner journals, not to the podium. Under the settled unit (invited excluded) the contributed presentation count is near zero — the same shape as CNCC (CS & AI, ruled CURATED/OUT) and the member-society congresses that host the forums sit on this sheet separately (CSEE, CMES, CSAA …), so counting CAST would also double count them. Programme character HYBRID-leaning-CURATED. VERDICT OUT on programme character, parked with the evidence. FOR RUPERT'S EYE: if invited forum talks are ever admitted, this row is ~990/yr."
+ }
+}

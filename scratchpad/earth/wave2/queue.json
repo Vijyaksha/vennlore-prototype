@@ -1,0 +1,302 @@
+[
+ {
+  "row": 26,
+  "conference": "WCRP Open Science Conference",
+  "society": "World Climate Research Programme",
+  "country": "international",
+  "subfield": "climate science",
+  "events_per_yr": null,
+  "notes": "roughly decadal (2011 Denver, 2023 Kigali) | the global climate research open science conference; well over a thousand abstracts in 2023 | Phase 1 source: https://www.wcrp-climate.org/",
+  "route_hint": "WCRP OSC 2023 Kigali (23-27 Oct 2023): abstract book / programme on wcrp-osc2023.org or wcrp-climate.org; roughly decadal so events_per_yr ~0.1 — record the cadence evidence"
+ },
+ {
+  "row": 76,
+  "conference": "International Coral Reef Symposium (ICRS)",
+  "society": "International Coral Reef Society",
+  "country": "international (rotating)",
+  "subfield": "coral reefs (marine science)",
+  "events_per_yr": null,
+  "notes": "every 4 years | BOUNDARY (may belong to another field) | the quadrennial coral reef symposium, historically ~1,500-2,500 abstracts; boundary with life sciences (marine biology) | Phase 1 source: https://coralreefs.org/",
+  "route_hint": "ICRS 2022 Bremen (15th) abstract book PDF on icrs2022.de / coralreefs.org; 16th ICRS 2026 Auckland. Boundary with life sciences (marine biology) — count once, flag boundary"
+ },
+ {
+  "row": 65,
+  "conference": "IMA General Meeting (International Mineralogical Association)",
+  "society": "International Mineralogical Association",
+  "country": "international (rotating)",
+  "subfield": "mineralogy",
+  "events_per_yr": null,
+  "notes": "every 4 years | BOUNDARY (may belong to another field) | the world mineralogy congress; historically over a thousand abstracts | Phase 1 source: https://www.ima-mineralogy.org/",
+  "route_hint": "IMA 2022 Lyon (23rd General Meeting) abstract book on ima2022.fr; also 'Sciencesconf' hosts"
+ },
+ {
+  "row": 70,
+  "conference": "International Palaeontological Congress (IPC)",
+  "society": "International Palaeontological Association",
+  "country": "international (rotating)",
+  "subfield": "palaeontology",
+  "events_per_yr": null,
+  "notes": "every 4 years | BOUNDARY (may belong to another field) | the world palaeontology congress; around a thousand abstracts in recent editions | Phase 1 source: https://ipa.geo.hu-berlin.de/",
+  "route_hint": "IPC6 Khon Kaen 2022 abstract volume; IPC7 2026. ipa.geo.hu-berlin.de"
+ },
+ {
+  "row": 61,
+  "conference": "IACS-IAMAS-IAPSO Joint Scientific Assembly (JA)",
+  "society": "International Association of Cryospheric Sciences / Meteorology and Atmospheric Sciences / Physical Sciences of the Oceans (IUGG)",
+  "country": "international (Busan 2025)",
+  "subfield": "cryosphere/atmosphere/ocean",
+  "events_per_yr": null,
+  "notes": "every 4 years, between IUGG General Assemblies | BOUNDARY (may belong to another field) | a three-association joint assembly covering ice, atmosphere and physical oceanography; plausibly over a thousand abstracts | Phase 1 source: https://iugg.org/meetings/scientific-assemblies-of-the-associations/",
+  "route_hint": "IUGG-family association: the IUGG annual reports (https://iugg.org/publications/iugg-annual-reports/, report2023.pdf sized IAVCEI 2023 = 1,258 abstracts / 1,080 people and IAG 2023 = 643 orals / 1,202 participants) and each association's own assembly site. Count THIS association's own assembly (or the joint pair as ONE meeting), never the IUGG General Assembly (row 8, already counted). Joint editions: IAGA-IASPEI 2025 Lisbon and IACS-IAMAS-IAPSO 2025 Busan are one meeting each."
+ },
+ {
+  "row": 62,
+  "conference": "IAGA-IASPEI Joint Scientific Assembly",
+  "society": "International Association of Geomagnetism and Aeronomy / IASPEI (IUGG)",
+  "country": "international (Lisbon 2025)",
+  "subfield": "geomagnetism/seismology",
+  "events_per_yr": null,
+  "notes": "every 4 years, between IUGG General Assemblies | BOUNDARY (may belong to another field) | two-association joint assembly; plausibly around a thousand abstracts | Phase 1 source: https://iugg.org/meetings/scientific-assemblies-of-the-associations/",
+  "route_hint": "IUGG-family association: the IUGG annual reports (https://iugg.org/publications/iugg-annual-reports/, report2023.pdf sized IAVCEI 2023 = 1,258 abstracts / 1,080 people and IAG 2023 = 643 orals / 1,202 participants) and each association's own assembly site. Count THIS association's own assembly (or the joint pair as ONE meeting), never the IUGG General Assembly (row 8, already counted). Joint editions: IAGA-IASPEI 2025 Lisbon and IACS-IAMAS-IAPSO 2025 Busan are one meeting each."
+ },
+ {
+  "row": 11,
+  "conference": "IAVCEI Scientific Assembly",
+  "society": "International Association of Volcanology and Chemistry of the Earth's Interior",
+  "country": "international (rotating)",
+  "subfield": "volcanology",
+  "events_per_yr": null,
+  "notes": "every 2-4 years | BOUNDARY (may belong to another field) | the world volcanology assembly; recent editions claim around a thousand contributions | Phase 1 source: https://www.iavceivolcano.org/",
+  "route_hint": "IUGG-family association: the IUGG annual reports (https://iugg.org/publications/iugg-annual-reports/, report2023.pdf sized IAVCEI 2023 = 1,258 abstracts / 1,080 people and IAG 2023 = 643 orals / 1,202 participants) and each association's own assembly site. Count THIS association's own assembly (or the joint pair as ONE meeting), never the IUGG General Assembly (row 8, already counted). Joint editions: IAGA-IASPEI 2025 Lisbon and IACS-IAMAS-IAPSO 2025 Busan are one meeting each."
+ },
+ {
+  "row": 9,
+  "conference": "IAG Scientific Assembly",
+  "society": "International Association of Geodesy",
+  "country": "international (rotating)",
+  "subfield": "geodesy",
+  "events_per_yr": null,
+  "notes": "scientific assembly between IUGG assemblies (every 4 years) | BOUNDARY (may belong to another field) | the world geodesy assembly; uncertain whether it alone clears 900 outside IUGG years | Phase 1 source: https://www.iag-aig.org/",
+  "route_hint": "IUGG-family association: the IUGG annual reports (https://iugg.org/publications/iugg-annual-reports/, report2023.pdf sized IAVCEI 2023 = 1,258 abstracts / 1,080 people and IAG 2023 = 643 orals / 1,202 participants) and each association's own assembly site. Count THIS association's own assembly (or the joint pair as ONE meeting), never the IUGG General Assembly (row 8, already counted). Joint editions: IAGA-IASPEI 2025 Lisbon and IACS-IAMAS-IAPSO 2025 Busan are one meeting each."
+ },
+ {
+  "row": 10,
+  "conference": "IASPEI Scientific Assembly",
+  "society": "International Association of Seismology and Physics of the Earth's Interior",
+  "country": "international (rotating)",
+  "subfield": "seismology",
+  "events_per_yr": null,
+  "notes": "between IUGG assemblies | BOUNDARY (may belong to another field) | the global seismology assembly; plausible but unsized | Phase 1 source: https://www.iaspei.org/",
+  "route_hint": "IUGG-family association: the IUGG annual reports (https://iugg.org/publications/iugg-annual-reports/, report2023.pdf sized IAVCEI 2023 = 1,258 abstracts / 1,080 people and IAG 2023 = 643 orals / 1,202 participants) and each association's own assembly site. Count THIS association's own assembly (or the joint pair as ONE meeting), never the IUGG General Assembly (row 8, already counted). Joint editions: IAGA-IASPEI 2025 Lisbon and IACS-IAMAS-IAPSO 2025 Busan are one meeting each."
+ },
+ {
+  "row": 58,
+  "conference": "IAHS Scientific Assembly",
+  "society": "International Association of Hydrological Sciences",
+  "country": "international (rotating)",
+  "subfield": "hydrology",
+  "events_per_yr": null,
+  "notes": "between IUGG assemblies | BOUNDARY (may belong to another field) | the global hydrology assembly; likely several hundred - borderline | Phase 1 source: https://iahs.info/",
+  "route_hint": "IUGG-family association: the IUGG annual reports (https://iugg.org/publications/iugg-annual-reports/, report2023.pdf sized IAVCEI 2023 = 1,258 abstracts / 1,080 people and IAG 2023 = 643 orals / 1,202 participants) and each association's own assembly site. Count THIS association's own assembly (or the joint pair as ONE meeting), never the IUGG General Assembly (row 8, already counted). Joint editions: IAGA-IASPEI 2025 Lisbon and IACS-IAMAS-IAPSO 2025 Busan are one meeting each. IAHS 2022 Montpellier was Copernicus-hosted: Copernicus meeting: static per-abstract pages https://meetingorganizer.copernicus.org/<SLUG>/<SLUG>-<n>.html (test the <title>, not the status); slugs seen: IAHS2022"
+ },
+ {
+  "row": 60,
+  "conference": "General Assembly of the European Seismological Commission (ESC)",
+  "society": "European Seismological Commission (IASPEI regional commission)",
+  "country": "Europe (rotating)",
+  "subfield": "seismology",
+  "events_per_yr": null,
+  "notes": "biennial (40th, Istanbul, September 2026) | recent assemblies are described as receiving around 1,000 abstracts and ~700 participants; the 36th had over 900 abstracts | Phase 1 source: https://www.esc2026.org/",
+  "route_hint": "ESC 2024 Corfu (39th GA) abstract book; ESC 2026 Istanbul. Phase-1 note: 36th had over 900 abstracts"
+ },
+ {
+  "row": 17,
+  "conference": "World Congress on Genetics Applied to Livestock Production (WCGALP)",
+  "society": "WCGALP permanent committee",
+  "country": "international (rotating)",
+  "subfield": "animal science/genetics",
+  "events_per_yr": null,
+  "notes": "every 4 years | BOUNDARY (may belong to another field) | quadrennial world congress; around a thousand contributed papers per edition | Phase 1 source: https://wcgalp.com/",
+  "route_hint": "WCGALP 2022 Rotterdam proceedings are published by Wageningen Academic Publishers (Crossref: query the publisher container 'Proceedings of 12th World Congress on Genetics Applied to Livestock Production (WCGALP)'), also WCGALP 2026 Kampala"
+ },
+ {
+  "row": 125,
+  "conference": "Australasian Exploration Geoscience Conference (AEGC)",
+  "society": "Australian Society of Exploration Geophysicists with the Australian Institute of Geoscientists and PESA",
+  "country": "Australia/New Zealand",
+  "subfield": "exploration geoscience",
+  "events_per_yr": null,
+  "notes": "biennial | BOUNDARY (may belong to another field) | the largest exploration-geoscience conference in the southern hemisphere, well over 1,000 delegates, with published extended abstracts | Phase 1 source: https://www.aseg.org.au/events/aegc/",
+  "route_hint": "AEGC 2023 Brisbane / AEGC 2025: extended abstracts published in 'ASEG Extended Abstracts' (Taylor & Francis, Crossref ISSN 2202-0586) — count the edition's items; also aseg.org.au"
+ },
+ {
+  "row": 105,
+  "conference": "World Congress on Agroforestry",
+  "society": "CIFOR-ICRAF (World Agroforestry) with rotating hosts",
+  "country": "international (rotating)",
+  "subfield": "agroforestry",
+  "events_per_yr": null,
+  "notes": "every 5 years | BOUNDARY (may belong to another field) | over 1,200 selected participants in 2014 with a published book of abstracts; borderline | Phase 1 source: https://www.worldagroforestry.org/",
+  "route_hint": "5th World Congress on Agroforestry, Québec 2022 (book of abstracts); worldagroforestry.org / agroforestry2022.org"
+ },
+ {
+  "row": 119,
+  "conference": "Congreso Latinoamericano de la Ciencia del Suelo (joint with the Congreso Argentino de la Ciencia del Suelo)",
+  "society": "Sociedad Latinoamericana de la Ciencia del Suelo (SLCS) with national soil societies",
+  "country": "Latin America (rotating; Asuncion 2027)",
+  "subfield": "soil science",
+  "events_per_yr": null,
+  "notes": "every 2-3 years | BOUNDARY (may belong to another field) | the 2012 joint edition drew about 1,200 participants from 29 countries with over 800 works presented | Phase 1 source: https://www.slcs.org.mx/",
+  "route_hint": "Congreso Latinoamericano de la Ciencia del Suelo — check the latest edition (2023 Florianópolis? / 2027 Asunción); slcs.org.mx; a joint year with the Argentine congress counts once — set duplicate_of if your edition is joint with row 120"
+ },
+ {
+  "row": 34,
+  "conference": "Congresso Internacional da Sociedade Brasileira de Geofisica (SBGf)",
+  "society": "Sociedade Brasileira de Geofisica",
+  "country": "Brazil",
+  "subfield": "geophysics",
+  "events_per_yr": null,
+  "notes": "biennial | BOUNDARY (may belong to another field) | Crossref deposits 712 papers for the 19th Congress proceedings | SIZE HINT: 712 papers in Crossref container '19th Congress of the Brazilian Geophysical Society - Proceedings' (crossref_seen.json) | Phase 1 source: https://sbgf.org.br/",
+  "route_hint": "Crossref: container '19th Congress of the Brazilian Geophysical Society - Proceedings' = 712 papers (phase-1 hint, prefix SBGf/Crossref). Count by container facet per edition; sbgf.org.br proceedings"
+ },
+ {
+  "row": 93,
+  "conference": "FertBio - Reuniao Brasileira de Fertilidade do Solo e Nutricao de Plantas",
+  "society": "Sociedade Brasileira de Ciencia do Solo (SBCS)",
+  "country": "Brazil",
+  "subfield": "soil fertility/plant nutrition",
+  "events_per_yr": null,
+  "notes": "biennial, alternating with the CBCS | BOUNDARY (may belong to another field) | the SBCS's second national meeting; historically a very thick resumos volume (693 pages as far back as 1996) | Phase 1 source: https://www.sbcs.org.br/",
+  "route_hint": "SBCS second meeting (FertBio, biennial alternating with CBCS); anais likely on a publisher platform (Editora Novus pattern seen for CBCS) or Even3 prefix 10.29327 — check the Even3/Crossref container facet"
+ },
+ {
+  "row": 96,
+  "conference": "Congresso Brasileiro de Meteorologia (CBMET)",
+  "society": "Sociedade Brasileira de Meteorologia",
+  "country": "Brazil",
+  "subfield": "meteorology",
+  "events_per_yr": null,
+  "notes": "biennial | BOUNDARY (may belong to another field) | Brazil's national meteorology congress; Portuguese-language sizing needed | Phase 1 source: https://cbmet.com.br/",
+  "route_hint": "Brazilian anais: try the Even3 Crossref prefix 10.29327 container facet (type:proceedings-article) and cbmet.com.br anais pages"
+ },
+ {
+  "row": 97,
+  "conference": "Congresso Brasileiro de Agrometeorologia (CBAgro)",
+  "society": "Sociedade Brasileira de Agrometeorologia (SBAgro)",
+  "country": "Brazil",
+  "subfield": "agrometeorology",
+  "events_per_yr": null,
+  "notes": "biennial | BOUNDARY (may belong to another field) | a recent edition presented 678 papers (549 posters, 129 orals) - below the bar on that figure, included as a near-miss to confirm | Phase 1 source: https://cbagro2025.com.br/submissoes",
+  "route_hint": "Phase-1 figure: a recent edition presented 678 papers (549 posters + 129 orals) — OPEN the page (cbagro2025.com.br) and confirm; below 800 on positive evidence = OUT"
+ },
+ {
+  "row": 35,
+  "conference": "SGEM International Multidisciplinary Scientific GeoConference",
+  "society": "SGEM (Surveying Geology and Mining Ecology Management)",
+  "country": "Bulgaria/Austria",
+  "subfield": "geoscience (multidisciplinary)",
+  "events_per_yr": null,
+  "notes": "annual, multiple editions per year | BOUNDARY (may belong to another field) | Crossref shows 532 papers for one container; a very large series, though its standing needs a phase-2 judgement | SIZE HINT: 532 papers in Crossref container 'SGEM International Multidisciplinary Scientific GeoConference EXPO Proceedings' (crossref_seen.json) | Phase 1 source: https://www.sgem.org/",
+  "route_hint": "Crossref container 'SGEM International Multidisciplinary Scientific GeoConference EXPO Proceedings' = 532 papers in one container; SGEM runs several editions per year — decide the unit (one edition) and events_per_yr, do NOT sum editions"
+ },
+ {
+  "row": 36,
+  "conference": "US Rock Mechanics/Geomechanics Symposium (ARMA)",
+  "society": "American Rock Mechanics Association",
+  "country": "USA",
+  "subfield": "rock mechanics/geomechanics",
+  "events_per_yr": null,
+  "notes": "annual (June) | BOUNDARY (may belong to another field) | Crossref shows 649 and 473 papers for the 58th and 59th symposia; borderline and engineering-adjacent | SIZE HINT: 649 papers (58th) and 473 papers (59th) in Crossref (crossref_seen.json) | Phase 1 source: https://www.armarocks.org/",
+  "route_hint": "Crossref: 58th ARMA = 649, 59th = 473 papers (OnePetro). Count the latest edition's container; boundary with engineering"
+ },
+ {
+  "row": 59,
+  "conference": "MEOS GEO (Middle East Oil, Gas and Geosciences Show)",
+  "society": "SPE / Middle East Oil Show organisers",
+  "country": "Bahrain",
+  "subfield": "petroleum geoscience",
+  "events_per_yr": null,
+  "notes": "biennial | BOUNDARY (may belong to another field) | Crossref shows 667 papers for one edition; borderline and petroleum-engineering adjacent | SIZE HINT: 667 papers in Crossref container 'Middle East Oil, Gas and Geosciences Show (MEOS GEO)' (crossref_seen.json) | Phase 1 source: https://www.meos-geo.com/",
+  "route_hint": "Crossref container 'Middle East Oil, Gas and Geosciences Show (MEOS GEO)' = 667 papers (OnePetro/SPE). Boundary with petroleum engineering"
+ },
+ {
+  "row": 106,
+  "conference": "International Plant Protection Congress (IPPC)",
+  "society": "International Association for the Plant Protection Sciences (IAPPS)",
+  "country": "international (rotating)",
+  "subfield": "plant protection",
+  "events_per_yr": null,
+  "notes": "every 4 years | BOUNDARY (may belong to another field) | the world plant-protection congress; boundary with life sciences (entomology and plant pathology are on the life sheet) | Phase 1 source: https://www.plantprotection.org/",
+  "route_hint": "IPPC 2023 Athens (XX) abstract book; plantprotection.org. Boundary with life sciences — flag"
+ },
+ {
+  "row": 103,
+  "conference": "International Grassland Congress (IGC)",
+  "society": "International Grassland Congress continuing committee",
+  "country": "international (rotating)",
+  "subfield": "grassland/forage science",
+  "events_per_yr": null,
+  "notes": "every 4 years | BOUNDARY (may belong to another field) | the world grassland congress with a large proceedings volume; size uncertain | Phase 1 source: https://www.internationalgrasslands.org/",
+  "route_hint": "XXV IGC 2023 Covington Kentucky was JOINT with the XII International Rangeland Congress (row 104, not in your queue): proceedings on UKnowledge (uknowledge.uky.edu/igc/) — count the joint edition once and note it"
+ },
+ {
+  "row": 91,
+  "conference": "International Agronomy Congress (IAC)",
+  "society": "Indian Society of Agronomy (with ICAR/IARI/NAAS)",
+  "country": "India",
+  "subfield": "agronomy",
+  "events_per_yr": null,
+  "notes": "roughly every 3-4 years (6th, New Delhi, November 2025) | BOUNDARY (may belong to another field) | India's flagship agronomy congress run by a society with over 3,500 life members; size uncertain | Phase 1 source: https://iac.isa-india.in/about/",
+  "route_hint": "6th International Agronomy Congress, New Delhi, Nov 2025 (Indian Society of Agronomy): souvenir / abstract book PDF; also indianagronomy.org"
+ },
+ {
+  "row": 92,
+  "conference": "Indian Society of Soil Science National Convention / National Seminar on Developments in Soil Science",
+  "society": "Indian Society of Soil Science",
+  "country": "India",
+  "subfield": "soil science",
+  "events_per_yr": null,
+  "notes": "annual | BOUNDARY (may belong to another field) | India's national soil-science convention with a printed book of abstracts; size uncertain | Phase 1 source: https://www.isss-india.org/",
+  "route_hint": "ISSS India annual convention: printed abstract book; isss-india.org publications; local-language not needed (English)"
+ },
+ {
+  "row": 82,
+  "conference": "Turkiye Jeoloji Kurultayi (Geological Congress of Turkey)",
+  "society": "Chamber of Geological Engineers of Turkey (TMMOB Jeoloji Muhendisleri Odasi)",
+  "country": "Turkey",
+  "subfield": "geology",
+  "events_per_yr": null,
+  "notes": "annual (April, Ankara) | BOUNDARY (may belong to another field) | Turkey's national geology congress with a large bildiri ozetleri volume; Turkish-language sizing needed | Phase 1 source: https://www.jmo.org.tr/",
+  "route_hint": "Türkiye Jeoloji Kurultayı bildiri özetleri PDF on jmo.org.tr (search in Turkish: 'Jeoloji Kurultayı bildiri özetleri kitabı')"
+ },
+ {
+  "row": 83,
+  "conference": "Congreso Geologico de Espana / Geo-Temas",
+  "society": "Sociedad Geologica de Espana",
+  "country": "Spain",
+  "subfield": "geology",
+  "events_per_yr": null,
+  "notes": "every 4 years | BOUNDARY (may belong to another field) | Spain's national geology congress, published as the Geo-Temas volumes; likely several hundred - borderline | Phase 1 source: https://sociedadgeologica.es/",
+  "route_hint": "Congreso Geológico de España → Geo-Temas volumes (sociedadgeologica.es/publicaciones/geo-temas); count contributions in the congress volume (XI Congreso 2024 Ávila?)"
+ },
+ {
+  "row": 55,
+  "conference": "Congreso Geologico Argentino",
+  "society": "Asociacion Geologica Argentina",
+  "country": "Argentina",
+  "subfield": "geology",
+  "events_per_yr": null,
+  "notes": "every 2-4 years | BOUNDARY (may belong to another field) | Argentina's national geology congress; Spanish-language sizing needed | Phase 1 source: https://www.geologica.org.ar/",
+  "route_hint": "Congreso Geológico Argentino actas (XXII, 2025 San Luis? / XXI 2022 Puerto Madryn): geologica.org.ar; Spanish search 'actas congreso geológico argentino trabajos'"
+ },
+ {
+  "row": 118,
+  "conference": "Convencion Geologica Nacional / Congreso Mexicano de Geologia",
+  "society": "Sociedad Geologica Mexicana",
+  "country": "Mexico",
+  "subfield": "geology",
+  "events_per_yr": null,
+  "notes": "biennial-ish | BOUNDARY (may belong to another field) | Mexico's national geology convention with an open abstract call; Spanish-language sizing needed | Phase 1 source: https://www.sociedadgeologicamexicana.org.mx/cgn2023",
+  "route_hint": "Convención Geológica Nacional (Sociedad Geológica Mexicana) — libro de resúmenes on sociedadgeologicamexicana.org.mx/cgn2023; Spanish search"
+ }
+]

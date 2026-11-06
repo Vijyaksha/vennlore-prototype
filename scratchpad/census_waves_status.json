@@ -1,0 +1,676 @@
+{
+ "bell": 1,
+ "wave": "A",
+ "started": "2026-09-15T01:00 ET",
+ "searches_used_orchestrator": 1,
+ "waves": {
+  "earth/wave2": {
+   "field": "Earth, environmental & agricultural sciences",
+   "rows_queued": 30,
+   "rows": [
+    26,
+    76,
+    65,
+    70,
+    61,
+    62,
+    11,
+    9,
+    10,
+    58,
+    60,
+    17,
+    125,
+    105,
+    119,
+    34,
+    93,
+    96,
+    97,
+    35,
+    36,
+    59,
+    106,
+    103,
+    91,
+    92,
+    82,
+    83,
+    55,
+    118
+   ],
+   "rows_returned": 30,
+   "agent": "DONE 02:26 ET",
+   "rung5_pending": [
+    106,
+    91
+   ],
+   "written_back": true,
+   "commit": "b883de4",
+   "searches_used": 12,
+   "summary": "1 V, 12 B, 16 OUT, 1 dup parked (row 10)"
+  },
+  "earth/wave3": {
+   "field": "Earth, environmental & agricultural sciences",
+   "rows_queued": 30,
+   "rows": [
+    28,
+    63,
+    68,
+    71,
+    22,
+    23,
+    99,
+    89,
+    81,
+    44,
+    114,
+    128,
+    84,
+    31,
+    101,
+    67,
+    69,
+    79,
+    53,
+    127,
+    111,
+    90,
+    24,
+    25,
+    27,
+    29,
+    32,
+    41,
+    57,
+    95
+   ],
+   "rows_returned": 28,
+   "agent": "CUT OFF by usage limit 02:31 ET at 28/30",
+   "rung5_pending": [
+    27,
+    32
+   ],
+   "written_back": true,
+   "commit": "see git log",
+   "searches_used": 9,
+   "bulk_count_pending": [
+    79
+   ],
+   "unfinished_rows": [
+    41,
+    57
+   ],
+   "summary": "1 V, 11 B, 16 OUT"
+  },
+  "soc/wave2": {
+   "field": "Social sciences & education",
+   "rows_queued": 30,
+   "rows": [
+    23,
+    8,
+    22,
+    195,
+    90,
+    15,
+    145,
+    120,
+    121,
+    24,
+    80,
+    92,
+    124,
+    86,
+    87,
+    56,
+    159,
+    17,
+    25,
+    30,
+    67,
+    91,
+    93,
+    101,
+    146,
+    147,
+    192,
+    60,
+    74,
+    82
+   ],
+   "rows_returned": 25,
+   "agent": "CUT OFF by usage limit 02:31 ET at 25/30",
+   "rung5_pending": [
+    92,
+    30
+   ],
+   "written_back": true,
+   "commit": "see git log",
+   "searches_used": 8,
+   "unfinished_rows": [
+    147,
+    192,
+    60,
+    74,
+    82
+   ],
+   "summary": "12 V, 12 B, 1 OUT"
+  },
+  "soc/wave3": {
+   "field": "Social sciences & education",
+   "rows_queued": 30,
+   "rows": [
+    143,
+    9,
+    59,
+    186,
+    21,
+    116,
+    118,
+    95,
+    183,
+    184,
+    185,
+    64,
+    189,
+    19,
+    28,
+    96,
+    114,
+    188,
+    196,
+    61,
+    81,
+    115,
+    148,
+    132,
+    26,
+    38,
+    191,
+    49,
+    50,
+    20
+   ],
+   "rows_returned": 30,
+   "agent": "DONE ~02:20 ET",
+   "rung5_pending": [
+    64,
+    19,
+    196,
+    61,
+    148,
+    132,
+    191,
+    50
+   ],
+   "written_back": true,
+   "commit": "fb3be1e",
+   "searches_used": 9,
+   "summary": "11 V, 18 B, 1 OUT; row 143 rung-9 umbrella ~4,350 NOT COUNTED"
+  },
+  "earth/wave4": {
+   "field": "Earth, environmental & agricultural sciences",
+   "wave": "B",
+   "rows_queued": 37,
+   "rows": [
+    41,
+    57,
+    131,
+    98,
+    64,
+    72,
+    74,
+    102,
+    104,
+    112,
+    120,
+    126,
+    20,
+    88,
+    123,
+    38,
+    40,
+    48,
+    49,
+    50,
+    54,
+    73,
+    85,
+    86,
+    129,
+    130,
+    56,
+    42,
+    108,
+    109,
+    75,
+    115,
+    39,
+    77,
+    87,
+    121,
+    122
+   ],
+   "rows_returned": 37,
+   "agent": "DONE 07:19 ET",
+   "rung5_pending": [
+    73,
+    77
+   ],
+   "written_back": true,
+   "commit": null,
+   "searches_used": 14,
+   "summary": "0 V, 2 B (both NEEDS_RUNG_5), 35 OUT (incl. 5 character-decided trade/forum events, IRC parked as joint with IGC). EARTH PHASE 2 COMPLETE."
+  },
+  "soc/wave4": {
+   "field": "Social sciences & education",
+   "wave": "B",
+   "rows_queued": 30,
+   "rows": [
+    147,
+    74,
+    34,
+    31,
+    54,
+    70,
+    105,
+    127,
+    199,
+    167,
+    48,
+    130,
+    122,
+    155,
+    172,
+    45,
+    77,
+    112,
+    198,
+    102,
+    128,
+    42,
+    53,
+    75,
+    100,
+    99,
+    135,
+    138,
+    141,
+    149
+   ],
+   "rows_returned": 26,
+   "agent": "CUT OFF by usage limit 07:20 ET at 26/30",
+   "rung5_pending": [
+    100,
+    112,
+    127,
+    167
+   ],
+   "written_back": true,
+   "commit": null,
+   "searches_used": 9,
+   "unfinished_rows": [
+    135,
+    138,
+    141,
+    149
+   ],
+   "summary": "2 V (Congreso Esp. Soc. 1,539; EASA 2,006 by orchestrator bulk count), 13 B, 11 OUT"
+  },
+  "soc/wave5": {
+   "field": "Social sciences & education",
+   "wave": "B",
+   "rows_queued": 30,
+   "rows": [
+    192,
+    82,
+    27,
+    43,
+    65,
+    72,
+    107,
+    154,
+    200,
+    164,
+    179,
+    133,
+    151,
+    35,
+    163,
+    84,
+    78,
+    157,
+    178,
+    52,
+    32,
+    39,
+    76,
+    73,
+    97,
+    126,
+    136,
+    139,
+    142,
+    152
+   ],
+   "rows_returned": 30,
+   "agent": "DONE 07:14 ET",
+   "rung5_pending": [
+    27,
+    35,
+    126,
+    133
+   ],
+   "written_back": true,
+   "commit": null,
+   "searches_used": 11,
+   "summary": "2 V, 18 B (AESOP 1,087 by orchestrator), 10 OUT; WERA/ICPS/CSSE parked as duplicates; UEBK 0 ev/yr override"
+  },
+  "soc/wave6": {
+   "field": "Social sciences & education",
+   "wave": "B",
+   "rows_queued": 30,
+   "rows": [
+    60,
+    37,
+    29,
+    44,
+    69,
+    103,
+    109,
+    177,
+    197,
+    40,
+    129,
+    123,
+    150,
+    46,
+    36,
+    79,
+    111,
+    193,
+    62,
+    66,
+    41,
+    51,
+    83,
+    71,
+    98,
+    134,
+    137,
+    140,
+    144,
+    153
+   ],
+   "rows_returned": 30,
+   "agent": "DONE 07:04 ET",
+   "rung5_pending": [
+    29,
+    46,
+    144
+   ],
+   "written_back": true,
+   "commit": null,
+   "searches_used": 9,
+   "summary": "0 V, 21 B (incl. 3 rung-9, WEAI spot-checked to 802 B, AECT 649 OUT by orchestrator), 9 OUT, CSA parked in umbrella 143"
+  }
+ },
+ "wave_A_unfinished_rows": {
+  "earth": [
+   41,
+   57
+  ],
+  "soc": [
+   147,
+   192,
+   60,
+   74,
+   82
+  ]
+ },
+ "rung5_queue": {
+  "earth": [
+   106,
+   91,
+   27,
+   32
+  ],
+  "soc": [
+   64,
+   19,
+   196,
+   61,
+   148,
+   132,
+   191,
+   50,
+   92,
+   30
+  ],
+  "bulk_count": {
+   "earth": [
+    79
+   ]
+  }
+ },
+ "browser_note": "Playwright MCP profile locked by another session; Chrome extension disconnected; using scratchpad/r5tool/fetch.js (node playwright, chrome channel, own profile). Cloudflare (Helsinki portal) still blocks it.",
+ "rung5_pass": {
+  "written": "2026-09-15 ~06:15 ET",
+  "resolved": {
+   "soc/wave3": [
+    132,
+    148,
+    50,
+    61
+   ],
+   "soc/wave2": [
+    92
+   ],
+   "earth/wave3": [
+    32,
+    79
+   ],
+   "earth/wave2": [
+    91
+   ]
+  },
+  "still_pending": {
+   "soc": [
+    64,
+    196,
+    191,
+    19,
+    30
+   ],
+   "earth": [
+    27,
+    106
+   ]
+  },
+  "sheet_state": {
+   "Census - Earth Sciences": {
+    "totals": [
+     4.95,
+     23.19
+    ],
+    "tiers": {
+     "VERIFIED": 9,
+     "BORDERLINE": 35,
+     "NOT YET CENSUSED": 37
+    }
+   },
+   "Census - Social Sciences": {
+    "totals": [
+     34.28,
+     63.61
+    ],
+    "tiers": {
+     "VERIFIED": 44,
+     "BORDERLINE": 39,
+     "NOT YET CENSUSED": 111
+    }
+   },
+   "Deleted - Earth Sciences": 45,
+   "Deleted - Social Sciences": 8
+  }
+ },
+ "wave_B_leftover_soc_rows": [
+  156,
+  160,
+  161,
+  165,
+  166,
+  168,
+  169,
+  170,
+  171,
+  173,
+  174,
+  175,
+  176,
+  180,
+  181,
+  182,
+  187,
+  190,
+  194,
+  201,
+  106
+ ],
+ "bell2": {
+  "scheduled": "06:30 ET",
+  "actual_dispatch": "06:01 ET \u2014 all Wave A intake done, Wave B prepared early"
+ },
+ "final_state_2026-09-15_11:00_ET": {
+  "Census - Social Sciences": {
+   "tiers": {
+    "VERIFIED": 48,
+    "BORDERLINE": 87,
+    "NOT YET CENSUSED": 25
+   },
+   "V": 36.61,
+   "VB": 103.76,
+   "deleted": 42,
+   "nyc": [
+    [
+     106,
+     "JERA Annual Meeting (\u65e5\u672c\u6559\u80b2\u5b66\u4f1a\u5927\u4f1a)"
+    ],
+    [
+     135,
+     "Onderwijs Research Dagen (ORD)"
+    ],
+    [
+     138,
+     "Congress of the Russian Psychological Society (Syezd RPO)"
+    ],
+    [
+     141,
+     "KONASPI (Konvensi Nasional Pendidikan Indonesia)"
+    ],
+    [
+     149,
+     "IEA World Congress"
+    ],
+    [
+     156,
+     "APA Conference (Asian Population Association)"
+    ],
+    [
+     160,
+     "EUGEO Congress"
+    ],
+    [
+     161,
+     "Annual Meeting of the Association of Japanese Geographers (\u65e5\u672c\u5730\u7406\u5b66\u4f1a\u5927\u4f1a)"
+    ],
+    [
+     165,
+     "ACTFL Annual Convention and World Languages Expo"
+    ],
+    [
+     166,
+     "CEC Convention & Expo"
+    ],
+    [
+     168,
+     "AACE E-Learn / EdMedia / SITE conferences"
+    ],
+    [
+     169,
+     "ICDE World Conference on Online Learning"
+    ],
+    [
+     170,
+     "HERDSA Conference"
+    ],
+    [
+     171,
+     "ICSEI Congress"
+    ],
+    [
+     173,
+     "ASPA Annual Conference"
+    ],
+    [
+     174,
+     "EGPA Annual Conference"
+    ],
+    [
+     175,
+     "IIAS Congress"
+    ],
+    [
+     176,
+     "ENHR Conference"
+    ],
+    [
+     180,
+     "Women's Worlds Congress"
+    ],
+    [
+     181,
+     "Iranian Psychological Association Congress (\u06a9\u0646\u06af\u0631\u0647 \u0627\u0646\u062c\u0645\u0646 \u0631\u0648\u0627\u0646\u0634\u0646\u0627\u0633\u06cc \u0627\u06cc\u0631\u0627\u0646)"
+    ],
+    [
+     182,
+     "Iranian Sociological Association Congress"
+    ],
+    [
+     187,
+     "CBAS (Congresso Brasileiro de Assistentes Sociais)"
+    ],
+    [
+     190,
+     "ECE (European Conference on Education)"
+    ],
+    [
+     194,
+     "SWSD (Joint World Conference on Social Work, Education and Social Development)"
+    ],
+    [
+     201,
+     "NAEA National Convention"
+    ]
+   ]
+  },
+  "Census - Earth Sciences": {
+   "tiers": {
+    "VERIFIED": 9,
+    "BORDERLINE": 37
+   },
+   "V": 4.95,
+   "VB": 24.44,
+   "deleted": 81,
+   "nyc": []
+  }
+ },
+ "wave_B_unfinished_rows": {
+  "soc": [
+   135,
+   138,
+   141,
+   149
+  ]
+ }
+}

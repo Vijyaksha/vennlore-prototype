@@ -1,0 +1,99 @@
+{
+ "51": {
+  "conference": "Society for Glycobiology Annual Meeting",
+  "abstracts_numeric": 150,
+  "confidence": "floor",
+  "abstracts": "150 poster abstracts (SFG 2025, San Diego, Nov 10-11 poster board assignments; 128 boards + 22 'A'-suffixed second assignments = 150 unique poster IDs B1-001..B11-128). Orals not in this list, so a FLOOR — but with 'over 400' attendees (society prospectus) the contributed total cannot approach 800.",
+  "year": 2025,
+  "rung": 3,
+  "source_url": "https://www.glycobiology.org/assets/2025AnnMtg/Docs/SFG25%20List%20of%20Posters%20for%20the%20web.pdf",
+  "tier": "OUT",
+  "orchestrator_note": "ORCHESTRATOR RUNG 3 (2026-09-13, replacing the researcher's NEEDS_RUNG_5): the society mirrors its poster list on its own site, so the OUP supplement was never needed. Downloaded https://www.glycobiology.org/assets/2025AnnMtg/Docs/SFG25%20List%20of%20Posters%20for%20the%20web.pdf (HTTP 200, 140,450 bytes, 8 pp, title 'SFG 2025 Annual Meeting November 10th and 11th Poster Board Assignments by Poster Number'). grep -oE '\\bB[0-9]{1,2}-[0-9]{3}A?\\b' | sort -u | wc -l = 150 in BOTH pdftotext -layout and -raw (128 plain board numbers + 22 A-suffixed); independent marker: 150 lines begin with a poster ID. Per-session counts B1..B11 = 33/6/23/1/14/8/8/10/16/13/18; highest board B11-128. No withdrawn markers. Orals are not in this list, so 150 is a floor on posters only; the society's own prospectus puts attendance at 'over 400', so even at a 100% ratio the meeting cannot reach 800. OUT on positive evidence (counted posters + sourced attendance), not on absence."
+ },
+ "33": {
+  "conference": "ASLO Aquatic Sciences Meeting",
+  "abstracts_numeric": 829,
+  "confidence": "exact",
+  "year": 2025,
+  "rung": 5,
+  "abstracts": "829 contributed presentations (ASLO 2025 Aquatic Sciences Meeting, Charlotte, 26-31 Mar 2025): 536 oral + 293 poster across 155 scientific sessions (113 special-session SS + 30 contributed CS + education EP, AV, author-spotlight blocks); plenaries, workshops, town halls and socials carry no presentations and are excluded.",
+  "source_url": "https://aslo.secure-platform.com/2025/solicitations/16/sessiongallery/schedule?dayId=32",
+  "tier": "BORDERLINE",
+  "orchestrator_note": "ORCHESTRATOR RUNG 5 (Playwright, 2026-09-13): the OpenWater session gallery embeds each day's session list as JSON in the page HTML (regex on \"scheduleDayId\":d,...\"id\":N,\"name\":\"...\"). Fetched schedule?dayId=29..34 with the page's own searchParams -> 199 unique sessions (8/28/33/84/25/21 per day). Fetched every session page /sessiongallery/schedule/items/<id> (199/199 HTTP 200) and counted unique /sessiongallery/<n>/application/<id> links = 829, with zero ids shared across sessions. Two independent re-derivations on the same pages agree: 'Primary Presenter:' lines = 829, and unique abstract numbers '(NNNN)' after titles = 830 (one extra is the PL04 award citation). By session code: SS oral 414 + SS poster 216, CS oral 81 + CS poster 48, EP 29+12, AV 12, author-spotlight/other 17. 44 sessions carry zero presentations (PL plenaries, WS workshops, TH town halls, SE/SP/ST/ME/EC/RE socials) and are excluded; 'Invited' appears 30 times across all session pages, so a small invited share inside SS sessions is possible and not separable — 829 is therefore a slight upper bound on contributed. No withdrawn markers. 829 clears 800 (within-100 leeway on the ~900 floor) -> BORDERLINE, not VERIFIED."
+ },
+ "65": {
+  "conference": "AMP Annual Meeting & Expo",
+  "abstracts_numeric": 583,
+  "confidence": "exact",
+  "year": 2025,
+  "rung": 5,
+  "abstracts": "583 abstracts presented at AMP 2025 (J Mol Diagn vol 27 issue 11, S1-S206: 594 published IDs — G 118, H 70, I 50, ID 65, ST 191, TT 88, O 12, contiguous within every track — minus 11 printed as WITHDRAWN: G016, G045, G078, H033, ID002, ID048, I021, I044, ST073, ST142, TT053).",
+  "source_url": "https://www.jmdjournal.org/article/S1525-1578(25)00257-0/fulltext",
+  "tier": "OUT",
+  "orchestrator_note": "ORCHESTRATOR RUNG 5 (Playwright, 2026-09-13): jmdjournal.org 403s curl but opens in a browser; the 'Download PDF' link fetched same-origin from the article page returned HTTP 200 application/pdf, 2,966,534 bytes, 206 pages, title 'Abstracts'. Extracted with BOTH pdftotext -layout and -raw: grep -oE '\\b(G|H|I|ID|ST|TT|OTH|O|OT)[0-9]{3}\\.' | sort -u | wc -l = 594 in both modes; per track G 118, H 70, I 50, ID 65, ST 191, TT 88, O 12, and in every track the highest ID equals the count, so numbering is contiguous with no block reservation. Tracks are AMP's abstract categories (Genetics, Hematopathology, Infectious Diseases, Informatics, Solid Tumors, Technical Topics, Other); no invited content carries an ID. 11 IDs carry the body 'WITHDRAWN' (grep -n WITHDRAWN: G016, G045, G078, H033, ID002, ID048, I021, I044, ST073, ST142, TT053), so 594 - 11 = 583 presented. 583 is far below 800 on a complete published supplement -> OUT on positive evidence. The researcher's rung-9 attendance (2,200+, A1 exhibitor page) is retained as context: 594/2,200 = 27%, consistent with a clinical-lab meeting built around an exhibit hall."
+ },
+ "53": {
+  "conference": "Radiation Research Society Annual Meeting",
+  "abstracts_numeric": null,
+  "tier": "BORDERLINE",
+  "orchestrator_note": "ORCHESTRATOR RUNG 5 (2026-09-13): radres.org 403s curl but its YourMembership CDN mirror serves every archive PDF (cdn.ymaws.com/www.radres.org/resource/resmgr/<year>_annual_meeting/<file>). Opened the Meetings Archive in Playwright: every year's link (2025 RRS_2025_PAG.pdf 5 pp; 2024 RRS_PAG_2024.pdf 5 pp; 2022 RRS_SAG_2022.pdf 5 pp; 2021 4 pp; 2019 RRS2019_SAG.pdf 4 pp; 2018 3 pp) is a schedule-at-a-glance grid, not a programme book: they name 6-8 poster sessions per year (2019: Poster Sessions 1-8; 2022: 1-8; 2025: 1-6) but list no poster IDs, no board ranges and no abstract count, so rungs 3 and 6 have nothing to count and the archive holds no abstract book. No attendance figure with a basis was found either. No evidence either way -> stays BORDERLINE (rule 1), never OUT. NEXT ACTION: the abstract book is distributed through the meeting app; look for an 'abstracts received' line in the radres.org News Hub post-meeting summaries (page/2025NewsHub), or the Radiation Research journal's meeting-abstract supplement if one is deposited."
+ },
+ "50": {
+  "conference": "ISMB Conference",
+  "abstracts_numeric": 1445,
+  "confidence": "floor",
+  "year": 2026,
+  "rung": 5,
+  "abstracts": "1,445 = 817 posters (ISMB 2026, Washington DC, counted: session A 202 + B 203 + C 202 + D 196 + F 14; session E (virtual) lists none) + 628 track-session talks counted from the programme PDF by the researcher (a floor that still contains an unseparated minority of invited track keynotes). Under 1,500 counted, so BORDERLINE not VERIFIED.",
+  "source_url": "https://www.iscb.org/ismb2026/scientific-programme/posters",
+  "tier": "BORDERLINE",
+  "orchestrator_note": "ORCHESTRATOR RUNG 5 (2026-09-13): the iscb.org posters page loads its list in an iframe from https://transition.iscb.org/cms_addon/conferences/ismb2026/posters.php, which serves plain HTML to curl (HTTP 200, 23,226 bytes). It links 79 per-track/per-session pages (?track=<code>&session=<A-F>); fetched all 79 (all HTTP 200) and extracted poster headings matching '^[A-F]-\\d{3}: <title>' after the 'Results' marker -> 817 rows, 817 unique IDs, none listed under two tracks (A 202, B 203, C 202, D 196, F 14; the 21 session-E pages return no entries, consistent with E being the virtual set-up block). Highest numbers per session (A 413, B 412, C 401, D 400) exceed the counts because odd/even numbering alternates sessions, so the ID count and not the maximum is the figure. 14 titles repeat across IDs (kept — distinct poster numbers). Programme PDF's own statement '900+ posters' / 'nearly one thousand in-person and virtual posters' (researcher, REPORTED BY SOURCE) is higher than the 817 listed; the counted list is preferred per the method, the stated figure recorded as a disagreement. Total contributed = 817 posters + the researcher's 628 counted talks = 1,445, a floor on the poster side only if virtual-only posters were withheld from the listing. Stays on the census sheet as BORDERLINE."
+ },
+ "49": {
+  "conference": "SLAS International Conference & Exhibition",
+  "abstracts_numeric": null,
+  "tier": null,
+  "rung9": true,
+  "orchestrator_note": "ORCHESTRATOR RUNG 5 (Playwright, 2026-09-13): https://slas2025.eventscribe.net/ now serves only the 'Lead Retrieval' shell and its agenda.asp lists 6 logistics items (first aid, exhibitor move-in, registration) — the scientific programme has been removed; https://slas2026.eventscribe.net/agenda.asp redirects to login.asp. Nothing countable remains online, so rung 5 is exhausted and the row is decided by the researcher's rung-9 conversion (6,700 pre-registered, A3, judged 8% for a trade-show-led programme with ~150 invited podium lectures)."
+ },
+ "109": {
+  "conference": "SAF National Convention",
+  "abstracts_numeric": 446,
+  "confidence": "floor",
+  "year": 2025,
+  "rung": 5,
+  "abstracts": "446 presentations of ALL types listed for the SAF 2025 National Convention (Hartford, 21-25 Oct 2025) in the eventScribe Browse-by-Title index — an UPPER BOUND on contributed orals + posters, since the 446 includes plenaries, workshops, panels and technical tours (424 presentation records + 22 session records).",
+  "source_url": "https://safconvention2025.eventscribe.net/SearchByPresentation.asp?pfp=BrowsebyTitle",
+  "tier": "OUT",
+  "orchestrator_note": "ORCHESTRATOR RUNG 5 (Playwright, 2026-09-13): safconvention2025.eventscribe.net opens in a browser (agenda.asp lists the five convention days 21-25 Oct 2025). The Browse-by-Title index states '446 results found' and carries exactly 446 unique PresentationID links (424 ajaxcalls/PresentationInfo.asp + 22 ajaxcalls/SessionInfo.asp), so the stated total and the link count agree. The list mixes every programme type (plenaries, workshops, panels, field tours, posters, contributed talks) and no type split was made, so 446 is a ceiling on contributed presentations, and a ceiling of 446 is positive evidence the meeting sits far below 800. OUT."
+ },
+ "89": {
+  "conference": "Society for Range Management Annual Meeting",
+  "abstracts_numeric": 500,
+  "confidence": "dated",
+  "year": 2018,
+  "rung": 5,
+  "abstracts": "500 abstracts (SRM 2018 Annual Meeting, the latest year in the society's own abstract archive; DATED). Full archive counts: 2013 206, 2014 289, 2015 456, 2016 437, 2017 361, 2018 500 — six consecutive years, none above 500.",
+  "source_url": "https://rangelandsgateway.org/search?solr=&sort_by=field_dlio_publication_yea&f%5B0%5D=collection_all_%3A136&f%5B1%5D=type%3Adlio",
+  "tier": "OUT",
+  "orchestrator_note": "ORCHESTRATOR RUNG 5/4 (2026-09-13): rangelands.org is bot-walled, but the society's abstracts are mirrored in the Rangelands Gateway library (University of Arizona) collection 'SRM Annual Meeting Abstracts' (node 136), described as 'oral presentation and poster titles, abstracts, and authors from the SRM Annual Meetings and Tradeshows, from 2013 forward'. The search-results page for the collection (plain HTML to curl, HTTP 200) states 'Displaying 1 - 50 of 2249 results'; paged all 45 pages (page=0..44, 6 concurrent fetches) and parsed every record's 'Publication Date' -> 2,249 records parsed = 2,249 stated. Per year: 2013 206, 2014 289, 2015 456, 2016 437, 2017 361, 2018 500. 20 duplicate titles across the set (not removed; the count is if anything an upper bound). The archive stops at 2018, so the figure is DATED; but six consecutive complete years peak at 500, well under 800, and the researcher found nothing suggesting the meeting has since grown past its ~1,500-attendee scale. OUT on positive counted evidence, marked DATED; NEXT ACTION if revisited: the 2025 abstracts on rangelands.org/events-abstracts/ behind the bot wall (Chrome), which would refresh the year."
+ },
+ "101": {
+  "conference": "Wildlife Disease Association Annual Conference",
+  "abstracts_numeric": 264,
+  "confidence": "exact",
+  "year": 2025,
+  "rung": 5,
+  "abstracts": "264 contributed abstracts (WDA 2025, 73rd Annual International Conference, Victoria BC, 27 Jul-1 Aug 2025): abstracts numbered 1-265 in the programme with No. 103 absent — orals 1-102 (101 listed), posters 104-265 (162) — plus a 2-page addenda of late abstracts (pp. 283-284) not counted.",
+  "source_url": "https://wda2025.com/wp-content/uploads/2025/09/WDA-2025-Program-final.pdf",
+  "tier": "OUT",
+  "orchestrator_note": "ORCHESTRATOR RUNG 5 (2026-09-13): wda2025.com 403s WebFetch but the programme PDF under /wp-content/uploads/2025/09/WDA-2025-Program-final.pdf serves to curl with a desktop UA (HTTP 200, 10,738,989 bytes, 376 pages, title '73rd Annual International Conference of the Wildlife Disease Association'). Its table of contents gives 'O1. List of oral presentations', 'P1. List of poster presentations', '1. Abstracts for oral and poster presentations', '266. Author index', '283. Addenda - additional abstracts'. Two derivations: (a) in the O/P lists (pages O1-O16 and P1-P21) every entry's title line ends in its abstract number; pdftotext -layout regex '^(.*\\S)\\s{3,}(\\d{1,3})\\s*$' on lines carrying a word gives orals 1-102 (101 unique; 103 never appears) and posters 104-265 (156 captured; the 7 numbers the regex missed all exist as abstract pages below); (b) the abstracts section prints one abstract per page numbered 1-265, and the bare page-number footers run 1-284 with only 103 missing (266-282 = author index, 283-284 = addenda). So 264 numbered abstracts + a short addenda block. Plenary keynotes are not in the numbered series. 264 is a complete count far below 800 -> OUT on positive evidence. Note the 2025 edition was in Canada (Victoria BC); the row stays US-only in scope by society, and the count is for the society's single annual meeting."
+ },
+ "15": {
+  "conference": "Cold Spring Harbor Laboratory Meetings (series)",
+  "abstracts_numeric": null,
+  "tier": null,
+  "rung9": true,
+  "orchestrator_note": "ORCHESTRATOR DECISION (2026-09-13): treated like GRC (chemistry pilot 2, HANDOFF decision 1): an invite-adjacent SERIES of small meetings whose per-meeting scale cannot reach the ~900 floor at any ratio. The row is decided by rung 9 on the researcher's own inputs (A6 proxy ~150 participants per meeting from the published 'some 9,000 scientists' across 'more than 60 meetings and courses', judged 85%, the most generous ratio on the queue) -> ~128 implied, flex band tops out ~150, BELOW BAR. Kept as ONE row carrying the series cadence (27/yr) on the deleted sheet, never exploded into 27 rows and never summed into one figure. Reversible if a single CSHL meeting (Biology of Genomes is the largest) is ever shown to exceed ~1,000 participants."
+ }
+}

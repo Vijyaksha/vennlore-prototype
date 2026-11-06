@@ -1,0 +1,35 @@
+{
+ "63": {
+  "abstracts_numeric": 1093,
+  "abstracts": "1,093 (EEA-ESEM 2026 Dublin: distinct paper titles in the 297 'Contributed Sessions' of the congress programme; 1,169 across all 353 sessions incl. invited/lectures/awards, which are excluded)",
+  "year": 2026,
+  "rung": 5,
+  "source_url": "https://www.eea-esem-congresses.org/full-programme",
+  "confidence": "exact",
+  "orchestrator_note": "RUNG 5 by the orchestrator. Cloudflare challenges every query-string URL; Playwright cleared the challenge on /full-programme?page=1 (~10s), after which in-page fetch with the clearance cookie read pages 0-7 (353 unique /sessions/<slug> rows with their Type column). All 353 session pages fetched with curl (HTTP 200); papers counted as DISTINCT <p class=\"papers-syllabus\"> titles per session (each printed twice: Papers + Presentations blocks - raw occurrences exactly 2x distinct, spot-checked title-by-title on 2 sessions at 4 papers each). By Type: Contributed Sessions 297 sessions / 1,093 papers; Invited Sessions 12/25; lunch panels & workshops 14/28; lectures & awards the rest. Artefacts: eea_session_slugs.json, eea_final_count.json, eea_sessions/ in this wave dir. Agent's page-0 partial (209 papers/45 sessions) superseded by the full count."
+ },
+ "68": {
+  "abstracts_numeric": 1686,
+  "abstracts": "1,686 contributed presentations (54th DGPs Congress 2026 Luxembourg: 651 symposium papers + 445 posters + 356 research talks + 130 coupled-symposium papers + 56 Fachgruppensymposium papers + 39 position papers + 9 flashlights; 13 keynotes and 19 panel discussions carry no paper elements and are excluded)",
+  "year": 2026,
+  "rung": 5,
+  "source_url": "https://express.converia.de/frontend/index.php?page_id=48708&v=List&do=15&day=6367",
+  "confidence": "exact",
+  "tier": "VERIFIED",
+  "orchestrator_note": "RUNG 5 by the orchestrator. uni.lu (incl. the brochure PDF) is behind an AWS WAF challenge, but the congress programme runs on Converia (express.converia.de, page_id=48708) which serves plain HTML to curl. The four day pages (day=6367..6370, ~6MB) contain every session with its individual contributions as class=paper_element blocks; counted per session and aggregated by 'Form of presentation'. Independent second extraction on class=paper_headline agrees exactly (1,686 = 1,686). Congress ran 7-11 Sep 2026, so this is the complete final programme. Artefacts: soc/wave1/dgps/day_*.html + count.json. German-language site; forms read in German."
+ },
+ "11": {
+  "abstracts_numeric": 3541,
+  "abstracts": "3,541 contributed presentations (ICA 2025 Denver: 3,460 papers counted in the main-conference session listings + 81 numbered interactive-poster entries; ~84 preconference papers excluded; keynote/plenary and role lists (chairs, discussants, organizers) excluded)",
+  "year": 2025,
+  "rung": 5,
+  "source_url": "https://cdn.ymaws.com/www.icahdq.org/resource/resmgr/conference/2025/ICA25_Abstracts_Program.pdf",
+  "confidence": "derived",
+  "tier": "VERIFIED",
+  "orchestrator_note": "RUNG 5 by the orchestrator. icahdq.org's Cloudflare cleared in Playwright; the programme page names the artefact: the ICA25 Abstract Program PDF ('has ALL the presentations listed'), served openly from cdn.ymaws.com (10.7MB). ScholarOne planner (ica2025.abstractcentral.com) is retired ('Invalid Site'), so the PDF is the only artefact. Counted from pdftotext -layout: a paper = title line (indent 15-22) followed by an author-line run (indent >=23 with comma), role headers (Chair/Discussants/Organizers/Participants) excluded; posters counted by their printed numbering inside poster-session blocks. Spot-checks: session 3306 hand-verified 4=4; session 4117 trace shows 33 genuine title-author pairs (SACA partner session - real papers, kept per the panel rule). Parser variants ranged 2,573-4,221, all far above 1,500, so the VERIFIED verdict is robust to parser error; the figure written is the validated indent-rule count. Artefacts: soc/wave1/ica/ (PDFs, extractions, per_session2.json)."
+ },
+ "33": {
+  "rung9": true,
+  "orchestrator_note": "RUNG 5 attempted by the orchestrator, wall confirmed: the NCTM 2026 programme app (aievolution.com/ntm2601) requires an NCTM member login even to browse ('Login to Your NCTM Account'), its jsonServices endpoint rejects unauthenticated requests ('Malformed request'), and the prior-year instance (ntm2501) returns HTTP 500. No public session count exists, so the row resolves on the researcher's rung-9 attendance + ratio, per the method. CLICK TO CONFIRM if an NCTM login is ever available."
+ }
+}

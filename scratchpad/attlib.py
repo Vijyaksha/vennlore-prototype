@@ -292,7 +292,8 @@ def write_inferred_abstracts(calls, path=WB):
     return written
 
 
-NEAR_BAR = 100      # a figure this close to the bar counts as clearing it
+DEFAULT_BAR = 900   # Rupert, 2026-09-12 — one floor for counted and inferred alike
+NEAR_BAR = 100      # a figure this close to the bar counts as clearing it (test 1 only)
 RATIO_FLEX = 0.20   # relative, not percentage points — see resolve_borderline
 
 
@@ -301,7 +302,11 @@ def resolve_borderline(c, bar=None, near=NEAR_BAR, flex=RATIO_FLEX):
 
     Two tests, either one includes the row:
       1. the figure is within `near` of the bar;
-      2. flexing the judged ratio up by `flex` brings it within `near` of the bar.
+      2. flexing the judged ratio up by `flex` brings it to the bar ITSELF.
+
+    The two thresholds differ deliberately (Rupert, 2026-09-12): test 1 forgives a figure
+    that lands just short, but test 2 is a claim about the ratio being wrong, so the flexed
+    band has to actually reach the bar before it rescues a row.
 
     The flex is RELATIVE (25% -> 20-30%), never percentage points. Adding points would
     rescue exactly the rows that should fail: a 2% teaching meeting flexed by +5 points
@@ -309,7 +314,7 @@ def resolve_borderline(c, bar=None, near=NEAR_BAR, flex=RATIO_FLEX):
 
     A figure a source STATED is not flexed — there is no ratio behind it to vary.
     """
-    bar = bar if bar is not None else c.get('bar', 1000)
+    bar = bar if bar is not None else c.get('bar', DEFAULT_BAR)
     threshold = bar - near
     if c.get('direct_abstracts'):
         fig = c['direct_abstracts']
@@ -326,15 +331,15 @@ def resolve_borderline(c, bar=None, near=NEAR_BAR, flex=RATIO_FLEX):
     if fig is not None and fig >= threshold:
         why = f'{_fmt(fig)} is within {_fmt(near)} of the {_fmt(bar)} bar.'
         decision = 'INCLUDE'
-    elif high is not None and high >= threshold:
+    elif high is not None and high >= bar:
         why = (f'{_fmt(fig)} at {ratio*100:.0f}% falls short, but flexing the ratio +-{flex*100:.0f}% relative '
                f'({ratio*(1-flex)*100:.0f}%-{ratio*(1+flex)*100:.0f}%) gives {_fmt(low)}-{_fmt(high)}, and the '
-               f'top of that band is within {_fmt(near)} of the {_fmt(bar)} bar.')
+               f'top of that band reaches the {_fmt(bar)} bar.')
         decision = 'INCLUDE'
     else:
         why = (f'{_fmt(fig)} at {ratio*100:.0f}% stays short even flexed: the +-{flex*100:.0f}% relative band is '
-               f'{_fmt(low)}-{_fmt(high)}, and {_fmt(high)} is still more than {_fmt(near)} under the '
-               f'{_fmt(bar)} bar.')
+               f'{_fmt(low)}-{_fmt(high)}, {_fmt(high)} does not reach the {_fmt(bar)} bar, and {_fmt(fig)} is '
+               f'more than {_fmt(near)} under it.')
         decision = 'BELOW BAR'
     return {'decision': decision, 'low': low, 'high': high, 'figure': fig, 'why': why}
 

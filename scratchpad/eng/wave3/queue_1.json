@@ -1,0 +1,236 @@
+[
+ {
+  "row": 75,
+  "conference": "ASME Fluids Engineering Division Summer Meeting (FEDSM)",
+  "society": "American Society of Mechanical Engineers (ASME)",
+  "country": "US",
+  "subfield": "mechanical / fluids",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | annual (July) | society-press proceedings; size uncertain, plausibly below the bar but worth a phase-2 check | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 83,
+  "conference": "Offshore Technology Conference (OTC)",
+  "society": "OTC sponsoring societies (SPE, ASME, AIChE, SEG and others)",
+  "country": "US",
+  "subfield": "petroleum / offshore",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | annual (May, Houston) | very large exhibition with a real contributed technical programme; paper count likely a few hundred, flagged boundary | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 91,
+  "conference": "WEFTEC (Water Environment Federation Technical Exhibition and Conference)",
+  "society": "Water Environment Federation (WEF)",
+  "country": "US",
+  "subfield": "water / environmental",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | annual (autumn) | largest annual water quality conference in the world, 125+ technical sessions plus posters inside a 23,000-person event; contributed total sits near the bar | Phase 1 source: https://www.weftec.org/education/program-review/ | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 95,
+  "conference": "ACI Concrete Convention",
+  "society": "American Concrete Institute (ACI)",
+  "country": "US",
+  "subfield": "civil / materials",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | twice yearly | large session programme; presentation counts uncertain and possibly below the bar | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 102,
+  "conference": "IEEE International Symposium on Industrial Electronics (ISIE)",
+  "society": "IEEE Industrial Electronics Society",
+  "country": "International",
+  "subfield": "industrial electronics",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | annual | a few hundred papers; boundary | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 113,
+  "conference": "Atomic Energy Society of Japan Annual Meeting",
+  "society": "Atomic Energy Society of Japan (AESJ)",
+  "country": "Japan",
+  "subfield": "nuclear",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | twice yearly | ~700-900 presentations; boundary | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 116,
+  "conference": "Annual Meeting of the Chinese Mechanical Engineering Society (CMES)",
+  "society": "Chinese Mechanical Engineering Society (CMES)",
+  "country": "China",
+  "subfield": "mechanical",
+  "events_per_yr": null,
+  "notes": "IMPLIED NAME — the society or group is confirmed but this meeting title was never verified. Phase 2 must resolve it to a real name or drop the row. | annual | national mechanical engineering society annual congress; Chinese-language programme, unindexed | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 119,
+  "conference": "Chinese Hydraulic Engineering Society Annual Conference",
+  "society": "Chinese Hydraulic Engineering Society (CHES)",
+  "country": "China",
+  "subfield": "water / hydraulic",
+  "events_per_yr": null,
+  "notes": "IMPLIED NAME — the society or group is confirmed but this meeting title was never verified. Phase 2 must resolve it to a real name or drop the row. | annual | national hydraulic engineering society congress, Chinese-language programme | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 125,
+  "conference": "KSAE Annual Conference",
+  "society": "Korean Society of Automotive Engineers (KSAE)",
+  "country": "South Korea",
+  "subfield": "automotive",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | annual (November) | ~800-1,000 Korean-language papers; boundary | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 131,
+  "conference": "SBPO - Simposio Brasileiro de Pesquisa Operacional",
+  "society": "Sociedade Brasileira de Pesquisa Operacional (SOBRAPO)",
+  "country": "Brazil",
+  "subfield": "operations research / industrial",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | annual | ~500-800 papers; boundary | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 149,
+  "conference": "World Conference on Non-Destructive Testing (WCNDT)",
+  "society": "International Committee for Non-Destructive Testing (ICNDT)",
+  "country": "International",
+  "subfield": "NDT / materials",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | every four years | ~600-900 papers; boundary | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 152,
+  "conference": "World Tunnel Congress",
+  "society": "International Tunnelling and Underground Space Association (ITA-AITES)",
+  "country": "International",
+  "subfield": "civil / tunnelling",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | annual | ~500-800 papers; boundary | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 158,
+  "conference": "CIGR World Congress",
+  "society": "International Commission of Agricultural and Biosystems Engineering (CIGR)",
+  "country": "International",
+  "subfield": "agricultural engineering",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | every four years | ~700-1,000 papers; boundary | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 161,
+  "conference": "World Congress on Railway Research (WCRR)",
+  "society": "International Union of Railways (UIC) and partners",
+  "country": "International",
+  "subfield": "rail",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | every three years | ~500-700 papers; boundary | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 164,
+  "conference": "International Conference and Exposition on Advanced Ceramics and Composites (ICACC)",
+  "society": "American Ceramic Society (ACerS)",
+  "country": "US",
+  "subfield": "ceramics / materials",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | annual (January, Daytona Beach) | ~1,000 abstracts across 15+ symposia; ACerS-hosted programme | Phase 1 source: https://www.abet.org/member-societies/ | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 169,
+  "conference": "International Symposium on Combustion",
+  "society": "The Combustion Institute",
+  "country": "International",
+  "subfield": "combustion / thermal",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | biennial | ~1,500 submitted abstracts; colloquium papers appear in a journal (Proceedings of the Combustion Institute) rather than a proceedings container, plus a large work-in-progress poster programme | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 172,
+  "conference": "World Tribology Congress",
+  "society": "International Tribology Council",
+  "country": "International",
+  "subfield": "tribology / mechanical",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | every four years | ~800-1,000 abstracts; organiser-hosted programme | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 176,
+  "conference": "ISWA World Congress",
+  "society": "International Solid Waste Association (ISWA)",
+  "country": "International",
+  "subfield": "waste / environmental",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | annual | several hundred abstracts; boundary | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 179,
+  "conference": "ISES Solar World Congress",
+  "society": "International Solar Energy Society (ISES)",
+  "country": "International",
+  "subfield": "solar energy",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | biennial | ~500-800 papers; boundary | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 184,
+  "conference": "Congresso Brasileiro de Engenharia Sanitaria e Ambiental",
+  "society": "Associacao Brasileira de Engenharia Sanitaria e Ambiental (ABES)",
+  "country": "Brazil",
+  "subfield": "sanitary / environmental",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | biennial | large Portuguese-language national congress with high hundreds of accepted works; boundary | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 187,
+  "conference": "PCIM Europe - International Exhibition and Conference for Power Electronics",
+  "society": "Mesago / PCIM",
+  "country": "Europe",
+  "subfield": "power electronics",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | annual | real contributed technical programme inside a large exhibition; paper count in the low hundreds | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 192,
+  "conference": "Architectural Institute of Korea Annual Conference",
+  "society": "Architectural Institute of Korea (AIK)",
+  "country": "South Korea",
+  "subfield": "architecture / building engineering",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | twice yearly | ~800-1,500 short Korean-language papers per conference; society-only proceedings | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 195,
+  "conference": "JASNAOE Annual Meeting (Japan Society of Naval Architects and Ocean Engineers)",
+  "society": "Japan Society of Naval Architects and Ocean Engineers (JASNAOE)",
+  "country": "Japan",
+  "subfield": "naval / marine",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | twice yearly | several hundred Japanese-language presentations; likely below the bar | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 198,
+  "conference": "ICPR - International Conference on Production Research",
+  "society": "International Foundation for Production Research (IFPR)",
+  "country": "International",
+  "subfield": "production / manufacturing",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | biennial | several hundred papers; boundary | Phase 1 source: https://faimconference.org/ | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 202,
+  "conference": "SOFT - Symposium on Fusion Technology",
+  "society": "EUROfusion / host laboratories",
+  "country": "Europe",
+  "subfield": "fusion / nuclear engineering",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | biennial | large oral and poster contribution programme published as a Fusion Engineering and Design special issue rather than proceedings; size uncertain | Phase 1 source: https://event.fourwaves.com/soft2024 | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 205,
+  "conference": "OCEANS Conference",
+  "society": "IEEE Oceanic Engineering Society / Marine Technology Society",
+  "country": "International",
+  "subfield": "ocean / marine",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | twice yearly | several hundred papers per edition; boundary | Phase 1 second pass, loaded 2026-09-14"
+ }
+]

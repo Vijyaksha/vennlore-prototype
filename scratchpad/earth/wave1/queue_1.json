@@ -1,0 +1,272 @@
+[
+ {
+  "row": 5,
+  "conference": "JpGU Meeting (Japan Geoscience Union Meeting)",
+  "society": "Japan Geoscience Union (日本地球惑星科学連合)",
+  "country": "Japan",
+  "subfield": "geoscience (union)",
+  "events_per_yr": null,
+  "notes": "annual (May, Chiba/Makuhari), some years joint with AGU | the Japanese counterpart of AGU/EGU; ~200 sessions, thousands of oral and poster presentations | SIZE HINT: \"We received over 4,600 presentations in total.\" (JpGU 2024, stated on the JpGU 2025 general information page) (https://www.jpgu.org/meeting_e2025/about.php) | Phase 1 source: https://www.jpgu.org/en/meeting/"
+ },
+ {
+  "row": 6,
+  "conference": "AOGS Annual Meeting",
+  "society": "Asia Oceania Geosciences Society",
+  "country": "Asia-Oceania (rotating)",
+  "subfield": "geoscience (union)",
+  "events_per_yr": null,
+  "notes": "annual (June-August, rotating Asian host) | the regional union for Asia-Oceania; AOGS 2026 in Fukuoka expects about 4,000 participants across atmospheric, biogeo, hydrological, ocean, planetary and solar-terrestrial sections | Phase 1 source: https://www.asiaoceania.org/aogs2026/"
+ },
+ {
+  "row": 7,
+  "conference": "International Geological Congress (IGC)",
+  "society": "International Union of Geological Sciences (IUGS)",
+  "country": "international (rotating)",
+  "subfield": "geology",
+  "events_per_yr": null,
+  "notes": "every 4 years | the quadrennial world congress of geology; historically several thousand abstracts per edition | Phase 1 source: https://www.iugs.org/igc"
+ },
+ {
+  "row": 8,
+  "conference": "IUGG General Assembly",
+  "society": "International Union of Geodesy and Geophysics",
+  "country": "international (rotating)",
+  "subfield": "geophysics/geodesy (union)",
+  "events_per_yr": null,
+  "notes": "every 4 years (Berlin 2023, next 2027) | joint assembly of eight IUGG associations (IAG, IASPEI, IAVCEI, IAMAS, IAHS, IAPSO, IACS, IAGA); several thousand abstracts | Phase 1 source: https://iugg.org/"
+ },
+ {
+  "row": 12,
+  "conference": "INQUA Congress",
+  "society": "International Union for Quaternary Research",
+  "country": "international (rotating)",
+  "subfield": "quaternary science",
+  "events_per_yr": null,
+  "notes": "every 4 years | quadrennial world congress of Quaternary science, ~2,000 participants historically | Phase 1 source: https://inqua.org/"
+ },
+ {
+  "row": 13,
+  "conference": "World Congress of Soil Science (WCSS)",
+  "society": "International Union of Soil Sciences (IUSS)",
+  "country": "international (rotating)",
+  "subfield": "soil science",
+  "events_per_yr": null,
+  "notes": "every 4 years | the quadrennial world soil science congress; thousands of contributed abstracts | Phase 1 source: https://www.iuss.org/"
+ },
+ {
+  "row": 14,
+  "conference": "IUFRO World Congress",
+  "society": "International Union of Forest Research Organizations",
+  "country": "international (rotating)",
+  "subfield": "forestry",
+  "events_per_yr": null,
+  "notes": "every 5 years (Stockholm 2024) | the world forestry research congress; several thousand abstracts per edition | Phase 1 source: https://www.iufro.org/"
+ },
+ {
+  "row": 15,
+  "conference": "International Horticultural Congress (IHC)",
+  "society": "International Society for Horticultural Science (ISHS)",
+  "country": "international (rotating)",
+  "subfield": "horticulture",
+  "events_per_yr": null,
+  "notes": "every 4 years | the quadrennial world horticulture congress; Acta Horticulturae volumes run to thousands of papers | Phase 1 source: https://www.ishs.org/"
+ },
+ {
+  "row": 16,
+  "conference": "EAAP Annual Meeting",
+  "society": "European Federation of Animal Science (EAAP)",
+  "country": "Europe",
+  "subfield": "animal science",
+  "events_per_yr": null,
+  "notes": "annual (late August/September) | European animal-science congress; the Book of Abstracts routinely runs well over 1,000 entries | Phase 1 source: https://www.eaap.org/"
+ },
+ {
+  "row": 18,
+  "conference": "European Meteorological Society Annual Meeting (EMS)",
+  "society": "European Meteorological Society",
+  "country": "Europe",
+  "subfield": "meteorology",
+  "events_per_yr": null,
+  "notes": "annual (September), Copernicus abstract system | BOUNDARY (may belong to another field) | the European AMS-equivalent; likely several hundred to ~1,000 - borderline | Phase 1 source: https://www.emetsoc.org/"
+ },
+ {
+  "row": 19,
+  "conference": "SEG IMAGE / International Meeting for Applied Geoscience & Energy",
+  "society": "Society of Exploration Geophysicists (SEG) with AAPG",
+  "country": "USA",
+  "subfield": "exploration geophysics",
+  "events_per_yr": null,
+  "notes": "annual (August/September) | BOUNDARY (may belong to another field) | Crossref deposits 548 and 555 papers for two recent editions; expanded-abstract volume may be larger | SIZE HINT: 548 and 555 papers in the Crossref container 'International Meeting for Applied Geoscience & Energy' (crossref_seen.json) | Phase 1 source: https://seg.org/events/image/ | ORCHESTRATOR NOTE: IMAGE is the post-2021 merger of the SEG Annual Meeting and AAPG ACE. AAPG ACE sits on Census - Engineering row 188 with a DATED 2019 count (914) — if you count IMAGE, set duplicate_of to that row so the predecessor can be retired once, by Rupert."
+ },
+ {
+  "row": 21,
+  "conference": "Lunar and Planetary Science Conference (LPSC)",
+  "society": "Lunar and Planetary Institute / USRA",
+  "country": "USA",
+  "subfield": "planetary science",
+  "events_per_yr": null,
+  "notes": "annual (March, The Woodlands TX) | BOUNDARY (may belong to another field) | the planetary-science flagship; consistently around 1,800-2,000 abstracts a year | Phase 1 source: https://www.hou.usra.edu/meetings/"
+ },
+ {
+  "row": 33,
+  "conference": "Congresso Brasileiro de Geologia (CBG)",
+  "society": "Sociedade Brasileira de Geologia (SBG)",
+  "country": "Brazil",
+  "subfield": "geology",
+  "events_per_yr": null,
+  "notes": "biennial | Brazil's national geology congress; historically thousands of resumos per edition | Phase 1 source: https://www.sbgeo.org.br/"
+ },
+ {
+  "row": 37,
+  "conference": "Congresso Brasileiro de Ciencia do Solo (CBCS)",
+  "society": "Sociedade Brasileira de Ciencia do Solo (SBCS)",
+  "country": "Brazil",
+  "subfield": "soil science",
+  "events_per_yr": null,
+  "notes": "biennial | Brazil's national soil science congress; historically thousands of resumos | Phase 1 source: https://www.sbcs.org.br/"
+ },
+ {
+  "row": 43,
+  "conference": "SSA Annual Meeting",
+  "society": "Seismological Society of America",
+  "country": "USA",
+  "subfield": "seismology",
+  "events_per_yr": null,
+  "notes": "annual (April) | the main US seismology meeting; around 900-1,100 abstracts in recent years | Phase 1 source: https://www.seismosoc.org/"
+ },
+ {
+  "row": 45,
+  "conference": "Chinese Geoscience Union Annual Meeting (中国地球科学联合学术年会, CGU)",
+  "society": "Chinese Geoscience Union",
+  "country": "China",
+  "subfield": "geoscience (union)",
+  "events_per_yr": null,
+  "notes": "annual (October) | China's AGU-equivalent joint annual meeting; reportedly many thousands of presentations | Phase 1 source: http://www.cgu.org.cn/"
+ },
+ {
+  "row": 46,
+  "conference": "Chinese Meteorological Society Annual Meeting (中国气象学会年会)",
+  "society": "Chinese Meteorological Society",
+  "country": "China",
+  "subfield": "meteorology",
+  "events_per_yr": null,
+  "notes": "annual | China's national meteorology meeting; large but unsized in English | Phase 1 source: http://www.cms1924.org/"
+ },
+ {
+  "row": 47,
+  "conference": "Meteorological Society of Japan Spring and Autumn Meetings (日本気象学会大会)",
+  "society": "Meteorological Society of Japan (日本気象学会)",
+  "country": "Japan",
+  "subfield": "meteorology",
+  "events_per_yr": null,
+  "notes": "twice yearly | BOUNDARY (may belong to another field) | Japan's meteorology society meets twice a year; each meeting likely several hundred - borderline | Phase 1 source: https://www.metsoc.jp/"
+ },
+ {
+  "row": 51,
+  "conference": "DGGV annual geoscience meeting (GeoBerlin / GeoMuenster / GeoKarlsruhe series)",
+  "society": "Deutsche Geologische Gesellschaft - Geologische Vereinigung (DGGV)",
+  "country": "Germany",
+  "subfield": "geology",
+  "events_per_yr": null,
+  "notes": "annual, under rotating city names | BOUNDARY (may belong to another field) | Germany's national geoscience meeting; German-language sizing needed, likely borderline | Phase 1 source: https://www.dggv.de/"
+ },
+ {
+  "row": 52,
+  "conference": "Reunion des Sciences de la Terre (RST)",
+  "society": "Societe Geologique de France (SGF)",
+  "country": "France",
+  "subfield": "geoscience",
+  "events_per_yr": null,
+  "notes": "biennial | BOUNDARY (may belong to another field) | France's national earth-science meeting; French-language sizing needed | Phase 1 source: https://www.geosoc.fr/"
+ },
+ {
+  "row": 66,
+  "conference": "IAH Congress (International Association of Hydrogeologists)",
+  "society": "International Association of Hydrogeologists",
+  "country": "international (rotating)",
+  "subfield": "hydrogeology/groundwater",
+  "events_per_yr": null,
+  "notes": "annual (52nd congress in 2025) | BOUNDARY (may belong to another field) | the world groundwater congress; the 2025 organisers describe reviewing a very large number of abstracts | Phase 1 source: https://iah.org/events"
+ },
+ {
+  "row": 78,
+  "conference": "Congreso Geologico Chileno",
+  "society": "Sociedad Geologica de Chile / Colegio de Geologos de Chile",
+  "country": "Chile",
+  "subfield": "geology",
+  "events_per_yr": null,
+  "notes": "every 2-3 years (XVII, Valdivia, December 2026) | a recent edition closed with more than 900 presentations across six thematic areas, and the next expects up to a thousand participants | Phase 1 source: https://www.congresogeologicochileno.cl/"
+ },
+ {
+  "row": 80,
+  "conference": "Chinese Geophysical Society Annual Meeting (中国地球物理学会年会)",
+  "society": "Chinese Geophysical Society (中国地球物理学会)",
+  "country": "China",
+  "subfield": "geophysics",
+  "events_per_yr": null,
+  "notes": "annual (October, held jointly within the Chinese Geoscience Union annual meeting in some years) | a society of 14,700 registered members with 14 special committees; its annual meeting is one of China's largest geoscience gatherings | Phase 1 source: http://www.cgs.org.cn/"
+ },
+ {
+  "row": 94,
+  "conference": "ESA Living Planet Symposium (LPS)",
+  "society": "European Space Agency",
+  "country": "Europe (rotating; Vienna 2025)",
+  "subfield": "earth observation/remote sensing",
+  "events_per_yr": null,
+  "notes": "every 3 years | more than 6,500 participants from almost 120 countries in 2025, on an open abstract call - one of the largest earth-observation science meetings | Phase 1 source: https://lps25.esa.int/"
+ },
+ {
+  "row": 100,
+  "conference": "Aquaculture (World Aquaculture Society Triennial, incl. Aquaculture America)",
+  "society": "World Aquaculture Society with NSA, AFS Fish Culture Section, NAA",
+  "country": "USA",
+  "subfield": "aquaculture",
+  "events_per_yr": null,
+  "notes": "annual Aquaculture America, triennial combined meeting (New Orleans 2025) | BOUNDARY (may belong to another field) | 1,250 submitted abstracts across 120 sessions and nearly 4,000 attendees in 2025; boundary with life sciences (NSA is already on the life sheet) | Phase 1 source: https://www.was.org/meeting/code/AQ2025"
+ },
+ {
+  "row": 107,
+  "conference": "CSES Annual Conference on Science and Technology (中国环境科学学会科学技术年会)",
+  "society": "Chinese Society for Environmental Sciences (中国环境科学学会)",
+  "country": "China",
+  "subfield": "environmental science",
+  "events_per_yr": null,
+  "notes": "annual (2025 Nanjing, 2026 Shenzhen) | China's national environmental science annual conference; Chinese-language sizing needed | Phase 1 source: https://www.chinacses.org/"
+ },
+ {
+  "row": 110,
+  "conference": "Annual Meeting of the Japanese Society of Soil Science and Plant Nutrition (日本土壌肥料学会年次大会)",
+  "society": "Japanese Society of Soil Science and Plant Nutrition (日本土壌肥料学会, JSSSPN)",
+  "country": "Japan",
+  "subfield": "soil science/plant nutrition",
+  "events_per_yr": null,
+  "notes": "annual, with separate branch meetings | BOUNDARY (may belong to another field) | Japan's national soil science society publishes a full 講演要旨集 (abstract volume) for its annual meeting; Japanese-language sizing needed | Phase 1 source: https://jssspn.jp/book/abstracts/"
+ },
+ {
+  "row": 113,
+  "conference": "Annual Meeting of the Geological Society of Japan (日本地質学会年会)",
+  "society": "Geological Society of Japan (日本地質学会)",
+  "country": "Japan",
+  "subfield": "geology",
+  "events_per_yr": null,
+  "notes": "IMPLIED NAME — the society or group is confirmed but this meeting title was never verified. Phase 2 must resolve it to a real name or drop the row. | annual (September) | BOUNDARY (may belong to another field) | Japan's national geological society annual meeting with a 講演要旨 volume; Japanese-language sizing needed | Phase 1 source: https://www.geosociety.jp/"
+ },
+ {
+  "row": 117,
+  "conference": "Reunion Anual de la Union Geofisica Mexicana (RAUGM)",
+  "society": "Union Geofisica Mexicana (UGM)",
+  "country": "Mexico",
+  "subfield": "geophysics/geoscience (union)",
+  "events_per_yr": null,
+  "notes": "annual (November, Puerto Vallarta) | BOUNDARY (may belong to another field) | 704 scientific papers across 38 sessions in 2025, and a record of roughly 900 accepted abstracts in 2012 - right at the bar | Phase 1 source: https://www.raugm.org.mx/"
+ },
+ {
+  "row": 124,
+  "conference": "International Conference on Urban Climate (ICUC)",
+  "society": "International Association for Urban Climate (IAUC)",
+  "country": "international (rotating; ICUC12 Rotterdam 2025)",
+  "subfield": "urban climatology",
+  "events_per_yr": null,
+  "notes": "every 3 years, Copernicus abstract system | more than 1,000 abstracts were submitted to ICUC12 in 2025 | Phase 1 source: https://www.icuc12.eu/"
+ }
+]

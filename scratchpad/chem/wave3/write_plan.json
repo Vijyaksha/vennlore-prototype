@@ -1,0 +1,821 @@
+[
+ {
+  "row": 51,
+  "conference": "AACC/ADPI cereal chemistry (Cereals & Grains Annual Meeting)",
+  "tier": "OUT",
+  "abstracts": "190 (2019: 148 posters + 42 contributed technical-session orals; DATED)",
+  "rung9": false,
+  "implied": null,
+  "move": null
+ },
+ {
+  "row": 54,
+  "conference": "New Zealand Institute of Chemistry Conference (NZIC)",
+  "tier": "BORDERLINE",
+  "abstracts": null,
+  "rung9": false,
+  "implied": null,
+  "move": null
+ },
+ {
+  "row": 57,
+  "conference": "European Conference on Physical Chemistry (ECPC)",
+  "tier": "OUT",
+  "abstracts": "228 (2025: 126 oral + 23 flash + 79 poster communications; 7 plenaries excluded)",
+  "rung9": false,
+  "implied": null,
+  "move": null
+ },
+ {
+  "row": 60,
+  "conference": "European Conference on Organometallic Chemistry (EuCOMC)",
+  "tier": "OUT",
+  "abstracts": "240 (2025: 62 short talks + 178 posters; 11 invited + 12 keynote + 3 framework excluded)",
+  "rung9": false,
+  "implied": null,
+  "move": null
+ },
+ {
+  "row": 63,
+  "conference": "POLYCHAR World Forum on Advanced Materials",
+  "tier": "OUT",
+  "abstracts": "19 (PolyChar'31, 2025: 8 oral + 11 poster; 6 plenaries and 7 courses excluded)",
+  "rung9": false,
+  "implied": null,
+  "move": null
+ },
+ {
+  "row": 66,
+  "conference": "Actinides Conference",
+  "tier": "OUT",
+  "abstracts": "94 oral slots counted (Actinides 2023; of which 22 are 30-min session-opening slots likely invited, 72 are 20-min talks); posters NOT counted (one evening poster session) - FLOOR",
+  "rung9": false,
+  "implied": null,
+  "move": null
+ },
+ {
+  "row": 69,
+  "conference": "SIS - International Symposium on Surfactants in Solution",
+  "tier": "OUT",
+  "abstracts": "68 (SIS 2024: 48 technical-session oral abstracts + 20 posters; 4 plenaries + award lecture excluded)",
+  "rung9": false,
+  "implied": null,
+  "move": null
+ },
+ {
+  "row": 72,
+  "conference": "ICSSC - International Conference on Solid State Chemistry",
+  "tier": "OUT",
+  "abstracts": "43 (SSC 2024, 15th edition: 25 talks + 18 posters; 4 keynote, plenary and 16 invited talks excluded)",
+  "rung9": false,
+  "implied": null,
+  "move": null
+ },
+ {
+  "row": 75,
+  "conference": "ICPC - International Conference on Phosphorus Chemistry",
+  "tier": "OUT",
+  "abstracts": "125 (ICPC25, 2026: 65 oral communications selected from abstracts + 60 posters; 6 plenary + 18 invited excluded)",
+  "rung9": false,
+  "implied": null,
+  "move": null
+ },
+ {
+  "row": 78,
+  "conference": "ISNA - International Symposium on Novel Aromatic Compounds",
+  "tier": "OUT",
+  "abstracts": "210 (ISNA-21, 2026: 28 contributed lectures + 15 flash lectures + 167 posters; Nozoe, 5 plenary, 2 keynote, 35 invited excluded)",
+  "rung9": false,
+  "implied": null,
+  "move": null
+ },
+ {
+  "row": 81,
+  "conference": "EuroDrying — European Drying Symposium",
+  "tier": "OUT",
+  "abstracts": "~98+ REPORTED BY SOURCE, NOT COUNTED (Eurodrying 2025: '48 oral presentations, over 50 poster sessions' stated by WUR; 8 keynotes excluded) - see Method",
+  "rung9": false,
+  "implied": null,
+  "move": null
+ },
+ {
+  "row": 84,
+  "conference": "American Coatings Conference & Show",
+  "tier": "OUT",
+  "abstracts": "~96 REPORTED BY SOURCE, NOT COUNTED (ACC 2026: '96 presentations across 16 sessions' plus 9 tutorials, per PCI Magazine) - see Method",
+  "rung9": false,
+  "implied": null,
+  "move": null
+ },
+ {
+  "row": 87,
+  "conference": "TSRC — Tobacco Science Research Conference",
+  "tier": "OUT",
+  "abstracts": "~121 (77th TSRC, 2024: posters #7-70 = 64 + orals #71-127 = 57, from contiguous programme numbering; symposium #1-6 and workshops W1-W7 excluded)",
+  "rung9": false,
+  "implied": null,
+  "move": null
+ },
+ {
+  "row": 90,
+  "conference": "ISSPIC — International Symposium on Small Particles and Inorganic Clusters",
+  "tier": "OUT",
+  "abstracts": "142 (ISSPIC XXI, 2023: 24 hot-topic talks + 58 Session A posters + 60 Session B posters; 21 invited talks excluded)",
+  "rung9": false,
+  "implied": null,
+  "move": null
+ },
+ {
+  "row": 93,
+  "conference": "IULTCS Congress (World Leather Congress)",
+  "tier": "OUT",
+  "abstracts": null,
+  "rung9": true,
+  "implied": 120,
+  "move": null
+ },
+ {
+  "row": 96,
+  "conference": "International Symposium on Special Topics in Chemical Propulsion and Energetic Materials (ISICP)",
+  "tier": "OUT",
+  "abstracts": "97 (13-ISICP, 2023: 101 unique paper IDs in the programme less 4 invited-speaker talks; no poster session)",
+  "rung9": false,
+  "implied": null,
+  "move": null
+ },
+ {
+  "row": 99,
+  "conference": "ISMAS Symposium / Workshop on Mass Spectrometry",
+  "tier": "OUT",
+  "abstracts": "76 papers indexed (32nd ISMAS Symposium, Mumbai 2019; INIS child records, possibly a subject-filtered subset) - FLOOR; whole proceedings volume is 294 pages, which caps the meeting at well under 300 items",
+  "rung9": false,
+  "implied": null,
+  "move": null
+ },
+ {
+  "row": 102,
+  "conference": "World Chemistry Leadership Meeting (IUPAC)",
+  "tier": "OUT",
+  "abstracts": "0 contributed - not a standalone conference: a single invited-speaker session inside the IUPAC World Chemistry Congress",
+  "rung9": false,
+  "implied": null,
+  "move": "DUPLICATE of 'IUPAC World Chemistry Congress' — the World Chemistry Leadership Meeting is an invited session inside the Congress (wave 3 evidence in Method)"
+ },
+ {
+  "row": 105,
+  "conference": "Singapore National Institute of Chemistry conference (SNIC)",
+  "tier": "BORDERLINE",
+  "abstracts": "~1,035 (SICC-12, 2024: 1,070 unique abstract IDs in the 3-part e-booklet = 918 oral OR- + 152 poster P-, re-derived by the orchestrator in both extraction modes; less ~35 keynote presentations. The share of the 20-min orals that were invited is UNKNOWN, so the true contributed figure is lower by an unknown amount)",
+  "rung9": false,
+  "implied": null,
+  "move": null
+ },
+ {
+  "row": 108,
+  "conference": "Lab Innovations (Birmingham)",
+  "tier": "OUT",
+  "abstracts": "0 contributed - trade fair with a free-to-attend CPD talk programme ('60+ experts across 5 ... conference theatres'); no call for abstracts",
+  "rung9": false,
+  "implied": null,
+  "move": null
+ },
+ {
+  "row": 111,
+  "conference": "SMASH NMR Conference (Small Molecule NMR Conference)",
+  "tier": "OUT",
+  "abstracts": "~121 (SMASH 2025: 98 posters + 23 non-invited main-session talks; 6 invited speakers excluded; Early Career Researchers Symposium talks not separately counted)",
+  "rung9": false,
+  "implied": null,
+  "move": null
+ },
+ {
+  "row": 114,
+  "conference": "Empowering Women in Organic Chemistry (EWOC) Conference",
+  "tier": "OUT",
+  "abstracts": "~87 (EWOC 2025: posters, Session 1 #1-44 + Session 2 #1-43; talks are invited/featured and not counted)",
+  "rung9": false,
+  "implied": null,
+  "move": null
+ },
+ {
+  "row": 117,
+  "conference": "Flow Chemistry and Continuous Processing Conference",
+  "tier": "OUT",
+  "abstracts": "0 counted contributed talks - commercial industry conference of 15 hand-picked invited speakers; only optional free posters for academic delegates (number not published)",
+  "rung9": false,
+  "implied": null,
+  "move": null
+ },
+ {
+  "row": 120,
+  "conference": "Thermodynamics Conference",
+  "tier": "OUT",
+  "abstracts": "144 (Thermodynamics 2026, 29th: unique abstract-submission IDs across oral, short-oral and poster contributions; an upper bound on contributed, may include IDs on some keynotes)",
+  "rung9": false,
+  "implied": null,
+  "move": null
+ },
+ {
+  "row": 123,
+  "conference": "Frontiers in Wood Coatings",
+  "tier": "OUT",
+  "abstracts": "22 (EC Conference Frontiers in Wood Coatings 2026: 6 day-1 talks + 16 day-2 parallel-session talks; 1 keynote excluded; no posters)",
+  "rung9": false,
+  "implied": null,
+  "move": null
+ },
+ {
+  "row": 126,
+  "conference": "AFPM Summit (formerly Q&A and Technology Forum)",
+  "tier": "OUT",
+  "abstracts": "~86 REPORTED BY SOURCE, NOT COUNTED ('86 expert-led technical sessions' in 19 tracks, AFPM Summit 2026; sessions include panels and sponsored content; no open call for abstracts found) - see Method",
+  "rung9": false,
+  "implied": null,
+  "move": null
+ },
+ {
+  "row": 129,
+  "conference": "AATCC Textile Discovery Summit (formerly AATCC International Conference)",
+  "tier": "OUT",
+  "abstracts": "8 track talks counted (2025 AATCC & SEAMS Annual Conference, successor to the Textile Discovery Summit) + a graduate student paper competition session and a Research Showcase poster display, both un-itemised - FLOOR; whole programme is ~14 talks",
+  "rung9": false,
+  "implied": null,
+  "move": null
+ },
+ {
+  "row": 132,
+  "conference": "Chemspec Europe",
+  "tier": "OUT",
+  "abstracts": "0 contributed - trade fair ('Europe's No 1 trade fair for the fine and speciality chemicals industry') with '30+ Conference Sessions'; no call for abstracts",
+  "rung9": false,
+  "implied": null,
+  "move": null
+ },
+ {
+  "row": 135,
+  "conference": "ICG Annual Conference",
+  "tier": "OUT",
+  "abstracts": null,
+  "rung9": true,
+  "implied": 180,
+  "move": null
+ },
+ {
+  "row": 138,
+  "conference": "ChemSci Leaders in the Field Symposium (India, IISER)",
+  "tier": "OUT",
+  "abstracts": "81 (ChemSci 2024 LiTF, IISER Thiruvananthapuram: posters P01-P81 over two days; all lectures are invited 'leaders in the field', not counted)",
+  "rung9": false,
+  "implied": null,
+  "move": null
+ },
+ {
+  "row": 141,
+  "conference": "Guha Research Conference",
+  "tier": "OUT",
+  "abstracts": null,
+  "rung9": true,
+  "implied": 91,
+  "move": null
+ },
+ {
+  "row": 52,
+  "conference": "ACS Middle Atlantic Regional Meeting (MARM)",
+  "tier": "OUT",
+  "abstracts": "410 (MARM 2025: 238 oral + 172 poster, ACS MAPS control IDs counted; upper bound on contributed — symposium invited talks not separable)",
+  "rung9": false,
+  "implied": null,
+  "move": null
+ },
+ {
+  "row": 55,
+  "conference": "ISE Topical Meeting",
+  "tier": "OUT",
+  "abstracts": "423 (37th ISE Topical Meeting, Stresa 2024 — the largest recent edition: ~230 contributed orals + 193 posters; invited/keynote excluded). Other editions smaller: TM-38 Manchester 2024 = 93 orals + 53 posters; TM-39 Natal 86 + 87; TM-40 Changchun 103 + 58",
+  "rung9": false,
+  "implied": null,
+  "move": null
+ },
+ {
+  "row": 58,
+  "conference": "European Conference on Bio-Inorganic Chemistry (EuroBIC)",
+  "tier": "OUT",
+  "abstracts": "~285 (EuroBIC-17 Münster 2024: 90 contributed orals counted (OL1-OL90) + posters numbered to at least P195; 6 plenary, 27 keynote, 42 invited lectures excluded) — poster total derived from highest poster number seen, not a full list",
+  "rung9": false,
+  "implied": null,
+  "move": null
+ },
+ {
+  "row": 61,
+  "conference": "European Conference on Computational and Theoretical Chemistry (EuCO-CC)",
+  "tier": "OUT",
+  "abstracts": "179 (14th EuChemS CompChem 2025, Naples: 40 contributed orals OC01-OC40 + 139 posters P001-P139; 6 plenary, 13 invited, 5 award lectures and 5 data/industry talks excluded)",
+  "rung9": false,
+  "implied": null,
+  "move": null
+ },
+ {
+  "row": 64,
+  "conference": "EuroChemBio",
+  "tier": "OUT",
+  "abstracts": null,
+  "rung9": true,
+  "implied": 112,
+  "move": null
+ },
+ {
+  "row": 67,
+  "conference": "NRC - International Conference on Nuclear and Radiochemistry",
+  "tier": "OUT",
+  "abstracts": "~232 (NRC10 Brighton 2024: 82 contributed orals counted from the programme (Abstracts 1-87 less 5 invited plenaries) + 150 posters as stated by AWE, a principal sponsor; posters not individually listed)",
+  "rung9": false,
+  "implied": null,
+  "move": null
+ },
+ {
+  "row": 70,
+  "conference": "ICAVS - International Conference on Advanced Vibrational Spectroscopy",
+  "tier": "OUT",
+  "abstracts": "352 (ICAVS12 Kraków 2023 abstract book: 182 contributed oral + 170 poster; 52 invited, 10 plenary, 3 perspective excluded)",
+  "rung9": false,
+  "implied": null,
+  "move": null
+ },
+ {
+  "row": 73,
+  "conference": "Gulf Coast Conference",
+  "tier": "OUT",
+  "abstracts": "136 (GCC 2025 Galveston: 93 papers + 43 posters; 31 vendor seminars, 7 training courses, 3 workshops, 1 user group excluded)",
+  "rung9": false,
+  "implied": null,
+  "move": null
+ },
+ {
+  "row": 76,
+  "conference": "IMEBORON - International Conference on Boron Chemistry",
+  "tier": "OUT",
+  "abstracts": "160 (IMEBoron-18 Tokyo, 6-10 Sept 2026: 64 contributed orals OC_A/B + 96 posters P1-01..P1-48, P2-01..P2-48; 3 plenary, 12 keynote, 48 invited excluded; up to 5 items marked withdrawn, not deducted)",
+  "rung9": false,
+  "implied": null,
+  "move": null
+ },
+ {
+  "row": 79,
+  "conference": "ESCRE — European Symposium on Chemical Reaction Engineering",
+  "tier": "BORDERLINE",
+  "abstracts": null,
+  "rung9": false,
+  "implied": null,
+  "move": null
+ },
+ {
+  "row": 82,
+  "conference": "EPIC — European Process Intensification Conference",
+  "tier": "OUT",
+  "abstracts": "146 (9th EPIC, Athens 4-6 June 2025: 105 oral presentations OP1-OP105 + 41 posters PP1-PP41; 5 plenary lectures and the PI Innovation Award presentation excluded)",
+  "rung9": false,
+  "implied": null,
+  "move": null
+ },
+ {
+  "row": 85,
+  "conference": "CESIO World Surfactant Congress",
+  "tier": "OUT",
+  "abstracts": "~97 REPORTED BY SOURCE, NOT COUNTED (12th CESIO Congress, Rome 2023: organiser states 67 speakers + 30 posters, 350 participants; speakers include invited — upper bound on contributed)",
+  "rung9": false,
+  "implied": null,
+  "move": null
+ },
+ {
+  "row": 88,
+  "conference": "EBC Congress (European Brewery Convention)",
+  "tier": "OUT",
+  "abstracts": "182 (37th EBC Congress, Antwerp 2019: 56 lectures L1-L56 + 126 posters P001-P126). Latest edition, 40th EBC Congress Rotterdam 6-9 Sept 2026: 51 talks counted from the programme (2 halls), posters not published openly (book of abstracts behind congress login)",
+  "rung9": false,
+  "implied": null,
+  "move": null
+ },
+ {
+  "row": 91,
+  "conference": "ICSNN — International Conference on Superlattices, Nanostructures and Nanodevices",
+  "tier": "OUT",
+  "abstracts": "~40 REPORTED BY SOURCE, NOT COUNTED (22nd ICSNN, Quy Nhon, Vietnam, July 2022: 'around 40 contributed talks by participants', abstracts emailed to the organisers; posters not stated)",
+  "rung9": false,
+  "implied": null,
+  "move": null
+ },
+ {
+  "row": 94,
+  "conference": "MetSoc Hydrometallurgy Conference",
+  "tier": "OUT",
+  "abstracts": "<=300 (upper bound, whole COM 2024). NOT A STANDALONE MEETING — MetSoc's hydrometallurgy programme runs as a symposium inside the annual Conference of Metallurgy and Materials (COM). Upper bound: the WHOLE COM 2024 (Halifax) proceedings = 300 chapters counted in Crossref (all symposia together, incl. the 25th International Biohydrometallurgy Symposium and the Joe Ferron Memorial Symposium); the hydrometallurgy share is a fraction of that",
+  "rung9": false,
+  "implied": null,
+  "move": "DUPLICATE of 'COM — Conference of Metallurgy and Materials' — MetSoc Hydrometallurgy is a track inside COM, not a standalone meeting (wave 3 evidence in Method)"
+ },
+ {
+  "row": 97,
+  "conference": "CATSYMP — National Symposium on Catalysis",
+  "tier": "OUT",
+  "abstracts": "49 contributed short orals counted (CATSYMP-24 / CSCME-2025, Thapar Institute, Patiala, 24-26 Feb 2025: OP001-OP049) + one 2-hour poster session whose poster count is not published; invited/plenary talks excluded. Floor, not a full count",
+  "rung9": false,
+  "implied": null,
+  "move": null
+ },
+ {
+  "row": 100,
+  "conference": "Annual meeting of the Electrochemical Society of India (Bengaluru)",
+  "tier": "OUT",
+  "abstracts": null,
+  "rung9": true,
+  "implied": 120,
+  "move": null
+ },
+ {
+  "row": 103,
+  "conference": "RSC Organic Chemistry Community Regional Meetings (incl. Scottish Regional Meeting)",
+  "tier": "OUT",
+  "abstracts": null,
+  "rung9": false,
+  "implied": null,
+  "move": null
+ },
+ {
+  "row": 106,
+  "conference": "Telluride Science Research Center workshops",
+  "tier": "OUT",
+  "abstracts": "0 contributed abstracts per meeting in the open-call sense — invite-only workshops capped at 10-30 people (conferences 40-60); ~57 workshops in 2025 with ~1,200 attendees in total across all of them",
+  "rung9": false,
+  "implied": null,
+  "move": null
+ },
+ {
+  "row": 109,
+  "conference": "American Chemistry Council conferences and events",
+  "tier": "OUT",
+  "abstracts": null,
+  "rung9": false,
+  "implied": null,
+  "move": null
+ },
+ {
+  "row": 112,
+  "conference": "ICCOC-GTL - International Conference on the Coordination and Organometallic Chemistry of Germanium, Tin and Lead",
+  "tier": "OUT",
+  "abstracts": "27 contributed orals counted (18th ICCOC-GTL, Oldenburg, Aug 2026; 6 keynote + 17 invited lectures excluded) + posters (number not published). Floor for contributed; single-track specialist meeting",
+  "rung9": false,
+  "implied": null,
+  "move": null
+ },
+ {
+  "row": 115,
+  "conference": "Weurman Flavour Research Symposium",
+  "tier": "OUT",
+  "abstracts": "55 contributed talks counted (17th Weurman, Wageningen, 24-27 Sept 2024: 44 15-min orals + 11 5-min flash poster talks; 10 30-min session keynotes, 2 45-min opening lectures and an award slot excluded) + a poster session whose poster count is not published. Floor; single-track symposium",
+  "rung9": false,
+  "implied": null,
+  "move": null
+ },
+ {
+  "row": 118,
+  "conference": "CECAM Workshops and Schools (series)",
+  "tier": "OUT",
+  "abstracts": "Series of small invited workshops: CECAM's own guidance sets 'The typical number of participants is between 20 and 35' (students/post-docs not counted), with an invited participant list — no individual event approaches the floor",
+  "rung9": false,
+  "implied": null,
+  "move": null
+ },
+ {
+  "row": 121,
+  "conference": "ESCC — European Symposium on Comminution & Classification",
+  "tier": "OUT",
+  "abstracts": "74 (XIX ESCC Naples, 27-30 Sept 2026: 65 contributed orals + 9 posters P/1-P/9; plenary and keynote lectures excluded)",
+  "rung9": false,
+  "implied": null,
+  "move": null
+ },
+ {
+  "row": 124,
+  "conference": "CBM — Carbohydrate Bioengineering Meeting",
+  "tier": "OUT",
+  "abstracts": "191 (CBM16, Elsinore, 3-6 May 2026: 32 contributed 20-min talks + 159 posters (session #1 P1-1 to P1-80, session #2 P2-1 to P2-79); 8 40-min session keynotes plus opening and closing lectures excluded)",
+  "rung9": false,
+  "implied": null,
+  "move": null
+ },
+ {
+  "row": 127,
+  "conference": "AFPM International Petrochemical Conference (IPC)",
+  "tier": "OUT",
+  "abstracts": "0 contributed abstracts — executive/business conference with no call for abstracts; the whole 2023 technical agenda is ~8 curated sessions (general session, C-suite reflections, industry-experts showcase, panels, podcast, luncheons)",
+  "rung9": false,
+  "implied": null,
+  "move": null
+ },
+ {
+  "row": 130,
+  "conference": "IFEAT International Conference",
+  "tier": "OUT",
+  "abstracts": null,
+  "rung9": false,
+  "implied": null,
+  "move": null
+ },
+ {
+  "row": 133,
+  "conference": "SOCMA Show / SOCMA Week",
+  "tier": "OUT",
+  "abstracts": "0 contributed abstracts — SOCMA Show is a specialty-chemicals trade show (supplier/buyer exhibition with exhibitor showcases); SOCMA Week (last held 2021, now the 'SOCMA Summit & Annual Meeting') took proposals only for 50-min breakout/general sessions and 90-min workshops, no abstracts or posters. The 2022 show reported 950 onsite attendees",
+  "rung9": false,
+  "implied": null,
+  "move": null
+ },
+ {
+  "row": 136,
+  "conference": "International Pyrotechnics Seminar",
+  "tier": "OUT",
+  "abstracts": "69 (47th IPS Seminar, Albuquerque, July 2024: 59 contributed talks + 10 posters; keynote and welcome/admin slots excluded)",
+  "rung9": false,
+  "implied": null,
+  "move": null
+ },
+ {
+  "row": 139,
+  "conference": "ISCBC — ISCB International Conference",
+  "tier": "OUT",
+  "abstracts": "182 (32nd ISCB International Conference, ISCBC-2026, IIT (BHU) Varanasi, 12-14 May 2026: 54 contributed orals O-1..O-54 + 128 posters P-1..P-128; 8 plenary, 5 keynote, 63 invited lectures excluded)",
+  "rung9": false,
+  "implied": null,
+  "move": null
+ },
+ {
+  "row": 53,
+  "conference": "Indian Chemical Congress",
+  "tier": "OUT",
+  "abstracts": "66 posters counted on the day-2 poster list of the 60th Annual Convention of Chemists (ACC 2023, IIT Delhi); highest submission ID on the list = 204, so total submissions are of order ~200 — a FLOOR count, well under the floor",
+  "rung9": false,
+  "implied": null,
+  "move": null
+ },
+ {
+  "row": 56,
+  "conference": "European Symposium on Thermal Analysis and Calorimetry (ESTAC)",
+  "tier": "OUT",
+  "abstracts": "168 contributed presentations (48 orals OP1.01-OP3.16 + 120 posters PS1.01-PS3.40), ESTAC14 Split 2026",
+  "rung9": false,
+  "implied": null,
+  "move": null
+ },
+ {
+  "row": 59,
+  "conference": "International Conference on Chemistry and the Environment (ICCE)",
+  "tier": "OUT",
+  "abstracts": "331 contributed presentations at ICCE 2025 Belgrade: 156 posters counted (unique IDs, -raw extraction; matches the programme's stated 156) + 175 orals as stated in the programme welcome letter",
+  "rung9": false,
+  "implied": null,
+  "move": null
+ },
+ {
+  "row": 62,
+  "conference": "APME - International Conference on Advanced Polymers via Macromolecular Engineering",
+  "tier": "OUT",
+  "abstracts": "<=349 presentations at APME 2025 Catania (UPPER BOUND): 193 one-page lecture/oral abstracts (includes invited speakers, not separable without OCR) + 156 one-page poster abstracts, counted as abstract pages in the book of abstracts",
+  "rung9": false,
+  "implied": null,
+  "move": null
+ },
+ {
+  "row": 65,
+  "conference": "Migration - International Conference on the Chemistry and Migration Behaviour of Actinides and Fission Products in the Geosphere",
+  "tier": "OUT",
+  "abstracts": "~252-254 abstracts in the Migration 2023 (Nantes) book of abstracts: ~62 session orals (A/B/C/D codes) + ~181 posters (PA-PE codes) + 8 E-session talks + 1-2 misc; unique IDs, -layout 252 / -raw 254",
+  "rung9": false,
+  "implied": null,
+  "move": null
+ },
+ {
+  "row": 68,
+  "conference": "ICPOC - IUPAC International Conference on Physical Organic Chemistry",
+  "tier": "OUT",
+  "abstracts": "<=~213 presentations at ICPOC-27 Munich 2026: 101 posters counted (-raw; 99 -layout) + at most 112 non-plenary timed talk slots in the programme (these include invited 35-min lectures, so the contributed-oral share is lower). UPPER BOUND on contributed.",
+  "rung9": false,
+  "implied": null,
+  "move": null
+ },
+ {
+  "row": 71,
+  "conference": "EFMC-ISCB - EFMC Short Course on Chemical Biology / ISCB symposium",
+  "tier": "OUT",
+  "abstracts": "119 contributed presentations at EFMC-ISCB 2025 Basel: 9 oral communications (OC01-OC09) + 110 posters (unique IDs P001-P124; 14 IDs unused)",
+  "rung9": false,
+  "implied": null,
+  "move": null
+ },
+ {
+  "row": 74,
+  "conference": "IBA Meeting - International Battery Association Meeting",
+  "tier": "OUT",
+  "abstracts": "177 contributed posters counted at IBA2025 Singapore (unique abstract IDs, -raw; 175 -layout; organiser states 178 poster presentations). Orals are invited (organiser: 17 plenary/keynote/award + 68 invited speakers), so contributed total ~177-178",
+  "rung9": false,
+  "implied": null,
+  "move": null
+ },
+ {
+  "row": 77,
+  "conference": "ICCT - International Conference on Chemical Thermodynamics",
+  "tier": "OUT",
+  "abstracts": "184 contributed presentations at ICCT2025 Porto: 92 orals (16 highlighted HOx.y + 76 regular Ox.y) + 92 posters (Px.y; -layout 92, -raw 89)",
+  "rung9": false,
+  "implied": null,
+  "move": null
+ },
+ {
+  "row": 80,
+  "conference": "ESAT — European Symposium on Applied Thermodynamics",
+  "tier": "OUT",
+  "abstracts": "<=~220 presentations at ESAT 2026 (34th, Tróia/Lisbon): 94 posters (P1-P94, both extractions) + at most 126 timed talk slots in the scientific programme (includes 8 plenary PS slots, honour presentations and invited IL talks, so contributed orals are fewer). UPPER BOUND.",
+  "rung9": false,
+  "implied": null,
+  "move": null
+ },
+ {
+  "row": 83,
+  "conference": "ESBES — European Symposium on Biochemical Engineering Sciences",
+  "tier": "OUT",
+  "abstracts": "~199 presentations in the published ESBES 2026 (Delft) programme: 93 posters (46 Tuesday + 47 Wednesday) + 106 talk abstracts (111 unique abstract modals less 5 plenary lectures; may still include keynote/invited talks). Pre-meeting programme; late posters still being accepted.",
+  "rung9": false,
+  "implied": null,
+  "move": null
+ },
+ {
+  "row": 86,
+  "conference": "CORESTA Congress",
+  "tier": "OUT",
+  "abstracts": "221 contributed papers at CORESTA Congress 2024 (Edinburgh): 129 oral presentations (AP 63 + ST 66) + 89 posters (APPOST 16 + STPOST 73) + 3 intergroup papers (IG); workshop items (APWS/STWS 8+8) and invited speakers excluded",
+  "rung9": false,
+  "implied": null,
+  "move": null
+ },
+ {
+  "row": 89,
+  "conference": "FEBS3+ Meeting",
+  "tier": "OUT",
+  "abstracts": "~105 contributed presentations at the FEBS3+ meeting 'Exploring Molecular Frontiers' (Pula 2024, Croatia/Finland/Sweden): 86 posters (P codes, -raw; 85 -layout) + 19 short lectures (SL1-SL19); 14-15 invited lectures (L) excluded. Series of separate small joint meetings, not one conference.",
+  "rung9": false,
+  "implied": null,
+  "move": null
+ },
+ {
+  "row": 92,
+  "conference": "TAPPI PEERS Conference (Pulping, Engineering, Environmental, Recycling, Sustainability)",
+  "tier": "OUT",
+  "abstracts": "58 PEERS 2023 conference papers in TAPPI's conference-paper library (peak year 2016 = 86; 2022 = 53); TAPPI states PEERS runs 'a comprehensive technical program with 24 sessions'. Paper deposits are a floor on presentations, but 24 sessions cannot hold more than ~100-150 talks.",
+  "rung9": false,
+  "implied": null,
+  "move": null
+ },
+ {
+  "row": 95,
+  "conference": "Canadian Materials Science Conference (CMSC)",
+  "tier": "OUT",
+  "abstracts": "~172 contributed presentations at CMSC 2026 (37th, Université Laval, May 2026): 137 non-keynote talk slots in the organiser's programme spreadsheet (144 talk cells less 7 keynotes) + ~35 posters (35-page one-abstract-per-page poster abstract PDF)",
+  "rung9": false,
+  "implied": null,
+  "move": null
+ },
+ {
+  "row": 98,
+  "conference": "ISMC — International Symposium on Materials Chemistry (BARC Mumbai)",
+  "tier": "OUT",
+  "abstracts": "241 contributed presentations at ISMC-2018 (7th) as STATED in the SMC's own post-symposium report: 229 posters + 12 short lectures (38 invited lectures excluded). DATED. ISMC-2022 (9th) report: 'more than 475 registered delegates', 15 short presentations, 4 poster sessions (poster total not stated).",
+  "rung9": false,
+  "implied": null,
+  "move": null
+ },
+ {
+  "row": 101,
+  "conference": "RSC Faraday Discussions",
+  "tier": "OUT",
+  "abstracts": null,
+  "rung9": true,
+  "implied": 58,
+  "move": null
+ },
+ {
+  "row": 104,
+  "conference": "Institute of Chemistry of Ireland Annual Congress",
+  "tier": "OUT",
+  "abstracts": null,
+  "rung9": false,
+  "implied": null,
+  "move": null
+ },
+ {
+  "row": 107,
+  "conference": "analytica Anacon India",
+  "tier": "OUT",
+  "abstracts": "0 contributed abstracts: trade fair whose 'analytica Lab India Conference' is industry panel sessions (named pharma QA/QC executive panellists + tabletop exhibitors); no call for abstracts anywhere. Mumbai 2024: 6,024 trade visitors and 'more than 100 delegates' in the seminars.",
+  "rung9": false,
+  "implied": null,
+  "move": null
+ },
+ {
+  "row": 110,
+  "conference": "JNOST (J-NOST Conference for Research Scholars in Organic Chemistry)",
+  "tier": "OUT",
+  "abstracts": null,
+  "rung9": true,
+  "implied": 99,
+  "move": null
+ },
+ {
+  "row": 113,
+  "conference": "Reaction Mechanisms Conference",
+  "tier": "OUT",
+  "abstracts": "56 contributed posters at RMC 2026 (40th, Hope College); all talks are invited plenary talks.",
+  "rung9": false,
+  "implied": null,
+  "move": null
+ },
+ {
+  "row": 116,
+  "conference": "ISoFT - International Symposium on Fluorous Technologies",
+  "tier": "BORDERLINE",
+  "abstracts": null,
+  "rung9": false,
+  "implied": null,
+  "move": "DUPLICATE of 'ISFC - International Symposium on Fluorine Chemistry' — ISoFT's recent editions run inside ISFC (wave 3 evidence in Method)"
+ },
+ {
+  "row": 119,
+  "conference": "Gordon Research Conference on Solid State Chemistry",
+  "tier": "OUT",
+  "abstracts": null,
+  "rung9": true,
+  "implied": 120,
+  "move": null
+ },
+ {
+  "row": 122,
+  "conference": "Western Coatings Symposium",
+  "tier": "OUT",
+  "abstracts": "~102-109 technical presentations on the WCS 2025 (37th, Las Vegas) speaker list (organiser states '110 technical presentations'), largely supplier/industry talks selected from submitted abstracts; plus a student poster session (not listed, small). Trade show with 100+ exhibitors.",
+  "rung9": false,
+  "implied": null,
+  "move": null
+ },
+ {
+  "row": 125,
+  "conference": "yCAM — young Ceramists Additive Manufacturing Forum",
+  "tier": "OUT",
+  "abstracts": "93 contributed presentations at yCAM 2026 Ljubljana as STATED in the ECerS post-event report: 32 oral presentations + 61 posters; 5 invited speakers listed separately and excluded. 115 participants from 23 countries.",
+  "rung9": false,
+  "implied": null,
+  "move": null
+ },
+ {
+  "row": 128,
+  "conference": "TAPPI IBBC — International Bioenergy and Bioproducts Conference",
+  "tier": "OUT",
+  "abstracts": "5 IBBC 2023 conference papers in TAPPI's conference-paper library (peak years 2015 = 28, 2009 = 24; 2022 = 8). Co-located with PEERS, one registration; a small parallel track.",
+  "rung9": false,
+  "implied": null,
+  "move": null
+ },
+ {
+  "row": 131,
+  "conference": "ISEO — International Symposium on Essential Oils",
+  "tier": "OUT",
+  "abstracts": null,
+  "rung9": true,
+  "implied": 240,
+  "move": null
+ },
+ {
+  "row": 134,
+  "conference": "SUR/FIN Manufacturing & Technology Trade Show and Conference",
+  "tier": "OUT",
+  "abstracts": null,
+  "rung9": true,
+  "implied": 80,
+  "move": null
+ },
+ {
+  "row": 137,
+  "conference": "RSC–CRSI Joint Symposium in Chemical Sciences",
+  "tier": "BORDERLINE",
+  "abstracts": null,
+  "rung9": false,
+  "implied": null,
+  "move": "DUPLICATE of 'CRSI National Symposium in Chemistry (NSC)' — the RSC–CRSI Joint Symposium is held together with CRSI-NSC (wave 3 evidence in Method)"
+ },
+ {
+  "row": 140,
+  "conference": "National Symposium on Thermal Analysis (India)",
+  "tier": "OUT",
+  "abstracts": "<=140 presentations at THERMANS-2024 (24th, BARC Mumbai, 16-18 Jan 2025) as STATED in the guest editors' preface: '200+ delegates, 140 presentations ... These included Plenary, Invited Lectures, an Evening Lecture, oral and poster presentations' — so contributed (oral + poster) is below 140. REPORTED BY SOURCE, NOT COUNTED; UPPER BOUND.",
+  "rung9": false,
+  "implied": null,
+  "move": null
+ }
+]

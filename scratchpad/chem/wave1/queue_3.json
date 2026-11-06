@@ -1,0 +1,222 @@
+[
+ {
+  "row": 43,
+  "conference": "ACS Southwest Regional Meeting (SWRM)",
+  "society": "American Chemical Society",
+  "country": "US",
+  "notes": "annual | ACS regional meeting | Phase 1 source: https://web.cvent.com/event/d2645e5c-9aca-4467-918a-5b4af40f6a33/summary",
+  "done": false,
+  "tier": "NOT YET CENSUSED",
+  "prio": null,
+  "score": 6
+ },
+ {
+  "row": 48,
+  "conference": "ACS Rocky Mountain Regional Meeting (RMRM)",
+  "society": "American Chemical Society",
+  "country": "US",
+  "notes": "annual | ACS regional meeting | Phase 1 source: https://web.cvent.com/event/d2645e5c-9aca-4467-918a-5b4af40f6a33/summary",
+  "done": false,
+  "tier": "NOT YET CENSUSED",
+  "prio": null,
+  "score": 6
+ },
+ {
+  "row": 106,
+  "conference": "International Conference on Chemistry Education (ICCE)",
+  "society": "IUPAC Committee on Chemistry Education",
+  "country": "international",
+  "notes": "biennial; 28th in 2026 Erzurum, Turkey | IUPAC flagship chemistry education conference | Phase 1 source: https://www.euchems.eu/divisions/chemical-education-2/conferences/",
+  "done": false,
+  "tier": "NOT YET CENSUSED",
+  "prio": null,
+  "score": 6
+ },
+ {
+  "row": 142,
+  "conference": "ICOS - International Conference on Organic Synthesis",
+  "society": "IUPAC-sponsored",
+  "country": "international",
+  "notes": "biennial since 1976; 24-ICOS 2026 Lodz; 600-800 attendees | flagship international organic synthesis conference | Phase 1 source: https://publications.iupac.org/pac/conferences/family/ICOS/index.html",
+  "done": false,
+  "tier": "NOT YET CENSUSED",
+  "prio": null,
+  "score": 6
+ },
+ {
+  "row": 174,
+  "conference": "ESEAC - International Conference on Electroanalysis",
+  "society": "EuChemS Division of Analytical Chemistry (Electroanalysis)",
+  "country": "Europe/international",
+  "notes": "biennial since 1986; 20th ESEAC 2026 Portugal | principal electroanalysis conference series | Phase 1 source: https://eseac2026.events.chemistry.pt/",
+  "done": false,
+  "tier": "NOT YET CENSUSED",
+  "prio": null,
+  "score": 6
+ },
+ {
+  "row": 29,
+  "conference": "IUPAC World Polymer Congress (MACRO)",
+  "society": "IUPAC",
+  "country": "international",
+  "notes": "biennial | polymer flagship",
+  "done": false,
+  "tier": "NOT YET CENSUSED",
+  "prio": null,
+  "score": 5
+ },
+ {
+  "row": 105,
+  "conference": "European Conference on Research in Chemical Education (ECRICE)",
+  "society": "EuChemS Division of Chemical Education",
+  "country": "Europe",
+  "notes": "biennial; 17th in 2026 joint with ICCE | European chemistry education research series | Phase 1 source: https://www.euchems.eu/divisions/chemical-education-2/conferences/",
+  "done": false,
+  "tier": "NOT YET CENSUSED",
+  "prio": null,
+  "score": 5
+ },
+ {
+  "row": 26,
+  "conference": "ICC — International Congress on Catalysis",
+  "society": "IACS",
+  "country": "international",
+  "notes": "every 4 years | catalysis flagship",
+  "done": false,
+  "tier": "NOT YET CENSUSED",
+  "prio": null,
+  "score": 4
+ },
+ {
+  "row": 58,
+  "conference": "RACI National Congress",
+  "society": "Royal Australian Chemical Institute",
+  "country": "Australia",
+  "notes": "every ~5 years; 2026 Perth; all 15 RACI divisions | premier Australian chemistry meeting | Phase 1 source: https://www.racicongress.org.au/",
+  "done": false,
+  "tier": "NOT YET CENSUSED",
+  "prio": null,
+  "score": 4
+ },
+ {
+  "row": 101,
+  "conference": "CRSI National Symposium in Chemistry (CRSI-NSC)",
+  "society": "Chemical Research Society of India (3,500+ lifetime members)",
+  "country": "India",
+  "notes": "twice yearly; 37th at IACS Kolkata July 2026 | confirmed principal Indian national chemistry symposium series | Phase 1 source: https://crsi-india.org/",
+  "done": false,
+  "tier": "NOT YET CENSUSED",
+  "prio": null,
+  "score": 4
+ },
+ {
+  "row": 116,
+  "conference": "European Polymer Congress (EPF Congress)",
+  "society": "European Polymer Federation",
+  "country": "Europe",
+  "notes": "biennial since 2001 | main European polymer science congress | Phase 1 source: https://iupac.org/event/european-polymer-congress-2025-epf-2025/",
+  "done": false,
+  "tier": "NOT YET CENSUSED",
+  "prio": null,
+  "score": 4
+ },
+ {
+  "row": 128,
+  "conference": "ECM - European Crystallographic Meeting",
+  "society": "European Crystallographic Association",
+  "country": "Europe",
+  "notes": "annual/biennial; ECM-36 2027 Prague | European crystallography congress | Phase 1 source: https://ecanews.org/iucr-congresses/",
+  "done": false,
+  "tier": "NOT YET CENSUSED",
+  "prio": null,
+  "score": 4
+ },
+ {
+  "row": 148,
+  "conference": "ICORS - International Conference on Raman Spectroscopy",
+  "society": "international Raman community",
+  "country": "international",
+  "notes": "biennial since 1969; 2026 Istanbul | world Raman spectroscopy conference | Phase 1 source: https://uia.org/s/or/en/1100043901",
+  "done": false,
+  "tier": "NOT YET CENSUSED",
+  "prio": null,
+  "score": 4
+ },
+ {
+  "row": 158,
+  "conference": "IUFoST World Food Science and Technology Congress",
+  "society": "International Union of Food Science and Technology",
+  "country": "international",
+  "notes": "biennial; 23rd World Food Congress 2026 | world food science congress | Phase 1 source: https://iufost.org/iufost-world-food-congress-2026",
+  "done": false,
+  "tier": "NOT YET CENSUSED",
+  "prio": null,
+  "score": 4
+ },
+ {
+  "row": 166,
+  "conference": "Dioxin - International Symposium on Halogenated Persistent Organic Pollutants (POPs)",
+  "society": "independent POPs research community",
+  "country": "international",
+  "notes": "annual; 45th in 2025 Antalya | principal POPs and dioxin analysis symposium | Phase 1 source: https://dioxin20xx.org/",
+  "done": false,
+  "tier": "NOT YET CENSUSED",
+  "prio": null,
+  "score": 4
+ },
+ {
+  "row": 177,
+  "conference": "Flow Chemistry Europe (FCE)",
+  "society": "Flow Chemistry Society",
+  "country": "Europe",
+  "notes": "annual; 14th FCE-26 2026 Malaga | main flow chemistry conference series | Phase 1 source: https://flowchemistryeurope.com/",
+  "done": false,
+  "tier": "NOT YET CENSUSED",
+  "prio": null,
+  "score": 4
+ },
+ {
+  "row": 192,
+  "conference": "Sanibel Symposium on Quantum Chemistry",
+  "society": "University of Florida Quantum Theory Project",
+  "country": "US",
+  "notes": "annual; 60th edition in 2020 | historic US quantum chemistry symposium | Phase 1 source: https://quantumtheory.phys.ufl.edu/sanibel/",
+  "done": false,
+  "tier": "NOT YET CENSUSED",
+  "prio": null,
+  "score": 4
+ },
+ {
+  "row": 205,
+  "conference": "Chemeca",
+  "society": "ANZFChE / IChemE Australia & New Zealand",
+  "country": "Australia/New Zealand",
+  "notes": "annual; 55th 2026 Melbourne | Australasian chemical engineering conference | Phase 1 source: https://efce.info/events_overview.html",
+  "done": false,
+  "tier": "NOT YET CENSUSED",
+  "prio": null,
+  "score": 4
+ },
+ {
+  "row": 226,
+  "conference": "ASBMB Annual Meeting",
+  "society": "American Society for Biochemistry and Molecular Biology",
+  "country": "US",
+  "notes": "annual; March 2026 National Harbor MD | biochemistry boundary — major US society meeting | Phase 1 source: https://www.asbmb.org/annual-meeting",
+  "done": false,
+  "tier": "NOT YET CENSUSED",
+  "prio": null,
+  "score": 4
+ },
+ {
+  "row": 233,
+  "conference": "International Congress on Ceramics (ICC)",
+  "society": "International Ceramic Federation / American Ceramic Society",
+  "country": "international",
+  "notes": "biennial; ICC11 Sept 2026 Sapporo | top-level ceramics congress | Phase 1 source: https://ceramics.org/about/international-ceramic-federation/icf-meetings/",
+  "done": false,
+  "tier": "NOT YET CENSUSED",
+  "prio": null,
+  "score": 4
+ }
+]

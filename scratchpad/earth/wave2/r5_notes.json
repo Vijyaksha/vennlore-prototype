@@ -1,0 +1,15 @@
+{
+ "106": {
+  "orchestrator_note": "RUNG 5 attempted by the orchestrator (2026-09-15): plantprotection.org's Cloudflare wall blocks the newsletter PDFs even for a scripted Chrome (challenge does not clear). Stays BORDERLINE (no figure). Next action: interactive browser on the IAPPS April-2024 newsletter, or Wayback for ippcathens2024.gr/abstracts."
+ },
+ "91": {
+  "abstracts_numeric": 877,
+  "abstracts": "877 (2025, 6th International Agronomy Congress, New Delhi 24-26 Nov — extended summaries in the three official Summaries volumes: Vol.1 283 + Vol.2 306 + Vol.3 288, incl. the Young Scientists/Students conclave theme)",
+  "year": 2025,
+  "rung": 5,
+  "source_url": "https://isa-india.in/iac-publications/",
+  "confidence": "exact",
+  "tier": "BORDERLINE",
+  "orchestrator_note": "RUNG 5 by the orchestrator (2026-09-15): the society page https://isa-india.in/iac-publications/ links the volumes as OneDrive shares (1drv.ms/b/c/dc3b535d5cddee60/IQB0ojr153HNSZPW7NDFUswwAczvgm1iX_Z_zmsbafrHkoY = Vol.1, …/IQDHFGXTzqCyQo5aaD6Okg73AUJcUVmwndWrxbQYwNXy6tU = Vol.2, …/IQB7XuzWcYdxR5s7g17yFS3xAZOdGpEbepmKp_wIy0i7JIU = Vol.3); downloaded them in a scripted Chrome by clicking the OneDrive viewer's #downloadCommand (fresh profile per file — a reused profile fails at save). Vol.1 527 pp, Vol.2 578 pp, Vol.3 546 pp. Every extended summary opens under the running header 'Extended Summaries: 6th International Agronomy Congress, November 24-26, 2025, India' (continuation pages carry a different header), so the header count is the entry count: 283 / 306 / 288 in BOTH pdftotext modes = 877. Themes 1–10 (Theme 10 = Young Scientists and Students Conclave, contributed). Invited lead papers, if any, sit in the Souvenir volume, not these. 877 is inside the 800–1,499 band: BORDERLINE. Cadence ~every 3–4 years (0.25). English."
+ }
+}

@@ -1,0 +1,18 @@
+{
+ "phase": "1-discovery",
+ "field": "Life Sciences",
+ "scope": "US only (Rupert, 2026-09-12)",
+ "sweeps_done": [
+  "knowledge",
+  "sweep1",
+  "sweep2",
+  "sweep3",
+  "sweep4",
+  "merge+dedupe"
+ ],
+ "names": 146,
+ "searches_used": 22,
+ "duplicates": 36,
+ "live": 110,
+ "dedupe_pass_2": "done 2026-09-12"
+}

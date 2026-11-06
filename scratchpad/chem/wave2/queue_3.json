@@ -1,0 +1,122 @@
+[
+ {
+  "row": 8,
+  "level": 5,
+  "conference": "SETAC North America Annual Meeting",
+  "society": "Society of Environmental Toxicology and Chemistry",
+  "country": "US",
+  "notes": "annual | large environmental chemistry meeting | Phase 1 source: https://www.setac.org/"
+ },
+ {
+  "row": 11,
+  "level": 4,
+  "conference": "ICCC — International Conference on Coordination Chemistry",
+  "society": "IUPAC",
+  "country": "international",
+  "notes": "biennial | coordination chemistry"
+ },
+ {
+  "row": 14,
+  "level": 4,
+  "conference": "Canadian Chemical Engineering Conference (CSChE)",
+  "society": "Canadian Society for Chemical Engineering / CIC",
+  "country": "Canada",
+  "notes": "annual | national chemical engineering conference of Canada | Phase 1 source: https://www.cheminst.ca/"
+ },
+ {
+  "row": 17,
+  "level": 4,
+  "conference": "Controlled Release Society Annual Meeting",
+  "society": "Controlled Release Society",
+  "country": "international",
+  "notes": "annual | principal drug delivery science meeting | Phase 1 source: https://www.controlledreleasesociety.org/"
+ },
+ {
+  "row": 20,
+  "level": 4,
+  "conference": "ECerS Conference (European Ceramic Society Conference)",
+  "society": "European Ceramic Society (ECerS)",
+  "country": "Europe",
+  "notes": "biennial, plus a calendar of satellite meetings | European ceramics congress | Phase 1 source: https://ecers.org/en/ec/conferences-calendar"
+ },
+ {
+  "row": 23,
+  "level": 4,
+  "conference": "ICCC — International Congress on the Chemistry of Cement",
+  "society": "ICCC standing committee",
+  "country": "international",
+  "notes": "every ~4 years; 16th 2023 Bangkok, 17th 2027 New Delhi | cement gap named in the brief | Phase 1 source: https://www.iccc-online.org/about/"
+ },
+ {
+  "row": 26,
+  "level": 3,
+  "conference": "ENC — Experimental Nuclear Magnetic Resonance Conference",
+  "society": "ENC",
+  "country": "US",
+  "notes": "annual | NMR"
+ },
+ {
+  "row": 29,
+  "level": 3,
+  "conference": "IACIS International Conference on Surface and Colloid Science",
+  "society": "International Association of Colloid and Interface Scientists",
+  "country": "international",
+  "notes": "triennial | global subfield congress, sometimes joint with ACS CSSS | Phase 1 source: https://acswebcontent.acs.org/colloid/index.html"
+ },
+ {
+  "row": 32,
+  "level": 3,
+  "conference": "EUROMAR (European Magnetic Resonance Conference)",
+  "society": "AMPERE / European magnetic resonance community",
+  "country": "Europe",
+  "notes": "annual, early July | merged European NMR/ESR/MRI congress | Phase 1 source: https://www.euromar.org/about"
+ },
+ {
+  "row": 35,
+  "level": 3,
+  "conference": "CSI - Colloquium Spectroscopicum Internationale",
+  "society": "international spectroscopy community",
+  "country": "international",
+  "notes": "biennial | long-running international spectroscopy colloquium | Phase 1 source: https://www.photothermal.com/events/colloquium-spectroscopicum-internationale/"
+ },
+ {
+  "row": 38,
+  "level": 3,
+  "conference": "ISPC - International Symposium on Plasma Chemistry",
+  "society": "International Plasma Chemistry Society",
+  "country": "international",
+  "notes": "biennial | world plasma chemistry symposium | Phase 1 source: http://pac.iupac.org/publications/pac/conferences/family/ISPC/"
+ },
+ {
+  "row": 41,
+  "level": 3,
+  "conference": "ICN+T — International Conference on Nanoscience + Technology",
+  "society": "international nanoscience community (rotating hosts)",
+  "country": "international",
+  "notes": "biennial | nanochemistry gap — long-running series | Phase 1 source: https://independent.academia.edu/LloydWhitman"
+ },
+ {
+  "row": 44,
+  "level": 3,
+  "conference": "STLE Annual Meeting & Exhibition",
+  "society": "Society of Tribologists and Lubrication Engineers",
+  "country": "US",
+  "notes": "annual; 80th May 2026 New Orleans, 400+ technical presentations | applied chemistry gap — lubricants | Phase 1 source: https://www.stle.org/AnnualMeeting/Home/AnnualMeeting"
+ },
+ {
+  "row": 47,
+  "level": 3,
+  "conference": "NUCAR — DAE-BRNS Biennial Symposium on Nuclear and Radiochemistry",
+  "society": "Indian Association of Nuclear Chemists and Allied Scientists (IANCAS) / BARC",
+  "country": "India",
+  "notes": "biennial, 17th edition | recurring national symposium of an Indian learned society | Phase 1 source: https://www.iancas.org.in/nucar2025/"
+ },
+ {
+  "row": 50,
+  "level": 3,
+  "conference": "Indian Institute of Metals National Metallurgists' Meet / ATM",
+  "society": "Indian Institute of Metals (IIM, est. 1946)",
+  "country": "India",
+  "notes": "annual | recurring national symposium of an Indian learned society | Phase 1 source: https://en.wikipedia.org/wiki/Indian_Institute_of_Metals"
+ }
+]

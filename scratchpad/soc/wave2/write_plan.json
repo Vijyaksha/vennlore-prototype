@@ -1,0 +1,24 @@
+[
+ {
+  "row": 92,
+  "conference": "International Geographical Congress (IGC)",
+  "tier": "VERIFIED",
+  "abstracts": "3,213 (2024, 35th IGC Dublin — provisional programme of 13 March / 18 April 2024: 2,807 session presentations + 407 posters, 1 reference number in both lists)",
+  "events_per_yr": 0.25,
+  "rung9": false,
+  "implied": null,
+  "decision": null,
+  "move": false
+ },
+ {
+  "row": 30,
+  "conference": "ABAI Annual Convention",
+  "tier": "BORDERLINE",
+  "abstracts": null,
+  "events_per_yr": 1.0,
+  "rung9": false,
+  "implied": null,
+  "decision": null,
+  "move": false
+ }
+]

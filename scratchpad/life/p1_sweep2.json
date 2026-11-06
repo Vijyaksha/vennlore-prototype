@@ -1,0 +1,162 @@
+[
+ {
+  "conference": "Fungal Genetics Conference (Asilomar)",
+  "society": "Genetics Society of America",
+  "country_or_region": "US",
+  "subfield": "fungal genetics",
+  "frequency_note": "",
+  "why_listed": "sweep 2",
+  "source_url": "https://genetics-gsa.org/attend-a-conference/",
+  "_src": "sweep2"
+ },
+ {
+  "conference": "International Conference on the Cell and Molecular Biology of Chlamydomonas",
+  "society": "Genetics Society of America",
+  "country_or_region": "US",
+  "subfield": "algal genetics",
+  "frequency_note": "",
+  "why_listed": "sweep 2",
+  "source_url": "https://genetics-gsa.org/attend-a-conference/",
+  "_src": "sweep2"
+ },
+ {
+  "conference": "International Mammalian Genome Conference (IMGC)",
+  "society": "International Mammalian Genome Society",
+  "country_or_region": "US",
+  "subfield": "mouse genetics",
+  "frequency_note": "",
+  "why_listed": "sweep 2",
+  "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8179689/",
+  "_src": "sweep2"
+ },
+ {
+  "conference": "International Zebrafish Conference",
+  "society": "International Zebrafish Society",
+  "country_or_region": "US",
+  "subfield": "zebrafish",
+  "frequency_note": "",
+  "why_listed": "sweep 2",
+  "source_url": "https://genetics-gsa.org/attend-a-conference/",
+  "_src": "sweep2"
+ },
+ {
+  "conference": "Maize Genetics Meeting",
+  "society": "Maize Genetics Executive Committee",
+  "country_or_region": "US",
+  "subfield": "plant genetics",
+  "frequency_note": "",
+  "why_listed": "sweep 2",
+  "source_url": "knowledge (GSA model-organism list)",
+  "_src": "sweep2"
+ },
+ {
+  "conference": "International Conference on Arabidopsis Research (ICAR)",
+  "society": "NAASC / MASC",
+  "country_or_region": "US",
+  "subfield": "plant genetics",
+  "frequency_note": "",
+  "why_listed": "sweep 2",
+  "source_url": "knowledge (GSA model-organism list)",
+  "_src": "sweep2"
+ },
+ {
+  "conference": "ACVIM Forum",
+  "society": "American College of Veterinary Internal Medicine",
+  "country_or_region": "US",
+  "subfield": "veterinary research — BOUNDARY (health)",
+  "frequency_note": "",
+  "why_listed": "sweep 2",
+  "source_url": "https://www.acvim.org/events-education/annual-meeting/past-annual-meetings/2026-acvim-forum",
+  "_src": "sweep2"
+ },
+ {
+  "conference": "AVMA Convention",
+  "society": "American Veterinary Medical Association",
+  "country_or_region": "US",
+  "subfield": "veterinary — BOUNDARY (health)",
+  "frequency_note": "",
+  "why_listed": "sweep 2",
+  "source_url": "https://worldvet.org/news/submit-your-abstract-to-wvac2025-avma-convention/",
+  "_src": "sweep2"
+ },
+ {
+  "conference": "CRWAD Annual Meeting",
+  "society": "Conference of Research Workers in Animal Diseases",
+  "country_or_region": "US",
+  "subfield": "veterinary research",
+  "frequency_note": "",
+  "why_listed": "sweep 2",
+  "source_url": "https://www.acvim.org/board-certification/maintain-certification/pre-approved-meetings/saim-list-pre-approved-meetings",
+  "_src": "sweep2"
+ },
+ {
+  "conference": "WVC Annual Conference",
+  "society": "Western Veterinary Conference",
+  "country_or_region": "US",
+  "subfield": "veterinary CE — BOUNDARY (likely CURATED)",
+  "frequency_note": "",
+  "why_listed": "sweep 2",
+  "source_url": "https://www.ezyvet.com/veterinary-conferences",
+  "_src": "sweep2"
+ },
+ {
+  "conference": "Wildlife Disease Association Annual Conference",
+  "society": "WDA",
+  "country_or_region": "US",
+  "subfield": "wildlife health",
+  "frequency_note": "",
+  "why_listed": "sweep 2",
+  "source_url": "https://conference.ifas.ufl.edu/wda2018/call_abstracts.html",
+  "_src": "sweep2"
+ },
+ {
+  "conference": "Society for Marine Mammalogy Biennial Conference",
+  "society": "SMM",
+  "country_or_region": "US",
+  "subfield": "marine mammalogy",
+  "frequency_note": "",
+  "why_listed": "sweep 2",
+  "source_url": "https://en.wikipedia.org/wiki/Society_for_Marine_Mammalogy",
+  "_src": "sweep2"
+ },
+ {
+  "conference": "ASABE Annual International Meeting (AIM)",
+  "society": "American Society of Agricultural and Biological Engineers",
+  "country_or_region": "US",
+  "subfield": "agricultural/biological engineering",
+  "frequency_note": "",
+  "why_listed": "sweep 2",
+  "source_url": "https://asabe.org/events/2016-annual-international-meeting",
+  "_src": "sweep2"
+ },
+ {
+  "conference": "ADSA Annual Meeting",
+  "society": "American Dairy Science Association",
+  "country_or_region": "US",
+  "subfield": "dairy science",
+  "frequency_note": "",
+  "why_listed": "sweep 2",
+  "source_url": "https://www.adsa.org/Meetings/2025-Annual-Meeting/Program",
+  "_src": "sweep2"
+ },
+ {
+  "conference": "SWCS International Annual Conference",
+  "society": "Soil and Water Conservation Society",
+  "country_or_region": "US",
+  "subfield": "conservation",
+  "frequency_note": "",
+  "why_listed": "sweep 2",
+  "source_url": "https://www.swcs.org/events/past-events/past-annual-conferences",
+  "_src": "sweep2"
+ },
+ {
+  "conference": "IUMS Congress (when US-hosted)",
+  "society": "International Union of Microbiological Societies",
+  "country_or_region": "US",
+  "subfield": "microbiology",
+  "frequency_note": "",
+  "why_listed": "sweep 2",
+  "source_url": "https://iums2026.com/",
+  "_src": "sweep2"
+ }
+]

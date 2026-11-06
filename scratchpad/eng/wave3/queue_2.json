@@ -1,0 +1,227 @@
+[
+ {
+  "row": 78,
+  "conference": "ASCE International Conference on Transportation and Development (ICTD)",
+  "society": "American Society of Civil Engineers (ASCE) / T&DI",
+  "country": "US",
+  "subfield": "transportation",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | annual | ASCE-press proceedings; likely a few hundred papers, boundary | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 84,
+  "conference": "International Petroleum Technology Conference (IPTC)",
+  "society": "SPE / EAGE / AAPG / SEG",
+  "country": "Middle East / Asia",
+  "subfield": "petroleum",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | annual | OnePetro technical papers; boundary against the bar | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 92,
+  "conference": "AWWA Annual Conference and Exposition (ACE)",
+  "society": "American Water Works Association (AWWA)",
+  "country": "US",
+  "subfield": "water",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | annual (June) | several hundred technical presentations plus posters; boundary | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 96,
+  "conference": "NASCC: The Steel Conference",
+  "society": "American Institute of Steel Construction (AISC)",
+  "country": "US",
+  "subfield": "civil / structural",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | annual | large practitioner conference; contributed technical paper count likely small, flagged boundary | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 103,
+  "conference": "IEEE International Conference on Power Electronics (ICPE / ECCE Asia)",
+  "society": "IEEE PELS / KIPE",
+  "country": "Asia",
+  "subfield": "power electronics",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | biennial | several hundred papers; boundary | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 114,
+  "conference": "SICE Annual Conference",
+  "society": "Society of Instrument and Control Engineers (SICE)",
+  "country": "Japan",
+  "subfield": "control / instrumentation",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | annual | English-language SICE conference is a few hundred papers, but SICE's domestic symposia are larger; boundary | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 117,
+  "conference": "Chinese Society of Aeronautics and Astronautics Annual Conference",
+  "society": "Chinese Society of Aeronautics and Astronautics (CSAA)",
+  "country": "China",
+  "subfield": "aerospace",
+  "events_per_yr": null,
+  "notes": "IMPLIED NAME — the society or group is confirmed but this meeting title was never verified. Phase 2 must resolve it to a real name or drop the row. | annual | national aerospace society congress, Chinese-language programme | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 120,
+  "conference": "Annual Conference of the Chinese Institute of Electronics (CIE)",
+  "society": "Chinese Institute of Electronics (CIE)",
+  "country": "China",
+  "subfield": "electronics",
+  "events_per_yr": null,
+  "notes": "IMPLIED NAME — the society or group is confirmed but this meeting title was never verified. Phase 2 must resolve it to a real name or drop the row. | annual | national electronics society congress, Chinese-language programme | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 129,
+  "conference": "Deutscher Luft- und Raumfahrtkongress (DLRK)",
+  "society": "Deutsche Gesellschaft fuer Luft- und Raumfahrt (DGLR)",
+  "country": "Germany",
+  "subfield": "aerospace",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | annual | ~300-500 German-language papers; boundary | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 132,
+  "conference": "CILAMCE - Ibero-Latin-American Congress on Computational Methods in Engineering",
+  "society": "ABMEC",
+  "country": "Brazil / Iberoamerica",
+  "subfield": "computational mechanics",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | annual | ~500-900 papers; boundary | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 150,
+  "conference": "International Congress of Refrigeration (ICR)",
+  "society": "International Institute of Refrigeration (IIR)",
+  "country": "International",
+  "subfield": "refrigeration / HVAC",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | every four years | ~700-900 papers; boundary | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 153,
+  "conference": "fib Congress",
+  "society": "International Federation for Structural Concrete (fib)",
+  "country": "International",
+  "subfield": "structural concrete",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | every four years | ~700-1,000 papers; boundary | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 159,
+  "conference": "ICAS Congress of the International Council of the Aeronautical Sciences",
+  "society": "ICAS",
+  "country": "International",
+  "subfield": "aerospace",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | biennial | ~500-700 papers; boundary | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 162,
+  "conference": "ISARC - International Symposium on Automation and Robotics in Construction",
+  "society": "International Association for Automation and Robotics in Construction (IAARC)",
+  "country": "International",
+  "subfield": "construction automation",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | annual | ~200-400 papers; likely below the bar, boundary | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 167,
+  "conference": "ASCE Engineering Mechanics Institute Conference (EMI)",
+  "society": "American Society of Civil Engineers (ASCE) / Engineering Mechanics Institute",
+  "country": "US",
+  "subfield": "engineering mechanics",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | annual (June) | ASCE's premier mechanics conference; abstract-only book of abstracts running to many hundreds of presentations, never deposited as proceedings | Phase 1 source: https://www.asce.org/communities/institutes-and-technical-groups/engineering-mechanics-institute/conferences-and-events | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 170,
+  "conference": "THERMEC - International Conference on Processing and Manufacturing of Advanced Materials",
+  "society": "THERMEC series",
+  "country": "International",
+  "subfield": "materials processing",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | roughly biennial | historically 1,000-2,000 abstracts across very many symposia | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 173,
+  "conference": "IMEKO World Congress",
+  "society": "International Measurement Confederation (IMEKO)",
+  "country": "International",
+  "subfield": "metrology / instrumentation",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | every three years | ~500-800 papers; boundary | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 177,
+  "conference": "Sardinia Symposium - International Waste Management and Landfill Symposium",
+  "society": "IWWG",
+  "country": "Europe",
+  "subfield": "waste / environmental",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | biennial | ~700-900 papers; organiser-hosted proceedings | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 180,
+  "conference": "CLIMA - REHVA World Congress",
+  "society": "Federation of European Heating, Ventilation and Air Conditioning Associations (REHVA)",
+  "country": "Europe",
+  "subfield": "HVAC / buildings",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | every three years | ~500-800 papers; boundary | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 185,
+  "conference": "Indian Engineering Congress",
+  "society": "Institution of Engineers (India) (IEI)",
+  "country": "India",
+  "subfield": "general engineering",
+  "events_per_yr": null,
+  "notes": "IMPLIED NAME — the society or group is confirmed but this meeting title was never verified. Phase 2 must resolve it to a real name or drop the row. | BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | annual | annual congress of the world's largest multidisciplinary engineering society; contributed-paper volume unverified in English sources | Phase 1 source: https://en.wikipedia.org/wiki/Institution_of_Engineers_(India) | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 188,
+  "conference": "AAPG Annual Convention and Exhibition (ACE)",
+  "society": "American Association of Petroleum Geologists (AAPG)",
+  "country": "US",
+  "subfield": "petroleum geoscience",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | annual | ~700-900 abstracts; AAPG Search and Discovery archive is outside the main indexes | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 193,
+  "conference": "RSJ Annual Conference (Robotics Society of Japan)",
+  "society": "Robotics Society of Japan (RSJ)",
+  "country": "Japan",
+  "subfield": "robotics",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | annual (September) | ~700-900 Japanese-language presentations; RSJ-only proceedings | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 196,
+  "conference": "Annual Meeting of the China Association for Science and Technology (CAST)",
+  "society": "China Association for Science and Technology (CAST)",
+  "country": "China",
+  "subfield": "general engineering and science",
+  "events_per_yr": null,
+  "notes": "IMPLIED NAME — the society or group is confirmed but this meeting title was never verified. Phase 2 must resolve it to a real name or drop the row. | BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | annual | umbrella annual meeting running 100+ themed forums co-organised by over 100 member societies; contributed-paper volume unknown from English sources | Phase 1 source: https://english.cast.org.cn/xkx/News/2026/art/2026/art_ad5f80904837304b41a41ffb961927c5.html | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 200,
+  "conference": "SAECCE - China Society of Automotive Engineers Congress and Exhibition (中国汽车工程学会年会暨展览会)",
+  "society": "China Society of Automotive Engineers (SAE-China)",
+  "country": "China",
+  "subfield": "automotive",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | annual (October) | 800+ presentations plus 86 poster sessions and 100 thematic sessions, ~10,000 attendees; Chinese-language programme outside the indexes | Phase-1 size hint (page opened, not a figure): 本届年会现场呈现800余篇精彩报告，并组织86场论文海报展示活动 ... 预计吸引 ... 10,000余人参会观展 — https://www.sohu.com/a/943486789_620780 | Phase 1 source: http://www.saecce.org.cn/CN/home/Index.html | Phase 1 second pass, loaded 2026-09-14"
+ },
+ {
+  "row": 203,
+  "conference": "SMiRT - International Conference on Structural Mechanics in Reactor Technology",
+  "society": "IASMiRT",
+  "country": "International",
+  "subfield": "nuclear / structural",
+  "events_per_yr": null,
+  "notes": "BOUNDARY — flagged by phase 1 as sitting between fields; judge on contributed science. | biennial | ~600-900 papers; organiser-hosted proceedings | Phase 1 second pass, loaded 2026-09-14"
+ }
+]

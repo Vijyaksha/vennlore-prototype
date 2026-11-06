@@ -1,0 +1,1767 @@
+[
+{
+"session": "adapting-water-extremes-floods-droughts-and-resilience",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "advances-causal-identification",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "advances-information-economics",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "advances-treatment-analysis",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "aggregate-demand-and-housing-market",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "agricultural-and-development",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "agriculture-developing-countries",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "ai-and-automation",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "ai-and-labour-markets",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "ai-and-technology-adoption",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "ai-investment-and-supply-chains",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "applied-causal-mechanisms-and-policy-evaluation",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "applied-macroeconometrics-i",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "applied-macroeconometrics-ii",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "applied-microeconometrics",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "asset-pricing-empirical",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "associated-mini-workshop-session-forecasting-and-risk-assessment",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "associated-mini-workshop-session-identification-and-inference-macroeconomics",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "associated-mini-workshop-session-microeconometric-inference-and-identification",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "associated-mini-workshop-session-risk-inequality-and-public-policy",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "associated-mini-workshop-sessions-advances-information-economics-1",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "associated-mini-workshop-sessions-advances-information-economics-2",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "associated-mini-workshop-sessions-climate-economics-1",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "associated-mini-workshop-sessions-climate-economics-2",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "auctions-and-pricing",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "banking-guarantees-and-amplification",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "banking",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "bargaining-mobility-and-labour-market-adjustment",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "behavioral-information-processing",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "behavioural-and-experimental-labour-economics",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "behavioural-hank-models",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "behavioural-public-policy",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "behavioural-responses-taxes",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "beliefs-and-imperfect-information",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "beyond-banks-nonbanks-and-digital-platforms",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "beyond-icebergs-who-moves-goods-funds-trade-and-sets-prices",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "biases-beliefs-and-behavioural-responses",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "bounded-rationality-diagnostic-expectations-and-forecasting",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "broadening-economics-diversity-access-and-future-discipline-organised-eea-minorities",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "business-cycle-amplification-networks-and-firm-dynamics",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "business-cycles",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "carbon-market-design",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "central-bank-communication",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "children-families-and-household-responses",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "choice-and-game-theory",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "choice-under-risk-and-uncertainty",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "cities-informality-and-urban-development",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "climate-agriculture-and-adaptation",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "climate-and-economic-growth",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "climate-and-macroeconomy",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "climate-credit-and-risk-taking",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "climate-economics",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "climate-impacts-trade-and-natural-capital",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "climate-policy-and-macroeconomy",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "climate-risk-and-asset-pricing",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "climate-risk-and-corporate-finance",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "climate-risk-and-policy",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "closing-reception",
+"type": "UNTYPED",
+"papers": 0
+},
+{
+"session": "coffee-break-0",
+"type": "UNTYPED",
+"papers": 0
+},
+{
+"session": "coffee-break-1",
+"type": "UNTYPED",
+"papers": 0
+},
+{
+"session": "coffee-break-2",
+"type": "UNTYPED",
+"papers": 0
+},
+{
+"session": "coffee-break-3",
+"type": "UNTYPED",
+"papers": 0
+},
+{
+"session": "coffee-break-4",
+"type": "UNTYPED",
+"papers": 0
+},
+{
+"session": "coffee-break-5",
+"type": "UNTYPED",
+"papers": 0
+},
+{
+"session": "coffee-break-6",
+"type": "UNTYPED",
+"papers": 0
+},
+{
+"session": "coffee-break",
+"type": "UNTYPED",
+"papers": 0
+},
+{
+"session": "cognition-and-attention",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "competition-and-rankings",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "competition-and-regulation-empirical-evidence",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "competition-and-regulation-theory",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "congress-party",
+"type": "UNTYPED",
+"papers": 0
+},
+{
+"session": "consumption-and-labour-market-dynamics",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "consumption-and-saving",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "consumption-baskets-and-macroeconomic-policy",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "consumption-risk-and-dynamics",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "contracts-regulation-and-information-disclosure",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "corporate-finance",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "corporate-taxation-profit-shifting-and-tax-competition",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "courts-prosecutors-and-judicial-performance",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "credit-and-labour-markets",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "credit-and-real-economy",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "credit",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "crime-deterrence-and-policing",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "crime-discrimination-and-institutional-response",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "crowdfunding-and-public-goods",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "culture-history-and-trust-italian-political-economy",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "decision-theory",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "demographics-human-capital-and-aggregate-productivity",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "digital-finance-and-monetary-policy",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "digital-markets-and-platforms",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "digital-markets",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "discrimination-and-redistribution",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "dynamic-and-autoregressive-models",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "dynamic-and-sequential-contracting",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "econometric-society-awards-and-2025-fellows-certificates",
+"type": "UNTYPED",
+"papers": 0
+},
+{
+"session": "econometrics-and-machine-learning",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "econometrics-portfolios",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "economic-mobility-migration-decisions-and-housing",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "economic-theory",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "education-and-social-mobility",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "education-beliefs-and-social-change",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "education-funding-and-investments",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "education-inclusion-and-student-well-being",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "eea-ecb-panel-monetary-policy-geopolitically-fragmented-world",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "eea-education-committee-workshop-excellence-economics-education-practice-scholarship-and",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "eea-presidential-address",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "elections-turnout-and-political-representation",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "electoral-behavior-voting-fraud-and-political-assimilation",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "electricity-and-energy",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "empirical-banking",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "empirical-io-methods",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "energy-economics",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "energy-policy-and-auction-design",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "environment-infrastructure-and-health",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "environmental-and-energy-economics",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "environmental-policy-and-firm",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "es-presidential-address",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "estimation-and-inference",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "european-economists-identity-towards-history-european-economic-association",
+"type": "UNTYPED",
+"papers": 0
+},
+{
+"session": "european-job-market-morning",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "europes-defence-build-macroeconomic-fiscal-and-financial-stability-challenges-organised",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "exchange-rate-and-monetary-policy",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "exchange-rates-and-fxi",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "expectations-and-learning-structural-dynamic-models",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "expectations-sentiment-and-monetary-policy-transmission",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "experiments-cooperation-and-coordination",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "experiments-public-policy",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "factor-models-term-structure-and-stochastic-discount-factor",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "factor-models",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "family-peers-and-education-choices",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "family-policy-childbearing-and-work-home",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "female-employment-and-careers",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "female-employment",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "fertility-decisions-and-cost-children",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "field-experiments",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "finance-and-development",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "financial-conditions-and-monetary-policy-transmission",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "financial-econometrics",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "financial-integration-and-international-spillovers",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "financial-markets",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "financial-stability-and-policy-credibility",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "firms-and-trade",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "firms-skills-and-human-capital-formation",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "fiscal-policy-and-public-debt",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "fiscal-policy-debt-investment-and-demographics",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "fiscal-policy-design-revenue-and-preferences",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "fiscal-policy-taxation",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "fiscal-shocks",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "fisher-schultz-lecture",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "forecasting-and-macroeconomic-monitoring",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "forecasting-and-ml",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "forecasting-and-risk-assessment",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "game-theory-and-application",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "gender-discrimination-and-labour-market-outcomes",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "gender-norms-marriage-and-household-bargaining",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "gender-norms-organised-women-economics-committee",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "gender-pay-gaps",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "gender-reproductive-health-and-empowerment",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "gender-workplaces-and-academia",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "general-equilibrium-and-welfare",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "genes-preferences-and-education",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "geoeconomics",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "global-value-chains-frictions-and-trade",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "government-spending-and-fiscal-multipliers",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "green-finance-disclosure-and-capital-allocation",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "greenwashing-and-transition-risks",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "growth-and-asset-prices",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "growth-and-development",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "health-and-labour",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "health-and-work",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "health-systems-well-being-and-social-outcomes",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "health-trade-and-migration",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "health-well-being-and-social-protection",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "healthcare-access-and-utilisation",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "healthcare-markets-insurance-and-care-quality",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "heterogeneity-distributional-effects-and-regions",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "heterogeneous-agents-i",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "heterogeneous-agents-ii",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "hicks-tinbergen-award",
+"type": "UNTYPED",
+"papers": 0
+},
+{
+"session": "high-dimensional-svars-and-lps",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "household-choices-and-fertility",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "household-finance-and-housing",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "household-responses-transfers-and-economic-security",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "households-adaptation-and-environmental-risk",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "households-fertility-and-human-capital",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "housing-urban-regulation-and-real-estate-markets",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "human-and-algorithmic-discrimination",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "human-capital-education-policy-and-public-provision",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "identification-and-inference-macroeconomics",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "identification-svars-and-lps",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "identity-state-formation-and-institutions",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "immigration-firms-networks-and-redistribution",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "industrial-organisation-theory",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "industry-dynamics-innovation-and-advertising",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "inequality-and-intergenerational-mobility",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "inequality-and-redistribution",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "inequality-class-and-politics-redistribution",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "inequality-educational-opportunity-and-social-mobility",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "inequality-historical-patterns-gender-norms-and-redistribution",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "inequality-intergenerational-mobility-and-education",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "inference-proxy-svars",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "inflation-dynamics-and-phillips-curve",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "inflation-dynamics",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "inflation-expectations-formation-heterogeneity-and-measurement",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "inflation-forecasting-and-ai-inflation-research",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "information-and-uncertainty",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "information-design",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "information-economics-and-search",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "information-frictions-across-markets-and-agents",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "information-frictions-networks-and-field-experiments",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "information-governance-and-household-finance",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "information-search-and-educational-decisions",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "innovation-and-growth",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "innovation-and-rd-empirical-evidence",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "innovation-patents-and-knowledge",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "input-and-labor-market-power",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "institutions-and-economic-organisation",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "integrating-theory-and-evidence-policy-design",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "intermediated-allocation-markets",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "intermediation-and-regulation",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "international-climate-policy",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "international-prices-and-exchange-rate-pass-through",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "investor-decisions",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "jj-laffont-lecture",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "knowledge-diffusion-human-capital-and-long-run-development-i",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "knowledge-diffusion-human-capital-and-long-run-development-ii",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "labor-and-gender",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "labour-market-dynamics-and-segregation",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "labour-market-frictions-regulation-and-employment-instability",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "labour-market-structure-and-unequal-worker-outcomes",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "labour-markets-aging-and-health",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "labour-markets-and-income-distribution",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "labour-markets-inequality-and-macro",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "labour-mobility-remote-work-and-opportunity",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "labour-supply-and-unions",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "law-information-and-financial-markets",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "lewis-ostrom-lecture-series-i",
+"type": "UNTYPED",
+"papers": 1
+},
+{
+"session": "lewis-ostrom-lecture-series-ii-iii",
+"type": "UNTYPED",
+"papers": 1
+},
+{
+"session": "low-fertility-high-income-countries",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "lunch-0",
+"type": "UNTYPED",
+"papers": 0
+},
+{
+"session": "lunch-1",
+"type": "UNTYPED",
+"papers": 0
+},
+{
+"session": "lunch",
+"type": "UNTYPED",
+"papers": 0
+},
+{
+"session": "machine-learning-and-computational-methods",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "macro-finance-and-monetary-transmission",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "macro-labor-dynamics-wages-hiring-and-mismatch",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "macro-labour",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "macro-public-finance",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "macroeconomics-and-political-economy",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "macroeconomics-climate",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "macroeconomics-inequality-and-environment",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "market-frictions-derivatives-and-trading",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "market-power-and-antitrust",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "market-power-and-business-cycles",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "market-power-and-growth",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "marriage-and-fertility",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "marshall-lecture",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "matching-marriage-markets",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "matching",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "measurement-indices-and-decision-methods",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "mechanism-design",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "mental-health-genetics-and-labour-outcomes",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "microeconometric-inference-and-identification",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "migration-and-informality",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "migration-human-capital-and-economic-outcomes",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "migration-mobility-and-spatial-adjustment",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "migration-policy-and-refugee-labour-markets",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "migration-technology-and-social-change-united-states",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "mine-best-paper-award",
+"type": "UNTYPED",
+"papers": 0
+},
+{
+"session": "minority-identities-rhetoric-and-political-representation",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "misallocation-innovation-and-productivity",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "misspecified-learning",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "mobility-job-loss-and-labour-supply-choices",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "monetary-fiscal-interactions-and-policy-coordination",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "monetary-policy-and-inflation",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "monetary-policy-announcements-and-expectations",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "monetary-policy-frameworks-and-regime-design",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "monetary-policy-transmission-investment-and-innovation",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "monetary-policy-transmission",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "monetary-theory-sectors-networks-and-externalities",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "money-and-banking",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "money-markets-and-nonbank-intermediation",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "narratives-context-and-risk-expectation-formation",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "nationalism-populism-and-illiberal-politics",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "networks-and-panel-data",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "nonlinear-panel-data-and-identification",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "open-economy-resilience-changing-world-case-ireland",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "opening-session-luis-garicano",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "optimal-taxation-wealth-and-capital",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "organisations-and-firms",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "parental-investments-and-child-human-capital-formation",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "parental-leave-child-penalties-and-careers",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "pensions-and-inequality",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "pharmaceutical-markets-and-health-economics",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "phillips-curve-and-inflation-through-firms-eyes",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "place-based-shocks-local-development-and-spatial-inequality",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "political-economy-theory",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "political-narratives-protest-and-cultural-conflict",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "pollution-health-and-local-environmental-damages",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "price-dynamics-stickiness-energy-and-structural-factors",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "prices-and-risk-premia-macro-models",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "programme-evaluation",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "public-administration-and-government-performance",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "redistribution-and-poverty",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "regression-discontinuity-and-kink-designs",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "risk-inequality-and-public-policy",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "robust-inference-and-design-based-identification",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "schumpeter-lecture",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "semi-and-nonparametric-estimation",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "semiparametric-choice-demand-and-distributional-models",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "sentiment-attention-and-investor-behavior",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "social-identities-strategic-communication-and-social-media-politics",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "social-insurance-and-labour-markets",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "social-preferences-and-relationships",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "sources-growth",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "sovereign-debt-and-financial-crises",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "sovereign-debt-and-fiscal-policy-open-economy",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "sovereign-debt",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "strategic-behaviour-and-theoretical-political-economy",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "structural-identification-complex-economic-systems-networks-heterogeneity-and-event-time",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "structural-transformation-and-growth",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "sustainable-transportation",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "tariffs-and-trade-shocks",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "tariffs",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "tax-compliance-thresholds-and-firm-responses",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "tax-incentives-public-finances-and-local-public-goods",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "taxation-and-redistribution",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "technology-adoption-and-labour",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "technology-information-and-labour-markets",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "technology-structural-change-and-labour-markets",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "testing",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "time-series-and-applied-macroeconometrics",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "topics-time-series-econometrics",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "trade-integration-policy-shocks-and-global-consequences",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "trade-tariffs-and-sanctions",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "trade-uncertainty-and-tariffs",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "trade-wars",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "transport-and-geography",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "transport-and-resource-markets",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "uncertainty-using-large-language-models-measurement-and-predictive-value-organised-banco",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "unconventional-monetary-policy-qe",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "unconventional-monetary-policy",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "unemployment-and-job-search",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "unfinished-revolution-gender-norms-discrimination-and-policy",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "urban-and-housing",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "wages-compensation-and-firm-dynamics",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "wages-firms-and-labor-market-shocks",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "wealth-and-inequality",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "wealth-housing-and-distribution",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "what-workers-want-emerging-evidence-compensating-differentials-nonwage-amenities",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "work-arrangements-and-labour-market-trajectories",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "work-incentives-and-careers",
+"type": "UNTYPED",
+"papers": 3
+},
+{
+"session": "yield-curve-and-macro-events",
+"type": "UNTYPED",
+"papers": 2
+},
+{
+"session": "young-economist-awards",
+"type": "UNTYPED",
+"papers": 0
+}
+]

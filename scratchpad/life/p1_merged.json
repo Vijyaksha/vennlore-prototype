@@ -1,0 +1,1418 @@
+[
+ {
+  "conference": "ASCB|EMBO Cell Bio Annual Meeting",
+  "society": "American Society for Cell Biology",
+  "country_or_region": "US",
+  "subfield": "cell biology",
+  "frequency_note": "annual",
+  "why_listed": "knowledge-first list",
+  "_src": "knowledge"
+ },
+ {
+  "conference": "American Physiology Summit",
+  "society": "American Physiological Society",
+  "country_or_region": "US",
+  "subfield": "physiology",
+  "frequency_note": "annual (successor to Experimental Biology)",
+  "why_listed": "knowledge-first list",
+  "_src": "knowledge"
+ },
+ {
+  "conference": "ASPET Annual Meeting",
+  "society": "American Society for Pharmacology and Experimental Therapeutics",
+  "country_or_region": "US",
+  "subfield": "pharmacology",
+  "frequency_note": "annual",
+  "why_listed": "knowledge-first list | NOTE: standalone successor to 'ASPET at EB' (Deleted - Medicine, deleted because Experimental Biology ended) — not a duplicate",
+  "_src": "knowledge"
+ },
+ {
+  "conference": "AAA Annual Meeting (Anatomy Connected)",
+  "society": "American Association for Anatomy",
+  "country_or_region": "US",
+  "subfield": "anatomy",
+  "frequency_note": "annual",
+  "why_listed": "knowledge-first list",
+  "_src": "knowledge"
+ },
+ {
+  "conference": "The Allied Genetics Conference (TAGC)",
+  "society": "Genetics Society of America",
+  "country_or_region": "US",
+  "subfield": "genetics",
+  "frequency_note": "periodic umbrella",
+  "why_listed": "knowledge-first list | NOTE: in TAGC years the Drosophila, C. elegans, Yeast, Zebrafish and mouse meetings run INSIDE TAGC — count a given year once",
+  "_src": "knowledge"
+ },
+ {
+  "conference": "Annual Drosophila Research Conference",
+  "society": "Genetics Society of America",
+  "country_or_region": "US",
+  "subfield": "genetics",
+  "frequency_note": "annual",
+  "why_listed": "knowledge-first list",
+  "_src": "knowledge"
+ },
+ {
+  "conference": "International C. elegans Conference",
+  "society": "Genetics Society of America",
+  "country_or_region": "US",
+  "subfield": "genetics",
+  "frequency_note": "biennial",
+  "why_listed": "knowledge-first list",
+  "_src": "knowledge"
+ },
+ {
+  "conference": "Yeast Genetics Meeting",
+  "society": "Genetics Society of America",
+  "country_or_region": "US",
+  "subfield": "genetics",
+  "frequency_note": "biennial",
+  "why_listed": "knowledge-first list",
+  "_src": "knowledge"
+ },
+ {
+  "conference": "Plant and Animal Genome Conference (PAG)",
+  "society": "PAG / Scherago",
+  "country_or_region": "US",
+  "subfield": "genomics",
+  "frequency_note": "annual",
+  "why_listed": "knowledge-first list",
+  "_src": "knowledge"
+ },
+ {
+  "conference": "AGBT General Meeting (Advances in Genome Biology and Technology)",
+  "society": "AGBT",
+  "country_or_region": "US",
+  "subfield": "genomics",
+  "frequency_note": "annual",
+  "why_listed": "knowledge-first list",
+  "_src": "knowledge"
+ },
+ {
+  "conference": "Cold Spring Harbor Laboratory Meetings (series)",
+  "society": "CSHL",
+  "country_or_region": "US",
+  "subfield": "molecular biology",
+  "frequency_note": "series",
+  "why_listed": "knowledge-first list",
+  "_src": "knowledge"
+ },
+ {
+  "conference": "FASEB Science Research Conferences (series)",
+  "society": "FASEB",
+  "country_or_region": "US",
+  "subfield": "molecular biology",
+  "frequency_note": "series",
+  "why_listed": "knowledge-first list",
+  "_src": "knowledge"
+ },
+ {
+  "conference": "Evolution Meeting (SSE/ASN/SSB joint)",
+  "society": "Society for the Study of Evolution",
+  "country_or_region": "US",
+  "subfield": "evolution",
+  "frequency_note": "annual",
+  "why_listed": "knowledge-first list",
+  "_src": "knowledge"
+ },
+ {
+  "conference": "RNA Society Annual Meeting",
+  "society": "RNA Society",
+  "country_or_region": "US",
+  "subfield": "molecular biology",
+  "frequency_note": "annual",
+  "why_listed": "knowledge-first list",
+  "_src": "knowledge"
+ },
+ {
+  "conference": "Society for Developmental Biology Annual Meeting",
+  "society": "SDB",
+  "country_or_region": "US",
+  "subfield": "developmental biology",
+  "frequency_note": "annual",
+  "why_listed": "knowledge-first list",
+  "_src": "knowledge"
+ },
+ {
+  "conference": "SSR Annual Meeting",
+  "society": "Society for the Study of Reproduction",
+  "country_or_region": "US",
+  "subfield": "reproductive biology",
+  "frequency_note": "annual",
+  "why_listed": "knowledge-first list",
+  "_src": "knowledge"
+ },
+ {
+  "conference": "Cognitive Neuroscience Society Annual Meeting",
+  "society": "CNS",
+  "country_or_region": "US",
+  "subfield": "neuroscience",
+  "frequency_note": "annual",
+  "why_listed": "knowledge-first list",
+  "_src": "knowledge"
+ },
+ {
+  "conference": "Vision Sciences Society Annual Meeting (VSS)",
+  "society": "VSS",
+  "country_or_region": "US",
+  "subfield": "neuroscience",
+  "frequency_note": "annual",
+  "why_listed": "knowledge-first list",
+  "_src": "knowledge"
+ },
+ {
+  "conference": "AChemS Annual Meeting",
+  "society": "Association for Chemoreception Sciences",
+  "country_or_region": "US",
+  "subfield": "neuroscience",
+  "frequency_note": "annual",
+  "why_listed": "knowledge-first list",
+  "_src": "knowledge"
+ },
+ {
+  "conference": "Society for Psychophysiological Research Annual Meeting",
+  "society": "SPR",
+  "country_or_region": "US",
+  "subfield": "neuroscience",
+  "frequency_note": "annual",
+  "why_listed": "knowledge-first list",
+  "_src": "knowledge"
+ },
+ {
+  "conference": "ASV Annual Meeting",
+  "society": "American Society for Virology",
+  "country_or_region": "US",
+  "subfield": "virology",
+  "frequency_note": "annual",
+  "why_listed": "knowledge-first list",
+  "_src": "knowledge",
+  "duplicate_of": "Census - Medicine & Health :: ASV Annual Meeting (Microbiology & virology)"
+ },
+ {
+  "conference": "American Society of Parasitologists Annual Meeting",
+  "society": "ASP",
+  "country_or_region": "US",
+  "subfield": "parasitology",
+  "frequency_note": "annual",
+  "why_listed": "knowledge-first list",
+  "_src": "knowledge"
+ },
+ {
+  "conference": "SIMB Annual Meeting",
+  "society": "Society for Industrial Microbiology and Biotechnology",
+  "country_or_region": "US",
+  "subfield": "microbiology",
+  "frequency_note": "annual",
+  "why_listed": "knowledge-first list",
+  "_src": "knowledge"
+ },
+ {
+  "conference": "Entomology (ESA Annual Meeting)",
+  "society": "Entomological Society of America",
+  "country_or_region": "US",
+  "subfield": "entomology",
+  "frequency_note": "annual",
+  "why_listed": "knowledge-first list | NOTE: Entomological Society of America — NOT the Ecological Society of America row on Census - Physical Sciences",
+  "_src": "knowledge"
+ },
+ {
+  "conference": "ESA Annual Meeting (Ecological Society of America)",
+  "society": "Ecological Society of America",
+  "country_or_region": "US",
+  "subfield": "ecology",
+  "frequency_note": "annual",
+  "why_listed": "knowledge-first list",
+  "_src": "knowledge",
+  "duplicate_of": "Census - Physical Sciences :: ESA Annual Meeting"
+ },
+ {
+  "conference": "SICB Annual Meeting",
+  "society": "Society for Integrative and Comparative Biology",
+  "country_or_region": "US",
+  "subfield": "organismal biology",
+  "frequency_note": "annual",
+  "why_listed": "knowledge-first list",
+  "_src": "knowledge"
+ },
+ {
+  "conference": "Joint Meeting of Ichthyologists and Herpetologists (JMIH)",
+  "society": "ASIH / SSAR / HL",
+  "country_or_region": "US",
+  "subfield": "zoology",
+  "frequency_note": "annual",
+  "why_listed": "knowledge-first list",
+  "_src": "knowledge"
+ },
+ {
+  "conference": "American Ornithological Society Annual Meeting",
+  "society": "AOS",
+  "country_or_region": "US",
+  "subfield": "ornithology",
+  "frequency_note": "annual",
+  "why_listed": "knowledge-first list",
+  "_src": "knowledge"
+ },
+ {
+  "conference": "The Wildlife Society Annual Conference",
+  "society": "TWS",
+  "country_or_region": "US",
+  "subfield": "wildlife biology",
+  "frequency_note": "annual",
+  "why_listed": "knowledge-first list",
+  "_src": "knowledge"
+ },
+ {
+  "conference": "American Fisheries Society Annual Meeting",
+  "society": "AFS",
+  "country_or_region": "US",
+  "subfield": "fisheries",
+  "frequency_note": "annual",
+  "why_listed": "knowledge-first list",
+  "_src": "knowledge"
+ },
+ {
+  "conference": "ASLO Aquatic Sciences Meeting",
+  "society": "ASLO",
+  "country_or_region": "US",
+  "subfield": "limnology/oceanography",
+  "frequency_note": "biennial",
+  "why_listed": "knowledge-first list",
+  "_src": "knowledge"
+ },
+ {
+  "conference": "Society for Freshwater Science Annual Meeting",
+  "society": "SFS",
+  "country_or_region": "US",
+  "subfield": "freshwater ecology",
+  "frequency_note": "annual",
+  "why_listed": "knowledge-first list",
+  "_src": "knowledge"
+ },
+ {
+  "conference": "CERF Biennial Conference",
+  "society": "Coastal and Estuarine Research Federation",
+  "country_or_region": "US",
+  "subfield": "estuarine science",
+  "frequency_note": "biennial",
+  "why_listed": "knowledge-first list",
+  "_src": "knowledge"
+ },
+ {
+  "conference": "Ocean Sciences Meeting",
+  "society": "AGU / ASLO / TOS",
+  "country_or_region": "US",
+  "subfield": "ocean sciences",
+  "frequency_note": "biennial",
+  "why_listed": "knowledge-first list",
+  "_src": "knowledge"
+ },
+ {
+  "conference": "American Society of Mammalogists Annual Meeting",
+  "society": "ASM (mammalogy)",
+  "country_or_region": "US",
+  "subfield": "mammalogy",
+  "frequency_note": "annual",
+  "why_listed": "knowledge-first list",
+  "_src": "knowledge"
+ },
+ {
+  "conference": "Animal Behavior Society Annual Meeting",
+  "society": "ABS",
+  "country_or_region": "US",
+  "subfield": "animal behavior",
+  "frequency_note": "annual",
+  "why_listed": "knowledge-first list",
+  "_src": "knowledge"
+ },
+ {
+  "conference": "Botany Conference",
+  "society": "Botanical Society of America (+ ASPT etc.)",
+  "country_or_region": "US",
+  "subfield": "botany",
+  "frequency_note": "annual",
+  "why_listed": "knowledge-first list",
+  "_src": "knowledge"
+ },
+ {
+  "conference": "Plant Biology (ASPB Annual Meeting)",
+  "society": "American Society of Plant Biologists",
+  "country_or_region": "US",
+  "subfield": "plant biology",
+  "frequency_note": "annual",
+  "why_listed": "knowledge-first list",
+  "_src": "knowledge"
+ },
+ {
+  "conference": "Plant Health (APS Annual Meeting)",
+  "society": "American Phytopathological Society",
+  "country_or_region": "US",
+  "subfield": "plant pathology",
+  "frequency_note": "annual",
+  "why_listed": "knowledge-first list",
+  "_src": "knowledge"
+ },
+ {
+  "conference": "ASA-CSSA-SSSA International Annual Meeting (CANVAS)",
+  "society": "Agronomy / Crop / Soil Science Societies",
+  "country_or_region": "US",
+  "subfield": "agronomy",
+  "frequency_note": "annual",
+  "why_listed": "knowledge-first list",
+  "_src": "knowledge"
+ },
+ {
+  "conference": "ASHS Annual Conference",
+  "society": "American Society for Horticultural Science",
+  "country_or_region": "US",
+  "subfield": "horticulture",
+  "frequency_note": "annual",
+  "why_listed": "knowledge-first list",
+  "_src": "knowledge"
+ },
+ {
+  "conference": "WSSA Annual Meeting",
+  "society": "Weed Science Society of America",
+  "country_or_region": "US",
+  "subfield": "weed science",
+  "frequency_note": "annual",
+  "why_listed": "knowledge-first list",
+  "_src": "knowledge"
+ },
+ {
+  "conference": "Mycological Society of America Annual Meeting",
+  "society": "MSA",
+  "country_or_region": "US",
+  "subfield": "mycology",
+  "frequency_note": "annual",
+  "why_listed": "knowledge-first list",
+  "_src": "knowledge"
+ },
+ {
+  "conference": "ASAS Annual Meeting (American Society of Animal Science)",
+  "society": "American Society of Animal Science",
+  "country_or_region": "US",
+  "subfield": "animal science",
+  "frequency_note": "annual",
+  "why_listed": "knowledge-first list; renamed from 'ASAS-ADSA Joint Annual Meeting' — ADSA now holds its own annual meeting (separate row); verify the split in Phase 2",
+  "_src": "knowledge"
+ },
+ {
+  "conference": "Poultry Science Association Annual Meeting",
+  "society": "PSA",
+  "country_or_region": "US",
+  "subfield": "animal science",
+  "frequency_note": "annual",
+  "why_listed": "knowledge-first list",
+  "_src": "knowledge"
+ },
+ {
+  "conference": "BMES Annual Meeting",
+  "society": "Biomedical Engineering Society",
+  "country_or_region": "US",
+  "subfield": "bioengineering",
+  "frequency_note": "annual",
+  "why_listed": "knowledge-first list",
+  "_src": "knowledge",
+  "duplicate_of": "Census - Medicine & Health :: BMES Annual Meeting"
+ },
+ {
+  "conference": "Society For Biomaterials Annual Meeting",
+  "society": "SFB",
+  "country_or_region": "US",
+  "subfield": "biomaterials",
+  "frequency_note": "annual",
+  "why_listed": "knowledge-first list",
+  "_src": "knowledge",
+  "duplicate_of": "Census - Medicine & Health :: Society For Biomaterials Annual Meeting"
+ },
+ {
+  "conference": "TERMIS-AM Conference",
+  "society": "Tissue Engineering and Regenerative Medicine International Society",
+  "country_or_region": "US",
+  "subfield": "tissue engineering",
+  "frequency_note": "annual",
+  "why_listed": "knowledge-first list | NOTE: distinct from TERMIS World Congress (on Medicine sheet); TERMIS-AM is not held in World Congress years",
+  "_src": "knowledge"
+ },
+ {
+  "conference": "SLAS International Conference & Exhibition",
+  "society": "Society for Laboratory Automation and Screening",
+  "country_or_region": "US",
+  "subfield": "lab automation",
+  "frequency_note": "annual",
+  "why_listed": "knowledge-first list",
+  "_src": "knowledge"
+ },
+ {
+  "conference": "ISMB Conference",
+  "society": "International Society for Computational Biology",
+  "country_or_region": "US",
+  "subfield": "bioinformatics",
+  "frequency_note": "annual (often US)",
+  "why_listed": "knowledge-first list",
+  "_src": "knowledge"
+ },
+ {
+  "conference": "ASGCT Annual Meeting",
+  "society": "American Society of Gene & Cell Therapy",
+  "country_or_region": "US",
+  "subfield": "gene therapy",
+  "frequency_note": "annual",
+  "why_listed": "knowledge-first list",
+  "_src": "knowledge",
+  "duplicate_of": "Census - Medicine & Health :: ASGCT Annual Meeting"
+ },
+ {
+  "conference": "Society for Glycobiology Annual Meeting",
+  "society": "SfG",
+  "country_or_region": "US",
+  "subfield": "glycobiology",
+  "frequency_note": "annual",
+  "why_listed": "knowledge-first list",
+  "_src": "knowledge"
+ },
+ {
+  "conference": "Controlled Release Society Annual Meeting",
+  "society": "CRS",
+  "country_or_region": "US",
+  "subfield": "pharmaceutical sciences",
+  "frequency_note": "annual",
+  "why_listed": "knowledge-first list",
+  "_src": "knowledge",
+  "duplicate_of": "Census - Chemistry :: Controlled Release Society Annual Meeting"
+ },
+ {
+  "conference": "American Society of Pharmacognosy Annual Meeting",
+  "society": "ASP (pharmacognosy)",
+  "country_or_region": "US",
+  "subfield": "natural products",
+  "frequency_note": "annual",
+  "why_listed": "knowledge-first list",
+  "_src": "knowledge"
+ },
+ {
+  "conference": "Radiation Research Society Annual Meeting",
+  "society": "RRS",
+  "country_or_region": "US",
+  "subfield": "radiation biology",
+  "frequency_note": "annual",
+  "why_listed": "knowledge-first list",
+  "_src": "knowledge"
+ },
+ {
+  "conference": "EMGS Annual Meeting",
+  "society": "Environmental Mutagenesis and Genomics Society",
+  "country_or_region": "US",
+  "subfield": "genetic toxicology",
+  "frequency_note": "annual",
+  "why_listed": "knowledge-first list",
+  "_src": "knowledge"
+ },
+ {
+  "conference": "Society for Leukocyte Biology Annual Meeting",
+  "society": "SLB",
+  "country_or_region": "US",
+  "subfield": "immunology",
+  "frequency_note": "annual",
+  "why_listed": "knowledge-first list",
+  "_src": "knowledge"
+ },
+ {
+  "conference": "AABA Annual Meeting",
+  "society": "American Association of Biological Anthropologists",
+  "country_or_region": "US",
+  "subfield": "biological anthropology",
+  "frequency_note": "annual",
+  "why_listed": "knowledge-first list",
+  "_src": "knowledge"
+ },
+ {
+  "conference": "ABRCMS (Annual Biomedical Research Conference for Minoritized Scientists)",
+  "society": "ASM",
+  "country_or_region": "US",
+  "subfield": "student research",
+  "frequency_note": "annual",
+  "why_listed": "knowledge-first list",
+  "_src": "knowledge"
+ },
+ {
+  "conference": "SACNAS National Diversity in STEM Conference (NDiSTEM)",
+  "society": "SACNAS",
+  "country_or_region": "US",
+  "subfield": "student research",
+  "frequency_note": "annual",
+  "why_listed": "knowledge-first list",
+  "_src": "knowledge"
+ },
+ {
+  "conference": "NCUR (National Conference on Undergraduate Research)",
+  "society": "CUR",
+  "country_or_region": "US",
+  "subfield": "student research",
+  "frequency_note": "annual",
+  "why_listed": "knowledge-first list",
+  "_src": "knowledge"
+ },
+ {
+  "conference": "Society for Mathematical Biology Annual Meeting",
+  "society": "SMB",
+  "country_or_region": "US",
+  "subfield": "mathematical biology",
+  "frequency_note": "annual",
+  "why_listed": "knowledge-first list",
+  "_src": "knowledge"
+ },
+ {
+  "conference": "Society for Conservation Biology — ICCB / NACCB",
+  "society": "SCB",
+  "country_or_region": "US",
+  "subfield": "conservation biology",
+  "frequency_note": "biennial",
+  "why_listed": "knowledge-first list",
+  "_src": "knowledge"
+ },
+ {
+  "conference": "American Society for Microbiology — ASM Microbe",
+  "society": "ASM",
+  "country_or_region": "US",
+  "subfield": "microbiology",
+  "frequency_note": "annual",
+  "why_listed": "knowledge-first list",
+  "_src": "knowledge",
+  "duplicate_of": "Census - Medicine & Health :: ASM Microbe"
+ },
+ {
+  "conference": "SfN Neuroscience",
+  "society": "Society for Neuroscience",
+  "country_or_region": "US",
+  "subfield": "neuroscience",
+  "frequency_note": "annual",
+  "why_listed": "knowledge-first list",
+  "_src": "knowledge",
+  "duplicate_of": "Census - Medicine & Health :: Neuroscience (SfN Annual Meeting)"
+ },
+ {
+  "conference": "ASHG Annual Meeting",
+  "society": "American Society of Human Genetics",
+  "country_or_region": "US",
+  "subfield": "human genetics",
+  "frequency_note": "annual",
+  "why_listed": "knowledge-first list",
+  "_src": "knowledge",
+  "duplicate_of": "Census - Medicine & Health :: ASHG Annual Meeting"
+ },
+ {
+  "conference": "AAI IMMUNOLOGY",
+  "society": "American Association of Immunologists",
+  "country_or_region": "US",
+  "subfield": "immunology",
+  "frequency_note": "annual",
+  "why_listed": "knowledge-first list",
+  "_src": "knowledge",
+  "duplicate_of": "Census - Medicine & Health :: AAI IMMUNOLOGY"
+ },
+ {
+  "conference": "ISSCR Annual Meeting",
+  "society": "ISSCR",
+  "country_or_region": "US",
+  "subfield": "stem cells",
+  "frequency_note": "annual",
+  "why_listed": "knowledge-first list",
+  "_src": "knowledge",
+  "duplicate_of": "Census - Medicine & Health :: ISSCR Annual Meeting"
+ },
+ {
+  "conference": "NUTRITION (ASN)",
+  "society": "American Society for Nutrition",
+  "country_or_region": "US",
+  "subfield": "nutrition",
+  "frequency_note": "annual",
+  "why_listed": "knowledge-first list",
+  "_src": "knowledge",
+  "duplicate_of": "Census - Medicine & Health :: NUTRITION (American Society for Nutrition)"
+ },
+ {
+  "conference": "Biophysical Society Annual Meeting",
+  "society": "Biophysical Society",
+  "country_or_region": "US",
+  "subfield": "biophysics",
+  "frequency_note": "annual",
+  "why_listed": "knowledge-first list",
+  "_src": "knowledge",
+  "duplicate_of": "Census - Chemistry :: Biophysical Society Annual Meeting"
+ },
+ {
+  "conference": "ASBMB Annual Meeting",
+  "society": "ASBMB",
+  "country_or_region": "US",
+  "subfield": "biochemistry",
+  "frequency_note": "annual",
+  "why_listed": "knowledge-first list",
+  "_src": "knowledge",
+  "duplicate_of": "Census - Chemistry :: ASBMB Annual Meeting"
+ },
+ {
+  "conference": "Protein Society Annual Symposium",
+  "society": "Protein Society",
+  "country_or_region": "US",
+  "subfield": "biochemistry",
+  "frequency_note": "annual",
+  "why_listed": "knowledge-first list",
+  "_src": "knowledge",
+  "duplicate_of": "Census - Chemistry :: The Protein Society Annual Symposium"
+ },
+ {
+  "conference": "Keystone Symposia (series)",
+  "society": "Keystone Symposia",
+  "country_or_region": "US",
+  "subfield": "molecular biology",
+  "frequency_note": "series",
+  "why_listed": "knowledge-first list",
+  "_src": "knowledge",
+  "duplicate_of": "Census - Chemistry :: Keystone Symposia on Molecular and Cellular Biology"
+ },
+ {
+  "conference": "SOT Annual Meeting",
+  "society": "Society of Toxicology",
+  "country_or_region": "US",
+  "subfield": "toxicology",
+  "frequency_note": "annual",
+  "why_listed": "knowledge-first list",
+  "_src": "knowledge",
+  "duplicate_of": "Deleted - Chemistry :: SOT Annual Meeting (Society of Toxicology)"
+ },
+ {
+  "conference": "IFT FIRST",
+  "society": "Institute of Food Technologists",
+  "country_or_region": "US",
+  "subfield": "food science",
+  "frequency_note": "annual",
+  "why_listed": "knowledge-first list",
+  "_src": "knowledge",
+  "duplicate_of": "Census - Chemistry :: IFT FIRST / IFT Annual Event & Food Expo"
+ },
+ {
+  "conference": "AAPS PharmSci 360",
+  "society": "AAPS",
+  "country_or_region": "US",
+  "subfield": "pharmaceutical sciences",
+  "frequency_note": "annual",
+  "why_listed": "knowledge-first list",
+  "_src": "knowledge",
+  "duplicate_of": "Deleted - Chemistry :: AAPS PharmSci 360"
+ },
+ {
+  "conference": "ARVO Annual Meeting",
+  "society": "Association for Research in Vision and Ophthalmology",
+  "country_or_region": "US",
+  "subfield": "vision science",
+  "frequency_note": "annual",
+  "why_listed": "knowledge-first list",
+  "_src": "knowledge",
+  "duplicate_of": "Census - Medicine & Health :: ARVO Annual Meeting"
+ },
+ {
+  "conference": "OHBM Annual Meeting",
+  "society": "Organization for Human Brain Mapping",
+  "country_or_region": "US",
+  "subfield": "neuroimaging",
+  "frequency_note": "annual (rotates, US some years)",
+  "why_listed": "knowledge-first list",
+  "_src": "knowledge"
+ },
+ {
+  "conference": "AAAS Annual Meeting",
+  "society": "AAAS",
+  "country_or_region": "US",
+  "subfield": "general science",
+  "frequency_note": "annual",
+  "why_listed": "knowledge-first list",
+  "_src": "knowledge",
+  "duplicate_of": "Deleted - Physical Sciences :: AAAS Annual Meeting"
+ },
+ {
+  "conference": "BIO International Convention",
+  "society": "Biotechnology Innovation Organization",
+  "country_or_region": "US",
+  "subfield": "biotech",
+  "frequency_note": "annual",
+  "why_listed": "knowledge-first list",
+  "_src": "knowledge",
+  "duplicate_of": "Census - Medicine & Health :: BIO International Convention"
+ },
+ {
+  "conference": "American Aging Association Annual Meeting",
+  "society": "American Aging Association (AGE)",
+  "country_or_region": "US",
+  "subfield": "aging biology",
+  "frequency_note": "",
+  "why_listed": "sweep 1 (federation lists / list queries)",
+  "source_url": "https://www.faseb.org/about/who-we-are",
+  "_src": "sweep1"
+ },
+ {
+  "conference": "ASIP Annual Meeting",
+  "society": "American Society for Investigative Pathology",
+  "country_or_region": "US",
+  "subfield": "pathology",
+  "frequency_note": "",
+  "why_listed": "sweep 1 (federation lists / list queries)",
+  "source_url": "https://www.faseb.org/about/who-we-are",
+  "_src": "sweep1"
+ },
+ {
+  "conference": "AMP Annual Meeting & Expo",
+  "society": "Association for Molecular Pathology",
+  "country_or_region": "US",
+  "subfield": "molecular pathology",
+  "frequency_note": "",
+  "why_listed": "sweep 1 (federation lists / list queries)",
+  "source_url": "https://www.faseb.org/about/who-we-are",
+  "_src": "sweep1"
+ },
+ {
+  "conference": "Histochemical Society Annual Meeting",
+  "society": "The Histochemical Society",
+  "country_or_region": "US",
+  "subfield": "histochemistry",
+  "frequency_note": "",
+  "why_listed": "sweep 1 (federation lists / list queries)",
+  "source_url": "https://www.faseb.org/about/who-we-are",
+  "_src": "sweep1"
+ },
+ {
+  "conference": "Shock Society Annual Conference",
+  "society": "Shock Society",
+  "country_or_region": "US",
+  "subfield": "shock/trauma biology",
+  "frequency_note": "",
+  "why_listed": "sweep 1 (federation lists / list queries)",
+  "source_url": "https://www.faseb.org/about/who-we-are",
+  "_src": "sweep1"
+ },
+ {
+  "conference": "SEBM Annual Meeting",
+  "society": "Society for Experimental Biology and Medicine",
+  "country_or_region": "US",
+  "subfield": "experimental biology",
+  "frequency_note": "",
+  "why_listed": "sweep 1 (federation lists / list queries)",
+  "source_url": "https://www.faseb.org/about/who-we-are",
+  "_src": "sweep1"
+ },
+ {
+  "conference": "SfRBM Annual Conference",
+  "society": "Society for Redox Biology and Medicine",
+  "country_or_region": "US",
+  "subfield": "redox biology",
+  "frequency_note": "",
+  "why_listed": "sweep 1 (federation lists / list queries)",
+  "source_url": "https://www.faseb.org/about/who-we-are",
+  "_src": "sweep1"
+ },
+ {
+  "conference": "ENDO (Endocrine Society Annual Meeting)",
+  "society": "Endocrine Society",
+  "country_or_region": "US",
+  "subfield": "endocrinology",
+  "frequency_note": "",
+  "why_listed": "sweep 1 (federation lists / list queries)",
+  "source_url": "https://www.faseb.org/about/who-we-are",
+  "_src": "sweep1",
+  "duplicate_of": "Census - Medicine & Health :: ENDO (Endocrine Society)"
+ },
+ {
+  "conference": "American Arachnological Society Annual Meeting",
+  "society": "American Arachnological Society",
+  "country_or_region": "US",
+  "subfield": "arachnology",
+  "frequency_note": "",
+  "why_listed": "sweep 1 (federation lists / list queries)",
+  "source_url": "https://www.aibs.org/membership/",
+  "_src": "sweep1"
+ },
+ {
+  "conference": "American Fern Society meeting (at Botany)",
+  "society": "American Fern Society",
+  "country_or_region": "US",
+  "subfield": "botany",
+  "frequency_note": "",
+  "why_listed": "sweep 1 (federation lists / list queries)",
+  "source_url": "https://www.aibs.org/membership/",
+  "_src": "sweep1",
+  "duplicate_of": "Census - Life Sciences :: Botany Conference"
+ },
+ {
+  "conference": "American Malacological Society Annual Meeting",
+  "society": "American Malacological Society",
+  "country_or_region": "US",
+  "subfield": "malacology",
+  "frequency_note": "",
+  "why_listed": "sweep 1 (federation lists / list queries)",
+  "source_url": "https://www.aibs.org/membership/",
+  "_src": "sweep1"
+ },
+ {
+  "conference": "ASGSR Annual Meeting",
+  "society": "American Society for Gravitational and Space Research",
+  "country_or_region": "US",
+  "subfield": "space biology",
+  "frequency_note": "",
+  "why_listed": "sweep 1 (federation lists / list queries)",
+  "source_url": "https://www.aibs.org/membership/",
+  "_src": "sweep1",
+  "duplicate_of": "Deleted - Physical Sciences :: ASGSR Annual Meeting"
+ },
+ {
+  "conference": "American Society of Naturalists (at Evolution)",
+  "society": "American Society of Naturalists",
+  "country_or_region": "US",
+  "subfield": "evolution",
+  "frequency_note": "",
+  "why_listed": "sweep 1 (federation lists / list queries)",
+  "source_url": "https://www.aibs.org/membership/",
+  "_src": "sweep1",
+  "duplicate_of": "Census - Life Sciences :: Evolution Meeting (SSE/ASN/SSB joint)"
+ },
+ {
+  "conference": "ASPT Annual Meeting (at Botany)",
+  "society": "American Society of Plant Taxonomists",
+  "country_or_region": "US",
+  "subfield": "plant systematics",
+  "frequency_note": "",
+  "why_listed": "sweep 1 (federation lists / list queries)",
+  "source_url": "https://www.aibs.org/membership/",
+  "_src": "sweep1",
+  "duplicate_of": "Census - Life Sciences :: Botany Conference"
+ },
+ {
+  "conference": "American Society of Primatologists Annual Meeting",
+  "society": "ASP (primatology)",
+  "country_or_region": "US",
+  "subfield": "primatology",
+  "frequency_note": "",
+  "why_listed": "sweep 1 (federation lists / list queries)",
+  "source_url": "https://www.aibs.org/membership/",
+  "_src": "sweep1"
+ },
+ {
+  "conference": "ATBC Annual Meeting",
+  "society": "Association for Tropical Biology and Conservation",
+  "country_or_region": "US",
+  "subfield": "tropical biology",
+  "frequency_note": "",
+  "why_listed": "sweep 1 (federation lists / list queries)",
+  "source_url": "https://www.aibs.org/membership/",
+  "_src": "sweep1"
+ },
+ {
+  "conference": "HAPS Annual Conference",
+  "society": "Human Anatomy & Physiology Society",
+  "country_or_region": "US",
+  "subfield": "biology education",
+  "frequency_note": "",
+  "why_listed": "sweep 1 (federation lists / list queries)",
+  "source_url": "https://www.aibs.org/membership/",
+  "_src": "sweep1"
+ },
+ {
+  "conference": "Crustacean Society Summer Meeting",
+  "society": "The Crustacean Society",
+  "country_or_region": "US",
+  "subfield": "carcinology",
+  "frequency_note": "",
+  "why_listed": "sweep 1 (federation lists / list queries)",
+  "source_url": "https://www.aibs.org/membership/",
+  "_src": "sweep1"
+ },
+ {
+  "conference": "Herpetologists' League (at JMIH)",
+  "society": "Herpetologists' League",
+  "country_or_region": "US",
+  "subfield": "herpetology",
+  "frequency_note": "",
+  "why_listed": "sweep 1 (federation lists / list queries)",
+  "source_url": "https://www.aibs.org/membership/",
+  "_src": "sweep1",
+  "duplicate_of": "Census - Life Sciences :: Joint Meeting of Ichthyologists and Herpetologists (JMIH)"
+ },
+ {
+  "conference": "National Shellfisheries Association Annual Meeting",
+  "society": "NSA",
+  "country_or_region": "US",
+  "subfield": "shellfish biology",
+  "frequency_note": "",
+  "why_listed": "sweep 1 (federation lists / list queries)",
+  "source_url": "https://www.aibs.org/membership/",
+  "_src": "sweep1"
+ },
+ {
+  "conference": "Phycological Society of America Annual Meeting",
+  "society": "PSA (phycology)",
+  "country_or_region": "US",
+  "subfield": "phycology",
+  "frequency_note": "",
+  "why_listed": "sweep 1 (federation lists / list queries)",
+  "source_url": "https://www.aibs.org/membership/",
+  "_src": "sweep1"
+ },
+ {
+  "conference": "Society for Behavioral Neuroendocrinology Annual Meeting",
+  "society": "SBN",
+  "country_or_region": "US",
+  "subfield": "neuroendocrinology",
+  "frequency_note": "",
+  "why_listed": "sweep 1 (federation lists / list queries)",
+  "source_url": "https://www.aibs.org/membership/",
+  "_src": "sweep1"
+ },
+ {
+  "conference": "Society for Ethnobiology/Ethnobotany Annual Meeting",
+  "society": "Society for Ethnobotany",
+  "country_or_region": "US",
+  "subfield": "ethnobotany",
+  "frequency_note": "",
+  "why_listed": "sweep 1 (federation lists / list queries)",
+  "source_url": "https://www.aibs.org/membership/",
+  "_src": "sweep1"
+ },
+ {
+  "conference": "In Vitro Biology Meeting (SIVB)",
+  "society": "Society for In Vitro Biology",
+  "country_or_region": "US",
+  "subfield": "cell/tissue culture",
+  "frequency_note": "",
+  "why_listed": "sweep 1 (federation lists / list queries)",
+  "source_url": "https://www.aibs.org/membership/",
+  "_src": "sweep1"
+ },
+ {
+  "conference": "SSAR Annual Meeting",
+  "society": "Society for the Study of Amphibians and Reptiles",
+  "country_or_region": "US",
+  "subfield": "herpetology",
+  "frequency_note": "",
+  "why_listed": "sweep 1 (federation lists / list queries)",
+  "source_url": "https://www.aibs.org/membership/",
+  "_src": "sweep1",
+  "duplicate_of": "Census - Life Sciences :: Joint Meeting of Ichthyologists and Herpetologists (JMIH) — SSAR is a JMIH member society (verify in Phase 2 for years it met separately)"
+ },
+ {
+  "conference": "Society of Systematic Biologists (at Evolution)",
+  "society": "SSB",
+  "country_or_region": "US",
+  "subfield": "systematics",
+  "frequency_note": "",
+  "why_listed": "sweep 1 (federation lists / list queries)",
+  "source_url": "https://www.aibs.org/membership/",
+  "_src": "sweep1",
+  "duplicate_of": "Census - Life Sciences :: Evolution Meeting (SSE/ASN/SSB joint)"
+ },
+ {
+  "conference": "SVP Annual Meeting",
+  "society": "Society of Vertebrate Paleontology",
+  "country_or_region": "US",
+  "subfield": "paleontology",
+  "frequency_note": "",
+  "why_listed": "sweep 1 (federation lists / list queries)",
+  "source_url": "https://www.aibs.org/membership/",
+  "_src": "sweep1"
+ },
+ {
+  "conference": "Society of Nematologists Annual Meeting",
+  "society": "SON",
+  "country_or_region": "US",
+  "subfield": "nematology",
+  "frequency_note": "",
+  "why_listed": "sweep 1 (federation lists / list queries)",
+  "source_url": "https://www.aibs.org/membership/",
+  "_src": "sweep1"
+ },
+ {
+  "conference": "Southwestern Association of Naturalists Annual Meeting",
+  "society": "SWAN",
+  "country_or_region": "US",
+  "subfield": "natural history",
+  "frequency_note": "",
+  "why_listed": "sweep 1 (federation lists / list queries)",
+  "source_url": "https://www.aibs.org/membership/",
+  "_src": "sweep1"
+ },
+ {
+  "conference": "Society for Northwestern Vertebrate Biology Annual Meeting",
+  "society": "SNVB",
+  "country_or_region": "US",
+  "subfield": "vertebrate biology",
+  "frequency_note": "",
+  "why_listed": "sweep 1 (federation lists / list queries)",
+  "source_url": "https://www.aibs.org/membership/",
+  "_src": "sweep1"
+ },
+ {
+  "conference": "IBE Annual Conference",
+  "society": "Institute of Biological Engineering",
+  "country_or_region": "US",
+  "subfield": "biological engineering",
+  "frequency_note": "",
+  "why_listed": "sweep 1 (federation lists / list queries)",
+  "source_url": "https://ibe.org/2025-annual-conference/",
+  "_src": "sweep1"
+ },
+ {
+  "conference": "Association of Southeastern Biologists Annual Meeting (ASB)",
+  "society": "ASB",
+  "country_or_region": "US",
+  "subfield": "regional biology",
+  "frequency_note": "",
+  "why_listed": "sweep 1 (federation lists / list queries)",
+  "source_url": "https://www.sebiologists.org/asb-2025.html",
+  "_src": "sweep1"
+ },
+ {
+  "conference": "Northeastern Plant, Pest, and Soils Conference",
+  "society": "NEPPSC",
+  "country_or_region": "US",
+  "subfield": "agriculture",
+  "frequency_note": "",
+  "why_listed": "sweep 1 (federation lists / list queries)",
+  "source_url": "https://www.sciencesocieties.org/publications/csa-news/2022/october/more-than-a-national-meeting",
+  "_src": "sweep1"
+ },
+ {
+  "conference": "ASA Southern Branch Annual Meeting",
+  "society": "American Society of Agronomy",
+  "country_or_region": "US",
+  "subfield": "agronomy",
+  "frequency_note": "",
+  "why_listed": "sweep 1 (federation lists / list queries)",
+  "source_url": "https://www.agronomy.org/membership/branches/southern",
+  "_src": "sweep1"
+ },
+ {
+  "conference": "Society for Range Management Annual Meeting",
+  "society": "SRM",
+  "country_or_region": "US",
+  "subfield": "rangeland ecology",
+  "frequency_note": "",
+  "why_listed": "sweep 1 (federation lists / list queries)",
+  "source_url": "https://www.sciencesocieties.org/meetings",
+  "_src": "sweep1"
+ },
+ {
+  "conference": "Bio-IT World Conference & Expo",
+  "society": "Cambridge Healthtech Institute",
+  "country_or_region": "US",
+  "subfield": "bioinformatics (industry)",
+  "frequency_note": "",
+  "why_listed": "sweep 1 (federation lists / list queries)",
+  "source_url": "https://bioinformant.com/top-us-life-sciences-biotech-conferences/",
+  "_src": "sweep1"
+ },
+ {
+  "conference": "APA Convention (boundary: psychology)",
+  "society": "American Psychological Association",
+  "country_or_region": "US",
+  "subfield": "psychology — BOUNDARY, likely social sciences",
+  "frequency_note": "",
+  "why_listed": "sweep 1 (federation lists / list queries)",
+  "source_url": "https://pubscholars.org/blog/top-10-psychology-conferences-2026/",
+  "_src": "sweep1"
+ },
+ {
+  "conference": "APS Annual Convention (boundary: psychology)",
+  "society": "Association for Psychological Science",
+  "country_or_region": "US",
+  "subfield": "psychology — BOUNDARY",
+  "frequency_note": "",
+  "why_listed": "sweep 1 (federation lists / list queries)",
+  "source_url": "https://pubscholars.org/blog/top-10-psychology-conferences-2026/",
+  "_src": "sweep1"
+ },
+ {
+  "conference": "Fungal Genetics Conference (Asilomar)",
+  "society": "Genetics Society of America",
+  "country_or_region": "US",
+  "subfield": "fungal genetics",
+  "frequency_note": "",
+  "why_listed": "sweep 2",
+  "source_url": "https://genetics-gsa.org/attend-a-conference/",
+  "_src": "sweep2"
+ },
+ {
+  "conference": "International Conference on the Cell and Molecular Biology of Chlamydomonas",
+  "society": "Genetics Society of America",
+  "country_or_region": "US",
+  "subfield": "algal genetics",
+  "frequency_note": "",
+  "why_listed": "sweep 2",
+  "source_url": "https://genetics-gsa.org/attend-a-conference/",
+  "_src": "sweep2"
+ },
+ {
+  "conference": "International Mammalian Genome Conference (IMGC)",
+  "society": "International Mammalian Genome Society",
+  "country_or_region": "US",
+  "subfield": "mouse genetics",
+  "frequency_note": "",
+  "why_listed": "sweep 2",
+  "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8179689/",
+  "_src": "sweep2"
+ },
+ {
+  "conference": "International Zebrafish Conference",
+  "society": "International Zebrafish Society",
+  "country_or_region": "US",
+  "subfield": "zebrafish",
+  "frequency_note": "",
+  "why_listed": "sweep 2",
+  "source_url": "https://genetics-gsa.org/attend-a-conference/",
+  "_src": "sweep2"
+ },
+ {
+  "conference": "Maize Genetics Meeting",
+  "society": "Maize Genetics Executive Committee",
+  "country_or_region": "US",
+  "subfield": "plant genetics",
+  "frequency_note": "",
+  "why_listed": "sweep 2",
+  "source_url": "knowledge (GSA model-organism list)",
+  "_src": "sweep2"
+ },
+ {
+  "conference": "International Conference on Arabidopsis Research (ICAR)",
+  "society": "NAASC / MASC",
+  "country_or_region": "US",
+  "subfield": "plant genetics",
+  "frequency_note": "",
+  "why_listed": "sweep 2",
+  "source_url": "knowledge (GSA model-organism list)",
+  "_src": "sweep2"
+ },
+ {
+  "conference": "ACVIM Forum",
+  "society": "American College of Veterinary Internal Medicine",
+  "country_or_region": "US",
+  "subfield": "veterinary research — BOUNDARY (health)",
+  "frequency_note": "",
+  "why_listed": "sweep 2",
+  "source_url": "https://www.acvim.org/events-education/annual-meeting/past-annual-meetings/2026-acvim-forum",
+  "_src": "sweep2",
+  "duplicate_of": "Deleted - Medicine & Health :: ACVIM Forum"
+ },
+ {
+  "conference": "AVMA Convention",
+  "society": "American Veterinary Medical Association",
+  "country_or_region": "US",
+  "subfield": "veterinary — BOUNDARY (health)",
+  "frequency_note": "",
+  "why_listed": "sweep 2",
+  "source_url": "https://worldvet.org/news/submit-your-abstract-to-wvac2025-avma-convention/",
+  "_src": "sweep2",
+  "duplicate_of": "Deleted - Medicine & Health :: AAVMC / AVMA Convention"
+ },
+ {
+  "conference": "CRWAD Annual Meeting",
+  "society": "Conference of Research Workers in Animal Diseases",
+  "country_or_region": "US",
+  "subfield": "veterinary research",
+  "frequency_note": "",
+  "why_listed": "sweep 2",
+  "source_url": "https://www.acvim.org/board-certification/maintain-certification/pre-approved-meetings/saim-list-pre-approved-meetings",
+  "_src": "sweep2"
+ },
+ {
+  "conference": "WVC Annual Conference",
+  "society": "Western Veterinary Conference",
+  "country_or_region": "US",
+  "subfield": "veterinary CE — BOUNDARY (likely CURATED)",
+  "frequency_note": "",
+  "why_listed": "sweep 2",
+  "source_url": "https://www.ezyvet.com/veterinary-conferences",
+  "_src": "sweep2"
+ },
+ {
+  "conference": "Wildlife Disease Association Annual Conference",
+  "society": "WDA",
+  "country_or_region": "US",
+  "subfield": "wildlife health",
+  "frequency_note": "",
+  "why_listed": "sweep 2",
+  "source_url": "https://conference.ifas.ufl.edu/wda2018/call_abstracts.html",
+  "_src": "sweep2"
+ },
+ {
+  "conference": "Society for Marine Mammalogy Biennial Conference",
+  "society": "SMM",
+  "country_or_region": "US",
+  "subfield": "marine mammalogy",
+  "frequency_note": "",
+  "why_listed": "sweep 2",
+  "source_url": "https://en.wikipedia.org/wiki/Society_for_Marine_Mammalogy",
+  "_src": "sweep2"
+ },
+ {
+  "conference": "ASABE Annual International Meeting (AIM)",
+  "society": "American Society of Agricultural and Biological Engineers",
+  "country_or_region": "US",
+  "subfield": "agricultural/biological engineering",
+  "frequency_note": "",
+  "why_listed": "sweep 2",
+  "source_url": "https://asabe.org/events/2016-annual-international-meeting",
+  "_src": "sweep2"
+ },
+ {
+  "conference": "ADSA Annual Meeting",
+  "society": "American Dairy Science Association",
+  "country_or_region": "US",
+  "subfield": "dairy science",
+  "frequency_note": "",
+  "why_listed": "sweep 2",
+  "source_url": "https://www.adsa.org/Meetings/2025-Annual-Meeting/Program",
+  "_src": "sweep2"
+ },
+ {
+  "conference": "SWCS International Annual Conference",
+  "society": "Soil and Water Conservation Society",
+  "country_or_region": "US",
+  "subfield": "conservation",
+  "frequency_note": "",
+  "why_listed": "sweep 2",
+  "source_url": "https://www.swcs.org/events/past-events/past-annual-conferences",
+  "_src": "sweep2"
+ },
+ {
+  "conference": "IUMS Congress (when US-hosted)",
+  "society": "International Union of Microbiological Societies",
+  "country_or_region": "US",
+  "subfield": "microbiology",
+  "frequency_note": "",
+  "why_listed": "sweep 2",
+  "source_url": "https://iums2026.com/",
+  "_src": "sweep2"
+ },
+ {
+  "conference": "Cosyne (Computational and Systems Neuroscience)",
+  "society": "Cosyne",
+  "country_or_region": "US",
+  "subfield": "computational neuroscience",
+  "frequency_note": "",
+  "why_listed": "sweep 3 (gaps)",
+  "source_url": "https://www.cosyne.org/about-cosyne",
+  "_src": "sweep3"
+ },
+ {
+  "conference": "ARO MidWinter Meeting",
+  "society": "Association for Research in Otolaryngology",
+  "country_or_region": "US",
+  "subfield": "auditory neuroscience",
+  "frequency_note": "",
+  "why_listed": "sweep 3 (gaps)",
+  "source_url": "https://aro.org/meetings/past-midwinter-meetings/",
+  "_src": "sweep3",
+  "duplicate_of": "Census - Medicine & Health :: ARO MidWinter Meeting"
+ },
+ {
+  "conference": "American Society for Neurochemistry Annual Meeting",
+  "society": "ASN (neurochemistry)",
+  "country_or_region": "US",
+  "subfield": "neurochemistry",
+  "frequency_note": "",
+  "why_listed": "sweep 3 (gaps)",
+  "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9466556/",
+  "_src": "sweep3"
+ },
+ {
+  "conference": "SAF National Convention",
+  "society": "Society of American Foresters",
+  "country_or_region": "US",
+  "subfield": "forestry",
+  "frequency_note": "",
+  "why_listed": "sweep 3 (gaps)",
+  "source_url": "https://www.eforester.org/Main/Library/JOF/Convention_Proceedings.aspx",
+  "_src": "sweep3"
+ },
+ {
+  "conference": "Association for Fire Ecology Fire Congress",
+  "society": "Association for Fire Ecology",
+  "country_or_region": "US",
+  "subfield": "fire ecology",
+  "frequency_note": "",
+  "why_listed": "sweep 3 (gaps)",
+  "source_url": "https://fireecology.org/past-conference-resources",
+  "_src": "sweep3"
+ },
+ {
+  "conference": "North American Forest Ecology Workshop (NAFEW)",
+  "society": "NAFEW",
+  "country_or_region": "US",
+  "subfield": "forest ecology",
+  "frequency_note": "",
+  "why_listed": "sweep 3 (gaps)",
+  "source_url": "https://fireecology.org/calendar-entries/nafew2026",
+  "_src": "sweep3"
+ },
+ {
+  "conference": "SBUR Annual Meeting",
+  "society": "Society for Basic Urologic Research",
+  "country_or_region": "US",
+  "subfield": "urologic biology",
+  "frequency_note": "",
+  "why_listed": "sweep 3 (gaps)",
+  "source_url": "https://en.wikipedia.org/wiki/The_Society_for_Basic_Urologic_Research",
+  "_src": "sweep3"
+ },
+ {
+  "conference": "ASBMR Annual Meeting",
+  "society": "American Society for Bone and Mineral Research",
+  "country_or_region": "US",
+  "subfield": "bone biology — BOUNDARY (health)",
+  "frequency_note": "",
+  "why_listed": "sweep 3 (gaps)",
+  "source_url": "knowledge",
+  "_src": "sweep3",
+  "duplicate_of": "Census - Medicine & Health :: ASBMR Annual Meeting"
+ },
+ {
+  "conference": "GSA Annual Scientific Meeting (Gerontological Society of America)",
+  "society": "Gerontological Society of America",
+  "country_or_region": "US",
+  "subfield": "aging — BOUNDARY (health/social)",
+  "frequency_note": "",
+  "why_listed": "sweep 3 (gaps)",
+  "source_url": "knowledge",
+  "_src": "sweep3",
+  "duplicate_of": "Census - Medicine & Health :: GSA Annual Scientific Meeting (gerontology)"
+ },
+ {
+  "conference": "SABER Annual Meeting",
+  "society": "Society for the Advancement of Biology Education Research",
+  "country_or_region": "US",
+  "subfield": "biology education",
+  "frequency_note": "",
+  "why_listed": "sweep 4 (second pass)",
+  "source_url": "https://www.saberbio.org/Annual-Meeting",
+  "_src": "sweep4"
+ },
+ {
+  "conference": "DIA Global Annual Meeting",
+  "society": "DIA",
+  "country_or_region": "US",
+  "subfield": "drug development — BOUNDARY (industry/regulatory)",
+  "frequency_note": "",
+  "why_listed": "sweep 4 (second pass)",
+  "source_url": "https://www.qualio.com/blog/top-life-sciences-conferences",
+  "_src": "sweep4",
+  "duplicate_of": "Census - Medicine & Health :: DIA Global Annual Meeting"
+ },
+ {
+  "conference": "Bioprocessing Summit",
+  "society": "Cambridge Healthtech Institute",
+  "country_or_region": "US",
+  "subfield": "bioprocessing (industry)",
+  "frequency_note": "",
+  "why_listed": "sweep 4 (second pass)",
+  "source_url": "https://www.qualio.com/blog/top-life-sciences-conferences",
+  "_src": "sweep4"
+ }
+]

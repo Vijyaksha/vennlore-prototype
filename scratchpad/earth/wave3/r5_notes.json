@@ -1,0 +1,25 @@
+{
+ "32": {
+  "abstracts_numeric": 355,
+  "abstracts": "355 (2026, AESC Melbourne 3-6 Feb 2026 — every abstract in the official Program & Abstracts book, ids 5-389, orals + posters, including ~44 keynote/invited items)",
+  "year": 2026,
+  "rung": 5,
+  "source_url": "https://drive.google.com/file/d/10lNYlg0uFjhj7FtAl3NKplC8LEYE_fJJ/view?usp=drive_link",
+  "confidence": "exact",
+  "tier": "OUT",
+  "orchestrator_note": "RUNG 5 by the orchestrator (2026-09-15): the SPA at aescgsa.com.au rendered in a scripted Chrome exposes 'Download Program and Abstract Book' → a public Google Drive file (fetched via drive.usercontent.google.com/download?id=10lNYlg0uFjhj7FtAl3NKplC8LEYE_fJJ&export=download&confirm=t, 24.5 MB, 412 pp, 'AESC 2026 Program Book.indd'). Abstract headers '<n> - <title>' counted: 355 distinct ids (5–389) in BOTH extraction modes, across 50 sessions (incl. the Thursday/Tuesday poster sessions). Keynote/invited mentions ~44 are inside the 355, so the contributed figure is lower still. The book IS the programme, so 355 is complete evidence: OUT. Biennial (0.5)."
+ },
+ "27": {
+  "orchestrator_note": "RUNG 5 attempted by the orchestrator (2026-09-15): the EventsAir interactive programme redirects to .../Portal/Closed — the portal has been retired with the event; nothing to enumerate. Stays BORDERLINE (no figure). Next action: Wayback capture of the agenda, or the poster directory PDF (Poster_Directory_251010.pdf) if it reappears under adaptationfutures2025.com/uploads/images/."
+ },
+ "79": {
+  "abstracts_numeric": 460,
+  "abstracts": "~460 (2025, XX Congreso Colombiano de Geología, Cali 13-15 Aug — 367 oral talks counted as filled 15-minute room cells in the published agenda grid + ~90 posters (≤195 poster text blocks over 3 poster pages); upper bound 562)",
+  "year": 2025,
+  "rung": 3,
+  "source_url": "https://sociedadcolombianadegeologia.org/wp-content/uploads/2025/08/AgendaCCG2025-4.pdf",
+  "confidence": "derived",
+  "tier": "OUT",
+  "orchestrator_note": "BULK COUNT by the orchestrator (2026-09-15): AgendaCCG2025-4.pdf (12 pp, 1800x2025 pt) extracted with pdftotext -bbox-layout; on each oral page (pp 3,4,6,7,9,10) the '<hh:mm - hh:mm>' cells define 15-minute rows and the x-position clusters (≥5 blocks) define 6–8 room columns; every (row, room) cell holding text = one talk, minus cells whose text is a plenary/administrative item (Conversatorio, PANEL, Charla Especial, ACTO, Receso, Almuerzo… 25 cells excluded) → 59+66+69+71+67+35 = 367 orals. Poster pages (pp 5,8,11) carry 54+63+78 = 195 text blocks in title/author pairs under theme headings → ~90 posters; even if every block were a poster the total could not exceed 562. Both figures are far below the 800 floor and the grid IS the programme, so the row is OUT on positive evidence. Caveats: the agenda is 'sujeta a cambios'; a wrapped title split across two blocks in one cell still counts once (cells, not blocks, were counted); the 'Memorias CCG2025' volume (cover published, PDF not yet) would give an exact figure. Spanish-language artefact."
+ }
+}

@@ -1,0 +1,272 @@
+[
+ {
+  "row": 5,
+  "conference": "AERA Annual Meeting",
+  "society": "American Educational Research Association",
+  "country": "US",
+  "subfield": "education research",
+  "events_per_yr": null,
+  "notes": "annual | the largest education research meeting in the world; Crossref lists 4,676 papers for the 2025 proceedings | SIZE HINT: 4,676 papers in 'Proceedings of the 2025 AERA Annual Meeting' (crossref_seen.json (supplied)) | Phase 1 source: https://www.aera.net/Events-Meetings/Annual-Meeting"
+ },
+ {
+  "row": 6,
+  "conference": "APSA Annual Meeting & Exhibition",
+  "society": "American Political Science Association",
+  "country": "US",
+  "subfield": "political science",
+  "events_per_yr": null,
+  "notes": "annual | largest political science meeting; ~1,000+ panels of contributed papers, 6,000+ attendees | Phase 1 source: https://apsanet.org/apsa-annual-meeting/"
+ },
+ {
+  "row": 7,
+  "conference": "ASA Annual Meeting",
+  "society": "American Sociological Association",
+  "country": "US",
+  "subfield": "sociology",
+  "events_per_yr": null,
+  "notes": "annual | largest sociology meeting worldwide; ~600 sessions of contributed papers, ~5,000 attendees | Phase 1 source: https://www.asanet.org/annual-meeting/"
+ },
+ {
+  "row": 10,
+  "conference": "ASC Annual Meeting",
+  "society": "American Society of Criminology",
+  "country": "US",
+  "subfield": "criminology",
+  "events_per_yr": null,
+  "notes": "annual | ~1,000 sessions of contributed papers; the field's main US meeting | Phase 1 source: https://asc41.org/events/annual-meeting/"
+ },
+ {
+  "row": 11,
+  "conference": "ICA Annual Conference",
+  "society": "International Communication Association",
+  "country": "US/international",
+  "subfield": "communication and media",
+  "events_per_yr": null,
+  "notes": "annual | divisions each run large paper competitions; ~2,500 accepted papers per edition | Phase 1 source: https://www.icahdq.org/mpage/Conference"
+ },
+ {
+  "row": 12,
+  "conference": "NCA Annual Convention",
+  "society": "National Communication Association",
+  "country": "US",
+  "subfield": "communication and media",
+  "events_per_yr": null,
+  "notes": "annual | ~1,000+ contributed sessions; ~5,000 attendees | Phase 1 source: https://www.natcom.org/convention"
+ },
+ {
+  "row": 13,
+  "conference": "PAA Annual Meeting",
+  "society": "Population Association of America",
+  "country": "US",
+  "subfield": "demography and population",
+  "events_per_yr": null,
+  "notes": "annual | ~1,500 accepted papers and posters; the field's main US meeting | Phase 1 source: https://www.populationassociation.org/annual-meeting"
+ },
+ {
+  "row": 14,
+  "conference": "AAG Annual Meeting",
+  "society": "American Association of Geographers",
+  "country": "US",
+  "subfield": "geography",
+  "events_per_yr": null,
+  "notes": "annual | the largest geography meeting in the world; thousands of paper and poster sessions | Phase 1 source: https://www.aag.org/events/"
+ },
+ {
+  "row": 16,
+  "conference": "SPSP Annual Convention",
+  "society": "Society for Personality and Social Psychology",
+  "country": "US",
+  "subfield": "psychology",
+  "events_per_yr": null,
+  "notes": "annual | ~3,000 posters and symposium papers per convention | Phase 1 source: https://spsp.org/events/annual-convention"
+ },
+ {
+  "row": 18,
+  "conference": "ASSA Annual Meeting (AEA/ASSA)",
+  "society": "Allied Social Science Associations / American Economic Association",
+  "country": "US",
+  "subfield": "economics",
+  "events_per_yr": null,
+  "notes": "annual | ~500 sessions across ~60 associations, each with 3-4 contributed papers | Phase 1 source: https://www.aeaweb.org/conference/"
+ },
+ {
+  "row": 33,
+  "conference": "NCTM Annual Meeting & Exposition",
+  "society": "National Council of Teachers of Mathematics",
+  "country": "US",
+  "subfield": "mathematics education",
+  "events_per_yr": null,
+  "notes": "annual | ~700-1,000 contributed sessions; practitioner-heavy, uncertain | Phase 1 source: https://www.nctm.org/annualmeeting/"
+ },
+ {
+  "row": 131,
+  "conference": "AAR Annual Meeting",
+  "society": "American Academy of Religion",
+  "country": "US",
+  "subfield": "religion",
+  "events_per_yr": null,
+  "notes": "annual | BOUNDARY (may belong to another field) | ~1,200 contributed papers; often co-located with SBL; boundary with humanities | Phase 1 source: https://www.acls.org/acls-member-societies/"
+ },
+ {
+  "row": 47,
+  "conference": "JSM (Joint Statistical Meetings)",
+  "society": "American Statistical Association and partners",
+  "country": "US/international",
+  "subfield": "statistics",
+  "events_per_yr": null,
+  "notes": "annual | BOUNDARY (may belong to another field) | ~3,000 contributed and invited presentations; boundary with mathematics | Phase 1 source: https://ww2.amstat.org/meetings/jsm/"
+ },
+ {
+  "row": 55,
+  "conference": "ECER (European Conference on Educational Research)",
+  "society": "European Educational Research Association (EERA)",
+  "country": "Europe",
+  "subfield": "education research",
+  "events_per_yr": null,
+  "notes": "annual | ~2,500 accepted presentations; Europe's largest education research meeting | Phase 1 source: https://eera-ecer.de/"
+ },
+ {
+  "row": 57,
+  "conference": "ECPR General Conference",
+  "society": "European Consortium for Political Research",
+  "country": "Europe",
+  "subfield": "political science",
+  "events_per_yr": null,
+  "notes": "annual | ~2,000 contributed papers across sections and panels | Phase 1 source: https://ecpr.eu/generalconference"
+ },
+ {
+  "row": 58,
+  "conference": "ESA Conference",
+  "society": "European Sociological Association",
+  "country": "Europe",
+  "subfield": "sociology",
+  "events_per_yr": null,
+  "notes": "biennial | ~3,000 accepted abstracts per biennial conference | Phase 1 source: https://www.europeansociology.org/conferences"
+ },
+ {
+  "row": 63,
+  "conference": "EEA-ESEM Congress",
+  "society": "European Economic Association and Econometric Society",
+  "country": "Europe",
+  "subfield": "economics",
+  "events_per_yr": null,
+  "notes": "annual | ~1,200-1,500 accepted papers | Phase 1 source: https://www.eeassoc.org/conferences"
+ },
+ {
+  "row": 68,
+  "conference": "DGPs Kongress",
+  "society": "Deutsche Gesellschaft fuer Psychologie",
+  "country": "Germany",
+  "subfield": "psychology",
+  "events_per_yr": null,
+  "notes": "biennial | ~2,000 accepted talks and posters | Phase 1 source: https://www.dgps.de/"
+ },
+ {
+  "row": 85,
+  "conference": "ICERI (International Conference of Education, Research and Innovation)",
+  "society": "IATED",
+  "country": "Spain/international",
+  "subfield": "education",
+  "events_per_yr": null,
+  "notes": "annual | Crossref lists 1,756 papers in the ICERI2024 proceedings | SIZE HINT: 1,756 papers, ICERI2024 Proceedings (crossref_seen.json (supplied)) | Phase 1 source: https://iated.org/iceri/"
+ },
+ {
+  "row": 88,
+  "conference": "ISA World Congress of Sociology",
+  "society": "International Sociological Association",
+  "country": "international",
+  "subfield": "sociology",
+  "events_per_yr": null,
+  "notes": "quadrennial | ~5,000 contributed papers; the discipline's world congress | Phase 1 source: https://www.isa-sociology.org/en/conferences/world-congress"
+ },
+ {
+  "row": 89,
+  "conference": "IPSA World Congress of Political Science",
+  "society": "International Political Science Association",
+  "country": "international",
+  "subfield": "political science",
+  "events_per_yr": null,
+  "notes": "biennial | ~2,500 contributed papers | Phase 1 source: https://www.ipsa.org/wc"
+ },
+ {
+  "row": 94,
+  "conference": "ICME (International Congress on Mathematical Education)",
+  "society": "International Commission on Mathematical Instruction (ICMI)",
+  "country": "international",
+  "subfield": "mathematics education",
+  "events_per_yr": null,
+  "notes": "quadrennial | ~2,000 contributed papers and posters | Phase 1 source: https://www.mathunion.org/icmi/conferences/icme"
+ },
+ {
+  "row": 104,
+  "conference": "JPA Annual Convention (日本心理学会大会)",
+  "society": "Japanese Psychological Association",
+  "country": "Japan",
+  "subfield": "psychology",
+  "events_per_yr": null,
+  "notes": "annual | ~2,500-3,000 presentations per convention | Phase 1 source: https://psych.or.jp/"
+ },
+ {
+  "row": 108,
+  "conference": "Chinese Psychological Society National Academic Congress (中国心理学会学术年会)",
+  "society": "Chinese Psychological Society",
+  "country": "China",
+  "subfield": "psychology",
+  "events_per_yr": null,
+  "notes": "annual | ~2,000+ presentations at the national congress | Phase 1 source: http://www.cpsbeijing.org/"
+ },
+ {
+  "row": 110,
+  "conference": "Korean Psychological Association Annual Conference (한국심리학회 연차학술대회)",
+  "society": "Korean Psychological Association",
+  "country": "South Korea",
+  "subfield": "psychology",
+  "events_per_yr": null,
+  "notes": "annual | national psychology congress; volume uncertain | Phase 1 source: https://www.koreanpsychology.or.kr/"
+ },
+ {
+  "row": 113,
+  "conference": "ANPEd Reuniao Nacional",
+  "society": "Associacao Nacional de Pos-Graduacao e Pesquisa em Educacao",
+  "country": "Brazil",
+  "subfield": "education research",
+  "events_per_yr": null,
+  "notes": "biennial | ~1,500 trabalhos across working groups; Brazil's main education research meeting | Phase 1 source: https://www.anped.org.br/"
+ },
+ {
+  "row": 117,
+  "conference": "Congresso de Iniciacao Cientifica (CONIC-SEMESP)",
+  "society": "SEMESP / Brazilian undergraduate research congress",
+  "country": "Brazil",
+  "subfield": "general research incl. social sciences",
+  "events_per_yr": null,
+  "notes": "annual | BOUNDARY (may belong to another field) | Crossref lists 1,125 papers for the XXXIII edition | SIZE HINT: 1,125 papers, Anais do XXXIII Congresso de Iniciacao Cientifica (crossref_seen.json (supplied))"
+ },
+ {
+  "row": 119,
+  "conference": "Congreso Nacional de Investigacion Educativa (CNIE)",
+  "society": "Consejo Mexicano de Investigacion Educativa (COMIE)",
+  "country": "Mexico",
+  "subfield": "education research",
+  "events_per_yr": null,
+  "notes": "biennial | ~1,500 ponencias; Mexico's main education research congress | Phase 1 source: https://www.comie.org.mx/"
+ },
+ {
+  "row": 125,
+  "conference": "LASA International Congress",
+  "society": "Latin American Studies Association",
+  "country": "US/Latin America",
+  "subfield": "area studies",
+  "events_per_yr": null,
+  "notes": "annual | one of the largest area-studies congresses; several thousand papers across ~1,000 sessions | Phase 1 source: https://www.acls.org/acls-member-societies/"
+ },
+ {
+  "row": 162,
+  "conference": "APSA (Asia-Pacific Sociological Association) Conference",
+  "society": "Asia-Pacific Sociological Association",
+  "country": "Asia-Pacific",
+  "subfield": "sociology",
+  "events_per_yr": null,
+  "notes": "IMPLIED NAME — the society or group is confirmed but this meeting title was never verified. Phase 2 must resolve it to a real name or drop the row. | annual | regional sociology conference; size uncertain"
+ }
+]

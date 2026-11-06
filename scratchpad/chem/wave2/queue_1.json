@@ -1,0 +1,122 @@
+[
+ {
+  "row": 6,
+  "level": 5,
+  "conference": "Canadian Chemistry Conference and Exhibition (CSC)",
+  "society": "Chemical Institute of Canada",
+  "country": "Canada",
+  "notes": "annual | national conference"
+ },
+ {
+  "row": 9,
+  "level": 5,
+  "conference": "SETAC Europe Annual Meeting",
+  "society": "Society of Environmental Toxicology and Chemistry",
+  "country": "Europe",
+  "notes": "annual | the European mirror meeting of SETAC NA | Phase 1 source: https://www.setac.org/"
+ },
+ {
+  "row": 12,
+  "level": 4,
+  "conference": "ISE Annual Meeting (International Society of Electrochemistry)",
+  "society": "ISE",
+  "country": "international",
+  "notes": "annual | electrochemistry"
+ },
+ {
+  "row": 15,
+  "level": 4,
+  "conference": "Biennial Conference on Chemical Education (BCCE)",
+  "society": "ACS Division of Chemical Education",
+  "country": "US",
+  "notes": "biennial | large US chemistry education conference | Phase 1 source: https://www.acs.org/events.html"
+ },
+ {
+  "row": 18,
+  "level": 4,
+  "conference": "WHEC - World Hydrogen Energy Conference",
+  "society": "International Association for Hydrogen Energy",
+  "country": "international",
+  "notes": "biennial | world hydrogen energy congress | Phase 1 source: https://ih2con.com/en"
+ },
+ {
+  "row": 21,
+  "level": 4,
+  "conference": "nanoGe conferences (nanoGe scientific conference series)",
+  "society": "nanoGe (Fundació Scito)",
+  "country": "international",
+  "notes": "multiple per year since 2009 | nanochemistry gap — established conference brand | Phase 1 source: https://www.nanoge.org/nanoGe-scientific-conferences"
+ },
+ {
+  "row": 24,
+  "level": 3,
+  "conference": "ICOMC — International Conference on Organometallic Chemistry",
+  "society": "IUPAC",
+  "country": "international",
+  "notes": "biennial | organometallic"
+ },
+ {
+  "row": 27,
+  "level": 3,
+  "conference": "European Congress of Applied Biotechnology (ECAB)",
+  "society": "European Federation of Biotechnology / EFCE",
+  "country": "Europe",
+  "notes": "biennial, alongside ECCE | co-located continental congress | Phase 1 source: https://efce.info/"
+ },
+ {
+  "row": 30,
+  "level": 3,
+  "conference": "IUPAC International Conference on Green Chemistry (ICGC)",
+  "society": "IUPAC",
+  "country": "international",
+  "notes": "biennial; 11th edition | global IUPAC-branded congress | Phase 1 source: https://iupac.org/events/category/international-conference/"
+ },
+ {
+  "row": 33,
+  "level": 3,
+  "conference": "ICBIC - International Conference on Biological Inorganic Chemistry",
+  "society": "Society of Biological Inorganic Chemistry (SBIC)",
+  "country": "international",
+  "notes": "biennial | world bioinorganic chemistry conference | Phase 1 source: https://sbic.memberclicks.net/"
+ },
+ {
+  "row": 36,
+  "level": 3,
+  "conference": "IAFS Meeting - International Association of Forensic Sciences Triennial Meeting",
+  "society": "International Association of Forensic Sciences",
+  "country": "international",
+  "notes": "triennial | world forensic science congress | Phase 1 source: https://www.iafs.international/"
+ },
+ {
+  "row": 39,
+  "level": 3,
+  "conference": "Winter Conference on Plasma Spectrochemistry (US)",
+  "society": "US plasma spectrochemistry community",
+  "country": "US",
+  "notes": "biennial (even years), alternating with EWCPS | US counterpart of EWCPS | Phase 1 source: https://www.spectroscopyonline.com/conferences/european-winter-conference-on-plasma-spectrochemistry-ewcps"
+ },
+ {
+  "row": 42,
+  "level": 3,
+  "conference": "OIV World Congress of Vine and Wine",
+  "society": "International Organisation of Vine and Wine (OIV)",
+  "country": "international",
+  "notes": "annual; 47th Oct 2026 Yinchuan, China | oenology gap — 47 editions with published scientific proceedings | Phase 1 source: https://www.oiv.int/what-we-do/oiv-congress"
+ },
+ {
+  "row": 45,
+  "level": 3,
+  "conference": "ICG — International Congress on Glass",
+  "society": "International Commission on Glass",
+  "country": "international",
+  "notes": "every 3 years; 28th Sept 2028 Fukuoka; series since 1933 | glass chemistry gap, 90+ year series | Phase 1 source: https://icglass.org/"
+ },
+ {
+  "row": 48,
+  "level": 3,
+  "conference": "Annual Meeting / IUMRS-ICA of the Materials Research Society of India",
+  "society": "Materials Research Society of India (MRSI)",
+  "country": "India",
+  "notes": "annual | recurring national symposium of an Indian learned society | Phase 1 source: https://www.mrsi.org.in/"
+ }
+]

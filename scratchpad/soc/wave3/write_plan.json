@@ -1,0 +1,90 @@
+[
+ {
+  "row": 64,
+  "conference": "RGS-IBG Annual International Conference",
+  "tier": "BORDERLINE",
+  "abstracts": null,
+  "events_per_yr": 1.0,
+  "rung9": false,
+  "implied": null,
+  "decision": null,
+  "move": false
+ },
+ {
+  "row": 19,
+  "conference": "APPAM Fall Research Conference",
+  "tier": "BORDERLINE",
+  "abstracts": null,
+  "events_per_yr": 1.0,
+  "rung9": false,
+  "implied": null,
+  "decision": null,
+  "move": false
+ },
+ {
+  "row": 196,
+  "conference": "EISA Pan-European Conference on International Relations",
+  "tier": "BORDERLINE",
+  "abstracts": null,
+  "events_per_yr": 1.0,
+  "rung9": false,
+  "implied": null,
+  "decision": null,
+  "move": false
+ },
+ {
+  "row": 61,
+  "conference": "ECC (European Communication Conference)",
+  "tier": "BORDERLINE",
+  "abstracts": "1,299 (2026, ECREA ECC Brno — C-IN searchable programme 'Abstract List' states 1 - 10 of 1299 items; includes plenary/special-session abstracts, not separable in bulk)",
+  "events_per_yr": 0.5,
+  "rung9": false,
+  "implied": null,
+  "decision": null,
+  "move": false
+ },
+ {
+  "row": 148,
+  "conference": "Econometric Society World Congress",
+  "tier": "VERIFIED",
+  "abstracts": "1,721 (2025, 13th Econometric Society World Congress, Seoul — Oxford Abstracts programme 'Titles' list states 1 to 20 of 1721; includes the few invited/plenary lectures, not separable in bulk)",
+  "events_per_yr": 0.2,
+  "rung9": false,
+  "implied": null,
+  "decision": null,
+  "move": false
+ },
+ {
+  "row": 132,
+  "conference": "SBL Annual Meeting",
+  "tier": "VERIFIED",
+  "abstracts": "1,610 (2024, SBL Annual Meeting San Diego — contributed papers in the 470 SBL 'S' sessions of the joint AAR/SBL program book; AAR 'A' sessions and affiliate 'P' sessions excluded)",
+  "events_per_yr": 1.0,
+  "rung9": false,
+  "implied": null,
+  "decision": null,
+  "move": false
+ },
+ {
+  "row": 191,
+  "conference": "NSTA National Conference on Science Education",
+  "tier": "BORDERLINE",
+  "abstracts": null,
+  "events_per_yr": 1.0,
+  "rung9": false,
+  "implied": null,
+  "decision": null,
+  "move": false
+ },
+ {
+  "row": 50,
+  "conference": "ALA Annual Conference",
+  "tier": "OUT",
+  "abstracts": "262 (2026, ALA Annual Conference — poster presentations, the whole of ALA's contributed research programme; the rest of the schedule is professional-development sessions with no research call)",
+  "events_per_yr": 1.0,
+  "rung9": false,
+  "implied": null,
+  "decision": null,
+  "move": true
+ }
+]

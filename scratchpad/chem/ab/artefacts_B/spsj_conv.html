@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="ja" >
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, user-scalable=1.0">
+<meta name="format-detection" content="telephone=no"/>
+<meta name="description" content="本会は、高分子科学と技術およびこれらに関連する諸分野の情報を交換・吸収する、さまざまな場を提供しています。会員はこれらの場を通じ、学術的向上や研究の新展開のみならず会員相互の人間的な触れ合いや国際的な交流を深めることができます。">
+<meta name="keywords" content="高分子学会,技術,情報,講演会,会員,学術,向上,研究,電気,電子,情報,バイオ,医療,輸送,建築,宇宙">
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="公益社団法人 高分子学会"/>
+<meta property="og:title" content="公益社団法人 高分子学会"/>
+<meta property="og:description" content="本会は、高分子科学と技術およびこれらに関連する諸分野の情報を交換・吸収する、さまざまな場を提供しています。会員はこれらの場を通じ、学術的向上や研究の新展開のみならず会員相互の人間的な触れ合いや国際的な交流を深めることができます。" />
+<title>公益社団法人 高分子学会</title>
+
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+<link href="//fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
+<!-- CSS -->
+
+<!-- favicon -->
+<link rel="shortcut icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/homeicon.png">
+<!-- favicon -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/cmn_rw.js" type="text/javascript"></script>
+
+<!-- スライダー -->
+<link href="js/slick/slick-theme.css" rel="stylesheet" type="text/css">
+<link href="js/slick/slick.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/slick/slick.min.js"></script>
+<script>
+	jQuery(function($){
+    $('.slider').each(function(){
+		$(this).slick({
+			autoplay:true,
+			autoplaySpeed:5000,
+			arrows:false,
+			dots:true,
+		});
+	});
+});
+</script>
+<!-- スライダー -->
+
+<!-- 目隠しレイヤー -->
+<script>
+(function($) {
+$.fn.acs = function(options) {
+	var elements = this;
+	var defaults = {
+		screenPos: 1,
+		className: 'is-animated'
+	};
+	var setting = $.extend(defaults, options);
+	$(window).on('load scroll', function() {
+		add_class_in_scrolling();
+	});
+	function add_class_in_scrolling() {
+		var winScroll = $(window).scrollTop();
+		var winHeight = $(window).height();
+		var scrollPos = winScroll + (winHeight * setting.screenPos);
+
+		if(elements.offset().top < scrollPos) {
+			elements.addClass(setting.className);
+		}
+	}
+}
+})(jQuery);
+$(function() {
+	$('.side-display-content').acs({
+		className: 'is-animated'
+	});
+});
+</script>
+<!-- 目隠しレイヤー -->
+
+<!-- Google Analytics -->
+<script src="js/gtag.js" type="text/javascript"></script>
+<!-- Google Analytics -->
+
+
+<link rel="alternate" type="application/rss+xml" title="RSS20" href="index20.rdf" />
+<link rel="alternate" type="application/atom+xml" title="Atom" href="atom.xml" />
+<script src="/nus_im/js/BubbleTooltips/BubbleTooltips.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+
+$(function() {
+
+   var ua = navigator.userAgent;
+  if(ua.indexOf('iPhone') > 0 || ua.indexOf('Android') > 0){
+  }else {
+   //  enableTooltips_list("TopNews-Cont1"  ,'./nus_im')
+  }
+
+});
+</script>
+<!-- 投票関係  -->
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type="text/javascript" src="js/vote.js"></script>
+<!-- 投票関係 end -->
+<!--
+<script src="js/cmn_im.js" type="text/javascript"></script>
+-->
+</head>
+<body id="top">
+<div class="top-allWrap">
+
+
+
+
+<!--==================================================
+header
+==================================================-->
+<header>
+	<div class="header-Wrap">
+
+		<div class="header-top">
+			<h1 class="logo"><img src="common/logo.svg" alt=""></h1>
+			<div class="other-btns">
+				<div class="language search-hide-item">
+					<p class="ja">JA</p>
+					<p class="en"><a href="en/index.html">EN</a></p>
+				</div>
+				
+				<p class="tw search-hide-item">
+					<script type="text/javascript">
+						var url = document.URL;
+						//alert(url);
+						document.write('<a target="_blank" class="tw" href="https://twitter.com/share?url='+encodeURIComponent(document.URL)+ '"><img src="common/header-tw.svg" alt="Twitter"></a>');
+					</script>
+				</p>
+				<p class="fb search-hide-item">
+					<script type="text/javascript">
+						var url = document.URL;
+						//alert(url);
+						document.write('<a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(document.URL)+ '"><img src="common/header-fb.svg" alt="Facebook"></a>');
+					</script>
+				</p>
+
+				<p class="mypage search-hide-item"><script type="text/javascript">
+					writeMypageHeader("./");
+				</script></p>
+			</div>
+			<a class="menu-trigger spOnly" href="#">
+			  <span></span>
+			  <span></span>
+			  <span></span>
+			</a>
+		</div>
+
+		<div class="header-contents">
+			<nav>
+				<div class="menuList">
+					<div class="menuList-gnav">
+
+<!--==================================================
+inc_header
+==================================================-->
+<script type="text/javascript">
+	writeIncHeader("../");
+</script>
+<!-- END -->
+					</div>
+
+					<p class="mypage spOnly"><script type="text/javascript">
+						writeMypageHeader("./");
+					</script></p>
+					<div class="sns spOnly">
+						<a href="javascript:window.open('http://twitter.com/share?text='+encodeURIComponent(document.title)+'&url='+encodeURIComponent(location.href),'sharewindow','personalbar=0, toolbar=0, scrollbars=1, resizable=!');" class="tw" target="_blank"><img src="common/header-tw.svg" alt="Twitter"></a>
+						<a href="javascript:window.open('http://www.facebook.com/sharer.php?u='+encodeURIComponent(location.href),'sharewindow','personalbar=0, toolbar=0, scrollbars=1, resizable=!');" class="fb" target="_blank"><img src="common/header-fb.svg" alt="Facebook"></a>
+					</div>
+				</div>
+				<div class="other-btns spOnly">
+					<div class="inner">
+						<div class="language">
+							<p class="ja">JA</p>
+							<p class="en"><a href="en/index.html">EN</a></p>
+						</div>
+					</div>
+				</div>
+			</nav>
+			<ul class="slider">
+			<!-- スライド領域 -->
+			<li id="block_slide_id_137"   ><a href="https://www.spsj.or.jp/pmf/"  target="_blank"  ><img src="./nus_im/webapp/data_images_im/260602012311_137.jpg" alt="第35回ポリマー材料フォーラム"></a></li>
+<li id="block_slide_id_143"   ><a href="https://www.spsj.or.jp/nenkai/"  target="_blank"  ><img src="./nus_im/webapp/data_images_im/251121110911_143.jpg" alt="オンライン年次大会"></a></li>
+<li id="block_slide_id_135"   ><a href="https://www.spsj.or.jp/tohron/"  target="_blank"  ><img src="./nus_im/webapp/data_images_im/260302013543_135.jpg" alt="第75回高分子討論会"></a></li>
+<li id="block_slide_id_131"   ><a href="https://www.spsj.or.jp/mj/"  target="_blank"  ><img src="./nus_im/webapp/data_images_im/230401103219_131.jpg" alt="高分子未来塾®"></a></li>
+<li id="block_slide_id_114"   ><a href="https://www.spsj.or.jp/equipment/"  target="_blank"  ><img src="./nus_im/webapp/data_images_im/240201111330_114.jpg" alt="高分子分析・計算科学の原理・技術と装置メーカーリスト"></a></li>
+<li id="block_slide_id_31"   ><a href="https://www.nature.com/pj/"  target="_blank"  ><img src="./nus_im/webapp/data_images_im/190313053345_31.jpg" alt="Polymer Journal"></a></li>
+<li id="block_slide_id_119"   ><a href="https://www.spsj.or.jp/publication/index.html"  target="_blank"  ><img src="./nus_im/webapp/data_images_im/260825035957_119.jpg" alt="会誌「高分子」"></a></li>
+
+			<!-- スライド領域end -->
+
+			</ul>
+		</div>
+
+	</div>
+</header>
+<!-- END -->
+
+
+
+
+
+<!--==================================================
+大バナー
+==================================================-->
+<div class="top-bigbtn">
+	<ul class="top-banner01">
+
+			<!-- バナー領域 -->
+			<li id="block_slide_id_144"   ><a href="https://www.spsj.or.jp/nenkai/"  target="_blank"  ><img src="./nus_im/webapp/data_images_im/251121111100_144.jpg" alt=""></a></li>
+<li id="block_slide_id_136"   ><a href="https://www.spsj.or.jp/tohron/"  target="_blank"  ><img src="./nus_im/webapp/data_images_im/260302013513_136.jpg" alt="第75回高分子討論会"></a></li>
+<li id="block_slide_id_138"   ><a href="https://www.spsj.or.jp/pmf/"  target="_blank"  ><img src="./nus_im/webapp/data_images_im/260602012521_138.jpg" alt="第35回ポリマー材料フォーラム"></a></li>
+<li id="block_slide_id_35"   ><a href="https://member.spsj.or.jp/event/"  target="_blank"  ><img src="./nus_im/webapp/data_images_im/200911113238_35.png" alt="行事参加申込"></a></li>
+<li id="block_slide_id_130"  class="last"   ><a href="https://www.spsj.or.jp/publication/index.html"  target="_blank"  ><img src="./nus_im/webapp/data_images_im/211209010943_1.jpg" alt="会誌「高分子」"></a></li>
+
+			<!-- バナー領域end -->
+
+	</ul>
+</div>
+<!-- END -->
+
+
+
+
+
+<!--==================================================
+コンテンツボタン
+==================================================-->
+<div class="top-contentBtn">
+	<div class="top-contentWrap">
+		<div class="inner">
+			<a href="./event" class="contentBtn-block contentBtn-block01 side-display-content">
+				<img src="common/content01.svg" alt="">
+				<p>行事</p>
+			</a>
+			<a href="./publication" class="contentBtn-block contentBtn-block02 side-display-content">
+				<img src="common/content02.svg" alt="">
+				<p>出版</p>
+			</a>
+				<a href="./branch" class="contentBtn-block contentBtn-block03 side-display-content">
+					<img src="common/content07.svg" alt="">
+					<p>支部</p>
+				</a>
+				<a href="./group" class="contentBtn-block contentBtn-block03 side-display-content">
+					<img src="common/content03.svg" alt="">
+					<p>研究会</p>
+				</a>
+			<a href="./member" class="contentBtn-block contentBtn-block04 side-display-content">
+				<img src="common/content04.svg" alt="">
+				<p>入会＆会員サービス</p>
+			</a>
+			<a href="./activity" class="contentBtn-block contentBtn-block05 side-display-content">
+				<img src="common/content05.svg" alt="">
+				<p>活動</p>
+			</a>
+			<a href="./about" class="contentBtn-block contentBtn-block06 side-display-content">
+				<img src="common/content06.svg" alt="">
+				<p>高分子学会とは</p>
+			</a>
+		</div>
+	</div>
+</div>
+<!-- END -->
+
+
+
+
+
+<!--==================================================
+Information（ニュース）
+==================================================-->
+<div class="top-news">
+	<div class="top-contentWrap">
+
+
+		<div class="top-news-titleBlock">
+			<h2 class="top-news-titleBlock__title">Information</h2>
+			<ul class="top-news-titleBlock__tab tab">
+				<li class="active"><span>高分子学会</span></li>
+				<li><span>関連団体等</span></li>
+			</ul>
+			<p class="top-news-titleBlock__link pcOnly"><a href="news/cate_list.php?a=cate_list">View All</a></p>
+		</div>
+
+		<div class="tab-area">
+			<div class="news-listBlock tab__contents tab--show">
+				<!-- ============================================
+				「高分子学会」というカテゴリーがついた場合
+				============================================ -->
+			<!--  news_layout_top_conf_id   1  -->
+<!-- 1NEWS -->
+		<article 　 >
+					<div class="newsinfo">
+
+						<dl>
+							<dt><span class="day-color01"> 2026年09月04日(金) </span> </dt>
+							<dd><span class="title-color01"><span class="title-size-middle">  訃報<br />
+本会名誉会員の白川英樹先生が8月24日にご逝去されました。生前のご厚情に深く感謝するとともに、心より哀悼の意を表します。</span></span></dd>
+						</dl>
+					</div>
+						</article>
+<!-- END 1NEWS -->
+<!--  news_layout_top_conf_id   1 end -->
+<!--  news_layout_top_conf_id   1  -->
+<!-- 1NEWS -->
+		<article 　 ><a href="https://www.spsj.or.jp/news/news_detail_509.html"  onclick="this.href='https://www.spsj.or.jp/news/news_detail.php?a=news_detail&news_info_id=509a'" >
+					<div class="newsinfo">
+
+						<dl>
+							<dt><span class="day-color01"> 2026年07月31日(金) </span> </dt>
+							<dd><span class="title-color01"><span class="title-size-middle">  熊本地方を震源とする地震により被災された皆様へ<br />
+</span></span></dd>
+						</dl>
+					</div>
+						</a></article>
+<!-- END 1NEWS -->
+<!--  news_layout_top_conf_id   1 end -->
+<!--  news_layout_top_conf_id   1  -->
+<!-- 1NEWS -->
+		<article 　 ><a   href="https://www.spsj.or.jp/about/about_340.html"  target="_blank"    onclick="this.href='https://www.spsj.or.jp/indexwrite.php?a=news_link&amp;news_info_id=505a'"  >
+					<div class="newsinfo">
+
+						<dl>
+							<dt><span class="day-color01"> 2026年06月22日(月) </span> </dt>
+							<dd><span class="title-color01"><span class="title-size-middle">  高分子学会 第38期会長 上垣外正己 よりあいさつ</span></span></dd>
+						</dl>
+					</div>
+						</a></article>
+<!-- END 1NEWS -->
+<!--  news_layout_top_conf_id   1 end -->
+<!--  news_layout_top_conf_id   1  -->
+<!-- 1NEWS -->
+		<article 　 ><a   href="https://www.spsj.or.jp/nenkai/75nenkai/data/On-Demand_Award.pdf"  target="_blank"    onclick="this.href='https://www.spsj.or.jp/indexwrite.php?a=news_link&amp;news_info_id=501a'"  >
+					<div class="newsinfo">
+
+						<dl>
+							<dt><span class="day-color01"> 2025年06月19日(木) </span> </dt>
+							<dd><span class="title-color01"><span class="title-size-middle">  第75回高分子学会年次大会の優秀オンデマンド発表賞が決定しました。</span></span></dd>
+						</dl>
+					</div>
+						</a></article>
+<!-- END 1NEWS -->
+<!--  news_layout_top_conf_id   1 end -->
+<!--  news_layout_top_conf_id   1  -->
+<!-- 1NEWS -->
+		<article 　 ><a   href="https://www.spsj.or.jp/indexwrite.php?a=news_link&amp;news_info_id=498a"  target="_blank"   >
+					<div class="newsinfo">
+
+						<dl>
+							<dt><span class="day-color01"> 2026年06月02日(火) </span> </dt>
+							<dd><span class="title-color01"><span class="title-size-middle">  2026年度高分子学会技術賞受賞者が決定しました</span></span></dd>
+						</dl>
+					</div>
+						</a></article>
+<!-- END 1NEWS -->
+<!--  news_layout_top_conf_id   1 end -->
+
+			</div>
+			<div class="news-listBlock tab__contents">
+				<!-- ============================================
+				「関連団体等」というカテゴリーがついた場合
+				============================================ -->
+			<!--  news_layout_top_conf_id   1  -->
+<!-- 1NEWS -->
+		<article 　 ><a   href="https://www.erca.go.jp/suishinhi/koubo/r09_koubo_1.html"  target="_blank"    onclick="this.href='https://www.spsj.or.jp/indexwrite.php?a=news_link&amp;news_info_id=508a'"  >
+					<div class="newsinfo">
+
+						<dl>
+							<dt><span class="day-color01"> 2026年07月28日(火) </span> </dt>
+							<dd><span class="title-color01"><span class="title-size-middle">  環境再生保全機構より「環境研究総合推進費」令和9年度新規課題の公募のお知らせ</span></span></dd>
+						</dl>
+					</div>
+						</a></article>
+<!-- END 1NEWS -->
+<!--  news_layout_top_conf_id   1 end -->
+<!--  news_layout_top_conf_id   1  -->
+<!-- 1NEWS -->
+		<article 　 ><a   href="https://www.cas.go.jp/jp/seisaku/global_startup_campus_initiative/index.html"  target="_blank"    onclick="this.href='https://www.spsj.or.jp/indexwrite.php?a=news_link&amp;news_info_id=496a'"  >
+					<div class="newsinfo">
+
+						<dl>
+							<dt><span class="day-color01"> 2026年05月26日(火) </span> </dt>
+							<dd><span class="title-color01"><span class="title-size-middle">  内閣府より、グローバル・スタートアップ・キャンパス構想 先行的活動に係る公募のお知らせ</span></span></dd>
+						</dl>
+					</div>
+						</a></article>
+<!-- END 1NEWS -->
+<!--  news_layout_top_conf_id   1 end -->
+<!--  news_layout_top_conf_id   1  -->
+<!-- 1NEWS -->
+		<article 　 ><a   href="https://www.spsj.or.jp/indexwrite.php?a=news_link&amp;news_info_id=491a"  target="_blank"    onclick="this.href='https://www.spsj.or.jp/indexwrite.php?a=news_link&amp;news_info_id=491a'"  >
+					<div class="newsinfo">
+
+						<dl>
+							<dt><span class="day-color01"> 2026年04月23日(木) </span> </dt>
+							<dd><span class="title-color01"><span class="title-size-middle">  経済産業省より、「ISO/IEC 国際標準化人材育成講座」および「ルール形成戦略研修」募集のお知らせ<br />
+</span></span></dd>
+						</dl>
+					</div>
+						</a></article>
+<!-- END 1NEWS -->
+<!--  news_layout_top_conf_id   1 end -->
+
+
+			</div>
+		</div>
+
+		<p class="top-news__link spOnly"><a href="news/cate_list.php?a=cate_list"><span>View All</span></a></p>
+
+	</div>
+</div>
+<!-- END -->
+
+
+<!--==================================================
+小バナー
+==================================================-->
+<div class="top-contentWrap">
+	<ul class="top-banner02">
+
+			<!-- バナーA領域 -->
+			<li id="block_slide_id_41"   ><a href="https://www.spsj.or.jp/activity/activity_419.html"  ><img src="./nus_im/webapp/data_images_im/190920021553_41.jpg" alt="賞"></a></li>
+<li id="block_slide_id_40"   ><a href="https://www.spsj.or.jp/mj/"  target="_blank"  ><img src="./nus_im/webapp/data_images_im/190328062233_40.jpg" alt="高分子未来塾"></a></li>
+<li id="block_slide_id_39"   ><a href="https://spsj.or.jp/webinar/"  target="_blank"  ><img src="./nus_im/webapp/data_images_im/190328062239_39.jpg" alt="Webinar"></a></li>
+<li id="block_slide_id_116"   ><a href="https://www.spsj.or.jp/equipment/"  target="_blank"  ><img src="./nus_im/webapp/data_images_im/240201111403_116.jpg" alt="高分子分析・計算科学の原理・技術と装置メーカーリスト"></a></li>
+<li id="block_slide_id_38"   ><a href="https://www.ptesj.org"  target="_blank"  ><img src="./nus_im/webapp/data_images_im/190328062245_38.jpg" alt="高分子同友会"></a></li>
+<li id="block_slide_id_37"   ><a href="http://main.spsj.or.jp/koho/koho_top.php"  target="_blank"  ><img src="./nus_im/webapp/data_images_im/200901040658_37.jpg" alt="プレスリリース"></a></li>
+<li id="block_slide_id_36"   ><a href="http://main.spsj.or.jp/danjo/content.htm"  target="_blank"  ><img src="./nus_im/webapp/data_images_im/251010025553_36.jpg" alt="ダイバーシティ"></a></li>
+<li id="block_slide_id_42"   ><a href="https://www.spsj.or.jp/activity/activity_338.html"  target="_blank"  ><img src="./nus_im/webapp/data_images_im/190328062359_42.jpg" alt="各種申請・募集"></a></li>
+
+			<!-- バナーA領域end -->
+
+	</ul>
+</div>
+<!-- END -->
+
+
+
+<!--ニュース更新システム 絶対に消さないでください-->
+<img src="indexwrite.php" alt=""  width="0" height="0" style="display:none;" />
+<!--ニュース更新システム 絶対に消さないでくださいEND-->
+
+<!--ニュース更新システム 絶対に消さないでください-->
+<img src="im_indexmenu.php?top=1" alt=""  width="0" height="0" style="display:none;" />
+<!--ニュース更新システム 絶対に消さないでくださいEND-->
+
+
+<!--==================================================
+footer
+==================================================-->
+<script type="text/javascript">
+	writeFooter("./");
+</script>
+<!-- END -->
+
+
+
+<div id="nav-bg"></div>
+</div>
+</body>
+</html>

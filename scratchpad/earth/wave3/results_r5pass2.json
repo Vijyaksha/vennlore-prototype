@@ -1,0 +1,38 @@
+[
+ {
+  "row": 79,
+  "conference": "Congreso Colombiano de Geologia",
+  "outcome": "NEEDS_BULK_COUNT",
+  "abstracts_numeric": null,
+  "abstracts": "UNKNOWN — the artefact is identified and downloaded (the XX CCG 2025 agenda, 12pp) but its grid layout defeats a clean per-item count; see the counting plan in Method.",
+  "year": 2025,
+  "rung": null,
+  "source_url": "https://sociedadcolombianadegeologia.org/wp-content/uploads/2025/08/AgendaCCG2025-4.pdf",
+  "spot_checks": [
+   "Located and downloaded the official programme: AgendaCCG2025-4.pdf (82,687,205 bytes, 12 pages, dated 14 Aug 2025), the last of five agenda revisions in the society's media library.",
+   "Programme geometry established: SEVEN parallel rooms (Gran Salón, Concepción, CañasGordas, Piedechinche, Pichichí, Mulaló, Los Ciruelos), each named three times, one per congress day; 66 time-slot rows across the three days, mostly 15-minute slots.",
+   "Three dedicated poster blocks exist and are listed in full in the same PDF: 'POSTERS MIÉRCOLES 13 DE AGOSTO', 'POSTERS JUEVES 14 DE AGOSTO' and 'POSTERS VIERNES 15 DE AGOSTO', preceded each day by an 'HORA EXCLUSIVA PÓSTERES' slot. Those blocks hold 908 non-blank text lines between them, each poster being a centred title of one to three lines followed by a centred author line.",
+   "NOT COUNTED because the count would not be honest: the oral programme is a seven-column grid with no per-item ID, and both pdftotext -layout and -raw interleave cells so that titles, authors and institutions cannot be attributed to a presentation without guessing. Rather than publish a number I cannot re-derive, the row is deferred with a plan."
+  ],
+  "searches_used": 0,
+  "events_per_yr": 0.5,
+  "cadence_evidence": "Biennial. The society's own Memorias index (https://sociedadcolombianadegeologia.org/publicaciones/memorias_ccg) lists every edition: I 1969, II 1978, III 1981, IV 1982, V 1989, VI 1993, VII 1996, VIII 2001, IX 2003, X 2005, XI 2007, XII 2009, XIII 2011, XIV 2013, XV 2015, XVI 2017, XVII 2019, XVIII 2021, XIX 2023, XX 2025 — a clean two-year cycle since 2001 with no pandemic gap. 0.5.",
+  "attendance_numeric": null,
+  "attendance_year": null,
+  "attendance_basis": null,
+  "attendance_rung": null,
+  "attendance_source_url": null,
+  "alt_figures": [],
+  "character": "CONTRIBUTED",
+  "character_evidence": "Open call with published deadlines: proposals for special sessions and symposia 15 Jan - 31 Mar 2025 (extended to 15 Apr), abstracts 15 Jan - 31 Mar (extended to 21 Apr). The abstracts page states 'La recepción de resumenes de nuestro XX Congreso Colombiano de Geología ha sido un éxito. El Comité organizador del CCG ha recibido múltiples solicitudes para ampliar las fechas de recepción'. Seven parallel contributed rooms plus three poster days.",
+  "programme_type": "CONTRIBUTED",
+  "programme_evidence": "AgendaCCG2025-4.pdf: main event 13-15 Aug 2025, courses and workshops 11-12 Aug, field trips separate.",
+  "direct_abstracts": null,
+  "ratio": null,
+  "ratio_rationale": null,
+  "duplicate_of": null,
+  "method": "Rung 3 attempted, ZERO searches, read in SPANISH. https://sociedadcolombianadegeologia.org/resumenes/ now 302s to /ccg2025/resumenesccg2025/. NEW ROUTE: the site is WordPress and its media API answers, but ONLY in the search form — https://sociedadcolombianadegeologia.org/wp-json/wp/v2/media?search=ccg2025&per_page=50&_fields=source_url,title returns the five agenda revisions, the two calls and the two circulars, none of which is linked from the visible programme page (which is an empty Divi shell). TRAP: adding mime_type=application/pdf to that query makes the endpoint return HTTP 400; page through per_page=100 without it and filter on the .pdf suffix yourself. The Memorias page (publicaciones/memorias_ccg) lists all twenty editions but renders each as a COVER IMAGE with no href, so the memorias volumes themselves are not reachable from it. NEEDS_BULK_COUNT — the plan, reproducible from this text: (1) take AgendaCCG2025-4.pdf; (2) for the POSTERS, split the -layout text at the three 'POSTERS <DAY> DE AGOSTO' headings and parse each block as repeating [title lines][author line], using the theme headings (which match the oral session names, e.g. 'SE Amb. Sed. Alta Res', 'Geofísica', '3º Simposio de Geoconservación y Patrimonio Geológico') as block separators; (3) for the ORALS, re-extract with pdftotext -bbox or a column-aware tool and assign each text box to one of the seven room columns by x-coordinate, counting one presentation per (slot, room) cell that carries a title; (4) exclude the ACTO INAGURAL, the plenary 'Conversatorio' and 'PANEL' cells in the Gran Salón column, the courses and workshops of 11-12 Aug and the field trips. A cleaner alternative if it appears: the 'Memorias CCG2025' volume, whose cover is already published at wp-content/uploads/2025/09/Portada-Memorias-CCG2025.png but whose PDF is not yet in the media library. VERDICT is BORDERLINE, not OUT: the seven-room, three-day grid plus three poster days is plainly a substantial programme and nothing found puts it under the bar.",
+  "verdict": "BORDERLINE",
+  "confidence": "floor"
+ }
+]
