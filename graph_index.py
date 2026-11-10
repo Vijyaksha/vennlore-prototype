@@ -135,21 +135,23 @@ def summarize_communities(
             cached = json.load(f)
         if cached.get("data_hash") == data_hash and cached.get("llm") == llm.available():
             return cached["communities"]
+    to_summarize = [c for c in communities if len(c["sessions"]) >= 2] if llm.available() else []
     for c in communities:
         result = None
-        if llm.available():
-            sessions = "\n".join(
-                f"- {g.nodes[s]['title']} ({g.nodes[s]['track']}): {g.nodes[s]['abstract']}"
-                for s in c["sessions"]
+        if c in to_summarize:
+            print(f"[themes] summarizing {to_summarize.index(c) + 1}/{len(to_summarize)}...")
+            sessions = "\n".join(f"- {g.nodes[s]['title']} ({g.nodes[s]['track']})" for s in c["sessions"])
+            result = llm.complete_fields(
+                f"These conference sessions share the concepts {', '.join(c['concepts'][:6])}:\n"
+                f"{sessions}\n\n"
+                "Give the research theme a short name and a 2-sentence summary of what links these sessions.",
+                ["TITLE", "SUMMARY"],
             )
-            result = llm.complete_json(
-                "These conference sessions form one research theme, linked by the concepts: "
-                f"{', '.join(c['concepts'])}.\n{sessions}\n\n"
-                'Return {"title": "<theme name, max 6 words>", "summary": "<2-3 sentences: what ties '
-                'these sessions together and who should attend>"}',
-                max_tokens=400,
-            )
-        c.update(result if isinstance(result, dict) and "summary" in result else _fallback_summary(c, g))
+        if result:  # keep titles short even if a small model rambles
+            title = " ".join(result["TITLE"].strip(" \"'.").split()[:7])
+            c.update({"title": title, "summary": result["SUMMARY"][:600]})
+        else:
+            c.update(_fallback_summary(c, g))
     with open(cache_path, "w", encoding="utf-8") as f:
         json.dump({"data_hash": data_hash, "llm": llm.available(), "communities": communities}, f, indent=2)
     return communities

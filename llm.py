@@ -14,6 +14,7 @@ Backends, checked in this order:
 
 import json
 import os
+import re
 import time
 import urllib.request
 
@@ -113,22 +114,62 @@ def complete(prompt: str, max_tokens: int = 900, temperature: float = 0.2) -> st
         req = urllib.request.Request(b["url"] + "/chat/completions", data=body, headers=headers)
         with urllib.request.urlopen(req, timeout=300) as r:
             text = json.loads(r.read().decode("utf-8"))["choices"][0]["message"]["content"] or ""
-        return text.split("</think>")[-1].strip()  # drop reasoning-model "thinking" if present
     except Exception as e:
         print(f"[llm] call failed: {type(e).__name__}: {e}")
         return None
+    return _clean(text)
 
 
-def complete_json(prompt: str, max_tokens: int = 900) -> dict | list | None:
-    """Ask for JSON and parse the first JSON object or array in the reply. None on failure."""
-    text = complete(prompt + "\n\nReply with valid JSON only, no other text.", max_tokens)
-    if not text:
-        return None
-    starts = [i for i in (text.find("{"), text.find("[")) if i != -1]
-    if not starts:
-        return None
-    start, end = min(starts), max(text.rfind("}"), text.rfind("]"))
-    try:
-        return json.loads(text[start : end + 1])
-    except json.JSONDecodeError:
-        return None
+def _clean(text: str) -> str | None:
+    """Remove reasoning-model 'thinking' and markdown decoration. None if nothing usable is left."""
+    if "<think>" in text and "</think>" not in text:
+        return None  # the model ran out of tokens while still thinking
+    text = text.split("</think>")[-1]
+    text = re.sub(r"\*\*|__|`", "", text).strip()
+    return text or None
+
+
+# ---------------------------------------------------------------- small-model-friendly formats
+# Small models often break JSON, so we ask for simple "LABEL: value" lines and parse forgivingly.
+
+
+def complete_fields(prompt: str, fields: list[str], max_tokens: int = 400) -> dict | None:
+    """Ask for 'FIELD: value' lines; return {field: value} or None if any field is missing.
+    Retries once with a stricter reminder, because small models sometimes ignore the format."""
+    fmt = "\n".join(f"{f}: <{f.lower()}>" for f in fields)
+    for attempt in range(2):
+        extra = "" if attempt == 0 else "\nIMPORTANT: use exactly the labels shown, one per line.\n"
+        text = complete(f"{prompt}\n{extra}\nReply in exactly this format, nothing else:\n{fmt}", max_tokens)
+        parsed = parse_fields(text or "", fields)
+        if parsed:
+            return parsed
+    return None
+
+
+def parse_fields(text: str, fields: list[str]) -> dict | None:
+    out, current = {}, None
+    pattern = re.compile(r"^[\s#*>\-\d.]*(" + "|".join(fields) + r")\s*[:=\-]\s*(.*)$", re.I)
+    for line in text.splitlines():
+        m = pattern.match(line)
+        if m:
+            current = m.group(1).upper()
+            out[current] = m.group(2).strip()
+        elif current and line.strip():
+            out[current] += " " + line.strip()  # value continued on the next line
+    if all(out.get(f) for f in fields):
+        return {f: out[f] for f in fields}
+    return None
+
+
+def complete_lines(prompt: str, keys: list[str], max_tokens: int = 700) -> dict:
+    """Ask for 'KEY | text' lines (e.g. 'S11 | reason'); return {key: text} for every key found."""
+    text = complete(prompt, max_tokens) or ""
+    out = {}
+    for line in text.splitlines():
+        m = re.match(r"^[\s#*>\-\d.]*\[?([A-Za-z]+\d*)\]?\s*[|:\-–]\s*(.+)$", line.strip())
+        if m:
+            key = m.group(1).upper()
+            match = next((k for k in keys if k.upper() == key), None)
+            if match and match not in out:
+                out[match] = m.group(2).strip()
+    return out

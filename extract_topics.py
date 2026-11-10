@@ -8,6 +8,7 @@ Run (with LM Studio running, or LLM_API_URL / LLM_API_KEY / LLM_MODEL set):
     python extract_topics.py raw_sessions.csv
 """
 
+import re
 import sys
 
 import pandas as pd
@@ -22,19 +23,15 @@ df = pd.read_csv(sys.argv[1]).fillna("")
 vocab = set()  # reuse earlier names so sessions share nodes (keeps the graph connected)
 topics, methods = [], []
 for _, r in df.iterrows():
-    hint = ", ".join(sorted(vocab)[:80]) or "none yet"
-    data = (
-        llm.complete_json(
-            "Extract from this conference session 2-4 research TOPICS and 1-3 METHODS as short lowercase "
-            "noun phrases (e.g. 'drug discovery', 'graph neural networks'). Reuse a phrase from this list "
-            f"when it fits: {hint}\n\nTitle: {r.title}\nAbstract: {r.abstract}\n\n"
-            'Return {"topics": [...], "methods": [...]}',
-            max_tokens=300,
-        )
-        or {}
-    )
-    t = [x.strip().lower() for x in data.get("topics", []) if isinstance(x, str)]
-    m = [x.strip().lower() for x in data.get("methods", []) if isinstance(x, str)]
+    hint = ", ".join(sorted(vocab)[:40]) or "none yet"
+    data = llm.complete_fields(
+        "From this conference session, list 2-4 research topics and 1-3 methods as short lowercase "
+        f"phrases separated by semicolons. Reuse these existing phrases when they fit: {hint}\n\n"
+        f"Title: {r.title}\nAbstract: {r.abstract[:1200]}",
+        ["TOPICS", "METHODS"],
+    ) or {"TOPICS": "", "METHODS": ""}
+    t = [x.strip(" .'\"").lower() for x in re.split(r"[;,]", data["TOPICS"]) if x.strip()][:4]
+    m = [x.strip(" .'\"").lower() for x in re.split(r"[;,]", data["METHODS"]) if x.strip()][:3]
     vocab.update(t + m)
     topics.append(";".join(t))
     methods.append(";".join(m))

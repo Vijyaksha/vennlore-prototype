@@ -6,8 +6,6 @@ Global search - for broad questions ("what are the big themes?"): rank community
                 summaries -> LLM answers from them (map-reduce style).
 """
 
-import json
-
 import numpy as np
 
 import llm
@@ -121,18 +119,20 @@ def generate_recommendations(query: str, idx: dict, top: list, surprise: list) -
     if not llm.available() or not top:
         return fallback
     context = build_context(idx, top, surprise)
-    out = llm.complete_json(
-        f'You are a conference advisor. An attendee describes their research as:\n"{query}"\n\n'
-        "Retrieved sessions from our knowledge graph (use ONLY these facts):\n"
-        f"{json.dumps(context, indent=1)}\n\n"
-        'Return {"reasons": {"<session id>": "<one sentence on why it fits, citing the graph path>"}, '
-        '"plan": "<2-3 sentences: which sessions to prioritise and why the unexpected ones are worth it>"}',
-        max_tokens=900,
+    lines = "\n".join(f"{c['id']} | {c['title']} | {c['track']} | link: {c['graph_path']}" for c in context)
+    ids = [c["id"] for c in context]
+    out = llm.complete_lines(
+        f'An attendee researches: "{query}"\n\nSessions found for them in our knowledge graph:\n{lines}\n\n'
+        "For EACH session write one short sentence on why it fits, based on its link. "
+        "Use exactly this format, one line per session:\n"
+        + "\n".join(f"{i} | <reason>" for i in ids)
+        + "\nThen one last line:\nPLAN | <2 sentences on which sessions to attend first and why>",
+        ids + ["PLAN"],
     )
-    if not isinstance(out, dict) or not isinstance(out.get("reasons"), dict):
+    reasons = {k: v for k, v in out.items() if k in ids and 10 <= len(v) <= 400}
+    if not reasons:
         return fallback
-    reasons = fallback["reasons"] | {k: v for k, v in out["reasons"].items() if k in fallback["reasons"]}
-    return {"reasons": reasons, "plan": out.get("plan"), "generated": True}
+    return {"reasons": fallback["reasons"] | reasons, "plan": out.get("PLAN"), "generated": True}
 
 
 # ---------------------------------------------------------------- Global search
@@ -142,19 +142,14 @@ def global_search(question: str, idx: dict, top_k: int = 3) -> dict:
     ranked = [idx["communities"][i] for i in np.argsort(-sims)[:top_k]]
     if not llm.available():
         return {"answer": None, "themes": ranked}
-    themes = [
-        {
-            "id": c["id"],
-            "title": c["title"],
-            "summary": c["summary"],
-            "sessions": [idx["g"].nodes[s]["title"] for s in c["sessions"]],
-        }
+    themes = "\n".join(
+        f"- {c['title']}: {c['summary'][:300]} Sessions: "
+        + "; ".join(idx["g"].nodes[s]["title"] for s in c["sessions"][:5])
         for c in ranked
-    ]
+    )
     answer = llm.complete(
-        f"Question about a conference: {question}\n\nResearch themes from the conference knowledge graph "
-        "(answer ONLY from these, and name the themes and sessions you use):\n"
-        f"{json.dumps(themes, indent=1)}",
-        max_tokens=700,
+        f"Conference research themes:\n{themes}\n\nUsing ONLY these themes, answer in 3-5 sentences and "
+        f"name the themes and sessions you use.\nQuestion: {question}",
+        max_tokens=500,
     )
     return {"answer": answer, "themes": ranked}
