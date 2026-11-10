@@ -1,0 +1,7 @@
+streamlit
+scikit-learn
+numpy
+networkx
+pandas
+matplotlib
+# optional, better matching: sentence-transformers

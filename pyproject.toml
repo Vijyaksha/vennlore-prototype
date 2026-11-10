@@ -1,0 +1,16 @@
+[project]
+name = "vennlore-prototype"
+version = "0.3.0"
+description = "Vennlore Conference: GraphRAG-powered conference session recommendations"
+requires-python = ">=3.10"
+
+[tool.black]
+line-length = 110
+target-version = ["py310"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP"]
