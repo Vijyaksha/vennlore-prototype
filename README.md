@@ -147,4 +147,4 @@ The app switches from typo-tolerant TF-IDF to sentence embeddings automatically.
 
 Vijyaksha Yentrapragada · Jiahong Wen · Owen Gill · Rupert Lim · Ryu Takamatsu
 
-Built for BAN/ESE 6800 at the University of Pennsylvania, with AI-assisted development.
+Built for ESE 6800 ventures at the University of Pennsylvania, with AI-assisted help development.
