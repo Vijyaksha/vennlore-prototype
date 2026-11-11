@@ -13,15 +13,13 @@ body {
   overflow-x: hidden;
 }
 
-/* Kindred is dark-first: bare :root carries the dark palette. */
+/* Kindred is light (white) by default; add the .dark class to <html> for the dark view. */
 html {
-  color-scheme: dark;
+  color-scheme: light;
 }
 
-@media (prefers-color-scheme: light) {
-  html:not(.dark) {
-    color-scheme: light;
-  }
+html.dark {
+  color-scheme: dark;
 }
 
 @theme inline {
@@ -75,87 +73,47 @@ html {
 }
 
 :root {
-  --background: #0e0b10;
-  --foreground: #f2edf3;
-  --card: #18121b;
-  --card-foreground: #f2edf3;
-  --popover: #1f1823;
-  --popover-foreground: #f2edf3;
-  --primary: #e04a63;
-  --primary-foreground: #f2edf3;
-  --secondary: #1f1823;
-  --secondary-foreground: #f2edf3;
-  --muted: #241b29;
-  --muted-foreground: #9c8fa3;
-  --accent: #241b29;
-  --accent-foreground: #f2edf3;
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: #2c2233;
-  --input: #2c2233;
-  --ring: #e04a63;
-  --chart-1: #e04a63;
-  --chart-2: #e0a63c;
-  --chart-3: #9c8fa3;
-  --chart-4: #6b5f72;
-  --chart-5: #2c2233;
+  --background: #ffffff;
+  --foreground: #251a29;
+  --card: #ffffff;
+  --card-foreground: #251a29;
+  --popover: #f3eef5;
+  --popover-foreground: #251a29;
+  --primary: #b02d44;
+  --primary-foreground: #faf7fb;
+  --secondary: #f3eef5;
+  --secondary-foreground: #251a29;
+  --muted: #efe8f1;
+  --muted-foreground: #71627a;
+  --accent: #efe8f1;
+  --accent-foreground: #251a29;
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: #e4dce8;
+  --input: #e4dce8;
+  --ring: #b02d44;
+  --chart-1: #b02d44;
+  --chart-2: #a56f13;
+  --chart-3: #71627a;
+  --chart-4: #a395ab;
+  --chart-5: #e4dce8;
+  --sidebar: #ffffff;
+  --sidebar-foreground: #251a29;
+  --sidebar-primary: #b02d44;
+  --sidebar-primary-foreground: #faf7fb;
+  --sidebar-accent: #efe8f1;
+  --sidebar-accent-foreground: #251a29;
+  --sidebar-border: #e4dce8;
+  --sidebar-ring: #b02d44;
+  --accent-soft: rgba(176, 45, 68, 0.09);
+  --surprise: #a56f13;
+  --surprise-soft: rgba(165, 111, 19, 0.1);
+  --faint: #a395ab;
+  --surface-2: #f3eef5;
   --radius: 0.875rem;
-  --sidebar: #18121b;
-  --sidebar-foreground: #f2edf3;
-  --sidebar-primary: #e04a63;
-  --sidebar-primary-foreground: #f2edf3;
-  --sidebar-accent: #241b29;
-  --sidebar-accent-foreground: #f2edf3;
-  --sidebar-border: #2c2233;
-  --sidebar-ring: #e04a63;
-  --accent-soft: rgba(224, 74, 99, 0.14);
-  --surprise: #e0a63c;
-  --surprise-soft: rgba(224, 166, 60, 0.13);
-  --faint: #6b5f72;
-  --surface-2: #1f1823;
 }
 
-@media (prefers-color-scheme: light) {
-  :root:not(.dark) {
-    --background: #faf7fb;
-    --foreground: #251a29;
-    --card: #ffffff;
-    --card-foreground: #251a29;
-    --popover: #f3eef5;
-    --popover-foreground: #251a29;
-    --primary: #b02d44;
-    --primary-foreground: #faf7fb;
-    --secondary: #f3eef5;
-    --secondary-foreground: #251a29;
-    --muted: #efe8f1;
-    --muted-foreground: #71627a;
-    --accent: #efe8f1;
-    --accent-foreground: #251a29;
-    --destructive: oklch(0.577 0.245 27.325);
-    --border: #e4dce8;
-    --input: #e4dce8;
-    --ring: #b02d44;
-    --chart-1: #b02d44;
-    --chart-2: #a56f13;
-    --chart-3: #71627a;
-    --chart-4: #a395ab;
-    --chart-5: #e4dce8;
-    --sidebar: #ffffff;
-    --sidebar-foreground: #251a29;
-    --sidebar-primary: #b02d44;
-    --sidebar-primary-foreground: #faf7fb;
-    --sidebar-accent: #efe8f1;
-    --sidebar-accent-foreground: #251a29;
-    --sidebar-border: #e4dce8;
-    --sidebar-ring: #b02d44;
-    --accent-soft: rgba(176, 45, 68, 0.09);
-    --surprise: #a56f13;
-    --surprise-soft: rgba(165, 111, 19, 0.1);
-    --faint: #a395ab;
-    --surface-2: #f3eef5;
-  }
-}
 
-/* The .dark class pins the dark palette regardless of system preference. */
+/* Optional dark view: <html class="dark">. */
 .dark {
   --background: #0e0b10;
   --foreground: #f2edf3;
