@@ -141,3 +141,66 @@ class AnthropicLLM:
             last_kinds = [type(b).__name__ for b in msg.content]
         raise LLMUnusable(
             f"no usable JSON response after 3 attempts, got {last_kinds}")
+
+
+class LocalLLM:
+    """Free, keyless client for any OpenAI-compatible LOCAL server: LM Studio
+    (default, http://localhost:1234/v1) or Ollama (LOCAL_LLM_URL=
+    http://localhost:11434/v1). model=None uses the model the server has
+    loaded. Built for small models: no JSON mode is requested (many local
+    servers reject it), reasoning-model <think> blocks are stripped, and
+    fenced or chatty replies are parsed forgivingly, with retries."""
+
+    def __init__(self, model: str | None = None, base_url: str | None = None,
+                 max_tokens: int = 4096, client=None, sleep=time.sleep):
+        if client is None:
+            import openai
+            client = openai.OpenAI(base_url=base_url or self.default_base_url(),
+                                   api_key=os.environ.get("LOCAL_LLM_KEY", "local"))
+        self._client = client
+        self._max_tokens = max_tokens
+        self._sleep = sleep
+        if model == "local":
+            model = None
+        self.model = model or os.environ.get("LOCAL_LLM_MODEL") or None
+
+    @staticmethod
+    def default_base_url() -> str:
+        return os.environ.get("LOCAL_LLM_URL", "http://localhost:1234/v1").rstrip("/")
+
+    def _model(self) -> str:
+        if self.model is None:
+            self.model = self._client.models.list().data[0].id
+        return self.model
+
+    @staticmethod
+    def _strip_thinking(text: str) -> str:
+        if "<think>" in text and "</think>" not in text:
+            return ""  # the model ran out of tokens while still thinking
+        return text.split("</think>")[-1]
+
+    def complete_json(self, prompt: str, schema_hint: str) -> dict:
+        last_kinds: list[str] = []
+        for attempt in range(3):
+            if attempt:
+                self._sleep(attempt)
+            resp = self._client.chat.completions.create(
+                model=self._model(),
+                max_tokens=self._max_tokens,
+                temperature=0.1,
+                messages=[
+                    {"role": "system",
+                     "content": SYSTEM_PROMPT.format(schema_hint=schema_hint)},
+                    {"role": "user", "content": prompt},
+                ],
+            )
+            text = self._strip_thinking(resp.choices[0].message.content or "")
+            if text.strip():
+                obj = _parse_json_text(text)
+                if isinstance(obj, dict):
+                    return obj
+                last_kinds = [f"malformed-json({text[:80]!r})"]
+            else:
+                last_kinds = ["empty-content"]
+        raise LLMUnusable(
+            f"no usable JSON response after 3 attempts, got {last_kinds}")

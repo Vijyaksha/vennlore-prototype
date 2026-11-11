@@ -1,0 +1,15 @@
+{
+  "engine_id": "graphrag_v1",
+  "themes": [
+    {
+      "id": "T1",
+      "title": "Light-driven charge transport",
+      "summary": "Talks that read out charge dynamics with light.",
+      "concepts": ["transient photocurrent", "excitons"],
+      "talks": [
+        { "id": 2802, "title": "Memristive Properties of Ni-DNA Thin-Film Devices", "type": "Oral-In-person" },
+        { "id": 1600000000, "title": "Graph neural networks for exciton transport", "type": "preprint:arxiv" }
+      ]
+    }
+  ]
+}

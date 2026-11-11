@@ -8,6 +8,7 @@ from gps_core.protocol import Engine
 
 ENGINES: dict[str, str] = {
     "graph_v1": "gps_engines.graph_v1.engine:build",
+    "graphrag_v1": "gps_engines.graphrag_v1.engine:build",
 }
 
 

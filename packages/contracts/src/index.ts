@@ -12,6 +12,10 @@ export {
   AgendaItemSchema,
   AgendaDaySchema,
   AgendaResponseSchema,
+  ThemeTalkSchema,
+  ThemeSchema,
+  ThemesResponseSchema,
+  AskResponseSchema,
   type Subject,
   type Pick,
   type PicksResponse,
@@ -19,4 +23,7 @@ export {
   type Connection,
   type AgendaItem,
   type AgendaResponse,
+  type Theme,
+  type ThemesResponse,
+  type AskResponse,
 } from "./api";

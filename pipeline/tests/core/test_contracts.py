@@ -9,7 +9,7 @@ VALID = FIXTURES / "valid"
 INVALID = FIXTURES / "invalid"
 
 
-@pytest.mark.parametrize("kind", ["talk", "recommendation", "run"])
+@pytest.mark.parametrize("kind", ["talk", "recommendation", "run", "themes_response", "ask_response"])
 def test_valid_fixture_passes(kind):
     validate(kind, json.loads((VALID / f"{kind}.json").read_text()))
 

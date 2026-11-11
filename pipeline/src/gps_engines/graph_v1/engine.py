@@ -9,7 +9,7 @@ from typing import Callable
 
 from gps_core.checkpoint import checkpointed, content_key
 from gps_core.filters import default_cross_domain
-from gps_core.llm import AnthropicLLM, DeepSeekLLM, LLMClient, LLMRefusal, LLMUnusable
+from gps_core.llm import AnthropicLLM, DeepSeekLLM, LLMClient, LLMRefusal, LLMUnusable, LocalLLM
 from gps_core.progress import Status, parallel
 from gps_core.protocol import IndexArtifact
 from gps_core.records import Recommendation
@@ -37,6 +37,9 @@ PROVIDERS = {
                  "rubric": "deepseek-reasoner", "client": DeepSeekLLM},
     "anthropic": {"extract": "claude-haiku-4-5-20251001", "pair_judge": "claude-sonnet-5",
                   "rubric": "claude-sonnet-5", "client": AnthropicLLM},
+    # Free: whatever model LM Studio (or Ollama via LOCAL_LLM_URL) has loaded.
+    "local": {"extract": "local", "pair_judge": "local", "rubric": "local",
+              "client": LocalLLM},
 }
 
 

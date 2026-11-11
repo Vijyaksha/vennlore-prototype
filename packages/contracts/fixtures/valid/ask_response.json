@@ -1,0 +1,14 @@
+{
+  "engine_id": "graphrag_v1",
+  "question": "Which themes combine AI with the physical sciences?",
+  "answer": "Light-driven charge transport links machine-learned models with photocurrent experiments.",
+  "themes": [
+    {
+      "id": "T1",
+      "title": "Light-driven charge transport",
+      "summary": "Talks that read out charge dynamics with light.",
+      "concepts": ["transient photocurrent"],
+      "talks": [{ "id": 2802, "title": "Memristive Properties of Ni-DNA Thin-Film Devices", "type": null }]
+    }
+  ]
+}

@@ -20,3 +20,12 @@ export function isNotFound(error: unknown): boolean {
 export function retryUnlessNotFound(failureCount: number, error: unknown): boolean {
   return !PERMANENT_CODES.has(code(error) as string) && failureCount < MAX_RETRIES;
 }
+
+/** How the search page explains a failed search: the service is down, the input was
+ *  rejected (its message is shown as is), or anything else. */
+export function searchErrorKind(error: unknown): "unavailable" | "bad_request" | "failed" {
+  const c = code(error);
+  if (c === "SERVICE_UNAVAILABLE") return "unavailable";
+  if (c === "BAD_REQUEST") return "bad_request";
+  return "failed";
+}

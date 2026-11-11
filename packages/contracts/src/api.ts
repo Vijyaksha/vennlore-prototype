@@ -75,3 +75,37 @@ export const AgendaResponseSchema = z
   })
   .meta({ title: "AgendaResponse" });
 export type AgendaResponse = z.infer<typeof AgendaResponseSchema>;
+
+/** A talk or paper listed under a research theme: enough to name it and tell talks from papers. */
+export const ThemeTalkSchema = z
+  .strictObject({ id: z.int().min(0), title: z.string().min(1), type: z.string().nullable() })
+  .meta({ title: "ThemeTalk" });
+
+/** A research theme an engine found across the programme: concepts that talks use together. */
+export const ThemeSchema = z
+  .strictObject({
+    id: z.string().min(1),
+    title: z.string().min(1),
+    summary: z.string(),
+    concepts: z.array(z.string()),
+    talks: z.array(ThemeTalkSchema),
+  })
+  .meta({ title: "Theme" });
+export type Theme = z.infer<typeof ThemeSchema>;
+
+export const ThemesResponseSchema = z
+  .strictObject({ engine_id: EngineIdSchema, themes: z.array(ThemeSchema) })
+  .meta({ title: "ThemesResponse" });
+export type ThemesResponse = z.infer<typeof ThemesResponseSchema>;
+
+/** A question about the whole conference, answered from the themes most related to it.
+ *  answer is null when no language model is available: the themes alone are the answer. */
+export const AskResponseSchema = z
+  .strictObject({
+    engine_id: EngineIdSchema,
+    question: z.string().min(1),
+    answer: z.string().nullable(),
+    themes: z.array(ThemeSchema),
+  })
+  .meta({ title: "AskResponse" });
+export type AskResponse = z.infer<typeof AskResponseSchema>;

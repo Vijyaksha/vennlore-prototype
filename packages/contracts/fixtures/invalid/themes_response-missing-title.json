@@ -1,0 +1,4 @@
+{
+  "engine_id": "graphrag_v1",
+  "themes": [{ "id": "T1", "summary": "No title.", "concepts": [], "talks": [] }]
+}

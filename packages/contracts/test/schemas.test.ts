@@ -33,6 +33,8 @@ const EXPECTED_PATH: Record<string, string> = {
   // A union rejects at the root, so the only path a subject issue can name is "".
   "subject-both-ids.json": "",
   "picks_response-missing-candidate.json": "recommendations.0.candidate",
+  "themes_response-missing-title.json": "themes.0.title",
+  "ask_response-answer-not-string.json": "answer",
 };
 
 describe("invalid fixtures are rejected", () => {

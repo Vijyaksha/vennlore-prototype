@@ -1,6 +1,6 @@
 import { describe, expect, test } from "vitest";
 
-import { isNotFound, retryUnlessNotFound } from "../../lib/query-errors";
+import { isNotFound, retryUnlessNotFound, searchErrorKind } from "../../lib/query-errors";
 
 const trpcError = (code: string) => ({ data: { code } });
 
@@ -31,5 +31,19 @@ describe("retryUnlessNotFound", () => {
     const error = trpcError("INTERNAL_SERVER_ERROR");
     expect(retryUnlessNotFound(0, error)).toBe(true);
     expect(retryUnlessNotFound(1, error)).toBe(false);
+  });
+});
+
+describe("searchErrorKind", () => {
+  test.each([
+    ["SERVICE_UNAVAILABLE", "unavailable"],
+    ["BAD_REQUEST", "bad_request"],
+    ["BAD_GATEWAY", "failed"],
+    ["INTERNAL_SERVER_ERROR", "failed"],
+  ])("maps %s to %s", (c, kind) => {
+    expect(searchErrorKind(trpcError(c))).toBe(kind);
+  });
+  test("a network error with no tRPC code is a failure", () => {
+    expect(searchErrorKind(new Error("fetch failed"))).toBe("failed");
   });
 });

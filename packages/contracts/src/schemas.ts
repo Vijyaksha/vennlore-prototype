@@ -1,5 +1,7 @@
 import { z } from "zod";
-import { AgendaResponseSchema, PicksResponseSchema, SubjectSchema } from "./api";
+import {
+  AgendaResponseSchema, AskResponseSchema, PicksResponseSchema, SubjectSchema, ThemesResponseSchema,
+} from "./api";
 import { RecommendationSchema } from "./recommendation";
 import { RunSchema } from "./run";
 import { TalkSchema } from "./talk";
@@ -11,6 +13,8 @@ export const SCHEMAS = {
   subject: SubjectSchema,
   picks_response: PicksResponseSchema,
   agenda_response: AgendaResponseSchema,
+  themes_response: ThemesResponseSchema,
+  ask_response: AskResponseSchema,
 } as const;
 export type SchemaKind = keyof typeof SCHEMAS;
 

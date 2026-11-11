@@ -10,7 +10,7 @@ from jsonschema import Draft202012Validator
 REPO = Path(__file__).resolve().parents[3]
 SCHEMA_DIR = REPO / "packages" / "contracts" / "schema"
 FIXTURES = REPO / "packages" / "contracts" / "fixtures"
-KINDS = ("talk", "recommendation", "run")
+KINDS = ("talk", "recommendation", "run", "themes_response", "ask_response")
 
 
 class ContractError(ValueError):

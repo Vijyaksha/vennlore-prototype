@@ -1,12 +1,14 @@
 import { TRPCError } from "@trpc/server";
 import {
-  AgendaResponseSchema, PicksResponseSchema, SubjectSchema, TalkSchema,
+  AgendaResponseSchema, AskResponseSchema, PicksResponseSchema, SubjectSchema, TalkSchema,
+  ThemesResponseSchema,
   type AgendaItem, type AgendaKind, type Subject,
 } from "@repo/contracts";
 import { z } from "zod";
 
 import { groupByDenverDay } from "./agenda";
 import type { MatchRow, Repo, TalkRow } from "./repo";
+import { SearchError, type SearchClient } from "./search";
 import { publicProcedure, router } from "./trpc";
 import { toPick, toTalk } from "./wire";
 
@@ -23,7 +25,48 @@ async function resolveAnchors(repo: Repo, input: Subject): Promise<{ presenterId
   return { presenterId: null, anchors: [talk] };
 }
 
+/** Free-text search: a mutation (POST), since research descriptions are long. */
+const SearchInputSchema = z.strictObject({ text: z.string().trim().min(10).max(4000) });
+const AskInputSchema = z.strictObject({ question: z.string().trim().min(3).max(1000) });
+
+/** Runs a call to the pipeline's search service, turning its failures into tRPC errors. */
+async function viaSearch<T>(search: SearchClient | undefined, fn: (s: SearchClient) => Promise<T>): Promise<T> {
+  if (search === undefined) {
+    throw new TRPCError({ code: "SERVICE_UNAVAILABLE", message: "search is not configured" });
+  }
+  try {
+    return await fn(search);
+  } catch (error) {
+    if (!(error instanceof SearchError)) throw error;
+    throw new TRPCError({
+      code: error.kind === "bad_request" ? "BAD_REQUEST"
+        : error.kind === "unavailable" ? "SERVICE_UNAVAILABLE" : "BAD_GATEWAY",
+      message: error.message,
+    });
+  }
+}
+
 export const appRouter = router({
+  search: router({
+    recommend: publicProcedure
+      .input(SearchInputSchema)
+      .output(PicksResponseSchema)
+      .mutation(async ({ ctx, input }) => {
+        const { anchor, picks } = await viaSearch(ctx.search, (s) => s.recommend(input.text));
+        // The service's rows are untrusted until they parse as the contract.
+        return PicksResponseSchema.parse({ presenter_id: null, anchors: [anchor], recommendations: picks });
+      }),
+  }),
+  themes: router({
+    list: publicProcedure
+      .output(ThemesResponseSchema)
+      .query(async ({ ctx }) => ThemesResponseSchema.parse(await viaSearch(ctx.search, (s) => s.themes()))),
+    ask: publicProcedure
+      .input(AskInputSchema)
+      .output(AskResponseSchema)
+      .mutation(async ({ ctx, input }) =>
+        AskResponseSchema.parse(await viaSearch(ctx.search, (s) => s.ask(input.question)))),
+  }),
   talk: router({
     get: publicProcedure
       .input(z.strictObject({ id: z.int().min(0) }))

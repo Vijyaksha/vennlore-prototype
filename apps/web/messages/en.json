@@ -15,10 +15,14 @@
     "when": "{dow} {date} · {time}",
     "untimed": "Time TBD",
     "calendar": "Calendar",
+    "preprint": "Preprint",
+    "readPaper": "Read paper",
     "noSecondCore": "No second core match cleared the bar.",
     "noCore": "No core match cleared the bar.",
     "noMatches": "No matches cleared the bar for {count, plural, one {this talk} other {your talks}}.",
-    "railLabel": "Recommended talks"
+    "railLabel": "Recommended talks",
+    "howFound": "How we found this",
+    "pathLabel": "Graph path: {path}"
   },
   "agenda": {
     "dayCount": "{dow} · day {day} of {total}",
@@ -40,6 +44,42 @@
   "nav": {
     "label": "Pages",
     "picks": "Picks",
-    "calendar": "Calendar"
+    "calendar": "Calendar",
+    "search": "Search",
+    "themes": "Themes"
+  },
+  "search": {
+    "title": "Search by your research",
+    "label": "Describe your research",
+    "placeholder": "e.g. I use graph neural networks to predict exciton transport in organic semiconductors…",
+    "hint": "Talks and papers from arXiv, bioRxiv and medRxiv",
+    "submit": "Find talks and papers",
+    "searching": "Searching…",
+    "resultsFor": "Results for your research",
+    "unavailable": "The search service is not running. Start it with “Vennlore start website”.",
+    "failed": "Search failed. Please try again."
+  },
+  "graph": {
+    "caption": "How your picks connect",
+    "label": "Network of {picks} picks linked through {middle} concepts and talks"
+  },
+  "themes": {
+    "title": "Research themes",
+    "intro": "Themes our knowledge graph found across the conference: concepts that talks and papers use together.",
+    "concepts": "Concepts",
+    "counts": "{talks, plural, one {# talk} other {# talks}} · {papers, plural, one {# paper} other {# papers}}",
+    "show": "Show talks and papers",
+    "hide": "Hide",
+    "talk": "talk",
+    "askLabel": "Ask the conference",
+    "askPlaceholder": "e.g. Which themes combine AI with the physical sciences?",
+    "ask": "Ask",
+    "thinking": "Thinking…",
+    "answerTitle": "Answer",
+    "noAnswer": "No written answer: the language model is off. These are the most related themes.",
+    "related": "Themes behind this answer",
+    "all": "All research themes",
+    "unavailable": "The search service is not running. Start it with “Vennlore start website”.",
+    "failed": "Something went wrong. Please try again."
   }
 }

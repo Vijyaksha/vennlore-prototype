@@ -9,6 +9,9 @@ import { Card } from "@repo/ui/components/card";
 import { cn } from "@repo/ui/lib/utils";
 
 import { denverDayKey, TIME_ZONE } from "@/lib/conference";
+import { paperSource, paperUrl } from "@/lib/paper";
+
+import { PickPath, pathFromEvidence } from "./pick-path";
 
 export interface Anchor {
   id: number;
@@ -23,7 +26,12 @@ export function PickCard({ pick, anchors }: { pick: Pick; anchors: Anchor[] }) {
   // Dates cross the tRPC HTTP boundary as ISO strings.
   const start = candidate.start === null ? null : new Date(candidate.start);
   const kind = pick.cross_domain ? t("unexpected") : t("core");
-  const division = candidate.units.join("/");
+  // A preprint is flagged by its archive; a talk by its division(s).
+  const source = paperSource(candidate.type);
+  const paperHref = source === null ? null : paperUrl(candidate.external_id);
+  const division = source ?? candidate.units.join("/");
+  const subtitle = source === null ? candidate.session_title : candidate.publication_reference;
+  const graphPath = pathFromEvidence(pick.evidence);
   // Only a presenter with several talks needs to know which one a pick is for.
   const forTalk =
     anchors.length > 1
@@ -68,14 +76,15 @@ export function PickCard({ pick, anchors }: { pick: Pick; anchors: Anchor[] }) {
       <h3 className="text-lg leading-[1.32] font-semibold text-balance text-card-foreground">
         {candidate.title}
       </h3>
-      {candidate.session_title !== null && (
+      {subtitle !== null && (
         <span className="font-mono text-[11.5px] text-faint tabular-nums">
-          {candidate.session_title}
+          {subtitle}
         </span>
       )}
       <p className="flex-1 border-l-2 border-primary pl-3 font-serif text-[14.5px] leading-[1.55] italic">
         {pick.why}
       </p>
+      {graphPath !== null && <PickPath path={graphPath} />}
       {pick.shared_methods.length > 0 && (
         <div
           role="group"
@@ -95,7 +104,9 @@ export function PickCard({ pick, anchors }: { pick: Pick; anchors: Anchor[] }) {
       )}
       <div className="flex items-center justify-between border-t border-border pt-3">
         <span className="font-mono text-[11.5px] text-muted-foreground tabular-nums">
-          {start === null
+          {source !== null
+            ? t("preprint")
+            : start === null
             ? t("untimed")
             : t("when", {
                 dow: format.dateTime(start, { weekday: "short", timeZone: TIME_ZONE }),
@@ -111,12 +122,25 @@ export function PickCard({ pick, anchors }: { pick: Pick; anchors: Anchor[] }) {
                 }),
               })}
         </span>
-        <Link
-          href={calendarHref}
-          className="text-[13px] font-medium text-primary"
-        >
-          {t("calendar")}
-        </Link>
+        {source !== null ? (
+          paperHref !== null && (
+            <a
+              href={paperHref}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[13px] font-medium text-primary"
+            >
+              {t("readPaper")}
+            </a>
+          )
+        ) : (
+          <Link
+            href={calendarHref}
+            className="text-[13px] font-medium text-primary"
+          >
+            {t("calendar")}
+          </Link>
+        )}
       </div>
     </Card>
   );

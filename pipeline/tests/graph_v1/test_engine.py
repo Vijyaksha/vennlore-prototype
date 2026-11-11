@@ -177,3 +177,15 @@ def test_unusable_llm_response_defaults_to_no_match_and_says_so(tmp_path, capsys
     r = rows[0]
     assert r.match is False and r.score == 0.0 and "API UNUSABLE" in r.why
     assert "UNUSABLE" in capsys.readouterr().out
+
+
+def test_build_local_provider_runs_free_on_lm_studio_or_ollama():
+    """provider='local' uses the free LocalLLM client (no API key, no spend)."""
+    from gps_core.llm import LocalLLM
+    from gps_engines.graph_v1.engine import PROVIDERS
+    assert PROVIDERS["local"]["client"] is LocalLLM
+    made = []
+    e = build(provider="local", embed=keyword_embedder, physh=tiny_physh(),
+              llm_factory=lambda m: made.append(m) or m)
+    assert e.models == {"extract": "local", "pair_judge": "local", "rubric": "local"}
+    assert made == ["local", "local", "local"]

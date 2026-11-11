@@ -6,6 +6,7 @@ import { Skeleton } from "@repo/ui/components/skeleton";
 
 import { AnchorHeading } from "@/components/anchor-heading";
 import { ErrorState } from "@/components/error-state";
+import { PicksGraph } from "@/components/picks-graph";
 import { PickRail } from "@/components/pick-rail";
 import { SUBJECT } from "@/lib/conference";
 import { isNotFound, retryUnlessNotFound } from "@/lib/query-errors";
@@ -47,6 +48,9 @@ export default function PicksPage() {
     <section>
       <div className="px-5 pt-5 pb-0.5">
         <AnchorHeading titles={anchors.map((anchor) => anchor.title)} />
+      </div>
+      <div className="px-5 pt-4">
+        <PicksGraph recommendations={recommendations} />
       </div>
       <PickRail
         anchors={anchors.map(({ id, title }) => ({ id, title }))}

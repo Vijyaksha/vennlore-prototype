@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "engine_id": {
+      "type": "string",
+      "maxLength": 64,
+      "pattern": "^[a-z0-9_]+$"
+    },
+    "themes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "summary": {
+            "type": "string"
+          },
+          "concepts": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "talks": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 9007199254740991
+                },
+                "title": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "type": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "id",
+                "title",
+                "type"
+              ],
+              "additionalProperties": false,
+              "title": "ThemeTalk"
+            }
+          }
+        },
+        "required": [
+          "id",
+          "title",
+          "summary",
+          "concepts",
+          "talks"
+        ],
+        "additionalProperties": false,
+        "title": "Theme"
+      }
+    }
+  },
+  "required": [
+    "engine_id",
+    "themes"
+  ],
+  "additionalProperties": false,
+  "title": "ThemesResponse"
+}

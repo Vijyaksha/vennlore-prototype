@@ -45,6 +45,7 @@
     "CI",
     "DATABASE_URL",
     "ENGINE_ID",
+    "SEARCH_URL",
     "PLAYWRIGHT_BASE_URL",
     "SEED_PATH"
   ],
